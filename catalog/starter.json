@@ -1,0 +1,85 @@
+{
+  "description": "Twenty free, theme-aware starting points for marketing, product and AI UI. Verify compatibility in your own project.",
+  "entries": [
+    {
+      "id": "oc/navbar",
+      "use": "Marketing navigation with a mobile menu"
+    },
+    {
+      "id": "oc/hero-split",
+      "use": "Clear headline, actions and a supporting visual"
+    },
+    {
+      "id": "oc/hero-spotlight",
+      "use": "Centered hero with a static light treatment"
+    },
+    {
+      "id": "oc/feature-bento",
+      "use": "Features with different visual emphasis"
+    },
+    {
+      "id": "oc/feature-list",
+      "use": "Readable product features without heavy effects"
+    },
+    {
+      "id": "oc/feature-levels",
+      "use": "Progressive feature story with tiers"
+    },
+    {
+      "id": "oc/pricing-simple",
+      "use": "Pricing cards with monthly/yearly selection"
+    },
+    {
+      "id": "oc/logo-cloud",
+      "use": "Customer or integration logos"
+    },
+    {
+      "id": "oc/stats-row",
+      "use": "Marketing metrics"
+    },
+    {
+      "id": "oc/testimonials-grid",
+      "use": "Customer quotes"
+    },
+    {
+      "id": "oc/faq",
+      "use": "Keyboard-operable questions and answers"
+    },
+    {
+      "id": "oc/cta-banner",
+      "use": "A focused final action"
+    },
+    {
+      "id": "oc/footer-columns",
+      "use": "Grouped footer links"
+    },
+    {
+      "id": "oc/empty-state",
+      "use": "A useful next action when a view has no content"
+    },
+    {
+      "id": "oc/stat-cards",
+      "use": "Dashboard metric cards"
+    },
+    {
+      "id": "oc/data-table-card",
+      "use": "A composed data-table surface"
+    },
+    {
+      "id": "oc/settings-form",
+      "use": "Editable settings with save/reset states"
+    },
+    {
+      "id": "oc/chat-thread",
+      "use": "Conversation content and message states"
+    },
+    {
+      "id": "oc/prompt-composer",
+      "use": "A prompt input with controls"
+    },
+    {
+      "id": "oc/agent-status",
+      "use": "Agent progress and status"
+    }
+  ]
+}

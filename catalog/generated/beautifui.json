@@ -1,0 +1,586 @@
+[
+  {
+    "id": "beautifui/approval-card",
+    "source": "beautifui",
+    "name": "approval-card",
+    "title": "Approval Card",
+    "description": "Human-in-the-loop questions the agent asks before acting.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "card"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/approval-card",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/button",
+    "source": "beautifui",
+    "name": "button",
+    "title": "Button",
+    "description": "Shared building block used by other Beautiful UI components.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "button"
+    ],
+    "tags": [
+      "ai",
+      "ui"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/button",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/chat-composer",
+    "source": "beautifui",
+    "name": "chat-composer",
+    "title": "Chat",
+    "description": "Tabbed chat panel with reasoning replies and a composer.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "input",
+      "ai-chat"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/chat-composer",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/code-block",
+    "source": "beautifui",
+    "name": "code-block",
+    "title": "Code Block",
+    "description": "A line-numbered listing and a unified diff.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "code"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/code-block",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/context-cards",
+    "source": "beautifui",
+    "name": "context-cards",
+    "title": "Context Cards",
+    "description": "Retrieved knowledge chunks with their sources.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "card",
+      "text-effect"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/context-cards",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/diff-table",
+    "source": "beautifui",
+    "name": "diff-table",
+    "title": "Diff Table",
+    "description": "AI-proposed edits sweeping through tabular data.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "table"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/diff-table",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/entity-chip",
+    "source": "beautifui",
+    "name": "entity-chip",
+    "title": "EntityChip",
+    "description": "Shared building block used by other Beautiful UI components.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "badge"
+    ],
+    "tags": [
+      "ai",
+      "ui"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/entity-chip",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/filter-table",
+    "source": "beautifui",
+    "name": "filter-table",
+    "title": "Filter Table",
+    "description": "Status chips that reorganize live data.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "table"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/filter-table",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/fine-tune-card",
+    "source": "beautifui",
+    "name": "fine-tune-card",
+    "title": "Fine-tune Card",
+    "description": "The agent adjusts design properties in an inspector.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "card"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/fine-tune-card",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/flowchart",
+    "source": "beautifui",
+    "name": "flowchart",
+    "title": "Flowchart",
+    "description": "Workflow trigger and condition steps on a dotted canvas.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "chart"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/flowchart",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/glide-menu",
+    "source": "beautifui",
+    "name": "glide-menu",
+    "title": "GlideMenu",
+    "description": "Shared building block used by other Beautiful UI components.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "navigation"
+    ],
+    "tags": [
+      "ai",
+      "ui"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/glide-menu",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/insight-cards",
+    "source": "beautifui",
+    "name": "insight-cards",
+    "title": "Insight Cards",
+    "description": "Paged agent insights with scrub-ready live charts.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "card"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/insight-cards",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [
+      "liveline"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/loading-state",
+    "source": "beautifui",
+    "name": "loading-state",
+    "title": "Loading State",
+    "description": "Pixel-grid loader with shimmer and elapsed time.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "loader"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/loading-state",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/prompt-bar",
+    "source": "beautifui",
+    "name": "prompt-bar",
+    "title": "Prompt Bar",
+    "description": "Composer with @ sources, / commands, model picker, and dictation.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "input"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/prompt-bar",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [
+      "glimm"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/recommendation-card",
+    "source": "beautifui",
+    "name": "recommendation-card",
+    "title": "Recommendation Card",
+    "description": "Agent suggestion with a confidence meter and actions.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "card"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/recommendation-card",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/records-table",
+    "source": "beautifui",
+    "name": "records-table",
+    "title": "Records Table",
+    "description": "CRM-style grid with tags, sorting, and relationship status. Then add `@import \"./beautifui/records-table.css\";` to your app's globals.css.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "table"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/records-table",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/search",
+    "source": "beautifui",
+    "name": "search",
+    "title": "Search",
+    "description": "Command search with live filtering and an empty state.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "input"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/search",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/selection-actions",
+    "source": "beautifui",
+    "name": "selection-actions",
+    "title": "Selection Actions",
+    "description": "Highlight a passage and hand it to the agent to rewrite.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/selection-actions",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [
+      "iconoir-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/shimmer",
+    "source": "beautifui",
+    "name": "shimmer",
+    "title": "Shimmer",
+    "description": "Shared building block used by other Beautiful UI components.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "ui"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/shimmer",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/sidebar-nav",
+    "source": "beautifui",
+    "name": "sidebar-nav",
+    "title": "Sidebar Nav",
+    "description": "Collapsible workspace and chat navigation with gliding hover states. Then add `@import \"./beautifui/sidebar-nav.css\";` to your app's globals.css.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "navigation",
+      "sidebar"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/sidebar-nav",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [
+      "@central-icons-react/round-outlined-radius-2-stroke-2"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/stream-text",
+    "source": "beautifui",
+    "name": "stream-text",
+    "title": "StreamText",
+    "description": "Shared building block used by other Beautiful UI components.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "text-effect",
+      "ai-chat"
+    ],
+    "tags": [
+      "ai",
+      "ui"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/stream-text",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/streaming-text",
+    "source": "beautifui",
+    "name": "streaming-text",
+    "title": "Streaming Text",
+    "description": "Streamed answer with inline sources, actions, and follow-ups.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "text-effect",
+      "ai-chat"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/streaming-text",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/task-rows",
+    "source": "beautifui",
+    "name": "task-rows",
+    "title": "Task Rows",
+    "description": "Live agent task status — running, failed, completed.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/task-rows",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/thinking-state",
+    "source": "beautifui",
+    "name": "thinking-state",
+    "title": "Thinking",
+    "description": "Expandable traces — steps, reasoning, search, coding.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "loader"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/thinking-state",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/tool-chips",
+    "source": "beautifui",
+    "name": "tool-chips",
+    "title": "Tool Chips",
+    "description": "Code edits and tool calls as compact chips.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "badge"
+    ],
+    "tags": [
+      "ai",
+      "component"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/tool-chips",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "beautifui/value-pill",
+    "source": "beautifui",
+    "name": "value-pill",
+    "title": "ValuePill",
+    "description": "Shared building block used by other Beautiful UI components.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "badge"
+    ],
+    "tags": [
+      "ai",
+      "ui"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @beautifui/value-pill",
+    "docs": "https://www.beautifului.dev/",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  }
+]

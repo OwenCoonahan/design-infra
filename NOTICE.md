@@ -1,0 +1,13 @@
+# Content and attribution
+
+The MIT licence in LICENSE covers original design-infra code, blocks and documentation. It does not relicense third-party components, photographs, fonts, trademarks, websites or prompts described by the catalog.
+
+`components/ui/` contains adapted shadcn/ui primitives. Preserve [shadcn/ui's MIT notice](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md) when redistributing them; the full notice is in `third-party/shadcn-LICENSE.txt`. Installed npm dependencies retain their own licences and notices. Fonts are loaded through Next's font support, rather than supplied as freely relicensable assets; check each font's licence before redistribution.
+
+The catalog records metadata and links to independently owned libraries. An install command or a registry dependency pointing to a vendor does not grant access or redistribution rights. Check the source's current licence and your own entitlement before installing. Aceternity, OriginKit, transitions.dev and React Bits are catalog references; their source is not vendored into this registry. The original hero spotlight uses CSS authored here, without the former vendor implementation.
+
+Paid Aceternity previews, transitions.dev previews, OriginKit images and captured inspiration-site screenshots are not distributed by the current media policy. Their source links remain. Other catalog image/video URLs refer to upstream material and remain under their owners' terms. The gallery's example photographs are externally hosted Unsplash material; they are not included in this repository or covered by its MIT licence. Replace demo imagery with assets you have rights to use when adapting a block.
+
+Metadata notes and reference analyses are original commentary; any third-party names and short descriptive excerpts identify their sources. Prompts hosted by reference galleries remain with their authors; a link to one is not a licence to copy it.
+
+Do not contribute paid source, subscription keys, copied templates, or assets without a redistribution licence. Add attribution and the applicable notice for any new permissively licensed code. Private group membership does not change a vendor's licence.

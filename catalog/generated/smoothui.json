@@ -1,0 +1,7009 @@
+[
+  {
+    "id": "smoothui/agent-avatar",
+    "source": "smoothui",
+    "name": "agent-avatar",
+    "title": "Agent Avatar",
+    "description": "Canvas-based generative pixel avatar for AI agents, unique per seed.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "avatar",
+      "generative",
+      "canvas",
+      "pixel-art",
+      "ai-agent",
+      "deterministic",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/agent-avatar",
+    "docs": "https://smoothui.dev/docs/components/agent-avatar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-approval",
+    "source": "smoothui",
+    "name": "ai-approval",
+    "title": "Ai Approval",
+    "description": "Human-in-the-loop approval card where the chosen option expands to fill the card while the alternatives collapse away.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "approval",
+      "human-in-the-loop",
+      "confirm",
+      "agent",
+      "decision",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-approval",
+    "docs": "https://smoothui.dev/docs/components/ai-approval",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-artifact",
+    "source": "smoothui",
+    "name": "ai-artifact",
+    "title": "Ai Artifact",
+    "description": "Generated-artifact frame whose preview and code panes swap along a shared axis rather than cross-fading.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "artifact",
+      "tabs",
+      "preview",
+      "code",
+      "canvas",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-artifact",
+    "docs": "https://smoothui.dev/docs/components/ai-artifact",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-branch",
+    "source": "smoothui",
+    "name": "ai-branch",
+    "title": "Ai Branch",
+    "description": "An interactive AI branch component for displaying conversation flows.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "chat",
+      "branching",
+      "conversation",
+      "message",
+      "navigation",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-branch",
+    "docs": "https://smoothui.dev/docs/components/ai-branch",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-citation",
+    "source": "smoothui",
+    "name": "ai-citation",
+    "title": "Ai Citation",
+    "description": "Inline citation pill that opens an origin-aware source card, anchored to the pill it came from.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "citation",
+      "popover",
+      "hover-card",
+      "sources",
+      "inline",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-citation",
+    "docs": "https://smoothui.dev/docs/components/ai-citation",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-context-meter",
+    "source": "smoothui",
+    "name": "ai-context-meter",
+    "title": "Ai Context Meter",
+    "description": "Context window meter whose ring fills and shifts hue at the warning threshold, never changing size.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "text-effect"
+    ],
+    "tags": [
+      "ai",
+      "context",
+      "tokens",
+      "meter",
+      "usage",
+      "ring",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-context-meter",
+    "docs": "https://smoothui.dev/docs/components/ai-context-meter",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-conversation",
+    "source": "smoothui",
+    "name": "ai-conversation",
+    "title": "Ai Conversation",
+    "description": "Thread scroll container that follows the bottom only while the reader is already there, offering a jump-to-latest pill when it stops.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "chat",
+      "scroll",
+      "conversation",
+      "stick-to-bottom",
+      "thread",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-conversation",
+    "docs": "https://smoothui.dev/docs/components/ai-conversation",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-diff",
+    "source": "smoothui",
+    "name": "ai-diff",
+    "title": "Ai Diff",
+    "description": "Proposed code or data edit where added lines wipe in from the left and rejected lines collapse to nothing.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "diff",
+      "code",
+      "review",
+      "accept",
+      "reject",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-diff",
+    "docs": "https://smoothui.dev/docs/components/ai-diff",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-loader",
+    "source": "smoothui",
+    "name": "ai-loader",
+    "title": "Ai Loader",
+    "description": "Family of AI waiting indicators — dots, sweep bar and pixel grid — sharing one cycle length, with an optional elapsed counter.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "loader"
+    ],
+    "tags": [
+      "ai",
+      "loader",
+      "spinner",
+      "thinking",
+      "progress",
+      "chat",
+      "tween",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-loader",
+    "docs": "https://smoothui.dev/docs/components/ai-loader",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-message",
+    "source": "smoothui",
+    "name": "ai-message",
+    "title": "Ai Message",
+    "description": "Chat message bubble whose action row slides out of the bubble's own edge, revealed on hover and on focus.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "chat",
+      "message",
+      "bubble",
+      "actions",
+      "copy",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-message",
+    "docs": "https://smoothui.dev/docs/components/ai-message",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-orb-face",
+    "source": "smoothui",
+    "name": "ai-orb-face",
+    "title": "Ai Orb Face",
+    "description": "Cartoon character orb whose expression carries the AI state — cursor-following gaze, natural blinks, thinking saccades, happy arcs and spiral eyes.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "loader"
+    ],
+    "tags": [
+      "orb",
+      "ai",
+      "character",
+      "mascot",
+      "eyes",
+      "svg",
+      "playful",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-orb-face",
+    "docs": "https://smoothui.dev/docs/components/ai-orb-face",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-prompt-input",
+    "source": "smoothui",
+    "name": "ai-prompt-input",
+    "title": "Ai Prompt Input",
+    "description": "AI prompt composer with autogrowing textarea, attachment chips and a send-to-stop path morph.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "input"
+    ],
+    "tags": [
+      "ai",
+      "chat",
+      "input",
+      "textarea",
+      "composer",
+      "prompt",
+      "form",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-prompt-input",
+    "docs": "https://smoothui.dev/docs/components/ai-prompt-input",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-reasoning",
+    "source": "smoothui",
+    "name": "ai-reasoning",
+    "title": "Ai Reasoning",
+    "description": "Collapsible AI reasoning trace that shimmers only while the model works, reports how long it took and gets out of the way.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "ai-chat"
+    ],
+    "tags": [
+      "ai",
+      "reasoning",
+      "thinking",
+      "collapsible",
+      "chat",
+      "trace",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-reasoning",
+    "docs": "https://smoothui.dev/docs/components/ai-reasoning",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-response",
+    "source": "smoothui",
+    "name": "ai-response",
+    "title": "Ai Response",
+    "description": "Streaming assistant text where words animate in as they arrive, with a caret that rides the last glyph and inline citation pills.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "streaming",
+      "text",
+      "citations",
+      "chat",
+      "response",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-response",
+    "docs": "https://smoothui.dev/docs/components/ai-response",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-sources",
+    "source": "smoothui",
+    "name": "ai-sources",
+    "title": "Ai Sources",
+    "description": "Favicon stack that fans out on hover and expands into a source list, with each favicon morphing into its row.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "sources",
+      "citations",
+      "rag",
+      "favicons",
+      "list",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-sources",
+    "docs": "https://smoothui.dev/docs/components/ai-sources",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-suggestions",
+    "source": "smoothui",
+    "name": "ai-suggestions",
+    "title": "Ai Suggestions",
+    "description": "Prompt suggestion chips that radiate in from the centre of the row rather than sweeping left to right.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "chat",
+      "suggestions",
+      "chips",
+      "prompt",
+      "empty-state",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-suggestions",
+    "docs": "https://smoothui.dev/docs/components/ai-suggestions",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-task-list",
+    "source": "smoothui",
+    "name": "ai-task-list",
+    "title": "Ai Task List",
+    "description": "Live agent plan with nested steps, a drawn checkmark on completion and a travelling underline on whatever is running.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "tasks",
+      "plan",
+      "agent",
+      "checklist",
+      "progress",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-task-list",
+    "docs": "https://smoothui.dev/docs/components/ai-task-list",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ai-tool-call",
+    "source": "smoothui",
+    "name": "ai-tool-call",
+    "title": "Ai Tool Call",
+    "description": "Collapsible tool invocation whose status badge is one ring that evolves — breathing, spinning, then drawing a check or a cross.",
+    "kind": "component",
+    "categories": [
+      "agent-ui"
+    ],
+    "tags": [
+      "ai",
+      "tool",
+      "function-call",
+      "agent",
+      "status",
+      "collapsible",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ai-tool-call",
+    "docs": "https://smoothui.dev/docs/components/ai-tool-call",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-avatar-group",
+    "source": "smoothui",
+    "name": "animated-avatar-group",
+    "title": "Animated Avatar Group",
+    "description": "Stack of overlapping avatars with smooth expand/collapse animation",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "avatar",
+      "group",
+      "stack",
+      "overlap",
+      "hover",
+      "expand",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-avatar-group",
+    "docs": "https://smoothui.dev/docs/components/animated-avatar-group",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-file-upload",
+    "source": "smoothui",
+    "name": "animated-file-upload",
+    "title": "Animated File Upload",
+    "description": "Animated drag-and-drop file upload component",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "upload",
+      "file",
+      "drag-drop",
+      "input",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-file-upload",
+    "docs": "https://smoothui.dev/docs/components/animated-file-upload",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-input",
+    "source": "smoothui",
+    "name": "animated-input",
+    "title": "Animated Input",
+    "description": "A AnimatedInput component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "input",
+      "form",
+      "floating-label",
+      "material-design",
+      "tween",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-input",
+    "docs": "https://smoothui.dev/docs/components/animated-input",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-list",
+    "source": "smoothui",
+    "name": "animated-list",
+    "title": "Animated List",
+    "description": "A list that animates additions, removals and reordering, with an optional auto-feed mode.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "list",
+      "feed",
+      "notifications",
+      "reorder",
+      "layout",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-list",
+    "docs": "https://smoothui.dev/docs/components/animated-list",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-number-input",
+    "source": "smoothui",
+    "name": "animated-number-input",
+    "title": "Animated Number Input",
+    "description": "A numeric field with rolling digits, keyboard stepping and horizontal scrub-to-change.",
+    "kind": "component",
+    "categories": [
+      "input",
+      "stats"
+    ],
+    "tags": [
+      "input",
+      "number",
+      "stepper",
+      "scrub",
+      "form",
+      "spinbutton",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-number-input",
+    "docs": "https://smoothui.dev/docs/components/animated-number-input",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-o-t-p-input",
+    "source": "smoothui",
+    "name": "animated-o-t-p-input",
+    "title": "Animated OTP Input",
+    "description": "A AnimatedOTPInput component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "otp",
+      "input",
+      "verification",
+      "code",
+      "pin",
+      "form",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-o-t-p-input",
+    "docs": "https://smoothui.dev/docs/components/animated-o-t-p-input",
+    "dependencies": [
+      "motion",
+      "lucide-react",
+      "input-otp"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-progress-bar",
+    "source": "smoothui",
+    "name": "animated-progress-bar",
+    "title": "Animated Progress Bar",
+    "description": "A AnimatedProgressBar component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "progress",
+      "bar",
+      "loading",
+      "percentage",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-progress-bar",
+    "docs": "https://smoothui.dev/docs/components/animated-progress-bar",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-stepper",
+    "source": "smoothui",
+    "name": "animated-stepper",
+    "title": "Animated Stepper",
+    "description": "Animated stepper/wizard component with step transitions",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [
+      "stepper",
+      "wizard",
+      "steps",
+      "progress",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-stepper",
+    "docs": "https://smoothui.dev/docs/components/animated-stepper",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-tabs",
+    "source": "smoothui",
+    "name": "animated-tabs",
+    "title": "Animated Tabs",
+    "description": "Animated tabs component with sliding indicator",
+    "kind": "component",
+    "categories": [
+      "tabs"
+    ],
+    "tags": [
+      "tabs",
+      "navigation",
+      "indicator",
+      "underline",
+      "pill",
+      "segment",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-tabs",
+    "docs": "https://smoothui.dev/docs/components/animated-tabs",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-tags",
+    "source": "smoothui",
+    "name": "animated-tags",
+    "title": "Animated Tags",
+    "description": "A AnimatedTags component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "tags",
+      "chips",
+      "filter",
+      "selection",
+      "add-remove",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-tags",
+    "docs": "https://smoothui.dev/docs/components/animated-tags",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-toggle",
+    "source": "smoothui",
+    "name": "animated-toggle",
+    "title": "Animated Toggle",
+    "description": "Animated toggle switch with morph and icon variants",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "toggle",
+      "switch",
+      "checkbox",
+      "morph",
+      "icon",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-toggle",
+    "docs": "https://smoothui.dev/docs/components/animated-toggle",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/animated-tooltip",
+    "source": "smoothui",
+    "name": "animated-tooltip",
+    "title": "Animated Tooltip",
+    "description": "Spring-animated tooltip with multiple placement options",
+    "kind": "component",
+    "categories": [
+      "tooltip"
+    ],
+    "tags": [
+      "tooltip",
+      "popover",
+      "hint",
+      "placement",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/animated-tooltip",
+    "docs": "https://smoothui.dev/docs/components/animated-tooltip",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/aperture-blur-transition",
+    "source": "smoothui",
+    "name": "aperture-blur-transition",
+    "title": "Aperture Blur Transition",
+    "description": "Persistent WebGL shader transition wrapper that swaps content behind a cinematic aperture bloom.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/aperture-blur-transition",
+    "docs": "https://smoothui.dev/docs/components/aperture-blur-transition",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/app-download-stack",
+    "source": "smoothui",
+    "name": "app-download-stack",
+    "title": "App Download Stack",
+    "description": "A AppDownloadStack component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "download",
+      "stack",
+      "cards",
+      "app-store",
+      "selection",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/app-download-stack",
+    "docs": "https://smoothui.dev/docs/components/app-download-stack",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/apple-invites",
+    "source": "smoothui",
+    "name": "apple-invites",
+    "title": "Apple Invites",
+    "description": "A AppleInvites component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [
+      "carousel",
+      "cards",
+      "invites",
+      "apple",
+      "3d",
+      "perspective",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/apple-invites",
+    "docs": "https://smoothui.dev/docs/components/apple-invites",
+    "dependencies": [
+      "@smoothui/data",
+      "motion",
+      "lucide-react",
+      "popmotion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/arcade-pixel",
+    "source": "smoothui",
+    "name": "arcade-pixel",
+    "title": "Arcade Pixel",
+    "description": "An ArcadePixel component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/arcade-pixel",
+    "docs": "https://smoothui.dev/docs/components/arcade-pixel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ascii-render",
+    "source": "smoothui",
+    "name": "ascii-render",
+    "title": "Ascii Render",
+    "description": "An AsciiRender component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ascii-render",
+    "docs": "https://smoothui.dev/docs/components/ascii-render",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/aurora-curtain",
+    "source": "smoothui",
+    "name": "aurora-curtain",
+    "title": "Aurora Curtain",
+    "description": "An AuroraCurtain background component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/aurora-curtain",
+    "docs": "https://smoothui.dev/docs/components/aurora-curtain",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/auth-form",
+    "source": "smoothui",
+    "name": "auth-form",
+    "title": "Auth Form",
+    "description": "A presentation-only sign-in / sign-up form that reveals fields progressively and stays fully accessible.",
+    "kind": "component",
+    "categories": [
+      "auth",
+      "form"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/auth-form",
+    "docs": "https://smoothui.dev/docs/components/auth-form",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/basic-accordion",
+    "source": "smoothui",
+    "name": "basic-accordion",
+    "title": "Basic Accordion",
+    "description": "A BasicAccordion component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "accordion"
+    ],
+    "tags": [
+      "accordion",
+      "collapsible",
+      "faq",
+      "expand",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/basic-accordion",
+    "docs": "https://smoothui.dev/docs/components/basic-accordion",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/basic-dropdown",
+    "source": "smoothui",
+    "name": "basic-dropdown",
+    "title": "Basic Dropdown",
+    "description": "A BasicDropdown component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "dropdown",
+      "select",
+      "menu",
+      "form",
+      "portal",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/basic-dropdown",
+    "docs": "https://smoothui.dev/docs/components/basic-dropdown",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/basic-modal",
+    "source": "smoothui",
+    "name": "basic-modal",
+    "title": "Basic Modal",
+    "description": "A BasicModal component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "modal",
+      "dialog",
+      "overlay",
+      "popup",
+      "portal",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/basic-modal",
+    "docs": "https://smoothui.dev/docs/components/basic-modal",
+    "dependencies": [
+      "motion",
+      "lucide-react",
+      "usehooks-ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/basic-toast",
+    "source": "smoothui",
+    "name": "basic-toast",
+    "title": "Basic Toast",
+    "description": "A BasicToast component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "toast"
+    ],
+    "tags": [
+      "toast",
+      "notification",
+      "alert",
+      "snackbar",
+      "feedback",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/basic-toast",
+    "docs": "https://smoothui.dev/docs/components/basic-toast",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/blur-out-up",
+    "source": "smoothui",
+    "name": "blur-out-up",
+    "title": "Blur Out Up",
+    "description": "A BlurOutUp text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/blur-out-up",
+    "docs": "https://smoothui.dev/docs/components/blur-out-up",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/book",
+    "source": "smoothui",
+    "name": "book",
+    "title": "Book",
+    "description": "A 3D CSS book component with perspective transforms and hover animation",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "book",
+      "3d",
+      "css",
+      "perspective",
+      "hover",
+      "cover",
+      "decorative",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/book",
+    "docs": "https://smoothui.dev/docs/components/book",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/border-beam",
+    "source": "smoothui",
+    "name": "border-beam",
+    "title": "Border Beam",
+    "description": "A BorderBeam component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/border-beam",
+    "docs": "https://smoothui.dev/docs/components/border-beam",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/bottom-up-letters",
+    "source": "smoothui",
+    "name": "bottom-up-letters",
+    "title": "Bottom Up Letters",
+    "description": "A BottomUpLetters text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/bottom-up-letters",
+    "docs": "https://smoothui.dev/docs/components/bottom-up-letters",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/breadcrumb",
+    "source": "smoothui",
+    "name": "breadcrumb",
+    "title": "Breadcrumb",
+    "description": "Animated breadcrumb navigation with stagger-in animation",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/breadcrumb",
+    "docs": "https://smoothui.dev/docs/components/breadcrumb",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/breakpoint-indicator",
+    "source": "smoothui",
+    "name": "breakpoint-indicator",
+    "title": "Breakpoint Indicator",
+    "description": "A BreakpointIndicator component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/breakpoint-indicator",
+    "docs": "https://smoothui.dev/docs/components/breakpoint-indicator",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/button-copy",
+    "source": "smoothui",
+    "name": "button-copy",
+    "title": "Button Copy",
+    "description": "A ButtonCopy component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "button",
+      "copy",
+      "clipboard",
+      "feedback",
+      "icon-swap",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/button-copy",
+    "docs": "https://smoothui.dev/docs/components/button-copy",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/card-swipe-deck",
+    "source": "smoothui",
+    "name": "card-swipe-deck",
+    "title": "Card Swipe Deck",
+    "description": "A CardSwipeDeck component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/card-swipe-deck",
+    "docs": "https://smoothui.dev/docs/components/card-swipe-deck",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/checkbox",
+    "source": "smoothui",
+    "name": "checkbox",
+    "title": "Checkbox",
+    "description": "An animated Checkbox component for SmoothUI with checkmark and indeterminate state animations.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "checkbox",
+      "form",
+      "input",
+      "toggle",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/checkbox",
+    "docs": "https://smoothui.dev/docs/components/checkbox",
+    "dependencies": [
+      "motion",
+      "radix-ui"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/chroma-blur-transition",
+    "source": "smoothui",
+    "name": "chroma-blur-transition",
+    "title": "Chroma Blur Transition",
+    "description": "Persistent WebGL shader transition wrapper that swaps content under a soft chromatic blur wash.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/chroma-blur-transition",
+    "docs": "https://smoothui.dev/docs/components/chroma-blur-transition",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/clip-corners-button",
+    "source": "smoothui",
+    "name": "clip-corners-button",
+    "title": "Clip Corners Button",
+    "description": "A ClipCornersButton component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "button",
+      "clip-path",
+      "corners",
+      "geometric",
+      "hover",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/clip-corners-button",
+    "docs": "https://smoothui.dev/docs/components/clip-corners-button",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/code-block",
+    "source": "smoothui",
+    "name": "code-block",
+    "title": "Code Block",
+    "description": "A CodeBlock component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/code-block",
+    "docs": "https://smoothui.dev/docs/components/code-block",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/combobox",
+    "source": "smoothui",
+    "name": "combobox",
+    "title": "Combobox",
+    "description": "An animated Combobox component for SmoothUI with text filtering, async search, and keyboard navigation.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/combobox",
+    "docs": "https://smoothui.dev/docs/components/combobox",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/context-menu",
+    "source": "smoothui",
+    "name": "context-menu",
+    "title": "Context Menu",
+    "description": "An animated Context Menu component for SmoothUI with spring animations, nested submenus, and keyboard navigation.",
+    "kind": "component",
+    "categories": [
+      "navigation",
+      "text-effect"
+    ],
+    "tags": [
+      "context-menu",
+      "menu",
+      "right-click",
+      "submenu",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/context-menu",
+    "docs": "https://smoothui.dev/docs/components/context-menu",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/contribution-graph",
+    "source": "smoothui",
+    "name": "contribution-graph",
+    "title": "Contribution Graph",
+    "description": "A ContributionGraph component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "chart",
+      "dashboard"
+    ],
+    "tags": [
+      "graph",
+      "heatmap",
+      "calendar",
+      "github",
+      "activity",
+      "data-visualization",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/contribution-graph",
+    "docs": "https://smoothui.dev/docs/components/contribution-graph",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/country-dialog",
+    "source": "smoothui",
+    "name": "country-dialog",
+    "title": "Country Dialog",
+    "description": "A CountryDialog component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "dialog",
+      "country",
+      "picker",
+      "search",
+      "listbox",
+      "combobox",
+      "virtualized",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/country-dialog",
+    "docs": "https://smoothui.dev/docs/components/country-dialog",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/coverflow-carousel",
+    "source": "smoothui",
+    "name": "coverflow-carousel",
+    "title": "Coverflow Carousel",
+    "description": "A CoverflowCarousel component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/coverflow-carousel",
+    "docs": "https://smoothui.dev/docs/components/coverflow-carousel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/cta-1",
+    "source": "smoothui",
+    "name": "cta-1",
+    "title": "Cta 1",
+    "description": "Centered CTA block with radial glow background",
+    "kind": "block",
+    "categories": [
+      "cta"
+    ],
+    "tags": [
+      "cta",
+      "call-to-action",
+      "centered",
+      "marketing",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/cta-1",
+    "docs": "https://smoothui.dev/docs/blocks/cta",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/cta-2",
+    "source": "smoothui",
+    "name": "cta-2",
+    "title": "Cta 2",
+    "description": "Split layout CTA block with text and illustration",
+    "kind": "block",
+    "categories": [
+      "cta"
+    ],
+    "tags": [
+      "cta",
+      "call-to-action",
+      "split",
+      "marketing",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/cta-2",
+    "docs": "https://smoothui.dev/docs/blocks/cta",
+    "dependencies": [
+      "@smoothui/data",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/cta-3",
+    "source": "smoothui",
+    "name": "cta-3",
+    "title": "Cta 3",
+    "description": "Compact banner CTA block",
+    "kind": "block",
+    "categories": [
+      "cta"
+    ],
+    "tags": [
+      "cta",
+      "call-to-action",
+      "banner",
+      "compact",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/cta-3",
+    "docs": "https://smoothui.dev/docs/blocks/cta",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/cursor-follow",
+    "source": "smoothui",
+    "name": "cursor-follow",
+    "title": "Cursor Follow",
+    "description": "A CursorFollow component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "cursor",
+      "follow",
+      "mouse",
+      "interactive",
+      "bubble",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/cursor-follow",
+    "docs": "https://smoothui.dev/docs/components/cursor-follow",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/cursor-image-trail",
+    "source": "smoothui",
+    "name": "cursor-image-trail",
+    "title": "Cursor Image Trail",
+    "description": "A CursorImageTrail component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image",
+      "cursor"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/cursor-image-trail",
+    "docs": "https://smoothui.dev/docs/components/cursor-image-trail",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/depth-parallax-words",
+    "source": "smoothui",
+    "name": "depth-parallax-words",
+    "title": "Depth Parallax Words",
+    "description": "A DepthParallaxWords text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect",
+      "scroll-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/depth-parallax-words",
+    "docs": "https://smoothui.dev/docs/components/depth-parallax-words",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dialog",
+    "source": "smoothui",
+    "name": "dialog",
+    "title": "Dialog",
+    "description": "Animated Dialog and AlertDialog components for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dialog",
+    "docs": "https://smoothui.dev/docs/components/dialog",
+    "dependencies": [
+      "lucide-react",
+      "motion",
+      "radix-ui"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dither-chart",
+    "source": "smoothui",
+    "name": "dither-chart",
+    "title": "Dither Chart",
+    "description": "A DitherChart component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dither-chart",
+    "docs": "https://smoothui.dev/docs/components/dither-chart",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dither-image",
+    "source": "smoothui",
+    "name": "dither-image",
+    "title": "Dither Image",
+    "description": "A DitherImage component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dither-image",
+    "docs": "https://smoothui.dev/docs/components/dither-image",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dock",
+    "source": "smoothui",
+    "name": "dock",
+    "title": "Dock",
+    "description": "A Dock component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dock",
+    "docs": "https://smoothui.dev/docs/components/dock",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dot-morph-button",
+    "source": "smoothui",
+    "name": "dot-morph-button",
+    "title": "Dot Morph Button",
+    "description": "A DotMorphButton component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "button",
+      "dot",
+      "morph",
+      "hover",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dot-morph-button",
+    "docs": "https://smoothui.dev/docs/components/dot-morph-button",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/drawer",
+    "source": "smoothui",
+    "name": "drawer",
+    "title": "Drawer",
+    "description": "An animated Drawer component for SmoothUI that slides from any side.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/drawer",
+    "docs": "https://smoothui.dev/docs/components/drawer",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/drawing-cursor",
+    "source": "smoothui",
+    "name": "drawing-cursor",
+    "title": "Drawing Cursor",
+    "description": "A DrawingCursor component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/drawing-cursor",
+    "docs": "https://smoothui.dev/docs/components/drawing-cursor",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dropdown-menu",
+    "source": "smoothui",
+    "name": "dropdown-menu",
+    "title": "Dropdown Menu",
+    "description": "An animated Dropdown Menu component for SmoothUI with spring animations, nested submenus, and keyboard navigation.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "dropdown",
+      "menu",
+      "navigation",
+      "submenu",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dropdown-menu",
+    "docs": "https://smoothui.dev/docs/components/dropdown-menu",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/duration-picker",
+    "source": "smoothui",
+    "name": "duration-picker",
+    "title": "Duration Picker",
+    "description": "A DurationPicker component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/duration-picker",
+    "docs": "https://smoothui.dev/docs/components/duration-picker",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/dynamic-island",
+    "source": "smoothui",
+    "name": "dynamic-island",
+    "title": "Dynamic Island",
+    "description": "A DynamicIsland component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "dynamic-island",
+      "apple",
+      "notification",
+      "music",
+      "timer",
+      "morph",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dynamic-island",
+    "docs": "https://smoothui.dev/docs/components/dynamic-island",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/emboss-surface",
+    "source": "smoothui",
+    "name": "emboss-surface",
+    "title": "Emboss Surface",
+    "description": "An EmbossSurface component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/emboss-surface",
+    "docs": "https://smoothui.dev/docs/components/emboss-surface",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/emoji-reaction",
+    "source": "smoothui",
+    "name": "emoji-reaction",
+    "title": "Emoji Reaction",
+    "description": "A reaction bar with particle bursts, a rolling odometer count, and a hover/focus emoji picker.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "reaction",
+      "emoji",
+      "picker",
+      "popover",
+      "gesture",
+      "interactive",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/emoji-reaction",
+    "docs": "https://smoothui.dev/docs/components/emoji-reaction",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/expandable-cards",
+    "source": "smoothui",
+    "name": "expandable-cards",
+    "title": "Expandable Cards",
+    "description": "A ExpandableCards component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "cards",
+      "expandable",
+      "modal",
+      "gallery",
+      "layout-animation",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/expandable-cards",
+    "docs": "https://smoothui.dev/docs/components/expandable-cards",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/expandable-navbar",
+    "source": "smoothui",
+    "name": "expandable-navbar",
+    "title": "Expandable Navbar",
+    "description": "An ExpandableNavbar component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/expandable-navbar",
+    "docs": "https://smoothui.dev/docs/components/expandable-navbar",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/exposure-slider",
+    "source": "smoothui",
+    "name": "exposure-slider",
+    "title": "Exposure Slider",
+    "description": "iOS-style exposure slider with draggable ticker and progress ring",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "slider",
+      "exposure",
+      "ios",
+      "ticker",
+      "progress-ring",
+      "gesture",
+      "drag",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/exposure-slider",
+    "docs": "https://smoothui.dev/docs/components/exposure-slider",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/fade-through",
+    "source": "smoothui",
+    "name": "fade-through",
+    "title": "Fade Through",
+    "description": "A FadeThrough text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/fade-through",
+    "docs": "https://smoothui.dev/docs/components/fade-through",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/faq-1",
+    "source": "smoothui",
+    "name": "faq-1",
+    "title": "Faq 1",
+    "description": "FAQ grid block with categorized tabs and icons",
+    "kind": "block",
+    "categories": [
+      "faq"
+    ],
+    "tags": [
+      "faq",
+      "grid",
+      "tabs",
+      "categories",
+      "icons",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/faq-1",
+    "docs": "https://smoothui.dev/docs/blocks/faqs",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/faq-2",
+    "source": "smoothui",
+    "name": "faq-2",
+    "title": "Faq 2",
+    "description": "FAQ accordion block with expandable questions",
+    "kind": "block",
+    "categories": [
+      "faq"
+    ],
+    "tags": [
+      "faq",
+      "accordion",
+      "collapsible",
+      "expandable",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/faq-2",
+    "docs": "https://smoothui.dev/docs/blocks/faqs",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/faq-3",
+    "source": "smoothui",
+    "name": "faq-3",
+    "title": "Faq 3",
+    "description": "Searchable FAQ section with filter animations",
+    "kind": "block",
+    "categories": [
+      "faq"
+    ],
+    "tags": [
+      "faq",
+      "search",
+      "filter",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/faq-3",
+    "docs": "https://smoothui.dev/docs/blocks/faqs",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/faq-4",
+    "source": "smoothui",
+    "name": "faq-4",
+    "title": "Faq 4",
+    "description": "Categorized FAQ section with tab navigation",
+    "kind": "block",
+    "categories": [
+      "faq"
+    ],
+    "tags": [
+      "faq",
+      "tabs",
+      "categories",
+      "navigation",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/faq-4",
+    "docs": "https://smoothui.dev/docs/blocks/faqs",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/favicon-search",
+    "source": "smoothui",
+    "name": "favicon-search",
+    "title": "Favicon Search",
+    "description": "A keyboard-driven search field that shows each result's favicon, with a combobox listbox and highlighted matches.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/favicon-search",
+    "docs": "https://smoothui.dev/docs/components/favicon-search",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/features-1",
+    "source": "smoothui",
+    "name": "features-1",
+    "title": "Features 1",
+    "description": "Feature grid block with animated cards",
+    "kind": "block",
+    "categories": [
+      "features"
+    ],
+    "tags": [
+      "features",
+      "grid",
+      "cards",
+      "marketing",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/features-1",
+    "docs": "https://smoothui.dev/docs/blocks/features",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/features-2",
+    "source": "smoothui",
+    "name": "features-2",
+    "title": "Features 2",
+    "description": "Bento grid features block with asymmetric layout",
+    "kind": "block",
+    "categories": [
+      "features"
+    ],
+    "tags": [
+      "features",
+      "bento",
+      "grid",
+      "asymmetric",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/features-2",
+    "docs": "https://smoothui.dev/docs/blocks/features",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/features-3",
+    "source": "smoothui",
+    "name": "features-3",
+    "title": "Features 3",
+    "description": "Alternating features block with side-by-side layout",
+    "kind": "block",
+    "categories": [
+      "features"
+    ],
+    "tags": [
+      "features",
+      "alternating",
+      "zigzag",
+      "marketing",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/features-3",
+    "docs": "https://smoothui.dev/docs/blocks/features",
+    "dependencies": [
+      "@smoothui/data",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/figma-comment",
+    "source": "smoothui",
+    "name": "figma-comment",
+    "title": "Figma Comment",
+    "description": "A FigmaComment component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "comment",
+      "figma",
+      "avatar",
+      "popover",
+      "morph",
+      "collaborative",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/figma-comment",
+    "docs": "https://smoothui.dev/docs/components/figma-comment",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/file-tree",
+    "source": "smoothui",
+    "name": "file-tree",
+    "title": "File Tree",
+    "description": "A FileTree component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "tree",
+      "file-tree",
+      "explorer",
+      "navigation",
+      "keyboard",
+      "accordion",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/file-tree",
+    "docs": "https://smoothui.dev/docs/components/file-tree",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/floating-navbar",
+    "source": "smoothui",
+    "name": "floating-navbar",
+    "title": "Floating Navbar",
+    "description": "A FloatingNavbar component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "navbar",
+      "navigation",
+      "scroll",
+      "pill",
+      "sticky",
+      "blur",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/floating-navbar",
+    "docs": "https://smoothui.dev/docs/components/floating-navbar",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/focus-blur-resolve",
+    "source": "smoothui",
+    "name": "focus-blur-resolve",
+    "title": "Focus Blur Resolve",
+    "description": "A FocusBlurResolve text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/focus-blur-resolve",
+    "docs": "https://smoothui.dev/docs/components/focus-blur-resolve",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/folder-reveal",
+    "source": "smoothui",
+    "name": "folder-reveal",
+    "title": "Folder Reveal",
+    "description": "A FolderReveal component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "folder",
+      "reveal",
+      "fan",
+      "stack",
+      "hover",
+      "click",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/folder-reveal",
+    "docs": "https://smoothui.dev/docs/components/folder-reveal",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/footer-1",
+    "source": "smoothui",
+    "name": "footer-1",
+    "title": "Footer 1",
+    "description": "Simple footer block with links and social icons",
+    "kind": "block",
+    "categories": [
+      "footer"
+    ],
+    "tags": [
+      "footer",
+      "links",
+      "social",
+      "simple",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/footer-1",
+    "docs": "https://smoothui.dev/docs/blocks/footer",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/footer-2",
+    "source": "smoothui",
+    "name": "footer-2",
+    "title": "Footer 2",
+    "description": "Complex footer block with newsletter and extended links",
+    "kind": "block",
+    "categories": [
+      "footer"
+    ],
+    "tags": [
+      "footer",
+      "newsletter",
+      "links",
+      "complex",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/footer-2",
+    "docs": "https://smoothui.dev/docs/blocks/footer",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/footer-3",
+    "source": "smoothui",
+    "name": "footer-3",
+    "title": "Footer 3",
+    "description": "Mega footer with newsletter and social links",
+    "kind": "block",
+    "categories": [
+      "footer"
+    ],
+    "tags": [
+      "footer",
+      "mega",
+      "newsletter",
+      "social",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/footer-3",
+    "docs": "https://smoothui.dev/docs/blocks/footer",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/footer-4",
+    "source": "smoothui",
+    "name": "footer-4",
+    "title": "Footer 4",
+    "description": "Minimal single-row footer",
+    "kind": "block",
+    "categories": [
+      "footer"
+    ],
+    "tags": [
+      "footer",
+      "minimal",
+      "single-row",
+      "compact",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/footer-4",
+    "docs": "https://smoothui.dev/docs/blocks/footer",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/form",
+    "source": "smoothui",
+    "name": "form",
+    "title": "Form",
+    "description": "A lightweight, composable Form component with animated error messages and full accessibility support.",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [
+      "form",
+      "validation",
+      "error",
+      "input",
+      "accessible",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/form",
+    "docs": "https://smoothui.dev/docs/components/form",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/github-stars-animation",
+    "source": "smoothui",
+    "name": "github-stars-animation",
+    "title": "Github Stars Animation",
+    "description": "A GitHubStarsAnimation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "github",
+      "stars",
+      "counter",
+      "social-proof",
+      "api",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/github-stars-animation",
+    "docs": "https://smoothui.dev/docs/components/github-stars-animation",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/glass-card",
+    "source": "smoothui",
+    "name": "glass-card",
+    "title": "Glass Card",
+    "description": "A GlassCard component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "glass",
+      "glassmorphism",
+      "blur",
+      "specular",
+      "refraction",
+      "card",
+      "interactive",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/glass-card",
+    "docs": "https://smoothui.dev/docs/components/glass-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/glow-hover-card",
+    "source": "smoothui",
+    "name": "glow-hover-card",
+    "title": "Glow Hover Card",
+    "description": "A GlowHoverCards component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "card",
+      "glow",
+      "hover",
+      "gradient",
+      "mask",
+      "interactive",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/glow-hover-card",
+    "docs": "https://smoothui.dev/docs/components/glow-hover-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/gooey-filter",
+    "source": "smoothui",
+    "name": "gooey-filter",
+    "title": "Gooey Filter",
+    "description": "A GooeyFilter component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "gooey",
+      "svg-filter",
+      "blob",
+      "merge",
+      "utility",
+      "wrapper",
+      "complexity-low"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/gooey-filter",
+    "docs": "https://smoothui.dev/docs/components/gooey-filter",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/gooey-popover",
+    "source": "smoothui",
+    "name": "gooey-popover",
+    "title": "Gooey Popover",
+    "description": "A GooeyPopover component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "popover",
+      "gooey",
+      "svg-filter",
+      "gsap",
+      "morph",
+      "blob",
+      "tween",
+      "complexity-high"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/gooey-popover",
+    "docs": "https://smoothui.dev/docs/components/gooey-popover",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/gravity-letters",
+    "source": "smoothui",
+    "name": "gravity-letters",
+    "title": "Gravity Letters",
+    "description": "A GravityLetters component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/gravity-letters",
+    "docs": "https://smoothui.dev/docs/components/gravity-letters",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/gravity-stars",
+    "source": "smoothui",
+    "name": "gravity-stars",
+    "title": "Gravity Stars",
+    "description": "A GravityStars particle background component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/gravity-stars",
+    "docs": "https://smoothui.dev/docs/components/gravity-stars",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/grid-loader",
+    "source": "smoothui",
+    "name": "grid-loader",
+    "title": "Grid Loader",
+    "description": "3x3 grid-based loading animation with preset patterns",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "loader"
+    ],
+    "tags": [
+      "loader",
+      "grid",
+      "loading",
+      "spinner",
+      "pattern",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/grid-loader",
+    "docs": "https://smoothui.dev/docs/components/grid-loader",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/header-1",
+    "source": "smoothui",
+    "name": "header-1",
+    "title": "Header 1",
+    "description": "Modern header block with navigation and mobile menu",
+    "kind": "block",
+    "categories": [
+      "hero"
+    ],
+    "tags": [
+      "header",
+      "hero",
+      "navigation",
+      "grid",
+      "interactive",
+      "tween",
+      "complexity-high"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/header-1",
+    "docs": "https://smoothui.dev/docs/blocks/hero",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/header-2",
+    "source": "smoothui",
+    "name": "header-2",
+    "title": "Header 2",
+    "description": "Premium header block with gradient logo and smooth animations",
+    "kind": "block",
+    "categories": [
+      "hero"
+    ],
+    "tags": [
+      "header",
+      "hero",
+      "navigation",
+      "gradient",
+      "premium",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/header-2",
+    "docs": "https://smoothui.dev/docs/blocks/hero",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/header-3",
+    "source": "smoothui",
+    "name": "header-3",
+    "title": "Header 3",
+    "description": "Premium header block with gradient logo and smooth animations",
+    "kind": "block",
+    "categories": [
+      "hero"
+    ],
+    "tags": [
+      "header",
+      "hero",
+      "navigation",
+      "gradient",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/header-3",
+    "docs": "https://smoothui.dev/docs/blocks/hero",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/header-4",
+    "source": "smoothui",
+    "name": "header-4",
+    "title": "Header 4",
+    "description": "Interactive 3D grid hero header inspired by rauno.me 2024",
+    "kind": "block",
+    "categories": [
+      "hero"
+    ],
+    "tags": [
+      "header",
+      "hero",
+      "3d",
+      "grid",
+      "interactive",
+      "tween",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/header-4",
+    "docs": "https://smoothui.dev/docs/blocks/hero",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/header-5",
+    "source": "smoothui",
+    "name": "header-5",
+    "title": "Header 5",
+    "description": "Spotlight hero block with dark theme and gradient text",
+    "kind": "block",
+    "categories": [
+      "hero"
+    ],
+    "tags": [
+      "hero",
+      "header",
+      "spotlight",
+      "dark",
+      "gradient",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/header-5",
+    "docs": "https://smoothui.dev/docs/blocks/hero",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/header-6",
+    "source": "smoothui",
+    "name": "header-6",
+    "title": "Header 6",
+    "description": "Minimal hero block with clean typography",
+    "kind": "block",
+    "categories": [
+      "hero"
+    ],
+    "tags": [
+      "hero",
+      "header",
+      "minimal",
+      "clean",
+      "typography",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/header-6",
+    "docs": "https://smoothui.dev/docs/blocks/hero",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/holographic-foil",
+    "source": "smoothui",
+    "name": "holographic-foil",
+    "title": "Holographic Foil",
+    "description": "A HolographicFoil component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/holographic-foil",
+    "docs": "https://smoothui.dev/docs/components/holographic-foil",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/hover-expand",
+    "source": "smoothui",
+    "name": "hover-expand",
+    "title": "Hover Expand",
+    "description": "A HoverExpand component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "gallery",
+      "accordion",
+      "hover",
+      "expand",
+      "flex",
+      "image",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/hover-expand",
+    "docs": "https://smoothui.dev/docs/components/hover-expand",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/hover-image-list",
+    "source": "smoothui",
+    "name": "hover-image-list",
+    "title": "Hover Image List",
+    "description": "A HoverImageList component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/hover-image-list",
+    "docs": "https://smoothui.dev/docs/components/hover-image-list",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/image-generation-panel",
+    "source": "smoothui",
+    "name": "image-generation-panel",
+    "title": "Image Generation Panel",
+    "description": "A text-to-image generation console — prompt and settings up top, a full-width 2x2 batch resolving from low-res mosaic to sharp below.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "image"
+    ],
+    "tags": [
+      "ai",
+      "image",
+      "generation",
+      "prompt",
+      "grid",
+      "progressive",
+      "reveal",
+      "mosaic",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/image-generation-panel",
+    "docs": "https://smoothui.dev/docs/components/image-generation-panel",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/image-metadata-preview",
+    "source": "smoothui",
+    "name": "image-metadata-preview",
+    "title": "Image Metadata Preview",
+    "description": "A ImageMetadataPreview component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "image",
+      "metadata",
+      "preview",
+      "expandable",
+      "file-info",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/image-metadata-preview",
+    "docs": "https://smoothui.dev/docs/components/image-metadata-preview",
+    "dependencies": [
+      "motion",
+      "lucide-react",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/infinite-slider",
+    "source": "smoothui",
+    "name": "infinite-slider",
+    "title": "Infinite Slider",
+    "description": "A InfiniteSlider component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "slider",
+      "infinite",
+      "marquee",
+      "carousel",
+      "auto-scroll",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/infinite-slider",
+    "docs": "https://smoothui.dev/docs/components/infinite-slider",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/inline-testimonials",
+    "source": "smoothui",
+    "name": "inline-testimonials",
+    "title": "Inline Testimonials",
+    "description": "Testimonial quotes woven into a paragraph that expand inline on hover or focus.",
+    "kind": "component",
+    "categories": [
+      "testimonials"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/inline-testimonials",
+    "docs": "https://smoothui.dev/docs/components/inline-testimonials",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/interactive-image-selector",
+    "source": "smoothui",
+    "name": "interactive-image-selector",
+    "title": "Interactive Image Selector",
+    "description": "A InteractiveImageSelector component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image",
+      "input"
+    ],
+    "tags": [
+      "image",
+      "selector",
+      "gallery",
+      "selection",
+      "gesture",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/interactive-image-selector",
+    "docs": "https://smoothui.dev/docs/components/interactive-image-selector",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/job-listing-component",
+    "source": "smoothui",
+    "name": "job-listing-component",
+    "title": "Job Listing Component",
+    "description": "A JobListingComponent component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "job",
+      "listing",
+      "card",
+      "expandable",
+      "careers",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/job-listing-component",
+    "docs": "https://smoothui.dev/docs/components/job-listing-component",
+    "dependencies": [
+      "motion",
+      "usehooks-ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/kinetic-center-build",
+    "source": "smoothui",
+    "name": "kinetic-center-build",
+    "title": "Kinetic Center Build",
+    "description": "A KineticCenterBuild text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/kinetic-center-build",
+    "docs": "https://smoothui.dev/docs/components/kinetic-center-build",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/kinetic-type-scroll",
+    "source": "smoothui",
+    "name": "kinetic-type-scroll",
+    "title": "Kinetic Type Scroll",
+    "description": "A KineticTypeScroll text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "kinetic",
+      "scroll",
+      "editorial",
+      "variable-font",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/kinetic-type-scroll",
+    "docs": "https://smoothui.dev/docs/components/kinetic-type-scroll",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/line-by-line-slide",
+    "source": "smoothui",
+    "name": "line-by-line-slide",
+    "title": "Line By Line Slide",
+    "description": "A LineByLineSlide text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/line-by-line-slide",
+    "docs": "https://smoothui.dev/docs/components/line-by-line-slide",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/liquid-metal",
+    "source": "smoothui",
+    "name": "liquid-metal",
+    "title": "Liquid Metal",
+    "description": "A LiquidMetal component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/liquid-metal",
+    "docs": "https://smoothui.dev/docs/components/liquid-metal",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/logo-cloud-1",
+    "source": "smoothui",
+    "name": "logo-cloud-1",
+    "title": "Logo Cloud 1",
+    "description": "Simple logo cloud block with grid layout",
+    "kind": "block",
+    "categories": [
+      "logo-cloud"
+    ],
+    "tags": [
+      "logo",
+      "cloud",
+      "grid",
+      "partners",
+      "clients",
+      "trust",
+      "complexity-low"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/logo-cloud-1",
+    "docs": "https://smoothui.dev/docs/blocks/logo-clouds",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/logo-cloud-2",
+    "source": "smoothui",
+    "name": "logo-cloud-2",
+    "title": "Logo Cloud 2",
+    "description": "Animated logo cloud block with infinite scroll",
+    "kind": "block",
+    "categories": [
+      "logo-cloud"
+    ],
+    "tags": [
+      "logo",
+      "cloud",
+      "infinite-scroll",
+      "marquee",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/logo-cloud-2",
+    "docs": "https://smoothui.dev/docs/blocks/logo-clouds",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/logo-cloud-3",
+    "source": "smoothui",
+    "name": "logo-cloud-3",
+    "title": "Logo Cloud 3",
+    "description": "Infinite scrolling logo marquee",
+    "kind": "block",
+    "categories": [
+      "logo-cloud"
+    ],
+    "tags": [
+      "logo",
+      "cloud",
+      "marquee",
+      "infinite-scroll",
+      "css",
+      "tween",
+      "complexity-low"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/logo-cloud-3",
+    "docs": "https://smoothui.dev/docs/blocks/logo-clouds",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/logo-cloud-4",
+    "source": "smoothui",
+    "name": "logo-cloud-4",
+    "title": "Logo Cloud 4",
+    "description": "Interactive logo grid with hover effects",
+    "kind": "block",
+    "categories": [
+      "logo-cloud"
+    ],
+    "tags": [
+      "logo",
+      "cloud",
+      "grid",
+      "hover",
+      "interactive",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/logo-cloud-4",
+    "docs": "https://smoothui.dev/docs/blocks/logo-clouds",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/mac-terminal",
+    "source": "smoothui",
+    "name": "mac-terminal",
+    "title": "Mac Terminal",
+    "description": "A MacTerminal component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/mac-terminal",
+    "docs": "https://smoothui.dev/docs/components/mac-terminal",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/magnetic-button",
+    "source": "smoothui",
+    "name": "magnetic-button",
+    "title": "Magnetic Button",
+    "description": "Button that subtly follows the cursor with magnetic effect",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "button",
+      "magnetic",
+      "cursor",
+      "hover",
+      "spring",
+      "interactive",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/magnetic-button",
+    "docs": "https://smoothui.dev/docs/components/magnetic-button",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/magnetic-field",
+    "source": "smoothui",
+    "name": "magnetic-field",
+    "title": "Magnetic Field",
+    "description": "A MagneticField component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/magnetic-field",
+    "docs": "https://smoothui.dev/docs/components/magnetic-field",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/mask-reveal-up",
+    "source": "smoothui",
+    "name": "mask-reveal-up",
+    "title": "Mask Reveal Up",
+    "description": "A MaskRevealUp text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/mask-reveal-up",
+    "docs": "https://smoothui.dev/docs/components/mask-reveal-up",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/micro-scale-fade",
+    "source": "smoothui",
+    "name": "micro-scale-fade",
+    "title": "Micro Scale Fade",
+    "description": "A MicroScaleFade text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/micro-scale-fade",
+    "docs": "https://smoothui.dev/docs/components/micro-scale-fade",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/morph-icon",
+    "source": "smoothui",
+    "name": "morph-icon",
+    "title": "Morph Icon",
+    "description": "A MorphIcon component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/morph-icon",
+    "docs": "https://smoothui.dev/docs/components/morph-icon",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/morph-surface",
+    "source": "smoothui",
+    "name": "morph-surface",
+    "title": "Morph Surface",
+    "description": "Feedback dock that morphs from a compact pill into a panel and back, with a spring layout transition.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/morph-surface",
+    "docs": "https://smoothui.dev/docs/components/morph-surface",
+    "dependencies": [
+      "class-variance-authority",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/motion-loader",
+    "source": "smoothui",
+    "name": "motion-loader",
+    "title": "Motion Loader",
+    "description": "A MotionLoader component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "loader",
+      "spinner",
+      "loading",
+      "progress",
+      "status",
+      "svg",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/motion-loader",
+    "docs": "https://smoothui.dev/docs/components/motion-loader",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/music-toggle",
+    "source": "smoothui",
+    "name": "music-toggle",
+    "title": "Music Toggle",
+    "description": "A play/pause control shaped like a spinning record, with a live waveform and seekable progress ring.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "audio",
+      "music",
+      "player",
+      "record",
+      "waveform",
+      "progress",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/music-toggle",
+    "docs": "https://smoothui.dev/docs/components/music-toggle",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/notification-badge",
+    "source": "smoothui",
+    "name": "notification-badge",
+    "title": "Notification Badge",
+    "description": "Animated notification badge with count and status variants",
+    "kind": "component",
+    "categories": [
+      "toast",
+      "badge"
+    ],
+    "tags": [
+      "badge",
+      "notification",
+      "count",
+      "status",
+      "dot",
+      "ping",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/notification-badge",
+    "docs": "https://smoothui.dev/docs/components/notification-badge",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/number-flow",
+    "source": "smoothui",
+    "name": "number-flow",
+    "title": "Number Flow",
+    "description": "A NumberFlow component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "number",
+      "counter",
+      "odometer",
+      "digit",
+      "transition",
+      "tween",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/number-flow",
+    "docs": "https://smoothui.dev/docs/components/number-flow",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/orb",
+    "source": "smoothui",
+    "name": "orb",
+    "title": "Orb",
+    "description": "An Orb component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/orb",
+    "docs": "https://smoothui.dev/docs/components/orb",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/orbital-image-wheel",
+    "source": "smoothui",
+    "name": "orbital-image-wheel",
+    "title": "Orbital Image Wheel",
+    "description": "An OrbitalImageWheel component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image",
+      "loader"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/orbital-image-wheel",
+    "docs": "https://smoothui.dev/docs/components/orbital-image-wheel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/organic-merge-transition",
+    "source": "smoothui",
+    "name": "organic-merge-transition",
+    "title": "Organic Merge Transition",
+    "description": "A soft-min SDF merge transition with two organic expanding shapes.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/organic-merge-transition",
+    "docs": "https://smoothui.dev/docs/components/organic-merge-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/page-preloader",
+    "source": "smoothui",
+    "name": "page-preloader",
+    "title": "Page Preloader",
+    "description": "A page-preloader curtain that plays once and then uncovers the page.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/page-preloader",
+    "docs": "https://smoothui.dev/docs/components/page-preloader",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pagination",
+    "source": "smoothui",
+    "name": "pagination",
+    "title": "Pagination",
+    "description": "Animated pagination with spring-based active page indicator",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pagination",
+    "docs": "https://smoothui.dev/docs/components/pagination",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/parallax-layers",
+    "source": "smoothui",
+    "name": "parallax-layers",
+    "title": "Parallax Layers",
+    "description": "Multi-layer depth parallax for hero sections, with optional pointer-driven parallax.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/parallax-layers",
+    "docs": "https://smoothui.dev/docs/components/parallax-layers",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/per-character-rise",
+    "source": "smoothui",
+    "name": "per-character-rise",
+    "title": "Per Character Rise",
+    "description": "A PerCharacterRise text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/per-character-rise",
+    "docs": "https://smoothui.dev/docs/components/per-character-rise",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/per-word-crossfade",
+    "source": "smoothui",
+    "name": "per-word-crossfade",
+    "title": "Per Word Crossfade",
+    "description": "A PerWordCrossfade text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/per-word-crossfade",
+    "docs": "https://smoothui.dev/docs/components/per-word-crossfade",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/perspective-text-3d",
+    "source": "smoothui",
+    "name": "perspective-text-3d",
+    "title": "Perspective Text3d",
+    "description": "A PerspectiveText3D text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect",
+      "3d"
+    ],
+    "tags": [
+      "text",
+      "3d",
+      "perspective",
+      "depth",
+      "scroll",
+      "pointer",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/perspective-text-3d",
+    "docs": "https://smoothui.dev/docs/components/perspective-text-3d",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/photo-stack",
+    "source": "smoothui",
+    "name": "photo-stack",
+    "title": "Photo Stack",
+    "description": "A PhotoStack component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "photo",
+      "cards",
+      "stack",
+      "draggable",
+      "gesture",
+      "interactive",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/photo-stack",
+    "docs": "https://smoothui.dev/docs/components/photo-stack",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/phototab",
+    "source": "smoothui",
+    "name": "phototab",
+    "title": "Phototab",
+    "description": "A Phototab component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "tabs",
+      "photo",
+      "image",
+      "gallery",
+      "radix",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/phototab",
+    "docs": "https://smoothui.dev/docs/components/phototab",
+    "dependencies": [
+      "motion",
+      "@radix-ui/react-tabs"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pinned-list",
+    "source": "smoothui",
+    "name": "pinned-list",
+    "title": "Pinned List",
+    "description": "A list where selected items pin to the top and animate out of the flow into a pinned section.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "list",
+      "pin",
+      "layout",
+      "shared-layout",
+      "keyboard",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pinned-list",
+    "docs": "https://smoothui.dev/docs/components/pinned-list",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pixel-brush-canvas",
+    "source": "smoothui",
+    "name": "pixel-brush-canvas",
+    "title": "Pixel Brush Canvas",
+    "description": "A PixelBrushCanvas component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "3d"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pixel-brush-canvas",
+    "docs": "https://smoothui.dev/docs/components/pixel-brush-canvas",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pixel-flow-field",
+    "source": "smoothui",
+    "name": "pixel-flow-field",
+    "title": "Pixel Flow Field",
+    "description": "A PixelFlowField background component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pixel-flow-field",
+    "docs": "https://smoothui.dev/docs/components/pixel-flow-field",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/power-off-slide",
+    "source": "smoothui",
+    "name": "power-off-slide",
+    "title": "Power Off Slide",
+    "description": "A PowerOffSlide component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "slide",
+      "power-off",
+      "gesture",
+      "drag",
+      "confirmation",
+      "ios",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/power-off-slide",
+    "docs": "https://smoothui.dev/docs/components/power-off-slide",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/price-flow",
+    "source": "smoothui",
+    "name": "price-flow",
+    "title": "Price Flow",
+    "description": "A PriceFlow component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "price",
+      "counter",
+      "currency",
+      "digit",
+      "transition",
+      "tween",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/price-flow",
+    "docs": "https://smoothui.dev/docs/components/price-flow",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pricing-1",
+    "source": "smoothui",
+    "name": "pricing-1",
+    "title": "Pricing 1",
+    "description": "Simple pricing block with single plan",
+    "kind": "block",
+    "categories": [
+      "pricing"
+    ],
+    "tags": [
+      "pricing",
+      "plan",
+      "single",
+      "cta",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pricing-1",
+    "docs": "https://smoothui.dev/docs/blocks/pricing",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pricing-2",
+    "source": "smoothui",
+    "name": "pricing-2",
+    "title": "Pricing 2",
+    "description": "Modern pricing block with three tiers",
+    "kind": "block",
+    "categories": [
+      "pricing"
+    ],
+    "tags": [
+      "pricing",
+      "plans",
+      "tiers",
+      "comparison",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pricing-2",
+    "docs": "https://smoothui.dev/docs/blocks/pricing",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/pricing-3",
+    "source": "smoothui",
+    "name": "pricing-3",
+    "title": "Pricing 3",
+    "description": "Creative pricing block with two plans",
+    "kind": "block",
+    "categories": [
+      "pricing"
+    ],
+    "tags": [
+      "pricing",
+      "plans",
+      "creative",
+      "two-plans",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pricing-3",
+    "docs": "https://smoothui.dev/docs/blocks/pricing",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/prism-sweep-transition",
+    "source": "smoothui",
+    "name": "prism-sweep-transition",
+    "title": "Prism Sweep Transition",
+    "description": "A persistent WebGL prism sweep transition wrapper for route and state changes.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "transition",
+      "page-transition",
+      "route-transition",
+      "prism",
+      "sweep",
+      "gradient",
+      "motion",
+      "state-change",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/prism-sweep-transition",
+    "docs": "https://smoothui.dev/docs/components/prism-sweep-transition",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/product-card",
+    "source": "smoothui",
+    "name": "product-card",
+    "title": "Product Card",
+    "description": "Animated product card component for ecommerce",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/product-card",
+    "docs": "https://smoothui.dev/docs/components/product-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/progressive-blur",
+    "source": "smoothui",
+    "name": "progressive-blur",
+    "title": "Progressive Blur",
+    "description": "A ProgressiveBlur component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/progressive-blur",
+    "docs": "https://smoothui.dev/docs/components/progressive-blur",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/radial-circles-transition",
+    "source": "smoothui",
+    "name": "radial-circles-transition",
+    "title": "Radial Circles Transition",
+    "description": "A radial SDF circle pattern transition inspired by the Codrops radial circles step.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/radial-circles-transition",
+    "docs": "https://smoothui.dev/docs/components/radial-circles-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/radio-group",
+    "source": "smoothui",
+    "name": "radio-group",
+    "title": "Radio Group",
+    "description": "An animated Radio Group component for SmoothUI with selection indicator spring animation.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "radio",
+      "form",
+      "input",
+      "selection",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/radio-group",
+    "docs": "https://smoothui.dev/docs/components/radio-group",
+    "dependencies": [
+      "motion",
+      "radix-ui"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/ransom-note",
+    "source": "smoothui",
+    "name": "ransom-note",
+    "title": "Ransom Note",
+    "description": "A RansomNote component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "ransom-note",
+      "typography",
+      "playful",
+      "seeded-random",
+      "deterministic",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/ransom-note",
+    "docs": "https://smoothui.dev/docs/components/ransom-note",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/reveal-text",
+    "source": "smoothui",
+    "name": "reveal-text",
+    "title": "Reveal Text",
+    "description": "A RevealText component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "reveal",
+      "entrance",
+      "direction",
+      "scroll-trigger",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/reveal-text",
+    "docs": "https://smoothui.dev/docs/components/reveal-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/reviews-carousel",
+    "source": "smoothui",
+    "name": "reviews-carousel",
+    "title": "Reviews Carousel",
+    "description": "A ReviewsCarousel component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "carousel",
+      "reviews",
+      "testimonials",
+      "slider",
+      "cards",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/reviews-carousel",
+    "docs": "https://smoothui.dev/docs/components/reviews-carousel",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/rich-popover",
+    "source": "smoothui",
+    "name": "rich-popover",
+    "title": "Rich Popover",
+    "description": "A RichPopover component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "popover",
+      "tooltip",
+      "rich",
+      "radix",
+      "link-preview",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/rich-popover",
+    "docs": "https://smoothui.dev/docs/components/rich-popover",
+    "dependencies": [
+      "motion",
+      "lucide-react",
+      "@radix-ui/react-popover"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/rolling-text",
+    "source": "smoothui",
+    "name": "rolling-text",
+    "title": "Rolling Text",
+    "description": "A RollingText text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "odometer",
+      "split-flap",
+      "roll",
+      "counter",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/rolling-text",
+    "docs": "https://smoothui.dev/docs/components/rolling-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scale-down-fade",
+    "source": "smoothui",
+    "name": "scale-down-fade",
+    "title": "Scale Down Fade",
+    "description": "A ScaleDownFade text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scale-down-fade",
+    "docs": "https://smoothui.dev/docs/components/scale-down-fade",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scramble-hover",
+    "source": "smoothui",
+    "name": "scramble-hover",
+    "title": "Scramble Hover",
+    "description": "A ScrambleHover component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "scramble",
+      "hover",
+      "glitch",
+      "effect",
+      "interactive",
+      "tween",
+      "complexity-low"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scramble-hover",
+    "docs": "https://smoothui.dev/docs/components/scramble-hover",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scroll-image-reveal",
+    "source": "smoothui",
+    "name": "scroll-image-reveal",
+    "title": "Scroll Image Reveal",
+    "description": "An image revealed by an animated mask as it scrolls into view, with a counter-parallax on the image.",
+    "kind": "component",
+    "categories": [
+      "image",
+      "scroll-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scroll-image-reveal",
+    "docs": "https://smoothui.dev/docs/components/scroll-image-reveal",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scroll-progress",
+    "source": "smoothui",
+    "name": "scroll-progress",
+    "title": "Scroll Progress",
+    "description": "A reading-progress indicator with bar, ring, number and segmented variants.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "loader"
+    ],
+    "tags": [
+      "scroll",
+      "progress",
+      "reading",
+      "indicator",
+      "bar",
+      "ring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scroll-progress",
+    "docs": "https://smoothui.dev/docs/components/scroll-progress",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scroll-reveal-paragraph",
+    "source": "smoothui",
+    "name": "scroll-reveal-paragraph",
+    "title": "Scroll Reveal Paragraph",
+    "description": "A ScrollRevealParagraph component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "chart",
+      "scroll-effect",
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "scroll",
+      "reveal",
+      "paragraph",
+      "word-by-word",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scroll-reveal-paragraph",
+    "docs": "https://smoothui.dev/docs/components/scroll-reveal-paragraph",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scrollable-card-stack",
+    "source": "smoothui",
+    "name": "scrollable-card-stack",
+    "title": "Scrollable Card Stack",
+    "description": "A ScrollableCardStack component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card",
+      "scroll-effect"
+    ],
+    "tags": [
+      "cards",
+      "stack",
+      "scroll",
+      "perspective",
+      "3d",
+      "gesture",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scrollable-card-stack",
+    "docs": "https://smoothui.dev/docs/components/scrollable-card-stack",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/scrubber",
+    "source": "smoothui",
+    "name": "scrubber",
+    "title": "Scrubber",
+    "description": "Design-tool style scrubber slider with animated thumb and built-in label",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "slider",
+      "scrubber",
+      "range",
+      "input",
+      "drag",
+      "design-tool",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scrubber",
+    "docs": "https://smoothui.dev/docs/components/scrubber",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/sdf-blob-transition",
+    "source": "smoothui",
+    "name": "sdf-blob-transition",
+    "title": "Sdf Blob Transition",
+    "description": "A persistent WebGL SDF blob transition wrapper for route and state changes.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/sdf-blob-transition",
+    "docs": "https://smoothui.dev/docs/components/sdf-blob-transition",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/sdf-circle-transition",
+    "source": "smoothui",
+    "name": "sdf-circle-transition",
+    "title": "Sdf Circle Transition",
+    "description": "A clean SDF circle reveal based on the first Codrops shader step.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/sdf-circle-transition",
+    "docs": "https://smoothui.dev/docs/components/sdf-circle-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/searchable-dropdown",
+    "source": "smoothui",
+    "name": "searchable-dropdown",
+    "title": "Searchable Dropdown",
+    "description": "A SearchableDropdown component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "dropdown",
+      "search",
+      "select",
+      "filter",
+      "combobox",
+      "portal",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/searchable-dropdown",
+    "docs": "https://smoothui.dev/docs/components/searchable-dropdown",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/select",
+    "source": "smoothui",
+    "name": "select",
+    "title": "Select",
+    "description": "An animated Select dropdown component for SmoothUI wrapping Radix Select with smooth animations.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/select",
+    "docs": "https://smoothui.dev/docs/components/select",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-circle-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-circle-transition",
+    "title": "Shader Reveal Circle Transition",
+    "description": "Demo 3 adaptation: noisy circular reveal with radial interpolation.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-circle-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-circle-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-luma-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-luma-transition",
+    "title": "Shader Reveal Luma Transition",
+    "description": "Demo 5 adaptation: luminance-style vertical displacement translated into a shader overlay.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-luma-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-luma-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-noise-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-noise-transition",
+    "title": "Shader Reveal Noise Transition",
+    "description": "Demo 1 adaptation: 4D-noise threshold transition with an organic shader gate.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-noise-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-noise-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-planetary-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-planetary-transition",
+    "title": "Shader Reveal Planetary Transition",
+    "description": "Demo 6 adaptation: rotated displacement vectors with a planetary swirl feel.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-planetary-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-planetary-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-push-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-push-transition",
+    "title": "Shader Reveal Push Transition",
+    "description": "Demo 8 adaptation: procedural noise push/pull displacement.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-push-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-push-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-stripes-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-stripes-transition",
+    "title": "Shader Reveal Stripes Transition",
+    "description": "Demo 7 adaptation: divided UV stripe displacement with diagonal motion.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-stripes-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-stripes-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-transition",
+    "title": "Shader Reveal Transition",
+    "description": "A shared WebGL transition engine with eight shader-driven reveal variants.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-transition",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-wipe-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-wipe-transition",
+    "title": "Shader Reveal Wipe Transition",
+    "description": "Demo 4 adaptation: displacement-noise horizontal wipe with a sharp eased edge.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-wipe-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-wipe-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shader-reveal-zoom-transition",
+    "source": "smoothui",
+    "name": "shader-reveal-zoom-transition",
+    "title": "Shader Reveal Zoom Transition",
+    "description": "Demo 2 adaptation: vertical-progress zoom mix translated into a UI frame transition.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "background"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shader-reveal-zoom-transition",
+    "docs": "https://smoothui.dev/docs/components/shader-reveal-zoom-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shared-axis-x",
+    "source": "smoothui",
+    "name": "shared-axis-x",
+    "title": "Shared Axis X",
+    "description": "A SharedAxisX text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shared-axis-x",
+    "docs": "https://smoothui.dev/docs/components/shared-axis-x",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shared-axis-y",
+    "source": "smoothui",
+    "name": "shared-axis-y",
+    "title": "Shared Axis Y",
+    "description": "A SharedAxisY text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shared-axis-y",
+    "docs": "https://smoothui.dev/docs/components/shared-axis-y",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shared-axis-z",
+    "source": "smoothui",
+    "name": "shared-axis-z",
+    "title": "Shared Axis Z",
+    "description": "A SharedAxisZ text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shared-axis-z",
+    "docs": "https://smoothui.dev/docs/components/shared-axis-z",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shimmer-sweep",
+    "source": "smoothui",
+    "name": "shimmer-sweep",
+    "title": "Shimmer Sweep",
+    "description": "A ShimmerSweep text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shimmer-sweep",
+    "docs": "https://smoothui.dev/docs/components/shimmer-sweep",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/shine-text",
+    "source": "smoothui",
+    "name": "shine-text",
+    "title": "Shine Text",
+    "description": "A ShineText light-sweep text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/shine-text",
+    "docs": "https://smoothui.dev/docs/components/shine-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/short-slide-down",
+    "source": "smoothui",
+    "name": "short-slide-down",
+    "title": "Short Slide Down",
+    "description": "A ShortSlideDown text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/short-slide-down",
+    "docs": "https://smoothui.dev/docs/components/short-slide-down",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/short-slide-right",
+    "source": "smoothui",
+    "name": "short-slide-right",
+    "title": "Short Slide Right",
+    "description": "A ShortSlideRight text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/short-slide-right",
+    "docs": "https://smoothui.dev/docs/components/short-slide-right",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/siri-orb",
+    "source": "smoothui",
+    "name": "siri-orb",
+    "title": "Siri Orb",
+    "description": "A beautiful animated orb component inspired by Siri's visual design.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "loader"
+    ],
+    "tags": [
+      "siri",
+      "orb",
+      "ai",
+      "glow",
+      "css",
+      "audio",
+      "reactive",
+      "voice",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/siri-orb",
+    "docs": "https://smoothui.dev/docs/components/siri-orb",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/skeleton-loader",
+    "source": "smoothui",
+    "name": "skeleton-loader",
+    "title": "Skeleton Loader",
+    "description": "Animated skeleton loading placeholders",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "skeleton",
+      "loader",
+      "loading",
+      "placeholder",
+      "shimmer",
+      "tween",
+      "complexity-low"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/skeleton-loader",
+    "docs": "https://smoothui.dev/docs/components/skeleton-loader",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/smooth-button",
+    "source": "smoothui",
+    "name": "smooth-button",
+    "title": "Smooth Button",
+    "description": "A polished button component with gradient variants and press animation",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/smooth-button",
+    "docs": "https://smoothui.dev/docs/components/smooth-button",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/social-hover-card",
+    "source": "smoothui",
+    "name": "social-hover-card",
+    "title": "Social Hover Card",
+    "description": "A profile hover card: avatar/handle trigger that expands into a preview with stats, bio and a follow action.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/social-hover-card",
+    "docs": "https://smoothui.dev/docs/components/social-hover-card",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/social-selector",
+    "source": "smoothui",
+    "name": "social-selector",
+    "title": "Social Selector",
+    "description": "A SocialSelector component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "social",
+      "selector",
+      "icons",
+      "share",
+      "hover",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/social-selector",
+    "docs": "https://smoothui.dev/docs/components/social-selector",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/soft-blur-in",
+    "source": "smoothui",
+    "name": "soft-blur-in",
+    "title": "Soft Blur In",
+    "description": "A SoftBlurIn text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/soft-blur-in",
+    "docs": "https://smoothui.dev/docs/components/soft-blur-in",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/spring-scale-in",
+    "source": "smoothui",
+    "name": "spring-scale-in",
+    "title": "Spring Scale In",
+    "description": "A SpringScaleIn text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition",
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "scale",
+      "spring",
+      "per-word",
+      "entrance",
+      "bounce",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/spring-scale-in",
+    "docs": "https://smoothui.dev/docs/components/spring-scale-in",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/squircle",
+    "source": "smoothui",
+    "name": "squircle",
+    "title": "Squircle",
+    "description": "A Squircle component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "squircle",
+      "corner-smoothing",
+      "superellipse",
+      "shape",
+      "utility",
+      "wrapper",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/squircle",
+    "docs": "https://smoothui.dev/docs/components/squircle",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/stagger-from-center",
+    "source": "smoothui",
+    "name": "stagger-from-center",
+    "title": "Stagger From Center",
+    "description": "A StaggerFromCenter text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/stagger-from-center",
+    "docs": "https://smoothui.dev/docs/components/stagger-from-center",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/stagger-from-edges",
+    "source": "smoothui",
+    "name": "stagger-from-edges",
+    "title": "Stagger From Edges",
+    "description": "A StaggerFromEdges text animation component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/stagger-from-edges",
+    "docs": "https://smoothui.dev/docs/components/stagger-from-edges",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/stats-1",
+    "source": "smoothui",
+    "name": "stats-1",
+    "title": "Stats 1",
+    "description": "Grid stats section block with hover effects",
+    "kind": "block",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "stats",
+      "metrics",
+      "grid",
+      "numbers",
+      "hover",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/stats-1",
+    "docs": "https://smoothui.dev/docs/blocks/stats",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/stats-2",
+    "source": "smoothui",
+    "name": "stats-2",
+    "title": "Stats 2",
+    "description": "Cards stats section block with icons and trends",
+    "kind": "block",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "stats",
+      "metrics",
+      "cards",
+      "icons",
+      "trends",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/stats-2",
+    "docs": "https://smoothui.dev/docs/blocks/stats",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/svg-clip-mask",
+    "source": "smoothui",
+    "name": "svg-clip-mask",
+    "title": "Svg Clip Mask",
+    "description": "Reveals any children through a custom SVG shape mask that can morph on a loop, on scroll, or on hover.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/svg-clip-mask",
+    "docs": "https://smoothui.dev/docs/components/svg-clip-mask",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/svg-draw-on-scroll",
+    "source": "smoothui",
+    "name": "svg-draw-on-scroll",
+    "title": "Svg Draw On Scroll",
+    "description": "An SVG path that draws itself as you scroll, optionally with a marker riding the tip.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/svg-draw-on-scroll",
+    "docs": "https://smoothui.dev/docs/components/svg-draw-on-scroll",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/swap-panel",
+    "source": "smoothui",
+    "name": "swap-panel",
+    "title": "Swap Panel",
+    "description": "A SwapPanel component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/swap-panel",
+    "docs": "https://smoothui.dev/docs/components/swap-panel",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/switchboard-card",
+    "source": "smoothui",
+    "name": "switchboard-card",
+    "title": "Switchboard Card",
+    "description": "A SwitchboardCard component with light grid illustration for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "input",
+      "card"
+    ],
+    "tags": [
+      "card",
+      "switchboard",
+      "lights",
+      "grid",
+      "decorative",
+      "tween",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/switchboard-card",
+    "docs": "https://smoothui.dev/docs/components/switchboard-card",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/team-1",
+    "source": "smoothui",
+    "name": "team-1",
+    "title": "Team 1",
+    "description": "Grid team section block with hover effects",
+    "kind": "block",
+    "categories": [
+      "team"
+    ],
+    "tags": [
+      "team",
+      "grid",
+      "members",
+      "about",
+      "hover",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/team-1",
+    "docs": "https://smoothui.dev/docs/blocks/team-sections",
+    "dependencies": [
+      "@smoothui/data",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/team-2",
+    "source": "smoothui",
+    "name": "team-2",
+    "title": "Team 2",
+    "description": "Carousel team section block with auto-play",
+    "kind": "block",
+    "categories": [
+      "team"
+    ],
+    "tags": [
+      "team",
+      "carousel",
+      "auto-play",
+      "members",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/team-2",
+    "docs": "https://smoothui.dev/docs/blocks/team-sections",
+    "dependencies": [
+      "@smoothui/data",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/testimonials-1",
+    "source": "smoothui",
+    "name": "testimonials-1",
+    "title": "Testimonials 1",
+    "description": "Simple testimonials block with auto-rotating cards",
+    "kind": "block",
+    "categories": [
+      "testimonials"
+    ],
+    "tags": [
+      "testimonials",
+      "cards",
+      "auto-rotate",
+      "reviews",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/testimonials-1",
+    "docs": "https://smoothui.dev/docs/blocks/testimonial",
+    "dependencies": [
+      "@smoothui/data",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/testimonials-2",
+    "source": "smoothui",
+    "name": "testimonials-2",
+    "title": "Testimonials 2",
+    "description": "Grid testimonials block with navigation arrows",
+    "kind": "block",
+    "categories": [
+      "testimonials"
+    ],
+    "tags": [
+      "testimonials",
+      "grid",
+      "navigation",
+      "arrows",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/testimonials-2",
+    "docs": "https://smoothui.dev/docs/blocks/testimonial",
+    "dependencies": [
+      "@smoothui/data",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/testimonials-3",
+    "source": "smoothui",
+    "name": "testimonials-3",
+    "title": "Testimonials 3",
+    "description": "Star testimonials block with grid layout",
+    "kind": "block",
+    "categories": [
+      "testimonials"
+    ],
+    "tags": [
+      "testimonials",
+      "stars",
+      "grid",
+      "rating",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/testimonials-3",
+    "docs": "https://smoothui.dev/docs/blocks/testimonial",
+    "dependencies": [
+      "@smoothui/data",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/text-morph",
+    "source": "smoothui",
+    "name": "text-morph",
+    "title": "Text Morph",
+    "description": "A TextMorph text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "morph",
+      "diff",
+      "layout",
+      "transition",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/text-morph",
+    "docs": "https://smoothui.dev/docs/components/text-morph",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/theme-toggle",
+    "source": "smoothui",
+    "name": "theme-toggle",
+    "title": "Theme Toggle",
+    "description": "A light/dark/system theme switch with sun-moon, pill, switch and orb visual treatments.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "theme",
+      "dark-mode",
+      "toggle",
+      "switch",
+      "radiogroup",
+      "morph",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/theme-toggle",
+    "docs": "https://smoothui.dev/docs/components/theme-toggle",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/tilt-card",
+    "source": "smoothui",
+    "name": "tilt-card",
+    "title": "Tilt Card",
+    "description": "A TiltCard component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "card",
+      "tilt",
+      "3d",
+      "glare",
+      "parallax",
+      "pointer",
+      "interactive",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/tilt-card",
+    "docs": "https://smoothui.dev/docs/components/tilt-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/time-machine-stack",
+    "source": "smoothui",
+    "name": "time-machine-stack",
+    "title": "Time Machine Stack",
+    "description": "A TimeMachineStack component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "stack",
+      "carousel",
+      "depth",
+      "3d",
+      "navigation",
+      "interactive",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/time-machine-stack",
+    "docs": "https://smoothui.dev/docs/components/time-machine-stack",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/top-down-letters",
+    "source": "smoothui",
+    "name": "top-down-letters",
+    "title": "Top Down Letters",
+    "description": "A TopDownLetters text animation component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/top-down-letters",
+    "docs": "https://smoothui.dev/docs/components/top-down-letters",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/tweet-card",
+    "source": "smoothui",
+    "name": "tweet-card",
+    "title": "Tweet Card",
+    "description": "A beautiful tweet card component for displaying Twitter/X posts.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "tweet",
+      "twitter",
+      "x",
+      "embed",
+      "social",
+      "card",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/tweet-card",
+    "docs": "https://smoothui.dev/docs/components/tweet-card",
+    "dependencies": [
+      "react-tweet"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/typewriter-text",
+    "source": "smoothui",
+    "name": "typewriter-text",
+    "title": "Typewriter Text",
+    "description": "A TypewriterText component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "typewriter",
+      "typing",
+      "cursor",
+      "loop",
+      "tween",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/typewriter-text",
+    "docs": "https://smoothui.dev/docs/components/typewriter-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/unlock-face-id",
+    "source": "smoothui",
+    "name": "unlock-face-id",
+    "title": "Unlock Face Id",
+    "description": "An UnlockFaceId component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "face-id",
+      "unlock",
+      "scan",
+      "status",
+      "spring",
+      "svg",
+      "interactive",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/unlock-face-id",
+    "docs": "https://smoothui.dev/docs/components/unlock-face-id",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/user-account-avatar",
+    "source": "smoothui",
+    "name": "user-account-avatar",
+    "title": "User Account Avatar",
+    "description": "A UserAccountAvatar component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "avatar",
+      "account",
+      "popover",
+      "profile",
+      "orders",
+      "radix",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/user-account-avatar",
+    "docs": "https://smoothui.dev/docs/components/user-account-avatar",
+    "dependencies": [
+      "motion",
+      "lucide-react",
+      "@radix-ui/react-popover"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/vector-editor-toolbar",
+    "source": "smoothui",
+    "name": "vector-editor-toolbar",
+    "title": "Vector Editor Toolbar",
+    "description": "A Figma-style floating vector toolbar with tool selection, nested flyouts and a contextual properties bar.",
+    "kind": "component",
+    "categories": [
+      "input",
+      "navigation"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/vector-editor-toolbar",
+    "docs": "https://smoothui.dev/docs/components/vector-editor-toolbar",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/video-ambient",
+    "source": "smoothui",
+    "name": "video-ambient",
+    "title": "Video Ambient",
+    "description": "A video with a two-pass Ambilight-style glow sampled live from its own frames, with a CORS-safe static fallback.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "video",
+      "ambient",
+      "glow",
+      "ambilight",
+      "bloom",
+      "canvas",
+      "media",
+      "tween",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/video-ambient",
+    "docs": "https://smoothui.dev/docs/components/video-ambient",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/video-modal",
+    "source": "smoothui",
+    "name": "video-modal",
+    "title": "Video Modal",
+    "description": "A video thumbnail that morphs into a full accessible player inside a modal, with a custom keyboard-operable control bar.",
+    "kind": "component",
+    "categories": [
+      "modal",
+      "image"
+    ],
+    "tags": [
+      "video",
+      "modal",
+      "dialog",
+      "player",
+      "media",
+      "accessibility",
+      "layout-animation",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/video-modal",
+    "docs": "https://smoothui.dev/docs/components/video-modal",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/wallet-card",
+    "source": "smoothui",
+    "name": "wallet-card",
+    "title": "Wallet Card",
+    "description": "A WalletCard component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "wallet",
+      "card",
+      "balance",
+      "stack",
+      "avatar",
+      "finance-ui",
+      "spring",
+      "complexity-high",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/wallet-card",
+    "docs": "https://smoothui.dev/docs/components/wallet-card",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/warped-circle-transition",
+    "source": "smoothui",
+    "name": "warped-circle-transition",
+    "title": "Warped Circle Transition",
+    "description": "A wavy perimeter circle reveal inspired by the Codrops circle warping step.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/warped-circle-transition",
+    "docs": "https://smoothui.dev/docs/components/warped-circle-transition",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "smoothui/wave-text",
+    "source": "smoothui",
+    "name": "wave-text",
+    "title": "Wave Text",
+    "description": "A WaveText component for SmoothUI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text",
+      "wave",
+      "animation",
+      "continuous",
+      "bounce",
+      "decorative",
+      "tween",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/wave-text",
+    "docs": "https://smoothui.dev/docs/components/wave-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  }
+]

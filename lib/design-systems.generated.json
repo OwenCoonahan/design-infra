@@ -1,0 +1,623 @@
+[
+  {
+    "slug": "brutalist-mono",
+    "name": "Brutalist Mono",
+    "description": "Stark black-and-white brutalism with zero radius, thick borders, hard offset shadows, monospace-heavy type and one acid-yellow accent. Best for dev tools, indie launches, manifestos, portfolios and anything that should feel raw, honest and loud.",
+    "moods": [
+      "bold",
+      "technical",
+      "minimal"
+    ],
+    "motion": "quiet",
+    "fonts": {
+      "mono": "Space Mono",
+      "heading": "Space Grotesk",
+      "sans": "Space Mono"
+    },
+    "radius": "0px",
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "light": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "card": "#FFFFFF",
+      "card-foreground": "#000000",
+      "popover": "#FFFFFF",
+      "popover-foreground": "#000000",
+      "primary": "#E4FF1A",
+      "primary-foreground": "#000000",
+      "secondary": "#000000",
+      "secondary-foreground": "#FFFFFF",
+      "muted": "#F2F2F2",
+      "muted-foreground": "#555555",
+      "accent": "#000000",
+      "accent-foreground": "#E4FF1A",
+      "destructive": "#E00000",
+      "border": "#000000",
+      "input": "#000000",
+      "ring": "#000000",
+      "chart-1": "#000000",
+      "chart-2": "#E4FF1A",
+      "chart-3": "#8C8C8C",
+      "chart-4": "#3D3D3D",
+      "chart-5": "#C4C4C4",
+      "sidebar": "#FFFFFF",
+      "sidebar-foreground": "#000000",
+      "sidebar-primary": "#000000",
+      "sidebar-primary-foreground": "#E4FF1A",
+      "sidebar-accent": "#E4FF1A",
+      "sidebar-accent-foreground": "#000000",
+      "sidebar-border": "#000000",
+      "sidebar-ring": "#000000"
+    },
+    "dark": {
+      "background": "#0A0A0A",
+      "foreground": "#FFFFFF",
+      "card": "#0A0A0A",
+      "card-foreground": "#FFFFFF",
+      "popover": "#141414",
+      "popover-foreground": "#FFFFFF",
+      "primary": "#E4FF1A",
+      "primary-foreground": "#000000",
+      "secondary": "#FFFFFF",
+      "secondary-foreground": "#000000",
+      "muted": "#1A1A1A",
+      "muted-foreground": "#ABABAB",
+      "accent": "#E4FF1A",
+      "accent-foreground": "#000000",
+      "destructive": "#FF4D4D",
+      "border": "#FFFFFF",
+      "input": "#FFFFFF",
+      "ring": "#E4FF1A",
+      "chart-1": "#FFFFFF",
+      "chart-2": "#E4FF1A",
+      "chart-3": "#8C8C8C",
+      "chart-4": "#5C5C5C",
+      "chart-5": "#C4C4C4",
+      "sidebar": "#000000",
+      "sidebar-foreground": "#FFFFFF",
+      "sidebar-primary": "#E4FF1A",
+      "sidebar-primary-foreground": "#000000",
+      "sidebar-accent": "#FFFFFF",
+      "sidebar-accent-foreground": "#000000",
+      "sidebar-border": "#FFFFFF",
+      "sidebar-ring": "#E4FF1A"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "80px",
+        "fontWeight": 700,
+        "lineHeight": 0.95,
+        "letterSpacing": "-0.04em"
+      },
+      "headline-lg": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "lineHeight": 1,
+        "letterSpacing": "-0.03em"
+      },
+      "headline-md": {
+        "fontFamily": "Space Grotesk",
+        "fontSize": "28px",
+        "fontWeight": 700,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.02em"
+      },
+      "body-lg": {
+        "fontFamily": "Space Mono",
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": "0em"
+      },
+      "body-md": {
+        "fontFamily": "Space Mono",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": "0em"
+      },
+      "body-sm": {
+        "fontFamily": "Space Mono",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0em"
+      },
+      "label-md": {
+        "fontFamily": "Space Mono",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": 1.1,
+        "letterSpacing": "0.04em"
+      },
+      "label-sm": {
+        "fontFamily": "Space Mono",
+        "fontSize": "11px",
+        "fontWeight": 700,
+        "lineHeight": 1.1,
+        "letterSpacing": "0.08em"
+      },
+      "mono": {
+        "fontFamily": "Space Mono",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0em"
+      }
+    },
+    "registryItem": "@design-infra/theme-brutalist-mono"
+  },
+  {
+    "slug": "editorial",
+    "name": "Editorial",
+    "description": "Content-first magazine system — warm paper, ink-black type, serif headlines and a single vermilion accent. Best for blogs, publications, docs-as-essays, portfolios and long-form product storytelling.",
+    "moods": [
+      "editorial",
+      "warm",
+      "calm"
+    ],
+    "motion": "still",
+    "fonts": {
+      "mono": "IBM Plex Mono",
+      "heading": "Instrument Serif",
+      "sans": "Inter"
+    },
+    "radius": "2px",
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "light": {
+      "background": "#F6F1E7",
+      "foreground": "#1A1714",
+      "card": "#FBF8F2",
+      "card-foreground": "#1A1714",
+      "popover": "#FFFDF8",
+      "popover-foreground": "#1A1714",
+      "primary": "#B83A1B",
+      "primary-foreground": "#FFF8F0",
+      "secondary": "#EAE3D5",
+      "secondary-foreground": "#2A2520",
+      "muted": "#EFE9DD",
+      "muted-foreground": "#6B6258",
+      "accent": "#E9E1D1",
+      "accent-foreground": "#1A1714",
+      "destructive": "#A3172C",
+      "border": "#D9CFBD",
+      "input": "#C9BEA9",
+      "ring": "#B83A1B",
+      "chart-1": "#B83A1B",
+      "chart-2": "#1A1714",
+      "chart-3": "#8A7F70",
+      "chart-4": "#D9895F",
+      "chart-5": "#4F6B5A",
+      "sidebar": "#F0EADF",
+      "sidebar-foreground": "#1A1714",
+      "sidebar-primary": "#1A1714",
+      "sidebar-primary-foreground": "#F6F1E7",
+      "sidebar-accent": "#E6DDCB",
+      "sidebar-accent-foreground": "#1A1714",
+      "sidebar-border": "#D9CFBD",
+      "sidebar-ring": "#B83A1B"
+    },
+    "dark": {
+      "background": "#14120F",
+      "foreground": "#EDE6D9",
+      "card": "#1B1814",
+      "card-foreground": "#EDE6D9",
+      "popover": "#221E19",
+      "popover-foreground": "#EDE6D9",
+      "primary": "#E2643F",
+      "primary-foreground": "#14120F",
+      "secondary": "#2A251F",
+      "secondary-foreground": "#EDE6D9",
+      "muted": "#221E19",
+      "muted-foreground": "#A39888",
+      "accent": "#2C2620",
+      "accent-foreground": "#F3ECDF",
+      "destructive": "#F0705F",
+      "border": "#3A332B",
+      "input": "#4A4136",
+      "ring": "#E2643F",
+      "chart-1": "#E2643F",
+      "chart-2": "#EDE6D9",
+      "chart-3": "#A39888",
+      "chart-4": "#E8A57C",
+      "chart-5": "#8FB39C",
+      "sidebar": "#100E0C",
+      "sidebar-foreground": "#E3DBCD",
+      "sidebar-primary": "#EDE6D9",
+      "sidebar-primary-foreground": "#14120F",
+      "sidebar-accent": "#241F1A",
+      "sidebar-accent-foreground": "#F3ECDF",
+      "sidebar-border": "#2E2822",
+      "sidebar-ring": "#E2643F"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Instrument Serif",
+        "fontSize": "72px",
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "letterSpacing": "-0.02em"
+      },
+      "headline-lg": {
+        "fontFamily": "Instrument Serif",
+        "fontSize": "44px",
+        "fontWeight": 400,
+        "lineHeight": 1.08,
+        "letterSpacing": "-0.015em"
+      },
+      "headline-md": {
+        "fontFamily": "Instrument Serif",
+        "fontSize": "28px",
+        "fontWeight": 400,
+        "lineHeight": 1.2,
+        "letterSpacing": "-0.01em"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.7,
+        "letterSpacing": "-0.011em"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.65,
+        "letterSpacing": "-0.006em"
+      },
+      "body-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.55,
+        "letterSpacing": "0em"
+      },
+      "label-md": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": 1.3,
+        "letterSpacing": "0em"
+      },
+      "label-sm": {
+        "fontFamily": "IBM Plex Mono",
+        "fontSize": "11px",
+        "fontWeight": 500,
+        "lineHeight": 1.3,
+        "letterSpacing": "0.08em"
+      },
+      "mono": {
+        "fontFamily": "IBM Plex Mono",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0em"
+      }
+    },
+    "registryItem": "@design-infra/theme-editorial"
+  },
+  {
+    "slug": "linear-dark",
+    "name": "Linear Dark",
+    "description": "Dense, precise, dark-first SaaS chrome in the Linear/Raycast lineage. Best for issue trackers, dev tools, command palettes, dashboards and internal tools where speed and information density matter more than decoration.",
+    "moods": [
+      "technical",
+      "refined",
+      "premium"
+    ],
+    "motion": "quiet",
+    "fonts": {
+      "mono": "JetBrains Mono",
+      "heading": "Inter",
+      "sans": "Inter"
+    },
+    "radius": "8px",
+    "modes": [
+      "dark"
+    ],
+    "light": {
+      "background": "#0B0C0E",
+      "foreground": "#EDEEF0",
+      "card": "#131417",
+      "card-foreground": "#EDEEF0",
+      "popover": "#18191D",
+      "popover-foreground": "#EDEEF0",
+      "primary": "#5E6AD2",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#1E1F24",
+      "secondary-foreground": "#E2E3E7",
+      "muted": "#16171B",
+      "muted-foreground": "#8A8F98",
+      "accent": "#1D1E25",
+      "accent-foreground": "#F1F2F4",
+      "destructive": "#EB5757",
+      "border": "#FFFFFF14",
+      "input": "#FFFFFF1F",
+      "ring": "#7C86F0",
+      "chart-1": "#7C86F0",
+      "chart-2": "#4CB782",
+      "chart-3": "#F2C94C",
+      "chart-4": "#F2994A",
+      "chart-5": "#BB87FC",
+      "sidebar": "#08090A",
+      "sidebar-foreground": "#D0D3D9",
+      "sidebar-primary": "#5E6AD2",
+      "sidebar-primary-foreground": "#FFFFFF",
+      "sidebar-accent": "#1A1B20",
+      "sidebar-accent-foreground": "#F1F2F4",
+      "sidebar-border": "#FFFFFF0F",
+      "sidebar-ring": "#7C86F0",
+      "success": "#4CB782",
+      "warning": "#F2C94C"
+    },
+    "dark": {
+      "background": "#0B0C0E",
+      "foreground": "#EDEEF0",
+      "card": "#131417",
+      "card-foreground": "#EDEEF0",
+      "popover": "#18191D",
+      "popover-foreground": "#EDEEF0",
+      "primary": "#5E6AD2",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#1E1F24",
+      "secondary-foreground": "#E2E3E7",
+      "muted": "#16171B",
+      "muted-foreground": "#8A8F98",
+      "accent": "#1D1E25",
+      "accent-foreground": "#F1F2F4",
+      "destructive": "#EB5757",
+      "border": "#FFFFFF14",
+      "input": "#FFFFFF1F",
+      "ring": "#7C86F0",
+      "chart-1": "#7C86F0",
+      "chart-2": "#4CB782",
+      "chart-3": "#F2C94C",
+      "chart-4": "#F2994A",
+      "chart-5": "#BB87FC",
+      "sidebar": "#08090A",
+      "sidebar-foreground": "#D0D3D9",
+      "sidebar-primary": "#5E6AD2",
+      "sidebar-primary-foreground": "#FFFFFF",
+      "sidebar-accent": "#1A1B20",
+      "sidebar-accent-foreground": "#F1F2F4",
+      "sidebar-border": "#FFFFFF0F",
+      "sidebar-ring": "#7C86F0",
+      "success": "#4CB782",
+      "warning": "#F2C94C"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Inter",
+        "fontSize": "48px",
+        "fontWeight": 600,
+        "lineHeight": 1.05,
+        "letterSpacing": "-0.032em"
+      },
+      "headline-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "30px",
+        "fontWeight": 600,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.024em"
+      },
+      "headline-md": {
+        "fontFamily": "Inter",
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.016em"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": "-0.011em"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": 1.55,
+        "letterSpacing": "-0.006em"
+      },
+      "body-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "-0.003em"
+      },
+      "label-md": {
+        "fontFamily": "Inter",
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "0em"
+      },
+      "label-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "11px",
+        "fontWeight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.02em"
+      },
+      "mono": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": "12px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0em"
+      }
+    },
+    "registryItem": "@design-infra/theme-linear-dark"
+  },
+  {
+    "slug": "soft-glass",
+    "name": "Soft Glass",
+    "description": "Friendly, luminous AI/consumer product system — soft blue-violet gradients, translucent frosted cards and generous rounded shapes. Best for AI assistants, consumer apps, onboarding flows and approachable product marketing.",
+    "moods": [
+      "warm",
+      "calm",
+      "playful"
+    ],
+    "motion": "lively",
+    "fonts": {
+      "mono": "Geist Mono",
+      "heading": "Plus Jakarta Sans",
+      "sans": "Plus Jakarta Sans"
+    },
+    "radius": "16px",
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "light": {
+      "background": "#F7F7FC",
+      "foreground": "#16162A",
+      "card": "#FFFFFF",
+      "card-foreground": "#16162A",
+      "popover": "#FFFFFF",
+      "popover-foreground": "#16162A",
+      "primary": "#5B5FE3",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#EEEEFB",
+      "secondary-foreground": "#2A2A5C",
+      "muted": "#F0F0F7",
+      "muted-foreground": "#5F6178",
+      "accent": "#ECEBFF",
+      "accent-foreground": "#2E2A8C",
+      "destructive": "#CF2A45",
+      "border": "#E4E4F0",
+      "input": "#DCDCEB",
+      "ring": "#8B8FF5",
+      "chart-1": "#5B5FE3",
+      "chart-2": "#8B5CF6",
+      "chart-3": "#38BDF8",
+      "chart-4": "#F472B6",
+      "chart-5": "#34D399",
+      "sidebar": "#F2F2FA",
+      "sidebar-foreground": "#16162A",
+      "sidebar-primary": "#5B5FE3",
+      "sidebar-primary-foreground": "#FFFFFF",
+      "sidebar-accent": "#E8E8FA",
+      "sidebar-accent-foreground": "#2E2A8C",
+      "sidebar-border": "#E4E4F0",
+      "sidebar-ring": "#8B8FF5",
+      "gradient-from": "#C7D2FE",
+      "gradient-via": "#E9D5FF",
+      "gradient-to": "#BAE6FD"
+    },
+    "dark": {
+      "background": "#0E0E1A",
+      "foreground": "#ECECF7",
+      "card": "#171728",
+      "card-foreground": "#ECECF7",
+      "popover": "#1B1B2E",
+      "popover-foreground": "#ECECF7",
+      "primary": "#8E92FF",
+      "primary-foreground": "#0E0E1A",
+      "secondary": "#232338",
+      "secondary-foreground": "#E0E0F2",
+      "muted": "#1C1C2E",
+      "muted-foreground": "#A0A2BD",
+      "accent": "#26264A",
+      "accent-foreground": "#E6E5FF",
+      "destructive": "#FF6B81",
+      "border": "#FFFFFF1A",
+      "input": "#FFFFFF24",
+      "ring": "#8E92FF",
+      "chart-1": "#8E92FF",
+      "chart-2": "#A78BFA",
+      "chart-3": "#7DD3FC",
+      "chart-4": "#F9A8D4",
+      "chart-5": "#6EE7B7",
+      "sidebar": "#0B0B16",
+      "sidebar-foreground": "#DCDCEE",
+      "sidebar-primary": "#8E92FF",
+      "sidebar-primary-foreground": "#0E0E1A",
+      "sidebar-accent": "#1F1F36",
+      "sidebar-accent-foreground": "#E6E5FF",
+      "sidebar-border": "#FFFFFF14",
+      "sidebar-ring": "#8E92FF",
+      "gradient-from": "#312E81",
+      "gradient-via": "#4C1D95",
+      "gradient-to": "#0C4A6E"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "56px",
+        "fontWeight": 700,
+        "lineHeight": 1.05,
+        "letterSpacing": "-0.03em"
+      },
+      "headline-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "36px",
+        "fontWeight": 700,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.02em"
+      },
+      "headline-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "22px",
+        "fontWeight": 600,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em"
+      },
+      "body-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": 1.65,
+        "letterSpacing": "0em"
+      },
+      "body-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "letterSpacing": "0em"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.005em"
+      },
+      "label-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "14px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "0em"
+      },
+      "label-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.01em"
+      },
+      "mono": {
+        "fontFamily": "Geist Mono",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0em"
+      }
+    },
+    "registryItem": "@design-infra/theme-soft-glass"
+  }
+]

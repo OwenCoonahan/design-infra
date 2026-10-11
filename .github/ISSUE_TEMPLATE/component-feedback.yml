@@ -1,0 +1,38 @@
+name: Component feedback
+description: Share what worked, a search miss, a broken preview, or an installation problem.
+title: "[Component feedback] "
+body:
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: What happened?
+      options:
+        - Found and used a component successfully
+        - Could not find a suitable component
+        - Preview or comparison did not work
+        - Installation or integration did not work
+        - Other feedback
+    validations:
+      required: true
+  - type: input
+    id: query
+    attributes:
+      label: What did you search or ask your agent for?
+      placeholder: "A clean pricing section with a yearly toggle"
+  - type: textarea
+    id: components
+    attributes:
+      label: Component IDs, search or compare links, and install commands
+      description: Include the components you tried or selected, if any.
+  - type: input
+    id: stack
+    attributes:
+      label: Project stack and browser
+      placeholder: "Next.js 16, React 19, Tailwind 4; Chrome on macOS"
+  - type: textarea
+    id: experience
+    attributes:
+      label: What worked or got stuck?
+      description: Describe what you expected, what happened, and any steps needed to reproduce it. For a successful install, tell us what you adapted. Omit vendor keys and private project details.
+    validations:
+      required: true

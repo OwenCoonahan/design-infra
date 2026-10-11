@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "motion-presets",
+      "type": "registry:lib",
+      "title": "Motion presets",
+      "description": "design-infra's motion languages (still / quiet / lively / cinematic) as motion/react transitions, springs and variants (fadeUp, scaleIn, stagger, press, lift). Set PROJECT_MOTION to your DESIGN.md `motion:` so hand-written animations match the system.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/lib/motion-presets/motion-presets.ts",
+          "type": "registry:lib",
+          "target": "lib/motion-presets.ts"
+        }
+      ],
+      "categories": [
+        "transition"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined"
+        ]
+      }
+    }
+  ]
+}

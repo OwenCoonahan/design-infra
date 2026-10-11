@@ -1,0 +1,3215 @@
+[
+  {
+    "id": "cult-ui/agent-suggest-card-stack",
+    "source": "cult-ui",
+    "name": "agent-suggest-card-stack",
+    "title": "Agent Suggest Card Stack",
+    "description": "Stack of suggestion cards for AI agent responses",
+    "kind": "component",
+    "categories": [
+      "card",
+      "agent-ui"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/agent-suggest-card-stack",
+    "docs": "https://www.cult-ui.com/docs/components/agent-suggest-card-stack",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/ai-blob-warp",
+    "source": "cult-ui",
+    "name": "ai-blob-warp",
+    "title": "Ai Blob Warp",
+    "description": "Circular avatar with Paper Design Warp shader; motion-safe pulse, pauses off-screen and when reduced motion is preferred",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/ai-blob-warp",
+    "docs": "https://www.cult-ui.com/docs/components/ai-blob-warp",
+    "dependencies": [
+      "@paper-design/shaders-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/ai-instructions",
+    "source": "cult-ui",
+    "name": "ai-instructions",
+    "title": "Ai Instructions",
+    "description": "Manage and toggle AI instructions with a popover, search, and create-dialog",
+    "kind": "component",
+    "categories": [
+      "ai-chat"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/ai-instructions",
+    "docs": "https://www.cult-ui.com/docs/components/ai-instructions",
+    "dependencies": [
+      "@hugeicons/core-free-icons",
+      "@hugeicons/react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/analytics-chart",
+    "source": "cult-ui",
+    "name": "analytics-chart",
+    "title": "Analytics Chart",
+    "description": "Vercel-style gradient line chart with floating tooltip cards",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/analytics-chart",
+    "docs": "https://www.cult-ui.com/docs/components/analytics-chart",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-badge",
+    "source": "cult-ui",
+    "name": "animated-badge",
+    "title": "Animated Badge",
+    "description": "Deprecated alias for halo-badge. Prefer npx shadcn add https://cult-ui.com/r/halo-badge.json",
+    "kind": "component",
+    "categories": [
+      "badge"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-badge",
+    "docs": "https://www.cult-ui.com/docs/components/animated-badge",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-button",
+    "source": "cult-ui",
+    "name": "animated-button",
+    "title": "Animated Button",
+    "description": "Deprecated alias for halo-button. Prefer npx shadcn add https://cult-ui.com/r/halo-button.json",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-button",
+    "docs": "https://www.cult-ui.com/docs/components/animated-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-card",
+    "source": "cult-ui",
+    "name": "animated-card",
+    "title": "Animated Card",
+    "description": "Deprecated alias for halo-card. Prefer npx shadcn add https://cult-ui.com/r/halo-card.json",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-card",
+    "docs": "https://www.cult-ui.com/docs/components/animated-card",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-composer",
+    "source": "cult-ui",
+    "name": "animated-composer",
+    "title": "Animated Composer",
+    "description": "Deprecated alias for prompt-composer. Prefer npx shadcn add https://cult-ui.com/r/prompt-composer.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-composer",
+    "docs": "https://www.cult-ui.com/docs/components/animated-composer",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-dropzone",
+    "source": "cult-ui",
+    "name": "animated-dropzone",
+    "title": "Animated Dropzone",
+    "description": "Deprecated alias for halo-dropzone. Prefer npx shadcn add https://cult-ui.com/r/halo-dropzone.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-dropzone",
+    "docs": "https://www.cult-ui.com/docs/components/animated-dropzone",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-field",
+    "source": "cult-ui",
+    "name": "animated-field",
+    "title": "Animated Field",
+    "description": "Deprecated alias for halo-field. Prefer npx shadcn add https://cult-ui.com/r/halo-field.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-field",
+    "docs": "https://www.cult-ui.com/docs/components/animated-field",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-input",
+    "source": "cult-ui",
+    "name": "animated-input",
+    "title": "Animated Input",
+    "description": "Deprecated alias for halo-input. Prefer npx shadcn add https://cult-ui.com/r/halo-input.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-input",
+    "docs": "https://www.cult-ui.com/docs/components/animated-input",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-notification",
+    "source": "cult-ui",
+    "name": "animated-notification",
+    "title": "Animated Notification",
+    "description": "Deprecated alias for halo-notification. Prefer npx shadcn add https://cult-ui.com/r/halo-notification.json",
+    "kind": "component",
+    "categories": [
+      "toast"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-notification",
+    "docs": "https://www.cult-ui.com/docs/components/animated-notification",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-number",
+    "source": "cult-ui",
+    "name": "animated-number",
+    "title": "Animated Number",
+    "description": "Deprecated alias for rolling-number. Prefer npx shadcn add https://cult-ui.com/r/rolling-number.json",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-number",
+    "docs": "https://www.cult-ui.com/docs/components/animated-number",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-progress",
+    "source": "cult-ui",
+    "name": "animated-progress",
+    "title": "Animated Progress",
+    "description": "Deprecated alias for halo-progress. Prefer npx shadcn add https://cult-ui.com/r/halo-progress.json",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-progress",
+    "docs": "https://www.cult-ui.com/docs/components/animated-progress",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-search",
+    "source": "cult-ui",
+    "name": "animated-search",
+    "title": "Animated Search",
+    "description": "Deprecated alias for halo-search. Prefer npx shadcn add https://cult-ui.com/r/halo-search.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-search",
+    "docs": "https://www.cult-ui.com/docs/components/animated-search",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-segmented",
+    "source": "cult-ui",
+    "name": "animated-segmented",
+    "title": "Animated Segmented",
+    "description": "Deprecated alias for halo-segmented. Prefer npx shadcn add https://cult-ui.com/r/halo-segmented.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-segmented",
+    "docs": "https://www.cult-ui.com/docs/components/animated-segmented",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-select",
+    "source": "cult-ui",
+    "name": "animated-select",
+    "title": "Animated Select",
+    "description": "Deprecated alias for halo-select. Prefer npx shadcn add https://cult-ui.com/r/halo-select.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-select",
+    "docs": "https://www.cult-ui.com/docs/components/animated-select",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-switch",
+    "source": "cult-ui",
+    "name": "animated-switch",
+    "title": "Animated Switch",
+    "description": "Deprecated alias for halo-switch. Prefer npx shadcn add https://cult-ui.com/r/halo-switch.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-switch",
+    "docs": "https://www.cult-ui.com/docs/components/animated-switch",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-tabs",
+    "source": "cult-ui",
+    "name": "animated-tabs",
+    "title": "Animated Tabs",
+    "description": "Deprecated alias for halo-tabs. Prefer npx shadcn add https://cult-ui.com/r/halo-tabs.json",
+    "kind": "component",
+    "categories": [
+      "tabs"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-tabs",
+    "docs": "https://www.cult-ui.com/docs/components/animated-tabs",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-toast",
+    "source": "cult-ui",
+    "name": "animated-toast",
+    "title": "Animated Toast",
+    "description": "Deprecated alias for halo-toast. Prefer npx shadcn add https://cult-ui.com/r/halo-toast.json",
+    "kind": "component",
+    "categories": [
+      "toast"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-toast",
+    "docs": "https://www.cult-ui.com/docs/components/animated-toast",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/animated-toggle-group",
+    "source": "cult-ui",
+    "name": "animated-toggle-group",
+    "title": "Animated Toggle Group",
+    "description": "Deprecated alias for halo-toggle-group. Prefer npx shadcn add https://cult-ui.com/r/halo-toggle-group.json",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/animated-toggle-group",
+    "docs": "https://www.cult-ui.com/docs/components/animated-toggle-group",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/apple-iphone-17-pro",
+    "source": "cult-ui",
+    "name": "apple-iphone-17-pro",
+    "title": "Apple Iphone 17 Pro",
+    "description": "iPhone-style device frame with Dynamic Island, status bar, and configurable frame colors",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/apple-iphone-17-pro",
+    "docs": "https://www.cult-ui.com/docs/components/apple-iphone-17-pro",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/apple-keyboard",
+    "source": "cult-ui",
+    "name": "apple-keyboard",
+    "title": "Apple Keyboard",
+    "description": "Compact Apple-style keyboard with labeled keys and media row",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/apple-keyboard",
+    "docs": "https://www.cult-ui.com/docs/components/apple-keyboard",
+    "dependencies": [
+      "@tabler/icons-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/apple-pro-display-xdr",
+    "source": "cult-ui",
+    "name": "apple-pro-display-xdr",
+    "title": "Apple Pro Display Xdr",
+    "description": "Studio Display–style aluminum frame, screen modes, and interactive macOS dock",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/apple-pro-display-xdr",
+    "docs": "https://www.cult-ui.com/docs/components/apple-pro-display-xdr",
+    "dependencies": [
+      "@tabler/icons-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/apple-watch-ultra",
+    "source": "cult-ui",
+    "name": "apple-watch-ultra",
+    "title": "Apple Watch Ultra",
+    "description": "Watch Ultra–style case, complications, crown, and action button",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/apple-watch-ultra",
+    "docs": "https://www.cult-ui.com/docs/components/apple-watch-ultra",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/base-select",
+    "source": "cult-ui",
+    "name": "base-select",
+    "title": "Base Select",
+    "description": "Base UI select primitives used by Halo Select",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/base-select",
+    "docs": "https://www.cult-ui.com/docs/components/base-select",
+    "dependencies": [
+      "@base-ui/react",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/base-tooltip",
+    "source": "cult-ui",
+    "name": "base-tooltip",
+    "title": "Base Tooltip",
+    "description": "Base UI tooltip primitives used by Apple Pro Display XDR",
+    "kind": "component",
+    "categories": [
+      "tooltip"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/base-tooltip",
+    "docs": "https://www.cult-ui.com/docs/components/base-tooltip",
+    "dependencies": [
+      "@base-ui/react",
+      "@radix-ui/react-slot"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/bg-animate-button",
+    "source": "cult-ui",
+    "name": "bg-animate-button",
+    "title": "Bg Animate Button",
+    "description": "Button component with animated background effects and gradient transitions",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/bg-animate-button",
+    "docs": "https://www.cult-ui.com/docs/components/bg-animate-button",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/bg-animated-fractal-dot-grid",
+    "source": "cult-ui",
+    "name": "bg-animated-fractal-dot-grid",
+    "title": "Bg Animated Fractal Dot Grid",
+    "description": "Background animated fractal dot grid with performance optimization and responsive design",
+    "kind": "component",
+    "categories": [
+      "cta",
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/bg-animated-fractal-dot-grid",
+    "docs": "https://www.cult-ui.com/docs/components/bg-animated-fractal-dot-grid",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/bg-animated-gradient",
+    "source": "cult-ui",
+    "name": "bg-animated-gradient",
+    "title": "Bg Animated Gradient",
+    "description": "Animated gradient background component with customizable color transitions",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/bg-animated-gradient",
+    "docs": "https://www.cult-ui.com/docs/components/bg-animated-gradient",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/bg-image-texture",
+    "source": "cult-ui",
+    "name": "bg-image-texture",
+    "title": "Bg Image Texture",
+    "description": "Background texture component with multiple texture variants and customizable opacity",
+    "kind": "component",
+    "categories": [
+      "image",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/bg-image-texture",
+    "docs": "https://www.cult-ui.com/docs/components/bg-image-texture",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/bg-media",
+    "source": "cult-ui",
+    "name": "bg-media",
+    "title": "Bg Media",
+    "description": "Background media component with video/image support and overlay effects",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/bg-media",
+    "docs": "https://www.cult-ui.com/docs/components/bg-media",
+    "dependencies": [
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/border-beam-button",
+    "source": "cult-ui",
+    "name": "border-beam-button",
+    "title": "Border Beam Button",
+    "description": "Shadcn Button wrapped in Border Beam: animated border glow with compact icon and text variants",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/border-beam-button",
+    "docs": "https://www.cult-ui.com/docs/components/border-beam-button",
+    "dependencies": [
+      "border-beam"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/border-beam-card",
+    "source": "cult-ui",
+    "name": "border-beam-card",
+    "title": "Border Beam Card",
+    "description": "border-beam around compound Card API with balanced title and description",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/border-beam-card",
+    "docs": "https://www.cult-ui.com/docs/components/border-beam-card",
+    "dependencies": [
+      "border-beam"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/border-beam-input",
+    "source": "cult-ui",
+    "name": "border-beam-input",
+    "title": "Border Beam Input",
+    "description": "border-beam on Base UI input and input-group primitives with line or full border glow",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/border-beam-input",
+    "docs": "https://www.cult-ui.com/docs/components/border-beam-input",
+    "dependencies": [
+      "@base-ui/react",
+      "border-beam"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/canvas-fractal-grid",
+    "source": "cult-ui",
+    "name": "canvas-fractal-grid",
+    "title": "Canvas Fractal Grid",
+    "description": "Interactive canvas-based fractal dot grid with mouse tracking and wave effects",
+    "kind": "component",
+    "categories": [
+      "cta",
+      "background",
+      "3d"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/canvas-fractal-grid",
+    "docs": "https://www.cult-ui.com/docs/components/canvas-fractal-grid",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/choice-poll",
+    "source": "cult-ui",
+    "name": "choice-poll",
+    "title": "Choice Poll",
+    "description": "Poll component with single or multiple selection, optional results, and keyboard navigation",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/choice-poll",
+    "docs": "https://www.cult-ui.com/docs/components/choice-poll",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/circuit-board",
+    "source": "cult-ui",
+    "name": "circuit-board",
+    "title": "Circuit Board",
+    "description": "Animated SVG circuit illustration with glowing traces and a central chip, for hero or product sections",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/circuit-board",
+    "docs": "https://www.cult-ui.com/docs/components/circuit-board",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/code-block",
+    "source": "cult-ui",
+    "name": "code-block",
+    "title": "Code Block",
+    "description": "A beautiful code block component with tabs, copy functionality, and smooth animations",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/code-block",
+    "docs": "https://www.cult-ui.com/docs/components/code-block",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/collab-avatar",
+    "source": "cult-ui",
+    "name": "collab-avatar",
+    "title": "Collab Avatar",
+    "description": "Collaboration avatar with initials and color",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/collab-avatar",
+    "docs": "https://www.cult-ui.com/docs/components/collab-avatar",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/collab-toolbar",
+    "source": "cult-ui",
+    "name": "collab-toolbar",
+    "title": "Collab Toolbar",
+    "description": "Toolbar component for collaborative editing UI",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/collab-toolbar",
+    "docs": "https://www.cult-ui.com/docs/components/collab-toolbar",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/color-picker",
+    "source": "cult-ui",
+    "name": "color-picker",
+    "title": "Color Picker",
+    "description": "Interactive color picker component with HSL support and preset colors",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/color-picker",
+    "docs": "https://www.cult-ui.com/docs/components/color-picker",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/copy-button",
+    "source": "cult-ui",
+    "name": "copy-button",
+    "title": "Copy Button",
+    "description": "Button that copies content to clipboard with feedback",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/copy-button",
+    "docs": "https://www.cult-ui.com/docs/components/copy-button",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/cosmic-button",
+    "source": "cult-ui",
+    "name": "cosmic-button",
+    "title": "Cosmic Button",
+    "description": "Animated button/link with cosmic gradient border effect, renders as anchor or button",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/cosmic-button",
+    "docs": "https://www.cult-ui.com/docs/components/cosmic-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/cutout-card",
+    "source": "cult-ui",
+    "name": "cutout-card",
+    "title": "Cutout Card",
+    "description": "Image card with cutout corners, hover motion, inset labels, pins, and reveal actions",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/cutout-card",
+    "docs": "https://www.cult-ui.com/docs/components/cutout-card",
+    "dependencies": [
+      "motion",
+      "@radix-ui/react-use-controllable-state"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/direction-aware-tabs",
+    "source": "cult-ui",
+    "name": "direction-aware-tabs",
+    "title": "Direction Aware Tabs",
+    "description": "Tab component with direction-aware animations and smooth transitions",
+    "kind": "component",
+    "categories": [
+      "tabs"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/direction-aware-tabs",
+    "docs": "https://www.cult-ui.com/docs/components/direction-aware-tabs",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/distorted-glass",
+    "source": "cult-ui",
+    "name": "distorted-glass",
+    "title": "Distorted Glass",
+    "description": "A glass morphism effect component using SVG filters with fractal noise to create visual transitions between sections",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/distorted-glass",
+    "docs": "https://www.cult-ui.com/docs/components/distorted-glass",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/dither-image",
+    "source": "cult-ui",
+    "name": "dither-image",
+    "title": "Dither Image",
+    "description": "Compound Next.js image figure with CSS Bayer dither via dither-plugin, partial reveal overlays, and typed tuning props",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/dither-image",
+    "docs": "https://www.cult-ui.com/docs/components/dither-image",
+    "dependencies": [
+      "dither-plugin"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/dock",
+    "source": "cult-ui",
+    "name": "dock",
+    "title": "Dock",
+    "description": "macOS-style dock component with hover effects and smooth animations",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/dock",
+    "docs": "https://www.cult-ui.com/docs/components/dock",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/dynamic-island",
+    "source": "cult-ui",
+    "name": "dynamic-island",
+    "title": "Dynamic Island",
+    "description": "iOS-style dynamic island component with expandable content and smooth animations",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/dynamic-island",
+    "docs": "https://www.cult-ui.com/docs/components/dynamic-island",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/edge-blur",
+    "source": "cult-ui",
+    "name": "edge-blur",
+    "title": "Edge Blur",
+    "description": "Stacked backdrop-blur layers with a gradient mask for soft top or bottom screen edges",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/edge-blur",
+    "docs": "https://www.cult-ui.com/docs/components/edge-blur",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/expandable",
+    "source": "cult-ui",
+    "name": "expandable",
+    "title": "Expandable",
+    "description": "Expandable component system with smooth animations and customizable presets",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/expandable",
+    "docs": "https://www.cult-ui.com/docs/components/expandable",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/expandable-screen",
+    "source": "cult-ui",
+    "name": "expandable-screen",
+    "title": "Expandable Screen",
+    "description": "A full-screen expandable component with morphing animations using shared layout IDs for smooth transitions",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/expandable-screen",
+    "docs": "https://www.cult-ui.com/docs/components/expandable-screen",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/family-button",
+    "source": "cult-ui",
+    "name": "family-button",
+    "title": "Family Button",
+    "description": "Button component with family-style design and interactive hover effects",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/family-button",
+    "docs": "https://www.cult-ui.com/docs/components/family-button",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/family-drawer",
+    "source": "cult-ui",
+    "name": "family-drawer",
+    "title": "Family Drawer",
+    "description": "A multi-view drawer component with smooth animations, view navigation, and customizable content views",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/family-drawer",
+    "docs": "https://www.cult-ui.com/docs/components/family-drawer",
+    "dependencies": [
+      "motion",
+      "react-use-measure",
+      "vaul",
+      "@radix-ui/react-slot"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/feature-carousel",
+    "source": "cult-ui",
+    "name": "feature-carousel",
+    "title": "Feature Carousel",
+    "description": "Feature carousel component with smooth transitions and customizable layouts",
+    "kind": "component",
+    "categories": [
+      "features",
+      "carousel"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/feature-carousel",
+    "docs": "https://www.cult-ui.com/docs/components/feature-carousel",
+    "dependencies": [
+      "motion",
+      "clsx",
+      "react-wrap-balancer"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/feature-poll",
+    "source": "cult-ui",
+    "name": "feature-poll",
+    "title": "Feature Poll",
+    "description": "Feature poll component with single or multiple selection, optional results, and keyboard navigation",
+    "kind": "component",
+    "categories": [
+      "features",
+      "form"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/feature-poll",
+    "docs": "https://www.cult-ui.com/docs/components/feature-poll",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/feature-sticky-section",
+    "source": "cult-ui",
+    "name": "feature-sticky-section",
+    "title": "Feature Sticky Section",
+    "description": "Sticky section with controllable panels and scroll behavior",
+    "kind": "component",
+    "categories": [
+      "features",
+      "scroll-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/feature-sticky-section",
+    "docs": "https://www.cult-ui.com/docs/components/feature-sticky-section",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "@radix-ui/react-use-controllable-state"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/feature-voting",
+    "source": "cult-ui",
+    "name": "feature-voting",
+    "title": "Feature Voting",
+    "description": "List of features with up-vote support, optional sorting by vote count, and controlled or uncontrolled state",
+    "kind": "component",
+    "categories": [
+      "features"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/feature-voting",
+    "docs": "https://www.cult-ui.com/docs/components/feature-voting",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/file-icons",
+    "source": "cult-ui",
+    "name": "file-icons",
+    "title": "File Icons",
+    "description": "Icon set for file types and languages",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/file-icons",
+    "docs": "https://www.cult-ui.com/docs/components/file-icons",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/floating-panel",
+    "source": "cult-ui",
+    "name": "floating-panel",
+    "title": "Floating Panel",
+    "description": "Floating panel component with backdrop blur and position-aware animations",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/floating-panel",
+    "docs": "https://www.cult-ui.com/docs/components/floating-panel",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/fluid-ai-workloads",
+    "source": "cult-ui",
+    "name": "fluid-ai-workloads",
+    "title": "Fluid Ai Workloads",
+    "description": "Fluid visualization for AI workload states",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/fluid-ai-workloads",
+    "docs": "https://www.cult-ui.com/docs/components/fluid-ai-workloads",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/fluted-glass",
+    "source": "cult-ui",
+    "name": "fluted-glass",
+    "title": "Fluted Glass",
+    "description": "Paper Design fluted-glass image shader with sensible defaults — ribbed, streaked distortions over a source image",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/fluted-glass",
+    "docs": "https://www.cult-ui.com/docs/components/fluted-glass",
+    "dependencies": [
+      "@paper-design/shaders-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/folded-card",
+    "source": "cult-ui",
+    "name": "folded-card",
+    "title": "Folded Card",
+    "description": "Card with folded corner clip-path accent",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/folded-card",
+    "docs": "https://www.cult-ui.com/docs/components/folded-card",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/gateway-endpoint-illustration",
+    "source": "cult-ui",
+    "name": "gateway-endpoint-illustration",
+    "title": "Gateway Endpoint Illustration",
+    "description": "Illustration for gateway endpoint concepts",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/gateway-endpoint-illustration",
+    "docs": "https://www.cult-ui.com/docs/components/gateway-endpoint-illustration",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/gateway-route-illustration",
+    "source": "cult-ui",
+    "name": "gateway-route-illustration",
+    "title": "Gateway Route Illustration",
+    "description": "Illustration for gateway routing",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/gateway-route-illustration",
+    "docs": "https://www.cult-ui.com/docs/components/gateway-route-illustration",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/gateway-svg-illustration",
+    "source": "cult-ui",
+    "name": "gateway-svg-illustration",
+    "title": "Gateway Svg Illustration",
+    "description": "SVG illustration for gateway overhead",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/gateway-svg-illustration",
+    "docs": "https://www.cult-ui.com/docs/components/gateway-svg-illustration",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/globe",
+    "source": "cult-ui",
+    "name": "globe",
+    "title": "Globe",
+    "description": "COBE-powered 3D globe with showcase presets, markers, arcs, DOM overlays, and theme-aware styling",
+    "kind": "component",
+    "categories": [
+      "map"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/globe",
+    "docs": "https://www.cult-ui.com/docs/components/globe",
+    "dependencies": [
+      "cobe",
+      "motion",
+      "next-themes"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/gradient-button-group",
+    "source": "cult-ui",
+    "name": "gradient-button-group",
+    "title": "Gradient Button Group",
+    "description": "Premium layered button group with animated active state, gradient ring accents, and theme toggle underlay",
+    "kind": "component",
+    "categories": [
+      "button",
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/gradient-button-group",
+    "docs": "https://www.cult-ui.com/docs/components/gradient-button-group",
+    "dependencies": [
+      "motion",
+      "next-themes"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/gradient-heading",
+    "source": "cult-ui",
+    "name": "gradient-heading",
+    "title": "Gradient Heading",
+    "description": "Heading component with gradient text effects and customizable styling",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/gradient-heading",
+    "docs": "https://www.cult-ui.com/docs/components/gradient-heading",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/grid-beam",
+    "source": "cult-ui",
+    "name": "grid-beam",
+    "title": "Grid Beam",
+    "description": "Canvas grid beam animation with palette presets, SVG dividers, and composable headless pieces via useGridBeam",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/grid-beam",
+    "docs": "https://www.cult-ui.com/docs/components/grid-beam",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-badge",
+    "source": "cult-ui",
+    "name": "halo-badge",
+    "title": "Halo Badge",
+    "description": "Badge with optional layout animation, live status dot, and gradient rim aligned with Halo Button / Card",
+    "kind": "component",
+    "categories": [
+      "badge"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-badge",
+    "docs": "https://www.cult-ui.com/docs/components/halo-badge",
+    "dependencies": [
+      "class-variance-authority",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-button",
+    "source": "cult-ui",
+    "name": "halo-button",
+    "title": "Halo Button",
+    "description": "Primary action button with animated gradient rim, frosted fill, staggered label, and loading spinner",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-button",
+    "docs": "https://www.cult-ui.com/docs/components/halo-button",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-card",
+    "source": "cult-ui",
+    "name": "halo-card",
+    "title": "Halo Card",
+    "description": "Composable card with animated gradient rim, frosted fill, layered shadow, and Base UI button actions",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-card",
+    "docs": "https://www.cult-ui.com/docs/components/halo-card",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-dropzone",
+    "source": "cult-ui",
+    "name": "halo-dropzone",
+    "title": "Halo Dropzone",
+    "description": "File dropzone with animated rim, frosted fill, moving border trail, and file-type glyphs",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-dropzone",
+    "docs": "https://www.cult-ui.com/docs/components/halo-dropzone",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-field",
+    "source": "cult-ui",
+    "name": "halo-field",
+    "title": "Halo Field",
+    "description": "Form field layout (label, description, error) for HaloInput and HaloTextarea",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-field",
+    "docs": "https://www.cult-ui.com/docs/components/halo-field",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-input",
+    "source": "cult-ui",
+    "name": "halo-input",
+    "title": "Halo Input",
+    "description": "Single-line and multiline inputs with frosted fill and gradient rim for generic forms",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-input",
+    "docs": "https://www.cult-ui.com/docs/components/halo-input",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-notification",
+    "source": "cult-ui",
+    "name": "halo-notification",
+    "title": "Halo Notification",
+    "description": "Polished notification surface for local AnimatePresence use with rim variants and glyph stagger",
+    "kind": "component",
+    "categories": [
+      "toast"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-notification",
+    "docs": "https://www.cult-ui.com/docs/components/halo-notification",
+    "dependencies": [
+      "@base-ui/react",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-progress",
+    "source": "cult-ui",
+    "name": "halo-progress",
+    "title": "Halo Progress",
+    "description": "Progress bar with spring-driven determinate fill and indeterminate gradient strip",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-progress",
+    "docs": "https://www.cult-ui.com/docs/components/halo-progress",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-search",
+    "source": "cult-ui",
+    "name": "halo-search",
+    "title": "Halo Search",
+    "description": "Search input with animated gradient border, staggered placeholder, blur deletion on clear, loading line, and Warp shader avatar",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-search",
+    "docs": "https://www.cult-ui.com/docs/components/halo-search",
+    "dependencies": [
+      "@paper-design/shaders-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-segmented",
+    "source": "cult-ui",
+    "name": "halo-segmented",
+    "title": "Halo Segmented",
+    "description": "Segmented control with frosted track, gradient rim, and spring sliding thumb",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-segmented",
+    "docs": "https://www.cult-ui.com/docs/components/halo-segmented",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-select",
+    "source": "cult-ui",
+    "name": "halo-select",
+    "title": "Halo Select",
+    "description": "Composable animated select with gradient rim, frosted fill, and staggered label",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-select",
+    "docs": "https://www.cult-ui.com/docs/components/halo-select",
+    "dependencies": [
+      "@base-ui/react",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-switch",
+    "source": "cult-ui",
+    "name": "halo-switch",
+    "title": "Halo Switch",
+    "description": "Toggle switch with spring thumb, frosted track, and extended touch hit area",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-switch",
+    "docs": "https://www.cult-ui.com/docs/components/halo-switch",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-tabs",
+    "source": "cult-ui",
+    "name": "halo-tabs",
+    "title": "Halo Tabs",
+    "description": "Base UI tabs with gradient indicator: underline or pill variant aligned with Halo Card rim colors",
+    "kind": "component",
+    "categories": [
+      "tabs"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-tabs",
+    "docs": "https://www.cult-ui.com/docs/components/halo-tabs",
+    "dependencies": [
+      "@base-ui/react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-toast",
+    "source": "cult-ui",
+    "name": "halo-toast",
+    "title": "Halo Toast",
+    "description": "Sonner-backed polished toasts with rim variants; mount PolishedToaster once in the root layout",
+    "kind": "component",
+    "categories": [
+      "toast"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-toast",
+    "docs": "https://www.cult-ui.com/docs/components/halo-toast",
+    "dependencies": [
+      "lucide-react",
+      "motion",
+      "sonner"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/halo-toggle-group",
+    "source": "cult-ui",
+    "name": "halo-toggle-group",
+    "title": "Halo Toggle Group",
+    "description": "Segmented single-select control with frosted track, gradient rim, and spring-driven sliding thumb (aligned with Halo Button)",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/halo-toggle-group",
+    "docs": "https://www.cult-ui.com/docs/components/halo-toggle-group",
+    "dependencies": [
+      "@base-ui/react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/hero-color-panel",
+    "source": "cult-ui",
+    "name": "hero-color-panel",
+    "title": "Hero Color Panel",
+    "description": "Split-layout hero section with responsive ColorPanels shader visuals, CTA, and tech stack badges",
+    "kind": "component",
+    "categories": [
+      "hero"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/hero-color-panel",
+    "docs": "https://www.cult-ui.com/docs/components/hero-color-panel",
+    "dependencies": [
+      "@paper-design/shaders-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/hero-dithering",
+    "source": "cult-ui",
+    "name": "hero-dithering",
+    "title": "Hero Dithering",
+    "description": "Split-layout hero section with responsive dithering shader visuals, CTA, and tech stack badges",
+    "kind": "component",
+    "categories": [
+      "hero"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/hero-dithering",
+    "docs": "https://www.cult-ui.com/docs/components/hero-dithering",
+    "dependencies": [
+      "@paper-design/shaders-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/hero-heatmap",
+    "source": "cult-ui",
+    "name": "hero-heatmap",
+    "title": "Hero Heatmap",
+    "description": "Split-layout hero section with responsive Heatmap shader visuals, CTA, and tech stack badges",
+    "kind": "component",
+    "categories": [
+      "hero",
+      "map"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/hero-heatmap",
+    "docs": "https://www.cult-ui.com/docs/components/hero-heatmap",
+    "dependencies": [
+      "@paper-design/shaders-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/hero-liquid-metal",
+    "source": "cult-ui",
+    "name": "hero-liquid-metal",
+    "title": "Hero Liquid Metal",
+    "description": "Split-layout hero section with responsive LiquidMetal shader visuals, CTA, and tech stack badges",
+    "kind": "component",
+    "categories": [
+      "hero"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/hero-liquid-metal",
+    "docs": "https://www.cult-ui.com/docs/components/hero-liquid-metal",
+    "dependencies": [
+      "@paper-design/shaders-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/hero-static-radial-gradient",
+    "source": "cult-ui",
+    "name": "hero-static-radial-gradient",
+    "title": "Hero Static Radial Gradient",
+    "description": "Split-layout hero section with responsive StaticRadialGradient shader visuals, CTA, and tech stack badges",
+    "kind": "component",
+    "categories": [
+      "hero",
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/hero-static-radial-gradient",
+    "docs": "https://www.cult-ui.com/docs/components/hero-static-radial-gradient",
+    "dependencies": [
+      "@paper-design/shaders-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/hover-video-player",
+    "source": "cult-ui",
+    "name": "hover-video-player",
+    "title": "Hover Video Player",
+    "description": "Video player component that plays on hover with smooth animations",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/hover-video-player",
+    "docs": "https://www.cult-ui.com/docs/components/hover-video-player",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/illustration-card-grid",
+    "source": "cult-ui",
+    "name": "illustration-card-grid",
+    "title": "Illustration Card Grid",
+    "description": "Grid of cards with gateway illustrations",
+    "kind": "component",
+    "categories": [
+      "card",
+      "background",
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/illustration-card-grid",
+    "docs": "https://www.cult-ui.com/docs/components/illustration-card-grid",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/illustration-comment-bubble",
+    "source": "cult-ui",
+    "name": "illustration-comment-bubble",
+    "title": "Illustration Comment Bubble",
+    "description": "Comment bubble illustration for code or chat UI",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/illustration-comment-bubble",
+    "docs": "https://www.cult-ui.com/docs/components/illustration-comment-bubble",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/illustration-cursor",
+    "source": "cult-ui",
+    "name": "illustration-cursor",
+    "title": "Illustration Cursor",
+    "description": "Cursor illustration and demo for collaboration UI",
+    "kind": "effect",
+    "categories": [
+      "cursor",
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/illustration-cursor",
+    "docs": "https://www.cult-ui.com/docs/components/illustration-cursor",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/illustration-fluid-rendering",
+    "source": "cult-ui",
+    "name": "illustration-fluid-rendering",
+    "title": "Illustration Fluid Rendering",
+    "description": "Fluid rendering illustration",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/illustration-fluid-rendering",
+    "docs": "https://www.cult-ui.com/docs/components/illustration-fluid-rendering",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/illustration-globe-vercel",
+    "source": "cult-ui",
+    "name": "illustration-globe-vercel",
+    "title": "Illustration Globe Vercel",
+    "description": "Globe deployment illustration",
+    "kind": "component",
+    "categories": [
+      "map",
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/illustration-globe-vercel",
+    "docs": "https://www.cult-ui.com/docs/components/illustration-globe-vercel",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/illustration-graph",
+    "source": "cult-ui",
+    "name": "illustration-graph",
+    "title": "Illustration Graph",
+    "description": "Graph illustration component",
+    "kind": "component",
+    "categories": [
+      "chart",
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/illustration-graph",
+    "docs": "https://www.cult-ui.com/docs/components/illustration-graph",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/intro-disclosure",
+    "source": "cult-ui",
+    "name": "intro-disclosure",
+    "title": "Intro Disclosure",
+    "description": "Intro disclosure component with expandable content and smooth animations",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/intro-disclosure",
+    "docs": "https://www.cult-ui.com/docs/components/intro-disclosure",
+    "dependencies": [
+      "motion",
+      "react-use-measure",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/kanban-board",
+    "source": "cult-ui",
+    "name": "kanban-board",
+    "title": "Kanban Board",
+    "description": "Kanban board with drag-and-drop columns and cards",
+    "kind": "component",
+    "categories": [
+      "dashboard"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/kanban-board",
+    "docs": "https://www.cult-ui.com/docs/components/kanban-board",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/lightboard",
+    "source": "cult-ui",
+    "name": "lightboard",
+    "title": "Lightboard",
+    "description": "Interactive lightboard component with customizable grid and lighting effects",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/lightboard",
+    "docs": "https://www.cult-ui.com/docs/components/lightboard",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/loading-carousel",
+    "source": "cult-ui",
+    "name": "loading-carousel",
+    "title": "Loading Carousel",
+    "description": "Loading carousel component with smooth transitions and customizable content",
+    "kind": "component",
+    "categories": [
+      "carousel",
+      "loader"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/loading-carousel",
+    "docs": "https://www.cult-ui.com/docs/components/loading-carousel",
+    "dependencies": [
+      "embla-carousel-autoplay",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/logo-carousel",
+    "source": "cult-ui",
+    "name": "logo-carousel",
+    "title": "Logo Carousel",
+    "description": "Animated logo carousel with staggered animations and customizable columns",
+    "kind": "component",
+    "categories": [
+      "logo-cloud",
+      "carousel"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/logo-carousel",
+    "docs": "https://www.cult-ui.com/docs/components/logo-carousel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/mac-screen",
+    "source": "cult-ui",
+    "name": "mac-screen",
+    "title": "Mac Screen",
+    "description": "Classic Mac frame with an image or GIF composited into the CRT",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/mac-screen",
+    "docs": "https://www.cult-ui.com/docs/components/mac-screen",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/marketing-feature-code",
+    "source": "cult-ui",
+    "name": "marketing-feature-code",
+    "title": "Marketing Feature Code",
+    "description": "Marketing section for code or network policy features",
+    "kind": "component",
+    "categories": [
+      "features",
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/marketing-feature-code",
+    "docs": "https://www.cult-ui.com/docs/components/marketing-feature-code",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/marketing-hero-analytics",
+    "source": "cult-ui",
+    "name": "marketing-hero-analytics",
+    "title": "Marketing Hero Analytics",
+    "description": "Analytics hero section for marketing pages",
+    "kind": "component",
+    "categories": [
+      "hero"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/marketing-hero-analytics",
+    "docs": "https://www.cult-ui.com/docs/components/marketing-hero-analytics",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/merging-bubbles",
+    "source": "cult-ui",
+    "name": "merging-bubbles",
+    "title": "Merging Bubbles",
+    "description": "Merging bubbles visualization",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/merging-bubbles",
+    "docs": "https://www.cult-ui.com/docs/components/merging-bubbles",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/metal-button",
+    "source": "cult-ui",
+    "name": "metal-button",
+    "title": "Metal Button",
+    "description": "Shadcn Button wrapped in MetalFx: animated liquid metal ring with text and icon variants",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/metal-button",
+    "docs": "https://www.cult-ui.com/docs/components/metal-button",
+    "dependencies": [
+      "metal-fx",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/minimal-card",
+    "source": "cult-ui",
+    "name": "minimal-card",
+    "title": "Minimal Card",
+    "description": "Clean and minimal card component with subtle styling and hover effects",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/minimal-card",
+    "docs": "https://www.cult-ui.com/docs/components/minimal-card",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/mock-browser-window",
+    "source": "cult-ui",
+    "name": "mock-browser-window",
+    "title": "Mock Browser Window",
+    "description": "A customizable browser window mockup component with support for Chrome, Safari, and generic styles, customizable sidebars, and themes",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/mock-browser-window",
+    "docs": "https://www.cult-ui.com/docs/components/mock-browser-window",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/morph-surface",
+    "source": "cult-ui",
+    "name": "morph-surface",
+    "title": "Morph Surface",
+    "description": "A morphing surface component with smooth animations, customizable dimensions, and configurable content",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/morph-surface",
+    "docs": "https://www.cult-ui.com/docs/components/morph-surface",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/neumorph-button",
+    "source": "cult-ui",
+    "name": "neumorph-button",
+    "title": "Neumorph Button",
+    "description": "Neumorphic button component with soft shadows and tactile interaction effects",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/neumorph-button",
+    "docs": "https://www.cult-ui.com/docs/components/neumorph-button",
+    "dependencies": [
+      "class-variance-authority",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/neumorph-eyebrow",
+    "source": "cult-ui",
+    "name": "neumorph-eyebrow",
+    "title": "Neumorph Eyebrow",
+    "description": "Neumorphic eyebrow component with soft shadow effects and modern styling",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/neumorph-eyebrow",
+    "docs": "https://www.cult-ui.com/docs/components/neumorph-eyebrow",
+    "dependencies": [
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/onboarding",
+    "source": "cult-ui",
+    "name": "onboarding",
+    "title": "Onboarding",
+    "description": "Composable multi-step onboarding primitives: Onboarding root with step navigation, FeatureCarousel, ChoiceGroup radio selector, TipsList, and StepIndicator with dots and pills variants",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/onboarding",
+    "docs": "https://www.cult-ui.com/docs/components/onboarding",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/organic-button",
+    "source": "cult-ui",
+    "name": "organic-button",
+    "title": "Organic Button",
+    "description": "Anchor-based CTA with fixed SVG end caps, shared surface colors via CSS variables, and size and animation variants",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/organic-button",
+    "docs": "https://www.cult-ui.com/docs/components/organic-button",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/organic-card",
+    "source": "cult-ui",
+    "name": "organic-card",
+    "title": "Organic Card",
+    "description": "Composable marketing card with optional link root, image slot, eyebrow/title/body, accent band, and footer CTA",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/organic-card",
+    "docs": "https://www.cult-ui.com/docs/components/organic-card",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/organic-card-small",
+    "source": "cult-ui",
+    "name": "organic-card-small",
+    "title": "Organic Card Small",
+    "description": "Compact card with SVG silhouette, category and date, motion morph on hover, and optional link",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/organic-card-small",
+    "docs": "https://www.cult-ui.com/docs/components/organic-card-small",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/pixel-heading-character",
+    "source": "cult-ui",
+    "name": "pixel-heading-character",
+    "title": "Pixel Heading Character",
+    "description": "Per-character pixel-font heading with four animation modes using Geist pixel fonts",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/pixel-heading-character",
+    "docs": "https://www.cult-ui.com/docs/components/pixel-heading-character",
+    "dependencies": [
+      "geist"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/pixel-heading-word",
+    "source": "cult-ui",
+    "name": "pixel-heading-word",
+    "title": "Pixel Heading Word",
+    "description": "Whole-word pixel-font heading that swaps or cycles fonts on hover using Geist pixel fonts",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/pixel-heading-word",
+    "docs": "https://www.cult-ui.com/docs/components/pixel-heading-word",
+    "dependencies": [
+      "geist"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/pixel-paragraph-words",
+    "source": "cult-ui",
+    "name": "pixel-paragraph-words",
+    "title": "Pixel Paragraph Words",
+    "description": "Paragraph where specific words render in an interactive pixel font that swaps or cycles on hover",
+    "kind": "component",
+    "categories": [
+      "chart",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/pixel-paragraph-words",
+    "docs": "https://www.cult-ui.com/docs/components/pixel-paragraph-words",
+    "dependencies": [
+      "geist"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/pixel-paragraph-words-inverse",
+    "source": "cult-ui",
+    "name": "pixel-paragraph-words-inverse",
+    "title": "Pixel Paragraph Words Inverse",
+    "description": "Paragraph in pixel font where specific words escape into interactive sans/mono with hover swap or cycle",
+    "kind": "component",
+    "categories": [
+      "chart",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/pixel-paragraph-words-inverse",
+    "docs": "https://www.cult-ui.com/docs/components/pixel-paragraph-words-inverse",
+    "dependencies": [
+      "geist"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/poll-widget",
+    "source": "cult-ui",
+    "name": "poll-widget",
+    "title": "Poll Widget",
+    "description": "Poll widget with inline, popover, and dialog modes, optional results, and animations",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/poll-widget",
+    "docs": "https://www.cult-ui.com/docs/components/poll-widget",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "class-variance-authority",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/popover",
+    "source": "cult-ui",
+    "name": "popover",
+    "title": "Popover",
+    "description": "Animated popover component with form support and smooth transitions",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/popover",
+    "docs": "https://www.cult-ui.com/docs/components/popover",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/popover-form",
+    "source": "cult-ui",
+    "name": "popover-form",
+    "title": "Popover Form",
+    "description": "Form popover component with success states and animated transitions",
+    "kind": "component",
+    "categories": [
+      "form",
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/popover-form",
+    "docs": "https://www.cult-ui.com/docs/components/popover-form",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/prompt-composer",
+    "source": "cult-ui",
+    "name": "prompt-composer",
+    "title": "Prompt Composer",
+    "description": "Multiline prompt field with shader avatar, staggered placeholder, loading line, and send/attach chrome",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/prompt-composer",
+    "docs": "https://www.cult-ui.com/docs/components/prompt-composer",
+    "dependencies": [
+      "@base-ui/react",
+      "@paper-design/shaders-react",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/prompt-library",
+    "source": "cult-ui",
+    "name": "prompt-library",
+    "title": "Prompt Library",
+    "description": "Browse, insert, and manage prompt templates with categories and custom prompts",
+    "kind": "component",
+    "categories": [
+      "ai-chat"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/prompt-library",
+    "docs": "https://www.cult-ui.com/docs/components/prompt-library",
+    "dependencies": [
+      "@hugeicons/core-free-icons",
+      "@hugeicons/react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/rolling-number",
+    "source": "cult-ui",
+    "name": "rolling-number",
+    "title": "Rolling Number",
+    "description": "Number component with smooth counting animations and customizable formatting",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/rolling-number",
+    "docs": "https://www.cult-ui.com/docs/components/rolling-number",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/security-checkpoint",
+    "source": "cult-ui",
+    "name": "security-checkpoint",
+    "title": "Security Checkpoint",
+    "description": "Security checkpoint illustration or component",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/security-checkpoint",
+    "docs": "https://www.cult-ui.com/docs/components/security-checkpoint",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/shader-lens-blur",
+    "source": "cult-ui",
+    "name": "shader-lens-blur",
+    "title": "Shader Lens Blur",
+    "description": "WebGL shader component with lens blur effects and mouse interaction",
+    "kind": "component",
+    "categories": [
+      "image",
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/shader-lens-blur",
+    "docs": "https://www.cult-ui.com/docs/components/shader-lens-blur",
+    "dependencies": [
+      "motion",
+      "three",
+      "jotai",
+      "next-themes"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/shadow-card",
+    "source": "cult-ui",
+    "name": "shadow-card",
+    "title": "Shadow Card",
+    "description": "Composable marketing card with L-shaped extrusion, optional pixel gradient mesh, and Radix Slot on the root",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/shadow-card",
+    "docs": "https://www.cult-ui.com/docs/components/shadow-card",
+    "dependencies": [
+      "@radix-ui/react-slot"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/shift-card",
+    "source": "cult-ui",
+    "name": "shift-card",
+    "title": "Shift Card",
+    "description": "Card component with shift animation effects and hover interactions",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/shift-card",
+    "docs": "https://www.cult-ui.com/docs/components/shift-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/side-panel",
+    "source": "cult-ui",
+    "name": "side-panel",
+    "title": "Side Panel",
+    "description": "Sliding side panel component with customizable positioning and animations",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/side-panel",
+    "docs": "https://www.cult-ui.com/docs/components/side-panel",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/sortable-list",
+    "source": "cult-ui",
+    "name": "sortable-list",
+    "title": "Sortable List",
+    "description": "Drag-and-drop sortable list component with smooth animations and reordering",
+    "kind": "component",
+    "categories": [
+      "table"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/sortable-list",
+    "docs": "https://www.cult-ui.com/docs/components/sortable-list",
+    "dependencies": [
+      "motion",
+      "react-use-measure",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/speech-bubble",
+    "source": "cult-ui",
+    "name": "speech-bubble",
+    "title": "Speech Bubble",
+    "description": "Speech bubble component",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/speech-bubble",
+    "docs": "https://www.cult-ui.com/docs/components/speech-bubble",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/squiggle-arrow",
+    "source": "cult-ui",
+    "name": "squiggle-arrow",
+    "title": "Squiggle Arrow",
+    "description": "A playful, hand-drawn squiggly arrow component with customizable variants, directions, and sizes",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/squiggle-arrow",
+    "docs": "https://www.cult-ui.com/docs/components/squiggle-arrow",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/stripe-bg-guides",
+    "source": "cult-ui",
+    "name": "stripe-bg-guides",
+    "title": "Stripe Bg Guides",
+    "description": "Stripe-style background guides component with animated patterns and effects",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/stripe-bg-guides",
+    "docs": "https://www.cult-ui.com/docs/components/stripe-bg-guides",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/svg-bands",
+    "source": "cult-ui",
+    "name": "svg-bands",
+    "title": "Svg Bands",
+    "description": "Wide SVG section bands, battlement and zigzag trims, steep hero edges, and ornamental frames",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/svg-bands",
+    "docs": "https://www.cult-ui.com/docs/components/svg-bands",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/svg-shapes",
+    "source": "cult-ui",
+    "name": "svg-shapes",
+    "title": "Svg Shapes",
+    "description": "Wide-aspect SVG shape and panel components for backgrounds and hero decorations",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/svg-shapes",
+    "docs": "https://www.cult-ui.com/docs/components/svg-shapes",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/svg-shapes-animated",
+    "source": "cult-ui",
+    "name": "svg-shapes-animated",
+    "title": "Svg Shapes Animated",
+    "description": "Scroll-triggered stroke-draw animations for wide SVG shapes and panels using Motion",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/svg-shapes-animated",
+    "docs": "https://www.cult-ui.com/docs/components/svg-shapes-animated",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/tabs-illustration-vercel",
+    "source": "cult-ui",
+    "name": "tabs-illustration-vercel",
+    "title": "Tabs Illustration Vercel",
+    "description": "Tabs with Vercel-style illustrations",
+    "kind": "component",
+    "categories": [
+      "tabs",
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/tabs-illustration-vercel",
+    "docs": "https://www.cult-ui.com/docs/components/tabs-illustration-vercel",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/terminal-animation",
+    "source": "cult-ui",
+    "name": "terminal-animation",
+    "title": "Terminal Animation",
+    "description": "Composable terminal animation primitives with typed command playback, tabbed scenarios, and customizable output rendering",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/terminal-animation",
+    "docs": "https://www.cult-ui.com/docs/components/terminal-animation",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "@radix-ui/react-use-controllable-state"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/text-animate",
+    "source": "cult-ui",
+    "name": "text-animate",
+    "title": "Text Animate",
+    "description": "Animated text component with customizable reveal effects and timing",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/text-animate",
+    "docs": "https://www.cult-ui.com/docs/components/text-animate",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/text-gif",
+    "source": "cult-ui",
+    "name": "text-gif",
+    "title": "Text Gif",
+    "description": "Text component with GIF-like animation effects and customizable styling",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/text-gif",
+    "docs": "https://www.cult-ui.com/docs/components/text-gif",
+    "dependencies": [
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/texture-button",
+    "source": "cult-ui",
+    "name": "texture-button",
+    "title": "Texture Button",
+    "description": "Button component with texture overlay effects and customizable variants",
+    "kind": "component",
+    "categories": [
+      "button",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/texture-button",
+    "docs": "https://www.cult-ui.com/docs/components/texture-button",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/texture-card",
+    "source": "cult-ui",
+    "name": "texture-card",
+    "title": "Texture Card",
+    "description": "Card component with texture background and customizable styling options",
+    "kind": "component",
+    "categories": [
+      "card",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/texture-card",
+    "docs": "https://www.cult-ui.com/docs/components/texture-card",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/texture-overlay",
+    "source": "cult-ui",
+    "name": "texture-overlay",
+    "title": "Texture Overlay",
+    "description": "Texture overlay component with various CSS gradient patterns for adding visual texture to backgrounds",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/texture-overlay",
+    "docs": "https://www.cult-ui.com/docs/components/texture-overlay",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/three-d-carousel",
+    "source": "cult-ui",
+    "name": "three-d-carousel",
+    "title": "Three D Carousel",
+    "description": "3D carousel component with perspective effects and smooth item transitions",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/three-d-carousel",
+    "docs": "https://www.cult-ui.com/docs/components/three-d-carousel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/timer",
+    "source": "cult-ui",
+    "name": "timer",
+    "title": "Timer",
+    "description": "Countdown timer component with customizable duration and visual styles",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/timer",
+    "docs": "https://www.cult-ui.com/docs/components/timer",
+    "dependencies": [
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/toolbar-expandable",
+    "source": "cult-ui",
+    "name": "toolbar-expandable",
+    "title": "Toolbar Expandable",
+    "description": "Expandable toolbar component with step-based navigation, smooth animations, and enhanced scrolling",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/toolbar-expandable",
+    "docs": "https://www.cult-ui.com/docs/components/toolbar-expandable",
+    "dependencies": [
+      "motion",
+      "@radix-ui/react-scroll-area"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/tweet-grid",
+    "source": "cult-ui",
+    "name": "tweet-grid",
+    "title": "Tweet Grid",
+    "description": "Grid layout component for displaying tweet-like content cards",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/tweet-grid",
+    "docs": "https://www.cult-ui.com/docs/components/tweet-grid",
+    "dependencies": [
+      "class-variance-authority"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/typewriter",
+    "source": "cult-ui",
+    "name": "typewriter",
+    "title": "Typewriter",
+    "description": "Typewriter effect component with customizable typing speed and cursor animation",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/typewriter",
+    "docs": "https://www.cult-ui.com/docs/components/typewriter",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/vote-tally",
+    "source": "cult-ui",
+    "name": "vote-tally",
+    "title": "Vote Tally",
+    "description": "List of items with up-vote support, optional sorting by vote count, and controlled or uncontrolled state",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/vote-tally",
+    "docs": "https://www.cult-ui.com/docs/components/vote-tally",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/wizard-expandable",
+    "source": "cult-ui",
+    "name": "wizard-expandable",
+    "title": "Wizard Expandable",
+    "description": "Expandable multi-step wizard with optional forward validation, scrollable step rail, and Motion height transitions",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/wizard-expandable",
+    "docs": "https://www.cult-ui.com/docs/components/wizard-expandable",
+    "dependencies": [
+      "@base-ui/react",
+      "@radix-ui/react-use-controllable-state",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "cult-ui/youtube-video-player",
+    "source": "cult-ui",
+    "name": "youtube-video-player",
+    "title": "Youtube Video Player",
+    "description": "YouTube video player component with custom controls and smooth animations",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @cult-ui/youtube-video-player",
+    "docs": "https://www.cult-ui.com/docs/components/youtube-video-player",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  }
+]

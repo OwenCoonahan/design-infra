@@ -1,0 +1,6 @@
+{
+  "siteUrl": "https://design-infra.vercel.app",
+  "repository": "OwenCoonahan/design-infra",
+  "namespace": "@design-infra",
+  "legacyNamespaces": ["@oc"]
+}

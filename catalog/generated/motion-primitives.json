@@ -1,0 +1,732 @@
+[
+  {
+    "id": "motion-primitives/accordion",
+    "source": "motion-primitives",
+    "name": "accordion",
+    "title": "Accordion",
+    "description": "A collapsible content component with smooth animations for showing and hiding content.",
+    "kind": "component",
+    "categories": [
+      "accordion"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/accordion",
+    "docs": "https://motion-primitives.com/docs/accordion",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/animated-background",
+    "source": "motion-primitives",
+    "name": "animated-background",
+    "title": "Animated Background",
+    "description": "A component that provides animated background effects for UI elements.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/animated-background",
+    "docs": "https://motion-primitives.com/docs/animated-background",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/animated-group",
+    "source": "motion-primitives",
+    "name": "animated-group",
+    "title": "Animated Group",
+    "description": "A container component that applies coordinated animations to a group of child elements.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/animated-group",
+    "docs": "https://motion-primitives.com/docs/animated-group",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/animated-number",
+    "source": "motion-primitives",
+    "name": "animated-number",
+    "title": "Animated Number",
+    "description": "A component that animates number changes with smooth transitions.",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/animated-number",
+    "docs": "https://motion-primitives.com/docs/animated-number",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/border-trail",
+    "source": "motion-primitives",
+    "name": "border-trail",
+    "title": "Border Trail",
+    "description": "An effect that creates animated border trails around elements on interaction.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/border-trail",
+    "docs": "https://motion-primitives.com/docs/border-trail",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/carousel",
+    "source": "motion-primitives",
+    "name": "carousel",
+    "title": "Carousel",
+    "description": "A component for cycling through elements with smooth transitions.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/carousel",
+    "docs": "https://motion-primitives.com/docs/carousel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/cursor",
+    "source": "motion-primitives",
+    "name": "cursor",
+    "title": "Cursor",
+    "description": "A custom cursor component with animated effects and interactions.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/cursor",
+    "docs": "https://motion-primitives.com/docs/cursor",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/dialog",
+    "source": "motion-primitives",
+    "name": "dialog",
+    "title": "Dialog",
+    "description": "A modal dialog component with smooth entrance and exit animations.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/dialog",
+    "docs": "https://motion-primitives.com/docs/dialog",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/disclosure",
+    "source": "motion-primitives",
+    "name": "disclosure",
+    "title": "Disclosure",
+    "description": "A component that shows and hides content with animated transitions.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/disclosure",
+    "docs": "https://motion-primitives.com/docs/disclosure",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/dock",
+    "source": "motion-primitives",
+    "name": "dock",
+    "title": "Dock",
+    "description": "A macOS-style dock component with scaling and movement effects.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/dock",
+    "docs": "https://motion-primitives.com/docs/dock",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/glow-effect",
+    "source": "motion-primitives",
+    "name": "glow-effect",
+    "title": "Glow Effect",
+    "description": "A component that creates a glowing effect on elements based on cursor movement.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/glow-effect",
+    "docs": "https://motion-primitives.com/docs/glow-effect",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/image-comparison",
+    "source": "motion-primitives",
+    "name": "image-comparison",
+    "title": "Image Comparison",
+    "description": "A component for comparing two images with an interactive slider.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/image-comparison",
+    "docs": "https://motion-primitives.com/docs/image-comparison",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/in-view",
+    "source": "motion-primitives",
+    "name": "in-view",
+    "title": "In View",
+    "description": "A component that triggers animations when elements enter the viewport.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/in-view",
+    "docs": "https://motion-primitives.com/docs/in-view",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/infinite-slider",
+    "source": "motion-primitives",
+    "name": "infinite-slider",
+    "title": "Infinite Slider",
+    "description": "A slider component that loops infinitely through its content.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/infinite-slider",
+    "docs": "https://motion-primitives.com/docs/infinite-slider",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/magnetic",
+    "source": "motion-primitives",
+    "name": "magnetic",
+    "title": "Magnetic",
+    "description": "A component that creates a magnetic attraction effect on hover.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/magnetic",
+    "docs": "https://motion-primitives.com/docs/magnetic",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/morphing-dialog",
+    "source": "motion-primitives",
+    "name": "morphing-dialog",
+    "title": "Morphing Dialog",
+    "description": "A dialog that morphs from its trigger element with smooth transitions.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/morphing-dialog",
+    "docs": "https://motion-primitives.com/docs/morphing-dialog",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/morphing-popover",
+    "source": "motion-primitives",
+    "name": "morphing-popover",
+    "title": "Morphing Popover",
+    "description": "A popover component that morphs from its trigger with fluid animations.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/morphing-popover",
+    "docs": "https://motion-primitives.com/docs/morphing-popover",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/progressive-blur",
+    "source": "motion-primitives",
+    "name": "progressive-blur",
+    "title": "Progressive Blur",
+    "description": "A component that applies progressive blur effects to elements.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/progressive-blur",
+    "docs": "https://motion-primitives.com/docs/progressive-blur",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/scroll-progress",
+    "source": "motion-primitives",
+    "name": "scroll-progress",
+    "title": "Scroll Progress",
+    "description": "A component that visualizes scroll progress with animated indicators.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "loader"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/scroll-progress",
+    "docs": "https://motion-primitives.com/docs/scroll-progress",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/sliding-number",
+    "source": "motion-primitives",
+    "name": "sliding-number",
+    "title": "Sliding Number",
+    "description": "A component that transitions between numbers with a sliding animation.",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/sliding-number",
+    "docs": "https://motion-primitives.com/docs/sliding-number",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/spinning-text",
+    "source": "motion-primitives",
+    "name": "spinning-text",
+    "title": "Spinning Text",
+    "description": "A component that animates text with a spinning rotation effect.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/spinning-text",
+    "docs": "https://motion-primitives.com/docs/spinning-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/spotlight",
+    "source": "motion-primitives",
+    "name": "spotlight",
+    "title": "Spotlight",
+    "description": "A component that creates a spotlight effect following cursor movement.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/spotlight",
+    "docs": "https://motion-primitives.com/docs/spotlight",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-effect",
+    "source": "motion-primitives",
+    "name": "text-effect",
+    "title": "Text Effect",
+    "description": "A component that applies animated effects to text content.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-effect",
+    "docs": "https://motion-primitives.com/docs/text-effect",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-loop",
+    "source": "motion-primitives",
+    "name": "text-loop",
+    "title": "Text Loop",
+    "description": "A component that cycles through different text phrases with animations.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-loop",
+    "docs": "https://motion-primitives.com/docs/text-loop",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-morph",
+    "source": "motion-primitives",
+    "name": "text-morph",
+    "title": "Text Morph",
+    "description": "A component that morphs between different text strings with smooth transitions.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-morph",
+    "docs": "https://motion-primitives.com/docs/text-morph",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-roll",
+    "source": "motion-primitives",
+    "name": "text-roll",
+    "title": "Text Roll",
+    "description": "A component that animates text with a rolling effect.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-roll",
+    "docs": "https://motion-primitives.com/docs/text-roll",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-scramble",
+    "source": "motion-primitives",
+    "name": "text-scramble",
+    "title": "Text Scramble",
+    "description": "A component that creates a scrambling text effect during transitions.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-scramble",
+    "docs": "https://motion-primitives.com/docs/text-scramble",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-shimmer",
+    "source": "motion-primitives",
+    "name": "text-shimmer",
+    "title": "Text Shimmer",
+    "description": "A component that applies a shimmering effect to text.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-shimmer",
+    "docs": "https://motion-primitives.com/docs/text-shimmer",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/text-shimmer-wave",
+    "source": "motion-primitives",
+    "name": "text-shimmer-wave",
+    "title": "Text Shimmer Wave",
+    "description": "A component that creates a wave-like shimmer effect on text.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/text-shimmer-wave",
+    "docs": "https://motion-primitives.com/docs/text-shimmer-wave",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/tilt",
+    "source": "motion-primitives",
+    "name": "tilt",
+    "title": "Tilt",
+    "description": "A component that applies 3D tilt effects to elements based on cursor position.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/tilt",
+    "docs": "https://motion-primitives.com/docs/tilt",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/toolbar-dynamic",
+    "source": "motion-primitives",
+    "name": "toolbar-dynamic",
+    "title": "Toolbar Dynamic",
+    "description": "A toolbar component with dynamic appearance based on user interaction.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/toolbar-dynamic",
+    "docs": "https://motion-primitives.com/docs/toolbar-dynamic",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/toolbar-expandable",
+    "source": "motion-primitives",
+    "name": "toolbar-expandable",
+    "title": "Toolbar Expandable",
+    "description": "An expandable toolbar that reveals additional options with animations.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/toolbar-expandable",
+    "docs": "https://motion-primitives.com/docs/toolbar-expandable",
+    "dependencies": [
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "motion-primitives/transition-panel",
+    "source": "motion-primitives",
+    "name": "transition-panel",
+    "title": "Transition Panel",
+    "description": "A panel component with smooth transitions between different states.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @motion-primitives/transition-panel",
+    "docs": "https://motion-primitives.com/docs/transition-panel",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  }
+]

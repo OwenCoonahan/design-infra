@@ -1,0 +1,30 @@
+{
+  "$comment": "Google Fonts known to the token pipeline. `variable: true` = variable font (no weight list needed). Add a row when a DESIGN.md uses a new family.",
+  "fonts": {
+    "Inter": { "import": "Inter", "variable": true },
+    "Inter Tight": { "import": "Inter_Tight", "variable": true },
+    "Geist": { "import": "Geist", "variable": true },
+    "Geist Mono": { "import": "Geist_Mono", "variable": true },
+    "JetBrains Mono": { "import": "JetBrains_Mono", "variable": true },
+    "IBM Plex Mono": { "import": "IBM_Plex_Mono", "variable": false, "weight": ["400", "500", "600", "700"] },
+    "IBM Plex Sans": { "import": "IBM_Plex_Sans", "variable": true },
+    "Space Grotesk": { "import": "Space_Grotesk", "variable": true },
+    "Space Mono": { "import": "Space_Mono", "variable": false, "weight": ["400", "700"] },
+    "Instrument Serif": { "import": "Instrument_Serif", "variable": false, "weight": ["400"] },
+    "Instrument Sans": { "import": "Instrument_Sans", "variable": true },
+    "Fraunces": { "import": "Fraunces", "variable": true },
+    "Newsreader": { "import": "Newsreader", "variable": true },
+    "Source Serif 4": { "import": "Source_Serif_4", "variable": true },
+    "Playfair Display": { "import": "Playfair_Display", "variable": true },
+    "Manrope": { "import": "Manrope", "variable": true },
+    "Plus Jakarta Sans": { "import": "Plus_Jakarta_Sans", "variable": true },
+    "DM Sans": { "import": "DM_Sans", "variable": true },
+    "DM Mono": { "import": "DM_Mono", "variable": false, "weight": ["300", "400", "500"] },
+    "Outfit": { "import": "Outfit", "variable": true },
+    "Sora": { "import": "Sora", "variable": true },
+    "Archivo": { "import": "Archivo", "variable": true },
+    "Archivo Black": { "import": "Archivo_Black", "variable": false, "weight": ["400"] },
+    "Syne": { "import": "Syne", "variable": true },
+    "Bricolage Grotesque": { "import": "Bricolage_Grotesque", "variable": true }
+  }
+}

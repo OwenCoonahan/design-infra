@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/agent-status": ["./registry/oc/blocks/agent-status/agent-status.tsx"],
+      "@/components/app-shell": ["./registry/oc/blocks/app-shell/app-shell.tsx"],
+      "@/components/beam-card": ["./registry/oc/blocks/beam-card/beam-card.tsx"],
+      "@/components/chat-thread": ["./registry/oc/blocks/chat-thread/chat-thread.tsx"],
+      "@/components/cta-banner": ["./registry/oc/blocks/cta-banner/cta-banner.tsx"],
+      "@/components/data-table-card": ["./registry/oc/blocks/data-table-card/data-table-card.tsx"],
+      "@/components/design-lab": ["./registry/oc/blocks/design-lab/design-lab.tsx"],
+      "@/components/empty-state": ["./registry/oc/blocks/empty-state/empty-state.tsx"],
+      "@/components/faq": ["./registry/oc/blocks/faq/faq.tsx"],
+      "@/components/feature-bento": ["./registry/oc/blocks/feature-bento/feature-bento.tsx"],
+      "@/components/feature-levels": ["./registry/oc/blocks/feature-levels/feature-levels.tsx"],
+      "@/components/feature-list": ["./registry/oc/blocks/feature-list/feature-list.tsx"],
+      "@/components/footer-columns": ["./registry/oc/blocks/footer-columns/footer-columns.tsx"],
+      "@/components/hero-split": ["./registry/oc/blocks/hero-split/hero-split.tsx"],
+      "@/components/hero-spotlight": ["./registry/oc/blocks/hero-spotlight/hero-spotlight.tsx"],
+      "@/components/logo-cloud": ["./registry/oc/blocks/logo-cloud/logo-cloud.tsx"],
+      "@/components/navbar": ["./registry/oc/blocks/navbar/navbar.tsx"],
+      "@/components/pricing-simple": ["./registry/oc/blocks/pricing-simple/pricing-simple.tsx"],
+      "@/components/prompt-composer": ["./registry/oc/blocks/prompt-composer/prompt-composer.tsx"],
+      "@/components/settings-form": ["./registry/oc/blocks/settings-form/settings-form.tsx"],
+      "@/components/stat-cards": ["./registry/oc/blocks/stat-cards/stat-cards.tsx"],
+      "@/components/stats-row": ["./registry/oc/blocks/stats-row/stats-row.tsx"],
+      "@/components/testimonials-grid": ["./registry/oc/blocks/testimonials-grid/testimonials-grid.tsx"],
+      "@/components/theme-preview": ["./registry/oc/blocks/theme-preview/theme-preview.tsx"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules", ".claude"]
+}

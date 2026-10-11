@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "design-infra": {
+      "type": "http",
+      "url": "https://design-infra.vercel.app/mcp"
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ]
+    }
+  }
+}

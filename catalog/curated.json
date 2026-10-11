@@ -1,0 +1,4602 @@
+[
+  {
+    "id": "aceternity/spotlight-new",
+    "curated": true,
+    "notes": "Best 'premium dark' hero backdrop. Hard-codes a blue hsla gradient \u2014 pass gradientFirst/Second/Third or use @oc/hero-spotlight, which tints it from --primary.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero",
+      "background"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/background-beams",
+    "curated": true,
+    "notes": "Subtle animated SVG beams behind a hero. Looks best on near-black backgrounds; keep copy short on top.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero",
+      "background",
+      "cta"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/aurora-background",
+    "curated": true,
+    "notes": "Soft aurora wash for AI/consumer heroes (pairs with soft-glass). Uses its own CSS vars \u2014 tune colours to your primary.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero",
+      "background"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/dotted-glow-background",
+    "curated": true,
+    "notes": "Quiet dotted grid with glow; good behind dashboards/empty states where beams would be too loud.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "empty-state",
+      "dashboard"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/noise-background",
+    "curated": true,
+    "notes": "Animated gradient + noise texture. Works for editorial/brutalist when toned down.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "card",
+      "cta",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/bento-grid",
+    "curated": true,
+    "notes": "Simple bento layout. Colours are hard-coded neutral-200/white/black \u2014 prefer @oc/feature-bento for theme-aware tiles, or swap classes to bg-card/border.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "bento",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/floating-dock",
+    "curated": true,
+    "notes": "macOS-style dock nav. Great for portfolios/side projects; overkill for SaaS nav. Needs @tabler/icons-react.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "cursor"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/resizable-navbar",
+    "curated": true,
+    "notes": "Navbar that shrinks into a pill on scroll \u2014 the standard 'modern landing page' nav.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/text-generate-effect",
+    "curated": true,
+    "notes": "Word-by-word fade-in for one hero line or an AI answer. Don't use on long paragraphs.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "ai-chat"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/encrypted-text",
+    "curated": true,
+    "notes": "Gibberish \u2192 text reveal. Technical/dev-tool and brutalist brands.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/flip-words",
+    "curated": true,
+    "notes": "Rotating keyword in a headline (\"Build ___ faster\"). Keep to 3\u20135 words.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "cta"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/infinite-moving-cards",
+    "curated": true,
+    "notes": "Marquee of testimonial/logo cards. Pause-on-hover is built in.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "testimonials",
+      "logo-cloud",
+      "carousel"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/animated-testimonials",
+    "curated": true,
+    "notes": "Photo + quote testimonials with stacked image transition. Good single-testimonial spotlight.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "testimonials"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "press"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    },
+    "moods": [
+      "premium",
+      "refined",
+      "warm"
+    ]
+  },
+  {
+    "id": "aceternity/tracing-beam",
+    "curated": true,
+    "notes": "Scroll-linked beam down the left of long content (changelogs, docs, case studies).",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "blog",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "aceternity/sticky-scroll-reveal",
+    "curated": true,
+    "notes": "Sticky visual + scrolling text sections for feature walkthroughs.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "scroll-effect",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/container-scroll-animation",
+    "curated": true,
+    "notes": "Product screenshot that tilts into place on scroll \u2014 classic SaaS hero follow-up.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "hero",
+      "image",
+      "dashboard"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/macbook-scroll",
+    "curated": true,
+    "notes": "Fey-style laptop reveal. Heavy; one per page max.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero",
+      "scroll-effect",
+      "illustration"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/animated-modal",
+    "curated": true,
+    "notes": "Compound modal with motion. For app dialogs prefer shadcn Dialog (accessible, themed).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "modal"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/apple-cards-carousel",
+    "curated": true,
+    "notes": "Apple-style card carousel that expands into a detail view.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "carousel",
+      "card",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/placeholders-and-vanish-input",
+    "curated": true,
+    "notes": "Hero search/prompt input with cycling placeholders and vanish-on-submit. Great for AI products.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "input",
+      "ai-chat",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state",
+        "press"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "canvas",
+        "motion"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/file-upload",
+    "curated": true,
+    "notes": "Drag-and-drop upload with grid background and micro-interactions.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "input",
+      "form"
+    ],
+    "motion": {
+      "triggers": [
+        "drag",
+        "hover",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    },
+    "moods": [
+      "refined",
+      "trustworthy",
+      "premium"
+    ]
+  },
+  {
+    "id": "aceternity/multi-step-loader",
+    "curated": true,
+    "notes": "Full-screen step loader for long operations (generation, onboarding).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/stateful-button",
+    "curated": true,
+    "notes": "Button with loading \u2192 success states built in.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/timeline",
+    "curated": true,
+    "notes": "Sticky-header timeline with scroll beam. Changelogs and company history.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "scroll-effect",
+      "blog"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/world-map",
+    "curated": true,
+    "notes": "Animated connection lines on a dotted world map (needs dotted-map).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "map",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/terminal",
+    "curated": true,
+    "notes": "Mac-style terminal with typewriter \u2014 dev-tool landing pages.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "code",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "js"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    },
+    "moods": [
+      "technical",
+      "premium"
+    ]
+  },
+  {
+    "id": "aceternity/code-block",
+    "curated": true,
+    "notes": "Syntax-highlighted block with tabs (react-syntax-highlighter).",
+    "themeAware": false
+  },
+  {
+    "id": "aceternity/glowing-effect",
+    "curated": true,
+    "notes": "Cursor-style border glow that follows the pointer. Works on any card.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "card",
+      "bento",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "cursor",
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/hover-border-gradient",
+    "curated": true,
+    "notes": "Gradient border that sweeps on hover \u2014 for a single standout CTA button.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/sidebar",
+    "curated": true,
+    "notes": "Hover-expand app sidebar. For full app shells prefer shadcn Sidebar.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "sidebar"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "aceternity/hero-section-with-beams-and-grid",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/hero-spotlight or oc/hero-split. Original note: Complete hero block (beams + grid). Fastest 'it looks finished' hero.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "aceternity/hero-with-chat-input",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/hero-split + oc/prompt-composer. Original note: AI-product hero with a big prompt box and sample-work grid.",
+    "themeAware": false
+  },
+  {
+    "id": "aceternity/pricing-with-switch",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/pricing-simple. Original note: Pricing block with monthly/yearly switch. Hard-coded colours; @oc/pricing-simple is the theme-aware alternative.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "pricing"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "aceternity/simple-pricing-with-three-tiers",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/pricing-simple. Original note: Plain three-tier pricing block.",
+    "themeAware": false
+  },
+  {
+    "id": "aceternity/testimonials-marquee-grid",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/testimonials-grid. Original note: Two-row marquee of testimonial cards (react-fast-marquee).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "testimonials"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low"
+    }
+  },
+  {
+    "id": "aceternity/logo-cloud-marquee",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/logo-cloud (marquee option). Original note: Scrolling logo strip (react-fast-marquee).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "logo-cloud"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low"
+    }
+  },
+  {
+    "id": "aceternity/navbar-pill",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/navbar. Original note: Pill navbar with animated active tab.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "aceternity/faqs-with-grid",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/faq. Original note: FAQ section in a grid layout.",
+    "themeAware": false
+  },
+  {
+    "id": "aceternity/stats-with-number-ticker",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/stats-row. Original note: Stats row with counting numbers.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "aceternity/footer-with-grid",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/footer-columns. Original note: Multi-column footer with grid lines.",
+    "themeAware": false
+  },
+  {
+    "id": "aceternity/empty-state-with-cards",
+    "curated": true,
+    "notes": "PRO (Aceternity All-Access, not installable on free). Free theme-aware alternative: oc/empty-state. Original note: Empty project state with CTAs and fanned template cards \u2014 great first-run screen.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "empty-state"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "beautifui/thinking-state",
+    "curated": true,
+    "notes": "Expandable reasoning/search/coding traces \u2014 the best open-source 'agent is thinking' panel. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "loader"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/chat-composer",
+    "curated": true,
+    "notes": "Tabbed chat panel with reasoning replies + composer. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/approval-card",
+    "curated": true,
+    "notes": "Human-in-the-loop 'agent wants to do X \u2014 approve?' card. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/tool-chips",
+    "curated": true,
+    "notes": "Compact chips for tool calls an agent made. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "badge"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/diff-table",
+    "curated": true,
+    "notes": "Row-level diff table for agent-proposed data changes. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "table"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/prompt-bar",
+    "curated": true,
+    "notes": "Bottom prompt bar with attachments/actions. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "press",
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/streaming-text",
+    "curated": true,
+    "notes": "Token-by-token streaming text with caret. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "text-effect"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/task-rows",
+    "curated": true,
+    "notes": "Agent task list rows with status. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "beautifui/flowchart",
+    "curated": true,
+    "notes": "Lightweight flow diagram for agent plans/pipelines. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "chart"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "drag"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/tabs-sliding",
+    "curated": true,
+    "notes": "Sliding active-tab indicator. Pair with shadcn Tabs.",
+    "integration": "recipe",
+    "appliesTo": [
+      "tabs"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/number-pop-in",
+    "curated": true,
+    "notes": "Digits pop in on change \u2014 counters, prices, stats.",
+    "integration": "recipe",
+    "appliesTo": [
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/modal",
+    "curated": true,
+    "notes": "Scale-from-center modal open/close timings that feel native.",
+    "integration": "recipe",
+    "appliesTo": [
+      "modal"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/toast",
+    "curated": true,
+    "notes": "Rise + blur toast entrance; matches Sonner stacking.",
+    "integration": "recipe",
+    "appliesTo": [
+      "toast"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/menu-dropdown",
+    "curated": true,
+    "notes": "Dropdown origin-aware scale/fade.",
+    "integration": "recipe",
+    "appliesTo": [
+      "navigation",
+      "modal"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/shimmer-text",
+    "curated": true,
+    "notes": "Shimmering label for in-progress states ('Generating\u2026').",
+    "integration": "recipe",
+    "appliesTo": [
+      "text-effect",
+      "loader",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "moods": [
+      "refined",
+      "calm"
+    ]
+  },
+  {
+    "id": "transitions/thinking-states",
+    "curated": true,
+    "notes": "Rotating agent thinking labels.",
+    "integration": "recipe",
+    "appliesTo": [
+      "agent-ui",
+      "loader"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/streaming-text",
+    "curated": true,
+    "notes": "Smooth streaming text reveal for LLM output.",
+    "integration": "recipe",
+    "appliesTo": [
+      "ai-chat",
+      "text-effect"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/reasoning-stream",
+    "curated": true,
+    "notes": "Collapsible reasoning stream motion.",
+    "integration": "recipe",
+    "appliesTo": [
+      "agent-ui",
+      "ai-chat"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "moods": [
+      "refined",
+      "calm",
+      "technical"
+    ]
+  },
+  {
+    "id": "transitions/skeleton-reveal",
+    "curated": true,
+    "notes": "Skeleton \u2192 content crossfade without layout jump.",
+    "integration": "recipe",
+    "appliesTo": [
+      "loader",
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "transitions/success-check",
+    "curated": true,
+    "notes": "Spinner \u2192 checkmark morph for completed actions.",
+    "integration": "recipe",
+    "appliesTo": [
+      "button",
+      "form"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "press"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/thinking-orbs",
+    "source": "librariesdev",
+    "name": "thinking-orbs",
+    "title": "Thinking Orbs",
+    "description": "Dotted thought-orb loading indicators for AI/agent UIs \u2014 9 states (working, searching, solving, listening, connecting, weaving, composing, breathing, shaping), sizes 64/32/20, auto dark/light.",
+    "kind": "package",
+    "categories": [
+      "loader",
+      "agent-ui"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add thinking-orbs",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "thinking-orbs"
+    ],
+    "curated": true,
+    "notes": "Our default agent-activity indicator; wrapped by @oc/agent-status. Canvas 2D, no WebGL. Also: thinking-orbs-native (RN) and SwiftUI.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/border-beam",
+    "source": "librariesdev",
+    "name": "border-beam",
+    "title": "Border Beam",
+    "description": "Animated traveling or breathing glow around any element (cards, inputs, buttons). Colour variants colorful/mono/ocean/sunset.",
+    "kind": "package",
+    "categories": [
+      "card",
+      "background"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add border-beam",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "border-beam"
+    ],
+    "curated": true,
+    "notes": "Use on ONE live element per screen. Wrapped by @oc/beam-card. theme prop defaults to dark \u2014 set theme='light' on light surfaces.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "card",
+      "button",
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/liquid-gooey",
+    "source": "librariesdev",
+    "name": "liquid-gooey",
+    "title": "Liquid Gooey",
+    "description": "Liquid UI effects: Morph (gooey merge), Move (rubber trails), Melt (image crossfade), Bend (velocity bow). SVG-filter based, Safari-safe.",
+    "kind": "package",
+    "categories": [
+      "transition",
+      "misc"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add liquid-gooey",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "liquid-gooey"
+    ],
+    "curated": true,
+    "notes": "Playful merges for FABs, tab pills, menus. Too much for enterprise UIs.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "button",
+      "tabs",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "canvas"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/voice-glow",
+    "source": "librariesdev",
+    "name": "voice-glow",
+    "title": "Voice Glow",
+    "description": "Sound-reactive colourful glow along the bottom edge that blooms with voice intensity.",
+    "kind": "package",
+    "categories": [
+      "agent-ui",
+      "background"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add voice-glow",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "voice-glow"
+    ],
+    "curated": true,
+    "notes": "Voice-mode UIs: pair with a mic level stream.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "ai-chat"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "canvas",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/bot-avatars",
+    "source": "librariesdev",
+    "name": "bot-avatars",
+    "title": "Bot Avatars",
+    "description": "18 animated 3D-look bot avatars (plush/glossy) with idle/working/sleeping states, hats & glasses. 2D canvas.",
+    "kind": "package",
+    "categories": [
+      "agent-ui",
+      "illustration"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add bot-avatars",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "bot-avatars"
+    ],
+    "curated": true,
+    "notes": "Give multi-agent products a face per agent.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "illustration"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/metal-fx",
+    "source": "librariesdev",
+    "name": "metal-fx",
+    "title": "Metal FX",
+    "description": "Liquid-metal shader effects: rings, buttons, metal text, badges with cursor-light reflections (Paper Shaders engine).",
+    "kind": "package",
+    "categories": [
+      "button",
+      "text-effect",
+      "3d"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add metal-fx",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "metal-fx"
+    ],
+    "curated": true,
+    "notes": "Premium hero CTA or badge. Shader cost \u2014 one or two per page.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "button",
+      "badge",
+      "text-effect"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "cursor"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "webgl"
+      ],
+      "cost": "high",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "librariesdev/img-fx",
+    "source": "librariesdev",
+    "name": "img-fx",
+    "title": "Image FX",
+    "description": "Animated WebGL image-generation / loader effect for React cards (needs three).",
+    "kind": "package",
+    "categories": [
+      "loader",
+      "image"
+    ],
+    "tags": [
+      "npm",
+      "mit"
+    ],
+    "access": "free",
+    "install": "pnpm add img-fx",
+    "docs": "https://libraries.dev/",
+    "dependencies": [
+      "img-fx",
+      "three"
+    ],
+    "curated": true,
+    "notes": "Placeholder while an image model is generating.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "image",
+      "loader"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "webgl"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "agentation/agentation",
+    "source": "agentation",
+    "name": "agentation",
+    "title": "Agentation toolbar",
+    "description": "Dev-only toolbar: click elements in your running app, annotate them, and hand structured feedback (selector, source file, React tree, styles) to your coding agent via MCP.",
+    "kind": "tool",
+    "categories": [
+      "dev-tool"
+    ],
+    "tags": [
+      "mcp",
+      "feedback",
+      "dev"
+    ],
+    "access": "free",
+    "install": "pnpm add -D agentation && claude mcp add agentation -- npx -y agentation-mcp server",
+    "docs": "https://www.agentation.com/",
+    "dependencies": [
+      "agentation"
+    ],
+    "curated": true,
+    "notes": "Mount <Agentation /> only in development (see skills/setup-project). Free for internal use; commercial license only if you redistribute it in a product."
+  },
+  {
+    "id": "21st/magic-mcp",
+    "source": "21st",
+    "name": "magic-mcp",
+    "title": "21st.dev MCP (search 12k+ community components)",
+    "description": "Search the 21st.dev community marketplace (heroes, buttons, cards, AI chats, pricing\u2026) from your agent; free search, paid code retrieval.",
+    "kind": "tool",
+    "categories": [
+      "dev-tool"
+    ],
+    "tags": [
+      "mcp",
+      "marketplace",
+      "search"
+    ],
+    "access": "key",
+    "install": "npx @21st-dev/cli@latest init --client claude",
+    "docs": "https://21st.dev/mcp",
+    "curated": true,
+    "notes": "Free tier: search + limited daily installs. Install a found item with: npx shadcn@latest add \"https://21st.dev/r/<author>/<slug>?api_key=$API_KEY_21ST\"."
+  },
+  {
+    "id": "originkit/mcp",
+    "source": "originkit",
+    "name": "mcp",
+    "title": "OriginKit MCP",
+    "description": "Agent access to OriginKit's ~1,100 animated marketing components and sections (WebGL backgrounds, heroes, cursors, text effects).",
+    "kind": "tool",
+    "categories": [
+      "dev-tool"
+    ],
+    "tags": [
+      "mcp"
+    ],
+    "access": "metered",
+    "install": "npx originkit login  # then: npx originkit add <name>",
+    "docs": "https://www.originkit.dev/",
+    "curated": true,
+    "notes": "Free account = 10 copies/day; Pro $79/yr. Proprietary license \u2014 use in projects, never vendor into this repo."
+  },
+  {
+    "id": "magicui/marquee",
+    "curated": true,
+    "notes": "The cleanest infinite marquee for logo clouds / testimonial rows: pure CSS animation, no colours of its own, pauseOnHover + vertical + reverse props. Duplicates children (`repeat`), so keep items light.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "logo-cloud",
+      "testimonials",
+      "carousel"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/animated-list",
+    "curated": true,
+    "notes": "Notifications/events appearing one by one \u2014 great 'activity feed' hero visual. Unstyled; you style the items with bg-card etc. Imports motion/react.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "toast",
+      "agent-ui",
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/blur-fade",
+    "curated": true,
+    "notes": "Blur + fade-in on mount or in view; the go-to entrance wrapper for sections and image grids (stagger with `delay`). Colourless. Respect prefers-reduced-motion yourself.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "card",
+      "image",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/text-animate",
+    "curated": true,
+    "notes": "Per-word/char/line text entrance with ~10 presets (blurIn, slideUp, scaleUp\u2026). Inherits colour \u2014 good default for hero headlines over Aceternity's text effects.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "cta"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/number-ticker",
+    "curated": true,
+    "notes": "Count-up number for stats sections. Hard-codes text-black dark:text-white \u2014 pass className=\"text-foreground\" (or font-heading) to theme it.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/animated-beam",
+    "curated": true,
+    "notes": "SVG beams flowing between refs \u2014 the 'integrations' diagram (your app in the middle, tools around it). Default gradient is orange\u2192purple: set gradientStartColor/StopColor to var(--primary).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "features",
+      "illustration"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/border-beam",
+    "curated": true,
+    "notes": "Light travelling around a card's border; subtle way to highlight one pricing tier or the hero screenshot. colorFrom/colorTo default orange/purple \u2014 pass var(--primary). Parent needs `relative overflow-hidden rounded-*`.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "card",
+      "button",
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/magic-card",
+    "curated": true,
+    "notes": "Spotlight-follows-cursor card (bg-background surface). Gradient defaults are purple/pink hex and it imports next-themes \u2014 pass gradientFrom/To from the theme; drop next-themes if you don't use it.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "cursor",
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/bento-grid",
+    "curated": true,
+    "notes": "Feature bento with icon + hover CTA. Hard-codes neutral-*/black alpha colours and needs @radix-ui/react-icons \u2014 prefer @oc/feature-bento, or swap to bg-card/text-muted-foreground.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "bento",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/dot-pattern",
+    "curated": true,
+    "notes": "Quiet SVG dot background (also grid-pattern / interactive-grid-pattern / flickering-grid). Dots use currentColor on a hard-coded text-neutral-400/80 \u2014 pass className=\"text-muted-foreground/40\" plus a radial mask.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/interactive-hover-button",
+    "curated": true,
+    "notes": "Pill button whose label slides out for an arrow + primary fill on hover. Uses bg-primary/text-primary-foreground \u2014 one of the few fully token-based Magic UI pieces.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/terminal",
+    "curated": true,
+    "notes": "Animated terminal with typing + sequenced lines for CLI/dev-tool heroes. bg-background/border-border (only the traffic-light dots are literal colours). Imports motion/react even though the registry lists no deps.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "code",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "magicui/globe",
+    "curated": true,
+    "notes": "Lightweight WebGL globe (cobe) \u2014 much cheaper than Aceternity's three.js globe. Colours are RGB arrays in the config (white base, orange markers); tune to your palette. One per page.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "map",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "drag"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "webgl"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    },
+    "moods": [
+      "futuristic",
+      "premium",
+      "technical"
+    ]
+  },
+  {
+    "id": "magicui/animated-theme-toggler",
+    "curated": true,
+    "notes": "Light/dark toggle with a View Transitions clip-path reveal. Colourless (icons use currentColor). Uncontrolled it toggles <html class=dark> + localStorage itself; with next-themes pass theme/onThemeChange instead.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "button",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    },
+    "moods": [
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "originui/comp-485",
+    "curated": true,
+    "notes": "Full TanStack data table: search, column filters, visibility toggles, row selection, delete, pagination. Best free 'admin table' starting point. Pulls Origin's own table/button/select primitives (see gotchas).",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-542",
+    "curated": true,
+    "notes": "Event calendar (month/week/day/agenda, drag-and-drop, event dialog) \u2014 a whole feature for free. Heavy: dnd-kit, date-fns, @remixicon/react, ~12 primitives. Event colours are a fixed palette (sky/amber/violet/rose/emerald/orange).",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-229",
+    "curated": true,
+    "notes": "Searchable combobox (popover + command) with label \u2014 drop-in for long select lists.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-235",
+    "curated": true,
+    "notes": "Multiselect with removable tag chips + search. Uses Origin's `multiselect` primitive (not in stock shadcn).",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-25",
+    "curated": true,
+    "notes": "Search input with \u2318K kbd hint \u2014 standard app header search field.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-23",
+    "curated": true,
+    "notes": "Password input with show/hide toggle.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-333",
+    "curated": true,
+    "notes": "Command palette (command + dialog) with search \u2014 pair with comp-25 as the trigger and bind \u2318K yourself.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-554",
+    "curated": true,
+    "notes": "Avatar upload with crop dialog + zoom slider. Uses Origin's cropper primitive and use-file-upload hook.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-508",
+    "curated": true,
+    "notes": "Range calendar (react-day-picker) for date-range filters.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-583",
+    "curated": true,
+    "notes": "App navbar with breadcrumb, notification popover and user menu \u2014 complete product header. Logo is a placeholder SVG.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-565",
+    "curated": true,
+    "notes": "File/folder tree (headless-tree) \u2014 docs nav, file explorers.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-513",
+    "curated": true,
+    "notes": "Stepper for multi-step forms / onboarding (Origin's stepper primitive, not in stock shadcn).",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-530",
+    "curated": true,
+    "notes": "Timeline (Origin's timeline primitive) \u2014 changelogs, order history, activity.",
+    "themeAware": true
+  },
+  {
+    "id": "originui/comp-293",
+    "curated": true,
+    "notes": "Cookie/GDPR consent notification with buttons. Small and token-based; wire up persistence yourself.",
+    "themeAware": true
+  },
+  {
+    "id": "react-bits/split-text",
+    "curated": true,
+    "notes": "Char/word staggered entrance on scroll (GSAP SplitText + ScrollTrigger). Inherits colour. The React Bits headline effect; needs gsap + @gsap/react.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "gsap"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/blur-text",
+    "curated": true,
+    "notes": "Words blur-in one by one (motion). Inherits colour; lighter than SplitText (no GSAP).",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    },
+    "moods": [
+      "refined",
+      "calm"
+    ]
+  },
+  {
+    "id": "react-bits/rotating-text",
+    "curated": true,
+    "notes": "Rotating keyword in a headline with staggered letter transitions (motion). Unstyled \u2014 put bg-primary/text-primary-foreground on the pill yourself.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "text-effect",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/text-type",
+    "curated": true,
+    "notes": "Typewriter with cursor, multiple strings, delete/retype (GSAP). Inherits colour.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "ai-chat"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "gsap"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    },
+    "moods": [
+      "technical",
+      "playful"
+    ]
+  },
+  {
+    "id": "react-bits/decrypted-text",
+    "curated": true,
+    "notes": "Scramble \u2192 reveal text on hover or in view (motion). Dev-tool/brutalist brands.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/count-up",
+    "curated": true,
+    "notes": "Animated stats counter with separators/decimals (motion). Inherits colour.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/scroll-reveal",
+    "curated": true,
+    "notes": "Paragraph that un-blurs and fades in word by word as you scroll \u2014 manifesto/about sections. GSAP ScrollTrigger.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "gsap"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/shiny-text",
+    "curated": true,
+    "notes": "Shimmer sweep across text, e.g. a hero eyebrow. Default colours #b5b5b5/#fff are props \u2014 set from your muted/foreground tokens.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "badge",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/gradient-text",
+    "curated": true,
+    "notes": "Animated gradient text/border. Default palette is React Bits purple/pink \u2014 always pass colors from your theme.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "badge"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/aurora",
+    "curated": true,
+    "notes": "WebGL aurora backdrop (ogl, ~small). colorStops default to React Bits purple/green \u2014 pass your --primary hexes. Lazy-load; one per page.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "webgl"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/dot-grid",
+    "curated": true,
+    "notes": "Interactive dot grid that reacts to cursor/click (GSAP + InertiaPlugin). baseColor/activeColor are hex props (default purple).",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "cursor",
+        "press"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "canvas",
+        "gsap"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/beams",
+    "curated": true,
+    "notes": "three.js light beams backdrop \u2014 striking but heavy (three + @react-three/fiber + drei). Use only for a hero, lazy-loaded.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "webgl"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "react-bits/logo-loop",
+    "curated": true,
+    "notes": "Logo marquee with fade edges and hover-pause; supports node or image logos. fadeOutColor defaults to #0b0b0b/#fff \u2014 set it to your background.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "logo-cloud"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "js"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "react-bits/magic-bento",
+    "curated": true,
+    "notes": "Bento grid with spotlight, border glow, particles and tilt (GSAP). Hard-coded dark palette (#120F17 cards, #2F293A borders, text-white) \u2014 only for dark sites, or rework colours.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "bento",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "cursor"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "gsap"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/text-effect",
+    "curated": true,
+    "notes": "Most flexible text entrance primitive (per char/word/line, presets + custom variants, trigger prop). Unstyled \u2014 inherits theme. Install via @motion-primitives or `npx motion-primitives add`.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/morphing-dialog",
+    "curated": true,
+    "notes": "Card that morphs into a dialog (shared layout) \u2014 the signature motion-primitives piece for galleries/case studies. Only the backdrop has colour (white/black 40%); you style the card with tokens.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "modal",
+      "card",
+      "image"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/animated-background",
+    "curated": true,
+    "notes": "Sliding highlight behind the hovered/active item (tabs, nav, segmented controls). You pass the bg class (e.g. bg-muted), so it follows the theme.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "tabs",
+      "navigation",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/transition-panel",
+    "curated": true,
+    "notes": "Animated content swap between tab panels/steps (AnimatePresence wrapper). Colourless.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "tabs",
+      "card",
+      "form"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    },
+    "moods": [
+      "refined",
+      "minimal"
+    ]
+  },
+  {
+    "id": "motion-primitives/infinite-slider",
+    "curated": true,
+    "notes": "Infinite marquee with speedOnHover and vertical mode; alternative to magicui/marquee using motion + react-use-measure.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "logo-cloud",
+      "testimonials",
+      "carousel"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/in-view",
+    "curated": true,
+    "notes": "Animate children when they enter the viewport \u2014 thin, reusable wrapper. Colourless.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "hero",
+      "card",
+      "image",
+      "features"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/animated-group",
+    "curated": true,
+    "notes": "Stagger a group of children with presets (fade, blur, slide, zoom\u2026). Colourless; good for feature lists and logo rows.",
+    "themeAware": true,
+    "integration": "wrapper",
+    "appliesTo": [
+      "features",
+      "card",
+      "logo-cloud",
+      "testimonials"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/sliding-number",
+    "curated": true,
+    "notes": "Odometer-style rolling digits (spring). Inherits colour; pair with in-view for stats.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/progressive-blur",
+    "curated": true,
+    "notes": "Layered backdrop-filter blur gradient for edges of scroll areas/images. Colourless; backdrop-filter costs GPU \u2014 keep blurLayers low.",
+    "themeAware": true
+  },
+  {
+    "id": "motion-primitives/text-shimmer",
+    "curated": true,
+    "notes": "Shimmer sweep for 'Thinking\u2026' / loading text. Colours come from --base-color/--base-gradient-color defaults (zinc) \u2014 override via className.",
+    "themeAware": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "text-effect",
+      "loader",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "motion-primitives/toolbar-dynamic",
+    "curated": true,
+    "notes": "Toolbar that expands into a search/input panel. Hard-codes zinc/white \u2014 swap to bg-popover/border/text-muted-foreground before using.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/onboarding",
+    "curated": true,
+    "notes": "Compound multi-step onboarding (StepIndicator, ChoiceGroup, FeatureCarousel, TipsList; controllable state). Fully token-based \u2014 the safest Cult UI pick for app UI.",
+    "themeAware": true
+  },
+  {
+    "id": "cult-ui/intro-disclosure",
+    "curated": true,
+    "notes": "Feature-announcement/onboarding modal with media steps, 'don't show again' and responsive dialog\u2194drawer. Tokens throughout (black only on the media frame). Pulls 6 shadcn primitives.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "modal"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/rolling-number",
+    "curated": true,
+    "notes": "Small rolling-digit number (motion). Inherits colour.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/halo-tabs",
+    "curated": true,
+    "notes": "Base UI tabs with an animated glowing 'halo' indicator. Surfaces use tokens, but the halo glow is a hard-coded cyan/purple/pink palette. Needs @base-ui/react.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "tabs"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "cult-ui/halo-input",
+    "curated": true,
+    "notes": "Input with animated focus halo + validation states. Tokens for border/text, Vercel-style rainbow hex for the glow \u2014 retint for your brand. @base-ui/react + motion.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "input",
+      "form"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "moods": [
+      "playful",
+      "refined",
+      "warm"
+    ]
+  },
+  {
+    "id": "cult-ui/prompt-composer",
+    "curated": true,
+    "notes": "AI prompt composer with attachments/actions and a shader glow. Mostly tokens, but teal/blue hex accents and @paper-design/shaders-react + @base-ui/react are heavy deps.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "webgl",
+        "motion"
+      ],
+      "cost": "high",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "cult-ui/dynamic-island",
+    "curated": true,
+    "notes": "Apple Dynamic Island that morphs between sizes/states \u2014 fun status/notification widget. Hard-coded black pill; fine on any theme as a 'device' element.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "toast",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/direction-aware-tabs",
+    "curated": true,
+    "notes": "Tabs whose content slides in the direction of travel. Hard-codes neutral-600/700 + white text \u2014 swap to bg-muted/text-foreground.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "tabs"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/popover-form",
+    "curated": true,
+    "notes": "Button that morphs into a small inline form (feedback, waitlist). Text uses tokens but surfaces are bg-white / dark:bg-[#121212] plus blue accents \u2014 swap to bg-popover.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "form",
+      "modal",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/expandable",
+    "curated": true,
+    "notes": "Compound card that expands to reveal details (motion + react-use-measure). Mostly bg-muted/ring-border, but one bg-white surface \u2014 check dark mode.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/hero-dithering",
+    "curated": true,
+    "notes": "Hero with animated dithering shader backdrop (@paper-design/shaders-react); text/card layer uses tokens, shader colour is a hex prop.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero",
+      "background"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "webgl"
+      ],
+      "cost": "high",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "cult-ui/mock-browser-window",
+    "curated": true,
+    "notes": "Browser-window frame for screenshots/demos; mostly tokens with literal traffic-light colours.",
+    "themeAware": false
+  },
+  {
+    "id": "cult-ui/texture-button",
+    "curated": true,
+    "notes": "Skeuomorphic textured button variants. Heavy hard-coded neutral/indigo gradients \u2014 fits soft-glass/editorial looks, clashes with flat themes.",
+    "themeAware": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "press"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "kibo-ui/gantt",
+    "curated": true,
+    "notes": "Full Gantt chart (draggable features, sidebar groups, markers). Fully token-based. Deps: dnd-kit, jotai, date-fns, lodash.throttle, @uidotdev/usehooks.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "dashboard"
+    ],
+    "motion": {
+      "triggers": [
+        "drag"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "js"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "kibo-ui/kanban",
+    "curated": true,
+    "notes": "Composable drag-and-drop kanban (dnd-kit + tunnel-rat). Token-based; you bring the data model.",
+    "themeAware": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "dashboard"
+    ],
+    "motion": {
+      "triggers": [
+        "drag"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "js"
+      ],
+      "cost": "medium",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "kibo-ui/dropzone",
+    "curated": true,
+    "notes": "File dropzone (react-dropzone) with empty/content states. Token-based; pairs with stock shadcn forms.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/color-picker",
+    "curated": true,
+    "notes": "Figma-style colour picker (saturation/hue/alpha/eyedropper/format). Surfaces use tokens; the colour gradients are intrinsic.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/code-block",
+    "curated": true,
+    "notes": "Shiki code block with tabs, line numbers, highlight/diff/focus transformers and copy. Theme-aware chrome; diff colours are semantic emerald/rose. Heavy: shiki + react-icons.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/contribution-graph",
+    "curated": true,
+    "notes": "GitHub-style contribution heatmap; levels use fill-muted-foreground/N, so it inherits the theme.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/editor",
+    "curated": true,
+    "notes": "TipTap rich-text editor with slash commands, bubble menu, tables. Token-based UI but ~18 tiptap/lowlight deps \u2014 only when you truly need rich text.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/tags",
+    "curated": true,
+    "notes": "Tag picker built from badge + command + popover.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/announcement",
+    "curated": true,
+    "notes": "'New feature \u2192' pill above a hero headline (compound badge). Token-based.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/snippet",
+    "curated": true,
+    "notes": "Tabbed install-command snippet with copy (npm/pnpm/bun). Ideal for dev-tool landing pages.",
+    "themeAware": true
+  },
+  {
+    "id": "kibo-ui/qr-code",
+    "curated": true,
+    "notes": "QR code (qrcode lib) that reads --foreground/--background at runtime \u2014 but only parses oklch() values; our DESIGN.md themes emit hex, so it silently falls back to near-black/white. Pass foreground/background props. Server variant included.",
+    "themeAware": false
+  },
+  {
+    "id": "kibo-ui/video-player",
+    "curated": true,
+    "notes": "media-chrome video player styled with Tailwind. Colourless controls inherit theme.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/dashboard-01",
+    "curated": true,
+    "notes": "The reference SaaS dashboard: inset sidebar, KPI cards, interactive area chart, dnd-sortable data table. Writes app/dashboard/page.tsx + data.json and many components/* files. Uses @tabler/icons-react (swap for lucide if you like).",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/sidebar-07",
+    "curated": true,
+    "notes": "Sidebar that collapses to icons, with team switcher + user menu \u2014 the best default app shell. Writes app/dashboard/page.tsx and components/app-sidebar.tsx (installing another sidebar-NN overwrites it).",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/sidebar-08",
+    "curated": true,
+    "notes": "Inset sidebar with secondary nav \u2014 Linear/Vercel-style shell.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/sidebar-16",
+    "curated": true,
+    "notes": "Sidebar under a sticky site header (search + breadcrumb) \u2014 for apps with a global top bar.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/sidebar-15",
+    "curated": true,
+    "notes": "Left nav + right sidebar (calendar) \u2014 three-column layouts like mail/calendar apps.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/login-03",
+    "curated": true,
+    "notes": "Centered card login on a muted background. Writes app/login/page.tsx + components/login-form.tsx.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/login-04",
+    "curated": true,
+    "notes": "Login form + image split in one card \u2014 more brand presence than login-03.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/login-02",
+    "curated": true,
+    "notes": "Two-column login with full-height cover image.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/signup-05",
+    "curated": true,
+    "notes": "Minimal signup with social providers.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/chart-area-interactive",
+    "curated": true,
+    "notes": "Area chart with time-range select \u2014 the dashboard hero chart. Colours come from --chart-1..5 (all our design systems define them).",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/chart-bar-interactive",
+    "curated": true,
+    "notes": "Bar chart with metric toggle in the card header. Recharts via the shadcn chart component.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/chart-pie-donut-text",
+    "curated": true,
+    "notes": "Donut with total in the centre \u2014 compact KPI breakdown.",
+    "themeAware": true
+  },
+  {
+    "id": "shadcn/chart-radar-dots",
+    "curated": true,
+    "notes": "Radar chart with dots \u2014 skill/feature comparison.",
+    "themeAware": true
+  },
+  {
+    "id": "oc/hero-spotlight",
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero"
+    ]
+  },
+  {
+    "id": "oc/feature-bento",
+    "integration": "drop-in",
+    "appliesTo": [
+      "features",
+      "bento"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "oc/pricing-simple",
+    "integration": "drop-in",
+    "appliesTo": [
+      "pricing"
+    ]
+  },
+  {
+    "id": "oc/agent-status",
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "loader"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas",
+        "css"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "oc/beam-card",
+    "integration": "drop-in",
+    "appliesTo": [
+      "card",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "oc/theme-preview",
+    "integration": "drop-in",
+    "appliesTo": [
+      "theme"
+    ]
+  },
+  {
+    "id": "oc/navbar",
+    "integration": "drop-in",
+    "appliesTo": [
+      "navigation"
+    ]
+  },
+  {
+    "id": "oc/hero-split",
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero"
+    ]
+  },
+  {
+    "id": "oc/logo-cloud",
+    "integration": "drop-in",
+    "appliesTo": [
+      "logo-cloud"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "oc/feature-list",
+    "integration": "drop-in",
+    "appliesTo": [
+      "features"
+    ]
+  },
+  {
+    "id": "oc/stats-row",
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats"
+    ]
+  },
+  {
+    "id": "oc/testimonials-grid",
+    "integration": "drop-in",
+    "appliesTo": [
+      "testimonials"
+    ]
+  },
+  {
+    "id": "oc/faq",
+    "integration": "drop-in",
+    "appliesTo": [
+      "faq",
+      "accordion"
+    ]
+  },
+  {
+    "id": "oc/cta-banner",
+    "integration": "drop-in",
+    "appliesTo": [
+      "cta"
+    ]
+  },
+  {
+    "id": "oc/footer-columns",
+    "integration": "drop-in",
+    "appliesTo": [
+      "footer",
+      "navigation"
+    ]
+  },
+  {
+    "id": "oc/app-shell",
+    "integration": "drop-in",
+    "appliesTo": [
+      "sidebar",
+      "navigation",
+      "dashboard"
+    ]
+  },
+  {
+    "id": "oc/stat-cards",
+    "integration": "drop-in",
+    "appliesTo": [
+      "stats",
+      "dashboard",
+      "card"
+    ]
+  },
+  {
+    "id": "oc/data-table-card",
+    "integration": "drop-in",
+    "appliesTo": [
+      "table",
+      "dashboard"
+    ]
+  },
+  {
+    "id": "oc/empty-state",
+    "integration": "drop-in",
+    "appliesTo": [
+      "empty-state"
+    ]
+  },
+  {
+    "id": "oc/settings-form",
+    "integration": "drop-in",
+    "appliesTo": [
+      "form",
+      "input"
+    ]
+  },
+  {
+    "id": "oc/chat-thread",
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "oc/prompt-composer",
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "input"
+    ]
+  },
+  {
+    "id": "oc/feature-levels",
+    "integration": "drop-in",
+    "appliesTo": [
+      "features",
+      "scroll-effect"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "js"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "oc/template-landing",
+    "integration": "drop-in",
+    "appliesTo": [
+      "hero",
+      "features",
+      "pricing",
+      "testimonials",
+      "faq",
+      "cta",
+      "footer"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "oc/template-saas-dashboard",
+    "integration": "drop-in",
+    "appliesTo": [
+      "dashboard",
+      "sidebar",
+      "stats",
+      "chart",
+      "table"
+    ]
+  },
+  {
+    "id": "oc/template-ai-chat",
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "agent-ui",
+      "sidebar"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas",
+        "css"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "oc/design-lab",
+    "integration": "drop-in",
+    "appliesTo": [
+      "dev-tool"
+    ]
+  },
+  {
+    "id": "react-bits/elastic-slider",
+    "categories": [
+      "input"
+    ],
+    "notes": "A range slider with elastic overshoot at the ends (not a carousel)."
+  },
+  {
+    "id": "motion/shared-layout-animation",
+    "curated": true,
+    "notes": "Shared-element layoutId: a tab underline / pill that glides between items. The free, hand-rolled way to animate tabs, nav highlights and segmented controls \u2014 about 10 lines with `layoutId`. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/layout-animation",
+    "curated": true,
+    "notes": "`layout` prop: elements animate to their new size/position when state changes (expanding cards, accordion rows, reflowing grids). No height hacks. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/exit-animation",
+    "curated": true,
+    "notes": "AnimatePresence exit: modals, toasts and removed list items animate OUT instead of vanishing. The fix for 'abrupt' close. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/animate-presence-modes",
+    "curated": true,
+    "notes": "AnimatePresence `mode` (sync / wait / popLayout): how to swap one view for another \u2014 tab panels, carousel slides, step wizards \u2014 without overlap jank. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/scroll-triggered",
+    "curated": true,
+    "notes": "whileInView: fade/slide sections and cards in as they enter the viewport. Use with @oc/motion-presets fadeUp + once:true. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "enter",
+        "scroll"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/scroll-linked",
+    "curated": true,
+    "notes": "useScroll + useTransform: progress bars and parallax tied to scroll position. Medium-intensity; keep it to one element per viewport. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/scroll-hide-header",
+    "curated": true,
+    "notes": "Header that hides on scroll down and returns on scroll up (useMotionValueEvent). Great default for marketing navbars. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/reorder-items",
+    "curated": true,
+    "notes": "Reorder: drag-to-reorder lists with automatic layout animation \u2014 settings lists, kanban columns, playlists. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "drag",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/drag",
+    "curated": true,
+    "notes": "drag + constraints + momentum: draggable cards, swipeable panels, sliders. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "drag"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/path-drawing",
+    "curated": true,
+    "notes": "pathLength: SVG line drawing for icons, checkmarks, signatures and diagrams. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "enter",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/rolling-text-button",
+    "curated": true,
+    "notes": "Button whose label rolls to a new word on hover/click \u2014 a free alternative to Motion+ text components. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "hover",
+        "press"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/characters-remaining",
+    "curated": true,
+    "notes": "Character counter that animates as you type and warns near the limit \u2014 input feedback done right. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/follow-pointer-with-spring",
+    "curated": true,
+    "notes": "Element that follows the cursor with spring lag \u2014 custom cursors and spotlight followers without Motion+ Cursor. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "cursor"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/text-scroll-word-reveal",
+    "curated": true,
+    "notes": "Words light up as you scroll through a paragraph \u2014 the classic manifesto/hero statement reveal. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/loading-three-dots-pulse",
+    "curated": true,
+    "notes": "Minimal three-dot pulse loader (variants + repeat). Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "motion/add-to-basket",
+    "curated": true,
+    "notes": "Product flies into the cart along an arc() path with a spring impact \u2014 e-commerce delight. Free example (motion is MIT); copy and adapt the source from the example page.",
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "expressive",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    },
+    "themeAware": false
+  },
+  {
+    "id": "oc/motion-presets",
+    "integration": "recipe",
+    "appliesTo": [
+      "transition",
+      "button",
+      "card",
+      "modal",
+      "toast",
+      "tabs"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "press",
+        "hover",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "low"
+    }
+  },
+  {
+    "id": "smoothui/ai-approval",
+    "curated": true,
+    "notes": "Human-in-the-loop approval card: the chosen option expands to fill the card and the alternatives collapse away, so the decision reads as final; destructive options get bg-destructive/10. All shadcn tokens (bg-background, border-border, text-muted-foreground) and useReducedMotion throughout \u2014 the free, theme-aware alternative to beautifui/approval-card (no foundation.css --accent clash). Pass resolvedId when replaying a transcript.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "press"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/ai-tool-call",
+    "curated": true,
+    "notes": "Collapsible tool-invocation row (name, summary, args/result panel) whose status ring breathes while pending, spins while running, then draws a check or cross. Chrome is theme tokens; the success/error ring colours are fixed oklch green/red \u2014 swap for your semantic tokens if the design system defines them. Status is also announced via sr-only text. Pairs with smoothui/ai-task-list.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "accordion"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/ai-task-list",
+    "curated": true,
+    "notes": "Live agent plan: nested steps with a drawn checkmark on completion and a travelling underline on whichever step is running. Theme tokens + fixed oklch success/danger accents; honours reduced motion. The best free 'what is the agent doing' checklist \u2014 drive it from real step events, never a timer.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "loader"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/ai-reasoning",
+    "curated": true,
+    "notes": "Collapsible reasoning trace: the label shimmers 'Thinking' only while isStreaming, then settles to 'Thought for 3.2s' (measured, or pass duration) and auto-collapses \u2014 until the user toggles it, after which it stops deciding for them. Muted-foreground chrome, inherits the theme; no shimmer under reduced motion.",
+    "themeAware": true,
+    "moods": [
+      "calm",
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "ai-chat",
+      "accordion"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/ai-loader",
+    "curated": true,
+    "notes": "Three small AI waiting indicators (dots, sweep bar, 3\u00d73 pixel grid) sharing one cycle length so they can be mixed on a page, with an optional elapsed-seconds counter, aria-live and an sr-only label. Drawn in currentColor \u2014 set the text colour and it follows the theme. Lighter than canvas orbs for inline 'working\u2026' states; use oc/agent-status for the primary agent indicator.",
+    "themeAware": true,
+    "moods": [
+      "calm",
+      "minimal",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/ai-prompt-input",
+    "curated": true,
+    "notes": "Prompt composer: autogrowing textarea, attachment chips, Enter-to-send and a send button that becomes Stop while streaming (the two lucide icons swap \u2014 not a true path morph, despite the description). Theme tokens. Pulls @smoothui/ai-core, imported by relative path (../ai-core), so keep both under components/smoothui/.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "ai-chat",
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/ai-context-meter",
+    "curated": true,
+    "notes": "Context-window meter: a ring that fills and shifts to amber at warningAt / red at dangerAt without ever changing size, with a token breakdown on open. Warning/danger colours are fixed oklch; the rest is tokens. Good for chat headers and agent consoles that should show budget pressure quietly.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "agent-ui",
+      "stats"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion",
+        "svg"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/skeleton-loader",
+    "curated": true,
+    "notes": "Wrap real content in <Skeleton loading> and it renders an invisible copy with a pulsing overlay of exactly the same size \u2014 no hand-sized placeholder boxes, zero layout shift when data lands. No deps; bg-muted-foreground/20 + Tailwind animate-pulse. Does NOT honour reduced motion \u2014 add motion-reduce:animate-none. Pair with transitions/skeleton-reveal for the crossfade out.",
+    "themeAware": true,
+    "moods": [
+      "minimal",
+      "calm"
+    ],
+    "integration": "wrapper",
+    "appliesTo": [
+      "loader",
+      "card",
+      "table"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "smoothui/animated-tabs",
+    "curated": true,
+    "notes": "Tab list with a layoutId spring indicator in underline, pill or segment variants; arrow/Home/End keys and roving tabindex. Pill/segment use bg-muted + bg-background (theme). The underline uses bg-brand from SmoothUI's tokens.json (pink by default) \u2014 set --brand: var(--primary) once in globals.css. Tabs only: you render the panels (pair with motion-primitives/transition-panel).",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "tabs",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/floating-navbar",
+    "curated": true,
+    "notes": "Floating pill navbar that tightens its padding after 120px of scroll, hides on scroll-down and returns on scroll-up, with a layoutId pill behind the active link. bg-background/90 + backdrop-blur, theme tokens; focus ring uses brand. Positioned absolute \u2014 pass className=\"fixed\" for a page navbar. Hide-on-scroll is disabled under reduced motion. Marketing pages only (see the navigation playbook's scroll-aware direction).",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "premium"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/coverflow-carousel",
+    "curated": true,
+    "notes": "3D coverflow (rotateY + depth + scale per offset) with drag/swipe, arrow keys, optional autoplay and an aria-live slide announcer; drag turns off under reduced motion (the upstream hasReducedMotion flag is wrong \u2014 the code uses useReducedMotion). Cards are bg-background with a foreground/10 ring. Prev/next come from @smoothui/smooth-button (auto-installed), which uses SmoothUI's smooth-N grey ramp from tokens.json.",
+    "themeAware": true,
+    "moods": [
+      "premium",
+      "playful"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "carousel",
+      "image"
+    ],
+    "motion": {
+      "triggers": [
+        "drag",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/card-swipe-deck",
+    "curated": true,
+    "notes": "Tinder-style swipe deck: drag past a threshold or press \u2190/\u2192 to commit; Like/Nope stamps and tinted washes fade in with the drag; imperative swipeLeft/swipeRight/reset handle; aria-live announcements; reduced-motion aware. Like uses text-green from SmoothUI's tokens.json, Nope uses text-destructive; the heavy inline card shadow is tuned for light backgrounds. Labels are props.",
+    "themeAware": true,
+    "moods": [
+      "playful",
+      "warm"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "carousel",
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "drag"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/scroll-progress",
+    "curated": true,
+    "notes": "Reading-progress indicator in four variants (bar, ring, rolling percent number, segmented), spring-smoothed via useScroll, for the window or a scroll container. Default colour is var(--color-brand) from tokens.json \u2014 pass color=\"var(--primary)\" (or define --brand). Articles, docs and long onboarding pages.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "editorial"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "scroll-effect",
+      "navigation",
+      "blog"
+    ],
+    "motion": {
+      "triggers": [
+        "scroll"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/button-copy",
+    "curated": true,
+    "notes": "Copy button that cycles idle \u2192 spinner \u2192 check with icon cross-fades, an aria-live status and a 44px hit target; icons are props. bg-background + border, spinner has motion-reduce:animate-none. Its className is string-concatenated (no cn()), so conflicting utility classes won't merge \u2014 override via a wrapper if needed.",
+    "themeAware": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "drop-in",
+    "appliesTo": [
+      "button",
+      "code"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "microkit/sliding-underline-tabs",
+    "source": "microkit",
+    "name": "sliding-underline-tabs",
+    "title": "Sliding Underline Tabs",
+    "description": "A compact tab switcher with an orange underline that glides between labels.",
+    "kind": "component",
+    "categories": [
+      "tabs"
+    ],
+    "tags": [
+      "css",
+      "click",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/sliding-underline-tabs.json",
+    "docs": "https://microkit.co/components/sliding-underline-tabs",
+    "curated": true,
+    "notes": "CSS-only: one bar translated under the active label (750ms ease-out) plus a 650ms keyframe nudge on the panel; motion-reduce handled. A prop-less demo \u2014 3 hard-coded tabs, #f97316 bar, light-dark() hex greys, and the active label is text-white, which vanishes on a light background. Lift the technique onto your own tabs with bg-primary / text-foreground.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "tabs",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "microkit/sliding-content-tabs",
+    "source": "microkit",
+    "name": "sliding-content-tabs",
+    "title": "Sliding Content Tabs",
+    "description": "A compact tab switcher with a sliding active surface and content transition.",
+    "kind": "component",
+    "categories": [
+      "tabs"
+    ],
+    "tags": [
+      "css",
+      "click",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/sliding-content-tabs.json",
+    "docs": "https://microkit.co/components/sliding-content-tabs",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": true,
+    "notes": "A solid slab slides behind the active icon+label tab (translateX, 750ms ease-out). Despite the description the content swap is a keyed remount with no animation, and there is no reduced-motion guard. Hard-coded demo tabs and #f97316 slab \u2014 take the slab technique, use bg-primary + text-primary-foreground.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "tabs"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "microkit/expanding-icon-tabs",
+    "source": "microkit",
+    "name": "expanding-icon-tabs",
+    "title": "Expanding Icon Tabs",
+    "description": "An icon bar where the chosen tab widens to reveal its label and the rest of the row slides over to make room.",
+    "kind": "component",
+    "categories": [
+      "tabs",
+      "navigation"
+    ],
+    "tags": [
+      "css",
+      "click",
+      "toolbar",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/expanding-icon-tabs.json",
+    "docs": "https://microkit.co/components/expanding-icon-tabs",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": true,
+    "notes": "Icon toolbar whose chosen item widens to show its label while siblings slide over; \u2190/\u2192 move focus, Escape and outside-click collapse it, role=toolbar, motion-reduce handled. Good for compact app toolbars and view switchers. Hard-coded items and light-dark() hex colours \u2014 rebuild with your icons and tokens.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "tabs",
+      "navigation",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "microkit/spotlight-indicator",
+    "source": "microkit",
+    "name": "spotlight-indicator",
+    "title": "Spotlight Indicator",
+    "description": "A glowing rail that slides to the active item in a vertical nav \u2014 the same indicator powering this site's sidebar.",
+    "kind": "component",
+    "categories": [
+      "navigation",
+      "sidebar"
+    ],
+    "tags": [
+      "css",
+      "click",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "futuristic"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/spotlight-indicator.json",
+    "docs": "https://microkit.co/components/spotlight-indicator",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": true,
+    "notes": "Vertical-nav indicator: JS measures the active item and a 2px glowing rail transitions top/height (300ms). Lovely for sidebars and settings nav. No reduced-motion guard; orange #f97316 glow and hex greys are hard-coded \u2014 use var(--primary) for the rail and its box-shadow.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "sidebar",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "js"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "microkit/magnetic-fill-button",
+    "source": "microkit",
+    "name": "magnetic-fill-button",
+    "title": "Magnetic Fill Button",
+    "description": "A magnetic pill button with a bottom-to-top background fill.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "css",
+      "hover",
+      "magnetic",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "playful",
+      "refined"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/magnetic-fill-button.json",
+    "docs": "https://microkit.co/components/magnetic-fill-button",
+    "curated": true,
+    "notes": "Zero-dependency magnetic button: pointermove writes CSS vars (14%/22% of the cursor offset) that translate the pill, and a fill rises bottom-to-top on hover/focus (380ms). Much lighter than Motion-based magnets. No reduced-motion guard on the translate; the outline, text and #f97316 fill are hard-coded \u2014 use border-foreground and a bg-primary fill with text-primary-foreground.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "button",
+      "cta"
+    ],
+    "motion": {
+      "triggers": [
+        "hover",
+        "cursor"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "js"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "microkit/icon-swap-button",
+    "source": "microkit",
+    "name": "icon-swap-button",
+    "title": "Icon Swap Button",
+    "description": "A leading icon slides out as an arrow opens in to take its place, trading without changing the button's width.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "css",
+      "hover",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/icon-swap-button.json",
+    "docs": "https://microkit.co/components/icon-swap-button",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": true,
+    "notes": "On hover/focus-visible the leading icon (an Apple mark in the demo) collapses out while an arrow opens in on the other side, so the button never changes width (520ms ease-out transitions on width/margin/opacity). Great for download/CTA buttons. No reduced-motion guard; light-dark() hex colours.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "button",
+      "cta"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": false
+    }
+  },
+  {
+    "id": "microkit/secure-purchase-button",
+    "source": "microkit",
+    "name": "secure-purchase-button",
+    "title": "Secure Purchase Button",
+    "description": "A purchase button that opens room for a pixel-wave loader, swaps it for a shield once the payment clears, then resets itself.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "css",
+      "click",
+      "stateful",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/secure-purchase-button.json",
+    "docs": "https://microkit.co/components/secure-purchase-button",
+    "curated": true,
+    "notes": "Stateful pay button: idle \u2192 processing (pixel-wave loader opens room beside the label) \u2192 secured (shield) \u2192 resets, with data-state, aria-busy and an aria-live label; motion-reduce handled. The states advance on setTimeout in the demo \u2014 drive them from your real payment promise. Hard-coded colours.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "button",
+      "form"
+    ],
+    "motion": {
+      "triggers": [
+        "press",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "microkit/scrub-number-field",
+    "source": "microkit",
+    "name": "scrub-number-field",
+    "title": "Scrub Number Field",
+    "description": "A number field you drag to scrub and click to type, with a ruler that tracks the gesture.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "css",
+      "drag",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/scrub-number-field.json",
+    "docs": "https://microkit.co/components/scrub-number-field",
+    "curated": true,
+    "notes": "Figma-style scrubbable number input: drag horizontally to change the value (Shift \u00d710, Alt \u00d70.1, re-based mid-drag), click to type, a ruler tracks the gesture and the field nudges at its bounds (keyframe disabled under reduced motion). Pointer capture, no deps. Min/max (0\u2013100) and colours are hard-coded constants \u2014 lift them into props. Settings panels and design-tool UIs.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "input",
+      "form"
+    ],
+    "motion": {
+      "triggers": [
+        "drag",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "js"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "microkit/blur-glide-menu",
+    "source": "microkit",
+    "name": "blur-glide-menu",
+    "title": "Blur Glide Menu",
+    "description": "A nested menu whose steps blur before they glide aside, while the surface animates to the height of the step arriving.",
+    "kind": "component",
+    "categories": [
+      "navigation",
+      "modal"
+    ],
+    "tags": [
+      "css",
+      "click",
+      "menu",
+      "hard-coded-colours"
+    ],
+    "moods": [
+      "refined",
+      "premium"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/blur-glide-menu.json",
+    "docs": "https://microkit.co/components/blur-glide-menu",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": true,
+    "notes": "Nested menu (role=menu/menuitem, aria-haspopup, back button) where the outgoing step blurs then glides aside while the surface animates to the incoming step's height \u2014 a CSS-keyframe take on the multi-view drawer. motion-reduce shortens every transition. Demo data and colours are hard-coded.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "navigation",
+      "modal"
+    ],
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "microkit/staggered-letter-text-swap",
+    "source": "microkit",
+    "name": "staggered-letter-text-swap",
+    "title": "Staggered Letter Text Swap",
+    "description": "A surface-free text interaction with a staggered per-letter upward replacement.",
+    "kind": "component",
+    "categories": [
+      "text-effect",
+      "button"
+    ],
+    "tags": [
+      "css",
+      "hover"
+    ],
+    "moods": [
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://microkit.co/r/staggered-letter-text-swap.json",
+    "docs": "https://microkit.co/components/staggered-letter-text-swap",
+    "curated": true,
+    "notes": "Each letter rolls up and is replaced by its twin with a 34ms stagger on hover/focus-visible \u2014 pure CSS transitions via a --letter-delay var; the button carries aria-label and the letter spans are aria-hidden; motion-reduce handled. Remove the hard-coded font-[Arial] and light-dark() text colour so it inherits your type and tokens. Nav links and text CTAs.",
+    "themeAware": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "button",
+      "text-effect",
+      "navigation"
+    ],
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "liquidglass/liquid-glass",
+    "source": "liquidglass",
+    "name": "liquid-glass",
+    "title": "Liquid Glass (@samasante/liquid-glass)",
+    "description": "Headless React lens that refracts what's behind it \u2014 Apple-style Liquid Glass with frost, tint, rim light, dispersion and an edge 'bend'; can also refract a copy of a node, an image, video or canvas.",
+    "kind": "package",
+    "categories": [
+      "card",
+      "button",
+      "navigation"
+    ],
+    "tags": [
+      "npm",
+      "mit",
+      "glassmorphism",
+      "refraction",
+      "svg-filter"
+    ],
+    "moods": [
+      "premium",
+      "futuristic"
+    ],
+    "access": "free",
+    "install": "pnpm add @samasante/liquid-glass",
+    "docs": "https://glass.samasante.com",
+    "dependencies": [
+      "@samasante/liquid-glass"
+    ],
+    "curated": true,
+    "notes": "Wrap any styled box in <Glass> (your translucent background is the tint; children stay crisp; optics via the optics prop). True refraction of the live page is Chrome/Edge only (backdrop-filter: url()); Safari/Firefox fall back to frost + tint + edge light. To bend in every browser, give it geometry (size + center) to refract its own children, or refract={copy} / src for images, video and canvas (WebGL). Headless \u2014 tint it with your tokens. v0.1.x: pin the version; use one or two lenses per screen and check text contrast over busy backgrounds. React >=18 peer, zero runtime deps, MIT.",
+    "integration": "wrapper",
+    "appliesTo": [
+      "card",
+      "button",
+      "navigation",
+      "toast"
+    ],
+    "motion": {
+      "triggers": [
+        "cursor"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "svg"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "animejs/animejs",
+    "source": "animejs",
+    "name": "animejs",
+    "title": "anime.js v4",
+    "description": "Framework-agnostic JavaScript animation engine: timelines, staggers, SVG morphing / line drawing / motion paths, draggables, scroll observers, text splitting and layout animations for CSS, SVG, DOM attributes and JS objects.",
+    "kind": "package",
+    "categories": [
+      "transition",
+      "illustration",
+      "text-effect"
+    ],
+    "tags": [
+      "npm",
+      "mit",
+      "vanilla-js",
+      "timeline",
+      "stagger",
+      "svg",
+      "draggable"
+    ],
+    "moods": [
+      "playful",
+      "experimental"
+    ],
+    "access": "free",
+    "install": "pnpm add animejs",
+    "docs": "https://animejs.com/documentation/",
+    "dependencies": [
+      "animejs"
+    ],
+    "curated": true,
+    "notes": "Reach for it over Motion when choreography is the point: long multi-element timelines (createTimeline), grid staggers from center, SVG morphTo / createDrawable line drawing / createMotionPath, createDraggable, onScroll, and a free splitText (Motion's is Motion+). Vanilla JS \u2014 no React components: run it in useEffect inside createScope({ root }) and call revert() on unmount. For presence, layout and gestures in React, Motion stays the default. See catalog/sources/motion.md.",
+    "integration": "recipe",
+    "appliesTo": [
+      "illustration",
+      "text-effect",
+      "loader",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "enter",
+        "loop",
+        "drag"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    }
+  }
+]

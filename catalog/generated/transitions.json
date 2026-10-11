@@ -1,0 +1,668 @@
+[
+  {
+    "id": "transitions/accordion",
+    "source": "transitions",
+    "name": "accordion",
+    "title": "Accordion expand",
+    "description": "A disclosure / accordion / collapsible section whose panel grows and shrinks in height when toggled, with the header chevron flipping between a downward \"v\" and an upward \"^\". Use for settings groups, FAQs, filter sections, \"show more\" details — any header + collapsible body.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "accordion"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the accordion transition\"",
+    "docs": "https://transitions.dev/detail.html?t=accordion",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/avatar-group-hover",
+    "source": "transitions",
+    "name": "avatar-group-hover",
+    "title": "Avatar group hover",
+    "description": "Hovering an item in a horizontal stack (avatar row, chip group, badge cluster, segmented button) should lift the hovered item, gently lift its neighbors with a power-falloff, then snap everything back with an overshoot spring on `mouseleave`. Direction-aware easing (clean ease-in on hover, bouncy ease-out on return) is what gives the group its springy, physical feel.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the avatar-group-hover transition\"",
+    "docs": "https://transitions.dev/detail.html?t=avatar-group-hover",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/banner-stacking",
+    "source": "transitions",
+    "name": "banner-stacking",
+    "title": "Banner stacking",
+    "description": "Sonner-style banner / toast stacking. Each new banner rises in with the **toast** motion (rise + cross-blur + slight scale) while older banners push back — smaller, higher, dimmer — instead of leaving; the fourth arrival sends the oldest out. Hovering the stack fans it into a readable list.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "cta"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the banner-stacking transition\"",
+    "docs": "https://transitions.dev/detail.html?t=banner-stacking",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/card-resize",
+    "source": "transitions",
+    "name": "card-resize",
+    "title": "Card resize",
+    "description": "Tweening a container's width or height when its layout state changes (compact ↔ expanded card, collapsing panel, list row toggling extra detail). Pure CSS — no JS required beyond the class toggle that drives the size change.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "card"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the card-resize transition\"",
+    "docs": "https://transitions.dev/detail.html?t=card-resize",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/card-tilt",
+    "source": "transitions",
+    "name": "card-tilt",
+    "title": "Card hover tilt",
+    "description": "A card / tile / media surface that tilts in 3D toward the pointer while hovered, with a soft light \"glare\" tracking the cursor across it. Use for product cards, credit / membership cards, feature tiles, cover art — anything that should feel physical and reactive on hover. Pointer-only (skips touch) and flattens under reduced motion.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "card"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the card-tilt transition\"",
+    "docs": "https://transitions.dev/detail.html?t=card-tilt",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/checkbox-check",
+    "source": "transitions",
+    "name": "checkbox-check",
+    "title": "Checkbox check",
+    "description": "Checkboxes, to-do completion, multi-select rows — any boolean control where the checked state should feel earned. The box's background fills first, then the checkmark draws itself via stroke-dashoffset after a short delay; unchecking reverses quickly with no draw.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "input"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the checkbox-check transition\"",
+    "docs": "https://transitions.dev/detail.html?t=checkbox-check",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/error-state-shake",
+    "source": "transitions",
+    "name": "error-state-shake",
+    "title": "Error state shake",
+    "description": "Form validation feedback — invalid email, wrong password, missing required field, mismatched confirmation. The input shakes left/right with overshoot, the border switches to error color, and a message reveals beneath. After a hold timer (long enough to read the message), border + message fade back to neutral. Optional: typing into the input cancels the auto-revert immediately.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the error-state-shake transition\"",
+    "docs": "https://transitions.dev/detail.html?t=error-state-shake",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/icon-swap",
+    "source": "transitions",
+    "name": "icon-swap",
+    "title": "Icon swap",
+    "description": "Cross-fading two icons in the same slot — hamburger ↔ close, sun ↔ moon, play ↔ pause, expand ↔ collapse. Both icons stay in the DOM stacked in the same grid cell.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the icon-swap transition\"",
+    "docs": "https://transitions.dev/detail.html?t=icon-swap",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/input-clear-dissolve",
+    "source": "transitions",
+    "name": "input-clear-dissolve",
+    "title": "Input clear with dissolve",
+    "description": "Clearing a text field — search box, filter input, any field with a clear (×) button. The typed text flies down + blurs + fades while a soft per-word streak ignites under each word, and the placeholder falls in from above. Per-frame JS is required: the streak envelope and per-word gradient stack cannot be expressed as static @keyframes.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "input"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the input-clear-dissolve transition\"",
+    "docs": "https://transitions.dev/detail.html?t=input-clear-dissolve",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/learn-more-hover",
+    "source": "transitions",
+    "name": "learn-more-hover",
+    "title": "Learn more hover",
+    "description": "\"Learn more\", \"See all\", \"Continue\" — inline links or buttons with a trailing chevron that should acknowledge hover. The chevron slides toward the text's reading direction while its two arms spread apart into a full arrow, then eases back on exit with a slightly faster out clock.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the learn-more-hover transition\"",
+    "docs": "https://transitions.dev/detail.html?t=learn-more-hover",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/like-button",
+    "source": "transitions",
+    "name": "like-button",
+    "title": "Like button",
+    "description": "Like / favorite / heart buttons — anywhere a single tap flips a boolean and deserves a tiny celebration. The heart's stroke fills with color, the icon pops with an overshoot scale, and eight tiny particles sprinkle outward before fading.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "button"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the like-button transition\"",
+    "docs": "https://transitions.dev/detail.html?t=like-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/matrix-loader",
+    "source": "transitions",
+    "name": "matrix-loader",
+    "title": "Matrix dot loader",
+    "description": "Tiny inline loaders built from a 4×4 matrix of 2px dots. All four variants share one colour-pulse keyframe; a per-dot delay table gives each its motion character — a column scan, a randomized-looking twinkle, a perimeter orbit, a centre-out pulse. Rounded variants drop the four corner dots.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "loader"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the matrix-loader transition\"",
+    "docs": "https://transitions.dev/detail.html?t=matrix-loader",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/menu-dropdown",
+    "source": "transitions",
+    "name": "menu-dropdown",
+    "title": "Menu dropdown",
+    "description": "Contextual menus, dropdowns, popovers — anything that opens from a trigger and should visually grow from that trigger's position. Origin-aware via `data-origin` (top-left, top-center, top-right, bottom-*).",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "navigation"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the menu-dropdown transition\"",
+    "docs": "https://transitions.dev/detail.html?t=menu-dropdown",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/modal",
+    "source": "transitions",
+    "name": "modal",
+    "title": "Modal open / close",
+    "description": "Modal dialogs and full-overlay surfaces that scale up from center. Use when the surface is conceptually \"on top of\" the page rather than anchored to a trigger.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "modal"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the modal transition\"",
+    "docs": "https://transitions.dev/detail.html?t=modal",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/notification-badge",
+    "source": "transitions",
+    "name": "notification-badge",
+    "title": "Notification badge",
+    "description": "A small badge appearing on top of a trigger (bell, inbox, button). Slides in diagonally and pops the dot independently of the trigger so the trigger itself never moves.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "toast",
+      "badge"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the notification-badge transition\"",
+    "docs": "https://transitions.dev/detail.html?t=notification-badge",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/number-pop-in",
+    "source": "transitions",
+    "name": "number-pop-in",
+    "title": "Number pop-in",
+    "description": "Counters, prices, balances, or any number that updates and should re-enter from a direction with blur. Each character animates independently and the last two digits stagger so decimals feel alive without looking chaotic.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the number-pop-in transition\"",
+    "docs": "https://transitions.dev/detail.html?t=number-pop-in",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/page-side-by-side",
+    "source": "transitions",
+    "name": "page-side-by-side",
+    "title": "Page side-by-side",
+    "description": "Sliding between two full pages or screens that live side-by-side: list ↔ detail, step 1 ↔ step 2 in a wizard. Page 1 exits left, page 2 exits right.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the page-side-by-side transition\"",
+    "docs": "https://transitions.dev/detail.html?t=page-side-by-side",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/panel-reveal",
+    "source": "transitions",
+    "name": "panel-reveal",
+    "title": "Panel reveal",
+    "description": "A panel that slides into view inside an existing container — e.g. detail panel inside a card, expanding section. Combines a short translate, opacity, and a 2px cross-blur so a half-height travel still reads as a full open.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the panel-reveal transition\"",
+    "docs": "https://transitions.dev/detail.html?t=panel-reveal",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/plus-menu-morph",
+    "source": "transitions",
+    "name": "plus-menu-morph",
+    "title": "Plus to menu morph",
+    "description": "A small circular trigger (a \"+\" FAB, a compose button, an add-action affordance) that **morphs into the menu / panel it opens** instead of popping a separate surface next to it. The button's box grows in width / height and relaxes its corner radius into a rounded panel while the plus icon cross-fades + rotates out and the menu content slides in.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "navigation"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the plus-menu-morph transition\"",
+    "docs": "https://transitions.dev/detail.html?t=plus-menu-morph",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/reasoning-stream",
+    "source": "transitions",
+    "name": "reasoning-stream",
+    "title": "Reasoning stream",
+    "description": "An agent \"thinking out loud\" — a small card plays back a stream of reasoning by stepping the transcript up two lines at a time, holding between steps. Soft mask fades at the top and bottom edges sell \"more above, more below\", and the transcript is cloned once so the loop wraps without a visible jump.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "ai-chat"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the reasoning-stream transition\"",
+    "docs": "https://transitions.dev/detail.html?t=reasoning-stream",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/shimmer-text",
+    "source": "transitions",
+    "name": "shimmer-text",
+    "title": "Shimmer text",
+    "description": "A loading / \"thinking\" label that shimmers — streaming status, \"Generating…\", any in-progress copy that should feel alive without a spinner. Pure CSS: duplicate the string into `data-text` on `.t-shimmer` and tune `--shimmer-base` / `--shimmer-highlight` per theme.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "text-effect"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the shimmer-text transition\"",
+    "docs": "https://transitions.dev/detail.html?t=shimmer-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/skeleton-reveal",
+    "source": "transitions",
+    "name": "skeleton-reveal",
+    "title": "Skeleton loader and reveal",
+    "description": "A placeholder that loads then reveals real content — list rows, cards, profile headers. The skeleton pulses, then both layers cross-fade with a matching cross-blur. Bring your own bars / avatar / text; the skeleton stays in the same slot as the content so the swap is layout-free.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "loader"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the skeleton-reveal transition\"",
+    "docs": "https://transitions.dev/detail.html?t=skeleton-reveal",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/spinning-counter",
+    "source": "transitions",
+    "name": "spinning-counter",
+    "title": "Spinning counter",
+    "description": "Numbers that change with fanfare — points, prices, follower counts, dashboards KPIs. Each digit is a clipped vertical reel of 0-9 cells; the strip translates up through several full spins before landing on the target digit, with a per-column stagger and a vertical-only SVG blur while moving.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "stats"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the spinning-counter transition\"",
+    "docs": "https://transitions.dev/detail.html?t=spinning-counter",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/streaming-text",
+    "source": "transitions",
+    "name": "streaming-text",
+    "title": "Streaming text",
+    "description": "Model output arriving word by word — chat responses, AI completions, any streamed paragraph. JS wraps each word in a span; words rest visible, and a replay wipes them all, then resolves them in order through opacity plus a small blur, one every `--stream-gap`.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "text-effect",
+      "ai-chat"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the streaming-text transition\"",
+    "docs": "https://transitions.dev/detail.html?t=streaming-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/success-check",
+    "source": "transitions",
+    "name": "success-check",
+    "title": "Success check",
+    "description": "Confirming a completed action — payment processed, file uploaded, message sent, form saved. The icon fades in, rotates upright, settles with a Y-bob, and (for SVG icons) draws its path stroke. Use whenever a status changes from \"pending / unknown\" to \"success\" and you want the moment to feel earned rather than instantaneous.",
+    "kind": "transition",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the success-check transition\"",
+    "docs": "https://transitions.dev/detail.html?t=success-check",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/tabs-sliding",
+    "source": "transitions",
+    "name": "tabs-sliding",
+    "title": "Tabs sliding",
+    "description": "A segmented control / tab bar where the active pill slides between options — view switchers, filter segments, small mutually-exclusive button sets. JS writes the active tab's `offsetLeft` / `offsetWidth` onto the pill; CSS owns the tween.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "tabs"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the tabs-sliding transition\"",
+    "docs": "https://transitions.dev/detail.html?t=tabs-sliding",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/text-states-swap",
+    "source": "transitions",
+    "name": "text-states-swap",
+    "title": "Text states swap",
+    "description": "Swapping the text of a status indicator in place — \"Processing…\" → \"Done\", \"Save\" → \"Saved\". The old text exits up with blur, the new text enters from below.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "text-effect"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the text-states-swap transition\"",
+    "docs": "https://transitions.dev/detail.html?t=text-states-swap",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/texts-reveal",
+    "source": "transitions",
+    "name": "texts-reveal",
+    "title": "Texts reveal",
+    "description": "A headline + supporting line that rise into view with staggered blur — hero copy, empty states, onboarding steps. Exit is decoupled: a single quiet fade with no Y-return so dismissing doesn't replay the reveal in reverse.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "text-effect"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the texts-reveal transition\"",
+    "docs": "https://transitions.dev/detail.html?t=texts-reveal",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/thinking-states",
+    "source": "transitions",
+    "name": "thinking-states",
+    "title": "Thinking states",
+    "description": "An AI status line that narrates what the agent is doing — \"Setting up a workplace\", \"Running a command\", \"Browsing files\". The line shimmers while a state holds (the same masked highlight as **shimmer text**), then swaps to the next state with the **text states swap** motion: the old line exits up through a small blur while the new one rises in from below.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "loader"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the thinking-states transition\"",
+    "docs": "https://transitions.dev/detail.html?t=thinking-states",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/toast",
+    "source": "transitions",
+    "name": "toast",
+    "title": "Toast open / close",
+    "description": "Toasts, snackbars, and transient confirmations that rise into view from the bottom edge — \"Saved\", \"Copied\", \"Message sent\". The toast translates up with a fade, a slight scale, and a cross-blur; opening runs on the slower open clock while dismissing uses the faster close clock, so arriving feels deliberate and leaving feels snappy.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "toast"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the toast transition\"",
+    "docs": "https://transitions.dev/detail.html?t=toast",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/toggle",
+    "source": "transitions",
+    "name": "toggle",
+    "title": "Toggle",
+    "description": "On/off switches — settings rows, theme toggles, feature flags. The thumb travels across the track with a two-step overshoot (past the end, back, settle) while the track color cross-fades on its own clock.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "input"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the toggle transition\"",
+    "docs": "https://transitions.dev/detail.html?t=toggle",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "transitions/tooltip",
+    "source": "transitions",
+    "name": "tooltip",
+    "title": "Tooltip open/close",
+    "description": "A hover/focus tooltip shared by a group of triggers (toolbar buttons, icon rows, avatar stacks). It fades + scales in with a short appear-delay, disappears immediately on leave, and when the pointer moves to a neighbouring trigger while it is showing, the one bubble tweens its x-position and width to the new target instead of popping a second one. A small JS snippet measures the target and writes the geometry; CSS owns every tween.",
+    "kind": "transition",
+    "categories": [
+      "transition",
+      "tooltip"
+    ],
+    "tags": [
+      "css"
+    ],
+    "access": "free",
+    "install": "npx skills add Jakubantalik/transitions.dev  # then ask: \"apply the tooltip transition\"",
+    "docs": "https://transitions.dev/detail.html?t=tooltip",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  }
+]

@@ -1,0 +1,253 @@
+# How to use design-infra
+
+*Find real components, compare them live, and use them in your own projects.*
+Live at **https://design-infra.vercel.app/guide** · source `docs/GUIDE.md`
+
+---
+
+## Start here — try it on one component
+
+You can browse and choose without cloning this repository or installing a plugin.
+
+1. Open [the catalog](https://design-infra.vercel.app/components). Describe a need: **“clean pricing,” “sharp navbar,” “subtle button hover,”** or **“loading submit button.”** Search interprets the feeling and ranks components; explicit filters narrow the results. Paid entries are included only when you opt in.
+2. Open the live demos. Shortlist 2–3 options and choose **Compare** to see them side by side. Theme switching applies to our own blocks; upstream demos retain their own styling.
+3. Choose **Pick / Pass** and add a reason. Copy feedback to your project's agent, or use **Copy for agent** from the shortlist to include install commands, links, notes, and integration requirements. Tell the agent which part of your project the selection belongs to.
+4. Ask it to install and adapt the selected component, preserve your brand, and verify it at desktop and mobile widths. If your project needs registry setup, use the setup steps below. You can also copy an install command and use the component yourself.
+
+For ongoing agent use, connect your MCP-compatible editor to **https://design-infra.vercel.app/mcp**. Ask: **“Use design-infra to show me three options for a clean pricing section. Include live links and a comparison. Let me pick before installing.”** For a whole page, include the audience, sections, and desired feeling; the agent calls `plan_ui` to assemble a plan from existing components.
+
+The shortlist stays in this browser. Compare links can be shared with friends, but picks and notes are only sent when you copy and share them. Individual accounts, shared saved collections, and separate taste profiles are not implemented yet. Current favorites are catalog recommendations, not your personal favorites.
+
+## Paste a reference or replace a section
+
+In the agent you're already using for your project:
+
+- Paste a website/component link or a picture and say **“Build this using design-infra where it fits”** or **“Make our hero like this.”** The agent inspects the reference, maps its layout and visual details to existing components, explains any gaps, and adapts the selected parts. Its own browser/image tools supply the analysis.
+- Point to your section and say **“I don't like this. Show me different approaches.”** The agent reads the section's code and requirements, then offers 3–5 real alternatives with live links and a comparison. For features, that might mean a bento grid, a feature list, or scroll-linked panels. It recommends one and waits for your pick.
+
+[See the reference/replacement workflow and live examples](https://design-infra.vercel.app/reference). Once connected, these requests work in your project; you don't need to move the conversation into design-infra.
+
+## Improve it as you use it
+
+Try one real project at a time. Keep a short note when search misses, a live link fails, installation needs a fix, or a component works particularly well. Use the **Component feedback** issue template on GitHub if you have repository access, or send the note to the maintainer:
+
+```text
+Project / stack:
+What I searched or asked for:
+Search or compare URL:
+Component ID and install command:
+What I expected / what happened:
+What worked, or what needs improving:
+```
+
+Keep vendor keys and private project details out of feedback. Report successful installations too: they help us decide which components to verify and recommend. Maintainers should turn repeated misses into ranking/tagging fixes and regression tests, and reusable integration advice into curated notes. Use your reasons for choosing or passing to improve the library; don't infer a friend's taste from somebody else's choices.
+
+---
+
+## The mental model (read this once)
+
+There are two places, and you talk to an agent in each:
+
+```
+ ┌──────────────────────────────┐            ┌──────────────────────────────────┐
+ │  design-infra (THIS repo)    │            │  your project (e.g. prospector)  │
+ │  the library                 │            │  where you actually work         │
+ │                              │  plugin    │                                  │
+ │  catalog · design systems    │──skills───▶│  agent knows design-infra exists │
+ │  playbooks · templates       │──MCP──────▶│  agent asks it for options       │
+ │  taste (favorites/dislikes)  │──registry─▶│  agent installs components       │
+ │  toolchain + bootstrap       │──bootstrap▶│  tools/MCPs/skills/keys wired    │
+ │                              │◀──taste────│  your picks & passes flow back   │
+ └──────────────────────────────┘  (issues)  └──────────────────────────────────┘
+        you feed it links                       you ask for changes
+```
+
+- **In the project workspace** you never need to explain design-infra. The project instructions and catalog connection tell the agent where to
+  look; you just say what you want ("animate this", "this feels off", "add a pricing section").
+- **In the design-infra workspace** you feed the library: paste links, say what you like, capture sites.
+- **The agent's job** is to show you options *with links*, recommend one, and wait for your pick. If it ever just
+  "fixes" something without showing options, tell it: *"show me options first."*
+
+---
+
+## Connect a project (recommended first setup)
+
+Open [Connect your project](https://design-infra.vercel.app/integrate), copy the setup prompt, and paste it into an agent **inside your project**. You can also give the agent this repository URL; the README points it to the same instructions. GitHub access is needed to read this private repo, but the hosted setup page works for friends without repository access.
+
+The agent inspects your stack and existing look, connects the catalog through its supported MCP configuration (or HTTP), and adds a small project instruction to search before writing new UI. It preserves existing configuration and installs components after you pick them. If MCP needs a restart, it reports that and uses HTTP in the meantime. Ask for three live options to verify the connection.
+
+For a Claude Code plugin installation, collaborators with repository access can optionally use:
+
+```text
+/plugin marketplace add OwenCoonahan/design-infra
+/plugin install design-infra@oc-design
+```
+
+The plugin provides skills, hooks, and MCP. Restart the client if required, then confirm the tools are callable. Other agents can use the hosted MCP or HTTP directly; plugin installation is optional.
+
+## Optional: broader toolchain
+
+The [toolchain page](https://design-infra.vercel.app/toolchain) describes additional libraries, animation tools, and agent skills. The bootstrap installs a broader collection, including shadcn setup and motion presets. Inspect its plan before using it on an existing project:
+
+```bash
+curl -fsSL https://design-infra.vercel.app/bootstrap.mjs -o /tmp/di.mjs
+node /tmp/di.mjs --dry-run
+```
+
+Use `--only` / `--skip` to limit tools. Install a theme only when you want a new design system; retain existing project tokens otherwise. The setup prompt is the lighter starting point for friends. Secrets for keyed tools belong in `~/.config/design-infra/secrets.env` or the client's local secret store, never in a repo. Paid tools require authorized vendor access.
+
+---
+
+## Try it with friends
+
+Start at [Connect](https://design-infra.vercel.app/integrate), then use the [starter collection](https://design-infra.vercel.app/starter). Claude Code and Codex have project-scoped MCP examples. Try finding a component, replacing a section, and building from a reference; [pilot tasks](https://design-infra.vercel.app/pilot) give you a repeatable walkthrough. Copy a [feedback report](https://design-infra.vercel.app/feedback) after each attempt—no GitHub account required. A config file alone does not prove tools are active.
+
+## The daily loop
+
+Every request follows the same rhythm: **point → say what you want → look at options → pick → it's applied.**
+
+### 1. Point at the thing
+
+Any of these works — use whatever's fastest:
+- **Screenshot** pasted into the chat ("this card").
+- **Agentation** (installed by the bootstrap): run the dev server, click the element on the page, type your note.
+  The agent receives the exact file and component. Then say *"check my Agentation feedback."*
+- **Name or path:** "the pricing section", "`components/hero.tsx`".
+
+### 2. Say what you want — the phrases that work
+
+| You want… | Say | What the agent does |
+|---|---|---|
+| motion on one component | *"I want this to animate — subtle."* | `refine` → 3–5 animation directions with links |
+| it to look better | *"I don't like this card. What are my options?"* | asks what's off (look / motion / behaviour) if unclear, then options |
+| a missing state | *"Add a loading state to the submit button."* | options: spinner → check, shimmer label, skeleton… |
+| a new section | *"Add a testimonials section."* | `find-component` → shortlist with links |
+| a page from scratch | *"Build a pricing page. It should feel trustworthy and calm."* | `build-ui` → plan with picks per section, then builds |
+| a general once-over | *"Polish this page."* | `polish` → numbered punch list of upgrades, each with options |
+| a different vibe | *"Make the landing page feel more like Linear."* | uses saved inspiration (or reads the site), maps it to components |
+| a vibe you can't name | *"Show me what 'calm' vs 'premium' would look like here."* | `browse_moods` → design systems + components per feeling |
+| ideas, not components yet | *"Show me how others do pricing pages / footers / animated landings."* | `find_references` → the 1–2 best galleries with exact links |
+
+Adjectives steer everything: **calm, minimal, refined, technical, editorial, warm, playful, premium, futuristic,
+experimental, bold, retro, organic, trustworthy** — and intensity words (*subtle, noticeable, dramatic*).
+
+### 3. Look before you choose
+
+You'll get something like:
+
+> **Request access button — animate** · compare: https://design-infra.vercel.app/compare?ids=…
+> | | Direction | Feel | Cost | Look |
+> |---|---|---|---|---|
+> | A | Press-down + hover lift | refined | CSS only | page · live |
+> | B | Loading → success | trustworthy | small | page · live |
+> | C | Toggle micro-celebration | playful | small | page · live |
+> **My pick: A** — your DESIGN.md says quiet motion.
+
+- Open the **compare** link: options side by side, moving (live demos / videos), switchable between design systems.
+- Click **Pick / Pass** (add a reason: "too flashy") → **Copy feedback** → paste it back into the chat.
+- Or just reply: *"B, but faster"*, *"none — more expressive"*, *"show A and B on our actual button"*.
+- *"Show them on our button"* → the agent installs a temporary **design lab** page (`/design-lab`) rendering your
+  real component in each variant. You pick; it removes the lab.
+
+### 4. It applies your pick — and remembers
+
+- Installs/applies to **your** component, keeps your copy and props, uses your theme's tokens, respects reduced motion.
+- Records the choice in your `DESIGN.md` (`## Motion` / Components) so the next component matches.
+- Your picks and passes stay in the browser or project until you share them. Ask the agent to prepare feedback, then send it to the maintainer or file an issue if you have repository access. Shared catalog favorites are recommendations; separate personal taste profiles are a future addition.
+
+### Getting ideas (when none of the options fit)
+
+Say *"none of these — show me how others do it"* or *"I need ideas for the navbar."* The agent answers with the best 1–2
+**inspiration galleries** for that exact pattern, with direct links — e.g. navbar.gallery's mega-menu page, Landbook's
+cropped pricing sections, landing.love's scroll **videos** for an animated landing, hoverstat.es for hover effects,
+minimal.gallery for a quieter look. Free galleries come first; Mobbin (app flows) is flagged as paid. Open one, point at
+what you like (*"this one, the way the menu slides"*), and the agent maps it back to installable components. Full routing
+table: `catalog/REFERENCES.md`.
+
+---
+
+## Browsing the library yourself
+
+When you'd rather look than ask: **https://design-infra.vercel.app**
+
+| page | use it to |
+|---|---|
+| `/components` | search + filter by mood, motion (hover / scroll / on load…), intensity, how it's applied (replace / wrap / recipe), library; hover cards to see them move |
+| `/compare?ids=…` | side-by-side live comparison; Pick / Pass; copy feedback for your agent |
+| `/design-systems` | the four looks, live, in light/dark |
+| `/templates` | whole starter pages under any design system |
+| `/inspiration` | sites you've saved, analysed |
+| `/toolchain` | what gets installed in a project and why, ranked |
+
+**Shortlist flow:** tick cards → *Shortlist* bar → **Compare** → **Copy for agent** → paste into your project's chat
+with *"apply these to the hero"*. The copied text includes the install commands and the compare link.
+
+---
+
+## Feeding the library (in the design-infra workspace)
+
+This is how good design compounds. Open the **design-infra** workspace and paste things as you find them:
+
+| You paste | Say | Result |
+|---|---|---|
+| a component library | *"Add this."* | catalogued, tagged (mood, motion), synced weekly |
+| one component/block | *"I love this."* | ♥ favourite; if it's paid, a free `@oc` version gets built |
+| a website | *"I like the feel of this site — the way the sections reveal."* | captured (screenshots, fonts, colours), analysed, mapped to components |
+| a brand / style guide | *"Make this a design system."* | new `DESIGN.md` → installable theme |
+| something you dislike | *"I hate glowing borders."* | added to dislikes → filtered out everywhere |
+
+Also here: *"process taste issues"* — ingests the picks/passes your project agents filed as GitHub issues.
+
+---
+
+## Worked example — Prospector Labs
+
+**Once, in the prospector workspace:**
+> "Set up design infra for this repo. Keep our current look. It should feel trustworthy, technical and refined."
+
+→ catalog connected; project instructions added; existing styles recorded in `DESIGN.md`. The agent reports whether its client needs a restart.
+
+**A week of edits:**
+- *"The stats under the hero (5.4M projects, 90+ sources) feel static."* → options: count-up on view, rolling digits,
+  KPI tiles → you pick count-up → applied with the quiet timing.
+- *(Agentation click on the pricing toggle)* *"This toggle is abrupt."* → options: sliding indicator (layoutId),
+  segmented spring (bolder, flagged as beyond "quiet") → pick sliding.
+- *"Add a section showing the four products: Interconnection, FEOC, Atlas, API."* → shortlist: feature-levels ♥
+  (scroll-spy with product screenshots), bento, list → compare → feature-levels.
+- *"Polish the homepage."* → punch list: skeletons for the Atlas map embed, exit animation on the demo modal, logo
+  strip for EIA/DOE/FERC → you reply "1, 3, skip 2".
+
+**Meanwhile, in the design-infra workspace:** you paste a fintech site you like → captured, tagged trustworthy/refined
+→ next time anyone asks prospector's agent for "more credible", it shows up as a reference.
+
+---
+
+## When something's off
+
+| symptom | fix |
+|---|---|
+| agent writes UI from scratch / doesn't mention options | *"Use design-infra — propose options with links first."* |
+| no `design-infra` tools in the session | restart Claude Code; `/mcp`; re-run `/plugin install design-infra@oc-design` |
+| bootstrap says a tool was skipped | it lists the key and where to get it → add to `~/.config/design-infra/secrets.env`, re-run |
+| options all look wrong for the brand | check `DESIGN.md` moods/motion — that's what steers ranking |
+| "Tailwind v3 detected" | keep the catalog connection; check compatibility before choosing a v4 component or planning a migration |
+| a component looks off in your theme | *"Convert its colours to our theme tokens"* (non-theme-aware sources hard-code colours) |
+| want to add more tools | inspect `node /tmp/di.mjs --dry-run`; review existing component changes before applying |
+
+---
+
+## Cheat sheet
+
+```
+SET UP        "Set up design infra for this repo. Keep our current look."
+ONE THING     [point] "I want this to animate — subtle."   /   "I don't like this. Options?"
+STATES        "Add loading / empty / error / success states to this."
+NEW SECTION   "Add a <testimonials / pricing / FAQ> section."
+NEW PAGE      "Build a <page>. It should feel <calm, premium…>."
+ONCE-OVER     "Polish this page."
+VIBE          "Make it feel more like <company>."   /   "Show me calm vs premium."
+IDEAS         "None of these — show me how others do <pattern>."  (galleries with exact links)
+CHOOSING      open the compare link → Pick/Pass → Copy feedback → paste
+SEE IT LIVE   "Show A and B on our actual component." (design lab)
+FEED (here)   paste link + "I love this" / "I hate this" / "add this library" / "capture this site"
+```

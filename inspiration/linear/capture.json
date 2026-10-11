@@ -1,0 +1,382 @@
+{
+  "url": "https://linear.app",
+  "slug": "linear",
+  "capturedAt": "2026-10-01T20:41:57.188Z",
+  "fullHeightCaptured": 9960,
+  "title": "Linear – The system for product development",
+  "description": "Purpose-built for planning and building products with AI agents.",
+  "themeColor": "#08090a",
+  "pageHeight": 9960,
+  "fonts": {
+    "heading": [
+      {
+        "value": "Inter Variable",
+        "weight": 604
+      }
+    ],
+    "body": [
+      {
+        "value": "Inter Variable",
+        "weight": 6469
+      }
+    ],
+    "ui": [
+      {
+        "value": "Inter Variable",
+        "weight": 371
+      }
+    ],
+    "mono": [
+      {
+        "value": "Berkeley Mono",
+        "weight": 1455
+      }
+    ]
+  },
+  "loadedFontFaces": [
+    "Inter Variable",
+    "Berkeley Mono"
+  ],
+  "typeScale": [
+    {
+      "value": "15px/400",
+      "weight": 1594
+    },
+    {
+      "value": "14px/400",
+      "weight": 1467
+    },
+    {
+      "value": "13px/400",
+      "weight": 1339
+    },
+    {
+      "value": "12px/510",
+      "weight": 922
+    },
+    {
+      "value": "12px/400",
+      "weight": 772
+    },
+    {
+      "value": "13px/510",
+      "weight": 623
+    },
+    {
+      "value": "24px/400",
+      "weight": 547
+    },
+    {
+      "value": "15px/300",
+      "weight": 378
+    },
+    {
+      "value": "48px/510",
+      "weight": 246
+    },
+    {
+      "value": "10px/400",
+      "weight": 211
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#08090a",
+        "weight": 1506
+      },
+      {
+        "value": "#0f1011",
+        "weight": 482
+      },
+      {
+        "value": "#090a0b",
+        "weight": 95
+      },
+      {
+        "value": "#101112",
+        "weight": 95
+      },
+      {
+        "value": "#161718",
+        "weight": 26
+      },
+      {
+        "value": "#e4f222",
+        "weight": 21
+      },
+      {
+        "value": "#e5e5e6",
+        "weight": 1
+      },
+      {
+        "value": "#000000",
+        "weight": 1
+      }
+    ],
+    "text": [
+      {
+        "value": "#d0d6e0",
+        "weight": 2887
+      },
+      {
+        "value": "#8a8f98",
+        "weight": 2807
+      },
+      {
+        "value": "#62666d",
+        "weight": 796
+      },
+      {
+        "value": "#f7f8f8",
+        "weight": 756
+      },
+      {
+        "value": "#08090a",
+        "weight": 260
+      },
+      {
+        "value": "#f7bf8b",
+        "weight": 231
+      }
+    ],
+    "borders": [
+      {
+        "value": "#23252a",
+        "weight": 3
+      },
+      {
+        "value": "#e5e5e6",
+        "weight": 2
+      },
+      {
+        "value": "#2e2e32",
+        "weight": 2
+      },
+      {
+        "value": "#24282c",
+        "weight": 1
+      },
+      {
+        "value": "#2a2a2d",
+        "weight": 1
+      }
+    ]
+  },
+  "radii": [
+    {
+      "value": "9999px",
+      "weight": 56
+    },
+    {
+      "value": "8px",
+      "weight": 29
+    },
+    {
+      "value": "12px",
+      "weight": 26
+    },
+    {
+      "value": "4px",
+      "weight": 21
+    },
+    {
+      "value": "9px",
+      "weight": 18
+    },
+    {
+      "value": "6px",
+      "weight": 11
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0.2) 0px 0px 0px 1px",
+      "weight": 8
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.2) 0px 0px 12px 0px inset",
+      "weight": 7
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.25) 0px 2px 32px 0px",
+      "weight": 5
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.08) 0px 0px 0px 0.5px inset",
+      "weight": 5
+    }
+  ],
+  "cssVariables": {
+    "--editor-block-spacing-large": "calc(1.375 * 1rem)",
+    "--sx-ljw4h1": "#393a3e",
+    "--header-height": "72px",
+    "--btn-overlay-shadow-hover": "none",
+    "--sx-18pfyxa": "6px 12px",
+    "--editor-todolist-checkbox-width": "14px",
+    "--zoom-in": "zoom-in",
+    "--sx-1urpf9d": "#ffffff0d",
+    "--font-variations": "\"opsz\" auto",
+    "--color-overlay-dim-rgb": "255, 255, 255",
+    "--sx-1stx5uy": "#74e3ff",
+    "--text-large-line-height": "1.6",
+    "--title-1-line-height": "1.4",
+    "--sx-7ide1": "#747ee9",
+    "--text-micro-size": ".75rem",
+    "--font-size-title1": "2.25rem",
+    "--sx-1ijrdvx": "#ff8849",
+    "--font-settings": "\"cv01\", \"ss03\"",
+    "--sx-1uv3w6h": "#2c2d32",
+    "--ease-out-quad": "cubic-bezier(.25, .46, .45, .94)",
+    "--title-3-letter-spacing": "-.012em",
+    "--editor-block-menu-size": "20px",
+    "--speed-highlightFadeOut": ".15s",
+    "--sx-138rywl": "13vh",
+    "--editor-last-invisible-paragraph-spacing": "10px",
+    "--sx-138kmyo": "#424449",
+    "--sx-1ltkoa": "#626467",
+    "--title-9-line-height": "1",
+    "--color-text-secondary": "#d0d6e0",
+    "--sx-1mc3c6y": "#1e2022",
+    "--scrollbar-size-active": "10px",
+    "--sx-1dcvabv": "#382225",
+    "--color-text-tertiary": "#8a8f98",
+    "--cursor-disabled": "not-allowed",
+    "--layer-tooltip": "1100",
+    "--text-mini-letter-spacing": "-.01em",
+    "--ease-in-out-quart": "cubic-bezier(.77, 0, .175, 1)",
+    "--sx-91u3ar": "#ffcc00",
+    "--sx-18yrgu8": "#ffffff8b",
+    "--sx-18uyzu6": "#008a2a",
+    "--sx-ot17o6": "#00cee2",
+    "--text-regular-size": ".9375rem",
+    "--font-size-miniPlus": ".75rem",
+    "--text-regular-letter-spacing": "-.011em",
+    "--sx-1gm0lru": "#222427",
+    "--editor-block-spacing-small": "calc(.375 * 1rem)",
+    "--sx-9pdekr": "#8f9197",
+    "--sx-34xdpc": "#d9343f",
+    "--sx-1gxylln": "#27282c",
+    "--sx-tw6awd": "#ffe7de",
+    "--color-line-tertiary": "#18191a",
+    "--font-size-microPlus": ".6875rem",
+    "--shadow-low": "0px 2px 4px #0000001a",
+    "--editor-block-radius": "6px",
+    "--color-white": "#fff",
+    "--sx-kthb5v": "#6c76e0",
+    "--sx-183dfpr": "#ff9958",
+    "--text-small-line-height": "calc(21 / 14)",
+    "--color-accent": "#7170ff",
+    "--selection-bg": "color-mix(in srgb, #9c9da1 20%, transparent)",
+    "--ease-in-out-circ": "cubic-bezier(.785, .135, .15, .86)",
+    "--ease-out-quart": "cubic-bezier(.165, .84, .44, 1)",
+    "--editor-line-height": "1.6",
+    "--sx-1ccqs4f": "#3d3f43",
+    "--speed-quickTransition": ".1s",
+    "--font-weight-bold": "680",
+    "--sx-jw5zf4": "#39b350",
+    "--layer-debug": "11000",
+    "--title-7-size": "3.5rem",
+    "--ease-in-circ": "cubic-bezier(.6, .04, .98, .335)",
+    "--_number-flow-d-opacity": "0",
+    "--sx-pqiwo2": "#373a56",
+    "--sx-fwc8so": "#cf4608",
+    "--text-tiny-letter-spacing": "-.015em",
+    "--color-border-translucent": "#ffffff0d",
+    "--color-selection-bg": "color-mix(in lch, #5e6ad2, black 10%)",
+    "--text-small-size": ".875rem",
+    "--color-line-secondary": "#202122",
+    "--color-bg-level-3": "#191a1b",
+    "--editor-font-size": ".9375rem",
+    "--title-2-letter-spacing": "-.012em",
+    "--editor-text-color": "#e4e5e9",
+    "--color-line-primary": "#37393a",
+    "--transparent": "#fff0",
+    "--layer-2": "2",
+    "--sx-1vqca58": "#69daff",
+    "--page-padding-block": "64px",
+    "--sx-6zt3z6": "1px solid #323439",
+    "--editor-bullet-disc-offset": ".5em",
+    "--radius-rounded": "9999px",
+    "--sx-1fphd1n": "#292a2e",
+    "--color-fg-primary": "#f7f8f8",
+    "--title-2-line-height": "1.33",
+    "--ease-in-quart": "cubic-bezier(.895, .03, .685, .22)",
+    "--ease-in-out-cubic": "cubic-bezier(.645, .045, .355, 1)",
+    "--sx-5igtf4": "#ffffff1b",
+    "--page-inset": "32px",
+    "--title-2-size": "1.25rem",
+    "--sx-1fh23cp": "#9c9da1",
+    "--sx-as9fd0": "#282a30",
+    "--editor-font-weight": "400",
+    "--sx-1vyp3gc": "#ffeac6",
+    "--title-4-size": "2rem",
+    "--sx-ugsh4": "#ffd500",
+    "--ease-in-out-quint": "cubic-bezier(.86, 0, .07, 1)",
+    "--editor-bullet-disc-width": ".5em",
+    "--editor-letter-spacing": "-.00666667em",
+    "--font-size-micro": ".6875rem",
+    "--color-bg-quinary": "#282828",
+    "--radius-circle": "50%",
+    "--color-text-quaternary": "#62666d",
+    "--font-size-title2": "1.5rem",
+    "--homepage-outer-padding": "46px",
+    "--sx-n8xqcl": "#5e69d1",
+    "--sx-1glqxor": "#222435",
+    "--color-alpha": "255",
+    "--layer-command-menu": "650",
+    "--sx-w1p5jj": "#37393e",
+    "--ease-in-out-expo": "cubic-bezier(1, 0, 0, 1)",
+    "--_number-flow-d": "0"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "The product development system for teams and agents The product development system for teams and agents"
+    },
+    {
+      "tag": "h2",
+      "text": "A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard "
+    },
+    {
+      "tag": "h2",
+      "text": "Intake and integrations"
+    },
+    {
+      "tag": "h2",
+      "text": "Planning and monitoring"
+    },
+    {
+      "tag": "h2",
+      "text": "AI and automations"
+    },
+    {
+      "tag": "h2",
+      "text": "Build, review, and ship"
+    },
+    {
+      "tag": "h2",
+      "text": "Changelog"
+    },
+    {
+      "tag": "h2",
+      "text": "Built for the future. Available today."
+    }
+  ],
+  "signals": {
+    "sections": 8,
+    "images": 39,
+    "videos": 0,
+    "canvases": 0,
+    "svgs": 231,
+    "animatedElements": 855,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": true,
+      "framer": false,
+      "webflow": false,
+      "tailwind": false,
+      "gsap": false
+    }
+  }
+}

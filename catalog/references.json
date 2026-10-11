@@ -1,0 +1,1651 @@
+{
+  "$comment": "Inspiration galleries \u2014 where to look for ideas on one pattern. Schema: Reference in lib/catalog/schema.ts. Every URL template/value below was checked with curl + a browser UA on `verified`. Edit here, then `pnpm references` (\u2192 catalog/REFERENCES.md). Served by MCP find_references and /api/references.",
+  "references": [
+    {
+      "slug": "navbar-gallery",
+      "name": "Navbar Gallery",
+      "url": "https://www.navbar.gallery/",
+      "summary": "450+ real navbars from live sites, filed by navigation type (static, dropdown, mega menu, sidebar, search, announcement, full-screen, breadcrumbs) and 118 style tags.",
+      "covers": [
+        "navigation",
+        "sidebar"
+      ],
+      "keywords": [
+        "navbar",
+        "nav bar",
+        "navigation",
+        "header",
+        "menu",
+        "mega menu",
+        "dropdown",
+        "announcement bar",
+        "mobile navigation",
+        "hamburger"
+      ],
+      "patterns": [
+        {
+          "key": "type",
+          "label": "navigation type",
+          "url": "https://www.navbar.gallery/type/{value}",
+          "values": [
+            "static",
+            "dropdowns",
+            "mega-menu",
+            "side-bar",
+            "search-bar",
+            "announcement",
+            "full-screen",
+            "breadcrumbs"
+          ],
+          "match": [],
+          "map": {
+            "mega": "mega-menu",
+            "dropdown": "dropdowns",
+            "flyout": "dropdowns",
+            "sidebar": "side-bar",
+            "search": "search-bar",
+            "banner": "announcement",
+            "breadcrumb": "breadcrumbs",
+            "fullscreen": "full-screen",
+            "hamburger": "full-screen",
+            "sticky": "static",
+            "simple": "static"
+          }
+        },
+        {
+          "key": "style",
+          "label": "style",
+          "url": "https://www.navbar.gallery/style/{value}",
+          "values": [
+            "minimal",
+            "dark",
+            "animated",
+            "gradient",
+            "brutalist",
+            "blurred",
+            "saas",
+            "ai",
+            "portfolio",
+            "agency",
+            "e-commerce",
+            "gsap",
+            "bento-box",
+            "large-type",
+            "colorful",
+            "bold"
+          ],
+          "map": {
+            "glass": "blurred",
+            "blur": "blurred",
+            "animation": "animated",
+            "motion": "animated",
+            "technical": "saas",
+            "futuristic": "ai",
+            "playful": "colorful",
+            "experimental": "brutalist",
+            "refined": "minimal",
+            "calm": "minimal",
+            "ecommerce": "e-commerce",
+            "shop": "e-commerce",
+            "bento": "bento-box",
+            "editorial": "large-type"
+          }
+        },
+        {
+          "key": "mobile",
+          "label": "mobile navigation",
+          "url": "https://www.navbar.gallery/mobile-navigation",
+          "match": [
+            "mobile",
+            "hamburger"
+          ]
+        },
+        {
+          "key": "browse",
+          "label": "all types + 118 styles",
+          "url": "https://www.navbar.gallery/browse",
+          "match": [
+            "navbar",
+            "nav",
+            "navigation",
+            "header",
+            "menu"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://www.navbar.gallery/navbar/{slug}",
+        "example": "cloudflare"
+      },
+      "moods": [
+        "minimal",
+        "refined",
+        "technical"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://www.navbar.gallery/llms.txt",
+        "sitemap": "https://www.navbar.gallery/sitemap.xml"
+      },
+      "etiquette": {
+        "attribution": "Credit Navbar Gallery (by Christina Liubynska) and the original site when citing a navbar.",
+        "crawl": "robots.txt has no restrictions; llms.txt lists every type/style page \u2014 read that instead of crawling."
+      },
+      "notes": "Best first stop for any header/menu question. Each entry links to the live site \u2014 open it to feel the hover/dropdown motion, the screenshot is static.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "footer-design",
+      "name": "Footer Design",
+      "url": "https://www.footer.design/",
+      "summary": "The footer-only gallery (by NOOON Studio): real website footers filtered by 11 styles.",
+      "covers": [
+        "footer"
+      ],
+      "keywords": [
+        "footer",
+        "site footer",
+        "bottom of page"
+      ],
+      "patterns": [
+        {
+          "key": "style",
+          "label": "style",
+          "url": "https://www.footer.design/styles/{value}",
+          "values": [
+            "typographic",
+            "small-type",
+            "large-type",
+            "illustrative",
+            "grid",
+            "flat",
+            "animated",
+            "cards",
+            "bright",
+            "dark",
+            "bold"
+          ],
+          "match": [],
+          "map": {
+            "minimal": "small-type",
+            "refined": "small-type",
+            "calm": "flat",
+            "editorial": "typographic",
+            "typography": "typographic",
+            "animation": "animated",
+            "motion": "animated",
+            "playful": "illustrative",
+            "illustration": "illustrative",
+            "colorful": "bright",
+            "warm": "bright",
+            "columns": "grid",
+            "technical": "grid",
+            "card": "cards"
+          }
+        },
+        {
+          "key": "browse",
+          "label": "all footers",
+          "url": "https://www.footer.design/browse",
+          "match": [
+            "footer"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://www.footer.design/sites/{slug}",
+        "example": "simile"
+      },
+      "moods": [
+        "editorial",
+        "minimal",
+        "bold"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://www.footer.design/llms.txt",
+        "sitemap": "https://www.footer.design/sitemap.xml"
+      },
+      "etiquette": {
+        "attribution": "Credit footer.design and the original site.",
+        "crawl": "robots.txt allows all; llms.txt lists the style pages."
+      },
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "cta-gallery",
+      "name": "CTA Gallery",
+      "url": "https://www.cta.gallery/",
+      "summary": "500+ call-to-action blocks from real sites, filed by CTA type (button, form, newsletter, pricing, pop-up, download\u2026), light/dark mode and industry.",
+      "covers": [
+        "cta",
+        "button",
+        "form",
+        "modal",
+        "pricing"
+      ],
+      "keywords": [
+        "cta",
+        "call to action",
+        "call-to-action",
+        "signup",
+        "newsletter",
+        "request access",
+        "get started",
+        "waitlist",
+        "popup"
+      ],
+      "patterns": [
+        {
+          "key": "type",
+          "label": "CTA type",
+          "url": "https://www.cta.gallery/categories/{value}",
+          "values": [
+            "all-types",
+            "button",
+            "call-to-buy",
+            "download",
+            "form",
+            "modal-pop-up",
+            "navigation",
+            "newsletter",
+            "pricing"
+          ],
+          "match": [
+            "cta",
+            "call-to-action",
+            "banner"
+          ],
+          "map": {
+            "cta": "all-types",
+            "popup": "modal-pop-up",
+            "modal": "modal-pop-up",
+            "signup": "form",
+            "waitlist": "form",
+            "subscribe": "newsletter",
+            "buy": "call-to-buy",
+            "checkout": "call-to-buy"
+          }
+        },
+        {
+          "key": "mode",
+          "label": "mode",
+          "url": "https://www.cta.gallery/mode/{value}",
+          "values": [
+            "dark",
+            "light"
+          ]
+        },
+        {
+          "key": "industry",
+          "label": "industry",
+          "url": "https://www.cta.gallery/industry/{value}",
+          "values": [
+            "saas",
+            "ai",
+            "finance",
+            "tech",
+            "ecommerce",
+            "agency",
+            "portfolio",
+            "mobile-app",
+            "marketing",
+            "education",
+            "health-fitness",
+            "medical",
+            "real-estate",
+            "travel",
+            "insurance",
+            "design",
+            "landing",
+            "services"
+          ],
+          "map": {
+            "fintech": "finance",
+            "technical": "tech",
+            "trustworthy": "finance",
+            "shop": "ecommerce"
+          }
+        }
+      ],
+      "item": {
+        "page": "https://www.cta.gallery/cta/{slug}",
+        "example": "get-ripe"
+      },
+      "moods": [
+        "bold",
+        "playful",
+        "trustworthy"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "sitemap": "https://www.cta.gallery/sitemap.xml"
+      },
+      "etiquette": {
+        "attribution": "Credit cta.gallery and the original site.",
+        "crawl": "robots.txt allows all; no llms.txt \u2014 use the sitemap for the category/industry list. Promotes Framer templates (affiliate) \u2014 ignore those."
+      },
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "pricingpages",
+      "name": "Pricing Pages",
+      "url": "https://pricingpages.design/",
+      "summary": "Curated pricing pages (Ramp, Vanta, Figma, Mux, n8n\u2026) tagged by pattern \u2014 tier cards, comparison table, monthly/annual switch, usage-based calculator, enterprise / contact-sales.",
+      "covers": [
+        "pricing"
+      ],
+      "keywords": [
+        "pricing",
+        "pricing page",
+        "pricing table",
+        "plans",
+        "tiers",
+        "comparison table",
+        "usage-based",
+        "usage based",
+        "calculator",
+        "enterprise",
+        "monthly/annual",
+        "billing toggle"
+      ],
+      "patterns": [
+        {
+          "key": "all",
+          "label": "all pricing pages",
+          "url": "https://pricingpages.design/",
+          "match": [
+            "pricing",
+            "plans",
+            "tiers"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://pricingpages.design/sites/{slug}",
+        "example": "ramp"
+      },
+      "moods": [
+        "trustworthy",
+        "refined",
+        "minimal"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "full-page",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://pricingpages.design/llms.txt",
+        "sitemap": "https://pricingpages.design/sitemap.xml"
+      },
+      "etiquette": {
+        "attribution": "Required: \"Pricing design inspiration from pricingpages.design (https://pricingpages.design)\"; keep the original company names. Code inspired by it: \"Pricing component inspired by pricingpages.design\".",
+        "crawl": "\u2264 15 requests/minute (crawl-delay 3s). No price scraping, no bulk download. Prices are reference only \u2014 verify independently.",
+        "hotlinking": "No hotlinking of /images/ \u2014 link to the /sites/<slug> page instead of embedding its screenshots."
+      },
+      "notes": "Filters (Contact Sales, Enterprise pricing, Usage-Based Calculator, Comparison Table, Monthly/Annual switch, Tier Cards, Color Coded Tiers, Feature Checkmarks\u2026) are client-side checkboxes on the home page, so there are no per-pattern URLs \u2014 link the home page and name the filter, or link specific /sites/<slug> pages.",
+      "related": [
+        "inspiration/ramp",
+        "inspiration/vanta"
+      ],
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "land-book",
+      "name": "Landbook",
+      "url": "https://land-book.com/",
+      "summary": "Daily human-curated website gallery with cropped PAGE-SECTION examples (hero, features, pricing, testimonials, logos, stats, FAQ, CTA, footer\u2026), page-type galleries and a motion gallery.",
+      "covers": [
+        "hero",
+        "features",
+        "pricing",
+        "testimonials",
+        "logo-cloud",
+        "stats",
+        "faq",
+        "cta",
+        "footer",
+        "team"
+      ],
+      "keywords": [
+        "landing page",
+        "section",
+        "how it works",
+        "value proposition",
+        "case study",
+        "about page",
+        "page section"
+      ],
+      "patterns": [
+        {
+          "key": "section",
+          "label": "page section",
+          "url": "https://land-book.com/sections/{value}",
+          "values": [
+            "hero",
+            "value-proposition",
+            "features",
+            "how-it-works",
+            "testimonial",
+            "brands",
+            "stats",
+            "pricing",
+            "resources",
+            "faq",
+            "call-to-action",
+            "footer",
+            "about-us",
+            "case-study"
+          ],
+          "map": {
+            "testimonials": "testimonial",
+            "reviews": "testimonial",
+            "logo-cloud": "brands",
+            "logos": "brands",
+            "customers": "brands",
+            "cta": "call-to-action",
+            "team": "about-us",
+            "about": "about-us",
+            "steps": "how-it-works",
+            "process": "how-it-works",
+            "bento": "features",
+            "blog": "resources",
+            "metrics": "stats",
+            "kpi": "stats",
+            "questions": "faq"
+          }
+        },
+        {
+          "key": "motion",
+          "label": "motion gallery",
+          "url": "https://land-book.com/motion",
+          "match": [
+            "animated",
+            "animation",
+            "motion",
+            "transition",
+            "scroll-effect",
+            "scroll",
+            "interaction"
+          ]
+        },
+        {
+          "key": "page",
+          "label": "page type",
+          "url": "https://land-book.com/design/{value}",
+          "values": [
+            "landing-page",
+            "portfolio",
+            "ecommerce",
+            "blog",
+            "blog-post",
+            "pricing-page",
+            "product-page",
+            "product-listing-page",
+            "sign-up-page",
+            "about-us-page",
+            "career-page",
+            "case-study",
+            "other"
+          ],
+          "map": {
+            "landing": "landing-page",
+            "pricing": "pricing-page",
+            "signup": "sign-up-page",
+            "login": "sign-up-page",
+            "auth": "sign-up-page",
+            "onboarding": "sign-up-page",
+            "careers": "career-page",
+            "shop": "ecommerce",
+            "product": "product-page"
+          }
+        },
+        {
+          "key": "sections",
+          "label": "all sections",
+          "url": "https://land-book.com/sections",
+          "match": [
+            "section",
+            "sections"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://land-book.com/websites/{slug}",
+        "example": "99629-scandiwest"
+      },
+      "moods": [
+        "refined",
+        "minimal",
+        "warm"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "full-page",
+        "cropped-sections",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://land-book.com/llms.txt",
+        "sitemap": "https://land-book.com/sitemap.xml",
+        "rss": "https://land-book.com/rss.xml"
+      },
+      "etiquette": {
+        "attribution": "Link the entry's page (https://land-book.com/websites/<urlname>) and credit the designer/studio named on it.",
+        "crawl": "AI crawlers explicitly welcome; only auth/admin pages are disallowed. Free browsing is capped \u2014 Landbook Pro unlocks unlimited browsing + filters. Template links are affiliate links. Bursts get HTTP 403 \u2014 pace automated requests \u2265 3 s apart."
+      },
+      "notes": "The best free source for a single SECTION: /sections/<x> shows that section cropped from many real sites, side by side.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "landing-love",
+      "name": "landing.love",
+      "url": "https://www.landing.love/",
+      "summary": "2,100+ landing pages recorded as full-page scrolling VIDEOS \u2014 the place to see how a page moves (scroll choreography, 3D, horizontal scroll, transitions), filed by category, style and stack (GSAP/Three.js/WebGL).",
+      "covers": [
+        "hero",
+        "scroll-effect",
+        "transition",
+        "3d",
+        "features",
+        "text-effect"
+      ],
+      "keywords": [
+        "animated",
+        "animated landing",
+        "landing page",
+        "motion",
+        "video",
+        "scroll",
+        "scroll animation",
+        "horizontal scroll",
+        "3d",
+        "webgl",
+        "gsap",
+        "page transition",
+        "typography"
+      ],
+      "patterns": [
+        {
+          "key": "category",
+          "label": "category",
+          "url": "https://www.landing.love/categories/{value}/",
+          "values": [
+            "saas",
+            "ai",
+            "minimal",
+            "3d-website",
+            "horizontal-scroll",
+            "illustration",
+            "typography",
+            "portfolio",
+            "agency",
+            "studio",
+            "finance",
+            "technology",
+            "app",
+            "development",
+            "design",
+            "ecommerce",
+            "open-source",
+            "newsletter",
+            "hardware",
+            "web3",
+            "crypto",
+            "marketing",
+            "venture",
+            "health",
+            "wellness"
+          ],
+          "map": {
+            "3d": "3d-website",
+            "horizontal": "horizontal-scroll",
+            "editorial": "typography",
+            "playful": "illustration",
+            "futuristic": "3d-website",
+            "technical": "technology",
+            "fintech": "finance",
+            "trustworthy": "finance",
+            "developer": "development",
+            "shop": "ecommerce",
+            "calm": "minimal",
+            "refined": "minimal"
+          }
+        },
+        {
+          "key": "style",
+          "label": "style",
+          "url": "https://www.landing.love/style/{value}/",
+          "values": [
+            "dark-mode",
+            "light-mode",
+            "gradient",
+            "retro"
+          ],
+          "map": {
+            "dark": "dark-mode",
+            "light": "light-mode"
+          }
+        },
+        {
+          "key": "stack",
+          "label": "built with",
+          "url": "https://www.landing.love/collection/{value}/",
+          "values": [
+            "gsap",
+            "threejs",
+            "webgl"
+          ],
+          "map": {
+            "three": "threejs",
+            "shader": "webgl",
+            "experimental": "webgl"
+          }
+        },
+        {
+          "key": "all",
+          "label": "all sites, newest first",
+          "url": "https://www.landing.love/sites/",
+          "match": [
+            "animated",
+            "animation",
+            "motion",
+            "video",
+            "landing"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://www.landing.love/sites/{slug}/",
+        "video": "https://cdn.landing.love/videos/{slug}.mp4",
+        "example": "zero"
+      },
+      "moods": [
+        "experimental",
+        "bold",
+        "playful"
+      ],
+      "access": "free",
+      "media": [
+        "video",
+        "full-page",
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://www.landing.love/llms.txt",
+        "sitemap": "https://www.landing.love/sitemap.xml",
+        "rss": "https://www.landing.love/index.xml"
+      },
+      "etiquette": {
+        "attribution": "Attribute each entry to its credited studio AND link back to the landing.love page it came from.",
+        "crawl": "robots.txt allows all crawlers incl. ClaudeBot. Videos are large (\u224850 MB) \u2014 link them, don't download in bulk.",
+        "hotlinking": "Link the /sites/<slug>/ page; play cdn.landing.love/videos/<slug>.mp4 only for the user's own viewing, never embed it in a shipped product."
+      },
+      "notes": "When the brief is about MOTION (\"animated landing page\", \"scroll story\"), a video beats a screenshot \u2014 start here. /version/<slug>/ keeps older captures of redesigned sites.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "supahero",
+      "name": "Supahero",
+      "url": "https://supahero.io/",
+      "summary": "Hero sections only \u2014 hundreds of first-viewport screenshots from product, SaaS, portfolio and brand sites.",
+      "covers": [
+        "hero"
+      ],
+      "keywords": [
+        "hero",
+        "hero section",
+        "above the fold",
+        "first viewport",
+        "headline",
+        "landing hero"
+      ],
+      "patterns": [
+        {
+          "key": "all",
+          "label": "all heroes",
+          "url": "https://supahero.io/",
+          "match": [
+            "hero",
+            "headline"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://supahero.io/hero/{slug}",
+        "example": "linear"
+      },
+      "moods": [
+        "bold",
+        "refined",
+        "playful"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {},
+      "etiquette": {
+        "attribution": "Credit supahero.io and the original site.",
+        "crawl": "No robots.txt, sitemap or llms.txt (all 404) \u2014 browse the home page; don't crawl.",
+        "hotlinking": "Don't embed /heroes/<slug>.webp screenshots; link /hero/<slug>."
+      },
+      "notes": "No filters by URL; known brands have pages, e.g. /hero/linear, /hero/stripe, /hero/ramp, /hero/zed.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "recent-design",
+      "name": "Recent (formerly Godly)",
+      "url": "https://recent.design/",
+      "summary": "Godly's successor: a feed of astonishing websites and motion/interaction studies, each with a screen RECORDING, filterable by category.",
+      "covers": [
+        "scroll-effect",
+        "transition",
+        "text-effect",
+        "cursor",
+        "3d",
+        "hero"
+      ],
+      "keywords": [
+        "godly",
+        "animated",
+        "motion study",
+        "micro-interaction",
+        "microinteraction",
+        "interaction",
+        "experimental"
+      ],
+      "patterns": [
+        {
+          "key": "category",
+          "label": "category",
+          "url": "https://recent.design/websites?category={value}",
+          "values": [
+            "saas",
+            "ai",
+            "product",
+            "startup",
+            "technology",
+            "finance",
+            "portfolio",
+            "agency",
+            "editorial",
+            "ecommerce",
+            "personal",
+            "crypto",
+            "education",
+            "health",
+            "gaming",
+            "music",
+            "fashion",
+            "art",
+            "architecture",
+            "photography"
+          ],
+          "map": {
+            "fintech": "finance",
+            "technical": "technology",
+            "editorial": "editorial",
+            "shop": "ecommerce",
+            "developer": "technology",
+            "dev-tool": "technology"
+          }
+        },
+        {
+          "key": "websites",
+          "label": "all websites",
+          "url": "https://recent.design/websites",
+          "match": [
+            "website",
+            "websites",
+            "landing",
+            "animated"
+          ]
+        },
+        {
+          "key": "feed",
+          "label": "feed (sites + motion studies)",
+          "url": "https://recent.design/",
+          "match": [
+            "interaction",
+            "micro-interaction",
+            "microinteraction",
+            "motion"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://recent.design/i/{slug}",
+        "example": "xzndm3x-the-life-of-a-cursor"
+      },
+      "moods": [
+        "experimental",
+        "futuristic",
+        "bold"
+      ],
+      "access": "free",
+      "media": [
+        "video",
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "sitemap": "https://recent.design/sitemap.xml"
+      },
+      "etiquette": {
+        "attribution": "Credit recent.design and the original site/creator.",
+        "crawl": "robots.txt allows all; no llms.txt. The `?category=` filter is server-side; style filters are not URL-addressable.",
+        "hotlinking": "Recordings live on cdn.recent.design \u2014 link the /i/<id> page instead of embedding."
+      },
+      "notes": "godly.website now redirects here. Skews expressive \u2014 great for 'make it feel alive', less so for calm/trustworthy.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "minimal-gallery",
+      "name": "Minimal Gallery",
+      "url": "https://minimal.gallery/",
+      "summary": "Hand-picked minimal, whitespace-led websites (SaaS, portfolios, foundries, studios), filtered by tag.",
+      "covers": [
+        "hero",
+        "navigation",
+        "footer",
+        "pricing",
+        "features"
+      ],
+      "keywords": [
+        "minimal",
+        "minimalist",
+        "clean",
+        "whitespace",
+        "simple",
+        "quiet",
+        "restrained",
+        "refined look"
+      ],
+      "patterns": [
+        {
+          "key": "tag",
+          "label": "tag",
+          "url": "https://minimal.gallery/tag/{value}/",
+          "values": [
+            "saas",
+            "startup",
+            "software",
+            "b2b",
+            "ai",
+            "product",
+            "platform",
+            "portfolio",
+            "agency",
+            "e-commerce",
+            "editorial",
+            "finance",
+            "one-page",
+            "pricing",
+            "tools",
+            "type-foundry",
+            "personal",
+            "blog",
+            "magazine",
+            "security",
+            "programming",
+            "app",
+            "animation"
+          ],
+          "map": {
+            "ecommerce": "e-commerce",
+            "shop": "e-commerce",
+            "landing": "one-page",
+            "fintech": "finance",
+            "trustworthy": "finance",
+            "technical": "software",
+            "developer": "programming",
+            "typography": "type-foundry",
+            "animated": "animation",
+            "motion": "animation"
+          }
+        },
+        {
+          "key": "all",
+          "label": "all sites",
+          "url": "https://minimal.gallery/",
+          "match": [
+            "minimal",
+            "clean",
+            "whitespace",
+            "simple",
+            "refined",
+            "calm"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://minimal.gallery/{slug}/",
+        "example": "unify"
+      },
+      "moods": [
+        "minimal",
+        "calm",
+        "refined"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "sitemap": "https://minimal.gallery/sitemap.xml"
+      },
+      "etiquette": {
+        "attribution": "Credit minimal.gallery and the original site.",
+        "crawl": "WordPress site; robots.txt only blocks /wp-admin/. No llms.txt \u2014 browse tag pages."
+      },
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "awwwards",
+      "name": "Awwwards",
+      "url": "https://www.awwwards.com/websites/",
+      "summary": "Award-winning sites with jury scores \u2014 the reference for ambitious motion, WebGL, scroll storytelling and unusual navigation, browsable by tag.",
+      "covers": [
+        "scroll-effect",
+        "transition",
+        "3d",
+        "cursor",
+        "text-effect",
+        "hero",
+        "navigation",
+        "footer",
+        "background"
+      ],
+      "keywords": [
+        "award",
+        "awwwards",
+        "experimental",
+        "webgl",
+        "3d",
+        "scroll",
+        "storytelling",
+        "interaction",
+        "microinteraction",
+        "micro-interaction",
+        "animated",
+        "parallax",
+        "cursor",
+        "unusual navigation",
+        "typography"
+      ],
+      "patterns": [
+        {
+          "key": "tag",
+          "label": "tag",
+          "url": "https://www.awwwards.com/websites/{value}/",
+          "values": [
+            "header-design",
+            "navigation",
+            "menu-horizontal",
+            "menu-vertical",
+            "unusual-navigation",
+            "footer-design",
+            "microinteractions",
+            "interaction-design",
+            "gestures-interaction",
+            "animation",
+            "transitions",
+            "scrolling",
+            "parallax",
+            "storytelling",
+            "3d",
+            "webgl",
+            "three-js",
+            "gsap-animation",
+            "minimal",
+            "clean",
+            "typography",
+            "colorful",
+            "flat-design",
+            "experimental",
+            "retro",
+            "luxury",
+            "big-background-images",
+            "data-visualization",
+            "forms-and-input",
+            "about-page",
+            "contact-page",
+            "404-pages",
+            "single-page",
+            "horizontal-layout",
+            "fullscreen",
+            "startups",
+            "technology",
+            "business-corporate",
+            "e-commerce",
+            "portfolio",
+            "design-agencies",
+            "mobile-apps",
+            "sites_of_the_day"
+          ],
+          "map": {
+            "navbar": "header-design",
+            "header": "header-design",
+            "nav": "navigation",
+            "menu": "navigation",
+            "footer": "footer-design",
+            "hover": "microinteractions",
+            "micro-interaction": "microinteractions",
+            "interaction": "interaction-design",
+            "cursor": "microinteractions",
+            "animated": "animation",
+            "transition": "transitions",
+            "scroll": "scrolling",
+            "scroll-effect": "scrolling",
+            "three": "three-js",
+            "gsap": "gsap-animation",
+            "text-effect": "typography",
+            "editorial": "typography",
+            "playful": "colorful",
+            "premium": "luxury",
+            "chart": "data-visualization",
+            "dashboard": "data-visualization",
+            "form": "forms-and-input",
+            "input": "forms-and-input",
+            "contact": "contact-page",
+            "about": "about-page",
+            "team": "about-page",
+            "background": "big-background-images",
+            "ecommerce": "e-commerce",
+            "agency": "design-agencies",
+            "startup": "startups",
+            "saas": "startups",
+            "technical": "technology",
+            "futuristic": "webgl",
+            "trustworthy": "business-corporate",
+            "corporate": "business-corporate",
+            "mobile": "mobile-apps",
+            "calm": "clean",
+            "refined": "clean",
+            "motion": "animation"
+          }
+        },
+        {
+          "key": "sotd",
+          "label": "sites of the day",
+          "url": "https://www.awwwards.com/websites/sites_of_the_day/",
+          "match": [
+            "award",
+            "best",
+            "experimental"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://www.awwwards.com/sites/{slug}",
+        "example": "abatable"
+      },
+      "moods": [
+        "experimental",
+        "bold",
+        "futuristic"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "video",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://www.awwwards.com/llms.txt",
+        "api": "https://www.awwwards.com/openapi.json"
+      },
+      "etiquette": {
+        "attribution": "Link the Awwwards page and credit the studio/agency it names.",
+        "crawl": "robots.txt allows /websites/<tag>/ and /sites/<slug> pages but disallows query-string listings (/websites/?\u2026), /tag/, /gallery/, /search-websites, /inspiration/search and /elements/* \u2014 only use the tag URLs here. Public API is read-only (annual awards)."
+      },
+      "notes": "Expressive by default. For a calm/trustworthy product, borrow ONE idea (a transition, a hover) rather than the whole page.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "hoverstates",
+      "name": "Hoverstat.es",
+      "url": "https://www.hoverstat.es/",
+      "summary": "Long-running showcase of experimental interaction \u2014 hover states, cursors, kinetic type and unusual layouts on studio/portfolio/culture sites.",
+      "covers": [
+        "cursor",
+        "transition",
+        "text-effect",
+        "scroll-effect"
+      ],
+      "keywords": [
+        "hover",
+        "hover state",
+        "hover effect",
+        "interaction",
+        "micro-interaction",
+        "microinteraction",
+        "cursor",
+        "kinetic type",
+        "experimental"
+      ],
+      "patterns": [
+        {
+          "key": "archive",
+          "label": "archive",
+          "url": "https://www.hoverstat.es/archive/",
+          "match": [
+            "hover",
+            "interaction",
+            "micro-interaction",
+            "microinteraction",
+            "cursor",
+            "experimental"
+          ]
+        },
+        {
+          "key": "latest",
+          "label": "latest features",
+          "url": "https://www.hoverstat.es/",
+          "match": [
+            "hover",
+            "cursor"
+          ]
+        }
+      ],
+      "item": {
+        "page": "https://www.hoverstat.es/features/{slug}",
+        "example": "xk-studio"
+      },
+      "moods": [
+        "experimental",
+        "editorial",
+        "bold"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "live-links"
+      ],
+      "machine": {
+        "rss": "https://www.hoverstat.es/rss.xml"
+      },
+      "etiquette": {
+        "attribution": "Credit hoverstat.es and the featured studio; link the /features/<slug> page.",
+        "crawl": "No robots.txt / sitemap / llms.txt (404) \u2014 browse the archive by hand, don't crawl."
+      },
+      "notes": "Screenshots can't show a hover \u2014 always open the live site from the feature page.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "kage",
+      "name": "Kage",
+      "url": "https://kage.design/",
+      "summary": "Analysed product designs: real screenshots classified by page type, style, industry, colour and stack, each with a ready-to-paste build prompt \u2014 and a free MCP server.",
+      "covers": [
+        "bento",
+        "features",
+        "hero",
+        "empty-state",
+        "navigation",
+        "blog"
+      ],
+      "keywords": [
+        "product design",
+        "saas",
+        "dev tool",
+        "fintech",
+        "prompt",
+        "design brief",
+        "like a product",
+        "empty state",
+        "og image",
+        "editorial",
+        "bento",
+        "corporate",
+        "dark mode"
+      ],
+      "patterns": [
+        {
+          "key": "style",
+          "label": "style",
+          "url": "https://kage.design/style/{value}",
+          "values": [
+            "minimal",
+            "dark",
+            "editorial",
+            "brutalist",
+            "retro",
+            "playful",
+            "dense",
+            "bento",
+            "glass",
+            "monochrome",
+            "gradient",
+            "illustrated",
+            "corporate"
+          ],
+          "map": {
+            "refined": "minimal",
+            "calm": "minimal",
+            "trustworthy": "corporate",
+            "technical": "dense",
+            "bold": "brutalist",
+            "illustration": "illustrated",
+            "glassmorphism": "glass"
+          }
+        },
+        {
+          "key": "page",
+          "label": "page type",
+          "url": "https://kage.design/design/{value}",
+          "values": [
+            "landing-page",
+            "navigation",
+            "empty-state",
+            "blog",
+            "og-image"
+          ],
+          "map": {
+            "landing": "landing-page",
+            "hero": "landing-page",
+            "features": "landing-page",
+            "navbar": "navigation"
+          }
+        },
+        {
+          "key": "industry",
+          "label": "industry",
+          "url": "https://kage.design/industry/{value}",
+          "values": [
+            "developer-tools",
+            "cloud-infrastructure",
+            "ai",
+            "analytics",
+            "security",
+            "productivity",
+            "fintech",
+            "design-tools",
+            "consumer",
+            "saas",
+            "crypto",
+            "email"
+          ],
+          "map": {
+            "dev-tool": "developer-tools",
+            "developer": "developer-tools",
+            "infra": "cloud-infrastructure",
+            "finance": "fintech",
+            "compliance": "security",
+            "dashboard": "analytics"
+          }
+        }
+      ],
+      "moods": [
+        "refined",
+        "technical",
+        "minimal"
+      ],
+      "access": "free",
+      "media": [
+        "screenshots",
+        "prompts",
+        "live-links"
+      ],
+      "machine": {
+        "llms": "https://kage.design/llms.txt",
+        "sitemap": "https://kage.design/sitemap.xml",
+        "mcp": "https://kage.design/mcp",
+        "toolchain": "kage"
+      },
+      "etiquette": {
+        "attribution": "Screenshots belong to their products; use Kage's prompts to build something INSPIRED by a design \u2014 never reproduce branding or copy.",
+        "crawl": "robots.txt allows all but /search, /api, /auth, /admin. Prefer the MCP server (https://kage.design/mcp) over scraping."
+      },
+      "notes": "Agent-native: with the kage MCP wired (toolchain id `kage`), ask it for 'a design brief like <product>'. Strongest on landing pages + OG images; navigation/blog shelves are thin.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "component-gallery",
+      "name": "The Component Gallery",
+      "url": "https://component.gallery/",
+      "summary": "60 component types with real examples from 95 design systems (Polaris, Carbon, GOV.UK\u2026) \u2014 names, anatomy, states and accessibility, not marketing looks.",
+      "covers": [
+        "button",
+        "input",
+        "form",
+        "tabs",
+        "modal",
+        "tooltip",
+        "accordion",
+        "toast",
+        "badge",
+        "carousel",
+        "table",
+        "card",
+        "empty-state",
+        "loader"
+      ],
+      "keywords": [
+        "component",
+        "anatomy",
+        "accessibility",
+        "a11y",
+        "design system",
+        "states",
+        "combobox",
+        "segmented control",
+        "stepper",
+        "date picker"
+      ],
+      "patterns": [
+        {
+          "key": "component",
+          "label": "component",
+          "url": "https://component.gallery/components/{value}/",
+          "values": [
+            "accordion",
+            "alert",
+            "avatar",
+            "badge",
+            "breadcrumbs",
+            "button",
+            "button-group",
+            "card",
+            "carousel",
+            "checkbox",
+            "color-picker",
+            "combobox",
+            "date-input",
+            "datepicker",
+            "drawer",
+            "dropdown-menu",
+            "empty-state",
+            "fieldset",
+            "file-upload",
+            "footer",
+            "form",
+            "header",
+            "hero",
+            "icon",
+            "image",
+            "label",
+            "link",
+            "list",
+            "modal",
+            "navigation",
+            "pagination",
+            "popover",
+            "progress-bar",
+            "progress-indicator",
+            "quote",
+            "radio-button",
+            "rating",
+            "rich-text-editor",
+            "search-input",
+            "segmented-control",
+            "select",
+            "separator",
+            "skeleton",
+            "skip-link",
+            "slider",
+            "spinner",
+            "stack",
+            "stepper",
+            "table",
+            "tabs",
+            "text-input",
+            "textarea",
+            "toast",
+            "toggle",
+            "tooltip",
+            "tree-view",
+            "video"
+          ],
+          "map": {
+            "input": "text-input",
+            "loader": "spinner",
+            "loading": "spinner",
+            "dialog": "modal",
+            "sidebar": "drawer",
+            "dropdown": "dropdown-menu",
+            "menu": "dropdown-menu",
+            "notification": "toast",
+            "breadcrumb": "breadcrumbs",
+            "progress": "progress-bar",
+            "switch": "toggle",
+            "search": "search-input",
+            "upload": "file-upload",
+            "date": "datepicker",
+            "testimonials": "quote",
+            "segmented": "segmented-control"
+          }
+        },
+        {
+          "key": "design-systems",
+          "label": "design systems",
+          "url": "https://component.gallery/design-systems/",
+          "match": [
+            "design system",
+            "design-system"
+          ]
+        }
+      ],
+      "moods": [
+        "trustworthy",
+        "technical",
+        "minimal"
+      ],
+      "access": "free",
+      "media": [
+        "live-links",
+        "code-examples"
+      ],
+      "machine": {},
+      "etiquette": {
+        "attribution": "Credit component.gallery (Iain Bean) and the design system you cite.",
+        "crawl": "robots.txt allows all; no sitemap or llms.txt \u2014 fetch the component page."
+      },
+      "notes": "Also a catalog source (catalog/sources/component-gallery.md). Use it to decide WHAT a component should do before choosing how it looks.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "mobbin",
+      "name": "Mobbin",
+      "url": "https://mobbin.com/",
+      "summary": "The largest library of real app screens and multi-step FLOWS (iOS, Android, web) plus website sections \u2014 searchable by pattern and UI element.",
+      "covers": [
+        "auth",
+        "empty-state",
+        "form",
+        "navigation",
+        "modal",
+        "dashboard",
+        "table",
+        "ai-chat",
+        "toast",
+        "pricing"
+      ],
+      "keywords": [
+        "mobile",
+        "app",
+        "ios",
+        "android",
+        "flow",
+        "user flow",
+        "onboarding",
+        "signup flow",
+        "checkout",
+        "paywall",
+        "settings",
+        "screen",
+        "app screens"
+      ],
+      "patterns": [
+        {
+          "key": "screens",
+          "label": "screens",
+          "url": "https://mobbin.com/explore/{value}/screens",
+          "values": [
+            "mobile",
+            "web"
+          ],
+          "match": [
+            "screen",
+            "screens",
+            "settings",
+            "paywall",
+            "empty-state",
+            "dashboard",
+            "table",
+            "modal",
+            "form"
+          ],
+          "map": {
+            "ios": "mobile",
+            "android": "mobile",
+            "app": "mobile",
+            "phone": "mobile",
+            "desktop": "web",
+            "dashboard": "web",
+            "saas": "web"
+          }
+        },
+        {
+          "key": "flows",
+          "label": "flows",
+          "url": "https://mobbin.com/explore/{value}/flows",
+          "values": [
+            "mobile",
+            "web"
+          ],
+          "match": [
+            "flow",
+            "flows",
+            "onboarding",
+            "checkout",
+            "journey",
+            "signup",
+            "auth"
+          ],
+          "map": {
+            "ios": "mobile",
+            "android": "mobile",
+            "app": "mobile",
+            "phone": "mobile",
+            "desktop": "web"
+          }
+        },
+        {
+          "key": "ui-elements",
+          "label": "UI elements",
+          "url": "https://mobbin.com/explore/{value}/ui-elements",
+          "values": [
+            "mobile",
+            "web"
+          ],
+          "match": [
+            "element",
+            "elements",
+            "toast",
+            "button",
+            "input",
+            "tabs",
+            "card"
+          ],
+          "map": {
+            "ios": "mobile",
+            "android": "mobile",
+            "app": "mobile",
+            "desktop": "web"
+          }
+        },
+        {
+          "key": "sites",
+          "label": "website sections",
+          "url": "https://mobbin.com/explore/sites",
+          "match": [
+            "website",
+            "landing",
+            "section",
+            "sections"
+          ]
+        }
+      ],
+      "moods": [
+        "trustworthy",
+        "refined",
+        "minimal"
+      ],
+      "access": "paid",
+      "media": [
+        "screenshots",
+        "flows",
+        "cropped-sections"
+      ],
+      "machine": {
+        "llms": "https://mobbin.com/llms.txt",
+        "sitemap": "https://mobbin.com/sitemap.xml",
+        "mcp": "https://mobbin.com/mcp.md"
+      },
+      "etiquette": {
+        "attribution": "Preserve the product name and the Mobbin URL; separate what you saw from what you recommend. Don't copy designs, branding, text or assets verbatim.",
+        "crawl": "robots.txt blocks AI crawlers (GPTBot etc.) everywhere except llms.txt, llms-full.txt and *.md pages. MCP (Pro/Team) and REST API (Team) are paid; 60 requests/60 s, honour Retry-After."
+      },
+      "notes": "PAID \u2014 Owen is on free tiers. Mention it only flagged as paid, after the free galleries; useful when the question is a multi-step app FLOW (onboarding, checkout) that no free gallery covers.",
+      "verified": "2026-10-06"
+    },
+    {
+      "slug": "prompt-motion",
+      "name": "Prompt Motion",
+      "url": "https://prompt-motion.com/",
+      "summary": "Motion-graphics examples and author prompts. Browse externally for creative direction; this is not an installable UI component library.",
+      "covers": [
+        "illustration",
+        "background",
+        "text-effect"
+      ],
+      "keywords": [
+        "motion graphics",
+        "video",
+        "promo",
+        "prompt",
+        "showreel"
+      ],
+      "patterns": [],
+      "moods": [
+        "experimental",
+        "bold",
+        "playful"
+      ],
+      "access": "free",
+      "media": [
+        "prompts",
+        "live-links"
+      ],
+      "machine": {},
+      "etiquette": {
+        "attribution": "Credit Prompt Motion and the individual creator when citing an example.",
+        "crawl": "Link-only. robots.txt disallows named AI crawlers and /api/; no bulk crawling or prompt ingestion.",
+        "hotlinking": "Do not embed or redistribute videos, images or author prompts."
+      },
+      "notes": "Open in a browser as a reference; do not copy prompts or code without the author granting appropriate rights.",
+      "related": [],
+      "verified": "2026-10-11"
+    }
+  ]
+}

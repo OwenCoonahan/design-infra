@@ -1,0 +1,14 @@
+{
+  "name": "oc-design",
+  "description": "Shared design infrastructure plugin: design systems, component catalog and @design-infra registry skills.",
+  "owner": {
+    "name": "Owen Coonahan"
+  },
+  "plugins": [
+    {
+      "name": "design-infra",
+      "source": "./",
+      "description": "Design systems, component catalog and @design-infra registry skills."
+    }
+  ]
+}

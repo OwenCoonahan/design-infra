@@ -1,0 +1,556 @@
+{
+  "$comment": "Ranked toolchain applied by scripts/bootstrap.ts (public/bootstrap.mjs). Schema: Tool in lib/catalog/schema.ts. Secrets come from ~/.config/design-infra/secrets.env, never this file.",
+  "tools": [
+    {
+      "id": "design-infra",
+      "name": "design-infra (this repo)",
+      "tier": 1,
+      "rank": 1,
+      "track": "foundation",
+      "docs": "https://design-infra.vercel.app",
+      "why": "The router: ranked catalog, design systems, playbooks, taste memory and the @oc registry. Every other tool is chosen through it.",
+      "use": "Always. plan_ui for pages, propose_options for one component, search_components for pieces.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@oc",
+          "url": "https://design-infra.vercel.app/r/{name}.json"
+        },
+        {
+          "kind": "mcp",
+          "name": "design-infra",
+          "config": {
+            "type": "http",
+            "url": "https://design-infra.vercel.app/mcp"
+          }
+        },
+        {
+          "kind": "run",
+          "command": "claude plugin marketplace add OwenCoonahan/design-infra --scope project && claude plugin install design-infra@oc-design --scope project",
+          "interactive": true,
+          "note": "optional \u2014 adds the skills/hooks for teammates; private repo, needs git access"
+        },
+        {
+          "kind": "agent-note",
+          "text": "UI work goes through design-infra: plan_ui (new pages from a brief), propose_options (one component: animate/restyle/add a state \u2014 show options WITH links, let the user pick), search_components (specific pieces). Never hand-build what the catalog has."
+        },
+        {
+          "kind": "agent-note",
+          "text": "Follow ./DESIGN.md (moods, motion language, tokens). Theme tokens only \u2014 no hard-coded colours."
+        }
+      ],
+      "verify": "curl -sf https://design-infra.vercel.app/api/setup >/dev/null"
+    },
+    {
+      "id": "shadcn",
+      "name": "shadcn/ui CLI + MCP + skill",
+      "tier": 1,
+      "rank": 2,
+      "track": "foundation",
+      "docs": "https://ui.shadcn.com/docs/mcp",
+      "why": "Every registry (ours, Aceternity, Magic UI, Kibo, Cult UI, React Bits\u2026) installs through it; its MCP browses them all.",
+      "use": "Installing any component; plain app primitives (dialog, select, table, sidebar, chart) come from stock shadcn first.",
+      "setup": [
+        {
+          "kind": "mcp",
+          "name": "shadcn",
+          "config": {
+            "command": "npx",
+            "args": [
+              "shadcn@latest",
+              "mcp"
+            ]
+          }
+        },
+        {
+          "kind": "run",
+          "command": "DISABLE_TELEMETRY=1 npx -y skills@latest add shadcn/ui --skill shadcn -a claude-code codex -y"
+        }
+      ],
+      "verify": "test -f components.json"
+    },
+    {
+      "id": "motion",
+      "name": "Motion + @oc/motion-presets",
+      "tier": 1,
+      "rank": 3,
+      "track": "motion",
+      "source": "motion",
+      "docs": "https://motion.dev/docs/react",
+      "why": "The animation engine under ~500 catalog entries; presets keep hand-written motion on the project's motion language.",
+      "use": "Any animation not covered by a drop-in component: layoutId indicators, exits, whileInView, scroll-linked, springs.",
+      "setup": [
+        {
+          "kind": "npm",
+          "packages": [
+            "motion"
+          ]
+        },
+        {
+          "kind": "shadcn",
+          "items": [
+            "@oc/motion-presets"
+          ]
+        },
+        {
+          "kind": "agent-note",
+          "text": "Animations: use motion/react with lib/motion-presets.ts (motionPreset()) and the theme's tokens (duration-(--motion-fast) ease-motion-out). Wrap the app in <MotionConfig reducedMotion=\"user\">. No Motion+ APIs (Ticker, Cursor, AnimateNumber, splitText\u2026) without a licence."
+        }
+      ],
+      "verify": "node -e \"require.resolve('motion')\""
+    },
+    {
+      "id": "motion-ai-kit",
+      "name": "Motion AI Kit (skill + docs MCP)",
+      "tier": 1,
+      "rank": 4,
+      "track": "agent",
+      "source": "motion",
+      "docs": "https://motion.dev/docs/ai-kit",
+      "why": "Motion's own free skill (best practices, perf, a11y) + docs search MCP. design-infra decides WHAT; this knows HOW.",
+      "use": "Whenever an agent writes Motion code.",
+      "setup": [
+        {
+          "kind": "run",
+          "command": "DISABLE_TELEMETRY=1 npx -y skills@latest add motiondivision/ai-kit --skill motion -a claude-code codex -y"
+        },
+        {
+          "kind": "mcp",
+          "name": "motion",
+          "config": {
+            "type": "http",
+            "url": "https://mcp.motion.dev"
+          }
+        }
+      ],
+      "verify": "test -e .claude/skills/motion || test -e .agents/skills/motion"
+    },
+    {
+      "id": "magicui",
+      "name": "Magic UI",
+      "tier": 2,
+      "rank": 5,
+      "track": "components",
+      "source": "magicui",
+      "docs": "https://magicui.design",
+      "why": "Polished, mostly token-friendly animated components (marquee, blur-fade, number-ticker, border-beam); MIT; best free source of tasteful motion.",
+      "use": "Landing-page polish, text/number animation, subtle wrappers.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@magicui",
+          "url": "https://magicui.design/r/{name}.json"
+        },
+        {
+          "kind": "run",
+          "command": "DISABLE_TELEMETRY=1 npx -y skills@latest add magicuidesign/magicui -a claude-code codex -y"
+        }
+      ],
+      "verify": "test -e .claude/skills/magic-ui || test -e .agents/skills/magic-ui"
+    },
+    {
+      "id": "smoothui",
+      "name": "SmoothUI",
+      "tier": 2,
+      "rank": 6,
+      "track": "components",
+      "source": "smoothui",
+      "docs": "https://smoothui.dev",
+      "why": "~230 MIT motion components + blocks on shadcn tokens with the best free AI/agent set (approval, tool call, task list, reasoning) and reduced-motion handling in most items.",
+      "use": "AI/agent surfaces; tabs, scroll-aware navbar, skeletons, carousels and reading progress. Set --brand: var(--primary) once (its tokens.json defaults to pink).",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@smoothui",
+          "url": "https://smoothui.dev/r/{name}.json"
+        },
+        {
+          "kind": "agent-note",
+          "text": "SmoothUI: npx shadcn@latest add @smoothui/<name> installs to components/smoothui/<name>/index.tsx. Many items pull its tokens.json (bg-brand, smooth-N greys) \u2014 keep `--brand: var(--primary);` in :root of globals.css so they follow the theme."
+        }
+      ]
+    },
+    {
+      "id": "motion-primitives",
+      "name": "Motion Primitives",
+      "tier": 2,
+      "rank": 7,
+      "track": "motion",
+      "source": "motion-primitives",
+      "docs": "https://motion-primitives.com",
+      "why": "Unstyled Motion wrappers (in-view, text-effect, transition-panel, animated-background) \u2014 safest way to add motion to YOUR components.",
+      "use": "'Animate this' on existing components; tabs/panels/lists/headlines.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@motion-primitives",
+          "url": "https://motion-primitives.com/c/{name}.json"
+        }
+      ]
+    },
+    {
+      "id": "transitions",
+      "name": "transitions.dev (skill + MCP)",
+      "tier": 2,
+      "rank": 8,
+      "track": "motion",
+      "source": "transitions",
+      "docs": "https://transitions.dev",
+      "why": "Tuned CSS micro-interaction recipes applied to your markup (modal, tabs, toast, number pop, success check); free tier is plenty.",
+      "use": "Polish passes: press/hover, open/close timing, state feedback \u2014 zero dependencies.",
+      "setup": [
+        {
+          "kind": "run",
+          "command": "DISABLE_TELEMETRY=1 npx -y skills@latest add Jakubantalik/transitions.dev --skill transitions-dev transitions-polish -a claude-code codex -y"
+        },
+        {
+          "kind": "mcp",
+          "name": "transitions",
+          "config": {
+            "type": "http",
+            "url": "https://api.transitions.dev/v1/agent/mcp"
+          }
+        }
+      ],
+      "verify": "test -e .claude/skills/transitions-dev || test -e .agents/skills/transitions-dev"
+    },
+    {
+      "id": "originui",
+      "name": "Origin UI (coss origin)",
+      "tier": 2,
+      "rank": 9,
+      "track": "components",
+      "source": "originui",
+      "docs": "https://coss.com/origin",
+      "why": "~600 theme-aware app components (inputs, tables, calendars, navbars) \u2014 the best free source for product UI that just follows the theme.",
+      "use": "App UI variants beyond stock shadcn: fields, filters, data tables, date pickers, command menus.",
+      "setup": [
+        {
+          "kind": "agent-note",
+          "text": "Origin UI comps install by URL: npx shadcn@latest add https://coss.com/origin/r/comp-<N>.json \u2014 they also install Origin's own ui/* primitives; review overwrite prompts."
+        }
+      ]
+    },
+    {
+      "id": "aceternity",
+      "name": "Aceternity UI (free)",
+      "tier": 2,
+      "rank": 10,
+      "track": "components",
+      "source": "aceternity",
+      "docs": "https://ui.aceternity.com",
+      "why": "The most-used flashy marketing components (spotlights, beams, scroll effects) \u2014 but hard-coded colours and 174 Pro-only blocks.",
+      "use": "Hero/background/scroll moments on marketing pages; convert colours to tokens after install. Free components only.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@aceternity",
+          "url": "https://ui.aceternity.com/registry/{name}.json"
+        }
+      ]
+    },
+    {
+      "id": "agentation",
+      "name": "Agentation (visual feedback)",
+      "tier": 2,
+      "rank": 11,
+      "track": "dev-tool",
+      "source": "agentation",
+      "docs": "https://www.agentation.com",
+      "why": "Click any element in the running app, annotate it, and the agent gets selector + source file \u2014 the fastest 'fix THIS' loop.",
+      "use": "Design review of a running UI; pairs with the refine skill.",
+      "setup": [
+        {
+          "kind": "npm",
+          "packages": [
+            "agentation"
+          ],
+          "dev": true
+        },
+        {
+          "kind": "mcp",
+          "name": "agentation",
+          "config": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+              "-y",
+              "agentation-mcp",
+              "server"
+            ]
+          }
+        },
+        {
+          "kind": "run",
+          "command": "DISABLE_TELEMETRY=1 npx -y skills@latest add benjitaylor/agentation --skill agentation -a claude-code codex -y"
+        },
+        {
+          "kind": "agent-note",
+          "text": "Agentation: mount <Agentation endpoint=\"http://localhost:4747\" /> in the root layout only when NODE_ENV === 'development'. Check pending annotations via the agentation MCP when the user says 'check my feedback'."
+        }
+      ],
+      "verify": "node -e \"require.resolve('agentation')\""
+    },
+    {
+      "id": "kage",
+      "name": "Kage (design reference MCP)",
+      "tier": 2,
+      "rank": 12,
+      "track": "agent",
+      "source": "kage",
+      "docs": "https://kage.design",
+      "why": "Free, keyless MCP over 372 analysed real product designs and 1,978 extracted components with prompts \u2014 how real products solved a section, beyond our catalog.",
+      "use": "Researching a page or section ('fintech pricing pages', 'a site like Linear for X') before planning; never for bulk export.",
+      "setup": [
+        {
+          "kind": "mcp",
+          "name": "kage",
+          "config": {
+            "type": "http",
+            "url": "https://kage.design/mcp"
+          }
+        },
+        {
+          "kind": "agent-note",
+          "text": "For design references beyond the catalog \u2014 e.g. 'how do fintech pricing pages look' \u2014 use the kage MCP (search_designs, design_brief); never bulk-download."
+        }
+      ],
+      "verify": "curl -sf -X POST https://kage.design/mcp -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{},\"clientInfo\":{\"name\":\"verify\",\"version\":\"0\"}}}' >/dev/null"
+    },
+    {
+      "id": "kibo-ui",
+      "name": "Kibo UI",
+      "tier": 3,
+      "rank": 13,
+      "track": "components",
+      "source": "kibo-ui",
+      "docs": "https://www.kibo-ui.com",
+      "why": "Complex theme-aware product components (kanban, gantt, editor, dropzone, color picker) you'd never hand-build.",
+      "use": "Rich app features; its hosted MCP is currently broken (HTTP 500) \u2014 use the shadcn MCP instead.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@kibo-ui",
+          "url": "https://www.kibo-ui.com/r/{name}.json"
+        }
+      ]
+    },
+    {
+      "id": "cult-ui",
+      "name": "Cult UI",
+      "tier": 3,
+      "rank": 14,
+      "track": "components",
+      "source": "cult-ui",
+      "docs": "https://www.cult-ui.com",
+      "why": "Playful, tactile components and onboarding flows; theming varies by generation.",
+      "use": "Consumer/playful projects (lively motion); check colours after install.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@cult-ui",
+          "url": "https://www.cult-ui.com/r/{name}.json"
+        }
+      ]
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "tier": 3,
+      "rank": 15,
+      "track": "components",
+      "source": "react-bits",
+      "docs": "https://reactbits.dev",
+      "why": "The deepest well of creative text effects, WebGL backgrounds and micro-interactions \u2014 heavy deps, purple defaults, Commons Clause (install-only).",
+      "use": "Cinematic/experimental pages. Names are case-sensitive: @react-bits/SplitText-TS-TW.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@react-bits",
+          "url": "https://reactbits.dev/r/{name}.json"
+        }
+      ]
+    },
+    {
+      "id": "beautifui",
+      "name": "Beautiful UI",
+      "tier": 3,
+      "rank": 16,
+      "track": "components",
+      "source": "beautifui",
+      "docs": "https://www.beautifului.dev",
+      "why": "The best free AI/agent surfaces (thinking traces, approvals, tool chips) \u2014 its foundation.css redefines --accent.",
+      "use": "AI products; import foundation.css BEFORE your theme or rename its accent vars.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@beautifui",
+          "url": "https://www.beautifului.dev/r/{name}.json"
+        }
+      ]
+    },
+    {
+      "id": "librariesdev",
+      "name": "libraries.dev packages",
+      "tier": 3,
+      "rank": 17,
+      "track": "components",
+      "source": "librariesdev",
+      "docs": "https://libraries.dev",
+      "why": "Small MIT npm packages for AI interfaces: thinking-orbs, border-beam, voice-glow, bot-avatars, metal-fx.",
+      "use": "Install per need (e.g. pnpm add thinking-orbs) \u2014 @oc/agent-status and @oc/beam-card wrap two of them.",
+      "setup": []
+    },
+    {
+      "id": "21st",
+      "name": "21st.dev (CLI + MCP)",
+      "tier": 3,
+      "rank": 18,
+      "track": "components",
+      "source": "21st",
+      "docs": "https://21st.dev/mcp",
+      "secrets": [
+        {
+          "env": "API_KEY_21ST",
+          "get": "https://21st.dev/settings/api-keys",
+          "note": "free account; component code is metered",
+          "required": true
+        }
+      ],
+      "why": "Breadth: 12k+ community components and search when nothing curated fits. Quality varies.",
+      "use": "Searching for something specific the catalog lacks; read the code before shipping.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@21st",
+          "url": "https://21st.dev/r/{name}",
+          "params": {
+            "api_key": "${API_KEY_21ST}"
+          }
+        },
+        {
+          "kind": "mcp-user",
+          "name": "21st",
+          "command": "claude mcp add -s user --transport http 21st https://21st.dev/api/mcp -H \"x-api-key: ${API_KEY_21ST}\""
+        }
+      ],
+      "verify": "npx -y @21st-dev/cli@latest whoami"
+    },
+    {
+      "id": "kitbitz",
+      "name": "Kitbitz (CC0 illustrations MCP)",
+      "tier": 3,
+      "rank": 19,
+      "track": "agent",
+      "source": "kitbitz",
+      "docs": "https://kitbitz.art",
+      "why": "2,043 hand-drawn CC0 illustrations in 13 consistent kits, searchable through a free read-only MCP \u2014 warmth for empty states and onboarding without an illustrator.",
+      "use": "Empty states, onboarding, 404s and marketing spots on warm/playful products; download the chosen SVGs into the project.",
+      "setup": [
+        {
+          "kind": "mcp",
+          "name": "kitbitz",
+          "config": {
+            "type": "http",
+            "url": "https://mcp.kitbitz.art"
+          }
+        },
+        {
+          "kind": "agent-note",
+          "text": "Illustrations: search the kitbitz MCP (search_illustrations, then get_illustration) and download the chosen SVGs into public/illustrations/ \u2014 CC0, no attribution; stay within one kit per product and don't hotlink assets.kitbitz.art."
+        }
+      ],
+      "verify": "curl -sf -X POST https://mcp.kitbitz.art -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{},\"clientInfo\":{\"name\":\"verify\",\"version\":\"0\"}}}' >/dev/null"
+    },
+    {
+      "id": "originkit",
+      "name": "OriginKit (CLI + MCP)",
+      "tier": 4,
+      "rank": 20,
+      "track": "paid",
+      "source": "originkit",
+      "docs": "https://www.originkit.dev",
+      "secrets": [
+        {
+          "env": "ORIGINKIT_API_KEY",
+          "get": "https://www.originkit.dev",
+          "note": "Profile \u2192 API Keys; free = 10 copies/day, Pro $79/yr",
+          "required": true
+        }
+      ],
+      "why": "~1,100 WebGL/shader backgrounds, heroes and cursors \u2014 the wow factor, metered and proprietary.",
+      "use": "A signature background/hero when the free catalog looks too familiar.",
+      "setup": [
+        {
+          "kind": "mcp-user",
+          "name": "originkit",
+          "command": "claude mcp add -s user --transport http originkit https://mcp.originkit.dev/mcp -H \"Authorization: Bearer ${ORIGINKIT_API_KEY}\""
+        },
+        {
+          "kind": "agent-note",
+          "text": "OriginKit: install with npx originkit add <slug> --auth $ORIGINKIT_API_KEY. NEVER run `originkit init` \u2014 it overwrites shadcn's components.json."
+        }
+      ],
+      "verify": "npx -y originkit@latest whoami"
+    },
+    {
+      "id": "motion-plus",
+      "name": "Motion+ (premium components + MCP)",
+      "tier": 4,
+      "rank": 21,
+      "track": "paid",
+      "source": "motion",
+      "docs": "https://motion.dev/plus",
+      "secrets": [
+        {
+          "env": "MOTION_PLUS",
+          "get": "https://motion.dev/plus",
+          "note": "set MOTION_PLUS=1 once you have a membership; the MCP signs in via OAuth in /mcp",
+          "required": true
+        }
+      ],
+      "why": "Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 460+ example sources.",
+      "use": "Only with a licence; then prefer it over hand-rolled versions of those components.",
+      "setup": [
+        {
+          "kind": "mcp",
+          "name": "motion-plus",
+          "config": {
+            "type": "http",
+            "url": "https://mcp.motion.dev/plus"
+          }
+        },
+        {
+          "kind": "agent-note",
+          "text": "Motion+ licensed: Motion+ components (motion-plus/react) and example sources are allowed; install from the Motion+ private registry (https://motion.dev/docs/react-motion-plus-installation)."
+        }
+      ]
+    },
+    {
+      "id": "transitions-pro",
+      "name": "transitions.dev Pro",
+      "tier": 4,
+      "rank": 22,
+      "track": "paid",
+      "source": "transitions",
+      "docs": "https://transitions.dev",
+      "secrets": [
+        {
+          "env": "TRANSITIONS_LICENSE",
+          "get": "https://transitions.dev",
+          "note": "Pro $9/mo or $149 lifetime",
+          "required": true
+        }
+      ],
+      "why": "React/TS variants of every recipe plus Pro transitions.",
+      "use": "When CSS recipes need to become typed React components.",
+      "setup": [
+        {
+          "kind": "mcp-user",
+          "name": "transitions-pro",
+          "command": "claude mcp add -s user --transport http transitions-pro https://api.transitions.dev/v1/agent/mcp -H \"Authorization: Bearer ${TRANSITIONS_LICENSE}\""
+        }
+      ]
+    }
+  ]
+}

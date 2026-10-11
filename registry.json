@@ -1,0 +1,1701 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "design-infra",
+  "homepage": "https://github.com/OwenCoonahan/design-infra",
+  "items": [
+    {
+      "name": "theme-brutalist-mono",
+      "type": "registry:theme",
+      "title": "Brutalist Mono theme",
+      "description": "Stark black-and-white brutalism with zero radius, thick borders, hard offset shadows, monospace-heavy type and one acid-yellow accent. Best for dev tools, indie launches, manifestos, portfolios and anything that should feel raw, honest and loud.",
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/font-space-mono-mono.json",
+        "https://design-infra.vercel.app/r/font-space-grotesk-heading.json",
+        "https://design-infra.vercel.app/r/font-space-mono-sans.json"
+      ],
+      "cssVars": {
+        "theme": {
+          "font-weight-headline": "700",
+          "text-display": "5rem",
+          "text-display--line-height": "0.95",
+          "text-display--letter-spacing": "-0.04em",
+          "text-display--font-weight": "700",
+          "text-headline-lg": "3rem",
+          "text-headline-lg--line-height": "1",
+          "text-headline-lg--letter-spacing": "-0.03em",
+          "text-headline-lg--font-weight": "700",
+          "text-headline-md": "1.75rem",
+          "text-headline-md--line-height": "1.1",
+          "text-headline-md--letter-spacing": "-0.02em",
+          "text-headline-md--font-weight": "700",
+          "text-body-lg": "1.0625rem",
+          "text-body-lg--line-height": "1.6",
+          "text-body-lg--letter-spacing": "0em",
+          "text-body-lg--font-weight": "400",
+          "text-body-md": "0.875rem",
+          "text-body-md--line-height": "1.6",
+          "text-body-md--letter-spacing": "0em",
+          "text-body-md--font-weight": "400",
+          "text-body-sm": "0.75rem",
+          "text-body-sm--line-height": "1.5",
+          "text-body-sm--letter-spacing": "0em",
+          "text-body-sm--font-weight": "400",
+          "text-label-md": "0.875rem",
+          "text-label-md--line-height": "1.1",
+          "text-label-md--letter-spacing": "0.04em",
+          "text-label-md--font-weight": "700",
+          "text-label-sm": "0.6875rem",
+          "text-label-sm--line-height": "1.1",
+          "text-label-sm--letter-spacing": "0.08em",
+          "text-label-sm--font-weight": "700",
+          "text-mono": "0.8125rem",
+          "text-mono--line-height": "1.5",
+          "text-mono--letter-spacing": "0em",
+          "text-mono--font-weight": "400",
+          "ease-motion-out": "var(--motion-ease-out)",
+          "ease-motion-in": "var(--motion-ease-in)",
+          "ease-motion-in-out": "var(--motion-ease-in-out)"
+        },
+        "light": {
+          "background": "#FFFFFF",
+          "foreground": "#000000",
+          "card": "#FFFFFF",
+          "card-foreground": "#000000",
+          "popover": "#FFFFFF",
+          "popover-foreground": "#000000",
+          "primary": "#E4FF1A",
+          "primary-foreground": "#000000",
+          "secondary": "#000000",
+          "secondary-foreground": "#FFFFFF",
+          "muted": "#F2F2F2",
+          "muted-foreground": "#555555",
+          "accent": "#000000",
+          "accent-foreground": "#E4FF1A",
+          "destructive": "#E00000",
+          "border": "#000000",
+          "input": "#000000",
+          "ring": "#000000",
+          "chart-1": "#000000",
+          "chart-2": "#E4FF1A",
+          "chart-3": "#8C8C8C",
+          "chart-4": "#3D3D3D",
+          "chart-5": "#C4C4C4",
+          "sidebar": "#FFFFFF",
+          "sidebar-foreground": "#000000",
+          "sidebar-primary": "#000000",
+          "sidebar-primary-foreground": "#E4FF1A",
+          "sidebar-accent": "#E4FF1A",
+          "sidebar-accent-foreground": "#000000",
+          "sidebar-border": "#000000",
+          "sidebar-ring": "#000000",
+          "radius": "0px",
+          "motion-fast": "120ms",
+          "motion-base": "180ms",
+          "motion-slow": "240ms",
+          "motion-ease-out": "cubic-bezier(0.23, 1, 0.32, 1)",
+          "motion-ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+          "motion-ease-in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+        },
+        "dark": {
+          "background": "#0A0A0A",
+          "foreground": "#FFFFFF",
+          "card": "#0A0A0A",
+          "card-foreground": "#FFFFFF",
+          "popover": "#141414",
+          "popover-foreground": "#FFFFFF",
+          "primary": "#E4FF1A",
+          "primary-foreground": "#000000",
+          "secondary": "#FFFFFF",
+          "secondary-foreground": "#000000",
+          "muted": "#1A1A1A",
+          "muted-foreground": "#ABABAB",
+          "accent": "#E4FF1A",
+          "accent-foreground": "#000000",
+          "destructive": "#FF4D4D",
+          "border": "#FFFFFF",
+          "input": "#FFFFFF",
+          "ring": "#E4FF1A",
+          "chart-1": "#FFFFFF",
+          "chart-2": "#E4FF1A",
+          "chart-3": "#8C8C8C",
+          "chart-4": "#5C5C5C",
+          "chart-5": "#C4C4C4",
+          "sidebar": "#000000",
+          "sidebar-foreground": "#FFFFFF",
+          "sidebar-primary": "#E4FF1A",
+          "sidebar-primary-foreground": "#000000",
+          "sidebar-accent": "#FFFFFF",
+          "sidebar-accent-foreground": "#000000",
+          "sidebar-border": "#FFFFFF",
+          "sidebar-ring": "#E4FF1A",
+          "radius": "0px",
+          "motion-fast": "120ms",
+          "motion-base": "180ms",
+          "motion-slow": "240ms",
+          "motion-ease-out": "cubic-bezier(0.23, 1, 0.32, 1)",
+          "motion-ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+          "motion-ease-in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+        }
+      },
+      "css": {
+        "@media (prefers-reduced-motion: reduce)": {
+          ":root": {
+            "--motion-fast": "0ms",
+            "--motion-base": "120ms",
+            "--motion-slow": "150ms"
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "design-systems/brutalist-mono/DESIGN.md",
+          "type": "registry:file",
+          "target": "~/DESIGN.md"
+        }
+      ],
+      "docs": "Installed the Brutalist Mono theme. DESIGN.md was written to your project root — keep it there so agents follow it. Text scale utilities: text-display, text-headline-lg, text-headline-md, text-body-lg, text-body-md, text-body-sm, text-label-md, text-label-sm, text-mono.",
+      "categories": [
+        "theme"
+      ],
+      "meta": {
+        "source": "oc",
+        "designSystem": "brutalist-mono"
+      }
+    },
+    {
+      "name": "theme-editorial",
+      "type": "registry:theme",
+      "title": "Editorial theme",
+      "description": "Content-first magazine system — warm paper, ink-black type, serif headlines and a single vermilion accent. Best for blogs, publications, docs-as-essays, portfolios and long-form product storytelling.",
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/font-ibm-plex-mono-mono.json",
+        "https://design-infra.vercel.app/r/font-instrument-serif-heading.json",
+        "https://design-infra.vercel.app/r/font-inter-sans.json"
+      ],
+      "cssVars": {
+        "theme": {
+          "font-weight-headline": "400",
+          "text-display": "4.5rem",
+          "text-display--line-height": "1",
+          "text-display--letter-spacing": "-0.02em",
+          "text-display--font-weight": "400",
+          "text-headline-lg": "2.75rem",
+          "text-headline-lg--line-height": "1.08",
+          "text-headline-lg--letter-spacing": "-0.015em",
+          "text-headline-lg--font-weight": "400",
+          "text-headline-md": "1.75rem",
+          "text-headline-md--line-height": "1.2",
+          "text-headline-md--letter-spacing": "-0.01em",
+          "text-headline-md--font-weight": "400",
+          "text-body-lg": "1.125rem",
+          "text-body-lg--line-height": "1.7",
+          "text-body-lg--letter-spacing": "-0.011em",
+          "text-body-lg--font-weight": "400",
+          "text-body-md": "1rem",
+          "text-body-md--line-height": "1.65",
+          "text-body-md--letter-spacing": "-0.006em",
+          "text-body-md--font-weight": "400",
+          "text-body-sm": "0.875rem",
+          "text-body-sm--line-height": "1.55",
+          "text-body-sm--letter-spacing": "0em",
+          "text-body-sm--font-weight": "400",
+          "text-label-md": "0.875rem",
+          "text-label-md--line-height": "1.3",
+          "text-label-md--letter-spacing": "0em",
+          "text-label-md--font-weight": "500",
+          "text-label-sm": "0.6875rem",
+          "text-label-sm--line-height": "1.3",
+          "text-label-sm--letter-spacing": "0.08em",
+          "text-label-sm--font-weight": "500",
+          "text-mono": "0.8125rem",
+          "text-mono--line-height": "1.5",
+          "text-mono--letter-spacing": "0em",
+          "text-mono--font-weight": "400",
+          "ease-motion-out": "var(--motion-ease-out)",
+          "ease-motion-in": "var(--motion-ease-in)",
+          "ease-motion-in-out": "var(--motion-ease-in-out)"
+        },
+        "light": {
+          "background": "#F6F1E7",
+          "foreground": "#1A1714",
+          "card": "#FBF8F2",
+          "card-foreground": "#1A1714",
+          "popover": "#FFFDF8",
+          "popover-foreground": "#1A1714",
+          "primary": "#B83A1B",
+          "primary-foreground": "#FFF8F0",
+          "secondary": "#EAE3D5",
+          "secondary-foreground": "#2A2520",
+          "muted": "#EFE9DD",
+          "muted-foreground": "#6B6258",
+          "accent": "#E9E1D1",
+          "accent-foreground": "#1A1714",
+          "destructive": "#A3172C",
+          "border": "#D9CFBD",
+          "input": "#C9BEA9",
+          "ring": "#B83A1B",
+          "chart-1": "#B83A1B",
+          "chart-2": "#1A1714",
+          "chart-3": "#8A7F70",
+          "chart-4": "#D9895F",
+          "chart-5": "#4F6B5A",
+          "sidebar": "#F0EADF",
+          "sidebar-foreground": "#1A1714",
+          "sidebar-primary": "#1A1714",
+          "sidebar-primary-foreground": "#F6F1E7",
+          "sidebar-accent": "#E6DDCB",
+          "sidebar-accent-foreground": "#1A1714",
+          "sidebar-border": "#D9CFBD",
+          "sidebar-ring": "#B83A1B",
+          "radius": "2px",
+          "motion-fast": "100ms",
+          "motion-base": "150ms",
+          "motion-slow": "200ms",
+          "motion-ease-out": "cubic-bezier(0.2, 0, 0, 1)",
+          "motion-ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+          "motion-ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "dark": {
+          "background": "#14120F",
+          "foreground": "#EDE6D9",
+          "card": "#1B1814",
+          "card-foreground": "#EDE6D9",
+          "popover": "#221E19",
+          "popover-foreground": "#EDE6D9",
+          "primary": "#E2643F",
+          "primary-foreground": "#14120F",
+          "secondary": "#2A251F",
+          "secondary-foreground": "#EDE6D9",
+          "muted": "#221E19",
+          "muted-foreground": "#A39888",
+          "accent": "#2C2620",
+          "accent-foreground": "#F3ECDF",
+          "destructive": "#F0705F",
+          "border": "#3A332B",
+          "input": "#4A4136",
+          "ring": "#E2643F",
+          "chart-1": "#E2643F",
+          "chart-2": "#EDE6D9",
+          "chart-3": "#A39888",
+          "chart-4": "#E8A57C",
+          "chart-5": "#8FB39C",
+          "sidebar": "#100E0C",
+          "sidebar-foreground": "#E3DBCD",
+          "sidebar-primary": "#EDE6D9",
+          "sidebar-primary-foreground": "#14120F",
+          "sidebar-accent": "#241F1A",
+          "sidebar-accent-foreground": "#F3ECDF",
+          "sidebar-border": "#2E2822",
+          "sidebar-ring": "#E2643F",
+          "radius": "2px",
+          "motion-fast": "100ms",
+          "motion-base": "150ms",
+          "motion-slow": "200ms",
+          "motion-ease-out": "cubic-bezier(0.2, 0, 0, 1)",
+          "motion-ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+          "motion-ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)"
+        }
+      },
+      "css": {
+        "@media (prefers-reduced-motion: reduce)": {
+          ":root": {
+            "--motion-fast": "0ms",
+            "--motion-base": "120ms",
+            "--motion-slow": "150ms"
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "design-systems/editorial/DESIGN.md",
+          "type": "registry:file",
+          "target": "~/DESIGN.md"
+        }
+      ],
+      "docs": "Installed the Editorial theme. DESIGN.md was written to your project root — keep it there so agents follow it. Text scale utilities: text-display, text-headline-lg, text-headline-md, text-body-lg, text-body-md, text-body-sm, text-label-md, text-label-sm, text-mono.",
+      "categories": [
+        "theme"
+      ],
+      "meta": {
+        "source": "oc",
+        "designSystem": "editorial"
+      }
+    },
+    {
+      "name": "theme-linear-dark",
+      "type": "registry:theme",
+      "title": "Linear Dark theme",
+      "description": "Dense, precise, dark-first SaaS chrome in the Linear/Raycast lineage. Best for issue trackers, dev tools, command palettes, dashboards and internal tools where speed and information density matter more than decoration.",
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/font-jetbrains-mono-mono.json",
+        "https://design-infra.vercel.app/r/font-inter-heading.json",
+        "https://design-infra.vercel.app/r/font-inter-sans.json"
+      ],
+      "cssVars": {
+        "theme": {
+          "font-weight-headline": "600",
+          "text-display": "3rem",
+          "text-display--line-height": "1.05",
+          "text-display--letter-spacing": "-0.032em",
+          "text-display--font-weight": "600",
+          "text-headline-lg": "1.875rem",
+          "text-headline-lg--line-height": "1.15",
+          "text-headline-lg--letter-spacing": "-0.024em",
+          "text-headline-lg--font-weight": "600",
+          "text-headline-md": "1.25rem",
+          "text-headline-md--line-height": "1.3",
+          "text-headline-md--letter-spacing": "-0.016em",
+          "text-headline-md--font-weight": "600",
+          "text-body-lg": "1rem",
+          "text-body-lg--line-height": "1.6",
+          "text-body-lg--letter-spacing": "-0.011em",
+          "text-body-lg--font-weight": "400",
+          "text-body-md": "0.875rem",
+          "text-body-md--line-height": "1.55",
+          "text-body-md--letter-spacing": "-0.006em",
+          "text-body-md--font-weight": "400",
+          "text-body-sm": "0.8125rem",
+          "text-body-sm--line-height": "1.5",
+          "text-body-sm--letter-spacing": "-0.003em",
+          "text-body-sm--font-weight": "400",
+          "text-label-md": "0.8125rem",
+          "text-label-md--line-height": "1.2",
+          "text-label-md--letter-spacing": "0em",
+          "text-label-md--font-weight": "500",
+          "text-label-sm": "0.6875rem",
+          "text-label-sm--line-height": "1.2",
+          "text-label-sm--letter-spacing": "0.02em",
+          "text-label-sm--font-weight": "500",
+          "text-mono": "0.75rem",
+          "text-mono--line-height": "1.5",
+          "text-mono--letter-spacing": "0em",
+          "text-mono--font-weight": "400",
+          "color-success": "var(--success)",
+          "color-warning": "var(--warning)",
+          "ease-motion-out": "var(--motion-ease-out)",
+          "ease-motion-in": "var(--motion-ease-in)",
+          "ease-motion-in-out": "var(--motion-ease-in-out)"
+        },
+        "light": {
+          "background": "#0B0C0E",
+          "foreground": "#EDEEF0",
+          "card": "#131417",
+          "card-foreground": "#EDEEF0",
+          "popover": "#18191D",
+          "popover-foreground": "#EDEEF0",
+          "primary": "#5E6AD2",
+          "primary-foreground": "#FFFFFF",
+          "secondary": "#1E1F24",
+          "secondary-foreground": "#E2E3E7",
+          "muted": "#16171B",
+          "muted-foreground": "#8A8F98",
+          "accent": "#1D1E25",
+          "accent-foreground": "#F1F2F4",
+          "destructive": "#EB5757",
+          "border": "#FFFFFF14",
+          "input": "#FFFFFF1F",
+          "ring": "#7C86F0",
+          "chart-1": "#7C86F0",
+          "chart-2": "#4CB782",
+          "chart-3": "#F2C94C",
+          "chart-4": "#F2994A",
+          "chart-5": "#BB87FC",
+          "sidebar": "#08090A",
+          "sidebar-foreground": "#D0D3D9",
+          "sidebar-primary": "#5E6AD2",
+          "sidebar-primary-foreground": "#FFFFFF",
+          "sidebar-accent": "#1A1B20",
+          "sidebar-accent-foreground": "#F1F2F4",
+          "sidebar-border": "#FFFFFF0F",
+          "sidebar-ring": "#7C86F0",
+          "success": "#4CB782",
+          "warning": "#F2C94C",
+          "radius": "8px",
+          "motion-fast": "120ms",
+          "motion-base": "180ms",
+          "motion-slow": "240ms",
+          "motion-ease-out": "cubic-bezier(0.23, 1, 0.32, 1)",
+          "motion-ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+          "motion-ease-in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+        },
+        "dark": {
+          "background": "#0B0C0E",
+          "foreground": "#EDEEF0",
+          "card": "#131417",
+          "card-foreground": "#EDEEF0",
+          "popover": "#18191D",
+          "popover-foreground": "#EDEEF0",
+          "primary": "#5E6AD2",
+          "primary-foreground": "#FFFFFF",
+          "secondary": "#1E1F24",
+          "secondary-foreground": "#E2E3E7",
+          "muted": "#16171B",
+          "muted-foreground": "#8A8F98",
+          "accent": "#1D1E25",
+          "accent-foreground": "#F1F2F4",
+          "destructive": "#EB5757",
+          "border": "#FFFFFF14",
+          "input": "#FFFFFF1F",
+          "ring": "#7C86F0",
+          "chart-1": "#7C86F0",
+          "chart-2": "#4CB782",
+          "chart-3": "#F2C94C",
+          "chart-4": "#F2994A",
+          "chart-5": "#BB87FC",
+          "sidebar": "#08090A",
+          "sidebar-foreground": "#D0D3D9",
+          "sidebar-primary": "#5E6AD2",
+          "sidebar-primary-foreground": "#FFFFFF",
+          "sidebar-accent": "#1A1B20",
+          "sidebar-accent-foreground": "#F1F2F4",
+          "sidebar-border": "#FFFFFF0F",
+          "sidebar-ring": "#7C86F0",
+          "success": "#4CB782",
+          "warning": "#F2C94C",
+          "radius": "8px",
+          "motion-fast": "120ms",
+          "motion-base": "180ms",
+          "motion-slow": "240ms",
+          "motion-ease-out": "cubic-bezier(0.23, 1, 0.32, 1)",
+          "motion-ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+          "motion-ease-in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+        }
+      },
+      "css": {
+        "@media (prefers-reduced-motion: reduce)": {
+          ":root": {
+            "--motion-fast": "0ms",
+            "--motion-base": "120ms",
+            "--motion-slow": "150ms"
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "design-systems/linear-dark/DESIGN.md",
+          "type": "registry:file",
+          "target": "~/DESIGN.md"
+        }
+      ],
+      "docs": "Dark-only system: add className=\"dark\" to <html>. Installed the Linear Dark theme. DESIGN.md was written to your project root — keep it there so agents follow it. Text scale utilities: text-display, text-headline-lg, text-headline-md, text-body-lg, text-body-md, text-body-sm, text-label-md, text-label-sm, text-mono.",
+      "categories": [
+        "theme"
+      ],
+      "meta": {
+        "source": "oc",
+        "designSystem": "linear-dark"
+      }
+    },
+    {
+      "name": "theme-soft-glass",
+      "type": "registry:theme",
+      "title": "Soft Glass theme",
+      "description": "Friendly, luminous AI/consumer product system — soft blue-violet gradients, translucent frosted cards and generous rounded shapes. Best for AI assistants, consumer apps, onboarding flows and approachable product marketing.",
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/font-geist-mono-mono.json",
+        "https://design-infra.vercel.app/r/font-plus-jakarta-sans-heading.json",
+        "https://design-infra.vercel.app/r/font-plus-jakarta-sans-sans.json"
+      ],
+      "cssVars": {
+        "theme": {
+          "font-weight-headline": "700",
+          "text-display": "3.5rem",
+          "text-display--line-height": "1.05",
+          "text-display--letter-spacing": "-0.03em",
+          "text-display--font-weight": "700",
+          "text-headline-lg": "2.25rem",
+          "text-headline-lg--line-height": "1.15",
+          "text-headline-lg--letter-spacing": "-0.02em",
+          "text-headline-lg--font-weight": "700",
+          "text-headline-md": "1.375rem",
+          "text-headline-md--line-height": "1.3",
+          "text-headline-md--letter-spacing": "-0.01em",
+          "text-headline-md--font-weight": "600",
+          "text-body-lg": "1.125rem",
+          "text-body-lg--line-height": "1.65",
+          "text-body-lg--letter-spacing": "0em",
+          "text-body-lg--font-weight": "400",
+          "text-body-md": "0.9375rem",
+          "text-body-md--line-height": "1.6",
+          "text-body-md--letter-spacing": "0em",
+          "text-body-md--font-weight": "400",
+          "text-body-sm": "0.8125rem",
+          "text-body-sm--line-height": "1.5",
+          "text-body-sm--letter-spacing": "0.005em",
+          "text-body-sm--font-weight": "400",
+          "text-label-md": "0.875rem",
+          "text-label-md--line-height": "1.2",
+          "text-label-md--letter-spacing": "0em",
+          "text-label-md--font-weight": "600",
+          "text-label-sm": "0.75rem",
+          "text-label-sm--line-height": "1.2",
+          "text-label-sm--letter-spacing": "0.01em",
+          "text-label-sm--font-weight": "600",
+          "text-mono": "0.8125rem",
+          "text-mono--line-height": "1.5",
+          "text-mono--letter-spacing": "0em",
+          "text-mono--font-weight": "400",
+          "color-gradient-from": "var(--gradient-from)",
+          "color-gradient-via": "var(--gradient-via)",
+          "color-gradient-to": "var(--gradient-to)",
+          "ease-motion-out": "var(--motion-ease-out)",
+          "ease-motion-in": "var(--motion-ease-in)",
+          "ease-motion-in-out": "var(--motion-ease-in-out)"
+        },
+        "light": {
+          "background": "#F7F7FC",
+          "foreground": "#16162A",
+          "card": "#FFFFFF",
+          "card-foreground": "#16162A",
+          "popover": "#FFFFFF",
+          "popover-foreground": "#16162A",
+          "primary": "#5B5FE3",
+          "primary-foreground": "#FFFFFF",
+          "secondary": "#EEEEFB",
+          "secondary-foreground": "#2A2A5C",
+          "muted": "#F0F0F7",
+          "muted-foreground": "#5F6178",
+          "accent": "#ECEBFF",
+          "accent-foreground": "#2E2A8C",
+          "destructive": "#CF2A45",
+          "border": "#E4E4F0",
+          "input": "#DCDCEB",
+          "ring": "#8B8FF5",
+          "chart-1": "#5B5FE3",
+          "chart-2": "#8B5CF6",
+          "chart-3": "#38BDF8",
+          "chart-4": "#F472B6",
+          "chart-5": "#34D399",
+          "sidebar": "#F2F2FA",
+          "sidebar-foreground": "#16162A",
+          "sidebar-primary": "#5B5FE3",
+          "sidebar-primary-foreground": "#FFFFFF",
+          "sidebar-accent": "#E8E8FA",
+          "sidebar-accent-foreground": "#2E2A8C",
+          "sidebar-border": "#E4E4F0",
+          "sidebar-ring": "#8B8FF5",
+          "gradient-from": "#C7D2FE",
+          "gradient-via": "#E9D5FF",
+          "gradient-to": "#BAE6FD",
+          "radius": "16px",
+          "motion-fast": "160ms",
+          "motion-base": "280ms",
+          "motion-slow": "400ms",
+          "motion-ease-out": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+          "motion-ease-in": "cubic-bezier(0.5, 0, 0.75, 0)",
+          "motion-ease-in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+        },
+        "dark": {
+          "background": "#0E0E1A",
+          "foreground": "#ECECF7",
+          "card": "#171728",
+          "card-foreground": "#ECECF7",
+          "popover": "#1B1B2E",
+          "popover-foreground": "#ECECF7",
+          "primary": "#8E92FF",
+          "primary-foreground": "#0E0E1A",
+          "secondary": "#232338",
+          "secondary-foreground": "#E0E0F2",
+          "muted": "#1C1C2E",
+          "muted-foreground": "#A0A2BD",
+          "accent": "#26264A",
+          "accent-foreground": "#E6E5FF",
+          "destructive": "#FF6B81",
+          "border": "#FFFFFF1A",
+          "input": "#FFFFFF24",
+          "ring": "#8E92FF",
+          "chart-1": "#8E92FF",
+          "chart-2": "#A78BFA",
+          "chart-3": "#7DD3FC",
+          "chart-4": "#F9A8D4",
+          "chart-5": "#6EE7B7",
+          "sidebar": "#0B0B16",
+          "sidebar-foreground": "#DCDCEE",
+          "sidebar-primary": "#8E92FF",
+          "sidebar-primary-foreground": "#0E0E1A",
+          "sidebar-accent": "#1F1F36",
+          "sidebar-accent-foreground": "#E6E5FF",
+          "sidebar-border": "#FFFFFF14",
+          "sidebar-ring": "#8E92FF",
+          "gradient-from": "#312E81",
+          "gradient-via": "#4C1D95",
+          "gradient-to": "#0C4A6E",
+          "radius": "16px",
+          "motion-fast": "160ms",
+          "motion-base": "280ms",
+          "motion-slow": "400ms",
+          "motion-ease-out": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+          "motion-ease-in": "cubic-bezier(0.5, 0, 0.75, 0)",
+          "motion-ease-in-out": "cubic-bezier(0.65, 0, 0.35, 1)"
+        }
+      },
+      "css": {
+        "@media (prefers-reduced-motion: reduce)": {
+          ":root": {
+            "--motion-fast": "0ms",
+            "--motion-base": "120ms",
+            "--motion-slow": "150ms"
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "design-systems/soft-glass/DESIGN.md",
+          "type": "registry:file",
+          "target": "~/DESIGN.md"
+        }
+      ],
+      "docs": "Installed the Soft Glass theme. DESIGN.md was written to your project root — keep it there so agents follow it. Text scale utilities: text-display, text-headline-lg, text-headline-md, text-body-lg, text-body-md, text-body-sm, text-label-md, text-label-sm, text-mono.",
+      "categories": [
+        "theme"
+      ],
+      "meta": {
+        "source": "oc",
+        "designSystem": "soft-glass"
+      }
+    },
+    {
+      "name": "font-geist-mono-mono",
+      "type": "registry:font",
+      "title": "Geist Mono (mono)",
+      "description": "Geist Mono from Google Fonts as --font-mono.",
+      "font": {
+        "family": "Geist Mono",
+        "provider": "google",
+        "import": "Geist_Mono",
+        "variable": "--font-mono",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-ibm-plex-mono-mono",
+      "type": "registry:font",
+      "title": "IBM Plex Mono (mono)",
+      "description": "IBM Plex Mono from Google Fonts as --font-mono.",
+      "font": {
+        "family": "IBM Plex Mono",
+        "provider": "google",
+        "import": "IBM_Plex_Mono",
+        "variable": "--font-mono",
+        "subsets": [
+          "latin"
+        ],
+        "weight": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ]
+      }
+    },
+    {
+      "name": "font-instrument-serif-heading",
+      "type": "registry:font",
+      "title": "Instrument Serif (heading)",
+      "description": "Instrument Serif from Google Fonts as --font-heading.",
+      "font": {
+        "family": "Instrument Serif",
+        "provider": "google",
+        "import": "Instrument_Serif",
+        "variable": "--font-heading",
+        "subsets": [
+          "latin"
+        ],
+        "weight": [
+          "400"
+        ]
+      }
+    },
+    {
+      "name": "font-inter-heading",
+      "type": "registry:font",
+      "title": "Inter (heading)",
+      "description": "Inter from Google Fonts as --font-heading.",
+      "font": {
+        "family": "Inter",
+        "provider": "google",
+        "import": "Inter",
+        "variable": "--font-heading",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-inter-sans",
+      "type": "registry:font",
+      "title": "Inter (sans)",
+      "description": "Inter from Google Fonts as --font-sans.",
+      "font": {
+        "family": "Inter",
+        "provider": "google",
+        "import": "Inter",
+        "variable": "--font-sans",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-jetbrains-mono-mono",
+      "type": "registry:font",
+      "title": "JetBrains Mono (mono)",
+      "description": "JetBrains Mono from Google Fonts as --font-mono.",
+      "font": {
+        "family": "JetBrains Mono",
+        "provider": "google",
+        "import": "JetBrains_Mono",
+        "variable": "--font-mono",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-plus-jakarta-sans-heading",
+      "type": "registry:font",
+      "title": "Plus Jakarta Sans (heading)",
+      "description": "Plus Jakarta Sans from Google Fonts as --font-heading.",
+      "font": {
+        "family": "Plus Jakarta Sans",
+        "provider": "google",
+        "import": "Plus_Jakarta_Sans",
+        "variable": "--font-heading",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-plus-jakarta-sans-sans",
+      "type": "registry:font",
+      "title": "Plus Jakarta Sans (sans)",
+      "description": "Plus Jakarta Sans from Google Fonts as --font-sans.",
+      "font": {
+        "family": "Plus Jakarta Sans",
+        "provider": "google",
+        "import": "Plus_Jakarta_Sans",
+        "variable": "--font-sans",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-space-grotesk-heading",
+      "type": "registry:font",
+      "title": "Space Grotesk (heading)",
+      "description": "Space Grotesk from Google Fonts as --font-heading.",
+      "font": {
+        "family": "Space Grotesk",
+        "provider": "google",
+        "import": "Space_Grotesk",
+        "variable": "--font-heading",
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "font-space-mono-mono",
+      "type": "registry:font",
+      "title": "Space Mono (mono)",
+      "description": "Space Mono from Google Fonts as --font-mono.",
+      "font": {
+        "family": "Space Mono",
+        "provider": "google",
+        "import": "Space_Mono",
+        "variable": "--font-mono",
+        "subsets": [
+          "latin"
+        ],
+        "weight": [
+          "400",
+          "700"
+        ]
+      }
+    },
+    {
+      "name": "font-space-mono-sans",
+      "type": "registry:font",
+      "title": "Space Mono (sans)",
+      "description": "Space Mono from Google Fonts as --font-sans.",
+      "font": {
+        "family": "Space Mono",
+        "provider": "google",
+        "import": "Space_Mono",
+        "variable": "--font-sans",
+        "subsets": [
+          "latin"
+        ],
+        "weight": [
+          "400",
+          "700"
+        ]
+      }
+    },
+    {
+      "name": "hero-spotlight",
+      "type": "registry:block",
+      "title": "Hero · Spotlight",
+      "description": "Centered marketing hero with an original static CSS light treatment using the active theme tokens. No animation or proprietary code.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/hero-spotlight/hero-spotlight.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "premium",
+          "futuristic",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "feature-bento",
+      "type": "registry:block",
+      "title": "Features · Bento",
+      "description": "Theme-aware bento grid for feature sections. Tiles span 1, 2 or a full row; hover glow uses --primary.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/feature-bento/feature-bento.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "features",
+        "bento"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "pricing-simple",
+      "type": "registry:block",
+      "title": "Pricing · Simple",
+      "description": "2–3 tier pricing with monthly/yearly switch and a featured tier. Pure shadcn primitives + tokens.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "badge",
+        "label",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/pricing-simple/pricing-simple.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "pricing"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "agent-status",
+      "type": "registry:component",
+      "title": "Agent status",
+      "description": "Inline or avatar-size agent activity indicator: libraries.dev thinking-orbs + shimmering verb + detail line.",
+      "dependencies": [
+        "thinking-orbs"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/agent-status/agent-status.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "css": {
+        "@keyframes oc-shimmer": {
+          "from": {
+            "background-position": "100% 0"
+          },
+          "to": {
+            "background-position": "-100% 0"
+          }
+        }
+      },
+      "categories": [
+        "agent-ui",
+        "loader"
+      ],
+      "meta": {
+        "source": "oc",
+        "upstream": [
+          "librariesdev/thinking-orbs"
+        ],
+        "moods": [
+          "refined",
+          "futuristic",
+          "calm"
+        ]
+      }
+    },
+    {
+      "name": "beam-card",
+      "type": "registry:component",
+      "title": "Beam card",
+      "description": "Theme-aware card wrapped in libraries.dev's animated border beam — for the one 'live' thing on screen.",
+      "dependencies": [
+        "border-beam"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/beam-card/beam-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "card",
+        "agent-ui"
+      ],
+      "meta": {
+        "source": "oc",
+        "upstream": [
+          "librariesdev/border-beam"
+        ],
+        "moods": [
+          "futuristic",
+          "playful"
+        ]
+      }
+    },
+    {
+      "name": "theme-preview",
+      "type": "registry:block",
+      "title": "Theme preview",
+      "description": "Kitchen-sink of the installed theme (swatches, type, buttons, form card). Install after a theme to eyeball it.",
+      "registryDependencies": [
+        "button",
+        "badge",
+        "card",
+        "input",
+        "label",
+        "separator",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/theme-preview/theme-preview.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "theme"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "navbar",
+      "type": "registry:block",
+      "title": "Navbar",
+      "description": "Sticky marketing navbar: brand, centred links, ghost + primary actions; collapses into a right-side sheet menu below md.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/navbar/navbar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "minimal",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "hero-split",
+      "type": "registry:block",
+      "title": "Hero · Split",
+      "description": "Two-column hero: headline, copy, actions and proof bullets on the left; framed product media on the right (themed mock by default). `reverse` flips sides.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/hero-split/hero-split.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "logo-cloud",
+      "type": "registry:block",
+      "title": "Logo cloud",
+      "description": "'Trusted by' strip. Static wrapping row or infinite marquee with faded edges (pauses on hover, respects reduced motion). Text wordmarks when no SVG is given.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/logo-cloud/logo-cloud.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "css": {
+        "@keyframes oc-marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(-100%)"
+          }
+        }
+      },
+      "categories": [
+        "logo-cloud"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "feature-list",
+      "type": "registry:block",
+      "title": "Features · List",
+      "description": "Icon + title + text feature rows in a 2- or 3-column grid, or heading-left/list-right with columns={1}. Calmer alternative to feature-bento.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/feature-list/feature-list.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "features"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "minimal",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "stats-row",
+      "type": "registry:block",
+      "title": "Stats row",
+      "description": "Big-number proof row ('99.99% uptime') with hairline dividers or cards. 2-4 stats.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/stats-row/stats-row.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "stats"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "technical"
+        ]
+      }
+    },
+    {
+      "name": "testimonials-grid",
+      "type": "registry:block",
+      "title": "Testimonials · Grid",
+      "description": "Masonry grid of customer quotes with avatars; one `featured` quote renders on a --primary fill in larger heading type.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/testimonials-grid/testimonials-grid.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "testimonials"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "warm",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "faq",
+      "type": "registry:block",
+      "title": "FAQ",
+      "description": "FAQ section on the shadcn accordion: heading left / questions right (split) or centred single column (stacked).",
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/faq/faq.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "faq",
+        "accordion"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "cta-banner",
+      "type": "registry:block",
+      "title": "CTA banner",
+      "description": "Closing call-to-action panel. `primary` = full --primary fill with inverted buttons (works on acid-yellow, rust, indigo); `card` = quiet bordered card with a glow.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/cta-banner/cta-banner.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "cta"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "bold",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "footer-columns",
+      "type": "registry:block",
+      "title": "Footer · Columns",
+      "description": "Site footer: brand + blurb, 2-5 link columns, bottom bar with copyright, legal links and social icons.",
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/footer-columns/footer-columns.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "footer",
+        "navigation"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "minimal",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "app-shell",
+      "type": "registry:block",
+      "title": "App shell",
+      "description": "Product app frame on the shadcn sidebar: brand header, grouped nav with badges, user dropdown, icon-collapse (Cmd/Ctrl+B) and mobile sheet; header bar with breadcrumbs + action slot; content slot.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "sidebar",
+        "avatar",
+        "breadcrumb",
+        "dropdown-menu",
+        "separator",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/app-shell/app-shell.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "sidebar",
+        "navigation",
+        "dashboard"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "stat-cards",
+      "type": "registry:block",
+      "title": "Stat cards",
+      "description": "Dashboard KPI tiles: label, big value, delta chip (invertible for churn/latency) and an SVG sparkline in --chart-1.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/stat-cards/stat-cards.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "stats",
+        "dashboard",
+        "card"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "data-table-card",
+      "type": "registry:block",
+      "title": "Data table card",
+      "description": "shadcn table in a card with toolbar: search, faceted filter, actions slot, sortable columns, row selection and pagination. Badge columns are server-safe; `cell` renderers need a client page.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/data-table-card/data-table-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "table",
+        "dashboard"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:block",
+      "title": "Empty state",
+      "description": "Zero-data / first-run placeholder: layered icon, title, one primary next step, optional secondary + help link. Dashed drop-zone or plain.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/empty-state/empty-state.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "empty-state"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "warm"
+        ]
+      }
+    },
+    {
+      "name": "settings-form",
+      "type": "registry:block",
+      "title": "Settings form",
+      "description": "Account settings page (profile, preferences, notifications, danger zone) plus the SettingsSection / SettingsRow primitives to compose your own.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "input",
+        "label",
+        "select",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/settings-form/settings-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "form",
+        "input"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "chat-thread",
+      "type": "registry:block",
+      "title": "Chat thread",
+      "description": "AI conversation view: user bubbles, assistant turns with markdown-ish text + code blocks, tool-call chips, copy/vote/regenerate actions, @oc/agent-status while pending. Auto-sticks to bottom.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "https://design-infra.vercel.app/r/agent-status.json"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/chat-thread/chat-thread.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "ai-chat",
+        "agent-ui"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "prompt-composer",
+      "type": "registry:block",
+      "title": "Prompt composer",
+      "description": "Chat input: auto-growing textarea, file attachment chips, model picker, web-search toggle, send/stop; Enter sends, Shift+Enter newline; optional suggestion chips.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/prompt-composer/prompt-composer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "ai-chat",
+        "input"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined",
+          "calm"
+        ]
+      }
+    },
+    {
+      "name": "feature-levels",
+      "type": "registry:block",
+      "title": "Features · Levels (scroll-spy)",
+      "description": "Multi-level feature walkthrough: two-tone headline, sticky numbered scroll-spy nav, large photo panels with floating glass product-UI cards (LevelCard), title + CTA per level. Free, theme-aware take on Aceternity's Pro multi-level-features block.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/feature-levels/feature-levels.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "features",
+        "scroll-effect"
+      ],
+      "meta": {
+        "source": "oc",
+        "inspiredBy": [
+          "aceternity/multi-level-features-with-illustrations"
+        ],
+        "moods": [
+          "organic",
+          "refined",
+          "premium"
+        ]
+      }
+    },
+    {
+      "name": "design-lab",
+      "type": "registry:page",
+      "title": "Design lab (temporary option board)",
+      "description": "Temporary page an agent installs in a consumer project to render candidate variants of the user's own component side by side, with their theme and content: <DesignLab title> + <LabOption id label notes chosen>. Lands at app/design-lab/page.tsx + components/design-lab.tsx; the user says which option they want, the agent applies it and removes both files.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/design-lab/design-lab.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/oc/blocks/design-lab/page.tsx",
+          "type": "registry:page",
+          "target": "app/design-lab/page.tsx"
+        }
+      ],
+      "categories": [
+        "dev-tool"
+      ],
+      "meta": {
+        "source": "oc",
+        "route": "/design-lab",
+        "temporary": true,
+        "moods": [
+          "minimal",
+          "technical"
+        ]
+      }
+    },
+    {
+      "name": "template-landing",
+      "type": "registry:page",
+      "title": "Template · SaaS landing page",
+      "description": "Full marketing page at app/page.tsx: navbar, split hero, marquee logo cloud, feature bento, stats, testimonials, pricing, FAQ, CTA banner and footer — all @oc blocks, all theme tokens. Install a theme first, then replace the copy.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/navbar.json",
+        "https://design-infra.vercel.app/r/hero-split.json",
+        "https://design-infra.vercel.app/r/logo-cloud.json",
+        "https://design-infra.vercel.app/r/feature-bento.json",
+        "https://design-infra.vercel.app/r/stats-row.json",
+        "https://design-infra.vercel.app/r/testimonials-grid.json",
+        "https://design-infra.vercel.app/r/pricing-simple.json",
+        "https://design-infra.vercel.app/r/faq.json",
+        "https://design-infra.vercel.app/r/cta-banner.json",
+        "https://design-infra.vercel.app/r/footer-columns.json"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/templates/template-landing/page.tsx",
+          "type": "registry:page",
+          "target": "app/page.tsx"
+        }
+      ],
+      "categories": [
+        "hero",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "cta",
+        "footer"
+      ],
+      "meta": {
+        "source": "oc",
+        "kind": "template",
+        "route": "/",
+        "moods": [
+          "refined",
+          "trustworthy",
+          "warm"
+        ]
+      }
+    },
+    {
+      "name": "template-saas-dashboard",
+      "type": "registry:page",
+      "title": "Template · SaaS dashboard",
+      "description": "Dashboard at app/dashboard/page.tsx: @oc/app-shell sidebar + breadcrumbs, KPI stat cards with sparklines, revenue area chart (shadcn chart), recent-activity card and a searchable, filterable customers table.",
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/app-shell.json",
+        "https://design-infra.vercel.app/r/stat-cards.json",
+        "https://design-infra.vercel.app/r/data-table-card.json",
+        "avatar",
+        "button",
+        "card",
+        "chart"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/templates/template-saas-dashboard/page.tsx",
+          "type": "registry:page",
+          "target": "app/dashboard/page.tsx"
+        }
+      ],
+      "categories": [
+        "dashboard",
+        "sidebar",
+        "stats",
+        "chart",
+        "table"
+      ],
+      "meta": {
+        "source": "oc",
+        "kind": "template",
+        "route": "/dashboard",
+        "frame": "app",
+        "moods": [
+          "technical",
+          "trustworthy",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "template-ai-chat",
+      "type": "registry:page",
+      "title": "Template · AI chat",
+      "description": "Assistant UI at app/chat/page.tsx: conversation sidebar (@oc/app-shell), @oc/chat-thread with tool-call chips, @oc/agent-status while the model works, and @oc/prompt-composer pinned to the bottom. Fake responder included — swap in your streaming call.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/app-shell.json",
+        "https://design-infra.vercel.app/r/chat-thread.json",
+        "https://design-infra.vercel.app/r/prompt-composer.json",
+        "https://design-infra.vercel.app/r/agent-status.json",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/templates/template-ai-chat/page.tsx",
+          "type": "registry:page",
+          "target": "app/chat/page.tsx"
+        }
+      ],
+      "categories": [
+        "ai-chat",
+        "agent-ui",
+        "sidebar"
+      ],
+      "meta": {
+        "source": "oc",
+        "kind": "template",
+        "route": "/chat",
+        "frame": "app",
+        "moods": [
+          "calm",
+          "refined",
+          "futuristic"
+        ]
+      }
+    },
+    {
+      "name": "motion-presets",
+      "type": "registry:lib",
+      "title": "Motion presets",
+      "description": "design-infra's motion languages (still / quiet / lively / cinematic) as motion/react transitions, springs and variants (fadeUp, scaleIn, stagger, press, lift). Set PROJECT_MOTION to your DESIGN.md `motion:` so hand-written animations match the system.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/lib/motion-presets/motion-presets.ts",
+          "type": "registry:lib",
+          "target": "lib/motion-presets.ts"
+        }
+      ],
+      "categories": [
+        "transition"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined"
+        ]
+      }
+    }
+  ]
+}

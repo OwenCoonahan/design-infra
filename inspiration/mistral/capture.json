@@ -1,0 +1,324 @@
+{
+  "url": "https://mistral.ai",
+  "slug": "mistral",
+  "capturedAt": "2026-10-06T15:25:50.819Z",
+  "fullHeightCaptured": 6362,
+  "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+  "description": "Frontier open-weight models you own and control. Customize with Forge, deploy with Studio, run on-prem, your VPC, or our cloud.",
+  "themeColor": null,
+  "pageHeight": 6362,
+  "fonts": {
+    "heading": [
+      {
+        "value": "ALTMistral",
+        "weight": 1179
+      },
+      {
+        "value": "Inter",
+        "weight": 31
+      }
+    ],
+    "body": [
+      {
+        "value": "ALTMistral",
+        "weight": 1232
+      },
+      {
+        "value": "Inter",
+        "weight": 1021
+      }
+    ],
+    "ui": [
+      {
+        "value": "ALTMistral",
+        "weight": 41
+      }
+    ],
+    "mono": [
+      {
+        "value": "Space Mono",
+        "weight": 6
+      }
+    ]
+  },
+  "loadedFontFaces": [
+    "ALTMistral",
+    "Space Mono",
+    "Inter",
+    "Axeptio Inter",
+    "Axeptio Source Sans 3"
+  ],
+  "typeScale": [
+    {
+      "value": "32px/500",
+      "weight": 1016
+    },
+    {
+      "value": "16px/400",
+      "weight": 810
+    },
+    {
+      "value": "16px/500",
+      "weight": 715
+    },
+    {
+      "value": "24px/500",
+      "weight": 591
+    },
+    {
+      "value": "20px/400",
+      "weight": 152
+    },
+    {
+      "value": "56px/500",
+      "weight": 100
+    },
+    {
+      "value": "14px/500",
+      "weight": 40
+    },
+    {
+      "value": "44px/500",
+      "weight": 35
+    },
+    {
+      "value": "96px/500",
+      "weight": 28
+    },
+    {
+      "value": "13px/400",
+      "weight": 23
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#fbfbf8",
+        "weight": 1197
+      },
+      {
+        "value": "#f5f4ef",
+        "weight": 138
+      },
+      {
+        "value": "#151524",
+        "weight": 96
+      },
+      {
+        "value": "#ff5229",
+        "weight": 14
+      },
+      {
+        "value": "#ff8204",
+        "weight": 12
+      },
+      {
+        "value": "#e51300",
+        "weight": 9
+      },
+      {
+        "value": "#c4001d",
+        "weight": 9
+      },
+      {
+        "value": "#ffaf01",
+        "weight": 3
+      }
+    ],
+    "text": [
+      {
+        "value": "#ffffff",
+        "weight": 963
+      }
+    ],
+    "borders": [
+      {
+        "value": "#e4e3de",
+        "weight": 73
+      },
+      {
+        "value": "#31313a",
+        "weight": 1
+      }
+    ]
+  },
+  "radii": [
+    {
+      "value": "6px",
+      "weight": 15
+    },
+    {
+      "value": "4px",
+      "weight": 3
+    },
+    {
+      "value": "0px",
+      "weight": 1
+    },
+    {
+      "value": "3.35544e+07px",
+      "weight": 1
+    },
+    {
+      "value": "12px",
+      "weight": 1
+    },
+    {
+      "value": "8px",
+      "weight": 1
+    }
+  ],
+  "shadows": [],
+  "cssVariables": {
+    "--container-md": "28rem",
+    "--color-steel-600": "#55555e",
+    "--tw-inset-shadow-alpha": "100%",
+    "--color-zinc-100": "oklch(96.7% .001 286.375)",
+    "--animate-cover-gradient-1": "cover-gradient-1 8s 3s infinite linear",
+    "--color-zinc-200": "oklch(92% .004 286.32)",
+    "--tw-mask-left-to-position": "100%",
+    "--aspect-video": "16 / 9",
+    "--color-navy-300": "#b8b8cc",
+    "--color-tangerine-500": "#ff8204",
+    "--blur-lg": "16px",
+    "--tw-mask-bottom-to-color": "transparent",
+    "--text-eyebrow--font-weight": "400",
+    "--color-navy-800": "#343446",
+    "--text-h1--letter-spacing": "-.02em",
+    "--color-orange-600": "#fa500f",
+    "--color-steel-500": "#6d6d78",
+    "--color-neutral-600": "oklch(43.9% 0 0)",
+    "--tw-mask-bottom-from-color": "black",
+    "--color-blue-700": "#0262bf",
+    "--text-h6": "1rem",
+    "--text-button-small--font-weight": "500",
+    "--tw-mask-conic": "linear-gradient(#fff, #fff)",
+    "--tw-outline-style": "solid",
+    "--ease-in": "cubic-bezier(.4, 0, 1, 1)",
+    "--text-eyebrow--line-height": "1.25rem",
+    "--tw-inset-ring-shadow": "0 0 #0000",
+    "--text-base--line-height": "calc(1.5 / 1)",
+    "--color-orange-50": "#fff0eb",
+    "--radius-4xl": "2rem",
+    "--color-cream-300": "#e4e2d6",
+    "--color-neutral-200": "oklch(92.2% 0 0)",
+    "--color-text-secondary": "oklch(27.4% .006 286.033)",
+    "--animate-dot-pulse": "dot-pulse 2s infinite linear",
+    "--text-display": "6rem",
+    "--color-text-tertiary": "oklch(37% .013 285.805)",
+    "--color-gray-300": "oklch(87.2% .01 258.338)",
+    "--text-body-small--line-height": "1.25rem",
+    "--color-yellow-400": "#fec63a",
+    "--animate-hero-ocr4-block-3": "animate-hero-ocr4-block-3 4s ease-in-out infinite",
+    "--font-mono": "\"Space Mono\", monospace",
+    "--text-h3--letter-spacing": "-.01em",
+    "--color-zinc-50": "oklch(98.5% 0 0)",
+    "--color-green-500": "#44ba82",
+    "--color-surface-invert": "#151524",
+    "--color-text-brand-9": "#0082e6",
+    "--color-steel-950": "#101013",
+    "--text-h4--letter-spacing": "0",
+    "--tw-inset-shadow": "0 0 #0000",
+    "--tw-gradient-from": "rgba(0, 0, 0, 0)",
+    "--color-white": "#fff",
+    "--text-body-large": "1.25rem",
+    "--color-blue-400": "#55b3fb",
+    "--tw-shadow-alpha": "100%",
+    "--tw-gradient-to": "rgba(0, 0, 0, 0)",
+    "--color-blue-subtle": "#b9daff",
+    "--animate-hero-ocr4-block-2": "animate-hero-ocr4-block-2 4s ease-in-out infinite",
+    "--radius-sm": ".25rem",
+    "--color-cream": "#f2f1e8",
+    "--color-yellow-300": "#ffdd73",
+    "--text-h5--font-weight": "500",
+    "--animate-model-thread-1": "model-thread 1s 0s linear infinite",
+    "--font-weight-bold": "700",
+    "--color-navy-200": "#dcdcde",
+    "--color-zinc-950": "oklch(14.1% .005 285.823)",
+    "--animate-hero-ocr4-scanner": "animate-hero-ocr4-scanner 4s linear infinite",
+    "--animate-hero-ocr4-block-1": "animate-hero-ocr4-block-1 4s ease-in-out infinite",
+    "--tw-gradient-via-position": "50%",
+    "--nav-height": "48px",
+    "--animate-slide-y-in": "animate-slide-y-in .2s forwards ease-in-out",
+    "--tw-mask-left-from-color": "black",
+    "--color-orange-light": "#ffaf01",
+    "--color-green-medium": "#44ba82",
+    "--color-zinc-700": "oklch(37% .013 285.805)",
+    "--text-h2--font-weight": "500",
+    "--text-xs--line-height": "calc(1 / .75)",
+    "--text-body-small--letter-spacing": "0",
+    "--tw-mask-right": "linear-gradient(#fff, #fff)",
+    "--animate-reveal-post-right": "reveal-post-right 1s cubic-bezier(.51, -.01, .49, 1)",
+    "--animate-reveal-top-right": "reveal-top-right .5s .2s cubic-bezier(1, 0, .64, .69) both",
+    "--text-h6--letter-spacing": "0",
+    "--tw-gradient-to-position": "100%",
+    "--color-action-brand": "oklch(98.5% 0 0)",
+    "--default-transition-duration": ".15s",
+    "--color-green-900": "#055737",
+    "--radius-2xl": "1rem",
+    "--radius-md": ".375rem",
+    "--color-blue-800": "#044298",
+    "--color-border-invert": "#31313a",
+    "--radius-lg": ".5rem",
+    "--text-xl": "1.25rem",
+    "--text-button-large": "1rem",
+    "--text-h2--letter-spacing": "-.01em",
+    "--animate-cover-gradient-2": "cover-gradient-2 10s infinite linear",
+    "--color-surface-neutral-tertiary": "oklch(92% .004 286.32)",
+    "--color-red-contrast": "#c4001d",
+    "--text-body-base--line-height": "1.5rem",
+    "--color-steel-400": "#a1a1aa",
+    "--animate-cover-gradient-4": "cover-gradient-4 6s infinite linear",
+    "--leading-relaxed": "1.625",
+    "--animate-brand-3": "brand-from-br .7s .4s ease-out both",
+    "--text-button-large--font-weight": "500",
+    "--text-button-small--line-height": "1.25rem",
+    "--default-transition-timing-function": "cubic-bezier(.4, 0, .2, 1)",
+    "--animate-hero-ocr4-block-5": "animate-hero-ocr4-block-5 4s ease-in-out infinite",
+    "--color-action-secondary": "oklch(21% .006 285.885)",
+    "--color-zinc-900": "oklch(21% .006 285.885)",
+    "--color-orange-500": "#ff5229",
+    "--color-steel-300": "#ccccd1",
+    "--text-eyebrow-small--line-height": "1rem",
+    "--tw-mask-right-from-color": "black",
+    "--spacing": ".25rem",
+    "--text-eyebrow": ".8125rem",
+    "--text-h6--font-weight": "500",
+    "--color-steel-100": "#f1f1f3",
+    "--tw-translate-z": "0",
+    "--color-pink-600": "#e1493c",
+    "--color-pink-200": "#ffc2eb",
+    "--tw-gradient-via": "rgba(0, 0, 0, 0)",
+    "--color-yellow-medium": "#fec63a"
+  },
+  "outline": [
+    {
+      "tag": "h2",
+      "text": "Mistral lets you decide how AI works in your organization."
+    },
+    {
+      "tag": "h2",
+      "text": "See Sovereign AI at work."
+    },
+    {
+      "tag": "h2",
+      "text": "Go deeper."
+    }
+  ],
+  "signals": {
+    "sections": 7,
+    "images": 113,
+    "videos": 0,
+    "canvases": 0,
+    "svgs": 150,
+    "animatedElements": 188,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": false,
+      "framer": false,
+      "webflow": false,
+      "tailwind": true,
+      "gsap": false
+    }
+  }
+}

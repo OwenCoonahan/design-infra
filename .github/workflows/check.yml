@@ -1,0 +1,26 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm generate
+      - name: Generated files are committed
+        run: git diff --exit-code -- . ':!public/r' || (echo "Run pnpm generate and commit the result." && exit 1)
+      - run: pnpm check
+      - run: pnpm test
+      - run: pnpm audit --prod --audit-level high
+      - run: pnpm lint
+      - run: pnpm build
+      - run: pnpm exec tsx scripts/check-tracing.ts

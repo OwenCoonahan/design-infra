@@ -1,0 +1,16 @@
+{
+  "name": "design-infra",
+  "version": "0.2.0",
+  "description": "Shared design infrastructure: curated component catalog (Aceternity, Beautiful UI, libraries.dev, transitions.dev, OriginKit, 21st.dev), DESIGN.md design systems, and the @oc shadcn registry — as skills any repo can use.",
+  "author": {
+    "name": "Owen Coonahan"
+  },
+  "repository": "https://github.com/OwenCoonahan/design-infra",
+  "keywords": [
+    "design-system",
+    "shadcn",
+    "components",
+    "DESIGN.md",
+    "tailwind"
+  ]
+}

@@ -1,0 +1,155 @@
+/* Brutalist Mono — generated from DESIGN.md by scripts/build-tokens.ts. Fonts: Space Mono / Space Grotesk / Space Mono (load via next/font as --font-sans / --font-heading / --font-mono). */
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --card: #FFFFFF;
+  --card-foreground: #000000;
+  --popover: #FFFFFF;
+  --popover-foreground: #000000;
+  --primary: #E4FF1A;
+  --primary-foreground: #000000;
+  --secondary: #000000;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F2F2F2;
+  --muted-foreground: #555555;
+  --accent: #000000;
+  --accent-foreground: #E4FF1A;
+  --destructive: #E00000;
+  --border: #000000;
+  --input: #000000;
+  --ring: #000000;
+  --chart-1: #000000;
+  --chart-2: #E4FF1A;
+  --chart-3: #8C8C8C;
+  --chart-4: #3D3D3D;
+  --chart-5: #C4C4C4;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #000000;
+  --sidebar-primary-foreground: #E4FF1A;
+  --sidebar-accent: #E4FF1A;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #000000;
+  --sidebar-ring: #000000;
+  --radius: 0px;
+  --motion-fast: 120ms;
+  --motion-base: 180ms;
+  --motion-slow: 240ms;
+  --motion-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --motion-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --motion-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.dark {
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+  --card: #0A0A0A;
+  --card-foreground: #FFFFFF;
+  --popover: #141414;
+  --popover-foreground: #FFFFFF;
+  --primary: #E4FF1A;
+  --primary-foreground: #000000;
+  --secondary: #FFFFFF;
+  --secondary-foreground: #000000;
+  --muted: #1A1A1A;
+  --muted-foreground: #ABABAB;
+  --accent: #E4FF1A;
+  --accent-foreground: #000000;
+  --destructive: #FF4D4D;
+  --border: #FFFFFF;
+  --input: #FFFFFF;
+  --ring: #E4FF1A;
+  --chart-1: #FFFFFF;
+  --chart-2: #E4FF1A;
+  --chart-3: #8C8C8C;
+  --chart-4: #5C5C5C;
+  --chart-5: #C4C4C4;
+  --sidebar: #000000;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #E4FF1A;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #FFFFFF;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #FFFFFF;
+  --sidebar-ring: #E4FF1A;
+  --radius: 0px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-weight-headline: 700;
+  --text-display: 5rem;
+  --text-display--line-height: 0.95;
+  --text-display--letter-spacing: -0.04em;
+  --text-display--font-weight: 700;
+  --text-headline-lg: 3rem;
+  --text-headline-lg--line-height: 1;
+  --text-headline-lg--letter-spacing: -0.03em;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-md: 1.75rem;
+  --text-headline-md--line-height: 1.1;
+  --text-headline-md--letter-spacing: -0.02em;
+  --text-headline-md--font-weight: 700;
+  --text-body-lg: 1.0625rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--letter-spacing: 0em;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 0.875rem;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--letter-spacing: 0em;
+  --text-body-md--font-weight: 400;
+  --text-body-sm: 0.75rem;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--letter-spacing: 0em;
+  --text-body-sm--font-weight: 400;
+  --text-label-md: 0.875rem;
+  --text-label-md--line-height: 1.1;
+  --text-label-md--letter-spacing: 0.04em;
+  --text-label-md--font-weight: 700;
+  --text-label-sm: 0.6875rem;
+  --text-label-sm--line-height: 1.1;
+  --text-label-sm--letter-spacing: 0.08em;
+  --text-label-sm--font-weight: 700;
+  --text-mono: 0.8125rem;
+  --text-mono--line-height: 1.5;
+  --text-mono--letter-spacing: 0em;
+  --text-mono--font-weight: 400;
+  --ease-motion-out: var(--motion-ease-out);
+  --ease-motion-in: var(--motion-ease-in);
+  --ease-motion-in-out: var(--motion-ease-in-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0ms; --motion-base: 120ms; --motion-slow: 150ms; }
+}

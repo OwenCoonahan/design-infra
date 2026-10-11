@@ -1,0 +1,711 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "hero-spotlight",
+      "type": "registry:block",
+      "title": "Hero \u00b7 Spotlight",
+      "description": "Centered marketing hero with an original static CSS light treatment using the active theme tokens. No animation or proprietary code.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/hero-spotlight/hero-spotlight.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "premium",
+          "futuristic",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "feature-bento",
+      "type": "registry:block",
+      "title": "Features \u00b7 Bento",
+      "description": "Theme-aware bento grid for feature sections. Tiles span 1, 2 or a full row; hover glow uses --primary.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/feature-bento/feature-bento.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "features",
+        "bento"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "pricing-simple",
+      "type": "registry:block",
+      "title": "Pricing \u00b7 Simple",
+      "description": "2\u20133 tier pricing with monthly/yearly switch and a featured tier. Pure shadcn primitives + tokens.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "badge",
+        "label",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/pricing-simple/pricing-simple.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "pricing"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "agent-status",
+      "type": "registry:component",
+      "title": "Agent status",
+      "description": "Inline or avatar-size agent activity indicator: libraries.dev thinking-orbs + shimmering verb + detail line.",
+      "dependencies": [
+        "thinking-orbs"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/agent-status/agent-status.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "css": {
+        "@keyframes oc-shimmer": {
+          "from": {
+            "background-position": "100% 0"
+          },
+          "to": {
+            "background-position": "-100% 0"
+          }
+        }
+      },
+      "categories": [
+        "agent-ui",
+        "loader"
+      ],
+      "meta": {
+        "source": "oc",
+        "upstream": [
+          "librariesdev/thinking-orbs"
+        ],
+        "moods": [
+          "refined",
+          "futuristic",
+          "calm"
+        ]
+      }
+    },
+    {
+      "name": "beam-card",
+      "type": "registry:component",
+      "title": "Beam card",
+      "description": "Theme-aware card wrapped in libraries.dev's animated border beam \u2014 for the one 'live' thing on screen.",
+      "dependencies": [
+        "border-beam"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/beam-card/beam-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "card",
+        "agent-ui"
+      ],
+      "meta": {
+        "source": "oc",
+        "upstream": [
+          "librariesdev/border-beam"
+        ],
+        "moods": [
+          "futuristic",
+          "playful"
+        ]
+      }
+    },
+    {
+      "name": "theme-preview",
+      "type": "registry:block",
+      "title": "Theme preview",
+      "description": "Kitchen-sink of the installed theme (swatches, type, buttons, form card). Install after a theme to eyeball it.",
+      "registryDependencies": [
+        "button",
+        "badge",
+        "card",
+        "input",
+        "label",
+        "separator",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/theme-preview/theme-preview.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "theme"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "navbar",
+      "type": "registry:block",
+      "title": "Navbar",
+      "description": "Sticky marketing navbar: brand, centred links, ghost + primary actions; collapses into a right-side sheet menu below md.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/navbar/navbar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "minimal",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "hero-split",
+      "type": "registry:block",
+      "title": "Hero \u00b7 Split",
+      "description": "Two-column hero: headline, copy, actions and proof bullets on the left; framed product media on the right (themed mock by default). `reverse` flips sides.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/hero-split/hero-split.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "logo-cloud",
+      "type": "registry:block",
+      "title": "Logo cloud",
+      "description": "'Trusted by' strip. Static wrapping row or infinite marquee with faded edges (pauses on hover, respects reduced motion). Text wordmarks when no SVG is given.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/logo-cloud/logo-cloud.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "css": {
+        "@keyframes oc-marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(-100%)"
+          }
+        }
+      },
+      "categories": [
+        "logo-cloud"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "feature-list",
+      "type": "registry:block",
+      "title": "Features \u00b7 List",
+      "description": "Icon + title + text feature rows in a 2- or 3-column grid, or heading-left/list-right with columns={1}. Calmer alternative to feature-bento.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/feature-list/feature-list.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "features"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "minimal",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "stats-row",
+      "type": "registry:block",
+      "title": "Stats row",
+      "description": "Big-number proof row ('99.99% uptime') with hairline dividers or cards. 2-4 stats.",
+      "files": [
+        {
+          "path": "registry/oc/blocks/stats-row/stats-row.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "stats"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "technical"
+        ]
+      }
+    },
+    {
+      "name": "testimonials-grid",
+      "type": "registry:block",
+      "title": "Testimonials \u00b7 Grid",
+      "description": "Masonry grid of customer quotes with avatars; one `featured` quote renders on a --primary fill in larger heading type.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/testimonials-grid/testimonials-grid.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "testimonials"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "warm",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "faq",
+      "type": "registry:block",
+      "title": "FAQ",
+      "description": "FAQ section on the shadcn accordion: heading left / questions right (split) or centred single column (stacked).",
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/faq/faq.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "faq",
+        "accordion"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "cta-banner",
+      "type": "registry:block",
+      "title": "CTA banner",
+      "description": "Closing call-to-action panel. `primary` = full --primary fill with inverted buttons (works on acid-yellow, rust, indigo); `card` = quiet bordered card with a glow.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/cta-banner/cta-banner.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "cta"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "bold",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "footer-columns",
+      "type": "registry:block",
+      "title": "Footer \u00b7 Columns",
+      "description": "Site footer: brand + blurb, 2-5 link columns, bottom bar with copyright, legal links and social icons.",
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/footer-columns/footer-columns.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "footer",
+        "navigation"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "minimal",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "app-shell",
+      "type": "registry:block",
+      "title": "App shell",
+      "description": "Product app frame on the shadcn sidebar: brand header, grouped nav with badges, user dropdown, icon-collapse (Cmd/Ctrl+B) and mobile sheet; header bar with breadcrumbs + action slot; content slot.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "sidebar",
+        "avatar",
+        "breadcrumb",
+        "dropdown-menu",
+        "separator",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/app-shell/app-shell.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "sidebar",
+        "navigation",
+        "dashboard"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "stat-cards",
+      "type": "registry:block",
+      "title": "Stat cards",
+      "description": "Dashboard KPI tiles: label, big value, delta chip (invertible for churn/latency) and an SVG sparkline in --chart-1.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/stat-cards/stat-cards.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "stats",
+        "dashboard",
+        "card"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "data-table-card",
+      "type": "registry:block",
+      "title": "Data table card",
+      "description": "shadcn table in a card with toolbar: search, faceted filter, actions slot, sortable columns, row selection and pagination. Badge columns are server-safe; `cell` renderers need a client page.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/data-table-card/data-table-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "table",
+        "dashboard"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "trustworthy"
+        ]
+      }
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:block",
+      "title": "Empty state",
+      "description": "Zero-data / first-run placeholder: layered icon, title, one primary next step, optional secondary + help link. Dashed drop-zone or plain.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/empty-state/empty-state.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "empty-state"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "warm"
+        ]
+      }
+    },
+    {
+      "name": "settings-form",
+      "type": "registry:block",
+      "title": "Settings form",
+      "description": "Account settings page (profile, preferences, notifications, danger zone) plus the SettingsSection / SettingsRow primitives to compose your own.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "input",
+        "label",
+        "select",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/settings-form/settings-form.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "form",
+        "input"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "trustworthy",
+          "minimal"
+        ]
+      }
+    },
+    {
+      "name": "chat-thread",
+      "type": "registry:block",
+      "title": "Chat thread",
+      "description": "AI conversation view: user bubbles, assistant turns with markdown-ish text + code blocks, tool-call chips, copy/vote/regenerate actions, @oc/agent-status while pending. Auto-sticks to bottom.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "@oc/agent-status"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/chat-thread/chat-thread.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "ai-chat",
+        "agent-ui"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "calm",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "prompt-composer",
+      "type": "registry:block",
+      "title": "Prompt composer",
+      "description": "Chat input: auto-growing textarea, file attachment chips, model picker, web-search toggle, send/stop; Enter sends, Shift+Enter newline; optional suggestion chips.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/prompt-composer/prompt-composer.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "ai-chat",
+        "input"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "refined",
+          "calm"
+        ]
+      }
+    },
+    {
+      "name": "feature-levels",
+      "type": "registry:block",
+      "title": "Features \u00b7 Levels (scroll-spy)",
+      "description": "Multi-level feature walkthrough: two-tone headline, sticky numbered scroll-spy nav, large photo panels with floating glass product-UI cards (LevelCard), title + CTA per level. Free, theme-aware take on Aceternity's Pro multi-level-features block.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/feature-levels/feature-levels.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "features",
+        "scroll-effect"
+      ],
+      "meta": {
+        "source": "oc",
+        "inspiredBy": [
+          "aceternity/multi-level-features-with-illustrations"
+        ],
+        "moods": [
+          "organic",
+          "refined",
+          "premium"
+        ]
+      }
+    },
+    {
+      "name": "design-lab",
+      "type": "registry:page",
+      "title": "Design lab (temporary option board)",
+      "description": "Temporary page an agent installs in a consumer project to render candidate variants of the user's own component side by side, with their theme and content: <DesignLab title> + <LabOption id label notes chosen>. Lands at app/design-lab/page.tsx + components/design-lab.tsx; the user says which option they want, the agent applies it and removes both files.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/design-lab/design-lab.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/oc/blocks/design-lab/page.tsx",
+          "type": "registry:page",
+          "target": "app/design-lab/page.tsx"
+        }
+      ],
+      "categories": [
+        "dev-tool"
+      ],
+      "meta": {
+        "source": "oc",
+        "route": "/design-lab",
+        "temporary": true,
+        "moods": [
+          "minimal",
+          "technical"
+        ]
+      }
+    }
+  ]
+}

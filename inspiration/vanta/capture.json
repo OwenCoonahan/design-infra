@@ -1,0 +1,384 @@
+{
+  "url": "https://www.vanta.com",
+  "slug": "vanta",
+  "capturedAt": "2026-10-06T15:26:11.158Z",
+  "fullHeightCaptured": 10623,
+  "title": "SOC 2, HIPAA, ISO 27001, PCI, and GDPR Compliance",
+  "description": "Vanta automates the complex and time-consuming process of SOC 2, HIPAA, ISO 27001, PCI, and GDPR compliance certification. Automate your security monitoring in weeks instead of months.",
+  "themeColor": null,
+  "pageHeight": 10623,
+  "fonts": {
+    "heading": [
+      {
+        "value": "SC Ripley",
+        "weight": 646
+      },
+      {
+        "value": "Soehne",
+        "weight": 74
+      }
+    ],
+    "body": [
+      {
+        "value": "Soehne",
+        "weight": 2068
+      },
+      {
+        "value": "Helvetica",
+        "weight": 198
+      }
+    ],
+    "ui": [
+      {
+        "value": "Soehne",
+        "weight": 1125
+      },
+      {
+        "value": "Helvetica",
+        "weight": 32
+      }
+    ],
+    "mono": []
+  },
+  "loadedFontFaces": [
+    "SC Ripley",
+    "Soehne",
+    "Montserrat",
+    "Open Sans",
+    "Roboto"
+  ],
+  "typeScale": [
+    {
+      "value": "14px/400",
+      "weight": 1460
+    },
+    {
+      "value": "18px/400",
+      "weight": 997
+    },
+    {
+      "value": "16px/400",
+      "weight": 555
+    },
+    {
+      "value": "16px/500",
+      "weight": 195
+    },
+    {
+      "value": "30px/500",
+      "weight": 186
+    },
+    {
+      "value": "56px/300",
+      "weight": 101
+    },
+    {
+      "value": "42px/500",
+      "weight": 97
+    },
+    {
+      "value": "30px/400",
+      "weight": 87
+    },
+    {
+      "value": "56px/400",
+      "weight": 73
+    },
+    {
+      "value": "24px/500",
+      "weight": 71
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#fcfcfa",
+        "weight": 804
+      },
+      {
+        "value": "#21222f",
+        "weight": 386
+      },
+      {
+        "value": "#c2beff",
+        "weight": 195
+      },
+      {
+        "value": "#260048",
+        "weight": 192
+      },
+      {
+        "value": "#e6e6f0",
+        "weight": 136
+      },
+      {
+        "value": "#efeff5",
+        "weight": 125
+      },
+      {
+        "value": "#d4baff",
+        "weight": 77
+      },
+      {
+        "value": "#ffffff",
+        "weight": 33
+      }
+    ],
+    "text": [
+      {
+        "value": "#ffffff",
+        "weight": 1932
+      },
+      {
+        "value": "#181822",
+        "weight": 1187
+      },
+      {
+        "value": "#1c1c2a",
+        "weight": 265
+      },
+      {
+        "value": "#2b2c3f",
+        "weight": 204
+      },
+      {
+        "value": "#240642",
+        "weight": 198
+      },
+      {
+        "value": "#dfdfe9",
+        "weight": 143
+      }
+    ],
+    "borders": [
+      {
+        "value": "#9e9fb7",
+        "weight": 9
+      },
+      {
+        "value": "#ffffff",
+        "weight": 6
+      },
+      {
+        "value": "#5e05c4",
+        "weight": 6
+      },
+      {
+        "value": "#240642",
+        "weight": 1
+      },
+      {
+        "value": "#f1f1ef",
+        "weight": 1
+      }
+    ]
+  },
+  "radii": [
+    {
+      "value": "999px",
+      "weight": 18
+    },
+    {
+      "value": "16px",
+      "weight": 14
+    },
+    {
+      "value": "8px",
+      "weight": 12
+    },
+    {
+      "value": "4px",
+      "weight": 2
+    },
+    {
+      "value": "100%",
+      "weight": 2
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0.03) 0px 0px 8px 4px",
+      "weight": 1
+    }
+  ],
+  "cssVariables": {
+    "--osano-toggle-off-thumb-color-disabled": "#bfbfbf",
+    "--osano-link-color-contrast": "#141414",
+    "--osano-button-background-color-hover": "#381a56",
+    "--osano-info-dialog-toggle-off-track-color-hover": "#8e53ff",
+    "--osano-toggle-off-thumb-color": "#FFFFFF",
+    "--osano-button-deny-background-color-hover": "#381a56",
+    "--_colors---shades-tints--green-tint": "#84e29c",
+    "--_colors---shades-tints--purple-tint": "#d5aaff",
+    "--_colors---purple--50": "#fbf6ff",
+    "--_radii---radius--medium": "8px",
+    "--dark-purple": "#260048",
+    "--_colors---gray--1000": "#181822",
+    "--osano-toggle-on-thumb-color": "#FFFFFF",
+    "--_colors---green--100": "#cef4d7",
+    "--_colors---green--500": "#32d05a",
+    "--_colors---purple--700": "#7339aa",
+    "--osano-info-dialog-button-background-color-focus": "#ebebeb",
+    "--osano-dialog-type": "box",
+    "--_colors---primary--white": "white",
+    "--_colors---green--200": "#adecbd",
+    "--osano-toggle-on-thumb-color-disabled": "#bfbfbf",
+    "--_colors---gray--300": "#dfdfe9",
+    "--osano-info-dialog-toggle-on-thumb-color-contrast": "#ebebeb",
+    "--osano-toggle-on-track-color-disabled": "#008d4f",
+    "--red": "#f45b5b",
+    "--_colors---gray--600": "#6d6e87",
+    "--_colors---dark-purple--400": "#6d5981",
+    "--osano-info-dialog-button-foreground-color-contrast": "#ebebeb",
+    "--osano-info-dialog-toggle-off-thumb-color-focus": "#8e53ff",
+    "--osano-button-accept-background-color-contrast": "#381a56",
+    "--osano-toggle-off-track-color-disabled": "#ba7fff",
+    "--_colors---dark-purple--500": "#492f62",
+    "--osano-info-dialog-button-foreground-color-focus": "#381a56",
+    "--osano-info-dialog-toggle-off-track-color": "#7A3FF1",
+    "--osano-button-manage-foreground-color-hover": "#ebebeb",
+    "--osmium": "#9a99ff",
+    "--osano-toggle-off-thumb-color-hover": "#ebebeb",
+    "--violet-1000": "#5e05c4",
+    "--osano-button-background-color": "#240642",
+    "--osano-button-manage-background-color-contrast": "#381a56",
+    "--_colors---green--50": "#f3fcf5",
+    "--osano-button-deny-background-color-contrast": "#8e53ff",
+    "--_colors---green--700": "#068426",
+    "--_colors---yellow--600": "#d59e0d",
+    "--osano-info-dialog-button-background-color-hover": "#381a56",
+    "--osano-toggle-off-background-color": "#d2cfff",
+    "--purple-tint": "#faf7fe",
+    "--osano-button-accept-background-color": "#240642",
+    "--osano-info-dialog-button-background-color": "#240642",
+    "--osano-toggle-on-thumb-color-hover": "#ebebeb",
+    "--_colors---dark-purple--300": "#9283a1",
+    "--_colors---gray--900": "#21222f",
+    "--_colors---primary--vanta-orange": "#ef8909",
+    "--osano-widget-outline-color": "#29246a",
+    "--osano-button-deny-foreground-color-contrast": "#ebebeb",
+    "--_colors---shades-tints--red-tint": "#f9adad",
+    "--_colors---red--200": "#fbc8c8",
+    "--osano-widget-color": "#37cd8f",
+    "--_colors---gray--400": "#9e9fb7",
+    "--osano-opt-out-widget-position": "left",
+    "--osano-button-accept-foreground-color": "#ffffff",
+    "--osano-toggle-on-track-color-hover": "#23b97b",
+    "--osano-button-accept-background-color-focus": "#ebebeb",
+    "--_colors---shades-tints--yellow-tint": "#ffde87",
+    "--osano-button-accept-border-color": "#fff",
+    "--_colors---red--500": "#f67676",
+    "--osano-button-manage-foreground-color": "#ffffff",
+    "--_colors---red--600": "#cb4c4c",
+    "--osano-widget-position": "left",
+    "--osano-info-dialog-toggle-on-track-color-focus": "#ebebeb",
+    "--_colors---primary--vanta-yellow": "#ffbe0f",
+    "--osano-info-dialog-button-foreground-color": "#ffffff",
+    "--osano-info-dialog-button-background-color-contrast": "#381a56",
+    "--osano-button-foreground-color-focus": "#381a56",
+    "--accessible-components-dark-grey": "#9b9b9b",
+    "--_colors---purple--300": "#d6aaff",
+    "--_colors---red--50": "#fef7f7",
+    "--osano-info-dialog-link-color-contrast": "#141414",
+    "--_colors---gray--100": "#f6f7f9",
+    "--goldenrod": "#ffbe0f",
+    "--osano-info-dialog-toggle-on-thumb-color-hover": "#ebebeb",
+    "--_colors---primary--cerulean": "#cdd2f8",
+    "--osano-toggle-off-thumb-color-focus": "#8e53ff",
+    "--osano-button-deny-foreground-color-hover": "#ebebeb",
+    "--_radii---radius--large": "16px",
+    "--pruple-d3cdd9": "#d3cdd9",
+    "--_colors---shades-tints--red-shade": "#b03243",
+    "--light-brown": "#f8f4f3",
+    "--osano-button-manage-foreground-color-contrast": "#ebebeb",
+    "--_colors---purple--500": "#ba71ff",
+    "--osano-info-dialog-toggle-on-track-color-disabled": "#008d4f",
+    "--transparent": "#fff0",
+    "--osano-button-accept-foreground-color-focus": "#381a56",
+    "--bronze": "#c5a27b",
+    "--_colors---shades-tints--green-shade": "#068d39",
+    "--osano-toggle-on-track-color-contrast": "#23b97b",
+    "--osano-info-dialog-button-close-color": "#000000",
+    "--osano-info-dialog-toggle-off-track-color-contrast": "#8e53ff",
+    "--osano-dialog-background-color": "#ffffff",
+    "--osano-info-dialog-link-color": "#000000",
+    "--osano-toggle-on-track-color-focus": "#ebebeb",
+    "--osano-toggle-on-thumb-color-focus": "#23b97b",
+    "--osano-info-dialog-toggle-on-track-color-contrast": "#23b97b",
+    "--_radii---radius--small": "4px",
+    "--osano-info-dialog-toggle-on-track-color-hover": "#23b97b",
+    "--dark-purple-50": "#24064280",
+    "--_colors---yellow--100": "#fff2cf",
+    "--_colors---primary--vanta-purple": "#5e05c4",
+    "--_colors---gray--500": "#8687a0",
+    "--osano-toggle-on-background-color": "#37cd8f",
+    "--_colors---yellow--700": "#aa7f0a",
+    "--osano-info-dialog-overlay-color": "rgba(0,0,0,0)",
+    "--_colors---purple--900": "#391c55",
+    "--_colors---yellow--500": "#ffc937",
+    "--osano-toggle-off-track-color-focus": "#ebebeb",
+    "--_colors---red--800": "#7a2e2e",
+    "--_colors---purple--800": "#562b80",
+    "--osano-button-foreground-color-hover": "#ebebeb",
+    "--_colors---yellow--800": "#805f08",
+    "--osano-dialog-background-color-contrast": "#ebebeb"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "Trust is everything"
+    },
+    {
+      "tag": "h2",
+      "text": "It’s all here"
+    },
+    {
+      "tag": "h2",
+      "text": "The Vanta Agent: your 24/7 GRC engineering team"
+    },
+    {
+      "tag": "h2",
+      "text": "“Vanta helped us unblock our sales cycle for security questionnaires in a scalable, sustainable way.”"
+    },
+    {
+      "tag": "h2",
+      "text": "All the frameworks you need"
+    },
+    {
+      "tag": "h2",
+      "text": "Built for you"
+    },
+    {
+      "tag": "h2",
+      "text": "Proof? We've got proof."
+    },
+    {
+      "tag": "h2",
+      "text": "Vanta named a Leader in The Forrester Wave™: Governance, Risk, and Compliance Platforms, Q2 2026"
+    },
+    {
+      "tag": "h2",
+      "text": "Dive into all things Vanta and trust management"
+    },
+    {
+      "tag": "h2",
+      "text": "The new standard for trust"
+    }
+  ],
+  "signals": {
+    "sections": 8,
+    "images": 73,
+    "videos": 0,
+    "canvases": 0,
+    "svgs": 51,
+    "animatedElements": 141,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": false,
+      "framer": false,
+      "webflow": true,
+      "tailwind": true,
+      "gsap": true
+    }
+  }
+}

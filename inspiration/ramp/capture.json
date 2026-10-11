@@ -1,0 +1,324 @@
+{
+  "url": "https://ramp.com",
+  "slug": "ramp",
+  "capturedAt": "2026-10-06T15:25:37.191Z",
+  "fullHeightCaptured": 12000,
+  "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+  "description": "Make expense management easy with Ramp's spend management platform. Combine global corporate cards, travel, expenses and accounts payable to automate finance operations and improve efficiency.",
+  "themeColor": null,
+  "pageHeight": 13912,
+  "fonts": {
+    "heading": [
+      {
+        "value": "Lausanne",
+        "weight": 806
+      }
+    ],
+    "body": [
+      {
+        "value": "Lausanne",
+        "weight": 7215
+      }
+    ],
+    "ui": [
+      {
+        "value": "Lausanne",
+        "weight": 1213
+      }
+    ],
+    "mono": []
+  },
+  "loadedFontFaces": [
+    "Lausanne",
+    "Material Icons",
+    "Material Icons Outlined"
+  ],
+  "typeScale": [
+    {
+      "value": "14px/400",
+      "weight": 4074
+    },
+    {
+      "value": "13px/400",
+      "weight": 2462
+    },
+    {
+      "value": "16px/400",
+      "weight": 1443
+    },
+    {
+      "value": "28px/400",
+      "weight": 406
+    },
+    {
+      "value": "24px/400",
+      "weight": 241
+    },
+    {
+      "value": "10px/400",
+      "weight": 215
+    },
+    {
+      "value": "48px/400",
+      "weight": 162
+    },
+    {
+      "value": "40px/400",
+      "weight": 109
+    },
+    {
+      "value": "18px/400",
+      "weight": 64
+    },
+    {
+      "value": "64px/400",
+      "weight": 29
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#f4f2ef",
+        "weight": 23
+      },
+      {
+        "value": "#ffffff",
+        "weight": 20
+      },
+      {
+        "value": "#1f1f1d",
+        "weight": 11
+      }
+    ],
+    "text": [],
+    "borders": []
+  },
+  "radii": [
+    {
+      "value": "12px",
+      "weight": 42
+    },
+    {
+      "value": "8px",
+      "weight": 25
+    },
+    {
+      "value": "16px",
+      "weight": 24
+    },
+    {
+      "value": "6px",
+      "weight": 22
+    },
+    {
+      "value": "4px",
+      "weight": 8
+    },
+    {
+      "value": "10px",
+      "weight": 3
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      "weight": 1
+    }
+  ],
+  "cssVariables": {
+    "--container-md": "28rem",
+    "--fides-overlay-component-border-radius": "4px",
+    "--fides-overlay-padding": "24px",
+    "--color-black-500": "rgba(33, 33, 33, .5)",
+    "--tw-inset-shadow-alpha": "100%",
+    "--aspect-video": "16 / 9",
+    "--color-white-800": "rgba(255, 255, 255, .8)",
+    "--blur-lg": "16px",
+    "--springLight": "lab(92.7546% -.885487 -6.20667)",
+    "--fides-overlay-background-color": "#f7fafc",
+    "--background-color-springLight": "lab(92.7546% -.885487 -6.20667)",
+    "--tw-animation-delay": "0s",
+    "--text-color-hushed": "lab(2.83994% .367254 .969091/.6)",
+    "--spring": "lab(54.2877% 2.64341 -46.1636)",
+    "--personalization-trace-angle": "0deg",
+    "--color-black-25": "rgba(33, 33, 33, .025)",
+    "--text-hushed": "lab(2.83994% .367254 .969091/.6)",
+    "--background-color-white": "lab(100% 0 0)",
+    "--tw-outline-style": "solid",
+    "--tw-inset-ring-shadow": "0 0 #0000",
+    "--text-base--line-height": "calc(1.5 / 1)",
+    "--tw-enter-scale": "1",
+    "--color-gray-300": "lab(85.1236% -.612259 -3.7138)",
+    "--font-mono": "\"IBM Plex Mono\", ui-monospace, monospace",
+    "--tracking-wider": ".05em",
+    "--fides-overlay-primary-button-text-color": "#fff",
+    "--fides-overlay-width": "680px",
+    "--color-gray-500": "lab(47.7841% -.393182 -10.0268)",
+    "--text-hushedReverse": "lab(100% 0 0/.6)",
+    "--tw-inset-shadow": "0 0 #0000",
+    "--tw-gradient-from": "rgba(0, 0, 0, 0)",
+    "--color-white": "lab(100% 0 0)",
+    "--fides-overlay-link-font-color": "#2d3748",
+    "--z-navmenu": "900",
+    "--fides-overlay-modal-secondary-button-group-height": "calc(calc(16px*0.875) + 4px*2)",
+    "--tw-gradient-to": "rgba(0, 0, 0, 0)",
+    "--tw-shadow-alpha": "100%",
+    "--fides-overlay-gpc-applied-background-color": "#38a169",
+    "--radius-sm": ".25rem",
+    "--z-modal": "500",
+    "--background-color-black": "lab(8.86531% .515342 .18619)",
+    "--fides-overlay-secondary-button-text-color": "#2d3748",
+    "--fides-overlay-background-dark-color": "#e2e8f0",
+    "--fides-overlay-font-size-buttons": "calc(16px*0.875)",
+    "--black": "lab(8.86531% .515342 .18619)",
+    "--color-white-400": "rgba(255, 255, 255, .4)",
+    "--black-700": "rgba(33, 33, 33, .7)",
+    "--color-gray-100": "lab(96.1596% -.0823438 -1.13575)",
+    "--font-weight-bold": "700",
+    "--nav-banner-height": "40px",
+    "--color-black-700": "rgba(33, 33, 33, .7)",
+    "--tw-exit-translate-y": "0",
+    "--_number-flow-d-opacity": "0",
+    "--tw-gradient-via-position": "50%",
+    "--fides-overlay-inactive-color": "#e2e8f0",
+    "--nav-height": "calc(62px + 40px)",
+    "--border-color-primary": "lab(83.0178% 1.03405 2.01975)",
+    "--fides-base-font-size": "16px",
+    "--text-xs--line-height": "calc(1 / .75)",
+    "--white-600": "rgba(255, 255, 255, .6)",
+    "--tw-space-x-reverse": "0",
+    "--text-primaryReverse": "lab(100% 0 0)",
+    "--color-black-800": "rgba(33, 33, 33, .8)",
+    "--color-black-50": "rgba(33, 33, 33, .05)",
+    "--tw-gradient-to-position": "100%",
+    "--background-color-solarLight": "lab(97.2856% -16.4927 62.0693)",
+    "--default-transition-duration": ".15s",
+    "--z-overlay": "400",
+    "--animate-pulse": "pulse 2s cubic-bezier(.4, 0, .6, 1) infinite",
+    "--radius-2xl": "1rem",
+    "--radius-md": ".375rem",
+    "--drop-shadow-lg": "0 4px 4px #00000026",
+    "--color-black-400": "rgba(33, 33, 33, .4)",
+    "--text-xl": "1.25rem",
+    "--radius-lg": ".5rem",
+    "--fides-overlay-title-font-color": "#4a5568",
+    "--color-black-200": "rgba(33, 33, 33, .2)",
+    "--color-white-200": "rgba(255, 255, 255, .2)",
+    "--lausanne-units-per-em": "2048",
+    "--z-index-navmenu": "900",
+    "--fides-overlay-badge-border-radius": "4px",
+    "--leading-relaxed": "1.625",
+    "--fides-overlay-toggle-width": "50px",
+    "--fides-overlay-gpc-applied-text-color": "#fff",
+    "--fides-overlay-secondary-button-border-color-disabled": "#a0aec0",
+    "--default-transition-timing-function": "cubic-bezier(.4, 0, .2, 1)",
+    "--z-index-modal": "500",
+    "--white": "lab(100% 0 0)",
+    "--tw-animation-iteration-count": "1",
+    "--tw-exit-opacity": "1",
+    "--_number-flow-d": "0",
+    "--fides-overlay-skeleton-gradient-to-color": "rgba(0,0,0,.15)",
+    "--spacer-m": "64px",
+    "--white-100": "rgba(255, 255, 255, .1)",
+    "--text-2xl--line-height": "calc(2 / 1.5)",
+    "--fides-overlay-font-color": "#4a5568",
+    "--8px": "calc(16px*0.5)",
+    "--spacing": ".25rem",
+    "--tw-translate-z": "0",
+    "--tw-gradient-via": "rgba(0, 0, 0, 0)",
+    "--fides-banner-font-size-title": "calc(16px*1)",
+    "--fides-overlay-banner-offset": "48px",
+    "--tw-scale-y": "1",
+    "--fides-overlay-disabled-color": "#e1e7ee",
+    "--background-image-midnight": "linear-gradient(in oklab to bottom, #000 0%, #112d5b 100%)",
+    "--container-6xl": "72rem",
+    "--text-xl--line-height": "calc(1.75 / 1.25)",
+    "--breakpoint-lg": "992px",
+    "--fides-overlay-select-border-color": "#e2e8f0",
+    "--tw-exit-translate-x": "0",
+    "--z-toast": "800",
+    "--color-white-50": "rgba(255, 255, 255, .05)",
+    "--white-rgb": "255, 255, 255",
+    "--tw-translate-y": "0",
+    "--text-sm": ".875rem",
+    "--container-3xl": "48rem",
+    "--ease-out": "cubic-bezier(0, 0, .2, 1)",
+    "--blur-xs": "4px",
+    "--black-600": "rgba(33, 33, 33, .6)",
+    "--z-index-popover": "600"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "Time is money. Save both."
+    },
+    {
+      "tag": "h2",
+      "text": "Join 70,000 of the world’s most ambitious companies growing 3.2x faster than the average American business."
+    },
+    {
+      "tag": "h2",
+      "text": "One platform for all of finance. Agents for every workflow, working 24/7."
+    },
+    {
+      "tag": "h2",
+      "text": "See recommendations for your business"
+    },
+    {
+      "tag": "h2",
+      "text": "Systems that never spoke"
+    },
+    {
+      "tag": "h2",
+      "text": "Built on the intelligence of 70k+ finance teams. One platform for the agentic era."
+    },
+    {
+      "tag": "h2",
+      "text": "Introducing Stack by Ramp. The AI operating system built for today’s top finance teams."
+    },
+    {
+      "tag": "h2",
+      "text": "Keep your finance team focused on strategy. Let agents handle the busywork."
+    },
+    {
+      "tag": "h2",
+      "text": "AI that learns from your team. And gets smarter with every team that joins."
+    },
+    {
+      "tag": "h2",
+      "text": "Scale the team. Shrink the paperwork."
+    },
+    {
+      "tag": "h2",
+      "text": "Set user access on autopilot."
+    },
+    {
+      "tag": "h2",
+      "text": "One platform for all your global spend."
+    },
+    {
+      "tag": "h2",
+      "text": "We've got the receipts."
+    },
+    {
+      "tag": "h2",
+      "text": "Time is money. Save both."
+    }
+  ],
+  "signals": {
+    "sections": 10,
+    "images": 70,
+    "videos": 3,
+    "canvases": 9,
+    "svgs": 30,
+    "animatedElements": 81,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": true,
+      "framer": false,
+      "webflow": false,
+      "tailwind": true,
+      "gsap": false
+    }
+  }
+}

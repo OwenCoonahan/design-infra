@@ -1,0 +1,135 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "template-landing",
+      "type": "registry:page",
+      "title": "Template \u00b7 SaaS landing page",
+      "description": "Full marketing page at app/page.tsx: navbar, split hero, marquee logo cloud, feature bento, stats, testimonials, pricing, FAQ, CTA banner and footer \u2014 all @oc blocks, all theme tokens. Install a theme first, then replace the copy.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@oc/navbar",
+        "@oc/hero-split",
+        "@oc/logo-cloud",
+        "@oc/feature-bento",
+        "@oc/stats-row",
+        "@oc/testimonials-grid",
+        "@oc/pricing-simple",
+        "@oc/faq",
+        "@oc/cta-banner",
+        "@oc/footer-columns"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/templates/template-landing/page.tsx",
+          "type": "registry:page",
+          "target": "app/page.tsx"
+        }
+      ],
+      "categories": [
+        "hero",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "cta",
+        "footer"
+      ],
+      "meta": {
+        "source": "oc",
+        "kind": "template",
+        "route": "/",
+        "moods": [
+          "refined",
+          "trustworthy",
+          "warm"
+        ]
+      }
+    },
+    {
+      "name": "template-saas-dashboard",
+      "type": "registry:page",
+      "title": "Template \u00b7 SaaS dashboard",
+      "description": "Dashboard at app/dashboard/page.tsx: @oc/app-shell sidebar + breadcrumbs, KPI stat cards with sparklines, revenue area chart (shadcn chart), recent-activity card and a searchable, filterable customers table.",
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@oc/app-shell",
+        "@oc/stat-cards",
+        "@oc/data-table-card",
+        "avatar",
+        "button",
+        "card",
+        "chart"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/templates/template-saas-dashboard/page.tsx",
+          "type": "registry:page",
+          "target": "app/dashboard/page.tsx"
+        }
+      ],
+      "categories": [
+        "dashboard",
+        "sidebar",
+        "stats",
+        "chart",
+        "table"
+      ],
+      "meta": {
+        "source": "oc",
+        "kind": "template",
+        "route": "/dashboard",
+        "frame": "app",
+        "moods": [
+          "technical",
+          "trustworthy",
+          "refined"
+        ]
+      }
+    },
+    {
+      "name": "template-ai-chat",
+      "type": "registry:page",
+      "title": "Template \u00b7 AI chat",
+      "description": "Assistant UI at app/chat/page.tsx: conversation sidebar (@oc/app-shell), @oc/chat-thread with tool-call chips, @oc/agent-status while the model works, and @oc/prompt-composer pinned to the bottom. Fake responder included \u2014 swap in your streaming call.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@oc/app-shell",
+        "@oc/chat-thread",
+        "@oc/prompt-composer",
+        "@oc/agent-status",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/templates/template-ai-chat/page.tsx",
+          "type": "registry:page",
+          "target": "app/chat/page.tsx"
+        }
+      ],
+      "categories": [
+        "ai-chat",
+        "agent-ui",
+        "sidebar"
+      ],
+      "meta": {
+        "source": "oc",
+        "kind": "template",
+        "route": "/chat",
+        "frame": "app",
+        "moods": [
+          "calm",
+          "refined",
+          "futuristic"
+        ]
+      }
+    }
+  ]
+}

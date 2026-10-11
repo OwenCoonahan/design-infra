@@ -1,0 +1,2076 @@
+[
+  {
+    "id": "shadcn/chart-area-axes",
+    "source": "shadcn",
+    "name": "chart-area-axes",
+    "title": "Area Chart · Axes",
+    "description": "Area chart (axes) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-axes",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-axes",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-default",
+    "source": "shadcn",
+    "name": "chart-area-default",
+    "title": "Area Chart · Default",
+    "description": "Area chart (default) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-default",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-default",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-gradient",
+    "source": "shadcn",
+    "name": "chart-area-gradient",
+    "title": "Area Chart · Gradient",
+    "description": "Area chart (gradient) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-gradient",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-gradient",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-icons",
+    "source": "shadcn",
+    "name": "chart-area-icons",
+    "title": "Area Chart · Icons",
+    "description": "Area chart (icons) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-icons",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-icons",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-interactive",
+    "source": "shadcn",
+    "name": "chart-area-interactive",
+    "title": "Area Chart · Interactive",
+    "description": "Area chart (interactive) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-interactive",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-interactive",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-legend",
+    "source": "shadcn",
+    "name": "chart-area-legend",
+    "title": "Area Chart · Legend",
+    "description": "Area chart (legend) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-legend",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-legend",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-linear",
+    "source": "shadcn",
+    "name": "chart-area-linear",
+    "title": "Area Chart · Linear",
+    "description": "Area chart (linear) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-linear",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-linear",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-stacked",
+    "source": "shadcn",
+    "name": "chart-area-stacked",
+    "title": "Area Chart · Stacked",
+    "description": "Area chart (stacked) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-stacked",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-stacked",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-stacked-expand",
+    "source": "shadcn",
+    "name": "chart-area-stacked-expand",
+    "title": "Area Chart · Stacked Expand",
+    "description": "Area chart (stacked expand) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-stacked-expand",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-stacked-expand",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-area-step",
+    "source": "shadcn",
+    "name": "chart-area-step",
+    "title": "Area Chart · Step",
+    "description": "Area chart (step) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-area-step",
+    "docs": "https://ui.shadcn.com/charts/area#chart-area-step",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-active",
+    "source": "shadcn",
+    "name": "chart-bar-active",
+    "title": "Bar Chart · Active",
+    "description": "Bar chart (active) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-active",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-active",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-default",
+    "source": "shadcn",
+    "name": "chart-bar-default",
+    "title": "Bar Chart · Default",
+    "description": "Bar chart (default) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-default",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-default",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-horizontal",
+    "source": "shadcn",
+    "name": "chart-bar-horizontal",
+    "title": "Bar Chart · Horizontal",
+    "description": "Bar chart (horizontal) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-horizontal",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-horizontal",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-interactive",
+    "source": "shadcn",
+    "name": "chart-bar-interactive",
+    "title": "Bar Chart · Interactive",
+    "description": "Bar chart (interactive) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-interactive",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-interactive",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-label",
+    "source": "shadcn",
+    "name": "chart-bar-label",
+    "title": "Bar Chart · Label",
+    "description": "Bar chart (label) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-label",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-label",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-label-custom",
+    "source": "shadcn",
+    "name": "chart-bar-label-custom",
+    "title": "Bar Chart · Label Custom",
+    "description": "Bar chart (label custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-label-custom",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-label-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-mixed",
+    "source": "shadcn",
+    "name": "chart-bar-mixed",
+    "title": "Bar Chart · Mixed",
+    "description": "Bar chart (mixed) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-mixed",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-mixed",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-multiple",
+    "source": "shadcn",
+    "name": "chart-bar-multiple",
+    "title": "Bar Chart · Multiple",
+    "description": "Bar chart (multiple) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-multiple",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-multiple",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-negative",
+    "source": "shadcn",
+    "name": "chart-bar-negative",
+    "title": "Bar Chart · Negative",
+    "description": "Bar chart (negative) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-negative",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-negative",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-bar-stacked",
+    "source": "shadcn",
+    "name": "chart-bar-stacked",
+    "title": "Bar Chart · Stacked",
+    "description": "Bar chart (stacked) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-bar-stacked",
+    "docs": "https://ui.shadcn.com/charts/bar#chart-bar-stacked",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-default",
+    "source": "shadcn",
+    "name": "chart-line-default",
+    "title": "Line Chart · Default",
+    "description": "Line chart (default) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-default",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-default",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-dots",
+    "source": "shadcn",
+    "name": "chart-line-dots",
+    "title": "Line Chart · Dots",
+    "description": "Line chart (dots) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-dots",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-dots",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-dots-colors",
+    "source": "shadcn",
+    "name": "chart-line-dots-colors",
+    "title": "Line Chart · Dots Colors",
+    "description": "Line chart (dots colors) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-dots-colors",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-dots-colors",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-dots-custom",
+    "source": "shadcn",
+    "name": "chart-line-dots-custom",
+    "title": "Line Chart · Dots Custom",
+    "description": "Line chart (dots custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-dots-custom",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-dots-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-interactive",
+    "source": "shadcn",
+    "name": "chart-line-interactive",
+    "title": "Line Chart · Interactive",
+    "description": "Line chart (interactive) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-interactive",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-interactive",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-label",
+    "source": "shadcn",
+    "name": "chart-line-label",
+    "title": "Line Chart · Label",
+    "description": "Line chart (label) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-label",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-label",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-label-custom",
+    "source": "shadcn",
+    "name": "chart-line-label-custom",
+    "title": "Line Chart · Label Custom",
+    "description": "Line chart (label custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-label-custom",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-label-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-linear",
+    "source": "shadcn",
+    "name": "chart-line-linear",
+    "title": "Line Chart · Linear",
+    "description": "Line chart (linear) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-linear",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-linear",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-multiple",
+    "source": "shadcn",
+    "name": "chart-line-multiple",
+    "title": "Line Chart · Multiple",
+    "description": "Line chart (multiple) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-multiple",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-multiple",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-line-step",
+    "source": "shadcn",
+    "name": "chart-line-step",
+    "title": "Line Chart · Step",
+    "description": "Line chart (step) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-line-step",
+    "docs": "https://ui.shadcn.com/charts/line#chart-line-step",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-donut",
+    "source": "shadcn",
+    "name": "chart-pie-donut",
+    "title": "Pie Chart · Donut",
+    "description": "Pie chart (donut) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-donut",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-donut",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-donut-active",
+    "source": "shadcn",
+    "name": "chart-pie-donut-active",
+    "title": "Pie Chart · Donut Active",
+    "description": "Pie chart (donut active) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-donut-active",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-donut-active",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-donut-text",
+    "source": "shadcn",
+    "name": "chart-pie-donut-text",
+    "title": "Pie Chart · Donut Text",
+    "description": "Pie chart (donut text) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-donut-text",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-donut-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-interactive",
+    "source": "shadcn",
+    "name": "chart-pie-interactive",
+    "title": "Pie Chart · Interactive",
+    "description": "Pie chart (interactive) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-interactive",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-interactive",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-label",
+    "source": "shadcn",
+    "name": "chart-pie-label",
+    "title": "Pie Chart · Label",
+    "description": "Pie chart (label) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-label",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-label",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-label-custom",
+    "source": "shadcn",
+    "name": "chart-pie-label-custom",
+    "title": "Pie Chart · Label Custom",
+    "description": "Pie chart (label custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-label-custom",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-label-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-label-list",
+    "source": "shadcn",
+    "name": "chart-pie-label-list",
+    "title": "Pie Chart · Label List",
+    "description": "Pie chart (label list) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-label-list",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-label-list",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-legend",
+    "source": "shadcn",
+    "name": "chart-pie-legend",
+    "title": "Pie Chart · Legend",
+    "description": "Pie chart (legend) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-legend",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-legend",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-separator-none",
+    "source": "shadcn",
+    "name": "chart-pie-separator-none",
+    "title": "Pie Chart · Separator None",
+    "description": "Pie chart (separator none) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-separator-none",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-separator-none",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-simple",
+    "source": "shadcn",
+    "name": "chart-pie-simple",
+    "title": "Pie Chart · Simple",
+    "description": "Pie chart (simple) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-simple",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-simple",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-pie-stacked",
+    "source": "shadcn",
+    "name": "chart-pie-stacked",
+    "title": "Pie Chart · Stacked",
+    "description": "Pie chart (stacked) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-pie-stacked",
+    "docs": "https://ui.shadcn.com/charts/pie#chart-pie-stacked",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-default",
+    "source": "shadcn",
+    "name": "chart-radar-default",
+    "title": "Radar Chart · Default",
+    "description": "Radar chart (default) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-default",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-default",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-dots",
+    "source": "shadcn",
+    "name": "chart-radar-dots",
+    "title": "Radar Chart · Dots",
+    "description": "Radar chart (dots) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-dots",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-dots",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-grid-circle",
+    "source": "shadcn",
+    "name": "chart-radar-grid-circle",
+    "title": "Radar Chart · Grid Circle",
+    "description": "Radar chart (grid circle) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-grid-circle",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-grid-circle",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-grid-circle-fill",
+    "source": "shadcn",
+    "name": "chart-radar-grid-circle-fill",
+    "title": "Radar Chart · Grid Circle Fill",
+    "description": "Radar chart (grid circle fill) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-grid-circle-fill",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-grid-circle-fill",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-grid-circle-no-lines",
+    "source": "shadcn",
+    "name": "chart-radar-grid-circle-no-lines",
+    "title": "Radar Chart · Grid Circle No Lines",
+    "description": "Radar chart (grid circle no lines) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-grid-circle-no-lines",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-grid-circle-no-lines",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-grid-custom",
+    "source": "shadcn",
+    "name": "chart-radar-grid-custom",
+    "title": "Radar Chart · Grid Custom",
+    "description": "Radar chart (grid custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-grid-custom",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-grid-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-grid-fill",
+    "source": "shadcn",
+    "name": "chart-radar-grid-fill",
+    "title": "Radar Chart · Grid Fill",
+    "description": "Radar chart (grid fill) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-grid-fill",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-grid-fill",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-grid-none",
+    "source": "shadcn",
+    "name": "chart-radar-grid-none",
+    "title": "Radar Chart · Grid None",
+    "description": "Radar chart (grid none) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-grid-none",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-grid-none",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-icons",
+    "source": "shadcn",
+    "name": "chart-radar-icons",
+    "title": "Radar Chart · Icons",
+    "description": "Radar chart (icons) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-icons",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-icons",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-label-custom",
+    "source": "shadcn",
+    "name": "chart-radar-label-custom",
+    "title": "Radar Chart · Label Custom",
+    "description": "Radar chart (label custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-label-custom",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-label-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-legend",
+    "source": "shadcn",
+    "name": "chart-radar-legend",
+    "title": "Radar Chart · Legend",
+    "description": "Radar chart (legend) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-legend",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-legend",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-lines-only",
+    "source": "shadcn",
+    "name": "chart-radar-lines-only",
+    "title": "Radar Chart · Lines Only",
+    "description": "Radar chart (lines only) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-lines-only",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-lines-only",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-multiple",
+    "source": "shadcn",
+    "name": "chart-radar-multiple",
+    "title": "Radar Chart · Multiple",
+    "description": "Radar chart (multiple) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-multiple",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-multiple",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radar-radius",
+    "source": "shadcn",
+    "name": "chart-radar-radius",
+    "title": "Radar Chart · Radius",
+    "description": "Radar chart (radius) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radar-radius",
+    "docs": "https://ui.shadcn.com/charts/radar#chart-radar-radius",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radial-grid",
+    "source": "shadcn",
+    "name": "chart-radial-grid",
+    "title": "Radial Chart · Grid",
+    "description": "Radial chart (grid) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radial-grid",
+    "docs": "https://ui.shadcn.com/charts/radial#chart-radial-grid",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radial-label",
+    "source": "shadcn",
+    "name": "chart-radial-label",
+    "title": "Radial Chart · Label",
+    "description": "Radial chart (label) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radial-label",
+    "docs": "https://ui.shadcn.com/charts/radial#chart-radial-label",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radial-shape",
+    "source": "shadcn",
+    "name": "chart-radial-shape",
+    "title": "Radial Chart · Shape",
+    "description": "Radial chart (shape) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radial-shape",
+    "docs": "https://ui.shadcn.com/charts/radial#chart-radial-shape",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radial-simple",
+    "source": "shadcn",
+    "name": "chart-radial-simple",
+    "title": "Radial Chart · Simple",
+    "description": "Radial chart (simple) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radial-simple",
+    "docs": "https://ui.shadcn.com/charts/radial#chart-radial-simple",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radial-stacked",
+    "source": "shadcn",
+    "name": "chart-radial-stacked",
+    "title": "Radial Chart · Stacked",
+    "description": "Radial chart (stacked) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radial-stacked",
+    "docs": "https://ui.shadcn.com/charts/radial#chart-radial-stacked",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-radial-text",
+    "source": "shadcn",
+    "name": "chart-radial-text",
+    "title": "Radial Chart · Text",
+    "description": "Radial chart (text) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-radial-text",
+    "docs": "https://ui.shadcn.com/charts/radial#chart-radial-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-advanced",
+    "source": "shadcn",
+    "name": "chart-tooltip-advanced",
+    "title": "Tooltip Chart · Advanced",
+    "description": "Tooltip chart (advanced) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-advanced",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-advanced",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-default",
+    "source": "shadcn",
+    "name": "chart-tooltip-default",
+    "title": "Tooltip Chart · Default",
+    "description": "Tooltip chart (default) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-default",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-default",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-formatter",
+    "source": "shadcn",
+    "name": "chart-tooltip-formatter",
+    "title": "Tooltip Chart · Formatter",
+    "description": "Tooltip chart (formatter) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-formatter",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-formatter",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-icons",
+    "source": "shadcn",
+    "name": "chart-tooltip-icons",
+    "title": "Tooltip Chart · Icons",
+    "description": "Tooltip chart (icons) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-icons",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-icons",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-indicator-line",
+    "source": "shadcn",
+    "name": "chart-tooltip-indicator-line",
+    "title": "Tooltip Chart · Indicator Line",
+    "description": "Tooltip chart (indicator line) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-indicator-line",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-indicator-line",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-indicator-none",
+    "source": "shadcn",
+    "name": "chart-tooltip-indicator-none",
+    "title": "Tooltip Chart · Indicator None",
+    "description": "Tooltip chart (indicator none) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-indicator-none",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-indicator-none",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-label-custom",
+    "source": "shadcn",
+    "name": "chart-tooltip-label-custom",
+    "title": "Tooltip Chart · Label Custom",
+    "description": "Tooltip chart (label custom) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-label-custom",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-label-custom",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-label-formatter",
+    "source": "shadcn",
+    "name": "chart-tooltip-label-formatter",
+    "title": "Tooltip Chart · Label Formatter",
+    "description": "Tooltip chart (label formatter) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-label-formatter",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-label-formatter",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/chart-tooltip-label-none",
+    "source": "shadcn",
+    "name": "chart-tooltip-label-none",
+    "title": "Tooltip Chart · Label None",
+    "description": "Tooltip chart (label none) built on Recharts + shadcn chart.",
+    "kind": "block",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "block",
+      "recharts"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add chart-tooltip-label-none",
+    "docs": "https://ui.shadcn.com/charts/tooltip#chart-tooltip-label-none",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/dashboard-01",
+    "source": "shadcn",
+    "name": "dashboard-01",
+    "title": "Dashboard 01",
+    "description": "A dashboard with sidebar, charts and data table.",
+    "kind": "block",
+    "categories": [
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add dashboard-01",
+    "docs": "https://ui.shadcn.com/blocks/dashboard#dashboard-01",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/dashboard-01-light.png",
+    "dependencies": [
+      "@dnd-kit/core",
+      "@dnd-kit/modifiers",
+      "@dnd-kit/sortable",
+      "@dnd-kit/utilities",
+      "@tabler/icons-react",
+      "@tanstack/react-table",
+      "zod"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/login-01",
+    "source": "shadcn",
+    "name": "login-01",
+    "title": "Login 01",
+    "description": "A simple login form.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add login-01",
+    "docs": "https://ui.shadcn.com/blocks/login#login-01",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/login-01-light.png",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/login-02",
+    "source": "shadcn",
+    "name": "login-02",
+    "title": "Login 02",
+    "description": "A two column login page with a cover image.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add login-02",
+    "docs": "https://ui.shadcn.com/blocks/login#login-02",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/login-02-light.png",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/login-03",
+    "source": "shadcn",
+    "name": "login-03",
+    "title": "Login 03",
+    "description": "A login page with a muted background color.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add login-03",
+    "docs": "https://ui.shadcn.com/blocks/login#login-03",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/login-03-light.png",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/login-04",
+    "source": "shadcn",
+    "name": "login-04",
+    "title": "Login 04",
+    "description": "A login page with form and image.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add login-04",
+    "docs": "https://ui.shadcn.com/blocks/login#login-04",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/login-04-light.png",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/login-05",
+    "source": "shadcn",
+    "name": "login-05",
+    "title": "Login 05",
+    "description": "A simple email-only login page.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add login-05",
+    "docs": "https://ui.shadcn.com/blocks/login#login-05",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/login-05-light.png",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-01",
+    "source": "shadcn",
+    "name": "sidebar-01",
+    "title": "Sidebar 01",
+    "description": "A simple sidebar with navigation grouped by section.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-01",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-01",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-01-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-02",
+    "source": "shadcn",
+    "name": "sidebar-02",
+    "title": "Sidebar 02",
+    "description": "A sidebar with collapsible sections.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-02",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-02",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-02-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-03",
+    "source": "shadcn",
+    "name": "sidebar-03",
+    "title": "Sidebar 03",
+    "description": "A sidebar with submenus.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-03",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-03",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-03-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-04",
+    "source": "shadcn",
+    "name": "sidebar-04",
+    "title": "Sidebar 04",
+    "description": "A floating sidebar with submenus.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-04",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-04",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-04-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-05",
+    "source": "shadcn",
+    "name": "sidebar-05",
+    "title": "Sidebar 05",
+    "description": "A sidebar with collapsible submenus.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-05",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-05",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-05-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-06",
+    "source": "shadcn",
+    "name": "sidebar-06",
+    "title": "Sidebar 06",
+    "description": "A sidebar with submenus as dropdowns.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-06",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-06",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-06-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-07",
+    "source": "shadcn",
+    "name": "sidebar-07",
+    "title": "Sidebar 07",
+    "description": "A sidebar that collapses to icons.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-07",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-07",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-07-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-08",
+    "source": "shadcn",
+    "name": "sidebar-08",
+    "title": "Sidebar 08",
+    "description": "An inset sidebar with secondary navigation.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-08",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-08",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-08-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-09",
+    "source": "shadcn",
+    "name": "sidebar-09",
+    "title": "Sidebar 09",
+    "description": "Collapsible nested sidebars.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-09",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-09",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-09-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-10",
+    "source": "shadcn",
+    "name": "sidebar-10",
+    "title": "Sidebar 10",
+    "description": "A sidebar in a popover.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-10",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-10",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-10-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-11",
+    "source": "shadcn",
+    "name": "sidebar-11",
+    "title": "Sidebar 11",
+    "description": "A sidebar with a collapsible file tree.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-11",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-11",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-11-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-12",
+    "source": "shadcn",
+    "name": "sidebar-12",
+    "title": "Sidebar 12",
+    "description": "A sidebar with a calendar.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-12",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-12",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-12-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-13",
+    "source": "shadcn",
+    "name": "sidebar-13",
+    "title": "Sidebar 13",
+    "description": "A sidebar in a dialog.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-13",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-13",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-13-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-14",
+    "source": "shadcn",
+    "name": "sidebar-14",
+    "title": "Sidebar 14",
+    "description": "A sidebar on the right.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-14",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-14",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-14-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-15",
+    "source": "shadcn",
+    "name": "sidebar-15",
+    "title": "Sidebar 15",
+    "description": "A left and right sidebar.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-15",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-15",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-15-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/sidebar-16",
+    "source": "shadcn",
+    "name": "sidebar-16",
+    "title": "Sidebar 16",
+    "description": "A sidebar with a sticky site header.",
+    "kind": "block",
+    "categories": [
+      "sidebar",
+      "dashboard"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add sidebar-16",
+    "docs": "https://ui.shadcn.com/blocks/sidebar#sidebar-16",
+    "preview": "https://ui.shadcn.com/r/styles/new-york/sidebar-16-light.png",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/signup-01",
+    "source": "shadcn",
+    "name": "signup-01",
+    "title": "Signup 01",
+    "description": "A simple signup form.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add signup-01",
+    "docs": "https://ui.shadcn.com/blocks/signup#signup-01",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/signup-02",
+    "source": "shadcn",
+    "name": "signup-02",
+    "title": "Signup 02",
+    "description": "A two column signup page with a cover image.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add signup-02",
+    "docs": "https://ui.shadcn.com/blocks/signup#signup-02",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/signup-03",
+    "source": "shadcn",
+    "name": "signup-03",
+    "title": "Signup 03",
+    "description": "A signup page with a muted background color.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add signup-03",
+    "docs": "https://ui.shadcn.com/blocks/signup#signup-03",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/signup-04",
+    "source": "shadcn",
+    "name": "signup-04",
+    "title": "Signup 04",
+    "description": "A signup page with form and image.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add signup-04",
+    "docs": "https://ui.shadcn.com/blocks/signup#signup-04",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "shadcn/signup-05",
+    "source": "shadcn",
+    "name": "signup-05",
+    "title": "Signup 05",
+    "description": "A simple signup form with social providers.",
+    "kind": "block",
+    "categories": [
+      "auth"
+    ],
+    "tags": [
+      "block"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add signup-05",
+    "docs": "https://ui.shadcn.com/blocks/signup#signup-05",
+    "dependencies": [
+      "cn"
+    ],
+    "curated": false,
+    "demo": false
+  }
+]

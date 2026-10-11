@@ -1,0 +1,14 @@
+name: Improvement or catalog suggestion
+description: Suggest a component, source or workflow improvement
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to build or improve?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Examples and source links
+      description: Include the intended feel, component type and licence if adding code.

@@ -1,0 +1,1560 @@
+[
+  {
+    "id": "magicui/android",
+    "source": "magicui",
+    "name": "android",
+    "title": "Android",
+    "description": "A mockup of an Android device.",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/android",
+    "docs": "https://magicui.design/docs/components/android",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-beam",
+    "source": "magicui",
+    "name": "animated-beam",
+    "title": "Animated Beam",
+    "description": "An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-beam",
+    "docs": "https://magicui.design/docs/components/animated-beam",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-circular-progress-bar",
+    "source": "magicui",
+    "name": "animated-circular-progress-bar",
+    "title": "Animated Circular Progress Bar",
+    "description": "Animated Circular Progress Bar is a component that displays a circular gauge with a percentage value.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-circular-progress-bar",
+    "docs": "https://magicui.design/docs/components/animated-circular-progress-bar",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-gradient-text",
+    "source": "magicui",
+    "name": "animated-gradient-text",
+    "title": "Animated Gradient Text",
+    "description": "An animated gradient background which transitions between colors for text.",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-gradient-text",
+    "docs": "https://magicui.design/docs/components/animated-gradient-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-grid-pattern",
+    "source": "magicui",
+    "name": "animated-grid-pattern",
+    "title": "Animated Grid Pattern",
+    "description": "A animated background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-grid-pattern",
+    "docs": "https://magicui.design/docs/components/animated-grid-pattern",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-list",
+    "source": "magicui",
+    "name": "animated-list",
+    "title": "Animated List",
+    "description": "A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-list",
+    "docs": "https://magicui.design/docs/components/animated-list",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-shiny-text",
+    "source": "magicui",
+    "name": "animated-shiny-text",
+    "title": "Animated Shiny Text",
+    "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-shiny-text",
+    "docs": "https://magicui.design/docs/components/animated-shiny-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/animated-theme-toggler",
+    "source": "magicui",
+    "name": "animated-theme-toggler",
+    "title": "Theme Toggler",
+    "description": "Theme toggle with View Transitions and animated clip-path masks (circle, polygons, star), optional viewport-centered origin.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/animated-theme-toggler",
+    "docs": "https://magicui.design/docs/components/animated-theme-toggler",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/aurora-text",
+    "source": "magicui",
+    "name": "aurora-text",
+    "title": "Aurora Text",
+    "description": "A beautiful aurora text effect",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/aurora-text",
+    "docs": "https://magicui.design/docs/components/aurora-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/avatar-circles",
+    "source": "magicui",
+    "name": "avatar-circles",
+    "title": "Avatar Circles",
+    "description": "Overlapping circles of avatars.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/avatar-circles",
+    "docs": "https://magicui.design/docs/components/avatar-circles",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/backlight",
+    "source": "magicui",
+    "name": "backlight",
+    "title": "Backlight",
+    "description": "A backlight glow effect for videos, images, and SVGs.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/backlight",
+    "docs": "https://magicui.design/docs/components/backlight",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/bento-grid",
+    "source": "magicui",
+    "name": "bento-grid",
+    "title": "Bento Grid",
+    "description": "Bento grid is a layout used to showcase the features of a product in a simple and elegant way.",
+    "kind": "component",
+    "categories": [
+      "bento",
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/bento-grid",
+    "docs": "https://magicui.design/docs/components/bento-grid",
+    "dependencies": [
+      "@radix-ui/react-icons"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/blur-fade",
+    "source": "magicui",
+    "name": "blur-fade",
+    "title": "Blur Fade",
+    "description": "Blur fade in and out animation. Used to smoothly fade in and out content.",
+    "kind": "component",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/blur-fade",
+    "docs": "https://magicui.design/docs/components/blur-fade",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/border-beam",
+    "source": "magicui",
+    "name": "border-beam",
+    "title": "Border Beam",
+    "description": "An animated beam of light which travels along the border of its container.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/border-beam",
+    "docs": "https://magicui.design/docs/components/border-beam",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/client-tweet-card",
+    "source": "magicui",
+    "name": "client-tweet-card",
+    "title": "Client Tweet Card",
+    "description": "A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/client-tweet-card",
+    "docs": "https://magicui.design/docs/components/client-tweet-card",
+    "dependencies": [
+      "react-tweet"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/code-comparison",
+    "source": "magicui",
+    "name": "code-comparison",
+    "title": "Code Comparison",
+    "description": "A component which compares two code snippets.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/code-comparison",
+    "docs": "https://magicui.design/docs/components/code-comparison",
+    "dependencies": [
+      "shiki",
+      "next-themes"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/comic-text",
+    "source": "magicui",
+    "name": "comic-text",
+    "title": "Comic Text",
+    "description": "Comic text animation",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/comic-text",
+    "docs": "https://magicui.design/docs/components/comic-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/confetti",
+    "source": "magicui",
+    "name": "confetti",
+    "title": "Confetti",
+    "description": "Confetti animations are best used to delight your users when something special happens",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/confetti",
+    "docs": "https://magicui.design/docs/components/confetti",
+    "dependencies": [
+      "canvas-confetti",
+      "@types/canvas-confetti"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/cool-mode",
+    "source": "magicui",
+    "name": "cool-mode",
+    "title": "Cool Mode",
+    "description": "Cool mode effect for buttons, links, and other DOMs",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/cool-mode",
+    "docs": "https://magicui.design/docs/components/cool-mode",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/dia-text-reveal",
+    "source": "magicui",
+    "name": "dia-text-reveal",
+    "title": "Dia Text Reveal",
+    "description": "A horizontal color band sweeps across text, revealing a gradient shine before settling on the base color.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/dia-text-reveal",
+    "docs": "https://magicui.design/docs/components/dia-text-reveal",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/dock",
+    "source": "magicui",
+    "name": "dock",
+    "title": "Dock",
+    "description": "An implementation of the MacOS dock using react + tailwindcss + motion",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/dock",
+    "docs": "https://magicui.design/docs/components/dock",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/dot-pattern",
+    "source": "magicui",
+    "name": "dot-pattern",
+    "title": "Dot Pattern",
+    "description": "A background dot pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/dot-pattern",
+    "docs": "https://magicui.design/docs/components/dot-pattern",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/dotted-map",
+    "source": "magicui",
+    "name": "dotted-map",
+    "title": "Dotted Map",
+    "description": "A component with a dotted map.",
+    "kind": "component",
+    "categories": [
+      "map"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/dotted-map",
+    "docs": "https://magicui.design/docs/components/dotted-map",
+    "dependencies": [
+      "svg-dotted-map"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/file-tree",
+    "source": "magicui",
+    "name": "file-tree",
+    "title": "File Tree",
+    "description": "A component used to showcase the folder and file structure of a directory.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/file-tree",
+    "docs": "https://magicui.design/docs/components/file-tree",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/flickering-grid",
+    "source": "magicui",
+    "name": "flickering-grid",
+    "title": "Flickering Grid",
+    "description": "A flickering grid background made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/flickering-grid",
+    "docs": "https://magicui.design/docs/components/flickering-grid",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/floating-3d-particles",
+    "source": "magicui",
+    "name": "floating-3d-particles",
+    "title": "Floating 3D Particles",
+    "description": "A canvas-based pseudo-3D particle field with perspective projection, continuous rotation and buoyant drift.",
+    "kind": "component",
+    "categories": [
+      "3d",
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/floating-3d-particles",
+    "docs": "https://magicui.design/docs/components/floating-3d-particles",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/glare-hover",
+    "source": "magicui",
+    "name": "glare-hover",
+    "title": "Glare Hover",
+    "description": "A diagonal glare on hover using a ::before gradient and CSS variables (angle, size, duration, color).",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/glare-hover",
+    "docs": "https://magicui.design/docs/components/glare-hover",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/globe",
+    "source": "magicui",
+    "name": "globe",
+    "title": "Globe",
+    "description": "An autorotating, interactive, and highly performant globe made using WebGL.",
+    "kind": "component",
+    "categories": [
+      "map"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/globe",
+    "docs": "https://magicui.design/docs/components/globe",
+    "dependencies": [
+      "cobe@^0.6.4",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/glyph-matrix",
+    "source": "magicui",
+    "name": "glyph-matrix",
+    "title": "Glyph Matrix",
+    "description": "An animated grid of subtly shifting glyphs with fade effect and theme support.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/glyph-matrix",
+    "docs": "https://magicui.design/docs/components/glyph-matrix",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/grid-pattern",
+    "source": "magicui",
+    "name": "grid-pattern",
+    "title": "Grid Pattern",
+    "description": "A background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/grid-pattern",
+    "docs": "https://magicui.design/docs/components/grid-pattern",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/hero-video-dialog",
+    "source": "magicui",
+    "name": "hero-video-dialog",
+    "title": "Hero Video Dialog",
+    "description": "A hero video dialog component.",
+    "kind": "component",
+    "categories": [
+      "hero",
+      "modal",
+      "image"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/hero-video-dialog",
+    "docs": "https://magicui.design/docs/components/hero-video-dialog",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/hexagon-pattern",
+    "source": "magicui",
+    "name": "hexagon-pattern",
+    "title": "Hexagon Pattern",
+    "description": "A background hexagon pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/hexagon-pattern",
+    "docs": "https://magicui.design/docs/components/hexagon-pattern",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/highlighter",
+    "source": "magicui",
+    "name": "highlighter",
+    "title": "Highlighter",
+    "description": "A text highlighter that mimics the effect of a human-drawn marker stroke.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/highlighter",
+    "docs": "https://magicui.design/docs/components/highlighter",
+    "dependencies": [
+      "motion",
+      "rough-notation"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/hyper-text",
+    "source": "magicui",
+    "name": "hyper-text",
+    "title": "Hyper Text",
+    "description": "A text animation that scrambles letters before revealing the final text.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/hyper-text",
+    "docs": "https://magicui.design/docs/components/hyper-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/icon-cloud",
+    "source": "magicui",
+    "name": "icon-cloud",
+    "title": "Icon Cloud",
+    "description": "An interactive 3D tag cloud component",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/icon-cloud",
+    "docs": "https://magicui.design/docs/components/icon-cloud",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/interactive-grid-pattern",
+    "source": "magicui",
+    "name": "interactive-grid-pattern",
+    "title": "Interactive Grid Pattern",
+    "description": "A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/interactive-grid-pattern",
+    "docs": "https://magicui.design/docs/components/interactive-grid-pattern",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/interactive-hover-button",
+    "source": "magicui",
+    "name": "interactive-hover-button",
+    "title": "Interactive Hover Button",
+    "description": "",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/interactive-hover-button",
+    "docs": "https://magicui.design/docs/components/interactive-hover-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/iphone",
+    "source": "magicui",
+    "name": "iphone",
+    "title": "iPhone",
+    "description": "A mockup of the iPhone",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/iphone",
+    "docs": "https://magicui.design/docs/components/iphone",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/kinetic-text",
+    "source": "magicui",
+    "name": "kinetic-text",
+    "title": "Kinetic Text",
+    "description": "A text component that animates font weight of characters on hover.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/kinetic-text",
+    "docs": "https://magicui.design/docs/components/kinetic-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/lens",
+    "source": "magicui",
+    "name": "lens",
+    "title": "Lens",
+    "description": "A interactive component that enables zooming into images, videos and other elements.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/lens",
+    "docs": "https://magicui.design/docs/components/lens",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/light-rays",
+    "source": "magicui",
+    "name": "light-rays",
+    "title": "Light Rays",
+    "description": "A component with animated light rays which shine down from above.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/light-rays",
+    "docs": "https://magicui.design/docs/components/light-rays",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/line-shadow-text",
+    "source": "magicui",
+    "name": "line-shadow-text",
+    "title": "Line Shadow Text",
+    "description": "A text component with a moving line shadow.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/line-shadow-text",
+    "docs": "https://magicui.design/docs/components/line-shadow-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/magic-card",
+    "source": "magicui",
+    "name": "magic-card",
+    "title": "Magic Card",
+    "description": "A spotlight effect that follows your mouse cursor and highlights borders on hover.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/magic-card",
+    "docs": "https://magicui.design/docs/components/magic-card",
+    "dependencies": [
+      "motion",
+      "next-themes"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/marquee",
+    "source": "magicui",
+    "name": "marquee",
+    "title": "Marquee",
+    "description": "An infinite scrolling component that can be used to display text, images, or videos.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/marquee",
+    "docs": "https://magicui.design/docs/components/marquee",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/meteors",
+    "source": "magicui",
+    "name": "meteors",
+    "title": "Meteors",
+    "description": "A meteor shower effect.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/meteors",
+    "docs": "https://magicui.design/docs/components/meteors",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/morphing-text",
+    "source": "magicui",
+    "name": "morphing-text",
+    "title": "Morphing Text",
+    "description": "A dynamic text morphing component for Magic UI.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/morphing-text",
+    "docs": "https://magicui.design/docs/components/morphing-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/neon-gradient-card",
+    "source": "magicui",
+    "name": "neon-gradient-card",
+    "title": "Neon Gradient Card",
+    "description": "A beautiful neon card effect",
+    "kind": "component",
+    "categories": [
+      "card",
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/neon-gradient-card",
+    "docs": "https://magicui.design/docs/components/neon-gradient-card",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/noise-texture",
+    "source": "magicui",
+    "name": "noise-texture",
+    "title": "Noise Texture",
+    "description": "An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "text-effect"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/noise-texture",
+    "docs": "https://magicui.design/docs/components/noise-texture",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/number-ticker",
+    "source": "magicui",
+    "name": "number-ticker",
+    "title": "Number Ticker",
+    "description": "Animate numbers to count up or down to a target number",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/number-ticker",
+    "docs": "https://magicui.design/docs/components/number-ticker",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/orbiting-circles",
+    "source": "magicui",
+    "name": "orbiting-circles",
+    "title": "Orbiting Circles",
+    "description": "A collection of circles which move in orbit along a circular path",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/orbiting-circles",
+    "docs": "https://magicui.design/docs/components/orbiting-circles",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/particles",
+    "source": "magicui",
+    "name": "particles",
+    "title": "Particles",
+    "description": "Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/particles",
+    "docs": "https://magicui.design/docs/components/particles",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/pixel-image",
+    "source": "magicui",
+    "name": "pixel-image",
+    "title": "Pixel Image",
+    "description": "A component that displays an image with a pixelated effect, creating a retro aesthetic.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/pixel-image",
+    "docs": "https://magicui.design/docs/components/pixel-image",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/pointer",
+    "source": "magicui",
+    "name": "pointer",
+    "title": "Pointer",
+    "description": "A component that displays a pointer when hovering over an element",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/pointer",
+    "docs": "https://magicui.design/docs/components/pointer",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/progressive-blur",
+    "source": "magicui",
+    "name": "progressive-blur",
+    "title": "Progressive Blur",
+    "description": "The Progressive Blur component adds a smooth blur gradient effect to scrollable content, indicating more content below or above.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/progressive-blur",
+    "docs": "https://magicui.design/docs/components/progressive-blur",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/pulsating-button",
+    "source": "magicui",
+    "name": "pulsating-button",
+    "title": "Pulsating Button",
+    "description": "An animated pulsating button useful for capturing attention of users.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/pulsating-button",
+    "docs": "https://magicui.design/docs/components/pulsating-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/rainbow-button",
+    "source": "magicui",
+    "name": "rainbow-button",
+    "title": "Rainbow Button",
+    "description": "An animated button with a rainbow effect.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/rainbow-button",
+    "docs": "https://magicui.design/docs/components/rainbow-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/retro-grid",
+    "source": "magicui",
+    "name": "retro-grid",
+    "title": "Retro Grid",
+    "description": "An animated scrolling retro grid effect",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/retro-grid",
+    "docs": "https://magicui.design/docs/components/retro-grid",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/ripple",
+    "source": "magicui",
+    "name": "ripple",
+    "title": "Ripple",
+    "description": "An animated ripple effect typically used behind elements to emphasize them.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/ripple",
+    "docs": "https://magicui.design/docs/components/ripple",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/ripple-button",
+    "source": "magicui",
+    "name": "ripple-button",
+    "title": "Ripple Button",
+    "description": "An animated button with ripple useful for user engagement.",
+    "kind": "component",
+    "categories": [
+      "button",
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/ripple-button",
+    "docs": "https://magicui.design/docs/components/ripple-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/safari",
+    "source": "magicui",
+    "name": "safari",
+    "title": "Safari",
+    "description": "A safari browser mockup to showcase your website.",
+    "kind": "component",
+    "categories": [
+      "illustration"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/safari",
+    "docs": "https://magicui.design/docs/components/safari",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/scroll-based-velocity",
+    "source": "magicui",
+    "name": "scroll-based-velocity",
+    "title": "Scroll Based Velocity",
+    "description": "Scrolling text whose speed changes based on scroll speed",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/scroll-based-velocity",
+    "docs": "https://magicui.design/docs/components/scroll-based-velocity",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/scroll-progress",
+    "source": "magicui",
+    "name": "scroll-progress",
+    "title": "Scroll Progress",
+    "description": "Animated Scroll Progress for your pages",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "loader"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/scroll-progress",
+    "docs": "https://magicui.design/docs/components/scroll-progress",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/shimmer-button",
+    "source": "magicui",
+    "name": "shimmer-button",
+    "title": "Shimmer Button",
+    "description": "A button with a shimmering light which travels around the perimeter.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/shimmer-button",
+    "docs": "https://magicui.design/docs/components/shimmer-button",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/shine-border",
+    "source": "magicui",
+    "name": "shine-border",
+    "title": "Shine Border",
+    "description": "Shine border is an animated background border effect.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/shine-border",
+    "docs": "https://magicui.design/docs/components/shine-border",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/shiny-button",
+    "source": "magicui",
+    "name": "shiny-button",
+    "title": "Shiny Button",
+    "description": "A shiny button component with dynamic styles in the dark mode or light mode.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/shiny-button",
+    "docs": "https://magicui.design/docs/components/shiny-button",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/smooth-cursor",
+    "source": "magicui",
+    "name": "smooth-cursor",
+    "title": "Smooth Cursor",
+    "description": "A customizable, physics-based smooth cursor animation component with spring animations and rotation effects",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/smooth-cursor",
+    "docs": "https://magicui.design/docs/components/smooth-cursor",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/sparkles-text",
+    "source": "magicui",
+    "name": "sparkles-text",
+    "title": "Sparkles Text",
+    "description": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars.",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/sparkles-text",
+    "docs": "https://magicui.design/docs/components/sparkles-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/spinning-text",
+    "source": "magicui",
+    "name": "spinning-text",
+    "title": "Spinning Text",
+    "description": "The Spinning Text component animates text in a circular motion with customizable speed, direction, color, and transitions for dynamic and engaging effects.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/spinning-text",
+    "docs": "https://magicui.design/docs/components/spinning-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/striped-pattern",
+    "source": "magicui",
+    "name": "striped-pattern",
+    "title": "Striped Pattern",
+    "description": "A background striped pattern made with SVGs, fully customizable using Tailwind CSS.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/striped-pattern",
+    "docs": "https://magicui.design/docs/components/striped-pattern",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/terminal",
+    "source": "magicui",
+    "name": "terminal",
+    "title": "Terminal",
+    "description": "A terminal component",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/terminal",
+    "docs": "https://magicui.design/docs/components/terminal",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/text-3d-flip",
+    "source": "magicui",
+    "name": "text-3d-flip",
+    "title": "Text 3D Flip",
+    "description": "A text effect that flips each letter in 3D with a staggered animation on hover.",
+    "kind": "effect",
+    "categories": [
+      "text-effect",
+      "3d"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/text-3d-flip",
+    "docs": "https://magicui.design/docs/components/text-3d-flip",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/text-animate",
+    "source": "magicui",
+    "name": "text-animate",
+    "title": "Text Animate",
+    "description": "A text animation component that animates text using a variety of different animations.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/text-animate",
+    "docs": "https://magicui.design/docs/components/text-animate",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/text-reveal",
+    "source": "magicui",
+    "name": "text-reveal",
+    "title": "Text Reveal",
+    "description": "Fade in text as you scroll down the page.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/text-reveal",
+    "docs": "https://magicui.design/docs/components/text-reveal",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/tweet-card",
+    "source": "magicui",
+    "name": "tweet-card",
+    "title": "Tweet Card",
+    "description": "A card that displays a tweet with the author's name, handle, and profile picture.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/tweet-card",
+    "docs": "https://magicui.design/docs/components/tweet-card",
+    "dependencies": [
+      "react-tweet"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/typing-animation",
+    "source": "magicui",
+    "name": "typing-animation",
+    "title": "Typing Animation",
+    "description": "Characters appearing in typed animation",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/typing-animation",
+    "docs": "https://magicui.design/docs/components/typing-animation",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/video-text",
+    "source": "magicui",
+    "name": "video-text",
+    "title": "Video Text",
+    "description": "A component that displays text with a video playing in the background.",
+    "kind": "effect",
+    "categories": [
+      "text-effect",
+      "image"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/video-text",
+    "docs": "https://magicui.design/docs/components/video-text",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/warp-background",
+    "source": "magicui",
+    "name": "warp-background",
+    "title": "Warp Background",
+    "description": "A card with a time warping background effect.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/warp-background",
+    "docs": "https://magicui.design/docs/components/warp-background",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "magicui/word-rotate",
+    "source": "magicui",
+    "name": "word-rotate",
+    "title": "Word Rotate",
+    "description": "A vertical rotation of words",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "motion"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @magicui/word-rotate",
+    "docs": "https://magicui.design/docs/components/word-rotate",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  }
+]

@@ -1,0 +1,5454 @@
+[
+  {
+    "id": "react-bits/accordion-gallery",
+    "source": "react-bits",
+    "name": "accordion-gallery",
+    "title": "Accordion Gallery",
+    "description": "Panels expand on hover or focus, revealing parallax imagery and captions.",
+    "kind": "component",
+    "categories": [
+      "accordion",
+      "image"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/AccordionGallery-TS-TW",
+    "docs": "https://www.reactbits.dev/components/accordion-gallery",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/acid-squares",
+    "source": "react-bits",
+    "name": "acid-squares",
+    "title": "Acid Squares",
+    "description": "A crystalline corridor of stacked squares receding into depth.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/AcidSquares-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/acid-squares",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/aero-shards",
+    "source": "react-bits",
+    "name": "aero-shards",
+    "title": "Aero Shards",
+    "description": "A GPU-driven wind sculpture of folded foil shards with crisp detail, content-safe placements, and responsive pointer interactions.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/AeroShards-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/aero-shards",
+    "dependencies": [
+      "vgpu"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/animated-content",
+    "source": "react-bits",
+    "name": "animated-content",
+    "title": "Animated Content",
+    "description": "Wrapper that animates any children on scroll or mount with configurable direction, distance, duration, easing and disappear options.",
+    "kind": "effect",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/AnimatedContent-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/animated-content",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/animated-list",
+    "source": "react-bits",
+    "name": "animated-list",
+    "title": "Animated List",
+    "description": "List items enter with staggered motion variants for polished reveals.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/AnimatedList-TS-TW",
+    "docs": "https://www.reactbits.dev/components/animated-list",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/antigravity",
+    "source": "react-bits",
+    "name": "antigravity",
+    "title": "Antigravity",
+    "description": "3D antigravity particle field that repels from the cursor with smooth motion.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Antigravity-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/antigravity",
+    "dependencies": [
+      "@react-three/fiber",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ascii-text",
+    "source": "react-bits",
+    "name": "ascii-text",
+    "title": "ASCII Text",
+    "description": "Renders text with an animated ASCII background for a retro feel.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ASCIIText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/ascii-text",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/aurora",
+    "source": "react-bits",
+    "name": "aurora",
+    "title": "Aurora",
+    "description": "Flowing aurora gradient background.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Aurora-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/aurora",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/balatro",
+    "source": "react-bits",
+    "name": "balatro",
+    "title": "Balatro",
+    "description": "The balatro shader, fully customizalbe and interactive.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Balatro-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/balatro",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ballpit",
+    "source": "react-bits",
+    "name": "ballpit",
+    "title": "Ballpit",
+    "description": "Physics ball pit simulation with bouncing colorful spheres.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "gsap",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Ballpit-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/ballpit",
+    "dependencies": [
+      "gsap",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/beams",
+    "source": "react-bits",
+    "name": "beams",
+    "title": "Beams",
+    "description": "Crossing animated ribbons with customizable properties.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Beams-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/beams",
+    "dependencies": [
+      "three",
+      "@react-three/fiber",
+      "@react-three/drei"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/bell-toggle",
+    "source": "react-bits",
+    "name": "bell-toggle",
+    "title": "Bell Toggle",
+    "description": "Pill toggle that answers a press at three tempos: the bell rings on damped keyframes, the label blur-crossfades, and the pill unfurls to the longer label through a clip-path on a critically damped spring. The pressed state is the receipt.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BellToggle-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/bell-toggle",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/blob-cursor",
+    "source": "react-bits",
+    "name": "blob-cursor",
+    "title": "Blob Cursor",
+    "description": "Organic blob cursor that smoothly follows the pointer with inertia and elastic morphing.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BlobCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/blob-cursor",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/blur-text",
+    "source": "react-bits",
+    "name": "blur-text",
+    "title": "Blur Text",
+    "description": "Text starts blurred then crisply resolves for a soft-focus reveal effect.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BlurText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/blur-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/border-glow",
+    "source": "react-bits",
+    "name": "border-glow",
+    "title": "Border Glow",
+    "description": "Glowing mesh-gradient border that follows cursor direction and intensifies near edges.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BorderGlow-TS-TW",
+    "docs": "https://www.reactbits.dev/components/border-glow",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/bounce-cards",
+    "source": "react-bits",
+    "name": "bounce-cards",
+    "title": "Bounce Cards",
+    "description": "Cards bounce that bounce in on mount.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BounceCards-TS-TW",
+    "docs": "https://www.reactbits.dev/components/bounce-cards",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/branched-menu",
+    "source": "react-bits",
+    "name": "branched-menu",
+    "title": "Branched Menu",
+    "description": "Collapsible menu whose sections unfold into a trunk with a curved branch to each child, and an accent line that travels down the trunk and around the curve to whatever you pick, while a marker glides to the open section.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BranchedMenu-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/branched-menu",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/bubble-menu",
+    "source": "react-bits",
+    "name": "bubble-menu",
+    "title": "Bubble Menu",
+    "description": "Floating circular expanding menu with staggered item reveal.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/BubbleMenu-TS-TW",
+    "docs": "https://www.reactbits.dev/components/bubble-menu",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/call-chip",
+    "source": "react-bits",
+    "name": "call-chip",
+    "title": "Call Chip",
+    "description": "Inline tool-call chip whose fill wipes across while a live ms counter ticks, completing with a green wash on success or stopping short and shaking red with a retry glyph on error.",
+    "kind": "component",
+    "categories": [
+      "badge"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CallChip-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/call-chip",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/card-nav",
+    "source": "react-bits",
+    "name": "card-nav",
+    "title": "Card Nav",
+    "description": "Expandable navigation bar with card panels revealing nested links.",
+    "kind": "component",
+    "categories": [
+      "navigation",
+      "card"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CardNav-TS-TW",
+    "docs": "https://www.reactbits.dev/components/card-nav",
+    "dependencies": [
+      "gsap",
+      "react-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/card-swap",
+    "source": "react-bits",
+    "name": "card-swap",
+    "title": "Card Swap",
+    "description": "Cards animate position swapping with smooth layout transitions.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CardSwap-TS-TW",
+    "docs": "https://www.reactbits.dev/components/card-swap",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/carousel",
+    "source": "react-bits",
+    "name": "carousel",
+    "title": "Carousel",
+    "description": "Responsive carousel with touch gestures, looping and transitions.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Carousel-TS-TW",
+    "docs": "https://www.reactbits.dev/components/carousel",
+    "dependencies": [
+      "motion",
+      "react-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/chroma-grid",
+    "source": "react-bits",
+    "name": "chroma-grid",
+    "title": "Chroma Grid",
+    "description": "A responsive grid of grayscale tiles. Hovering the grid reaveals their colors.",
+    "kind": "component",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ChromaGrid-TS-TW",
+    "docs": "https://www.reactbits.dev/components/chroma-grid",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/circular-carousel",
+    "source": "react-bits",
+    "name": "circular-carousel",
+    "title": "Circular Carousel",
+    "description": "A 3D ring of images with four layouts, bendable cards, depth fade, momentum drag, snapping and click to focus.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CircularCarousel-TS-TW",
+    "docs": "https://www.reactbits.dev/components/circular-carousel",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/circular-gallery",
+    "source": "react-bits",
+    "name": "circular-gallery",
+    "title": "Circular Gallery",
+    "description": "Circular orbit gallery rotating images.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "components",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CircularGallery-TS-TW",
+    "docs": "https://www.reactbits.dev/components/circular-gallery",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/circular-text",
+    "source": "react-bits",
+    "name": "circular-text",
+    "title": "Circular Text",
+    "description": "Layouts characters around a circle with optional rotation animation.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CircularText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/circular-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/click-spark",
+    "source": "react-bits",
+    "name": "click-spark",
+    "title": "Click Spark",
+    "description": "Creates particle spark bursts at click position.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ClickSpark-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/click-spark",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/code-slots",
+    "source": "react-bits",
+    "name": "code-slots",
+    "title": "Code Slots",
+    "description": "One-time-code input where a hidden overlay input owns focus, paste and SMS autofill while each slot lands its digit on one spring: the fill swells from the centre, the digit rises and the caret glides; a wrong code drains the slots in a cascade, a right one merges them into a single accent wash.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CodeSlots-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/code-slots",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/color-bends",
+    "source": "react-bits",
+    "name": "color-bends",
+    "title": "Color Bends",
+    "description": "Vibrant color bends with smooth flowing animation.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ColorBends-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/color-bends",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/comet-dial",
+    "source": "react-bits",
+    "name": "comet-dial",
+    "title": "Comet Dial",
+    "description": "Tick-ring dial you flick by angle: the reading launches on a spring and a velocity-driven comet streaks behind the lit head, trailing the direction of travel and vanishing at rest.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CometDial-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/comet-dial",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/count-up",
+    "source": "react-bits",
+    "name": "count-up",
+    "title": "Count Up",
+    "description": "Animated number counter supporting formatting and decimals.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CountUp-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/count-up",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/counter",
+    "source": "react-bits",
+    "name": "counter",
+    "title": "Counter",
+    "description": "Flexible animated counter supporting increments + easing.",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Counter-TS-TW",
+    "docs": "https://www.reactbits.dev/components/counter",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/crosshair",
+    "source": "react-bits",
+    "name": "crosshair",
+    "title": "Crosshair",
+    "description": "Custom crosshair cursor with tracking, and link hover effects.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Crosshair-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/crosshair",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/crt-warp",
+    "source": "react-bits",
+    "name": "crt-warp",
+    "title": "CRT Warp",
+    "description": "Full-canvas CRT plasma with curved distortion, scanlines, bloom and pointer interaction.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CRTWarp-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/crt-warp",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/cubes",
+    "source": "react-bits",
+    "name": "cubes",
+    "title": "Cubes",
+    "description": "3D rotating cube cluster. Supports auto-rotation or hover interaction.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Cubes-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/cubes",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/cursor-grid",
+    "source": "react-bits",
+    "name": "cursor-grid",
+    "title": "Cursor Grid",
+    "description": "Canvas grid whose cells light up around the cursor with configurable radius, falloff and click pulses.",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "cursor"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CursorGrid-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/cursor-grid",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/curved-input",
+    "source": "react-bits",
+    "name": "curved-input",
+    "title": "Curved Input",
+    "description": "Arc-bent input bar with text, caret and submit button all following the curve.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CurvedInput-TS-TW",
+    "docs": "https://www.reactbits.dev/components/curved-input",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/curved-loop",
+    "source": "react-bits",
+    "name": "curved-loop",
+    "title": "Curved Loop",
+    "description": "Flowing looping text path along a customizable curve with drag interaction.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/CurvedLoop-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/curved-loop",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dark-veil",
+    "source": "react-bits",
+    "name": "dark-veil",
+    "title": "Dark Veil",
+    "description": "Subtle dark background with a smooth animation and postprocessing.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DarkVeil-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/dark-veil",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/decay-card",
+    "source": "react-bits",
+    "name": "decay-card",
+    "title": "Decay Card",
+    "description": "Hover parallax effect that disintegrates the content of a card.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DecayCard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/decay-card",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/decrypted-text",
+    "source": "react-bits",
+    "name": "decrypted-text",
+    "title": "Decrypted Text",
+    "description": "Hacker-style decryption cycling random glyphs until resolving to real text.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DecryptedText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/decrypted-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/depth-carousel",
+    "source": "react-bits",
+    "name": "depth-carousel",
+    "title": "Depth Carousel",
+    "description": "Cards recede into depth on a 3D rail, with drag, keyboard and auto-advance.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DepthCarousel-TS-TW",
+    "docs": "https://www.reactbits.dev/components/depth-carousel",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/depth-text",
+    "source": "react-bits",
+    "name": "depth-text",
+    "title": "Depth Text",
+    "description": "Layered extruded type with parallax that shifts against the pointer.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DepthText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/depth-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dither",
+    "source": "react-bits",
+    "name": "dither",
+    "title": "Dither",
+    "description": "Retro dithered noise shader background.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Dither-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/dither",
+    "dependencies": [
+      "@react-three/fiber",
+      "@react-three/postprocessing",
+      "postprocessing",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dither-veil",
+    "source": "react-bits",
+    "name": "dither-veil",
+    "title": "Dither Veil",
+    "description": "A photo printed as a 1-bit dither that the cursor burns through to full colour, leaving a trail that knits back cell by cell.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DitherVeil-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/dither-veil",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dock",
+    "source": "react-bits",
+    "name": "dock",
+    "title": "Dock",
+    "description": "macOS style magnifying dock with proximity scaling of icons.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Dock-TS-TW",
+    "docs": "https://www.reactbits.dev/components/dock",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dodge-field",
+    "source": "react-bits",
+    "name": "dodge-field",
+    "title": "Dodge Field",
+    "description": "Wrapper that makes any child flee the pointer inside a bounded field, dodges once per approach, then relents after a few tries and glides home.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DodgeField-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/dodge-field",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dome-gallery",
+    "source": "react-bits",
+    "name": "dome-gallery",
+    "title": "Dome Gallery",
+    "description": "Immersive 3D dome gallery projecting images on a hemispheric surface.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DomeGallery-TS-TW",
+    "docs": "https://www.reactbits.dev/components/dome-gallery",
+    "dependencies": [
+      "@use-gesture/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dot-field",
+    "source": "react-bits",
+    "name": "dot-field",
+    "title": "Dot Field",
+    "description": "Interactive dot grid with cursor bulge, glow, sparkle, and wave effects.",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "input"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DotField-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/dot-field",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/dot-grid",
+    "source": "react-bits",
+    "name": "dot-grid",
+    "title": "Dot Grid",
+    "description": "Animated dot grid with cursor interactions.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DotGrid-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/dot-grid",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/drift-wall",
+    "source": "react-bits",
+    "name": "drift-wall",
+    "title": "Drift Wall",
+    "description": "An endless perspective wall of tiles drifting past, lifting on hover.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/DriftWall-TS-TW",
+    "docs": "https://www.reactbits.dev/components/drift-wall",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/echo-text",
+    "source": "react-bits",
+    "name": "echo-text",
+    "title": "Echo Text",
+    "description": "Ghosted copies trail behind the text and settle into a single word.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/EchoText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/echo-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/elastic-mesh",
+    "source": "react-bits",
+    "name": "elastic-mesh",
+    "title": "Elastic Mesh",
+    "description": "Spring-mesh surface that stretches under the pointer and settles back with damped physics.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ElasticMesh-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/elastic-mesh",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/elastic-slider",
+    "source": "react-bits",
+    "name": "elastic-slider",
+    "title": "Elastic Slider",
+    "description": "Slider handle stretches elastically then snaps with spring physics.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ElasticSlider-TS-TW",
+    "docs": "https://www.reactbits.dev/components/elastic-slider",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/electric-border",
+    "source": "react-bits",
+    "name": "electric-border",
+    "title": "Electric Border",
+    "description": "Jittery electric energy border with animated arcs, glow and adjustable intensity.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ElectricBorder-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/electric-border",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/electric-logo",
+    "source": "react-bits",
+    "name": "electric-logo",
+    "title": "Electric Logo",
+    "description": "Turns any SVG or PNG into a living lightning outline, with flowing strands, arcs that leap off the edges and a charge that follows the cursor.",
+    "kind": "effect",
+    "categories": [
+      "logo-cloud"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ElectricLogo-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/electric-logo",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/evil-eye",
+    "source": "react-bits",
+    "name": "evil-eye",
+    "title": "Evil Eye",
+    "description": "Procedural evil eye shader with animated iris, slit pupil, and fiery outer glow.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/EvilEye-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/evil-eye",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/fade-content",
+    "source": "react-bits",
+    "name": "fade-content",
+    "title": "Fade Content",
+    "description": "Simple directional fade / slide entrance / exit wrapper with threshold-based activation.",
+    "kind": "effect",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FadeContent-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/fade-content",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/falling-text",
+    "source": "react-bits",
+    "name": "falling-text",
+    "title": "Falling Text",
+    "description": "Characters fall with gravity + bounce creating a playful entrance.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FallingText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/falling-text",
+    "dependencies": [
+      "matter-js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/faulty-terminal",
+    "source": "react-bits",
+    "name": "faulty-terminal",
+    "title": "Faulty Terminal",
+    "description": "Terminal CRT scanline squares effect with flicker + noise.",
+    "kind": "effect",
+    "categories": [
+      "code",
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FaultyTerminal-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/faulty-terminal",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ferrofluid",
+    "source": "react-bits",
+    "name": "ferrofluid",
+    "title": "Ferrofluid",
+    "description": "A churning magnetic fluid traced by glowing contour lines, with a cursor magnet.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Ferrofluid-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/ferrofluid",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/flex-carousel",
+    "source": "react-bits",
+    "name": "flex-carousel",
+    "title": "Flex Carousel",
+    "description": "An infinite image row that flows through invisible liquid glass at its edges, with four bend presets, five entrances, a speed squeeze and click to focus.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "components",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FlexCarousel-TS-TW",
+    "docs": "https://www.reactbits.dev/components/flex-carousel",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/flip-card",
+    "source": "react-bits",
+    "name": "flip-card",
+    "title": "Flip Card",
+    "description": "Two-faced card that flips in 3D on a click, a drag or a flick, settling on a spring that carries your release velocity, with an optional cursor tilt, a sheen that follows the pointer and a shadow that narrows as it turns edge on.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FlipCard-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/flip-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/floating-lines",
+    "source": "react-bits",
+    "name": "floating-lines",
+    "title": "Floating Lines",
+    "description": "3D floating lines that react to cursor movement.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FloatingLines-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/floating-lines",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/flowing-menu",
+    "source": "react-bits",
+    "name": "flowing-menu",
+    "title": "Flowing Menu",
+    "description": "Liquid flowing active indicator glides between menu items.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FlowingMenu-TS-TW",
+    "docs": "https://www.reactbits.dev/components/flowing-menu",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/fluid-glass",
+    "source": "react-bits",
+    "name": "fluid-glass",
+    "title": "Fluid Glass",
+    "description": "Glassmorphism container with animated liquid distortion refraction.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FluidGlass-TS-TW",
+    "docs": "https://www.reactbits.dev/components/fluid-glass",
+    "dependencies": [
+      "three",
+      "@react-three/fiber",
+      "@react-three/drei",
+      "maath"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/flying-posters",
+    "source": "react-bits",
+    "name": "flying-posters",
+    "title": "Flying Posters",
+    "description": "3D posters rotate on scroll infinitely.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FlyingPosters-TS-TW",
+    "docs": "https://www.reactbits.dev/components/flying-posters",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/fold-text",
+    "source": "react-bits",
+    "name": "fold-text",
+    "title": "Fold Text",
+    "description": "Lines unfold into place like creased paper opening flat.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FoldText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/fold-text",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/folder",
+    "source": "react-bits",
+    "name": "folder",
+    "title": "Folder",
+    "description": "Interactive folder opens to reveal nested content smooth motion.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Folder-TS-TW",
+    "docs": "https://www.reactbits.dev/components/folder",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/folder-float",
+    "source": "react-bits",
+    "name": "folder-float",
+    "title": "Folder Float",
+    "description": "Folder that opens on hover or press: the flap tilts toward you, a paper edge rises, and its notes spring out from behind the flap into a floating cloud to pick from, then sink back when the folder closes.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FolderFloat-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/folder-float",
+    "dependencies": [
+      "matter-js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/fuse-button",
+    "source": "react-bits",
+    "name": "fuse-button",
+    "title": "Fuse Button",
+    "description": "Action button whose done state carries its own undo on a burning fuse: press, the label crossfades to Undo, a hairline burns for the undo window, and Undo or Escape runs it back.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FuseButton-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/fuse-button",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/fuzzy-text",
+    "source": "react-bits",
+    "name": "fuzzy-text",
+    "title": "Fuzzy Text",
+    "description": "Vibrating fuzzy text with controllable hover intensity.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/FuzzyText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/fuzzy-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/galaxy",
+    "source": "react-bits",
+    "name": "galaxy",
+    "title": "Galaxy",
+    "description": "Parallax realistic starfield with pointer interactions.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Galaxy-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/galaxy",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ghost-cursor",
+    "source": "react-bits",
+    "name": "ghost-cursor",
+    "title": "Ghost Cursor",
+    "description": "Semi-transparent ghost cursor that smoothly follows the real cursor with a trailing effect.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GhostCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/ghost-cursor",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ghost-fibers",
+    "source": "react-bits",
+    "name": "ghost-fibers",
+    "title": "Ghost Fibers",
+    "description": "A deep-blue recursive fiber field with luminous bands, radial twisting and soft atmospheric glow.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GhostFibers-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/ghost-fibers",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/glare-hover",
+    "source": "react-bits",
+    "name": "glare-hover",
+    "title": "Glare Hover",
+    "description": "Adds a realistic moving glare highlight on hover over any element.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GlareHover-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/glare-hover",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/glass-icons",
+    "source": "react-bits",
+    "name": "glass-icons",
+    "title": "Glass Icons",
+    "description": "Icon set styled with frosted glass blur.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GlassIcons-TS-TW",
+    "docs": "https://www.reactbits.dev/components/glass-icons",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/glass-surface",
+    "source": "react-bits",
+    "name": "glass-surface",
+    "title": "Glass Surface",
+    "description": "Advanced Apple-style glass surface with real-time distortion + lighting.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GlassSurface-TS-TW",
+    "docs": "https://www.reactbits.dev/components/glass-surface",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/glide-select",
+    "source": "react-bits",
+    "name": "glide-select",
+    "title": "Glide Select",
+    "description": "Select chip whose menu pops out of its own corner and whose single hover highlight glides between rows, remembering where you left it so re-entry slides from there instead of blinking in.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GlideSelect-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/glide-select",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/glitch-text",
+    "source": "react-bits",
+    "name": "glitch-text",
+    "title": "Glitch Text",
+    "description": "RGB split and distortion glitch effect with jitter effects.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GlitchText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/glitch-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/glow-cursor",
+    "source": "react-bits",
+    "name": "glow-cursor",
+    "title": "Glow Cursor",
+    "description": "Shader-powered light trail that smoothly follows the pointer with customizable glow, color, taper and pulse.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GlowCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/glow-cursor",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/gooey-nav",
+    "source": "react-bits",
+    "name": "gooey-nav",
+    "title": "Gooey Nav",
+    "description": "Navigation indicator morphs with gooey blob transitions between items.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GooeyNav-TS-TW",
+    "docs": "https://www.reactbits.dev/components/gooey-nav",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/gradient-blinds",
+    "source": "react-bits",
+    "name": "gradient-blinds",
+    "title": "Gradient Blinds",
+    "description": "Layered gradient blinds with spotlight and noise distortion.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GradientBlinds-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/gradient-blinds",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/gradient-text",
+    "source": "react-bits",
+    "name": "gradient-text",
+    "title": "Gradient Text",
+    "description": "Animated gradient sweep across live text with speed and color control.",
+    "kind": "effect",
+    "categories": [
+      "background",
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GradientText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/gradient-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/gradient-waves",
+    "source": "react-bits",
+    "name": "gradient-waves",
+    "title": "Gradient Waves",
+    "description": "Raymarched sine waves rolling toward a soft, hazy horizon.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GradientWaves-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/gradient-waves",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/gradual-blur",
+    "source": "react-bits",
+    "name": "gradual-blur",
+    "title": "Gradual Blur",
+    "description": "Progressively un-blurs content based on scroll or trigger creating a cinematic reveal.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GradualBlur-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/gradual-blur",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/grainient",
+    "source": "react-bits",
+    "name": "grainient",
+    "title": "Grainient",
+    "description": "Grainy gradient swirls with soft wave distortion.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Grainient-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/grainient",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/grid-distortion",
+    "source": "react-bits",
+    "name": "grid-distortion",
+    "title": "Grid Distortion",
+    "description": "Warped grid mesh distorts smoothly reacting to cursor.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GridDistortion-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/grid-distortion",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/grid-motion",
+    "source": "react-bits",
+    "name": "grid-motion",
+    "title": "Grid Motion",
+    "description": "Perspective moving grid lines based on cusror position.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GridMotion-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/grid-motion",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/grid-scan",
+    "source": "react-bits",
+    "name": "grid-scan",
+    "title": "Grid Scan",
+    "description": "Animated grid room 3D scan effect and cool interactions.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/GridScan-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/grid-scan",
+    "dependencies": [
+      "face-api.js",
+      "postprocessing",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/halftone-reveal",
+    "source": "react-bits",
+    "name": "halftone-reveal",
+    "title": "Halftone Reveal",
+    "description": "Print-style halftone dot matrix that resolves into sharp content around the cursor.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/HalftoneReveal-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/halftone-reveal",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/hold-button",
+    "source": "react-bits",
+    "name": "hold-button",
+    "title": "Hold Button",
+    "description": "Hold-to-confirm button whose liquid fill rises while pressed, snaps back on an early release and swaps its label through a blur when the hold completes.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/HoldButton-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/hold-button",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/hyperspeed",
+    "source": "react-bits",
+    "name": "hyperspeed",
+    "title": "Hyperspeed",
+    "description": "Animated lines continuously moving to simulate hyperspace travel on click hold.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Hyperspeed-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/hyperspeed",
+    "dependencies": [
+      "postprocessing",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/image-trail",
+    "source": "react-bits",
+    "name": "image-trail",
+    "title": "Image Trail",
+    "description": "Cursor-based image trail with several built-in variants.",
+    "kind": "effect",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ImageTrail-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/image-trail",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/infinite-menu",
+    "source": "react-bits",
+    "name": "infinite-menu",
+    "title": "Infinite Menu",
+    "description": "Horizontally looping menu effect that scrolls endlessly with seamless wrap.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/InfiniteMenu-TS-TW",
+    "docs": "https://www.reactbits.dev/components/infinite-menu",
+    "dependencies": [
+      "gl-matrix"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/infinite-spiral",
+    "source": "react-bits",
+    "name": "infinite-spiral",
+    "title": "Infinite Spiral",
+    "description": "An endlessly looping 3D helix of images with customizable motion, depth, spacing and interaction.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/InfiniteSpiral-TS-TW",
+    "docs": "https://www.reactbits.dev/components/infinite-spiral",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/iridescence",
+    "source": "react-bits",
+    "name": "iridescence",
+    "title": "Iridescence",
+    "description": "Slick iridescent shader with shifting waves.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Iridescence-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/iridescence",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/jelly-radio",
+    "source": "react-bits",
+    "name": "jelly-radio",
+    "title": "Jelly Radio",
+    "description": "Radio group of labelled chips where the chosen one swells wide-then-tall on two springs and barges its neighbours outward with a travelling stagger, so a selection reads as a force moving through the row.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/JellyRadio-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/jelly-radio",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/lanyard",
+    "source": "react-bits",
+    "name": "lanyard",
+    "title": "Lanyard",
+    "description": "Swinging 3D lanyard / badge card with realistic inertial motion.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Lanyard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/lanyard",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/laser-flow",
+    "source": "react-bits",
+    "name": "laser-flow",
+    "title": "Laser Flow",
+    "description": "Dynamic laser light that flows onto a surface, customizable effect.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LaserFlow-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/laser-flow",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/lattice-loader",
+    "source": "react-bits",
+    "name": "lattice-loader",
+    "title": "Lattice Loader",
+    "description": "Inline agent-status row: a 3x3 or 4x4 lattice whose cells brighten in a phase-offset wave beside a verb and a live stopwatch, resolving into a check or a cross when the task ends.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LatticeLoader-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/lattice-loader",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/letter-glitch",
+    "source": "react-bits",
+    "name": "letter-glitch",
+    "title": "Letter Glitch",
+    "description": "Matrix style letter animation.",
+    "kind": "effect",
+    "categories": [
+      "text-effect",
+      "background"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LetterGlitch-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/letter-glitch",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/light-pillar",
+    "source": "react-bits",
+    "name": "light-pillar",
+    "title": "Light Pillar",
+    "description": "Vertical pillar of light with glow effects.",
+    "kind": "effect",
+    "categories": [
+      "badge",
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LightPillar-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/light-pillar",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/light-rays",
+    "source": "react-bits",
+    "name": "light-rays",
+    "title": "Light Rays",
+    "description": "Volumetric light rays/beams with customizable direction.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LightRays-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/light-rays",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/light-tunnel",
+    "source": "react-bits",
+    "name": "light-tunnel",
+    "title": "Light Tunnel",
+    "description": "A radial fibre-optic tunnel with light pulses racing into depth.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LightTunnel-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/light-tunnel",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/lightfall",
+    "source": "react-bits",
+    "name": "lightfall",
+    "title": "Lightfall",
+    "description": "Colorful light streaks raining down a glowing tunnel with a cursor light.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Lightfall-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/lightfall",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/lightning",
+    "source": "react-bits",
+    "name": "lightning",
+    "title": "Lightning",
+    "description": "Procedural lightning bolts with branching and glow flicker.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Lightning-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/lightning",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/line-sidebar",
+    "source": "react-bits",
+    "name": "line-sidebar",
+    "title": "Line Sidebar",
+    "description": "Static list navigation with a cursor-proximity effect that shifts and highlights nearby items.",
+    "kind": "component",
+    "categories": [
+      "sidebar"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LineSidebar-TS-TW",
+    "docs": "https://www.reactbits.dev/components/line-sidebar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/line-waves",
+    "source": "react-bits",
+    "name": "line-waves",
+    "title": "Line Waves",
+    "description": "Animated line wave pattern with colorful warped distortion.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LineWaves-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/line-waves",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/liquid-chrome",
+    "source": "react-bits",
+    "name": "liquid-chrome",
+    "title": "Liquid Chrome",
+    "description": "Liquid metallic chrome shader with flowing reflective surface.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LiquidChrome-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/liquid-chrome",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/liquid-ether",
+    "source": "react-bits",
+    "name": "liquid-ether",
+    "title": "Liquid Ether",
+    "description": "Interactive liquid shader with flowing distortion and customizable colors.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LiquidEther-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/liquid-ether",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/logo-loop",
+    "source": "react-bits",
+    "name": "logo-loop",
+    "title": "Logo Loop",
+    "description": "Continuously looping marquee of brand or tech logos with seamless repeat and hover pause.",
+    "kind": "effect",
+    "categories": [
+      "logo-cloud"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/LogoLoop-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/logo-loop",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/magic-bento",
+    "source": "react-bits",
+    "name": "magic-bento",
+    "title": "Magic Bento",
+    "description": "Interactive bento grid tiles expand + animate with various options.",
+    "kind": "component",
+    "categories": [
+      "bento"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MagicBento-TS-TW",
+    "docs": "https://www.reactbits.dev/components/magic-bento",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/magic-rings",
+    "source": "react-bits",
+    "name": "magic-rings",
+    "title": "Magic Rings",
+    "description": "Interactive magic rings effect with customizable parameters.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MagicRings-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/magic-rings",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/magnet",
+    "source": "react-bits",
+    "name": "magnet",
+    "title": "Magnet",
+    "description": "Elements magnetically ease toward the cursor then settle back with spring physics.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Magnet-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/magnet",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/magnet-lines",
+    "source": "react-bits",
+    "name": "magnet-lines",
+    "title": "Magnet Lines",
+    "description": "Animated field lines bend toward the cursor.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MagnetLines-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/magnet-lines",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/masked-heading",
+    "source": "react-bits",
+    "name": "masked-heading",
+    "title": "Masked Heading",
+    "description": "A large headline with a drifting colour mesh or image showing through the glyphs, revealed word by word.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MaskedHeading-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/masked-heading",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/masonry",
+    "source": "react-bits",
+    "name": "masonry",
+    "title": "Masonry",
+    "description": "Responsive masonry layout with animated reflow + gaps optimization.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Masonry-TS-TW",
+    "docs": "https://www.reactbits.dev/components/masonry",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/meta-balls",
+    "source": "react-bits",
+    "name": "meta-balls",
+    "title": "Meta Balls",
+    "description": "Liquid metaball blobs that merge and separate with smooth implicit surface animation.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MetaBalls-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/meta-balls",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/metallic-paint",
+    "source": "react-bits",
+    "name": "metallic-paint",
+    "title": "Metallic Paint",
+    "description": "Liquid metallic paint shader which can be applied to SVG elements.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MetallicPaint-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/metallic-paint",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/micro-slats",
+    "source": "react-bits",
+    "name": "micro-slats",
+    "title": "Micro Slats",
+    "description": "A wall of tiny slats that becomes a rolling sea in perspective, with glinting crests, four presets, a real fluid the cursor stirs and an intro that rolls in from the horizon.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MicroSlats-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/micro-slats",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/model-viewer",
+    "source": "react-bits",
+    "name": "model-viewer",
+    "title": "Model Viewer",
+    "description": "Three.js model viewer with orbit controls and lighting presets.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ModelViewer-TS-TW",
+    "docs": "https://www.reactbits.dev/components/model-viewer",
+    "dependencies": [
+      "@react-three/fiber",
+      "@react-three/drei",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/molten-metal",
+    "source": "react-bits",
+    "name": "molten-metal",
+    "title": "Molten Metal",
+    "description": "Swirling caustic plasma filaments with molten, white-hot cores.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MoltenMetal-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/molten-metal",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/morph-slider",
+    "source": "react-bits",
+    "name": "morph-slider",
+    "title": "Morph Slider",
+    "description": "WebGL slider that melts between images with a displacement transition.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "components",
+      "gsap",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/MorphSlider-TS-TW",
+    "docs": "https://www.reactbits.dev/components/morph-slider",
+    "dependencies": [
+      "ogl",
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/noise",
+    "source": "react-bits",
+    "name": "noise",
+    "title": "Noise",
+    "description": "Animated film grain / noise overlay adding subtle texture and motion.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Noise-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/noise",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/option-wheel",
+    "source": "react-bits",
+    "name": "option-wheel",
+    "title": "Option Wheel",
+    "description": "Curved option picker that spins via scroll, drag, or arrow keys, fading and tilting items away from the selection.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/OptionWheel-TS-TW",
+    "docs": "https://www.reactbits.dev/components/option-wheel",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/orb",
+    "source": "react-bits",
+    "name": "orb",
+    "title": "Orb",
+    "description": "Floating energy orb with customizable hover effect.",
+    "kind": "effect",
+    "categories": [
+      "loader",
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Orb-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/orb",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/orbit-images",
+    "source": "react-bits",
+    "name": "orbit-images",
+    "title": "Orbit Images",
+    "description": "SVG Path customizable orbiting images effect",
+    "kind": "effect",
+    "categories": [
+      "image",
+      "loader"
+    ],
+    "tags": [
+      "animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/OrbitImages-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/orbit-images",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/paper-crumple",
+    "source": "react-bits",
+    "name": "paper-crumple",
+    "title": "Paper Crumple",
+    "description": "An image that crumples into a textured 3D sheet while held and follows the grabbed point as you drag. Release it as a crumpled ball, unfold it flat, or leave the paper creased, with customizable folds, paper grain, lighting and shadows.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PaperCrumple-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/paper-crumple",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/particle-text",
+    "source": "react-bits",
+    "name": "particle-text",
+    "title": "Particle Text",
+    "description": "Text assembles from drifting particles that scatter and reform on demand.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ParticleText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/particle-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/particles",
+    "source": "react-bits",
+    "name": "particles",
+    "title": "Particles",
+    "description": "Configurable particle system.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Particles-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/particles",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pattern-waves",
+    "source": "react-bits",
+    "name": "pattern-waves",
+    "title": "Pattern Waves",
+    "description": "A lit halftone surface of dots, lines, crosses or glyphs that moves like draped silk, rolling swells or ripples, with six presets, one-color theming and a cursor that sends ripples through it.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PatternWaves-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/pattern-waves",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/peek-rating",
+    "source": "react-bits",
+    "name": "peek-rating",
+    "title": "Peek Rating",
+    "description": "Star rating you can try before you commit: sweeping the row lifts a trailing wave of stars up to the pointer while a tip hops along with the label; a click commits with a pop.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PeekRating-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/peek-rating",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pill-nav",
+    "source": "react-bits",
+    "name": "pill-nav",
+    "title": "Pill Nav",
+    "description": "Minimal pill nav with sliding active highlight + smooth easing.",
+    "kind": "component",
+    "categories": [
+      "navigation",
+      "badge"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PillNav-TS-TW",
+    "docs": "https://www.reactbits.dev/components/pill-nav",
+    "dependencies": [
+      "react-router-dom",
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pixel-blast",
+    "source": "react-bits",
+    "name": "pixel-blast",
+    "title": "Pixel Blast",
+    "description": "Exploding pixel particle bursts with optional liquid postprocessing.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PixelBlast-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/pixel-blast",
+    "dependencies": [
+      "postprocessing",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pixel-card",
+    "source": "react-bits",
+    "name": "pixel-card",
+    "title": "Pixel Card",
+    "description": "Card content revealed through pixel expansion transition.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PixelCard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/pixel-card",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pixel-snow",
+    "source": "react-bits",
+    "name": "pixel-snow",
+    "title": "Pixel Snow",
+    "description": "Falling pixelated snow effect with customizable density and speed.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PixelSnow-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/pixel-snow",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pixel-swap",
+    "source": "react-bits",
+    "name": "pixel-swap",
+    "title": "Pixel Swap",
+    "description": "Pixel fragments assemble into a full cover, swap arbitrary content, then dissolve away with reversible colors and triggers.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PixelSwap-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/pixel-swap",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pixel-trail",
+    "source": "react-bits",
+    "name": "pixel-trail",
+    "title": "Pixel Trail",
+    "description": "Pixelated cursor trail emitting fading squares with retro digital feel.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PixelTrail-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/pixel-trail",
+    "dependencies": [
+      "@react-three/drei",
+      "@react-three/fiber",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pixel-transition",
+    "source": "react-bits",
+    "name": "pixel-transition",
+    "title": "Pixel Transition",
+    "description": "Pixel dissolve transition for content reveal on hover.",
+    "kind": "effect",
+    "categories": [
+      "transition"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PixelTransition-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/pixel-transition",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/plasma",
+    "source": "react-bits",
+    "name": "plasma",
+    "title": "Plasma",
+    "description": "Organic plasma gradients swirl + morph with smooth turbulence.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Plasma-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/plasma",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/plasma-wave",
+    "source": "react-bits",
+    "name": "plasma-wave",
+    "title": "Plasma Wave",
+    "description": "Raymarched plasma waves with dual-wave interference and OGL.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PlasmaWave-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/plasma-wave",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/prism",
+    "source": "react-bits",
+    "name": "prism",
+    "title": "Prism",
+    "description": "Rotating prism with configurable intensity, size, and colors.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Prism-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/prism",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/prismatic-burst",
+    "source": "react-bits",
+    "name": "prismatic-burst",
+    "title": "Prismatic Burst",
+    "description": "Burst of light rays with controllable color, distortion, amount.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PrismaticBurst-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/prismatic-burst",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/profile-card",
+    "source": "react-bits",
+    "name": "profile-card",
+    "title": "Profile Card",
+    "description": "Animated profile card glare with 3D hover effect.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ProfileCard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/profile-card",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/prompt-bar",
+    "source": "react-bits",
+    "name": "prompt-bar",
+    "title": "Prompt Bar",
+    "description": "Chat composer with an @ sources menu, a / commands menu, a model picker, dictation and attachments, whose send tile charges to ink the moment there is something to send and morphs its arrow into a stop square while busy.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PromptBar-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/prompt-bar",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/pulse-heart",
+    "source": "react-bits",
+    "name": "pulse-heart",
+    "title": "Pulse Heart",
+    "description": "Like button that contracts to a dot, flips colour at its smallest frame and pulses back while the count swaps one glyph.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/PulseHeart-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/pulse-heart",
+    "dependencies": [
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/radar",
+    "source": "react-bits",
+    "name": "radar",
+    "title": "Radar",
+    "description": "Radar sweep effect with concentric rings, radial spokes, and a rotating beam.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Radar-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/radar",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/refine-frame",
+    "source": "react-bits",
+    "name": "refine-frame",
+    "title": "Refine Frame",
+    "description": "Reserved-aspect frame that walks any media through queued, generating, refining and complete without layout shift: each stage is one blur, saturate, scale and opacity tween, a soft band sweeps while it works, a chip reports the stage, and an error dims the picture behind a retry pill.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/RefineFrame-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/refine-frame",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/reflective-card",
+    "source": "react-bits",
+    "name": "reflective-card",
+    "title": "Reflective Card",
+    "description": "Card with dynamic webcam reflection and glare effects that respond to cursor movement.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ReflectiveCard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/reflective-card",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ribbons",
+    "source": "react-bits",
+    "name": "ribbons",
+    "title": "Ribbons",
+    "description": "Flowing responsive ribbons/cursor trail driven by physics and pointer motion.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Ribbons-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/ribbons",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ripple-distortion",
+    "source": "react-bits",
+    "name": "ripple-distortion",
+    "title": "Ripple Distortion",
+    "description": "Pointer-driven water displacement that warps content and leaves a decaying wake.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/RippleDistortion-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/ripple-distortion",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/ripple-grid",
+    "source": "react-bits",
+    "name": "ripple-grid",
+    "title": "Ripple Grid",
+    "description": "A grid that continuously animates with a ripple effect.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/RippleGrid-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/ripple-grid",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/rotating-text",
+    "source": "react-bits",
+    "name": "rotating-text",
+    "title": "Rotating Text",
+    "description": "Cycles through multiple phrases with 3D rotate / flip transitions.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/RotatingText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/rotating-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/rubber-segment",
+    "source": "react-bits",
+    "name": "rubber-segment",
+    "title": "Rubber Segment",
+    "description": "Segmented control with a rubber thumb: taps stretch it across the gap and squash it onto the target, and you can grab, drag and flick it between slots.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/RubberSegment-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/rubber-segment",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scanner",
+    "source": "react-bits",
+    "name": "scanner",
+    "title": "Scanner",
+    "description": "Calm interference bands sweeping across the screen like an oscilloscope.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Scanner-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/scanner",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scrambled-text",
+    "source": "react-bits",
+    "name": "scrambled-text",
+    "title": "Scrambled Text",
+    "description": "Detects cursor position and applies a distortion effect to text.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrambledText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/scrambled-text",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scroll-expand",
+    "source": "react-bits",
+    "name": "scroll-expand",
+    "title": "Scroll Expand",
+    "description": "A rounded media frame that grows to full bleed as it scrolls through the viewport.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrollExpand-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/scroll-expand",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scroll-float",
+    "source": "react-bits",
+    "name": "scroll-float",
+    "title": "Scroll Float",
+    "description": "Text gently floats / parallax shifts on scroll.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrollFloat-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/scroll-float",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scroll-reveal",
+    "source": "react-bits",
+    "name": "scroll-reveal",
+    "title": "Scroll Reveal",
+    "description": "Text gently unblurs and reveals on scroll.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrollReveal-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/scroll-reveal",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scroll-stack",
+    "source": "react-bits",
+    "name": "scroll-stack",
+    "title": "Scroll Stack",
+    "description": "Overlapping card stack reveals on scroll with depth layering.",
+    "kind": "component",
+    "categories": [
+      "scroll-effect"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrollStack-TS-TW",
+    "docs": "https://www.reactbits.dev/components/scroll-stack",
+    "dependencies": [
+      "lenis"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scroll-velocity",
+    "source": "react-bits",
+    "name": "scroll-velocity",
+    "title": "Scroll Velocity",
+    "description": "Text marquee animatio - speed and distortion scale with user's scroll velocity.",
+    "kind": "effect",
+    "categories": [
+      "scroll-effect",
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrollVelocity-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/scroll-velocity",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/scrub-field",
+    "source": "react-bits",
+    "name": "scrub-field",
+    "title": "Scrub Field",
+    "description": "Number chip you drag to scrub: the value follows the hand, pushes past the range on a rubber band, and a click without moving opens it for typing.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ScrubField-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/scrub-field",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/shape-blur",
+    "source": "react-bits",
+    "name": "shape-blur",
+    "title": "Shape Blur",
+    "description": "Morphing blurred geometric shape. The effect occurs on hover.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ShapeBlur-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/shape-blur",
+    "dependencies": [
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/shape-grid",
+    "source": "react-bits",
+    "name": "shape-grid",
+    "title": "Shape Grid",
+    "description": "Animated grid with shape variants (square, hexagon, circle, triangle) + direction customization.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ShapeGrid-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/shape-grid",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/shape-waves",
+    "source": "react-bits",
+    "name": "shape-waves",
+    "title": "Shape Waves",
+    "description": "A WebGPU field of triangles, circles and squares that brighten and grow along rolling waves, with an optional text cutout the waves flow around.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ShapeWaves-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/shape-waves",
+    "dependencies": [
+      "vgpu"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/shiny-text",
+    "source": "react-bits",
+    "name": "shiny-text",
+    "title": "Shiny Text",
+    "description": "Metallic sheen sweeps across text producing a reflective highlight.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ShinyText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/shiny-text",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/shredder",
+    "source": "react-bits",
+    "name": "shredder",
+    "title": "Shredder",
+    "description": "A list with a paper shredder at the bottom. Drag a row into the slit and the rollers tug it in, pull it through and cut it into strips that curl out underneath, tumble away and fade out. The rest of the list settles down on a spring and the shredded item is handed to you to delete.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Shredder-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/shredder",
+    "dependencies": [
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/shuffle",
+    "source": "react-bits",
+    "name": "shuffle",
+    "title": "Shuffle",
+    "description": "Animated text reveal where characters shuffle before settling.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Shuffle-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/shuffle",
+    "dependencies": [
+      "gsap",
+      "@gsap/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/side-rays",
+    "source": "react-bits",
+    "name": "side-rays",
+    "title": "Side Rays",
+    "description": "Animated light rays emanating from the side with customizable colors and speed.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SideRays-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/side-rays",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/silk",
+    "source": "react-bits",
+    "name": "silk",
+    "title": "Silk",
+    "description": "Smooth waves background with soft lighting.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "three"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Silk-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/silk",
+    "dependencies": [
+      "@react-three/fiber",
+      "three"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/sliced-waves",
+    "source": "react-bits",
+    "name": "sliced-waves",
+    "title": "Sliced Waves",
+    "description": "A grid of soft glowing bars rippling like a slatted equalizer.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SlicedWaves-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/sliced-waves",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/slide-commit",
+    "source": "react-bits",
+    "name": "slide-commit",
+    "title": "Slide Commit",
+    "description": "Slide-to-confirm handle that plants with a spinner while your action runs, unfurls into a done pill on success and springs home with a squash and shake on failure.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SlideCommit-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/slide-commit",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/sling-button",
+    "source": "react-bits",
+    "name": "sling-button",
+    "title": "Sling Button",
+    "description": "Send button you pull back like a slingshot: the band stretches, a power arc arms it, and releasing fires the action with the flick's velocity.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SlingButton-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/sling-button",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/slosh-gauge",
+    "source": "react-bits",
+    "name": "slosh-gauge",
+    "title": "Slosh Gauge",
+    "description": "Tank gauge whose liquid chases the value with mass, tilts with its own speed and splashes against the top when it slams full; optionally a vertical slider.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SloshGauge-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/slosh-gauge",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/soft-aurora",
+    "source": "react-bits",
+    "name": "soft-aurora",
+    "title": "Soft Aurora",
+    "description": "Soft aurora borealis shader with 3D Perlin noise and cosine gradient palettes.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SoftAurora-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/soft-aurora",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/specular-button",
+    "source": "react-bits",
+    "name": "specular-button",
+    "title": "Specular Button",
+    "description": "Glass button with a shader-driven specular rim light that sweeps around the edge and follows the cursor.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "components",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SpecularButton-TS-TW",
+    "docs": "https://www.reactbits.dev/components/specular-button",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/splash-cursor",
+    "source": "react-bits",
+    "name": "splash-cursor",
+    "title": "Splash Cursor",
+    "description": "Liquid splash burst at cursor with curling ripples and waves.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SplashCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/splash-cursor",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/split-flap-text",
+    "source": "react-bits",
+    "name": "split-flap-text",
+    "title": "Split Flap Text",
+    "description": "Mechanical split-flap departure board that clacks through to each new phrase.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SplitFlapText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/split-flap-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/split-text",
+    "source": "react-bits",
+    "name": "split-text",
+    "title": "Split Text",
+    "description": "Splits text into characters / words for staggered entrance animation.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SplitText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/split-text",
+    "dependencies": [
+      "gsap",
+      "@gsap/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/spotlight-card",
+    "source": "react-bits",
+    "name": "spotlight-card",
+    "title": "Spotlight Card",
+    "description": "Dynamic spotlight follows cursor casting gradient illumination.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SpotlightCard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/spotlight-card",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/spring-check",
+    "source": "react-bits",
+    "name": "spring-check",
+    "title": "Spring Check",
+    "description": "Checkbox row where a single spring fills the box, draws the tick, strikes the label and dims the words in one press.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SpringCheck-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/spring-check",
+    "dependencies": [
+      "motion",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/squish-switch",
+    "source": "react-bits",
+    "name": "squish-switch",
+    "title": "Squish Switch",
+    "description": "Drag-scrubbable switch whose thumb stretches by how fast it moves, flips at the midpoint and squashes against the track end on a flick.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SquishSwitch-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/squish-switch",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/stack",
+    "source": "react-bits",
+    "name": "stack",
+    "title": "Stack",
+    "description": "Layered stack with swipe animations, autoplay and smooth transitions.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Stack-TS-TW",
+    "docs": "https://www.reactbits.dev/components/stack",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/staggered-menu",
+    "source": "react-bits",
+    "name": "staggered-menu",
+    "title": "Staggered Menu",
+    "description": "Menu with staggered item animations and smooth transitions on open/close.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [
+      "components",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/StaggeredMenu-TS-TW",
+    "docs": "https://www.reactbits.dev/components/staggered-menu",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/star-border",
+    "source": "react-bits",
+    "name": "star-border",
+    "title": "Star Border",
+    "description": "Animated star / sparkle border orbiting content with twinkle pulses.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/StarBorder-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/star-border",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/status-mark",
+    "source": "react-bits",
+    "name": "status-mark",
+    "title": "Status Mark",
+    "description": "A 20px status glyph for agent task lists that morphs in place from a dashed idle ring to a spinning or real-progress arc, then draws a check or a cross, with an optional label strike.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/StatusMark-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/status-mark",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/stepper",
+    "source": "react-bits",
+    "name": "stepper",
+    "title": "Stepper",
+    "description": "Animated multi-step progress indicator with active state transitions.",
+    "kind": "component",
+    "categories": [
+      "form"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Stepper-TS-TW",
+    "docs": "https://www.reactbits.dev/components/stepper",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/sticker-peel",
+    "source": "react-bits",
+    "name": "sticker-peel",
+    "title": "Sticker Peel",
+    "description": "Sticker corner lift + peel interaction using 3D transform and shadow depth.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/StickerPeel-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/sticker-peel",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/strands",
+    "source": "react-bits",
+    "name": "strands",
+    "title": "Strands",
+    "description": "Glowing ribbon-like strands that ripple and weave across a transparent canvas.",
+    "kind": "effect",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Strands-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/strands",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/stroke-text",
+    "source": "react-bits",
+    "name": "stroke-text",
+    "title": "Stroke Text",
+    "description": "Outlined letterforms draw themselves on, then flood with fill.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/StrokeText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/stroke-text",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/swarm-cursor",
+    "source": "react-bits",
+    "name": "swarm-cursor",
+    "title": "Swarm Cursor",
+    "description": "Flocking particle swarm that chases the pointer, jostles for space and drifts apart at rest.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SwarmCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/swarm-cursor",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/swipe-row",
+    "source": "react-bits",
+    "name": "swipe-row",
+    "title": "Swipe Row",
+    "description": "List row that swipes open to reveal actions, snaps by flick velocity, and deletes on a full swipe that stretches the action colour across the row.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SwipeRow-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/swipe-row",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/swipe-toast",
+    "source": "react-bits",
+    "name": "swipe-toast",
+    "title": "Swipe Toast",
+    "description": "Single toast that rises through its bottom edge, swipes down to dismiss on a flick or a distance, and burns a thin fuse for exactly its remaining time; hover pauses it and an inline mode keeps it inside any container.",
+    "kind": "component",
+    "categories": [
+      "toast"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/SwipeToast-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/swipe-toast",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/target-cursor",
+    "source": "react-bits",
+    "name": "target-cursor",
+    "title": "Target Cursor",
+    "description": "A cursor follow animation with 4 corners that lock onto targets.",
+    "kind": "effect",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [
+      "animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TargetCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/animations/target-cursor",
+    "dependencies": [
+      "react-dom",
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/tear-ticket",
+    "source": "react-bits",
+    "name": "tear-ticket",
+    "title": "Tear Ticket",
+    "description": "Ticket whose perforated stub tears off by hand: paper bridges stretch into fibres and snap one by one from the far end, the torn edges are jagged and fit each other, the freed stub dangles and drops, and the body is stamped as used. The artwork tilts in 3D with parallax on hover.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TearTicket-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/tear-ticket",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/tech-text",
+    "source": "react-bits",
+    "name": "tech-text",
+    "title": "Tech Text",
+    "description": "A wordmark whose letters turn into dashed vector paths under the cursor. Grab any letter to drag it off the baseline and it springs back home.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TechText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/tech-text",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/text-cursor",
+    "source": "react-bits",
+    "name": "text-cursor",
+    "title": "Text Cursor",
+    "description": "Make any text element follow your cursor, leaving a trail of copies behind it.",
+    "kind": "effect",
+    "categories": [
+      "text-effect",
+      "cursor"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TextCursor-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/text-cursor",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/text-loop",
+    "source": "react-bits",
+    "name": "text-loop",
+    "title": "Text Loop",
+    "description": "A seamless text marquee that flows along curved SVG paths.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TextLoop-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/text-loop",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/text-pressure",
+    "source": "react-bits",
+    "name": "text-pressure",
+    "title": "Text Pressure",
+    "description": "Characters scale / warp interactively based on pointer pressure zone.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TextPressure-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/text-pressure",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/text-type",
+    "source": "react-bits",
+    "name": "text-type",
+    "title": "Text Type",
+    "description": "Typewriter effect with blinking cursor and adjustable typing cadence.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "gsap"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TextType-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/text-type",
+    "dependencies": [
+      "gsap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/thought-line",
+    "source": "react-bits",
+    "name": "thought-line",
+    "title": "Thought Line",
+    "description": "Reasoning-trace header: a glyph and a label breathe beside a live clock while steps appear beneath, then the line settles on one beat into \"Thought for 4.2s\" through a blur crossfade and the trace folds into it.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/ThoughtLine-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/thought-line",
+    "dependencies": [
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/threads",
+    "source": "react-bits",
+    "name": "threads",
+    "title": "Threads",
+    "description": "Animated pattern of lines forming a fabric-like motion.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Threads-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/threads",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/tilted-card",
+    "source": "react-bits",
+    "name": "tilted-card",
+    "title": "Tilted Card",
+    "description": "3D perspective tilt card reacting to pointer.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [
+      "components",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TiltedCard-TS-TW",
+    "docs": "https://www.reactbits.dev/components/tilted-card",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/topography",
+    "source": "react-bits",
+    "name": "topography",
+    "title": "Topography",
+    "description": "A living contour map with glowing, elevation-tinted lines.",
+    "kind": "effect",
+    "categories": [
+      "chart",
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Topography-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/topography",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/true-focus",
+    "source": "react-bits",
+    "name": "true-focus",
+    "title": "True Focus",
+    "description": "Applies dynamic blur / clarity based over a series of words in order.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/TrueFocus-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/true-focus",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/variable-proximity",
+    "source": "react-bits",
+    "name": "variable-proximity",
+    "title": "Variable Proximity",
+    "description": "Letter styling changes continuously with pointer distance mapping.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/VariableProximity-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/variable-proximity",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/voice-pill",
+    "source": "react-bits",
+    "name": "voice-pill",
+    "title": "Voice Pill",
+    "description": "Mic button that swells into a tinted capsule of level-driven equalizer bars and an elapsed clock while held or toggled, then relaxes back into the mic on release; simulated voice by default, real microphone as an opt-in.",
+    "kind": "component",
+    "categories": [
+      "badge"
+    ],
+    "tags": [
+      "micro"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/VoicePill-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/voice-pill",
+    "dependencies": [
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/wake-slider",
+    "source": "react-bits",
+    "name": "wake-slider",
+    "title": "Wake Slider",
+    "description": "Range slider drawn as thin bars with no thumb: drag speed raises a wake that trails behind the handle and flattens again at rest.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/WakeSlider-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/wake-slider",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/warm-tooltip",
+    "source": "react-bits",
+    "name": "warm-tooltip",
+    "title": "Warm Tooltip",
+    "description": "Tooltip group with one shared delay: the first label waits and pops from its trigger, then siblings open instantly while the group is warm, with an optional velocity lean.",
+    "kind": "component",
+    "categories": [
+      "tooltip"
+    ],
+    "tags": [
+      "micro",
+      "motion"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/WarmTooltip-TS-TW",
+    "docs": "https://www.reactbits.dev/micro/warm-tooltip",
+    "dependencies": [
+      "react-dom",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/warp-text",
+    "source": "react-bits",
+    "name": "warp-text",
+    "title": "Warp Text",
+    "description": "WebGL warp that bends and refracts the text around the pointer.",
+    "kind": "effect",
+    "categories": [
+      "text-effect"
+    ],
+    "tags": [
+      "text-animations",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/WarpText-TS-TW",
+    "docs": "https://www.reactbits.dev/text-animations/warp-text",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/waves",
+    "source": "react-bits",
+    "name": "waves",
+    "title": "Waves",
+    "description": "Layered lines that form smooth wave patterns with animation.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/Waves-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/waves",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  },
+  {
+    "id": "react-bits/web-threads",
+    "source": "react-bits",
+    "name": "web-threads",
+    "title": "Web Threads",
+    "description": "Glowing sine threads woven through a luminous convergence point.",
+    "kind": "effect",
+    "categories": [
+      "background"
+    ],
+    "tags": [
+      "backgrounds",
+      "ogl"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @react-bits/WebThreads-TS-TW",
+    "docs": "https://www.reactbits.dev/backgrounds/web-threads",
+    "dependencies": [
+      "ogl"
+    ],
+    "curated": false,
+    "favorite": false,
+    "demo": false,
+    "appliesTo": []
+  }
+]

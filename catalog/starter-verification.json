@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-11T17:08:31.873Z",
+  "fingerprint": "632e2605711b862cd06ea892bee97f750e2747111d8bcdf9468696a682381067",
+  "passed": true,
+  "checks": [
+    "all 20 registry installs in a fresh project",
+    "consumer Next.js production build",
+    "legacy @oc install",
+    "280 desktop/mobile previews across every design system and available mode",
+    "no browser exceptions or horizontal overflow",
+    "no continuous animation under reduced motion",
+    "keyboard: mobile navigation, FAQ, pricing switch, settings edit and prompt submission"
+  ],
+  "scope": "Next.js 16 / React 19 / Tailwind 4 consumer fixture; system Chrome gallery checks at 390px and 1280px.",
+  "limitations": [
+    "Not an exhaustive accessibility audit or cross-browser certification.",
+    "Gallery demos and one fixture do not prove compatibility with every project's props, content or dependency versions.",
+    "No friend/independent-agent participation is claimed."
+  ],
+  "components": [
+    "oc/navbar",
+    "oc/hero-split",
+    "oc/hero-spotlight",
+    "oc/feature-bento",
+    "oc/feature-list",
+    "oc/feature-levels",
+    "oc/pricing-simple",
+    "oc/logo-cloud",
+    "oc/stats-row",
+    "oc/testimonials-grid",
+    "oc/faq",
+    "oc/cta-banner",
+    "oc/footer-columns",
+    "oc/empty-state",
+    "oc/stat-cards",
+    "oc/data-table-card",
+    "oc/settings-form",
+    "oc/chat-thread",
+    "oc/prompt-composer",
+    "oc/agent-status"
+  ]
+}

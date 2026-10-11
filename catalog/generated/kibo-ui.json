@@ -1,0 +1,846 @@
+[
+  {
+    "id": "kibo-ui/announcement",
+    "source": "kibo-ui",
+    "name": "announcement",
+    "title": "Announcement",
+    "description": "A compound badge designed to display an announcement.",
+    "kind": "component",
+    "categories": [
+      "badge"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/announcement",
+    "docs": "https://www.kibo-ui.com/components/announcement",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/avatar-stack",
+    "source": "kibo-ui",
+    "name": "avatar-stack",
+    "title": "Avatar Stack",
+    "description": "Avatar Stack is a component that allows you to stack and overlap avatars.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/avatar-stack",
+    "docs": "https://www.kibo-ui.com/components/avatar-stack",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/banner",
+    "source": "kibo-ui",
+    "name": "banner",
+    "title": "Banner",
+    "description": "A banner is a full-width component that can be used to show a message and action to the user.",
+    "kind": "component",
+    "categories": [
+      "cta"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/banner",
+    "docs": "https://www.kibo-ui.com/components/banner",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/calendar",
+    "source": "kibo-ui",
+    "name": "calendar",
+    "title": "Calendar",
+    "description": "The calendar view displays features on a grid calendar. Specifically it shows the end date of each feature, and groups features by day.",
+    "kind": "component",
+    "categories": [
+      "dashboard"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/calendar",
+    "docs": "https://www.kibo-ui.com/components/calendar",
+    "dependencies": [
+      "date-fns",
+      "jotai",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/choicebox",
+    "source": "kibo-ui",
+    "name": "choicebox",
+    "title": "Choicebox",
+    "description": "Choiceboxes are a great way to show radio or checkbox options with a card style.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/choicebox",
+    "docs": "https://www.kibo-ui.com/components/choicebox",
+    "dependencies": [
+      "lucide-react",
+      "radix-ui"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/code-block",
+    "source": "kibo-ui",
+    "name": "code-block",
+    "title": "Code Block",
+    "description": "Provides syntax highlighting, line numbers, and copy to clipboard functionality for code blocks.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/code-block",
+    "docs": "https://www.kibo-ui.com/components/code-block",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "@shikijs/transformers",
+      "lucide-react",
+      "react-icons",
+      "shiki"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/color-picker",
+    "source": "kibo-ui",
+    "name": "color-picker",
+    "title": "Color Picker",
+    "description": "Allows users to select a color. Modeled after the color picker in Figma.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/color-picker",
+    "docs": "https://www.kibo-ui.com/components/color-picker",
+    "dependencies": [
+      "color",
+      "lucide-react",
+      "radix-ui"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/combobox",
+    "source": "kibo-ui",
+    "name": "combobox",
+    "title": "Combobox",
+    "description": "Autocomplete input and command palette with a list of suggestions.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/combobox",
+    "docs": "https://www.kibo-ui.com/components/combobox",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/comparison",
+    "source": "kibo-ui",
+    "name": "comparison",
+    "title": "Comparison",
+    "description": "A slider-based component for comparing two items in an overlay.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/comparison",
+    "docs": "https://www.kibo-ui.com/components/comparison",
+    "dependencies": [
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/contribution-graph",
+    "source": "kibo-ui",
+    "name": "contribution-graph",
+    "title": "Contribution Graph",
+    "description": "A GitHub-style contribution graph component that displays activity levels over time.",
+    "kind": "component",
+    "categories": [
+      "chart",
+      "dashboard"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/contribution-graph",
+    "docs": "https://www.kibo-ui.com/components/contribution-graph",
+    "dependencies": [
+      "date-fns"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/credit-card",
+    "source": "kibo-ui",
+    "name": "credit-card",
+    "title": "Credit Card",
+    "description": "Credit card components for displaying and validating credit card information.",
+    "kind": "component",
+    "categories": [
+      "card"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/credit-card",
+    "docs": "https://www.kibo-ui.com/components/credit-card",
+    "dependencies": [
+      "react-svg-credit-card-payment-icons"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/cursor",
+    "source": "kibo-ui",
+    "name": "cursor",
+    "title": "Cursor",
+    "description": "A cursor component, great for realtime interactive applications.",
+    "kind": "component",
+    "categories": [
+      "cursor"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/cursor",
+    "docs": "https://www.kibo-ui.com/components/cursor",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/deck",
+    "source": "kibo-ui",
+    "name": "deck",
+    "title": "Deck",
+    "description": "A Tinder-like swipeable card stack component with smooth animations.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/deck",
+    "docs": "https://www.kibo-ui.com/components/deck",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/dialog-stack",
+    "source": "kibo-ui",
+    "name": "dialog-stack",
+    "title": "Dialog Stack",
+    "description": "Composable stacked dialogs, useful for creating a wizard, nested form or multi-step process. It provides a consistent layout and styling for each dialog, and includes navigation component.",
+    "kind": "component",
+    "categories": [
+      "modal"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/dialog-stack",
+    "docs": "https://www.kibo-ui.com/components/dialog-stack",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "radix-ui"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/dropzone",
+    "source": "kibo-ui",
+    "name": "dropzone",
+    "title": "Dropzone",
+    "description": "Allows users to drag-and-drop files into a container to upload or process them.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/dropzone",
+    "docs": "https://www.kibo-ui.com/components/dropzone",
+    "dependencies": [
+      "lucide-react",
+      "react-dropzone"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/editor",
+    "source": "kibo-ui",
+    "name": "editor",
+    "title": "Editor",
+    "description": "The Editor component is a powerful and flexible text editor that allows you to create and edit rich text content.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/editor",
+    "docs": "https://www.kibo-ui.com/components/editor",
+    "dependencies": [
+      "@floating-ui/dom",
+      "@tiptap/core",
+      "@tiptap/extension-code-block-lowlight",
+      "@tiptap/extension-list",
+      "@tiptap/extension-subscript",
+      "@tiptap/extension-superscript",
+      "@tiptap/extension-table",
+      "@tiptap/extension-text-style",
+      "@tiptap/extension-typography",
+      "@tiptap/extensions",
+      "@tiptap/pm",
+      "@tiptap/react",
+      "@tiptap/starter-kit",
+      "@tiptap/suggestion",
+      "fuse.js",
+      "lowlight",
+      "lucide-react",
+      "tippy.js"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/gantt",
+    "source": "kibo-ui",
+    "name": "gantt",
+    "title": "Gantt",
+    "description": "The Gantt chart is a powerful tool for visualizing project schedules and tracking the progress of tasks. It provides a clear, hierarchical view of tasks, allowing you to easily identify manage project timelines.",
+    "kind": "component",
+    "categories": [
+      "dashboard"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/gantt",
+    "docs": "https://www.kibo-ui.com/components/gantt",
+    "dependencies": [
+      "@dnd-kit/core",
+      "@dnd-kit/modifiers",
+      "@uidotdev/usehooks",
+      "date-fns",
+      "jotai",
+      "lodash.throttle",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/glimpse",
+    "source": "kibo-ui",
+    "name": "glimpse",
+    "title": "Glimpse",
+    "description": "A component that shows a preview of a URL when hovering over a link.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/glimpse",
+    "docs": "https://www.kibo-ui.com/components/glimpse",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/image-crop",
+    "source": "kibo-ui",
+    "name": "image-crop",
+    "title": "Image Crop",
+    "description": "Helps you crop images to a specific size or aspect ratio.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/image-crop",
+    "docs": "https://www.kibo-ui.com/components/image-crop",
+    "dependencies": [
+      "lucide-react",
+      "radix-ui",
+      "react-image-crop"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/image-zoom",
+    "source": "kibo-ui",
+    "name": "image-zoom",
+    "title": "Image Zoom",
+    "description": "Image zoom is a component that allows you to zoom in on an image.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/image-zoom",
+    "docs": "https://www.kibo-ui.com/components/image-zoom",
+    "dependencies": [
+      "react-medium-image-zoom"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/kanban",
+    "source": "kibo-ui",
+    "name": "kanban",
+    "title": "Kanban",
+    "description": "A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. \"Backlog\", \"In Progress\", \"Done\".",
+    "kind": "component",
+    "categories": [
+      "dashboard"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/kanban",
+    "docs": "https://www.kibo-ui.com/components/kanban",
+    "dependencies": [
+      "@dnd-kit/core",
+      "@dnd-kit/sortable",
+      "@dnd-kit/utilities",
+      "tunnel-rat"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/list",
+    "source": "kibo-ui",
+    "name": "list",
+    "title": "List",
+    "description": "List views are a great way to show a list of tasks grouped by status and ranked by priority.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/list",
+    "docs": "https://www.kibo-ui.com/components/list",
+    "dependencies": [
+      "@dnd-kit/core",
+      "@dnd-kit/modifiers"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/marquee",
+    "source": "kibo-ui",
+    "name": "marquee",
+    "title": "Marquee",
+    "description": "Marquees are a great way to show a list of items in a horizontal scrolling motion.",
+    "kind": "component",
+    "categories": [
+      "carousel"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/marquee",
+    "docs": "https://www.kibo-ui.com/components/marquee",
+    "dependencies": [
+      "react-fast-marquee"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/mini-calendar",
+    "source": "kibo-ui",
+    "name": "mini-calendar",
+    "title": "Mini Calendar",
+    "description": "A composable mini calendar component for picking dates close to today.",
+    "kind": "component",
+    "categories": [
+      "dashboard"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/mini-calendar",
+    "docs": "https://www.kibo-ui.com/components/mini-calendar",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "date-fns",
+      "lucide-react",
+      "radix-ui"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/pill",
+    "source": "kibo-ui",
+    "name": "pill",
+    "title": "Pill",
+    "description": "A flexible badge component designed for a variety of use cases.",
+    "kind": "component",
+    "categories": [
+      "badge"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/pill",
+    "docs": "https://www.kibo-ui.com/components/pill",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/qr-code",
+    "source": "kibo-ui",
+    "name": "qr-code",
+    "title": "Qr Code",
+    "description": "QR Code is a component that generates a QR code from a string.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/qr-code",
+    "docs": "https://www.kibo-ui.com/components/qr-code",
+    "dependencies": [
+      "culori",
+      "qrcode"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/rating",
+    "source": "kibo-ui",
+    "name": "rating",
+    "title": "Rating",
+    "description": "A star rating component with keyboard navigation and hover effects.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/rating",
+    "docs": "https://www.kibo-ui.com/components/rating",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/reel",
+    "source": "kibo-ui",
+    "name": "reel",
+    "title": "Reel",
+    "description": "A composable Reel component that looks like Instagram Stories - a full-height, 9:16 aspect ratio container with video playback and progress indicators.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/reel",
+    "docs": "https://www.kibo-ui.com/components/reel",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/relative-time",
+    "source": "kibo-ui",
+    "name": "relative-time",
+    "title": "Relative Time",
+    "description": "A component that displays time in various timezones.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/relative-time",
+    "docs": "https://www.kibo-ui.com/components/relative-time",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/sandbox",
+    "source": "kibo-ui",
+    "name": "sandbox",
+    "title": "Sandbox",
+    "description": "The sandbox component allows you to preview and test components in a sandboxed environment.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/sandbox",
+    "docs": "https://www.kibo-ui.com/components/sandbox",
+    "dependencies": [
+      "@codesandbox/sandpack-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/snippet",
+    "source": "kibo-ui",
+    "name": "snippet",
+    "title": "Snippet",
+    "description": "Snippet is a component that allows you to display and copy code in a tabbed interface.",
+    "kind": "component",
+    "categories": [
+      "code"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/snippet",
+    "docs": "https://www.kibo-ui.com/components/snippet",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/spinner",
+    "source": "kibo-ui",
+    "name": "spinner",
+    "title": "Spinner",
+    "description": "A spinner is a visual indicator that shows progress or activity.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/spinner",
+    "docs": "https://www.kibo-ui.com/components/spinner",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/status",
+    "source": "kibo-ui",
+    "name": "status",
+    "title": "Status",
+    "description": "Status components are used to display the uptime of a service.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/status",
+    "docs": "https://www.kibo-ui.com/components/status",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/stories",
+    "source": "kibo-ui",
+    "name": "stories",
+    "title": "Stories",
+    "description": "A composable Stories component - a carousel of individual video cards like you'd see on Facebook.",
+    "kind": "component",
+    "categories": [
+      "misc"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/stories",
+    "docs": "https://www.kibo-ui.com/components/stories",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/table",
+    "source": "kibo-ui",
+    "name": "table",
+    "title": "Table",
+    "description": "Table views are used to display data in a tabular format. They are useful for displaying large amounts of data in a structured way.",
+    "kind": "component",
+    "categories": [
+      "table"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/table",
+    "docs": "https://www.kibo-ui.com/components/table",
+    "dependencies": [
+      "@tanstack/react-table",
+      "jotai",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/tags",
+    "source": "kibo-ui",
+    "name": "tags",
+    "title": "Tags",
+    "description": "Tags are a way to apply multiple labels to an item.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/tags",
+    "docs": "https://www.kibo-ui.com/components/tags",
+    "dependencies": [
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/theme-switcher",
+    "source": "kibo-ui",
+    "name": "theme-switcher",
+    "title": "Theme Switcher",
+    "description": "A component to switch between light, dark and system theme.",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/theme-switcher",
+    "docs": "https://www.kibo-ui.com/components/theme-switcher",
+    "dependencies": [
+      "@radix-ui/react-use-controllable-state",
+      "lucide-react",
+      "motion"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/ticker",
+    "source": "kibo-ui",
+    "name": "ticker",
+    "title": "Ticker",
+    "description": "A composable finance ticker for displaying symbols, prices and changes.",
+    "kind": "component",
+    "categories": [
+      "stats"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/ticker",
+    "docs": "https://www.kibo-ui.com/components/ticker",
+    "dependencies": [],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/tree",
+    "source": "kibo-ui",
+    "name": "tree",
+    "title": "Tree",
+    "description": "A composable tree component with animated expand/collapse and customizable nodes.",
+    "kind": "component",
+    "categories": [
+      "navigation"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/tree",
+    "docs": "https://www.kibo-ui.com/components/tree",
+    "dependencies": [
+      "motion",
+      "lucide-react"
+    ],
+    "curated": false,
+    "demo": false
+  },
+  {
+    "id": "kibo-ui/video-player",
+    "source": "kibo-ui",
+    "name": "video-player",
+    "title": "Video Player",
+    "description": "A composable, shadcn/ui styled video player component that uses the media-chrome library.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [],
+    "access": "free",
+    "install": "npx shadcn@latest add @kibo-ui/video-player",
+    "docs": "https://www.kibo-ui.com/components/video-player",
+    "dependencies": [
+      "media-chrome"
+    ],
+    "curated": false,
+    "demo": false
+  }
+]
