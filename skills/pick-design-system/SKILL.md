@@ -1,6 +1,6 @@
 ---
 name: pick-design-system
-description: Choose and install a design system (DESIGN.md + shadcn theme tokens + fonts) from the shared design-infra, or adapt one to a brand. Use for "pick a design system", "make it look like Linear / editorial / brutalist / glassy", "apply our theme", "write a DESIGN.md", or restyling a project.
+description: Develop a design system from inspected references and a working component composition, preserving an existing brand where present. Document typography, spacing, color, components and motion in DESIGN.md. Existing theme presets are optional only when explicitly selected. Use for choosing a visual direction, writing DESIGN.md, or restyling a project.
 ---
 
 Read the plugin root `design-infra.config.json` for the deployment URL, repository and installation namespace. Examples below use the default deployment; substitute these settings in a fork. Stable `oc/` catalog IDs are unchanged.
@@ -11,11 +11,17 @@ Repo root of design-infra = `<this skill's base dir>/../..` (`$DI`).
 
 ## 1. Choose
 
-Read `$DI/design-systems/README.md` (comparison table) — not every DESIGN.md. Match the brief:
-product type, audience, density, mood. If the user named a vibe, map it; if ambiguous, offer
-the 2 best fits with one line each and ask. Then read the chosen `$DI/design-systems/<slug>/DESIGN.md` in full.
+Read the project's existing DESIGN.md and UI first. Preserve its identity unless a new direction is requested.
+Choose the project structure from its purpose, audience and tasks separately from its visual feeling.
+Inspect real website references and catalog component demos; build a coherent composition with realistic content,
+then derive typography, spacing, surfaces, color, density, component states and motion rules from it.
+Record the source references, which choices were adapted, and how the rules work on desktop and mobile.
 
-## 2. Install (project already has shadcn + `@design-infra` registry — else run setup-project first)
+The four existing presets in `$DI/design-systems/README.md` are **legacy options**, not default answers to
+"clean", "sharp" or other mood words. Install one only if the user explicitly selected that preset.
+If they authorized you to choose and build, proceed with the reference-grounded composition without asking for another style approval.
+
+## 2. Install an explicitly selected legacy preset (optional)
 
 ```bash
 pnpm dlx shadcn@latest add @design-infra/theme-<slug>

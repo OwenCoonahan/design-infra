@@ -21,7 +21,7 @@ favorites, inspiration, `@design-infra` recreations). Classify first, then follo
 | **Design system / brand guide / DESIGN.md** | tokens, palettes, type specs | Write `design-systems/<slug>/DESIGN.md` (CONVENTIONS.md + `moods:`), `pnpm generate && pnpm check` |
 | **"I don't like X" / passed on an option** | something he rejected, with a reason | Add to `catalog/dislikes.json` (`id` for one entry or `pattern` for a family like "glow"/"parallax", plus `reason`, `added`). Future proposals skip it and say so |
 | **Tool / MCP / agent skill** | dev tooling for design work | `catalog/sources/<slug>.md` (type `tool`) + curated entry, like `agentation` |
-| **Screenshot / image only** | no URL | Treat as inspiration: create `inspiration/<slug>/` with the image as `public/inspiration/<slug>/hero.webp` and write the README from it |
+| **Screenshot / image only** | no URL | Treat as inspiration: keep the image privately in `.context/inspiration/<slug>/`, create `inspiration/<slug>/README.md` from it, and publish analysis rather than the captured image |
 
 ## Taste issues from other workspaces
 

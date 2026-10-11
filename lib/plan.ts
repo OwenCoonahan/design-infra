@@ -5,10 +5,9 @@ import path from "node:path"
 
 import { MOODS, moodsFromText, type Mood } from "@/lib/catalog/moods"
 import { referenceBrief, referencesFor } from "@/lib/catalog/references"
-import { guessDesignSystems, guessRecipes, PAGE_RECIPES, searchCatalog, summarize } from "@/lib/catalog/search"
+import { guessRecipes, PAGE_RECIPES, PAGE_TYPES, searchCatalog, summarize } from "@/lib/catalog/search"
 import { getCatalog, getDesignSystems } from "@/lib/data"
 
-import { NAMESPACE } from "@/lib/config"
 import { SITE_URL } from "@/lib/catalog/links"
 
 export { SITE_URL }
@@ -19,18 +18,17 @@ export async function getRegistriesPreset() {
 }
 
 /**
- * Brief → a concrete, installable UI plan: design-system candidates, per-section component picks
+ * Brief → a concrete, installable UI plan: reference sites, legacy theme options, per-section component picks
  * (best first), and the setup commands. This is the "don't build from scratch" entry point.
  */
 export async function planUi(brief: string, pageTypes?: string[], picksPerSection = 3, moodOverride?: Mood[]) {
   picksPerSection = Math.max(1, Math.min(8, Math.floor(picksPerSection) || 3))
   const [catalog, systems] = await Promise.all([getCatalog(), getDesignSystems()])
-  const recipes = (pageTypes?.length ? pageTypes : guessRecipes(brief)).filter((r) => PAGE_RECIPES[r])
+  const recipes = (pageTypes?.length ? pageTypes : guessRecipes(brief)).filter((r): r is typeof PAGE_TYPES[number] => PAGE_TYPES.includes(r as typeof PAGE_TYPES[number]))
   const moods: Mood[] = moodOverride?.length ? moodOverride : moodsFromText(brief)
-  const dsRank = guessDesignSystems(moods.length ? `${brief} ${moods.join(" ")}` : brief, systems)
   const inspiration = catalog
     .filter((e) => e.kind === "inspiration" && e.moods.some((m) => moods.includes(m)))
-    .sort((a, b) => b.moods.filter((m) => moods.includes(m)).length - a.moods.filter((m) => moods.includes(m)).length)
+    .sort((a, b) => ((b.favorite ? 3 : 0) + b.moods.filter((m) => moods.includes(m)).length) - ((a.favorite ? 3 : 0) + a.moods.filter((m) => moods.includes(m)).length))
     .slice(0, 5)
   const templates = catalog.filter((e) => e.source === "oc" && e.name.startsWith("template-"))
 
@@ -39,6 +37,7 @@ export async function planUi(brief: string, pageTypes?: string[], picksPerSectio
     return {
       pageType: r,
       label: recipe.label,
+      guidance: recipe.guidance ?? ["Adapt the outline to the project's content, audience and primary task. It is a starting structure, not a mandatory page template."],
       template: templates.find((t) => t.name.includes(r === "ai-app" ? "ai" : r === "dashboard" ? "dashboard" : r))?.install,
       sections: recipe.sections.map((s) => {
         // Brief words refine each section's query ("pricing" + "usage-based enterprise").
@@ -56,8 +55,6 @@ export async function planUi(brief: string, pageTypes?: string[], picksPerSectio
     }
   })
 
-  const topSystem = systems.find((s) => s.slug === dsRank[0]?.slug) ?? systems[0]
-  const top = dsRank[0]
   return {
     brief,
     moods: {
@@ -68,12 +65,9 @@ export async function planUi(brief: string, pageTypes?: string[], picksPerSectio
     },
     inspiration: inspiration.map((e) => ({ id: e.id, name: e.title, url: e.docs, moods: e.moods, why: e.notes ?? e.description, readme: `inspiration/${e.name}/README.md` })),
     designSystem: {
-      recommended: topSystem.slug,
-      reason:
-        top?.score > 0
-          ? `Matches ${top.moodHits?.length ? `the ${top.moodHits.join(" + ")} mood` : "the brief"}: ${topSystem.name} — ${topSystem.description}`
-          : `No strong signal in the brief — ${topSystem.name} is a safe default; confirm with the user.`,
-      candidates: systems.map((s) => ({ slug: s.slug, name: s.name, moods: s.moods, motion: s.motion, description: s.description, install: `npx shadcn@latest add ${s.registryItem}` })),
+      recommended: null,
+      reason: "Preserve the project's existing design. For a new direction, inspect real references, compose suitable components, then derive typography, spacing, color and motion rules from the working page. Mood words alone do not select a theme.",
+      candidates: systems.map((s) => ({ slug: s.slug, name: s.name, legacy: true, moods: s.moods, motion: s.motion, description: s.description, install: `npx shadcn@latest add ${s.registryItem}` })),
     },
     pages,
     setup: [
@@ -82,11 +76,12 @@ export async function planUi(brief: string, pageTypes?: string[], picksPerSectio
       "For a selected React component: check React/Tailwind compatibility and existing components.json before initializing shadcn.",
       `Merge the required registry from ${SITE_URL}/api/setup without replacing existing registries or aliases.`,
       "Install selected picks section by section using their install commands. Adapt to existing tokens and behavior; avoid --overwrite.",
-      `Only when a NEW design system is explicitly requested: install ${NAMESPACE}/theme-${topSystem.slug}; inspect its CSS and DESIGN.md changes first.`,
+      "Only when a NEW design system is explicitly requested: build a reference-grounded composition first, then document its approved tokens and component rules in DESIGN.md. Existing theme presets are legacy options, not defaults.",
       "Compose from selected components; write original UI for catalog gaps. Whole-page templates are optional and require review of their target page.",
     ],
     rules: [
       "Follow the existing ./DESIGN.md and project tokens. A suggested design system is a reference, not permission to replace the brand.",
+      "Choose project structure separately from visual feeling. A clean data product needs filters, charts and records; it does not inherit a marketing site's hero, pricing and testimonial sequence.",
       "Plain app UI (dialogs, selects, forms, tables) → stock shadcn/ui.",
       "Never install access=paid items; key/metered need the user's account.",
       "One heavy effect (WebGL/shader/scroll) per viewport; respect prefers-reduced-motion.",

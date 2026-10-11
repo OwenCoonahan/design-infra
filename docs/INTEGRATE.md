@@ -90,7 +90,9 @@ If there is no DESIGN.md, record the project's existing typography, colors, spac
 
 Pasted website/component URLs, screenshots, and requests to replace an existing section are core workflows. Follow [Build from a reference, or replace a section](https://design-infra.vercel.app/reference/raw). Inspect the reference or current section first, then match real reusable parts and show examples. The catalog does not fetch arbitrary reference URLs or analyse images itself; the project agent uses its own browser/image tools.
 
-Start with the tested starter collection at https://design-infra.vercel.app/api/starter when it fits the need. Its check dates and scope are evidence, not a universal compatibility guarantee.
+Search the full catalog. The tested starter collection at https://design-infra.vercel.app/api/starter is an optional first shelf when it fits the need, not the limit of available components. Its check dates and scope are evidence, not a universal compatibility guarantee.
+
+Choose structure from the project's purpose and tasks separately from visual feeling. `plan_ui` supports `landing`, `dashboard`, `data`, `editorial`, `docs`, `commerce`, `ai-app`, `auth-onboarding` and `portfolio`; pass explicit `page_types` when reference-site wording might confuse detection. A data product needs filters, date ranges, charts, records, source/freshness and data states rather than marketing sections. Existing theme presets are legacy options for explicit selection. Preserve the brand; derive a new system from inspected references and a working composition instead of mapping "clean" to a fixed theme.
 
 Pick an actual component need from the project or the user's request. Search with the component type and desired feeling, such as **clean pricing**, **sharp navbar**, or **subtle button hover**. Use `propose_options` or `plan_ui` when available. Return 3–5 compatible options, their catalog IDs, access requirements, gallery links, live demos, and install instructions. Explain the recommended fit for this project's stack and styling.
 

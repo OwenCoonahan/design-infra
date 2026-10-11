@@ -27,6 +27,27 @@ In the agent you're already using for your project:
 
 [See the reference/replacement workflow and live examples](https://design-infra.vercel.app/reference). Once connected, these requests work in your project; you don't need to move the conversation into design-infra.
 
+## Choose structure separately from style
+
+A project's purpose decides its structure. Its visual references decide how those parts look and feel.
+
+| Project | Useful structure |
+| --- | --- |
+| Marketing | Introduction, product explanation, evidence and next action |
+| Data exploration | Dataset context, filters/date range, metrics, charts, records and detail views |
+| Dashboard | App navigation, operational summary, work lists and settings |
+| Editorial / institutional | Narrative, evidence, programs, stories and related material |
+| Documentation | Search, content tree, readable articles, code examples and reference tables |
+| Commerce | Product discovery, filters, product details, purchase flow and reviews |
+
+The planner supports `data`, `editorial`, `docs` and `commerce` alongside existing page types. An explicit type overrides automatic detection. Data plans include guidance for units, source/freshness, missing data and accessible visualizations. These outlines are starting points: omit irrelevant sections and add the product's real workflows.
+
+"Clean" can mean strong typography, purposeful imagery, restrained chrome and clear hierarchy; it does not require a sparse monochrome layout. [Vela Energy](https://design-infra.vercel.app/inspiration/vela-energy) and [Breakthrough Energy](https://design-infra.vercel.app/inspiration/breakthrough-energy) are saved examples. Adapt their visual principles to the project's structure instead of copying their marketing sequences.
+
+Existing theme presets remain available for explicit selection. The planner does not recommend one automatically. Preserve the project's brand; for a new direction, build from inspected references and reusable components, then document the working rules in DESIGN.md.
+
+To delegate selection: **"Build a clean data-focused page using design-infra. Choose suitable components and implement them. Preserve our branding and data behavior; verify filters, empty/loading/error states and mobile layout."** The agent can proceed when you authorize it to choose and build.
+
 ## Improve it as you use it
 
 Try one real project at a time. Keep a short note when search misses, a live link fails, installation needs a fix, or a component works particularly well. Use the **Component feedback** issue template on GitHub if you have repository access, or send the note to the maintainer:
@@ -65,8 +86,7 @@ There are two places, and you talk to an agent in each:
 - **In the project workspace** you never need to explain design-infra. The project instructions and catalog connection tell the agent where to
   look; you just say what you want ("animate this", "this feels off", "add a pricing section").
 - **In the design-infra workspace** you feed the library: paste links, say what you like, capture sites.
-- **The agent's job** is to show you options *with links*, recommend one, and wait for your pick. If it ever just
-  "fixes" something without showing options, tell it: *"show me options first."*
+- **The agent's job** follows your request: ask for options to get live links and a comparison, or say **"choose and implement"** to delegate selection. It should explain its choice and verification afterward.
 
 ---
 

@@ -12,10 +12,11 @@ export default async function DesignSystemsPage() {
     <div className="mx-auto max-w-7xl px-6 py-12">
       <h1 className="text-3xl font-semibold tracking-tight">Design systems</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Each is a <code className="font-mono text-sm">DESIGN.md</code> (Google Stitch format) compiled to a shadcn theme:
-        colours for light/dark, radius, Google fonts, and a text scale. Installing one also drops DESIGN.md into the
-        project root so every agent stays on-brand.
+        These are legacy theme presets, available when explicitly selected. For a new design direction, start
+        with real references and a working component composition, then document its rules. The planner preserves
+        your existing brand and does not select a preset from words like “clean.”
       </p>
+      <Link href="/inspiration" className="mt-3 inline-block text-sm underline underline-offset-4">Browse website references</Link>
       <div className="mt-10 grid gap-8">
         {systems.map((s) => (
           <section key={s.slug} className="grid gap-6 md:grid-cols-[1fr_1.4fr]">

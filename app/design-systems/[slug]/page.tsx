@@ -32,6 +32,7 @@ export default async function DesignSystemPage(props: PageProps<"/design-systems
           <p className="font-mono text-xs text-muted-foreground">design-systems/{slug}/DESIGN.md</p>
           <h1 className="mt-1 text-3xl font-semibold tracking-tight">{meta.name}</h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">{meta.description}</p>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">Legacy preset · install only when explicitly selected. New design directions start from real references and a working composition.</p>
         </div>
         <CopyCommand className="md:w-[26rem]" command={`pnpm dlx shadcn@latest add ${meta.registryItem}`} />
       </div>

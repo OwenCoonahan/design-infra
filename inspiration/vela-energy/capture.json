@@ -1,0 +1,399 @@
+{
+  "url": "https://www.velaenergy.ai/",
+  "slug": "vela-energy",
+  "capturedAt": "2026-10-11T18:11:27.733Z",
+  "fullHeightCaptured": 12000,
+  "title": "Vela Energy | The AI workforce for power delivery",
+  "description": "Vela keeps your project moving from planning to power-on, tracking changes, flagging risks, and preparing clear next steps for your team to review.",
+  "themeColor": "#ffffff",
+  "pageHeight": 13339,
+  "fonts": {
+    "heading": [
+      {
+        "value": "velaDisplay",
+        "weight": 391
+      },
+      {
+        "value": "velaSans",
+        "weight": 56
+      }
+    ],
+    "body": [
+      {
+        "value": "velaSans",
+        "weight": 1671
+      },
+      {
+        "value": "velaDisplay",
+        "weight": 65
+      }
+    ],
+    "ui": [
+      {
+        "value": "velaSans",
+        "weight": 818
+      }
+    ],
+    "mono": [
+      {
+        "value": "velaMono",
+        "weight": 29
+      }
+    ]
+  },
+  "loadedFontFaces": [
+    "velaDisplay",
+    "velaSans",
+    "velaMono"
+  ],
+  "typeScale": [
+    {
+      "value": "15px/400",
+      "weight": 960
+    },
+    {
+      "value": "13px/400",
+      "weight": 410
+    },
+    {
+      "value": "14px/400",
+      "weight": 331
+    },
+    {
+      "value": "20px/400",
+      "weight": 271
+    },
+    {
+      "value": "13px/510",
+      "weight": 164
+    },
+    {
+      "value": "24px/400",
+      "weight": 159
+    },
+    {
+      "value": "56px/400",
+      "weight": 138
+    },
+    {
+      "value": "12px/400",
+      "weight": 118
+    },
+    {
+      "value": "11px/400",
+      "weight": 76
+    },
+    {
+      "value": "16px/400",
+      "weight": 59
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#ffffff",
+        "weight": 3536
+      },
+      {
+        "value": "#0b0b0c",
+        "weight": 533
+      },
+      {
+        "value": "#050607",
+        "weight": 267
+      },
+      {
+        "value": "#f7f8fa",
+        "weight": 176
+      },
+      {
+        "value": "#243831",
+        "weight": 128
+      },
+      {
+        "value": "#f5f6f7",
+        "weight": 51
+      },
+      {
+        "value": "#fafafa",
+        "weight": 17
+      },
+      {
+        "value": "#e5e7eb",
+        "weight": 11
+      }
+    ],
+    "text": [
+      {
+        "value": "#4a4f58",
+        "weight": 1075
+      },
+      {
+        "value": "#0c0e12",
+        "weight": 495
+      },
+      {
+        "value": "#666d78",
+        "weight": 316
+      },
+      {
+        "value": "#ffffff",
+        "weight": 259
+      },
+      {
+        "value": "#191b1f",
+        "weight": 176
+      },
+      {
+        "value": "#333333",
+        "weight": 86
+      }
+    ],
+    "borders": [
+      {
+        "value": "#ffffff",
+        "weight": 5
+      },
+      {
+        "value": "#e5e7eb",
+        "weight": 5
+      }
+    ]
+  },
+  "radii": [
+    {
+      "value": "22.32px",
+      "weight": 32
+    },
+    {
+      "value": "6.4px",
+      "weight": 15
+    },
+    {
+      "value": "12px",
+      "weight": 7
+    },
+    {
+      "value": "3.35544e+07px",
+      "weight": 6
+    },
+    {
+      "value": "9px",
+      "weight": 6
+    },
+    {
+      "value": "8px",
+      "weight": 4
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(11, 11, 12, 0.07) 0px 0px 0px 1px, rgba(11, 11, 12, 0.04) 0px 1px 1px 0px, rgba(11, 11, 12, 0.24) 0px 12px 20px -16",
+      "weight": 32
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.82) 0px 1px 0px 0px inset, rgba(20, 30, 44, 0.05) 0px 0px 0px 1px, rgba(28, 46, 66, 0.08) 0px 8px ",
+      "weight": 1
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.06) 0px 7px 24px 0px, rgba(0, 0, 0, 0.09) 0px 3px 12px 0px",
+      "weight": 1
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      "weight": 1
+    }
+  ],
+  "cssVariables": {
+    "--container-md": "28rem",
+    "--border": "#eee",
+    "--scroll-fade-t": "0px",
+    "--tw-inset-shadow-alpha": "100%",
+    "--schedule-risk": "#7f2428",
+    "--tw-ring-shadow": "0 0 #0000",
+    "--text-2xl": "1.5rem",
+    "--sidebar-primary-foreground": "lab(98.257% -.443965 -1.43218)",
+    "--card": "#fff",
+    "--tw-drop-shadow-alpha": "100%",
+    "--tw-animation-delay": "0s",
+    "--text-lg": "1.125rem",
+    "--primary-foreground": "#fff",
+    "--success": "#12845a",
+    "--card-foreground": "#191b1f",
+    "--tw-outline-style": "solid",
+    "--tw-inset-ring-shadow": "0 0 #0000",
+    "--text-base--line-height": "calc(1.5 / 1)",
+    "--sidebar-accent-foreground": "lab(98.257% -.443965 -1.43218)",
+    "--muted": "#f7f7f7",
+    "--tw-animation-direction": "normal",
+    "--tw-enter-scale": "1",
+    "--accent-foreground": "#191b1f",
+    "--scroll-fade-b": "0px",
+    "--beam-start": "lab(60.4609% -4.60815 -18.0968)",
+    "--vela-font-mono": "\"velaMono\", \"velaMono Fallback\", ui-monospace, monospace",
+    "--vela-sail": "#fff",
+    "--warning": "#a65f00",
+    "--popover": "#fff",
+    "--ring": "#007bee",
+    "--tw-inset-shadow": "0 0 #0000",
+    "--tw-ring-offset-color": "#fff",
+    "--text-lg--line-height": "calc(1.75 / 1.125)",
+    "--tw-divide-x-reverse": "0",
+    "--tw-gradient-from": "rgba(0, 0, 0, 0)",
+    "--scroll-fade-e": "0px",
+    "--color-white": "#fff",
+    "--tw-shadow-alpha": "100%",
+    "--tw-gradient-to": "rgba(0, 0, 0, 0)",
+    "--font-heading-display": "\"velaDisplay\", \"velaDisplay Fallback\"",
+    "--sidebar-foreground": "lab(98.257% -.443965 -1.43218)",
+    "--sidebar-accent": "lab(8.83943% -1.35434 -9.48133)",
+    "--font-vela-sans": "\"velaSans\", \"velaSans Fallback\"",
+    "--tw-exit-rotate": "0",
+    "--radius": ".5rem",
+    "--font-weight-bold": "700",
+    "--popover-foreground": "#191b1f",
+    "--tw-ring-offset-width": "0px",
+    "--tw-exit-translate-y": "0",
+    "--tw-gradient-via-position": "50%",
+    "--text-xs--line-height": "calc(1 / .75)",
+    "--tw-space-x-reverse": "0",
+    "--container-lg": "32rem",
+    "--tw-gradient-to-position": "100%",
+    "--vela-ink": "#191b1f",
+    "--vela-steel": "#708197",
+    "--default-transition-duration": ".15s",
+    "--chart-4": "#2fcf86",
+    "--chart-2": "#f5a524",
+    "--radius-md": "calc(.5rem * .8)",
+    "--sidebar-primary": "#007bee",
+    "--vela-abyss": "#0a0a0a",
+    "--tw-gradient-from-position": "0%",
+    "--ease-in-out": "cubic-bezier(.4, 0, .2, 1)",
+    "--vela-cyan": "#8ae7ff",
+    "--tw-ring-offset-shadow": "0 0 #0000",
+    "--beam-end": "lab(75.1687% -31.7859 -32.9523)",
+    "--leading-snug": "1.375",
+    "--accent": "#eaf7ff",
+    "--default-transition-timing-function": "cubic-bezier(.4, 0, .2, 1)",
+    "--tw-animation-iteration-count": "1",
+    "--tw-exit-opacity": "1",
+    "--shimmer-angle": "20deg",
+    "--tw-animation-fill-mode": "none",
+    "--text-2xl--line-height": "calc(2 / 1.5)",
+    "--container-5xl": "64rem",
+    "--tw-exit-blur": "0",
+    "--secondary-foreground": "#191b1f",
+    "--spacing": ".25rem",
+    "--background": "#fff",
+    "--tw-translate-z": "0",
+    "--tw-gradient-via": "rgba(0, 0, 0, 0)",
+    "--font-vela-mono": "\"velaMono\", \"velaMono Fallback\"",
+    "--font-weight-semibold": "600",
+    "--tw-exit-translate-x": "0",
+    "--text-sm": ".875rem",
+    "--tw-translate-y": "0",
+    "--ease-out": "cubic-bezier(0, 0, .2, 1)",
+    "--tw-enter-translate-x": "0",
+    "--tw-content": "\"\"",
+    "--chart-5": "#708197",
+    "--sidebar-border": "lab(98.257% -.443965 -1.43218/.1)",
+    "--scroll-fade-s": "0px",
+    "--leading-tight": "1.25",
+    "--muted-foreground": "#747474",
+    "--tw-divide-y-reverse": "0",
+    "--tw-border-style": "solid",
+    "--beam-mid": "#007bee",
+    "--vela-blue": "#007bee",
+    "--container-2xl": "42rem",
+    "--tw-exit-scale": "1",
+    "--tw-shadow": "0 0 #0000",
+    "--text-sm--line-height": "calc(1.25 / .875)",
+    "--tw-translate-x": "0",
+    "--input": "#e9e9e9",
+    "--tw-enter-rotate": "0",
+    "--text-xs": ".75rem",
+    "--color-black": "#000",
+    "--destructive": "lab(63.7053% 60.745 31.3109)",
+    "--font-weight-medium": "500",
+    "--font-weight-normal": "400",
+    "--tw-enter-translate-y": "0",
+    "--chart-3": "#37c8f3",
+    "--sidebar": "lab(3.99237% -.484377 -6.48047)",
+    "--tw-enter-blur": "0",
+    "--tw-space-y-reverse": "0",
+    "--primary": "#007bee",
+    "--font-brand": "\"soliden\", \"soliden Fallback\"",
+    "--tw-enter-opacity": "1",
+    "--foreground": "#191b1f"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "The AI workforce for power delivery."
+    },
+    {
+      "tag": "h2",
+      "text": "For owners and delivery teams."
+    },
+    {
+      "tag": "h2",
+      "text": "See Vela at work."
+    },
+    {
+      "tag": "h2",
+      "text": "Needs your attention"
+    },
+    {
+      "tag": "h2",
+      "text": "By the numbers"
+    },
+    {
+      "tag": "h2",
+      "text": "How Vela works."
+    },
+    {
+      "tag": "h2",
+      "text": "Inside Vela."
+    },
+    {
+      "tag": "h2",
+      "text": "From equipment to power-on."
+    },
+    {
+      "tag": "h2",
+      "text": "Keep the tools you use."
+    },
+    {
+      "tag": "h2",
+      "text": "Get to know Vela."
+    },
+    {
+      "tag": "h2",
+      "text": "Products"
+    },
+    {
+      "tag": "h2",
+      "text": "Company"
+    },
+    {
+      "tag": "h2",
+      "text": "Resources"
+    }
+  ],
+  "signals": {
+    "sections": 11,
+    "images": 57,
+    "videos": 1,
+    "canvases": 1,
+    "svgs": 36,
+    "animatedElements": 94,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": true,
+      "framer": false,
+      "webflow": false,
+      "tailwind": true,
+      "gsap": false
+    }
+  }
+}
