@@ -1,0 +1,156 @@
+{
+  "url": "https://www.breakthroughenergy.org/",
+  "slug": "breakthrough-energy",
+  "capturedAt": "2026-10-11T18:11:31.252Z",
+  "fullHeightCaptured": 12000,
+  "title": "Home",
+  "description": "Empowering innovators to build the future of energy",
+  "themeColor": "#FAFBF8",
+  "pageHeight": 24303,
+  "fonts": {
+    "heading": [
+      {
+        "value": "Saans",
+        "weight": 235
+      }
+    ],
+    "body": [
+      {
+        "value": "Saans",
+        "weight": 448
+      }
+    ],
+    "ui": [
+      {
+        "value": "ItemsRegular",
+        "weight": 31
+      }
+    ],
+    "mono": []
+  },
+  "loadedFontFaces": [
+    "Saans",
+    "ItemsRegular"
+  ],
+  "typeScale": [
+    {
+      "value": "16px/400",
+      "weight": 380
+    },
+    {
+      "value": "139px/500",
+      "weight": 88
+    },
+    {
+      "value": "48px/500",
+      "weight": 70
+    },
+    {
+      "value": "14px/400",
+      "weight": 68
+    },
+    {
+      "value": "32px/700",
+      "weight": 49
+    },
+    {
+      "value": "12px/400",
+      "weight": 31
+    },
+    {
+      "value": "60px/500",
+      "weight": 28
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#fafbf8",
+        "weight": 3590
+      },
+      {
+        "value": "#12110e",
+        "weight": 89
+      },
+      {
+        "value": "#808080",
+        "weight": 80
+      },
+      {
+        "value": "#dfff5c",
+        "weight": 54
+      }
+    ],
+    "text": [
+      {
+        "value": "#12110e",
+        "weight": 442
+      },
+      {
+        "value": "#808080",
+        "weight": 101
+      },
+      {
+        "value": "#fafbf8",
+        "weight": 94
+      },
+      {
+        "value": "#ffffff",
+        "weight": 54
+      },
+      {
+        "value": "#000000",
+        "weight": 19
+      },
+      {
+        "value": "#dfff5c",
+        "weight": 4
+      }
+    ],
+    "borders": []
+  },
+  "radii": [],
+  "shadows": [],
+  "cssVariables": {
+    "--grid-column-gap": "3.2rem",
+    "--color-transparent": "transparent",
+    "--color-grey": "rgb(128, 128, 128)",
+    "--grid-max-outer-width": "192rem",
+    "--color-cream": "#FAFBF8",
+    "--dvh": "900px",
+    "--color-black-alt": "rgb(18, 17, 14)",
+    "--color-yellow": "#DFFF5C",
+    "--lch": "0px",
+    "--grid-side-margin": "min(calc((2rem) + (3.2 - 2) * (100vw - 37.5rem) / 106.5), 3.2rem)",
+    "--color-warm-grey": "#C3BDB8",
+    "--color-border": "rgba(18, 17, 14, .3019607843)",
+    "--dch": "0px",
+    "--grid-columns": "12",
+    "--svh": "900px",
+    "--grid-gaps-total": "3.2rem * (12 - 1)",
+    "--color-black": "rgb(18, 17, 14)",
+    "--color-beige": "#DDD9D4"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "Empowering innovatorsto build the futureof energy"
+    }
+  ],
+  "signals": {
+    "sections": 11,
+    "images": 134,
+    "videos": 4,
+    "canvases": 1,
+    "svgs": 189,
+    "animatedElements": 20,
+    "prefersReducedMotionCss": false,
+    "stack": {
+      "nextjs": false,
+      "framer": false,
+      "webflow": false,
+      "tailwind": false,
+      "gsap": false
+    }
+  }
+}

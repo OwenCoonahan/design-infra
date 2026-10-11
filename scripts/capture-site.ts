@@ -1,12 +1,12 @@
 /**
- * Capture a website Owen likes as raw material for an inspiration entry.
+ * Capture a reference website as raw material for an inspiration entry.
  *
  *   pnpm capture <url> [--slug name] [--wait 2500]
  *
  * Writes
- *   public/inspiration/<slug>/hero.webp     first viewport, 1440×900 (served at /inspiration/<slug>/hero.webp)
- *   public/inspiration/<slug>/full.webp     whole page (capped), 720px wide
- *   public/inspiration/<slug>/mobile.webp   first viewport at 390×844
+ *   .context/inspiration/<slug>/hero.webp   first viewport, 1440×900 (private review only)
+ *   .context/inspiration/<slug>/full.webp   whole page (capped), 720px wide
+ *   .context/inspiration/<slug>/mobile.webp first viewport at 390×844
  *   inspiration/<slug>/capture.json         extracted design data: fonts, palette, radii, shadows, CSS custom
  *                                           properties, section outline, motion/tech signals
  *
@@ -33,8 +33,9 @@ const slug =
     .replace(/^www\./, "")
     .replace(/\.[a-z]+$/, "")
     .replace(/[^a-z0-9]+/g, "-")
+if (!/^[a-z0-9-]+$/.test(slug)) throw new Error("slug must contain only lowercase letters, numbers and hyphens")
 const WAIT = Number(values.wait)
-const PUBLIC_DIR = path.join(process.cwd(), "public/inspiration", slug)
+const CAPTURE_DIR = path.join(process.cwd(), ".context/inspiration", slug)
 const DATA_DIR = path.join(process.cwd(), "inspiration", slug)
 const MAX_FULL_HEIGHT = 12_000
 
@@ -184,7 +185,7 @@ function extract() {
 }
 
 async function main() {
-  await mkdir(PUBLIC_DIR, { recursive: true })
+  await mkdir(CAPTURE_DIR, { recursive: true })
   await mkdir(DATA_DIR, { recursive: true })
   const browser = await puppeteer.launch({
     executablePath: process.env.CHROME_PATH ?? "/usr/bin/google-chrome",
@@ -203,7 +204,7 @@ async function main() {
     await sleep(600)
 
     const hero = await page.screenshot({ type: "png", encoding: "base64" })
-    await writeFile(path.join(PUBLIC_DIR, "hero.webp"), await toWebp(page, hero, 1200, 0.8))
+    await writeFile(path.join(CAPTURE_DIR, "hero.webp"), await toWebp(page, hero, 1200, 0.8))
 
     // Scroll through once so lazy content and scroll-triggered sections render, then extract + full shot.
     await page.evaluate(async () => {
@@ -224,7 +225,7 @@ async function main() {
       clip: { x: 0, y: 0, width: 1440, height },
       captureBeyondViewport: true,
     })
-    await writeFile(path.join(PUBLIC_DIR, "full.webp"), await toWebp(page, full, 720, 0.6))
+    await writeFile(path.join(CAPTURE_DIR, "full.webp"), await toWebp(page, full, 720, 0.6))
 
     const mobile = await browser.newPage()
     await mobile.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true })
@@ -232,12 +233,12 @@ async function main() {
     await sleep(WAIT)
     await dismissOverlays(mobile)
     const m = await mobile.screenshot({ type: "png", encoding: "base64" })
-    await writeFile(path.join(PUBLIC_DIR, "mobile.webp"), await toWebp(mobile, m, 390, 0.75))
+    await writeFile(path.join(CAPTURE_DIR, "mobile.webp"), await toWebp(mobile, m, 390, 0.75))
 
     const capture = { url, slug, capturedAt: new Date().toISOString(), fullHeightCaptured: height, ...data }
     await writeFile(path.join(DATA_DIR, "capture.json"), JSON.stringify(capture, null, 2) + "\n")
     console.log(`✓ captured ${url}
-  public/inspiration/${slug}/{hero,full,mobile}.webp
+  .context/inspiration/${slug}/{hero,full,mobile}.webp (private review; not redistributed)
   inspiration/${slug}/capture.json
   fonts: ${Object.entries(data.fonts).map(([r, f]) => `${r}=${f[0]?.value ?? "-"}`).join(" ")}
   palette: bg ${data.palette.backgrounds.slice(0, 3).map((c) => c.value).join(" ")} · text ${data.palette.text.slice(0, 2).map((c) => c.value).join(" ")}

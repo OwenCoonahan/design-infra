@@ -48,6 +48,98 @@
     "live": "https://design-infra.vercel.app/components/design-infra/feature-levels"
   },
   {
+    "id": "inspiration/breakthrough-energy",
+    "source": "inspiration",
+    "name": "breakthrough-energy",
+    "title": "Breakthrough Energy",
+    "description": "Institutional energy storytelling using oversized typography, full-viewport video, a sparse navigation shell and a scroll-led sequence of imagery, figures and portfolio material.",
+    "kind": "inspiration",
+    "categories": [
+      "hero",
+      "navigation",
+      "image",
+      "stats",
+      "chart",
+      "scroll-effect",
+      "blog",
+      "form",
+      "footer"
+    ],
+    "tags": [
+      "inspiration",
+      "website",
+      "energy",
+      "institutional",
+      "storytelling",
+      "editorial",
+      "clean",
+      "photography",
+      "video",
+      "portfolio"
+    ],
+    "moods": [
+      "refined",
+      "editorial",
+      "bold"
+    ],
+    "access": "free",
+    "install": "reference only — read inspiration/breakthrough-energy/README.md (patterns → oc/navbar, oc/hero-split, oc/stats-row, oc/feature-list, oc/footer-columns, shadcn/chart-bar-interactive, kibo-ui/video-player, motion/scroll-linked)",
+    "docs": "https://www.breakthroughenergy.org/",
+    "dependencies": [],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user calls this clean: clear typographic hierarchy and intentional editorial compositions, even with vivid accents and motion. — The user calls this \"clean\"; its strong typographic hierarchy and intentional compositions show that clean can include vivid accents and substantial motion.",
+    "demo": false,
+    "appliesTo": [],
+    "live": "https://www.breakthroughenergy.org/"
+  },
+  {
+    "id": "inspiration/vela-energy",
+    "source": "inspiration",
+    "name": "vela-energy",
+    "title": "Vela Energy",
+    "description": "Energy-software marketing site combining an immersive infrastructure-video hero with restrained white sections, a working product demonstration and plainly presented evidence.",
+    "kind": "inspiration",
+    "categories": [
+      "hero",
+      "navigation",
+      "features",
+      "stats",
+      "tabs",
+      "ai-chat",
+      "agent-ui",
+      "cta",
+      "footer"
+    ],
+    "tags": [
+      "inspiration",
+      "website",
+      "energy",
+      "infrastructure",
+      "marketing",
+      "product-led",
+      "clean",
+      "photography",
+      "video",
+      "light"
+    ],
+    "moods": [
+      "refined",
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "reference only — read inspiration/vela-energy/README.md (patterns → oc/navbar, oc/hero-split, oc/feature-list, oc/stats-row, oc/chat-thread, oc/agent-status, oc/footer-columns, motion-primitives/carousel, kibo-ui/video-player)",
+    "docs": "https://www.velaenergy.ai/",
+    "dependencies": [],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user calls this clean: purposeful typography, infrastructure imagery, restrained surfaces and a product-led explanation. — The user calls this \"clean\"; use it as a reference for purposeful typography, photography, restrained surfaces and product-led explanations, not a generic preset theme.",
+    "demo": false,
+    "appliesTo": [],
+    "live": "https://www.velaenergy.ai/"
+  },
+  {
     "id": "aceternity/multi-level-features-with-illustrations",
     "source": "aceternity",
     "name": "multi-level-features-with-illustrations",

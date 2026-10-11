@@ -28,7 +28,7 @@ when workflows change.
 | question | file |
 |---|---|
 | "what feels calm / premium / playful…?" | `catalog/MOODS.md` (design systems, inspiration, top picks per mood) |
-| sites Owen likes, analysed | `inspiration/<slug>/README.md` (+ `capture.json`, screenshots in `public/inspiration/<slug>/`) |
+| sites Owen likes, analysed | `inspiration/<slug>/README.md` (+ `capture.json`, private screenshots in `.context/inspiration/<slug>/`) |
 | "where do I look for ideas on navbars / pricing / animated landings…?" (inspiration galleries, exact URLs, etiquette) | `catalog/REFERENCES.md` (source: `catalog/references.json`, ranking `lib/catalog/references.ts`) |
 | "what component should I use for X?" | `catalog/CATALOG.md` (grep it), `catalog/index.json` (jq it), `catalog/categories.md` |
 | "make THIS animate / nicer" — how does it move, how is it applied? | `motion` / `integration` / `appliesTo` / `live` on every entry (rules: `lib/catalog/tags.ts`); `pnpm lookup "card" --trigger hover --intensity subtle --integration wrapper` |
@@ -95,7 +95,7 @@ directions with gallery/live links and a compare link (`lib/catalog/links.ts`), 
 - **Owen pastes anything** (library, component, website, design system, screenshot) → `skills/ingest/SKILL.md`,
   which routes to `ingest-library`, `ingest-inspiration` (websites: `pnpm capture` → analysis README), favorites,
   or a new DESIGN.md. Always record *why he likes it* and tag moods.
-- **New design system** → copy a `design-systems/<slug>/`, follow CONVENTIONS.md, `pnpm generate && pnpm check`.
+- **New design system** → inspect real references, compose a convincing page from catalog components, then derive its rules in `design-systems/<slug>/DESIGN.md`. Follow CONVENTIONS.md, `pnpm generate && pnpm check`. Existing presets are legacy options for explicit selection, not defaults from mood words. Choose project structure separately: data, editorial, docs, commerce and marketing need different outlines.
 - **New `@oc` block** → `registry/oc/blocks/<name>/<name>.tsx` (theme tokens only — `bg-card`, `text-muted-foreground`,
   `font-heading font-headline`, colours via `var(--primary)`), add it to `registry/oc/blocks/registry.json`,
   add a demo in `components/demos/oc-demos.tsx`, hand-tag it in `catalog/curated.json` (`{ "id": "oc/<name>",

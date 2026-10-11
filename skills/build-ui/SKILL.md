@@ -25,11 +25,10 @@ Use the matched parts as the plan; adapt details the catalog does not cover.
 
 ## 1. Brief
 
-Extract: product + audience, page types (landing / dashboard / ai-app / auth-onboarding / portfolio), must-have
+Extract: product + audience + primary tasks, page types (landing / dashboard / data / editorial / docs / commerce / ai-app / auth-onboarding / portfolio), must-have
 sections, references ("like Linear"), light/dark — and above all **how it should feel** (moods: calm, minimal,
 refined, technical, editorial, warm, playful, premium, futuristic, experimental, bold, retro, organic,
-trustworthy). If the feel **or** page types are missing, ask **one** compact question offering 2–3 moods with a
-one-line description and the design system each maps to (`browse_moods`); otherwise proceed.
+trustworthy). Infer structure from the existing project and brief when possible. Ask one compact question only if an essential task or requirement is missing. Choose structure separately from feeling: a clean data product still needs filters, charts, records and data states. "Clean" is a direction for hierarchy and restraint, not permission to install a preset theme.
 
 ## 2. Plan and choose
 
@@ -39,7 +38,7 @@ build. For design choices, show 3–5 directions with gallery/live links and a c
 and wait for the user's pick. If they already selected components or explicitly asked you to choose and build, proceed
 within that authorization. It returns detected moods, matching
 **inspiration** sites (read them with `get_inspiration` — they show what the feeling looks like and
-which components reproduce it), the design system, and per-section picks. Write a short plan:
+which components reproduce it), legacy theme options and per-section picks. No theme is recommended automatically. Inspect the relevant live references and compose parts around the project's content. Write a short plan:
 
 | page | section | pick (id) | why |
 |---|---|---|---|
@@ -48,7 +47,7 @@ Each section also carries `references` (inspiration galleries with exact URLs) �
 or no pick fits, offer them: "see how others do it: <links>" (MCP `find_references` for any other pattern).
 
 Rules for picking per section:
-- Starter template exists for the page type → start from it, then swap/add sections:
+- A starter template is optional when its structure fits the actual task; inspect it before adopting it:
   `@design-infra/template-landing` (→ `app/page.tsx`), `@design-infra/template-saas-dashboard` (→ `app/dashboard/page.tsx`),
   `@design-infra/template-ai-chat` (→ `app/chat/page.tsx`). Use `--overwrite` only for a fresh starter page or when replacing that page is explicitly authorized; don't overwrite an existing project page during component work.
   Each template pulls its `@design-infra` blocks into `components/` — edit those for product copy.
@@ -59,8 +58,7 @@ Rules for picking per section:
 
 ## 3. Set up (once per project)
 
-Follow the **setup-project** skill to connect the catalog and initialize component tooling when needed. Preserve an existing DESIGN.md and brand. When a new theme is wanted, install the
-design system: `pnpm dlx shadcn@latest add @design-infra/theme-<slug>` → tokens, fonts, text scale, `./DESIGN.md`. Read DESIGN.md.
+Follow the **setup-project** skill to connect the catalog and initialize component tooling when needed. Preserve an existing DESIGN.md and brand. For an explicitly requested new design direction, build a reference-grounded composition and extract its approved typography, spacing, color, components and motion into DESIGN.md. Follow **pick-design-system**; the current four theme presets remain legacy options only when explicitly selected.
 
 ## 4. Assemble (after the user has chosen or authorized you to choose)
 

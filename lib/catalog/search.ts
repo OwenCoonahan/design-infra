@@ -238,7 +238,9 @@ export function summarize(e: CatalogEntry) {
  * Typical section lists for common product types. plan_ui uses these as the default outline;
  * agents should adjust to the brief.
  */
-export const PAGE_RECIPES: Record<string, { label: string; sections: { section: string; query: string; category?: Category }[] }> = {
+export const PAGE_TYPES = ["landing", "dashboard", "data", "editorial", "docs", "commerce", "ai-app", "auth-onboarding", "portfolio"] as const
+
+export const PAGE_RECIPES: Record<typeof PAGE_TYPES[number], { label: string; guidance?: string[]; sections: { section: string; query: string; category?: Category }[] }> = {
   landing: {
     label: "Marketing / landing page",
     sections: [
@@ -262,6 +264,59 @@ export const PAGE_RECIPES: Record<string, { label: string; sections: { section: 
       { section: "Data table", query: "table", category: "table" },
       { section: "Empty state", query: "empty state", category: "empty-state" },
       { section: "Settings form", query: "settings form", category: "form" },
+    ],
+  },
+  data: {
+    label: "Data exploration / reporting",
+    guidance: [
+      "Start with the questions users need to answer, dataset shape and available comparisons; choose charts for the data, not decoration.",
+      "Keep filters and date ranges visible. Include units, source, freshness, loading, missing-data and error states.",
+      "Use readable scales and accessible series labels; preserve dense useful information and provide a table alternative and export when needed.",
+    ],
+    sections: [
+      { section: "Navigation and dataset context", query: "navigation", category: "navigation" },
+      { section: "Filters, date range and search", query: "filter date picker input", category: "input" },
+      { section: "Summary metrics with units and comparison", query: "stats", category: "stats" },
+      { section: "Primary visualization", query: "chart", category: "chart" },
+      { section: "Detailed records and sorting", query: "table", category: "table" },
+      { section: "No results / missing data", query: "empty state", category: "empty-state" },
+    ],
+  },
+  editorial: {
+    label: "Editorial / institutional storytelling",
+    guidance: ["Build around the narrative and reading hierarchy: introduction, evidence, stories and related material. Photography and motion should serve the content."],
+    sections: [
+      { section: "Navigation", query: "navbar", category: "navigation" },
+      { section: "Opening statement", query: "hero", category: "hero" },
+      { section: "Evidence and figures", query: "stats", category: "stats" },
+      { section: "Story / program sections", query: "feature list", category: "features" },
+      { section: "Related stories", query: "blog", category: "blog" },
+      { section: "Footer", query: "footer", category: "footer" },
+    ],
+  },
+  docs: {
+    label: "Documentation / knowledge base",
+    guidance: ["Prioritize findability, reading width, navigation, code examples and content hierarchy; do not add marketing sections to a documentation page."],
+    sections: [
+      { section: "Navigation and search", query: "navbar", category: "navigation" },
+      { section: "Documentation tree", query: "sidebar", category: "sidebar" },
+      { section: "Search input", query: "search input", category: "input" },
+      { section: "Code examples", query: "code", category: "code" },
+      { section: "Reference tables", query: "table", category: "table" },
+      { section: "Frequently asked questions", query: "faq", category: "faq" },
+    ],
+  },
+  commerce: {
+    label: "Storefront / product browsing",
+    guidance: ["Prioritize product discovery, comparison and purchase decisions. Show product details, price and availability; connect cart and checkout to the project's real commerce flow."],
+    sections: [
+      { section: "Store navigation", query: "navbar", category: "navigation" },
+      { section: "Search and filters", query: "search input", category: "input" },
+      { section: "Product cards", query: "card", category: "card" },
+      { section: "Product imagery", query: "image carousel", category: "carousel" },
+      { section: "Reviews", query: "testimonials", category: "testimonials" },
+      { section: "Purchase action", query: "button", category: "button" },
+      { section: "Footer", query: "footer", category: "footer" },
     ],
   },
   "ai-app": {
@@ -300,12 +355,19 @@ export const PAGE_RECIPES: Record<string, { label: string; sections: { section: 
 export function guessRecipes(brief: string): string[] {
   const b = brief.toLowerCase()
   const out: string[] = []
-  if (/landing|marketing|homepage|launch|waitlist|website|site/.test(b)) out.push("landing")
-  if (/dashboard|admin|saas|analytics|internal tool|crm|app\b|table/.test(b)) out.push("dashboard")
+  const marketing = /\b(landing|marketing|homepage|launch|waitlist)\b/.test(b)
+  if (marketing) out.push("landing")
+  if (/\b(data[- ]focused|data[- ]heavy|data[- ]driven|data exploration|dataset|analytics|reporting|visuali[sz]ation|observability)\b/.test(b)) out.push("data")
+  if (/\b(editorial|magazine|publication|newsroom|journal|institutional|storytelling)\b/.test(b)) out.push("editorial")
+  if (/\b(documentation|docs|knowledge base|api reference)\b/.test(b)) out.push("docs")
+  if (/\b(ecommerce|e-commerce|storefront|online store|shopping|checkout)\b/.test(b)) out.push("commerce")
+  if (/\b(dashboard|admin|internal tool|crm)\b/.test(b) && !out.includes("data")) out.push("dashboard")
   if (/\bai\b|agent|chat|assistant|llm|copilot|gpt|claude/.test(b)) out.push("ai-app")
   if (/login|sign ?up|auth|onboard/.test(b)) out.push("auth-onboarding")
-  if (/portfolio|personal|resume|agency/.test(b)) out.push("portfolio")
-  return out.length ? out : ["landing"]
+  if (/\b(portfolio|personal site|resume|agency)\b/.test(b)) out.push("portfolio")
+  if (out.length) return out
+  if (/\b(saas|app|application)\b/.test(b)) return ["dashboard"]
+  return ["landing"]
 }
 
 /** Brief → design systems ranked by mood overlap (+ a few domain hints). Agent should still confirm. */

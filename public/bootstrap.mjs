@@ -20998,7 +20998,7 @@ var MOODS = {
   refined: {
     label: "Refined",
     description: "Polished micro-detail and subtle motion \u2014 Linear/Vercel/Stripe craft.",
-    words: ["refined", "polished", "crafted", "precise", "sleek", "sharp", "crisp", "elegant", "sophisticated", "linear", "stripe", "vercel", "apple"]
+    words: ["refined", "clean", "polished", "crafted", "precise", "sleek", "sharp", "crisp", "elegant", "sophisticated", "linear", "stripe", "vercel", "apple"]
   },
   technical: {
     label: "Technical",

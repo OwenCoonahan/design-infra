@@ -15,10 +15,10 @@ Reference example: `inspiration/linear/README.md`. Schema: `Inspiration` in `lib
 pnpm capture <url> [--slug <name>]
 ```
 
-Writes `public/inspiration/<slug>/{hero,full,mobile}.webp` and `inspiration/<slug>/capture.json` (fonts by role,
+Writes private `.context/inspiration/<slug>/{hero,full,mobile}.webp` and `inspiration/<slug>/capture.json` (fonts by role,
 type scale, palette by area/text weight, borders, radii, shadows, `:root` CSS variables, h1/h2 outline, motion
 and stack signals). If the site blocks headless Chrome or shows a cookie wall, retry with `--wait 6000`; for
-app-only products, use screenshots the user provides.
+app-only products, use screenshots the user provides. Keep captured imagery in `.context/`; published inspiration is link-only unless redistribution rights are established. Never infer missing sections from blank scroll-animation captures; inspect them live.
 
 ## 2. Look, then analyse
 
@@ -33,7 +33,7 @@ Read the three webp images (Read tool) and `capture.json`. Write `inspiration/<s
   scale, radii. Name Google-Font equivalents for any proprietary fonts (e.g. Berkeley Mono → JetBrains Mono).
 - **Layout & patterns** — a table: pattern → what they do → how to reproduce it (catalog ids, `@design-infra` blocks).
 - **Motion** — what animates and how (durations/easing feel), and matching catalog/transitions entries.
-- **How to apply** — a short recipe: which design system, section order, rules ("one accent per page").
+- **How to apply** — project structure, observed section order and reusable rules. Separate marketing, editorial, data, docs and app structures from visual feeling. Preserve existing project identity; derive new design rules from a reviewed composition rather than auto-selecting a theme preset.
 
 ## 3. Fill gaps (judgement)
 
@@ -49,5 +49,5 @@ Read the three webp images (Read tool) and `capture.json`. Write `inspiration/<s
 pnpm catalog && pnpm check     # validates front matter + related ids; updates catalog/MOODS.md
 ```
 
-Commit (`inspiration/<slug>/`, `public/inspiration/<slug>/`, any new blocks). Report: moods, the 3–5 most
+Commit (`inspiration/<slug>/`, any new blocks; never private screenshots). Report: moods, the 3–5 most
 reusable patterns and what they map to, anything built, and suggested next steps.

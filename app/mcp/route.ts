@@ -7,7 +7,7 @@ import { createMcpHandler } from "mcp-handler"
 import { z } from "zod"
 
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
-import { searchCatalog, summarize } from "@/lib/catalog/search"
+import { PAGE_TYPES, searchCatalog, summarize } from "@/lib/catalog/search"
 import { CATEGORIES, Mood, MotionIntensity, MotionTrigger } from "@/lib/catalog/schema"
 import { getCatalog, getDesignSystem, getDesignSystems, getSources } from "@/lib/data"
 import { MOTION_LANGUAGE_NAMES } from "@/lib/catalog/motion"
@@ -35,11 +35,11 @@ const handler = createMcpHandler(
       {
         title: "Plan a UI from a product brief",
         description:
-          "START HERE when building any website, web app, landing page, dashboard or AI interface. Give the product brief (what it is, who it's for, the look). Returns a recommended design system, a section-by-section page outline with the best installable components for each section from the shared design-infra catalog, and setup commands. Use this instead of writing UI from scratch.",
+          "START HERE when building a website or app. Describe its purpose, audience, tasks and look. Returns a structure appropriate to marketing, data, editorial, docs, commerce, dashboards or AI interfaces, ranked reusable components and live references. Preserve the project brand; derive new design rules from real references and a working composition instead of selecting a preset theme from mood words.",
         inputSchema: z.object({
           brief: z.string().describe("What the product is, audience, pages needed, desired look/feel"),
           page_types: z
-            .array(z.enum(["landing", "dashboard", "ai-app", "auth-onboarding", "portfolio"]))
+            .array(z.enum(PAGE_TYPES))
             .optional()
             .describe("Override the auto-detected page types"),
           picks_per_section: z.number().int().min(1).max(8).optional(),
@@ -172,13 +172,13 @@ const handler = createMcpHandler(
       {
         title: "Get a saved inspiration site",
         description: "A saved analysis of an inspiration website or app: feel, palette, type, layout patterns, motion, and which catalog components reproduce it. Ids look like 'inspiration/<slug>'.",
-        inputSchema: z.object({ id: z.string() }),
+        inputSchema: z.object({ id: z.string().regex(/^(?:inspiration\/)?[a-z0-9-]+$/) }),
       },
       async ({ id }) => {
         const slug = id.replace(/^inspiration\//, "")
         const md = await readFile(path.join(process.cwd(), "inspiration", slug, "README.md"), "utf8").catch(() => null)
         if (!md) return { ...json({ error: `No inspiration "${slug}". Use browse_moods or search_components with source "inspiration".` }), isError: true }
-        return { content: [{ type: "text" as const, text: `${md}\n\nScreenshots: ${SITE_URL}/inspiration/${slug}/hero.webp , ${SITE_URL}/inspiration/${slug}/full.webp` }] }
+        return { content: [{ type: "text" as const, text: `${md}\n\nReference analysis: ${SITE_URL}/inspiration/${slug}. Inspect the original website linked above for current visual examples; captured screenshots are private review material.` }] }
       }
     )
 
