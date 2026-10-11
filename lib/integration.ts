@@ -1,3 +1,10 @@
 import { configureText } from "./config"
 
-export const SETUP_PROMPT = configureText(`Set up design-infra in this project using https://design-infra.vercel.app/integrate/raw (source: https://github.com/OwenCoonahan/design-infra). Inspect our stack and existing styling, then connect the catalog using this agent's supported MCP configuration or the HTTP fallback. Preserve our brand and configuration. Add project instructions to search before building UI, inspect pasted links/screenshots using https://design-infra.vercel.app/reference/raw, and show distinct live alternatives when I want to replace a section. Install only selected, compatible components. Finish by showing three live options for one useful improvement, recommend one, and wait for my pick. Report what you verified and anything that needs a restart.`)
+const start = configureText("Use https://github.com/OwenCoonahan/design-infra in this project. Follow https://design-infra.vercel.app/integrate/raw to connect the catalog; preserve our stack and brand.")
+
+export const AGENT_PROMPTS = {
+  recommend: `${start} Recommend 3 compatible component options with live links; wait for my pick. Report verification and any restart needed.`,
+  implement: `${start} Choose and implement one compatible improvement using catalog components and real references. Verify the result; report component IDs, sources, changes and any restart needed.`,
+}
+
+export const SETUP_PROMPT = AGENT_PROMPTS.recommend

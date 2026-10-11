@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises"
 import path from "node:path"
+import Link from "next/link"
 
 import { CopyPrompt } from "@/components/site/copy-prompt"
 import { configureText } from "@/lib/config"
@@ -15,7 +16,7 @@ export default async function IntegratePage() {
       <h1 className="text-3xl font-semibold tracking-tight">Connect your project</h1>
       <p className="mt-3 text-muted-foreground">Give your agent access to real components, live demos, and install instructions. No clone or paid account is needed to get started.</p>
       <CopyPrompt prompt={SETUP_PROMPT} />
-      <p className="mb-8 text-sm text-muted-foreground">Friends can use this page directly. The GitHub repository currently requires collaborator access. Agents: <a className="underline" href="/integrate/raw">read the setup instructions as markdown</a>.</p>
+      <p className="mb-8 text-sm text-muted-foreground">Friends can use this page directly or copy a prompt from the <Link className="underline" href="/#use-with-agent">homepage</Link> to choose and build. Agents: <a className="underline" href="/integrate/raw">read the setup instructions as markdown</a>.</p>
       <Markdown>{configureText(instructions)}</Markdown>
     </div>
   )

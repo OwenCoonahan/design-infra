@@ -8,9 +8,9 @@ Find existing components, see them live, and give your coding agent the right pa
 
 Open an existing project in Claude Code or Codex and paste:
 
-> Set up design-infra in this project. Read https://design-infra.vercel.app/integrate/raw, inspect our stack and styling, and connect the catalog. Preserve our current brand and configuration. Add project instructions to search before building UI. Show three live options for one useful improvement, recommend one and wait for my pick. Verify the connection and explain any restart needed.
+> Use https://github.com/OwenCoonahan/design-infra in this project. Follow https://design-infra.vercel.app/integrate/raw to connect the catalog; preserve our stack and brand. Recommend 3 compatible component options with live links; wait for my pick. Report verification and any restart needed.
 
-No clone, plugin or design-infra API key is required. The hosted instructions work while the source repository is private. Repository/plugin access requires an invitation until the maintainer chooses to make it public.
+No clone, plugin or design-infra API key is required. The source is public. The [homepage](https://design-infra.vercel.app) also has a **choose and build** prompt if you want the agent to select and implement one improvement directly.
 
 Prefer a command? Download and inspect the script, then run it in your project:
 
@@ -27,7 +27,7 @@ This saves the client's MCP configuration and persistent agent instructions, ver
 
 1. Describe the component and feeling, or paste a website link/screenshot into your agent.
 2. The agent inspects the reference, searches reusable parts and shows distinct options with live and comparison links.
-3. Pick an option; the agent installs compatible components and adapts them to your content, behavior and tokens.
+3. Pick an option, or ask the agent to choose and build; it installs compatible components and adapts them to your content, behavior and tokens.
 4. Check the result at desktop/mobile widths. Share a [feedback report](https://design-infra.vercel.app/feedback) so the next search improves.
 
 Try “I don't like our features section; show different approaches” or “Make this hero feel like this screenshot”. [Reference workflow](docs/REFERENCE.md). The catalog matches observations supplied by the project agent; it does not inspect images or fetch arbitrary reference URLs itself. For other frameworks, use patterns and references, and let the agent explain the implementation gap.
@@ -82,4 +82,4 @@ Source inputs live in catalog/, design-systems/, registry/oc/ and skills/. Read 
 
 ## Licence
 
-Original code is MIT. Third-party code, images, fonts, prompts and vendor access retain their own terms: see [NOTICE.md](NOTICE.md). A catalog entry or install command is not a redistribution licence. Restricted previews are link-only. The source repository remains private until the maintainer explicitly approves a public release.
+Original code is MIT. Third-party code, images, fonts, prompts and vendor access retain their own terms: see [NOTICE.md](NOTICE.md). A catalog entry or install command is not a redistribution licence. Restricted previews are link-only.
