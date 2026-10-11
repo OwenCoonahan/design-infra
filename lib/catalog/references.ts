@@ -278,4 +278,4 @@ export const referenceBrief = (h: ReferenceHit) => ({
 })
 
 export const REFERENCES_HOW_TO_PRESENT =
-  'Offer these when the user wants ideas or none of the options fit: "See how others do it:" + 1–2 links (name the facet, e.g. "navbar.gallery · mega menus"). They are galleries to LOOK at, not things to install — describe what makes an example work, then map it back to catalog components. Follow each gallery\'s etiquette (attribution, no hotlinking, crawl limits); paid galleries only flagged, after free ones.'
+  'Use these galleries to research relevant patterns, explain the observations, then map them to catalog components. For options requests, show 1–2 source links with the relevant facet. When authorized to choose and build, use the references and report important sources afterward. Follow each gallery\'s etiquette. Generic queries stay free-first; an explicitly named gallery leads, with paid-account requirements still flagged.'
