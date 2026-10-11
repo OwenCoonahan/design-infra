@@ -9,6 +9,8 @@ Live at **https://design-infra.vercel.app/guide** · source `docs/GUIDE.md`
 
 You can browse and choose without cloning this repository or installing a plugin.
 
+For the fastest agent setup, copy a prompt from the [homepage](https://design-infra.vercel.app/#use-with-agent) into the Claude Code or Codex session for your project. **Recommend first** connects the catalog and returns three compatible options with live links and a recommendation. **Choose and build** authorizes the agent to select and implement one improvement, then verify it and report the sources. Both preserve your existing stack and brand. [Agent instructions and first-reply guidance](https://design-infra.vercel.app/integrate/raw).
+
 1. Open [the catalog](https://design-infra.vercel.app/components). Describe a need: **“clean pricing,” “sharp navbar,” “subtle button hover,”** or **“loading submit button.”** Search interprets the feeling and ranks components; explicit filters narrow the results. Paid entries are included only when you opt in.
 2. Open the live demos. Shortlist 2–3 options and choose **Compare** to see them side by side. Theme switching applies to our own blocks; upstream demos retain their own styling.
 3. Choose **Pick / Pass** and add a reason. Copy feedback to your project's agent, or use **Copy for agent** from the shortlist to include install commands, links, notes, and integration requirements. Tell the agent which part of your project the selection belongs to.

@@ -152,6 +152,16 @@ Optional theme installs: some shadcn CLI versions leave an empty argument when r
 
 Report the connection method, project instructions changed, verification performed, first shortlist, and any restart or compatibility limitation. After an installation, identify the component and what was adapted. Do not report success if a check failed.
 
+### First reply after connection
+
+Make the connection useful immediately. Inspect the current project and suggest one concrete improvement. Use the user's brief when they supplied one; otherwise choose a small opportunity visible in the existing UI. If there is no UI to inspect, use a stated, representative component need for this project's purpose, rather than inventing a problem.
+
+For **recommend first**, return three compatible options. Each should include its catalog ID, gallery/live links, access requirements and a short explanation of how it fits this project's stack, brand and task. Include a comparison link, recommend one with a reason, and wait for the user's pick before changing UI. State how the catalog was connected, what was verified, and whether client restart/tool verification is still needed.
+
+For **choose and build**, the copied prompt authorizes one useful improvement. Research relevant accessible examples, select a compatible component, implement and adapt it, then run the project's checks and inspect the result. Report the component ID, source/live links, what changed and the actual verification result. Stay within the requested scope; do not turn setup into a whole-site redesign or paid-tool installation. If an essential requirement or account access is missing, continue any independent setup/research and ask only for what blocks implementation.
+
+For future UI requests, use the connected tools and the same workflow. Pasted references use `match_reference` after inspection; a section replacement uses `propose_options`; a new page uses `plan_ui` and its research sources. A user who asks you to choose and implement should get an implementation, while a request for options should get a useful shortlist.
+
 People can browse, shortlist, compare, and copy choices to an agent without a plugin. Shortlists are stored in their browser; compare URLs are shareable. Shared saved collections, separate taste profiles, and automatic account syncing are not yet available. Current favorites are shared catalog recommendations.
 
 For feedback, include the user's query, component ID, search/compare URL, project stack, and actual outcome. Use https://design-infra.vercel.app/feedback to copy a report without GitHub access; collaborators can also use issue templates. Share feedback only when requested. Never include private source or vendor secrets.
