@@ -3,7 +3,7 @@
 
 Inspiration **galleries** for one pattern at a time (navbars, footers, pricing, heroes, motion…). They are for
 *looking*, not installing: find an example that works, say what makes it work, then map it back to catalog
-components (`propose_options`, `search_components`). Free galleries first; paid ones are flagged.
+components (`propose_options`, `search_components`). Free galleries first by default; an explicitly named gallery leads and paid access stays flagged.
 
 - MCP: `find_references` (pattern + optional category / moods) → ranked galleries with exact URLs + etiquette
 - HTTP: `https://design-infra.vercel.app/api/references?pattern=<words>&category=<cat>&moods=<a,b>`
@@ -234,7 +234,7 @@ Analysed product designs: real screenshots classified by page type, style, indus
 
 ### Mobbin — PAID
 
-The largest library of real app screens and multi-step FLOWS (iOS, Android, web) plus website sections — searchable by pattern and UI element. <https://mobbin.com/>
+Design-reference library of real mobile apps, web apps and websites: individual screens, ordered flows and website sections. <https://mobbin.com/>
 
 - **Moods:** trustworthy, refined, minimal · **covers:** auth, empty-state, form, navigation, modal, dashboard, table, ai-chat, toast, pricing
 - **screens:** `https://mobbin.com/explore/{value}/screens` — [mobile](https://mobbin.com/explore/mobile/screens), [web](https://mobbin.com/explore/web/screens)
@@ -242,9 +242,10 @@ The largest library of real app screens and multi-step FLOWS (iOS, Android, web)
 - **UI elements:** `https://mobbin.com/explore/{value}/ui-elements` — [mobile](https://mobbin.com/explore/mobile/ui-elements), [web](https://mobbin.com/explore/web/ui-elements)
 - **website sections:** <https://mobbin.com/explore/sites>
 - **Attribution:** Preserve the product name and the Mobbin URL; separate what you saw from what you recommend. Don't copy designs, branding, text or assets verbatim.
-- **Crawling:** robots.txt blocks AI crawlers (GPTBot etc.) everywhere except llms.txt, llms-full.txt and *.md pages. MCP (Pro/Team) and REST API (Team) are paid; 60 requests/60 s, honour Retry-After.
-- **Notes:** PAID — Owen is on free tiers. Mention it only flagged as paid, after the free galleries; useful when the question is a multi-step app FLOW (onboarding, checkout) that no free gallery covers.
-- _URL patterns verified 2026-10-06_
+- **Crawling:** Use the official read-only MCP for screen, flow and section search with the user’s authorized account. robots.txt blocks GPTBot except the listed agent-documentation paths. MCP supports Pro/Team/Enterprise; REST API supports Team/Enterprise. Published limit: 60 requests per 60 seconds; honor Retry-After. No bulk screenshot ingestion.
+- **Hotlinking:** Link to Mobbin examples and the original products. Do not embed or redistribute screenshot collections.
+- **Notes:** Paid reference library. The user values Mobbin as a source of clean product and website references. Use relevant screens, states and flows to inform a composition, then map observations to catalog components. Official MCP is optional, uses OAuth and requires a supported Pro, Team or Enterprise account; it is not connected by design-infra. Never claim account access or implementation code from a gallery link. Keep source product names and URLs; do not mirror screenshot collections.
+- _URL patterns verified 2026-10-11_
 
 ### Prompt Motion
 

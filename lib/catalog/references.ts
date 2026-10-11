@@ -95,7 +95,7 @@ export type ReferenceQuery = {
   category?: Category
   /** Project feel — nudges galleries whose collection skews that way and picks matching style facets. */
   moods?: Mood[]
-  /** Paid galleries (Mobbin) are listed after every free match, flagged. false = drop them. Default true. */
+  /** Paid galleries follow free matches unless explicitly named. false excludes them even by name. Default true. */
   includePaid?: boolean
   limit?: number
 }
@@ -106,7 +106,7 @@ export type ReferenceHit = {
   slug: string
   name: string
   access: Reference["access"]
-  /** Present on paid galleries: Free components are the default. */
+  /** Present on paid galleries: account and access requirements. */
   accessNote?: string
   score: number
   /** Best concrete URL for this pattern (falls back to the gallery home). */
@@ -177,11 +177,13 @@ function facetLinks(f: ReferenceFacet, direct: Set<string>, derived: Set<string>
 
 /**
  * Pattern (+ category, moods) → galleries ranked best first, each with concrete URLs for that pattern.
- * Free-first: a paid gallery never outranks a free match; it is appended after them with `accessNote`.
+ * Free-first by default. An explicitly named gallery leads, while retaining its access requirements.
  */
 export function referencesFor(query: ReferenceQuery | string, refs: Reference[] = getReferences()): ReferenceHit[] {
   const q: ReferenceQuery = typeof query === "string" ? { text: query } : query
   const text = ` ${(q.text ?? "").toLowerCase().replace(/[^a-z0-9/ -]+/g, " ")} `
+  const normalized = text.replace(/[-/]+/g, " ").replace(/\s+/g, " ")
+  const named = new Set(refs.filter((r) => [r.name, r.slug].some((name) => normalized.includes(` ${name.toLowerCase().replace(/[-/]+/g, " ")} `))).map((r) => r.slug))
   const tokens = tokenize(q.text ?? "")
   if (q.category) tokens.add(q.category)
   const moods = new Set<Mood>(q.moods?.length ? q.moods : moodsFromText(q.text ?? ""))
@@ -201,6 +203,10 @@ export function referencesFor(query: ReferenceQuery | string, refs: Reference[] 
     if (r.access === "paid" && q.includePaid === false) continue
     const why: string[] = []
     let score = 0
+    if (named.has(r.slug)) {
+      score += 50
+      why.push("explicitly requested gallery")
+    }
 
     // Category coverage — the strongest shelf wins (not the sum, so broad galleries don't snowball).
     let best = 0
@@ -241,7 +247,7 @@ export function referencesFor(query: ReferenceQuery | string, refs: Reference[] 
       slug: r.slug,
       name: r.name,
       access: r.access,
-      accessNote: r.access === "paid" ? "PAID — Free components are the default: show it flagged, after the free galleries; open only if he has an account." : undefined,
+      accessNote: r.access === "paid" ? "Paid reference library: confirm the user's supported account and access. A gallery recommendation does not activate access or install components." : undefined,
       score,
       url: uniq[0]?.url ?? r.url,
       links: uniq,
@@ -254,9 +260,10 @@ export function referencesFor(query: ReferenceQuery | string, refs: Reference[] 
     })
   }
   const byScore = (a: ReferenceHit, b: ReferenceHit) => b.score - a.score || a.slug.localeCompare(b.slug)
-  const free = hits.filter((h) => h.access !== "paid").sort(byScore)
-  const paid = hits.filter((h) => h.access === "paid").sort(byScore)
-  return [...free, ...paid].slice(0, q.limit ?? 5)
+  const requested = hits.filter((h) => named.has(h.slug)).sort(byScore)
+  const free = hits.filter((h) => !named.has(h.slug) && h.access !== "paid").sort(byScore)
+  const paid = hits.filter((h) => !named.has(h.slug) && h.access === "paid").sort(byScore)
+  return [...requested, ...free, ...paid].slice(0, q.limit ?? 5)
 }
 
 /** Compact form for propose_options / plan_ui: just enough to click. */
@@ -271,4 +278,4 @@ export const referenceBrief = (h: ReferenceHit) => ({
 })
 
 export const REFERENCES_HOW_TO_PRESENT =
-  'Offer these when the user wants ideas or none of the options fit: "See how others do it:" + 1–2 links (name the facet, e.g. "navbar.gallery · mega menus"). They are galleries to LOOK at, not things to install — describe what makes an example work, then map it back to catalog components. Follow each gallery\'s etiquette (attribution, no hotlinking, crawl limits); paid galleries only flagged, after free ones.'
+  'Use these galleries to research relevant patterns, explain the observations, then map them to catalog components. For options requests, show 1–2 source links with the relevant facet. When authorized to choose and build, use the references and report important sources afterward. Follow each gallery\'s etiquette. Generic queries stay free-first; an explicitly named gallery leads, with paid-account requirements still flagged.'
