@@ -8,7 +8,7 @@ When a local checkout is available, read `design-infra.config.json` first and us
 - Streamable HTTP MCP: https://design-infra.vercel.app/mcp
 - Registry item: `https://design-infra.vercel.app/r/{name}.json`
 - Human usage guide: https://design-infra.vercel.app/guide
-- Source: https://github.com/OwenCoonahan/design-infra (currently private; requires collaborator access)
+- Source: https://github.com/OwenCoonahan/design-infra
 
 ## 1. Inspect the project
 
@@ -78,6 +78,9 @@ If MCP is unavailable, use https://design-infra.vercel.app/api/search?q=<encoded
 and the setup instructions at https://design-infra.vercel.app/integrate/raw.
 Show 3–5 relevant options with gallery/live links and a compare link; recommend one.
 Wait for a pick unless the user already authorized you to choose and build.
+For new pages inspect plan_ui research.sources; for replacements inspect section references.
+Research relevant accessible examples before composing, map observations to components,
+and report the sources. Mobbin is optional; continue with free sources when unavailable.
 Install and adapt the selected component; preserve our brand, copy, props, accessibility,
 and DESIGN.md. Verify responsive behavior and reduced motion. Default to free components.
 Explain any catalog gap before creating something custom. Keep vendor credentials out of
@@ -96,7 +99,23 @@ Choose structure from the project's purpose and tasks separately from visual fee
 
 Pick an actual component need from the project or the user's request. Search with the component type and desired feeling, such as **clean pricing**, **sharp navbar**, or **subtle button hover**. Use `propose_options` or `plan_ui` when available. Return 3–5 compatible options, their catalog IDs, access requirements, gallery links, live demos, and install instructions. Explain the recommended fit for this project's stack and styling.
 
-When the user names a reference gallery, call `find_references` with that name and the actual pattern, such as "Mobbin web dashboard". Use its available examples to inform structure and visual choices, then search the component catalog for implementation pieces. Mobbin's official MCP is a separate optional OAuth connection through a supported paid account; do not claim that design-infra connects it or grants access. If unavailable, use accessible alternatives or user-provided references and report the limitation.
+Research relevant examples before composing, even when the user did not name a gallery. Each `plan_ui` page includes `research.sources` selected for its purpose: product screens/flows for apps and data products; Land-book and Minimal Gallery for websites; Component Gallery for component anatomy. Use section `references` for specific layout questions. Inspect a few accessible examples, describe concrete observations, then map them to installable catalog components. Links are destinations to inspect, not proof that an example has been reviewed. If choosing and building is authorized, do this research internally and report the sources afterward.
+
+When the user names a gallery, call `find_references` with that name and the actual pattern, such as "Mobbin web dashboard". Named sources also appear first in page research. Mobbin is optional; if access is unavailable, continue with accessible alternatives or user-provided references. Its screenshots are references, not licensed component code.
+
+### Optional Mobbin connection
+
+For users who already have supported Mobbin access, add `--with-mobbin` to the connection command:
+
+```bash
+node /tmp/di.mjs --connect --client claude-code --with-mobbin
+# Or:
+node /tmp/di.mjs --connect --client codex --with-mobbin
+```
+
+This saves only the official `https://api.mobbin.com/mcp` URL alongside design-infra, preserving other servers. It does not sign in or verify Mobbin access. Restart Claude Code and authenticate Mobbin through `/mcp`. For Codex, trust the project and run `codex mcp login mobbin` from that project. Verify the gallery's search tools in the active session before claiming it works. OAuth credentials stay in the client's credential store; do not put them in this repo or share them in setup text. The default connection uses free sources without configuring Mobbin.
+
+Sources: [Mobbin MCP access and endpoint](https://mobbin.com/mcp.md), [Claude Code OAuth](https://code.claude.com/docs/en/mcp#authenticate-with-remote-mcp-servers), [Codex MCP](https://learn.chatgpt.com/docs/extend/mcp?surface=cli).
 
 Share a compare link using comma-separated catalog IDs, for example:
 https://design-infra.vercel.app/compare?ids=oc/pricing-simple,smoothui/pricing-1

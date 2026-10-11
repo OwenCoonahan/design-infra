@@ -668,11 +668,11 @@ var toolchain_default = {
           kind: "run",
           command: "claude plugin marketplace add OwenCoonahan/design-infra --scope project && claude plugin install design-infra@oc-design --scope project",
           interactive: true,
-          note: "optional \u2014 adds the skills/hooks for teammates; private repo, needs git access"
+          note: "optional \u2014 adds the skills/hooks for teammates; restart the agent and verify tool availability"
         },
         {
           kind: "agent-note",
-          text: "UI work goes through design-infra: plan_ui (new pages from a brief), propose_options (one component: animate/restyle/add a state \u2014 show options WITH links, let the user pick), search_components (specific pieces). Never hand-build what the catalog has."
+          text: "UI work goes through design-infra: plan_ui (new pages from a brief), propose_options (one component: animate/restyle/add a state \u2014 show options WITH links, let the user pick), search_components (specific pieces). For new pages inspect plan_ui research.sources before composing: product screens/flows for apps and data, Landbook/Minimal Gallery for websites, Component Gallery for anatomy. For a section inspect its references. Research even when no gallery is named; map observations to reusable components. Show options unless choosing and building is already authorized, then implement and report sources afterward. Mobbin is optional and requires the user's supported account and OAuth; continue with accessible sources when unavailable. Never hand-build what the catalog has."
         },
         {
           kind: "agent-note",
@@ -1238,23 +1238,29 @@ function mergeEntry(entries, name, value, overwrite = false) {
   if (name in entries && JSON.stringify(entries[name]) !== JSON.stringify(value) && !overwrite) throw new Error(`${name} already has a different configuration. Review it or use --overwrite explicitly.`);
   entries[name] = value;
 }
-async function connectProject(root, client, dry, overwrite) {
+async function connectProject(root, client, dry, overwrite, withMobbin = false) {
   if (!["claude-code", "codex", "cursor", "http"].includes(client)) throw new Error("--client must be claude-code, codex, cursor or http");
+  if (withMobbin && !["claude-code", "codex"].includes(client)) throw new Error("--with-mobbin supports --client claude-code or codex");
+  const servers = { "design-infra": `${SITE_URL}/mcp`, ...withMobbin ? { mobbin: "https://api.mobbin.com/mcp" } : {} };
   const pending = /* @__PURE__ */ new Map();
   if (client === "codex") {
     const file2 = ".codex/config.toml";
     const current = existsSync(path.join(root, file2)) ? readFileSync(path.join(root, file2), "utf8") : "";
-    const section = `[mcp_servers.design-infra]
-url = ${JSON.stringify(`${SITE_URL}/mcp`)}
+    let next = current;
+    for (const [name, url2] of Object.entries(servers)) {
+      const section = `[mcp_servers.${name}]
+url = ${JSON.stringify(url2)}
 `;
-    const existing = /\[mcp_servers\.(?:design-infra|"design-infra")\][\s\S]*?(?=\n\[|$)/.exec(current);
-    if (existing && existing[0].trim() !== section.trim() && !overwrite) throw new Error(`${file2} already configures design-infra differently; review it or use --overwrite`);
-    pending.set(file2, existing ? current.replace(existing[0], section) : `${current}${current ? "\n" : ""}${section}`);
+      const existing = new RegExp(`\\[mcp_servers\\.(?:${name}|"${name}")\\][\\s\\S]*?(?=\\n\\[|$)`).exec(next);
+      if (existing && existing[0].trim() !== section.trim() && !overwrite) throw new Error(`${file2} already configures ${name} differently; review it or use --overwrite`);
+      next = existing ? next.replace(existing[0], section) : `${next}${next ? "\n" : ""}${section}`;
+    }
+    pending.set(file2, next);
   } else if (client !== "http") {
     const file2 = client === "cursor" ? ".cursor/mcp.json" : ".mcp.json";
     const current = readProjectJson(root, file2, {});
     current.mcpServers ??= {};
-    mergeEntry(current.mcpServers, "design-infra", { ...client === "claude-code" ? { type: "http" } : {}, url: `${SITE_URL}/mcp` }, overwrite);
+    for (const [name, url2] of Object.entries(servers)) mergeEntry(current.mcpServers, name, { ...client === "claude-code" ? { type: "http" } : {}, url: url2 }, overwrite);
     pending.set(file2, JSON.stringify(current, null, 2) + "\n");
   }
   if (existsSync(path.join(root, "components.json"))) {
@@ -1269,9 +1275,10 @@ url = ${JSON.stringify(`${SITE_URL}/mcp`)}
 
 - Read ${SITE_URL}/integrate/raw before UI work. Preserve this project's stack, brand and existing instructions.
 - Search the catalog before building UI; show 3\u20135 distinct choices with live/gallery links and a comparison. Recommend one and wait unless the user already authorized a choice.
-- Inspect reference links/screenshots using your browser/image tools; follow ${SITE_URL}/reference/raw, then call match_reference with observed patterns. For section replacements call propose_options.
+- For new pages call plan_ui and inspect the page's research sources before composing. Use product screens/flows for apps and data products, website references for marketing/editorial sites, and Component Gallery for anatomy. Research a few relevant accessible examples even if the user did not name a gallery; record observations and map them to installable components. Mobbin is optional and needs the user's own supported account and OAuth connection; use free alternatives when unavailable. If choosing and building is authorized, research internally and report sources afterward.
+- Inspect reference links/screenshots using your browser/image tools; follow ${SITE_URL}/reference/raw, then call match_reference with observed patterns. For section replacements call propose_options and inspect its references.
 - Install only selected, compatible components. A new theme, framework or paid library requires a request. Use existing DESIGN.md when present.
-- Connection: ${client}; MCP ${SITE_URL}/mcp. HTTP fallback: GET ${SITE_URL}/api/search?q=<query>, /api/options?component=<type>&intent=replace, /api/plan?brief=<brief>; POST /api/reference with observed patterns.
+- Connection: ${client}; MCP ${SITE_URL}/mcp. HTTP fallback: GET ${SITE_URL}/api/search?q=<query>, /api/options?component=<type>&intent=replace, /api/plan?brief=<brief>, /api/references?pattern=<pattern>; POST /api/reference with observed patterns.
 ${end}`;
   for (const file2 of ["AGENTS.md", "CLAUDE.md"]) {
     const current = existsSync(path.join(root, file2)) ? readFileSync(path.join(root, file2), "utf8") : "";
@@ -1295,6 +1302,7 @@ ${end}`;
   }
   console.log(`${dry ? "Plan (verification not run)" : "Catalog verified; project configuration saved"}: ${[...pending.keys()].join(", ")}`);
   console.log("Restart your agent and approve/trust the project MCP configuration if prompted. Then ask it to search for pricing and show three live options. Client tool availability still needs verification in that session.");
+  if (withMobbin) console.log(`${dry ? "Would configure Mobbin URL" : "Mobbin URL configured"}; authentication and access have NOT been verified. ${client === "codex" ? "From this trusted project run: codex mcp login mobbin" : "Restart Claude Code, open /mcp, select mobbin and authenticate"}. Sign in with your own supported Mobbin account, then verify its search tools. Free reference galleries work without this connection.`);
 }
 
 // scripts/font-layout.ts
@@ -21359,6 +21367,7 @@ var MARK_END = "<!-- design-infra:end -->";
 var { values: opt } = parseArgs({
   options: {
     connect: { type: "boolean", default: false },
+    "with-mobbin": { type: "boolean", default: false },
     client: { type: "string", default: "claude-code" },
     overwrite: { type: "boolean", default: false },
     tier: { type: "string", default: "2" },
@@ -21421,7 +21430,8 @@ async function loadToolchain() {
   return tools.map((t) => Tool.parse(t));
 }
 async function main() {
-  if (opt.connect) return connectProject(CWD, opt.client, DRY, opt.overwrite);
+  if (opt["with-mobbin"] && !opt.connect) throw new Error("--with-mobbin requires --connect");
+  if (opt.connect) return connectProject(CWD, opt.client, DRY, opt.overwrite, opt["with-mobbin"]);
   if (opt.client !== "claude-code") throw new Error("Advanced toolchain setup supports Claude Code; use --connect for other clients");
   const tools = (await loadToolchain()).sort((a, b) => a.rank - b.rank);
   for (const id of [...opt.only?.split(",") ?? [], ...opt.skip?.split(",") ?? []]) if (!tools.some((t) => t.id === id)) throw new Error(`Unknown tool: ${id}`);

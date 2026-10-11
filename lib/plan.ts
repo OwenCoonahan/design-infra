@@ -5,6 +5,7 @@ import path from "node:path"
 
 import { MOODS, moodsFromText, type Mood } from "@/lib/catalog/moods"
 import { referenceBrief, referencesFor } from "@/lib/catalog/references"
+import { researchForPage } from "@/lib/catalog/research"
 import { guessRecipes, PAGE_RECIPES, PAGE_TYPES, searchCatalog, summarize } from "@/lib/catalog/search"
 import { getCatalog, getDesignSystems } from "@/lib/data"
 
@@ -37,6 +38,7 @@ export async function planUi(brief: string, pageTypes?: string[], picksPerSectio
     return {
       pageType: r,
       label: recipe.label,
+      research: researchForPage(r, brief, moods),
       guidance: recipe.guidance ?? ["Adapt the outline to the project's content, audience and primary task. It is a starting structure, not a mandatory page template."],
       template: templates.find((t) => t.name.includes(r === "ai-app" ? "ai" : r === "dashboard" ? "dashboard" : r))?.install,
       sections: recipe.sections.map((s) => {
@@ -82,6 +84,7 @@ export async function planUi(brief: string, pageTypes?: string[], picksPerSectio
     rules: [
       "Follow the existing ./DESIGN.md and project tokens. A suggested design system is a reference, not permission to replace the brand.",
       "Choose project structure separately from visual feeling. A clean data product needs filters, charts and records; it does not inherit a marketing site's hero, pricing and testimonial sequence.",
+      "Use each page's research sources before composing; inspect actual examples with your own browser/image tools or an already-authorized gallery MCP. Paid research is optional and does not authorize a purchase, login or paid component installation.",
       "Plain app UI (dialogs, selects, forms, tables) → stock shadcn/ui.",
       "Never install access=paid items; key/metered need the user's account.",
       "One heavy effect (WebGL/shader/scroll) per viewport; respect prefers-reduced-motion.",

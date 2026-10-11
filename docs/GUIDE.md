@@ -50,14 +50,14 @@ To delegate selection: **"Build a clean data-focused page using design-infra. Ch
 
 ## Use design galleries as references
 
-Use real screens and flows to establish a direction, then search the component catalog for implementation pieces. A reference image is not installable source code.
+Use real screens and flows to establish a direction, then search the component catalog for implementation pieces. Agents now receive purpose-specific `research.sources` in every `plan_ui` page and research relevant examples before composing, even when you do not name a gallery. If you ask them to choose and build, they research internally and report sources afterward. A reference image is not installable source code.
 
 - **Mobbin**: app screens, interface states and multi-step flows; also website sections. The user values it as a reference alongside other design galleries. Name it in a request to prioritize it, such as **"Use Mobbin web-dashboard examples to inform this data page, then choose and implement suitable design-infra components."**
 - **Landbook and Minimal Gallery**: website composition and section examples.
 - **Navbar Gallery, Footer Design and Pricing Pages**: focused examples for individual sections.
 - **The Component Gallery**: component anatomy and links to documented design systems.
 
-Mobbin's official MCP can search screens, flows and sections using your supported Pro, Team or Enterprise account and OAuth sign-in. It is separate from the public design-infra MCP and is not connected automatically. Follow [Mobbin's current setup instructions](https://mobbin.com/mcp.md). If it is unavailable, use accessible live references or screenshots you provide; do not imply that a gallery link grants account access.
+Mobbin's official MCP can search screens, flows and sections using your supported Pro, Team or Enterprise account and OAuth sign-in. It is separate from the public design-infra MCP and is not connected automatically. To configure its URL alongside design-infra, add `--with-mobbin` to `--connect --client claude-code` or `--connect --client codex`. Authenticate separately in Claude Code through `/mcp`, or from the trusted Codex project with `codex mcp login mobbin`. See [the optional connection instructions](https://design-infra.vercel.app/integrate) and [Mobbin’s current setup instructions](https://mobbin.com/mcp.md). If it is unavailable, use accessible live references or screenshots you provide; do not imply that a gallery link grants account access.
 
 Compare relevant products, identify what fits the current project's tasks and brand, then map those observations to reusable components. Save source links and reasoning. Keep captured gallery images private; share analysis and original implementations rather than mirroring the galleries. Generic reference requests remain free-first; explicit source requests lead while retaining their access requirements.
 
