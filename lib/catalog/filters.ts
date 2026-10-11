@@ -5,6 +5,7 @@ import type { SearchOptions } from "./search"
 /** /components filter state ⇄ URL query (shared by the server page and the client browser). */
 /** Filter state — mirrored 1:1 in the URL so a filtered view is shareable. */
 export type Filters = {
+  view: "live" | "grid" | null
   q: string
   source: string | null
   category: string | null
@@ -26,6 +27,7 @@ export function parseFilters(sp: Record<string, string | string[] | undefined>):
     return (Array.isArray(v) ? v[0] : v) || null
   }
   return {
+    view: one("view") === "live" ? "live" : one("view") === "grid" ? "grid" : null,
     q: one("q") ?? "",
     source: one("source"),
     category: one("category"),
@@ -42,6 +44,7 @@ export function parseFilters(sp: Record<string, string | string[] | undefined>):
 
 export function filtersToQuery(f: Filters) {
   const q = new URLSearchParams()
+  if (f.view) q.set("view", f.view)
   if (f.q.trim()) q.set("q", f.q.trim())
   for (const k of FILTER_KEYS) if (f[k]) q.set(k, f[k]!)
   if (f.curated) q.set("curated", "1")
@@ -67,3 +70,5 @@ export function searchOptionsFromFilters(f: Filters): SearchOptions {
     excludeInspiration: f.source !== "inspiration" && f.kind !== "inspiration",
   }
 }
+
+export const galleryView = (f: Filters) => f.view ?? (f.category ? "live" : "grid")

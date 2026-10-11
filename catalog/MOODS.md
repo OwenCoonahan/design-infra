@@ -36,8 +36,8 @@ Quiet, spacious, low motion; lets content breathe. Brief words: calm, quiet, ser
 - ★ `oc/template-ai-chat` — Template · AI chat (ai-chat, agent-ui, sidebar) · `npx shadcn@latest add @design-infra/template-ai-chat`
 - ★ `react-bits/blur-text` — Blur Text (text-effect) · `npx shadcn@latest add @react-bits/BlurText-TS-TW`
 - ★ `smoothui/ai-loader` — Ai Loader (agent-ui, loader) · `npx shadcn@latest add @smoothui/ai-loader`
-- ★ `smoothui/ai-reasoning` — Ai Reasoning (agent-ui, ai-chat) · `npx shadcn@latest add @smoothui/ai-reasoning`
 - ★ `smoothui/skeleton-loader` — Skeleton Loader (loader) · `npx shadcn@latest add @smoothui/skeleton-loader`
+- ★ `smoothui/ai-reasoning` — Ai Reasoning (agent-ui, ai-chat) · `npx shadcn@latest add @smoothui/ai-reasoning`
 - ★ `beautifui/approval-card` — Approval Card (agent-ui, card) · `npx shadcn@latest add @beautifui/approval-card`
 - ★ `beautifui/chat-composer` — Chat (agent-ui, input, ai-chat) · `npx shadcn@latest add @beautifui/chat-composer`
 - ★ `beautifui/diff-table` — Diff Table (agent-ui, table) · `npx shadcn@latest add @beautifui/diff-table`
@@ -61,7 +61,7 @@ Sparse, monochrome, restrained; nothing decorative. Brief words: minimal, minima
 - ★ `motion-primitives/in-view` — In View (transition) · `npx shadcn@latest add @motion-primitives/in-view`
 - ★ `motion-primitives/infinite-slider` — Infinite Slider (carousel) · `npx shadcn@latest add @motion-primitives/infinite-slider`
 - ★ `motion-primitives/morphing-dialog` — Morphing Dialog (modal) · `npx shadcn@latest add @motion-primitives/morphing-dialog`
-- ★ `motion-primitives/progressive-blur` — Progressive Blur (loader) · `npx shadcn@latest add @motion-primitives/progressive-blur`
+- ★ `motion-primitives/progressive-blur` — Progressive Blur (scroll-effect) · `npx shadcn@latest add @motion-primitives/progressive-blur`
 
 ## Refined
 
@@ -107,7 +107,7 @@ Dev-tool energy: mono type, terminals, data density, grids. Brief words: technic
 
 Typographic, serif-led, content-first; magazines and essays. Brief words: editorial, magazine, publication, blog, newsletter, essay, journal, serif.
 
-- ★ `smoothui/scroll-progress` — Scroll Progress (scroll-effect, loader) · `npx shadcn@latest add @smoothui/scroll-progress`
+- ★ `smoothui/scroll-progress` — Scroll Progress (scroll-effect) · `npx shadcn@latest add @smoothui/scroll-progress`
 - `aceternity/typewriter-effect` — Typewriter Effect (text-effect, hero) · `npx shadcn@latest add @aceternity/typewriter-effect`
 - `cult-ui/typewriter` — Typewriter (text-effect) · `npx shadcn@latest add @cult-ui/typewriter`
 - `magicui/floating-3d-particles` — Floating 3D Particles (3d, background) · `npx shadcn@latest add @magicui/floating-3d-particles`

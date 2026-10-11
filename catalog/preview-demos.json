@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "demos": {
+    "oc/feature-levels": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/design-lab": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/hero-spotlight": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/feature-bento": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/pricing-simple": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/agent-status": {
+      "adapter": "oc",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/beam-card": {
+      "adapter": "oc",
+      "width": 520,
+      "height": 420,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/hero-split": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/logo-cloud": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/feature-list": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/stats-row": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/testimonials-grid": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/cta-banner": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/footer-columns": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/app-shell": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/stat-cards": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/data-table-card": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/empty-state": {
+      "adapter": "oc",
+      "width": 720,
+      "height": 760,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/settings-form": {
+      "adapter": "oc",
+      "width": 720,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/chat-thread": {
+      "adapter": "oc",
+      "width": 720,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/prompt-composer": {
+      "adapter": "oc",
+      "width": 720,
+      "height": 400,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "smoothui/ai-loader": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://smoothui.dev/r/ai-loader.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/ai-loader.tsx",
+        "sha256": "6e74a5cb6dbbc2e610be2b7369acd889a8495d186a3dfa3b06259bc3479345bf"
+      }
+    },
+    "smoothui/skeleton-loader": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://smoothui.dev/r/skeleton-loader.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/skeleton-loader.tsx",
+        "sha256": "d2dee34acae77c2266e9a6a1afd8b750bc4fc101bda9d71137abfb0e29315b13"
+      }
+    },
+    "smoothui/grid-loader": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://smoothui.dev/r/grid-loader.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/grid-loader.tsx",
+        "sha256": "f3177ab69862440aaa97d138b9c24ae4765986b4560946cc2a424cc57672ca79"
+      }
+    },
+    "smoothui/motion-loader": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://smoothui.dev/r/motion-loader.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/motion-loader.tsx",
+        "sha256": "49bc8ab99b71b6a04a1a0ca4858d50a9347c0f94e84670b11942d26539f7a1f3"
+      }
+    },
+    "kibo-ui/spinner": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://www.kibo-ui.com/r/spinner.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/kibo-ui/spinner.tsx",
+        "sha256": "0423144797635a3424385b3e24a2e19b8c89bbf61a90b40fd179917aaec87959"
+      }
+    },
+    "magicui/animated-circular-progress-bar": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://magicui.design/r/animated-circular-progress-bar.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/magicui/animated-circular-progress-bar.tsx",
+        "sha256": "581a5f9a266c60666c0300a5d22106d82d1b5685d0babb42999b5fccf531214e"
+      }
+    },
+    "librariesdev/thinking-orbs": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://github.com/Jakubantalik/Libraries.dev/tree/main/packages/thinking-orbs",
+        "license": "MIT",
+        "local": "thinking-orbs@0.3.2"
+      }
+    },
+    "oc/navbar": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
+    "oc/faq": {
+      "adapter": "oc",
+      "width": 1024,
+      "height": 680,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    }
+  }
+}

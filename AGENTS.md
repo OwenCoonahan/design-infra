@@ -78,6 +78,7 @@ when workflows change.
 | JSON API | `/api/search`, `/api/plan`, `/api/options`, `/api/references`, `/api/setup`, `/api/toolchain` | `app/api/*` |
 | inspiration galleries | MCP `find_references` / `/api/references?pattern=`; `references` in `propose_options` + each `plan_ui` section | `lib/catalog/references.ts` + `catalog/references.json` |
 | bootstrap (any repo, one command) | `/bootstrap.mjs`; ranked list at `/toolchain` | `scripts/bootstrap.ts` + `catalog/toolchain.json` (secrets: `~/.config/design-infra/secrets.env`, never in repos) |
+| focused visual galleries | `/components?category=loader` (or any category), optional `view=live\|grid`; native adapter/provenance manifest `catalog/preview-demos.json`, playback budget `lib/catalog/playback.ts` |
 | component options | MCP `propose_options` / `/api/options` | `lib/propose.ts` + `catalog/playbooks/*.md` + `catalog/dislikes.json` |
 | plugin hooks | SessionStart + UserPromptSubmit | `hooks/` (bash, must stay macOS/BSD-compatible) |
 | weekly sync | Mondays, opens a PR | `.github/workflows/weekly-sync.yml`, `scripts/catalog-diff.ts` |
@@ -123,6 +124,12 @@ directions with gallery/live links and a compare link (`lib/catalog/links.ts`), 
 - **Curate / annotate** → edit `catalog/curated.json` (`notes` = when to use + gotchas), `pnpm catalog`. Curated
   `integration` / `appliesTo` / `motion` / `live` / `moods` win over every layer (incl. `@oc`); everything else is
   inferred by `lib/catalog/tags.ts` — fix a rule there when a whole family is mis-tagged, hand-tag when one entry is special.
+
+## Visual galleries
+
+- Only explicit adapters in `catalog/preview-demos.json` and approved clips autoplay in galleries. Add provenance and preserve licences for imported demo code in `components/demos/vendor/`; keep original catalog IDs/install commands. Implementations load through `/preview/[source]/[name]`, never through the catalog browser bundle. Existing own preview URLs and namespace aliases remain valid.
+- A shared budget plays at most three visible examples. Offscreen/hidden previews unmount; reduced motion starts on posters. Keep detail links and shortlist controls outside interactive frames. Source-only entries remain separate; respect `linkOnlyMedia` before any local or upstream preview.
+- Generate new adapter thumbnails with `pnpm thumbnails --id <source/name> --force --base <running gallery>` then `pnpm catalog`. Test changes with `pnpm smoke:visual --base <running gallery>` plus normal checks.
 
 ## Rules
 

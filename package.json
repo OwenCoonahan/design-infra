@@ -25,7 +25,8 @@
     "verify:starter": "tsx scripts/verify-starter.ts",
     "smoke:integration": "tsx scripts/smoke-integration.ts",
     "starter:build": "tsx scripts/build-starter.ts",
-    "smoke:landing": "tsx scripts/smoke-landing.ts"
+    "smoke:landing": "tsx scripts/smoke-landing.ts",
+    "smoke:visual": "tsx scripts/smoke-visual-galleries.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.2.0",

@@ -16,3 +16,6 @@ export function compareUrl(ids: string[], opts: { theme?: string; label?: string
   if (opts.label) q.set("label", opts.label)
   return `${SITE_URL}/compare?${q.toString().replace(/%2C/g, ",").replace(/%2F/g, "/")}`
 }
+
+/** Focused visual gallery, shared by agents and humans. */
+export const categoryGallery = (category: string) => `${SITE_URL}/components?category=${encodeURIComponent(category)}`

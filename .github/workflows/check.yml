@@ -24,3 +24,11 @@ jobs:
       - run: pnpm lint
       - run: pnpm build
       - run: pnpm exec tsx scripts/check-tracing.ts
+      - name: Browser-test visual galleries
+        run: |
+          pnpm start -p 3330 > /tmp/design-infra-gallery.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://localhost:3330/ > /dev/null; then break; fi
+            sleep 1
+          done
+          pnpm smoke:visual --base http://localhost:3330

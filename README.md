@@ -32,6 +32,8 @@ This saves the client's MCP configuration and persistent agent instructions, ver
 
 Try “I don't like our features section; show different approaches” or “Make this hero feel like this screenshot”. [Reference workflow](docs/REFERENCE.md). The catalog matches observations supplied by the project agent; it does not inspect images or fetch arbitrary reference URLs itself. For other frameworks, use patterns and references, and let the agent explain the implementation gap.
 
+Browse visually by type: [Loading](https://design-infra.vercel.app/components?category=loader), [Buttons](https://design-infra.vercel.app/components?category=button), or [Pricing](https://design-infra.vercel.app/components?category=pricing). Category galleries start in Live view, with at most three visible demos or clips playing together. Loading has eight hosted demos; other types use existing demos, clips and thumbnails. Source-only entries are listed separately, and paid entries remain opt-in.
+
 Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes are shared catalog curation, not each person's private taste. Accounts, private group collections and vendor subscription management are separate future work. [Pilot tasks](docs/PILOT.md) help friends test the real workflow.
 
 ## Install selected components

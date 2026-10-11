@@ -1260,5 +1260,9 @@
   "shadcn/signup-02": "https://design-infra.vercel.app/thumbnails/shadcn/signup-02.webp",
   "shadcn/signup-03": "https://design-infra.vercel.app/thumbnails/shadcn/signup-03.webp",
   "shadcn/signup-04": "https://design-infra.vercel.app/thumbnails/shadcn/signup-04.webp",
-  "shadcn/signup-05": "https://design-infra.vercel.app/thumbnails/shadcn/signup-05.webp"
+  "shadcn/signup-05": "https://design-infra.vercel.app/thumbnails/shadcn/signup-05.webp",
+  "smoothui/ai-loader": "https://design-infra.vercel.app/thumbnails/smoothui/ai-loader.webp",
+  "smoothui/grid-loader": "https://design-infra.vercel.app/thumbnails/smoothui/grid-loader.webp",
+  "smoothui/motion-loader": "https://design-infra.vercel.app/thumbnails/smoothui/motion-loader.webp",
+  "smoothui/skeleton-loader": "https://design-infra.vercel.app/thumbnails/smoothui/skeleton-loader.webp"
 }

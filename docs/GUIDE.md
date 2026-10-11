@@ -286,3 +286,13 @@ CHOOSING      open the compare link → Pick/Pass → Copy feedback → paste
 SEE IT LIVE   "Show A and B on our actual component." (design lab)
 FEED (here)   paste link + "I love this" / "I hate this" / "add this library" / "capture this site"
 ```
+
+## Browse components visually
+
+Start with [Loading](https://design-infra.vercel.app/components?category=loader), [Buttons](https://design-infra.vercel.app/components?category=button) or [Pricing](https://design-infra.vercel.app/components?category=pricing). The type shortcuts work for sections as well as small components. Category pages start in Live view; the whole catalog starts in Grid view. Add `view=grid` or `view=live` to share that choice. Search, mood, motion, source and access filters stay in the URL.
+
+Live view plays at most three visible hosted demos or motion clips together. Examples stop when offscreen or when you leave the browser tab. Use Play/Pause on one example, Interact to try its controls, or Pause all. With reduced motion enabled, examples start as thumbnails; Play opts into opening an example, while each component still honors its own reduced-motion support. Component links and shortlist controls sit outside the interactive preview.
+
+The counts distinguish all matching results from visual-preview coverage. Visual examples appear first in recommendation order; entries without permitted visual media live under “More examples on source sites.” Paid components remain opt-in and a demo does not grant a vendor licence. Loading has eight hosted adapters; other categories use the hosted demos, clips and thumbnails already available. Whole-page galleries are a later addition.
+
+Shortlist the examples you like, open Compare, and copy the selected IDs and install instructions to your agent. Agent recommendations include category gallery links alongside detail pages, source links and the comparison. Ask the agent to choose and build when you want implementation without another selection step.

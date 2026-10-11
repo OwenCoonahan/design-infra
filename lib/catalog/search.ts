@@ -1,4 +1,4 @@
-import { entryPage } from "@/lib/catalog/links"
+import { categoryGallery, entryPage } from "@/lib/catalog/links"
 import { type Mood, moodsFromText } from "@/lib/catalog/moods"
 import type {
   Access,
@@ -225,6 +225,7 @@ export function summarize(e: CatalogEntry) {
     notes: e.notes ?? e.description,
     // Links first — the user picks from these before anything is installed.
     page: entryPage(e.id),
+    galleries: e.categories.map(category => ({ category, url: categoryGallery(category) })),
     live: e.live,
     preview: e.preview,
     docs: e.docs,

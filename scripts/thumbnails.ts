@@ -1,3 +1,4 @@
+import { hostedPreview } from "../lib/catalog/previews"
 import { SITE_URL } from "../lib/config"
 import { linkOnlyMedia } from "../lib/catalog/media-policy"
 /**
@@ -130,6 +131,12 @@ const BROKEN_HEADLESS: Record<string, string> = {
 
 function planFor(e: CatalogEntry): Shot | Probe | Skip {
   if (linkOnlyMedia(e)) return { id: e.id, reason: "Link-only media policy: redistribution not established" }
+  const hosted = hostedPreview(e.id)
+  if (hosted) return {
+    kind: "shot", id: e.id, url: `${BASE}${hosted.src}`,
+    selector: "[data-preview-content]", viewport: { width: hosted.width, height: hosted.height },
+    aspect: hosted.width / hosted.height, settle: 1800,
+  }
   const { id, name } = e
   if (BROKEN_HEADLESS[id]) return { id, reason: BROKEN_HEADLESS[id] }
   switch (e.source) {
