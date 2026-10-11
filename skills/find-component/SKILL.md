@@ -67,3 +67,7 @@ User wants ideas, or nothing fits? MCP `find_references` (or `/api/references?pa
 
 Say which entry you chose and why (one line), list alternatives considered (ids), and the exact command(s) run.
 If a third-party pick needed heavy adaptation and is likely to be reused, suggest promoting it to an `@design-infra` block in design-infra.
+
+## Visual browsing links
+
+Results include `galleries` by category. Include a focused shelf link when useful, such as `https://design-infra.vercel.app/components?category=loader` (substitute the configured deployment URL). Categories default to live previews; `view=grid` selects thumbnails. Visual coverage varies: Loading has eight local demo adapters, while other types reuse existing hosted demos, clips and screenshots. Continue using original IDs and install commands; a hosted demo does not change access or licence requirements.

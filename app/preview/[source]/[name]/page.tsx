@@ -1,6 +1,9 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
+import { LoadingDemo } from "@/components/demos/loading-demos"
+import { PreviewShell } from "@/components/site/preview-shell"
+import { previewDemos } from "@/lib/catalog/previews"
 import { OC_DEMOS } from "@/components/demos/oc-demos"
 import { TEMPLATE_DEMOS } from "@/components/demos/template-demos"
 import { AppFrame } from "@/components/site/app-frame"
@@ -25,7 +28,25 @@ const DEFAULT_THEME = "editorial"
 export default async function PreviewPage(props: PageProps<"/preview/[source]/[name]">) {
   const { source, name } = await props.params
   const search = await props.searchParams
-  if (source !== "oc" && source !== config.namespace.slice(1)) notFound()
+  const own = source === "oc" || source === config.namespace.slice(1)
+  const id = `${own ? "oc" : source}/${name}`
+  const supported = previewDemos[id]
+  if (!own && !supported) notFound()
+  if (supported && (!own || search.surface === "neutral")) {
+    const demo =
+      supported.adapter === "loading" || id === "oc/agent-status" ? <LoadingDemo id={id} /> : OC_DEMOS[name]?.()
+    if (!demo) notFound()
+    return (
+      <div
+        data-preview-surface="neutral"
+        className="dark flex min-h-screen flex-col bg-background font-sans text-foreground"
+      >
+        <div data-preview-content className="my-auto w-full">
+          <PreviewShell>{demo}</PreviewShell>
+        </div>
+      </div>
+    )
+  }
 
   const systems = await getDesignSystems()
   // `theme-<slug>` catalog entries (the design-system registry items) preview as theme-preview under that system.
@@ -60,7 +81,7 @@ export default async function PreviewPage(props: PageProps<"/preview/[source]/[n
     >
       {/* my-auto centres short demos but lets tall ones start at the top instead of overflowing upwards */}
       <div data-preview-content className="my-auto w-full">
-        {demo()}
+        <PreviewShell>{demo()}</PreviewShell>
       </div>
     </div>
   )

@@ -1,3 +1,4 @@
+import { correctCategories } from "../lib/catalog/galleries"
 import { linkOnlyMedia } from "../lib/catalog/media-policy"
 import { NAMESPACE, SITE_URL } from "../lib/config"
 /**
@@ -238,6 +239,16 @@ async function main() {
     const e = byId.get(id)
     if (!e) problems.push(`curated "${id}" overrides nothing (unknown id)`)
     else byId.set(id, CatalogEntry.parse({ ...e, ...tags }))
+  }
+
+  // Correct stale upstream category guesses before inferring integration/appliesTo.
+  for (const [id, entry] of byId) {
+    const categories = correctCategories(entry.name, entry.source, entry.categories)
+    byId.set(id, {
+      ...entry,
+      categories,
+      appliesTo: categories === entry.categories ? entry.appliesTo : entry.appliesTo.filter(c => c !== "loader"),
+    })
   }
 
   // 3d. motion / integration / live — inferred (lib/catalog/tags.ts) wherever no layer set them

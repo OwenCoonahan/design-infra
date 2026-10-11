@@ -165,3 +165,7 @@ For future UI requests, use the connected tools and the same workflow. Pasted re
 People can browse, shortlist, compare, and copy choices to an agent without a plugin. Shortlists are stored in their browser; compare URLs are shareable. Shared saved collections, separate taste profiles, and automatic account syncing are not yet available. Current favorites are shared catalog recommendations.
 
 For feedback, include the user's query, component ID, search/compare URL, project stack, and actual outcome. Use https://design-infra.vercel.app/feedback to copy a report without GitHub access; collaborators can also use issue templates. Share feedback only when requested. Never include private source or vendor secrets.
+
+### Visual component galleries
+
+Search results include `galleries` links by category. Use `/components?category=loader` (or `button`, `hero`, `pricing`, `table`, `chart`, etc.) when the user wants to browse a type visually. Category pages default to Live view; `view=grid` opts into thumbnails. Keep these links alongside specific component detail pages, source links and the compare link. Hosted demos and clips are previews, not installation source: install the original catalog ID/command, confirm stack compatibility, and retain the upstream licence. Loading has eight hosted examples; other shelves have varying coverage. Do not claim every catalog entry is hosted or live.

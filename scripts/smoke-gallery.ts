@@ -5,6 +5,7 @@ import { parseArgs } from "node:util"
 
 import puppeteer from "puppeteer-core"
 
+import { hostedPreview } from "../lib/catalog/previews"
 import { SETUP_PROMPT } from "../lib/integration"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
@@ -89,11 +90,14 @@ async function main() {
     await page.locator('button ::-p-text(subtle)').click()
     await page.waitForFunction(() => new URL(location.href).searchParams.get("intensity") === "subtle")
     const filteredQuery = new URL(page.url()).search
-    const filteredResponse = await fetch(`${base}/api/search${filteredQuery}`)
-    const filteredApi = await filteredResponse.json() as { id: string; motion?: { triggers: string[]; intensity: string } }[]
+    const filteredResponse = await fetch(`${base}/api/search${filteredQuery}&limit=50`)
+    const filteredApi = await filteredResponse.json() as { id: string; preview?: string; motion?: { triggers: string[]; intensity: string } }[]
     assert.ok(filteredApi.length)
     assert.ok(filteredApi.every((e) => e.motion?.triggers.includes("hover") && e.motion.intensity === "subtle"))
-    assert.equal(await page.$eval("main ul.grid li a", (a) => a.getAttribute("href")), `/components/${filteredApi[0].id}`)
+    // Galleries intentionally place visual examples before source-only entries, preserving each group's ranking.
+    const expectedOrder = [...filteredApi.filter(e => hostedPreview(e.id) || e.preview), ...filteredApi.filter(e => !hostedPreview(e.id) && !e.preview)]
+    const actualOrder = await page.$$eval("li[data-entry-id]", nodes => nodes.map(e => e.getAttribute("data-entry-id")))
+    assert.deepEqual(actualOrder, expectedOrder.slice(0, 60).map(e => e.id))
 
     await page.goto(`${base}/components?q=clean+pricing`, { waitUntil: "domcontentloaded" })
     await page.waitForSelector('[role="checkbox"]')

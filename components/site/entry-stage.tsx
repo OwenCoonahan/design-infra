@@ -6,6 +6,8 @@ import { LiveFrame, ThumbnailOrFrame } from "@/components/site/live-frame"
 import { ScaleToFit } from "@/components/site/scale-to-fit"
 import { TemplatePreview } from "@/components/site/template-preview"
 import { ThemeStage } from "@/components/site/theme-stage"
+import { hostedPreview } from "@/lib/catalog/previews"
+import { linkOnlyMedia } from "@/lib/catalog/media-policy"
 import { isFrameable, liveUrl } from "@/lib/catalog/facets"
 import type { CatalogEntry } from "@/lib/catalog/schema"
 import { previewSrc } from "@/lib/thumbnails"
@@ -28,6 +30,12 @@ export function entryStage(
   e: CatalogEntry,
   { systems, system, mode }: { systems: DesignSystemMeta[]; system: DesignSystemMeta; mode: "light" | "dark" }
 ): Stage {
+  if (linkOnlyMedia(e)) return {
+    kind: "none", openHref: liveUrl(e) ?? e.docs,
+    node: <div className="flex aspect-[16/10] items-center justify-center bg-muted/40 text-xs text-muted-foreground">Link-only reference · view on source site</div>,
+  }
+  const hosted = hostedPreview(e.id)
+  if (e.source !== "oc" && hosted) return { kind: "frame", openHref: hosted.src, node: <LiveFrame src={hosted.src} title={e.title} width={hosted.width} height={hosted.height} /> }
   const resolvedMode = system.modes.includes(mode) ? mode : system.modes[0]
   if (e.source === "oc") {
     const preview = (name: string) => `/preview/oc/${name}?theme=${system.slug}&mode=${resolvedMode}`

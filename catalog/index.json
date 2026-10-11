@@ -6954,7 +6954,7 @@
     "description": "A component that applies progressive blur effects to elements.",
     "kind": "component",
     "categories": [
-      "loader"
+      "scroll-effect"
     ],
     "tags": [
       "motion"
@@ -6983,7 +6983,7 @@
     ],
     "motion": {
       "triggers": [
-        "loop"
+        "enter"
       ],
       "intensity": "subtle",
       "technique": [
@@ -9939,6 +9939,7 @@
     "access": "free",
     "install": "npx shadcn@latest add @smoothui/ai-loader",
     "docs": "https://smoothui.dev/docs/components/ai-loader",
+    "preview": "https://design-infra.vercel.app/thumbnails/smoothui/ai-loader.webp",
     "dependencies": [
       "motion"
     ],
@@ -10459,8 +10460,7 @@
     "description": "A reading-progress indicator with bar, ring, number and segmented variants.",
     "kind": "effect",
     "categories": [
-      "scroll-effect",
-      "loader"
+      "scroll-effect"
     ],
     "tags": [
       "scroll",
@@ -10532,6 +10532,7 @@
     "access": "free",
     "install": "npx shadcn@latest add @smoothui/skeleton-loader",
     "docs": "https://smoothui.dev/docs/components/skeleton-loader",
+    "preview": "https://design-infra.vercel.app/thumbnails/smoothui/skeleton-loader.webp",
     "dependencies": [],
     "curated": true,
     "favorite": false,
@@ -30659,7 +30660,7 @@
     "description": "A collection of circles which move in orbit along a circular path",
     "kind": "component",
     "categories": [
-      "loader"
+      "background"
     ],
     "tags": [],
     "moods": [
@@ -30677,7 +30678,7 @@
     "demo": false,
     "integration": "drop-in",
     "appliesTo": [
-      "loader"
+      "background"
     ],
     "motion": {
       "triggers": [
@@ -30815,7 +30816,7 @@
     "description": "The Progressive Blur component adds a smooth blur gradient effect to scrollable content, indicating more content below or above.",
     "kind": "component",
     "categories": [
-      "loader"
+      "scroll-effect"
     ],
     "tags": [],
     "moods": [
@@ -31119,8 +31120,7 @@
     "description": "Animated Scroll Progress for your pages",
     "kind": "effect",
     "categories": [
-      "scroll-effect",
-      "loader"
+      "scroll-effect"
     ],
     "tags": [
       "motion"
@@ -31141,8 +31141,7 @@
     "demo": false,
     "integration": "drop-in",
     "appliesTo": [
-      "scroll-effect",
-      "loader"
+      "scroll-effect"
     ],
     "motion": {
       "triggers": [
@@ -32266,8 +32265,7 @@
     "description": "A component that visualizes scroll progress with animated indicators.",
     "kind": "effect",
     "categories": [
-      "scroll-effect",
-      "loader"
+      "scroll-effect"
     ],
     "tags": [
       "motion"
@@ -32288,8 +32286,7 @@
     "demo": false,
     "integration": "drop-in",
     "appliesTo": [
-      "scroll-effect",
-      "loader"
+      "scroll-effect"
     ],
     "motion": {
       "triggers": [
@@ -91216,7 +91213,6 @@
     "description": "Floating energy orb with customizable hover effect.",
     "kind": "effect",
     "categories": [
-      "loader",
       "background"
     ],
     "tags": [
@@ -91239,7 +91235,6 @@
     "demo": false,
     "integration": "drop-in",
     "appliesTo": [
-      "loader",
       "background"
     ],
     "motion": {
@@ -91264,8 +91259,7 @@
     "description": "SVG Path customizable orbiting images effect",
     "kind": "effect",
     "categories": [
-      "image",
-      "loader"
+      "image"
     ],
     "tags": [
       "animations",
@@ -91288,8 +91282,7 @@
     "demo": false,
     "integration": "drop-in",
     "appliesTo": [
-      "image",
-      "loader"
+      "image"
     ],
     "motion": {
       "triggers": [
@@ -102355,17 +102348,18 @@
     "access": "free",
     "install": "npx shadcn@latest add @smoothui/grid-loader",
     "docs": "https://smoothui.dev/docs/components/grid-loader",
+    "preview": "https://design-infra.vercel.app/thumbnails/smoothui/grid-loader.webp",
     "dependencies": [
       "motion"
     ],
     "curated": false,
     "favorite": false,
     "demo": false,
+    "integration": "drop-in",
     "appliesTo": [
       "background",
       "loader"
     ],
-    "integration": "drop-in",
     "motion": {
       "triggers": [
         "loop",
@@ -103873,16 +103867,17 @@
     "access": "free",
     "install": "npx shadcn@latest add @smoothui/motion-loader",
     "docs": "https://smoothui.dev/docs/components/motion-loader",
+    "preview": "https://design-infra.vercel.app/thumbnails/smoothui/motion-loader.webp",
     "dependencies": [
       "motion"
     ],
     "curated": false,
     "favorite": false,
     "demo": false,
+    "integration": "drop-in",
     "appliesTo": [
       "loader"
     ],
-    "integration": "drop-in",
     "motion": {
       "triggers": [
         "loop",
@@ -104110,8 +104105,7 @@
     "description": "An OrbitalImageWheel component for SmoothUI.",
     "kind": "component",
     "categories": [
-      "image",
-      "loader"
+      "image"
     ],
     "tags": [
       "spring",
@@ -104132,13 +104126,13 @@
     "favorite": false,
     "demo": false,
     "appliesTo": [
-      "image",
-      "loader"
+      "image"
     ],
     "integration": "drop-in",
     "motion": {
       "triggers": [
-        "loop"
+        "cursor",
+        "drag"
       ],
       "intensity": "medium",
       "technique": [
@@ -105072,7 +105066,7 @@
     "description": "A ProgressiveBlur component for SmoothUI.",
     "kind": "component",
     "categories": [
-      "loader"
+      "scroll-effect"
     ],
     "tags": [
       "spring",
@@ -105099,7 +105093,7 @@
     "integration": "wrapper",
     "motion": {
       "triggers": [
-        "loop"
+        "enter"
       ],
       "intensity": "subtle",
       "technique": [
