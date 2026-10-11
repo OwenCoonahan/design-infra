@@ -96,6 +96,8 @@ Choose structure from the project's purpose and tasks separately from visual fee
 
 Pick an actual component need from the project or the user's request. Search with the component type and desired feeling, such as **clean pricing**, **sharp navbar**, or **subtle button hover**. Use `propose_options` or `plan_ui` when available. Return 3–5 compatible options, their catalog IDs, access requirements, gallery links, live demos, and install instructions. Explain the recommended fit for this project's stack and styling.
 
+When the user names a reference gallery, call `find_references` with that name and the actual pattern, such as "Mobbin web dashboard". Use its available examples to inform structure and visual choices, then search the component catalog for implementation pieces. Mobbin's official MCP is a separate optional OAuth connection through a supported paid account; do not claim that design-infra connects it or grants access. If unavailable, use accessible alternatives or user-provided references and report the limitation.
+
 Share a compare link using comma-separated catalog IDs, for example:
 https://design-infra.vercel.app/compare?ids=oc/pricing-simple,smoothui/pricing-1
 

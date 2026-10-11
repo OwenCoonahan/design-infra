@@ -50,7 +50,7 @@ export function renderReferencesMd(refs: Reference[]) {
     "",
     "Inspiration **galleries** for one pattern at a time (navbars, footers, pricing, heroes, motion…). They are for",
     "*looking*, not installing: find an example that works, say what makes it work, then map it back to catalog",
-    "components (`propose_options`, `search_components`). Free galleries first; paid ones are flagged.",
+    "components (`propose_options`, `search_components`). Free galleries first by default; an explicitly named gallery leads and paid access stays flagged.",
     "",
     "- MCP: `find_references` (pattern + optional category / moods) → ranked galleries with exact URLs + etiquette",
     `- HTTP: \`${SITE_URL}/api/references?pattern=<words>&category=<cat>&moods=<a,b>\``,

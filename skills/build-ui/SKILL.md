@@ -46,6 +46,8 @@ which components reproduce it), legacy theme options and per-section picks. No t
 Each section also carries `references` (inspiration galleries with exact URLs) — when the user wants ideas for a section
 or no pick fits, offer them: "see how others do it: <links>" (MCP `find_references` for any other pattern).
 
+If the user names a gallery, call `find_references` with its name and the target pattern (e.g. "Mobbin web dashboard"). Inspect relevant accessible examples, then map observations to catalog components. Mobbin's official MCP is a separate optional connection requiring the user's supported account and OAuth sign-in; naming it does not grant access. Preserve source links and distinguish screenshots from installable code.
+
 Rules for picking per section:
 - A starter template is optional when its structure fits the actual task; inspect it before adopting it:
   `@design-infra/template-landing` (→ `app/page.tsx`), `@design-infra/template-saas-dashboard` (→ `app/dashboard/page.tsx`),
