@@ -28,11 +28,11 @@
           "kind": "run",
           "command": "claude plugin marketplace add OwenCoonahan/design-infra --scope project && claude plugin install design-infra@oc-design --scope project",
           "interactive": true,
-          "note": "optional \u2014 adds the skills/hooks for teammates; private repo, needs git access"
+          "note": "optional \u2014 adds the skills/hooks for teammates; restart the agent and verify tool availability"
         },
         {
           "kind": "agent-note",
-          "text": "UI work goes through design-infra: plan_ui (new pages from a brief), propose_options (one component: animate/restyle/add a state \u2014 show options WITH links, let the user pick), search_components (specific pieces). Never hand-build what the catalog has."
+          "text": "UI work goes through design-infra: plan_ui (new pages from a brief), propose_options (one component: animate/restyle/add a state \u2014 show options WITH links, let the user pick), search_components (specific pieces). For new pages inspect plan_ui research.sources before composing: product screens/flows for apps and data, Landbook/Minimal Gallery for websites, Component Gallery for anatomy. For a section inspect its references. Research even when no gallery is named; map observations to reusable components. Show options unless choosing and building is already authorized, then implement and report sources afterward. Mobbin is optional and requires the user's supported account and OAuth; continue with accessible sources when unavailable. Never hand-build what the catalog has."
         },
         {
           "kind": "agent-note",

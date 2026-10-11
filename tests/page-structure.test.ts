@@ -3,6 +3,36 @@ import test from "node:test"
 
 import { guessRecipes } from "../lib/catalog/search"
 import { planUi } from "../lib/plan"
+import { researchForPage } from "../lib/catalog/research"
+import { PAGE_TYPES } from "../lib/catalog/search"
+
+test("page research routes product tasks and website composition to appropriate sources", async () => {
+  const data = await planUi("a clean data focused website")
+  const research = data.pages[0].research
+  assert.equal(research.status, "sources-to-inspect")
+  assert.deepEqual(research.sources.map((source) => source.slug), ["component-gallery", "kage", "mobbin"])
+  const mobbin = research.sources.find((source) => source.slug === "mobbin")!
+  assert.equal(mobbin.url, "https://mobbin.com/explore/web/screens")
+  assert.equal(mobbin.access, "paid")
+  assert.equal(mobbin.optional, true)
+  assert.match(mobbin.connection!, /unknown/)
+  const landing = researchForPage("landing", "clean SaaS landing", [])
+  assert.deepEqual(landing.sources.map((source) => source.slug), ["land-book", "minimal-gallery", "mobbin"])
+  assert.ok(researchForPage("auth-onboarding", "web onboarding", []).sources.find((source) => source.slug === "mobbin")?.links.some((link) => link.url === "https://mobbin.com/explore/web/flows"))
+  for (const type of PAGE_TYPES) {
+    const sources = researchForPage(type, "clean", []).sources
+    assert.ok(sources.length >= 2, type)
+    assert.ok(sources.some((source) => source.access !== "paid"), type)
+    assert.equal(new Set(sources.map((source) => source.slug)).size, sources.length)
+  }
+})
+
+test("named research sources lead and retain access requirements and accessible alternatives", () => {
+  const sources = researchForPage("data", "Use Mobbin web dashboard examples", []).sources
+  assert.equal(sources[0].slug, "mobbin")
+  assert.equal(sources[0].access, "paid")
+  assert.ok(sources.some((source) => source.access !== "paid"))
+})
 
 test("project purpose determines structure without a generic website or SaaS override", () => {
   for (const [brief, types] of [

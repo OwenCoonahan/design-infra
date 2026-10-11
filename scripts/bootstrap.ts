@@ -12,6 +12,8 @@
  *   --init-next         create a Next.js app here first if there is no package.json
  *   --dry-run           print the plan, change nothing
  *   --list              print the ranked toolchain and exit
+ *   --connect --client claude-code|codex   connect without installing components
+ *   --with-mobbin       optionally configure Mobbin with --connect; authenticate separately
  *
  * Secrets live OUTSIDE repos: ~/.config/design-infra/secrets.env (KEY=value lines, chmod 600), or the
  * environment. Registry keys are mirrored into the project's gitignored .env.local; MCP keys go to
@@ -42,6 +44,7 @@ const MARK_END = "<!-- design-infra:end -->"
 const { values: opt } = parseArgs({
   options: {
     connect: { type: "boolean", default: false },
+    "with-mobbin": { type: "boolean", default: false },
     client: { type: "string", default: "claude-code" },
     overwrite: { type: "boolean", default: false },
     tier: { type: "string", default: "2" },
@@ -118,7 +121,8 @@ async function loadToolchain(): Promise<Tool[]> {
 // ---------------------------------------------------------------------------- main
 
 async function main() {
-  if (opt.connect) return connectProject(CWD, opt.client!, DRY!, opt.overwrite!)
+  if (opt["with-mobbin"] && !opt.connect) throw new Error("--with-mobbin requires --connect")
+  if (opt.connect) return connectProject(CWD, opt.client!, DRY!, opt.overwrite!, opt["with-mobbin"])
   if (opt.client !== "claude-code") throw new Error("Advanced toolchain setup supports Claude Code; use --connect for other clients")
   const tools = (await loadToolchain()).sort((a, b) => a.rank - b.rank)
   for (const id of [...(opt.only?.split(",") ?? []), ...(opt.skip?.split(",") ?? [])]) if (!tools.some((t) => t.id === id)) throw new Error(`Unknown tool: ${id}`)

@@ -43,10 +43,14 @@ which components reproduce it), legacy theme options and per-section picks. No t
 | page | section | pick (id) | why |
 |---|---|---|---|
 
-Each section also carries `references` (inspiration galleries with exact URLs) — when the user wants ideas for a section
-or no pick fits, offer them: "see how others do it: <links>" (MCP `find_references` for any other pattern).
+Each page carries `research.sources` selected for its purpose. Before composing, inspect a few relevant accessible
+examples even if the user did not ask to see them. Use product screens/flows for apps and data, website references
+for marketing/editorial work, and Component Gallery for anatomy. Record concrete observations (hierarchy, density,
+spacing, states and interaction), then map them to installable catalog components. Links alone are not inspected evidence.
+Each section's `references` supplies focused galleries for specific questions. If choosing and building is authorized,
+research internally, implement and report sources afterward; otherwise include useful source links in the shortlist.
 
-If the user names a gallery, call `find_references` with its name and the target pattern (e.g. "Mobbin web dashboard"). Inspect relevant accessible examples, then map observations to catalog components. Mobbin's official MCP is a separate optional connection requiring the user's supported account and OAuth sign-in; naming it does not grant access. Preserve source links and distinguish screenshots from installable code.
+If the user names a gallery, call `find_references` with its name and the target pattern (e.g. "Mobbin web dashboard"). Mobbin's official MCP is an optional connection requiring the user's supported account and OAuth sign-in (`--connect --client claude-code|codex --with-mobbin`; authenticate separately). If unavailable, continue with accessible alternatives. Preserve source links and distinguish screenshots from installable code.
 
 Rules for picking per section:
 - A starter template is optional when its structure fits the actual task; inspect it before adopting it:

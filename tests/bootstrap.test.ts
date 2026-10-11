@@ -36,6 +36,7 @@ for (const client of ["claude-code", "codex", "cursor", "http"]) test(`minimal $
     const first = await readFile(path.join(root, "AGENTS.md"), "utf8")
     assert.match(first, /^Keep our existing brand/)
     assert.match(first, /search|Search/)
+    assert.match(first, /research sources before composing/)
     await run(["--connect", "--client", client])
     assert.equal(await readFile(path.join(root, "AGENTS.md"), "utf8"), first)
     const files = await readdir(root)
@@ -45,7 +46,42 @@ for (const client of ["claude-code", "codex", "cursor", "http"]) test(`minimal $
       const config = JSON.parse(await readFile(path.join(root, client === "cursor" ? ".cursor/mcp.json" : ".mcp.json"), "utf8"))
       assert.match(config.mcpServers["design-infra"].url, /\/mcp$/)
       assert.equal(config.mcpServers["design-infra"].type, client === "claude-code" ? "http" : undefined)
+      assert.ok(!config.mcpServers.mobbin)
     }
+  })
+})
+
+for (const client of ["claude-code", "codex"]) test(`optional Mobbin ${client} connection saves URLs without claiming authentication`, async () => {
+  await fixture(async (root, run) => {
+    const file = client === "codex" ? ".codex/config.toml" : ".mcp.json"
+    const original = client === "codex" ? '[mcp_servers.other]\nurl = "https://example.com/mcp"\n' : JSON.stringify({ mcpServers: { other: { command: "custom" } } })
+    if (client === "codex") await mkdir(path.join(root, ".codex"))
+    await writeFile(path.join(root, file), original)
+    const output = await run(["--connect", "--client", client, "--with-mobbin"])
+    assert.match(output.stdout, /authentication and access have NOT been verified/)
+    assert.match(output.stdout, client === "codex" ? /codex mcp login mobbin/ : /open \/mcp/)
+    const saved = await readFile(path.join(root, file), "utf8")
+    assert.match(saved, /https:\/\/api.mobbin.com\/mcp/)
+    assert.match(saved, /other/)
+    await run(["--connect", "--client", client, "--with-mobbin"])
+    assert.equal(await readFile(path.join(root, file), "utf8"), saved)
+    await run(["--connect", "--client", client])
+    assert.equal(await readFile(path.join(root, file), "utf8"), saved)
+    const conflict = client === "codex" ? '[mcp_servers.mobbin]\nurl = "https://other.example/mcp"\n' : JSON.stringify({ mcpServers: { mobbin: { url: "https://other.example/mcp" } } })
+    await writeFile(path.join(root, file), conflict)
+    const rules = await readFile(path.join(root, "AGENTS.md"), "utf8")
+    await assert.rejects(run(["--connect", "--client", client, "--with-mobbin"]), /differently|different configuration/)
+    assert.equal(await readFile(path.join(root, file), "utf8"), conflict)
+    assert.equal(await readFile(path.join(root, "AGENTS.md"), "utf8"), rules)
+  })
+})
+
+test("Mobbin requires an explicit supported connection and dry run leaves files untouched", async () => {
+  await fixture(async (root, run) => {
+    for (const args of [["--with-mobbin"], ["--connect", "--client", "http", "--with-mobbin"], ["--connect", "--client", "cursor", "--with-mobbin"]]) await assert.rejects(run(args), /requires --connect|supports --client/)
+    const output = await run(["--connect", "--client", "codex", "--with-mobbin", "--dry-run"])
+    assert.match(output.stdout, /Would configure Mobbin URL/)
+    assert.deepEqual(await readdir(root), [])
   })
 })
 
