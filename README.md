@@ -36,6 +36,10 @@ Browse visually by type: [Loading](https://design-infra.vercel.app/components?ca
 
 Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes are shared catalog curation, not each person's private taste. Accounts, private group collections and vendor subscription management are separate future work. [Pilot tasks](docs/PILOT.md) help friends test the real workflow.
 
+## Technical illustrations
+
+[Anatomy](https://skills.wheresryan.sh/anatomy) adds 33 reusable MIT isometric explainers for docs and technical sections, plus an optional Claude Code/Codex skill. [Browse the figures](https://design-infra.vercel.app/components?source=anatomy&category=illustration&view=grid). Reuse a figure with `pnpm add anatomy-figures` and a per-figure import; choose the skill only for a new mechanism. Setup, theme mapping and limits are in [the source guide](catalog/sources/anatomy.md).
+
 ## Install selected components
 
 Our `@design-infra` blocks use React, Tailwind 4 and shadcn tokens. Merge the registry into an existing compatible components.json:

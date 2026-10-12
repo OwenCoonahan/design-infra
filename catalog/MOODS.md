@@ -9,19 +9,19 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 | mood | feels like | design systems | inspiration | entries |
 |---|---|---|---|---|
 | **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
-| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 783 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 887 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Vanta](../inspiration/vanta/README.md) | 245 |
-| **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 67 |
+| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 808 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 895 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Vanta](../inspiration/vanta/README.md) | 269 |
+| **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 93 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 57 |
-| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | — | 817 |
+| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | — | 825 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
 | **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 363 |
-| **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | — | 877 |
+| **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | — | 887 |
 | **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 6 |
 | **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 74 |
 | **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 140 |
-| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 921 |
+| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 922 |
 
 ## Calm
 
@@ -109,19 +109,19 @@ Typographic, serif-led, content-first; magazines and essays. Brief words: editor
 
 - ★ `smoothui/scroll-progress` — Scroll Progress (scroll-effect) · `npx shadcn@latest add @smoothui/scroll-progress`
 - `aceternity/typewriter-effect` — Typewriter Effect (text-effect, hero) · `npx shadcn@latest add @aceternity/typewriter-effect`
-- `cult-ui/typewriter` — Typewriter (text-effect) · `npx shadcn@latest add @cult-ui/typewriter`
-- `magicui/floating-3d-particles` — Floating 3D Particles (3d, background) · `npx shadcn@latest add @magicui/floating-3d-particles`
-- `magicui/particles` — Particles (background) · `npx shadcn@latest add @magicui/particles`
-- `originui/comp-311` — Banner: newsletter, subscribe (cta) · `npx shadcn@latest add https://coss.com/origin/r/comp-311.json`
-- `originui/comp-321` — Dialog: modal, newsletter, subscribe (modal) · `npx shadcn@latest add https://coss.com/origin/r/comp-321.json`
-- `react-bits/antigravity` — Antigravity (misc) · `npx shadcn@latest add @react-bits/Antigravity-TS-TW`
-- `react-bits/click-spark` — Click Spark (misc) · `npx shadcn@latest add @react-bits/ClickSpark-TS-TW`
-- `react-bits/particle-text` — Particle Text (text-effect) · `npx shadcn@latest add @react-bits/ParticleText-TS-TW`
-- `react-bits/particles` — Particles (background) · `npx shadcn@latest add @react-bits/Particles-TS-TW`
-- `react-bits/pixel-blast` — Pixel Blast (background) · `npx shadcn@latest add @react-bits/PixelBlast-TS-TW`
-- `react-bits/swarm-cursor` — Swarm Cursor (cursor) · `npx shadcn@latest add @react-bits/SwarmCursor-TS-TW`
-- `originkit/glowing-particles` — Glowing Particles (misc) · `npx originkit add glowing-particles`
-- `originkit/magazine-flip` — Magazine Flip (image) · `npx originkit add magazine-flip`
+- `anatomy/afterburner` — Afterburner · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/b-tree` — B-tree index · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/binary-search` — Binary search · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/bloom-filter` — Bloom filter · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/computer` — Desk computer · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/dns` — DNS resolution · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/easing` — Easing bench · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/flex-grow` — flex-grow · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/forge` — Forge and hammer · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/foundry` — Foundry pour · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/git-merge` — Branch and merge · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/glass-furnace` — Glory hole · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
+- `anatomy/gradient-descent` — Gradient descent · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
 
 ## Warm
 

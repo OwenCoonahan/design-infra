@@ -140,6 +140,12 @@ function planFor(e: CatalogEntry): Shot | Probe | Skip {
   const { id, name } = e
   if (BROKEN_HEADLESS[id]) return { id, reason: BROKEN_HEADLESS[id] }
   switch (e.source) {
+    case "anatomy":
+      return e.kind === "tool" || !e.live ? { id, reason: "Skill instructions, not a visual component" } : {
+        kind: "shot", id, url: e.live, selector: ".live-stage", aspect: 16 / 10,
+        settle: 2000,
+      }
+
     case "originui": {
       // ~25 category pages, each a grid of every comp in it: shoot all cells from one load per page.
       if (!e.docs) return { id, reason: "no category page" }

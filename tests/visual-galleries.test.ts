@@ -164,3 +164,24 @@ test("all explicit adapters resolve catalog entries and migrated effects cannot 
     assert.ok(!entry.appliesTo.includes("loader"), id)
   }
 })
+
+test("Live view excludes static screenshots without dropping components or changing group ranking", () => {
+  const entries = [
+    { id: "still", visual: { kind: "static" as const } },
+    { id: "hosted", visual: { kind: "interactive" as const, src: "/preview/a/b", width: 520, height: 360 } },
+    { id: "clip", visual: { kind: "clip" as const, src: "a.mp4" } },
+    { id: "source" },
+  ]
+  assert.deepEqual(
+    visualFirst(entries, "live").visual.map((e) => e.id),
+    ["hosted", "clip"],
+  )
+  assert.deepEqual(
+    visualFirst(entries, "live").sourceOnly.map((e) => e.id),
+    ["still", "source"],
+  )
+  assert.deepEqual(
+    visualFirst(entries, "grid").visual.map((e) => e.id),
+    ["still", "hosted", "clip"],
+  )
+})

@@ -33,7 +33,7 @@ components (`propose_options`, `search_components`). Free galleries first by def
 | trustworthy fintech / B2B | [Kage · industry: fintech](https://kage.design/industry/fintech) | [CTA Gallery · industry: finance](https://www.cta.gallery/industry/finance) |
 | editorial / typographic | [Awwwards · tag: typography](https://www.awwwards.com/websites/typography/) | [Kage · style: editorial](https://kage.design/style/editorial) |
 | empty state | [Kage · page type: empty state](https://kage.design/design/empty-state) | [The Component Gallery · component: empty state](https://component.gallery/components/empty-state/) |
-| component anatomy (tabs, combobox…) | [The Component Gallery · component: tabs](https://component.gallery/components/tabs/) | — |
+| component anatomy (tabs, combobox…) | [Anatomy Collection](https://skills.wheresryan.sh/anatomy/collection) | [The Component Gallery · component: tabs](https://component.gallery/components/tabs/) |
 | mobile app flow (onboarding, checkout) | [Mobbin · flows: mobile](https://mobbin.com/explore/mobile/flows) **(paid)** | — |
 
 ## Galleries
@@ -55,6 +55,7 @@ components (`propose_options`, `search_components`). Free galleries first by def
 | [The Component Gallery](https://component.gallery/) | button, input, form, tabs, modal | free | live-links, code-examples | — |
 | [Mobbin](https://mobbin.com/) | auth, empty-state, form, navigation, modal | paid | screenshots, flows, cropped-sections | [llms](https://mobbin.com/llms.txt) · [sitemap](https://mobbin.com/sitemap.xml) · [mcp](https://mobbin.com/mcp.md) |
 | [Prompt Motion](https://prompt-motion.com/) | illustration, background, text-effect | free | prompts, live-links | — |
+| [Anatomy Collection](https://skills.wheresryan.sh/anatomy/collection) | illustration, 3d | free | live-links, code-examples | — |
 
 ### Navbar Gallery
 
@@ -257,3 +258,15 @@ Motion-graphics examples and author prompts. Browse externally for creative dire
 - **Hotlinking:** Do not embed or redistribute videos, images or author prompts.
 - **Notes:** Open in a browser as a reference; do not copy prompts or code without the author granting appropriate rights.
 - _URL patterns verified 2026-10-11_
+
+### Anatomy Collection
+
+33 interactive isometric explainers of algorithms, UI behavior and mechanical systems, with reusable MIT React components and an optional generation skill. <https://skills.wheresryan.sh/anatomy/collection>
+
+- **Moods:** technical, refined, playful · **covers:** illustration, 3d
+- **concept:** `https://skills.wheresryan.sh/anatomy/collection/{value}` — [hash-map](https://skills.wheresryan.sh/anatomy/collection/hash-map), [lru-cache](https://skills.wheresryan.sh/anatomy/collection/lru-cache), [message-queue](https://skills.wheresryan.sh/anatomy/collection/message-queue), [debounce](https://skills.wheresryan.sh/anatomy/collection/debounce), [rate-limiter](https://skills.wheresryan.sh/anatomy/collection/rate-limiter), [box-model](https://skills.wheresryan.sh/anatomy/collection/box-model), [watch](https://skills.wheresryan.sh/anatomy/collection/watch)
+- **Attribution:** Anatomy by Ryan (@wheresryan22); retain the MIT copyright/licence when reusing figures.
+- **Crawling:** Read the linked public collection pages and package metadata only. robots.txt and llms.txt returned 404 on 2026-10-12; avoid bulk site scraping.
+- **Hotlinking:** Use the npm component or a local attributed screenshot, not hotlinked site media.
+- **Notes:** Prefer a matching existing anatomy-figures component to regenerating the same mechanism. The optional skill supports Claude Code and Codex; this is for explanatory illustrations, not ordinary UI controls.
+- _URL patterns verified 2026-10-12_

@@ -117,6 +117,7 @@ export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
   originkit: ["experimental", "premium"],
   librariesdev: ["playful", "futuristic"],
   agentation: ["technical"],
+  anatomy: ["technical", "refined", "playful"],
   "21st": [],
   inspiration: [],
 }

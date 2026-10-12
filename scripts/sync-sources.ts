@@ -7,6 +7,7 @@
  * Only metadata is stored (name, description, categories, install command, preview image) —
  * never upstream source code. Run `pnpm catalog` afterwards to rebuild catalog/index.json.
  */
+import { anatomyFigures } from "../lib/catalog/anatomy"
 import { mkdir, writeFile } from "node:fs/promises"
 import path from "node:path"
 
@@ -744,7 +745,42 @@ const motion: Adapter = async () => {
   return out
 }
 
+/** Anatomy publishes its primary figure list in the package README; validate every per-figure export and live link. */
+const anatomy: Adapter = async () => {
+  const get = async (url: string) => {
+    const response = await fetch(url)
+    if (!response.ok) throw new Error(`Anatomy upstream ${response.status}: ${url}`)
+    return response.text()
+  }
+  const [readme, metadata, collection] = await Promise.all([
+    get("https://raw.githubusercontent.com/wheresryan22/anatomy-figures/main/README.md"),
+    get("https://registry.npmjs.org/anatomy-figures/latest"),
+    get("https://skills.wheresryan.sh/anatomy/collection"),
+  ])
+  const pkg = JSON.parse(metadata)
+  if (pkg.license !== "MIT") throw new Error("Anatomy licence changed; re-audit before syncing")
+  return anatomyFigures(readme, pkg.exports, collection).map(figure => ({
+    id: `anatomy/${figure.slug}`, source: "anatomy", name: figure.slug,
+    title: `${figure.title} · Anatomy`,
+    description: `Interactive isometric SVG explainer for ${figure.title.toLowerCase()}. Reuse the ${figure.exportName} component from anatomy-figures/${figure.slug} in docs, articles and technical feature sections.`,
+    kind: "component", categories: ["illustration", "3d"],
+    tags: ["isometric", "interactive", "explainer", "diagram", "svg", "docs", "education", "anatomy-figures", figure.exportName, figure.renderer],
+    access: "free", install: "pnpm add anatomy-figures",
+    docs: `https://skills.wheresryan.sh/anatomy/collection/${figure.slug}`,
+    live: `https://skills.wheresryan.sh/anatomy/collection/${figure.slug}`,
+    dependencies: ["react", "react-dom"], themeAware: false,
+    motion: {
+      triggers: ["loop", "state"], intensity: "medium",
+      technique: figure.renderer === "webgl" ? ["svg", "webgl", "js"] : ["svg", "js"],
+      cost: figure.renderer === "svg" ? "medium" : "high",
+    },
+    integration: "drop-in", appliesTo: ["illustration", "3d"],
+    notes: `Import ${figure.exportName} from "anatomy-figures/${figure.slug}" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.`,
+  }))
+}
+
 const ADAPTERS: Record<string, Adapter> = {
+  anatomy,
   motion,
   aceternity,
   beautifui,

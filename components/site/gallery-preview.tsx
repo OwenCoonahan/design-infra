@@ -145,6 +145,7 @@ export function GalleryPreview({
       <div
         ref={box}
         data-gallery-preview={id}
+        data-preview-kind={descriptor.kind}
         data-playing={playing}
         className="relative overflow-hidden border-b bg-[#141414]"
         style={{ aspectRatio: descriptor.kind === "interactive" ? descriptor.width / descriptor.height : 16 / 10 }}

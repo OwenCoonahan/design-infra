@@ -29,8 +29,10 @@ export function previewDescriptor(
   if (linkOnlyMedia(e)) return undefined
   return hostedPreview(e.id) ?? (e.video ? { kind: "clip", src: e.video } : e.preview ? { kind: "static" } : undefined)
 }
-export function visualFirst<T extends { visual?: PreviewDescriptor }>(entries: T[]) {
-  return { visual: entries.filter((e) => e.visual), sourceOnly: entries.filter((e) => !e.visual) }
+/** Live view contains playable media; still screenshots remain available in Grid view. */
+export function visualFirst<T extends { visual?: PreviewDescriptor }>(entries: T[], view: "live" | "grid" = "grid") {
+  const visible = (e: T) => !!e.visual && (view === "grid" || e.visual.kind !== "static")
+  return { visual: entries.filter(visible), sourceOnly: entries.filter((e) => !visible(e)) }
 }
 export const PREVIEW_LABELS = {
   interactive: "Interactive demo",

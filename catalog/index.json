@@ -3388,6 +3388,463 @@
     "live": "https://www.agentation.com/"
   },
   {
+    "id": "anatomy/anatomy-skill",
+    "source": "anatomy",
+    "name": "anatomy-skill",
+    "title": "Anatomy · Isometric explainer skill",
+    "description": "Optional agent skill for custom interactive SVG and WebGL explainers. Reuse the anatomy-figures components first; use the skill when the required mechanism is not already available.",
+    "kind": "tool",
+    "categories": [
+      "dev-tool",
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "anatomy",
+      "skill",
+      "isometric",
+      "diagram",
+      "explainer",
+      "claude-code",
+      "codex"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "DISABLE_TELEMETRY=1 npx -y skills@latest add wheresryan22/anatomy --skill anatomy -a claude-code codex -y",
+    "docs": "https://skills.wheresryan.sh/anatomy",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "MIT. Optional tier 3 skill, compatible with Claude Code and Codex. Needs Node 20.10+ and Chrome/Chromium. Existing figures install separately with pnpm add anatomy-figures. Custom models require factual and visual review; large figures may take substantial time.",
+    "demo": false,
+    "appliesTo": [],
+    "live": "https://skills.wheresryan.sh/anatomy"
+  },
+  {
+    "id": "anatomy/box-model",
+    "source": "anatomy",
+    "name": "box-model",
+    "title": "Box model · Anatomy",
+    "description": "Interactive isometric SVG explainer for box model. Reuse the BoxModel component from anatomy-figures/box-model in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "BoxModel",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/box-model",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/box-model.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import BoxModel from \"anatomy-figures/box-model\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/box-model"
+  },
+  {
+    "id": "anatomy/debounce",
+    "source": "anatomy",
+    "name": "debounce",
+    "title": "Debounce and throttle · Anatomy",
+    "description": "Interactive isometric SVG explainer for debounce and throttle. Reuse the Debounce component from anatomy-figures/debounce in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Debounce",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/debounce",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/debounce.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import Debounce from \"anatomy-figures/debounce\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/debounce"
+  },
+  {
+    "id": "anatomy/hash-map",
+    "source": "anatomy",
+    "name": "hash-map",
+    "title": "Hash map collisions · Anatomy",
+    "description": "Interactive isometric SVG explainer for hash map collisions. Reuse the HashMap component from anatomy-figures/hash-map in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "HashMap",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/hash-map",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/hash-map.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import HashMap from \"anatomy-figures/hash-map\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/hash-map"
+  },
+  {
+    "id": "anatomy/lru-cache",
+    "source": "anatomy",
+    "name": "lru-cache",
+    "title": "LRU cache · Anatomy",
+    "description": "Interactive isometric SVG explainer for lru cache. Reuse the LruCache component from anatomy-figures/lru-cache in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "LruCache",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/lru-cache",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/lru-cache.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import LruCache from \"anatomy-figures/lru-cache\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/lru-cache"
+  },
+  {
+    "id": "anatomy/message-queue",
+    "source": "anatomy",
+    "name": "message-queue",
+    "title": "Message queue · Anatomy",
+    "description": "Interactive isometric SVG explainer for message queue. Reuse the MessageQueue component from anatomy-figures/message-queue in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "MessageQueue",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/message-queue",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/message-queue.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import MessageQueue from \"anatomy-figures/message-queue\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/message-queue"
+  },
+  {
+    "id": "anatomy/rate-limiter",
+    "source": "anatomy",
+    "name": "rate-limiter",
+    "title": "Token bucket · Anatomy",
+    "description": "Interactive isometric SVG explainer for token bucket. Reuse the RateLimiter component from anatomy-figures/rate-limiter in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "RateLimiter",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/rate-limiter",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/rate-limiter.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import RateLimiter from \"anatomy-figures/rate-limiter\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/rate-limiter"
+  },
+  {
+    "id": "anatomy/watch",
+    "source": "anatomy",
+    "name": "watch",
+    "title": "Watch movement · Anatomy",
+    "description": "Interactive isometric SVG explainer for watch movement. Reuse the Watch component from anatomy-figures/watch in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Watch",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/watch",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/watch.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import Watch from \"anatomy-figures/watch\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/watch"
+  },
+  {
     "id": "animejs/animejs",
     "source": "animejs",
     "name": "animejs",
@@ -21805,6 +22262,1576 @@
       "cost": "medium"
     },
     "live": "https://ui.aceternity.com/live-preview/world-map-illustration"
+  },
+  {
+    "id": "anatomy/afterburner",
+    "source": "anatomy",
+    "name": "afterburner",
+    "title": "Afterburner · Anatomy",
+    "description": "Interactive isometric SVG explainer for afterburner. Reuse the Afterburner component from anatomy-figures/afterburner in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Afterburner",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/afterburner",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/afterburner.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Afterburner from \"anatomy-figures/afterburner\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/afterburner"
+  },
+  {
+    "id": "anatomy/b-tree",
+    "source": "anatomy",
+    "name": "b-tree",
+    "title": "B-tree index · Anatomy",
+    "description": "Interactive isometric SVG explainer for b-tree index. Reuse the BTree component from anatomy-figures/b-tree in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "BTree",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/b-tree",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/b-tree.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import BTree from \"anatomy-figures/b-tree\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/b-tree"
+  },
+  {
+    "id": "anatomy/binary-search",
+    "source": "anatomy",
+    "name": "binary-search",
+    "title": "Binary search · Anatomy",
+    "description": "Interactive isometric SVG explainer for binary search. Reuse the BinarySearch component from anatomy-figures/binary-search in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "BinarySearch",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/binary-search",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/binary-search.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import BinarySearch from \"anatomy-figures/binary-search\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/binary-search"
+  },
+  {
+    "id": "anatomy/bloom-filter",
+    "source": "anatomy",
+    "name": "bloom-filter",
+    "title": "Bloom filter · Anatomy",
+    "description": "Interactive isometric SVG explainer for bloom filter. Reuse the BloomFilter component from anatomy-figures/bloom-filter in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "BloomFilter",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/bloom-filter",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/bloom-filter.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import BloomFilter from \"anatomy-figures/bloom-filter\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/bloom-filter"
+  },
+  {
+    "id": "anatomy/computer",
+    "source": "anatomy",
+    "name": "computer",
+    "title": "Desk computer · Anatomy",
+    "description": "Interactive isometric SVG explainer for desk computer. Reuse the Computer component from anatomy-figures/computer in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Computer",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/computer",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/computer.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Computer from \"anatomy-figures/computer\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/computer"
+  },
+  {
+    "id": "anatomy/dns",
+    "source": "anatomy",
+    "name": "dns",
+    "title": "DNS resolution · Anatomy",
+    "description": "Interactive isometric SVG explainer for dns resolution. Reuse the Dns component from anatomy-figures/dns in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Dns",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/dns",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/dns.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Dns from \"anatomy-figures/dns\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/dns"
+  },
+  {
+    "id": "anatomy/easing",
+    "source": "anatomy",
+    "name": "easing",
+    "title": "Easing bench · Anatomy",
+    "description": "Interactive isometric SVG explainer for easing bench. Reuse the Easing component from anatomy-figures/easing in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Easing",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/easing",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/easing.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Easing from \"anatomy-figures/easing\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/easing"
+  },
+  {
+    "id": "anatomy/flex-grow",
+    "source": "anatomy",
+    "name": "flex-grow",
+    "title": "flex-grow · Anatomy",
+    "description": "Interactive isometric SVG explainer for flex-grow. Reuse the FlexGrow component from anatomy-figures/flex-grow in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "FlexGrow",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/flex-grow",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/flex-grow.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import FlexGrow from \"anatomy-figures/flex-grow\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/flex-grow"
+  },
+  {
+    "id": "anatomy/forge",
+    "source": "anatomy",
+    "name": "forge",
+    "title": "Forge and hammer · Anatomy",
+    "description": "Interactive isometric SVG explainer for forge and hammer. Reuse the Forge component from anatomy-figures/forge in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Forge",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/forge",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/forge.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Forge from \"anatomy-figures/forge\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/forge"
+  },
+  {
+    "id": "anatomy/foundry",
+    "source": "anatomy",
+    "name": "foundry",
+    "title": "Foundry pour · Anatomy",
+    "description": "Interactive isometric SVG explainer for foundry pour. Reuse the Foundry component from anatomy-figures/foundry in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Foundry",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/foundry",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/foundry.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Foundry from \"anatomy-figures/foundry\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/foundry"
+  },
+  {
+    "id": "anatomy/git-merge",
+    "source": "anatomy",
+    "name": "git-merge",
+    "title": "Branch and merge · Anatomy",
+    "description": "Interactive isometric SVG explainer for branch and merge. Reuse the GitMerge component from anatomy-figures/git-merge in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "GitMerge",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/git-merge",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/git-merge.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import GitMerge from \"anatomy-figures/git-merge\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/git-merge"
+  },
+  {
+    "id": "anatomy/glass-furnace",
+    "source": "anatomy",
+    "name": "glass-furnace",
+    "title": "Glory hole · Anatomy",
+    "description": "Interactive isometric SVG explainer for glory hole. Reuse the GlassFurnace component from anatomy-figures/glass-furnace in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "GlassFurnace",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/glass-furnace",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/glass-furnace.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import GlassFurnace from \"anatomy-figures/glass-furnace\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/glass-furnace"
+  },
+  {
+    "id": "anatomy/gradient-descent",
+    "source": "anatomy",
+    "name": "gradient-descent",
+    "title": "Gradient descent · Anatomy",
+    "description": "Interactive isometric SVG explainer for gradient descent. Reuse the GradientDescent component from anatomy-figures/gradient-descent in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "GradientDescent",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/gradient-descent",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/gradient-descent.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import GradientDescent from \"anatomy-figures/gradient-descent\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/gradient-descent"
+  },
+  {
+    "id": "anatomy/mark-sweep",
+    "source": "anatomy",
+    "name": "mark-sweep",
+    "title": "Mark and sweep · Anatomy",
+    "description": "Interactive isometric SVG explainer for mark and sweep. Reuse the MarkSweep component from anatomy-figures/mark-sweep in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "MarkSweep",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/mark-sweep",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/mark-sweep.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import MarkSweep from \"anatomy-figures/mark-sweep\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/mark-sweep"
+  },
+  {
+    "id": "anatomy/merge-sort",
+    "source": "anatomy",
+    "name": "merge-sort",
+    "title": "Merge sort · Anatomy",
+    "description": "Interactive isometric SVG explainer for merge sort. Reuse the MergeSort component from anatomy-figures/merge-sort in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "MergeSort",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/merge-sort",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/merge-sort.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import MergeSort from \"anatomy-figures/merge-sort\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/merge-sort"
+  },
+  {
+    "id": "anatomy/mutex",
+    "source": "anatomy",
+    "name": "mutex",
+    "title": "Mutex · Anatomy",
+    "description": "Interactive isometric SVG explainer for mutex. Reuse the Mutex component from anatomy-figures/mutex in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Mutex",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/mutex",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/mutex.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Mutex from \"anatomy-figures/mutex\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/mutex"
+  },
+  {
+    "id": "anatomy/plasma-cutter",
+    "source": "anatomy",
+    "name": "plasma-cutter",
+    "title": "Plasma cutter · Anatomy",
+    "description": "Interactive isometric SVG explainer for plasma cutter. Reuse the PlasmaCutter component from anatomy-figures/plasma-cutter in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "PlasmaCutter",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/plasma-cutter",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/plasma-cutter.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import PlasmaCutter from \"anatomy-figures/plasma-cutter\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/plasma-cutter"
+  },
+  {
+    "id": "anatomy/power-station",
+    "source": "anatomy",
+    "name": "power-station",
+    "title": "Power station · Anatomy",
+    "description": "Interactive isometric SVG explainer for power station. Reuse the PowerStation component from anatomy-figures/power-station in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "PowerStation",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/power-station",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/power-station.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import PowerStation from \"anatomy-figures/power-station\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/power-station"
+  },
+  {
+    "id": "anatomy/process-pump",
+    "source": "anatomy",
+    "name": "process-pump",
+    "title": "Process pump · Anatomy",
+    "description": "Interactive isometric SVG explainer for process pump. Reuse the ProcessPump component from anatomy-figures/process-pump in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "ProcessPump",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/process-pump",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/process-pump.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import ProcessPump from \"anatomy-figures/process-pump\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/process-pump"
+  },
+  {
+    "id": "anatomy/public-key",
+    "source": "anatomy",
+    "name": "public-key",
+    "title": "Two-key box · Anatomy",
+    "description": "Interactive isometric SVG explainer for two-key box. Reuse the PublicKey component from anatomy-figures/public-key in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "PublicKey",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/public-key",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/public-key.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import PublicKey from \"anatomy-figures/public-key\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/public-key"
+  },
+  {
+    "id": "anatomy/reactor",
+    "source": "anatomy",
+    "name": "reactor",
+    "title": "Pool reactor · Anatomy",
+    "description": "Interactive isometric SVG explainer for pool reactor. Reuse the Reactor component from anatomy-figures/reactor in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Reactor",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/reactor",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/reactor.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Reactor from \"anatomy-figures/reactor\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/reactor"
+  },
+  {
+    "id": "anatomy/sampling",
+    "source": "anatomy",
+    "name": "sampling",
+    "title": "Temperature · Anatomy",
+    "description": "Interactive isometric SVG explainer for temperature. Reuse the Sampling component from anatomy-figures/sampling in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Sampling",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/sampling",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/sampling.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Sampling from \"anatomy-figures/sampling\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/sampling"
+  },
+  {
+    "id": "anatomy/seasons",
+    "source": "anatomy",
+    "name": "seasons",
+    "title": "Seasons · Anatomy",
+    "description": "Interactive isometric SVG explainer for seasons. Reuse the Seasons component from anatomy-figures/seasons in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Seasons",
+      "3d"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/seasons",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/seasons.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Seasons from \"anatomy-figures/seasons\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/seasons"
+  },
+  {
+    "id": "anatomy/tcp-handshake",
+    "source": "anatomy",
+    "name": "tcp-handshake",
+    "title": "TCP handshake · Anatomy",
+    "description": "Interactive isometric SVG explainer for tcp handshake. Reuse the TcpHandshake component from anatomy-figures/tcp-handshake in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "TcpHandshake",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/tcp-handshake",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/tcp-handshake.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import TcpHandshake from \"anatomy-figures/tcp-handshake\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "js"
+      ],
+      "cost": "medium"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/tcp-handshake"
+  },
+  {
+    "id": "anatomy/tokamak",
+    "source": "anatomy",
+    "name": "tokamak",
+    "title": "Tokamak shot · Anatomy",
+    "description": "Interactive isometric SVG explainer for tokamak shot. Reuse the Tokamak component from anatomy-figures/tokamak in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Tokamak",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/tokamak",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/tokamak.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Tokamak from \"anatomy-figures/tokamak\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/tokamak"
+  },
+  {
+    "id": "anatomy/turbofan",
+    "source": "anatomy",
+    "name": "turbofan",
+    "title": "Turbofan ground run · Anatomy",
+    "description": "Interactive isometric SVG explainer for turbofan ground run. Reuse the Turbofan component from anatomy-figures/turbofan in docs, articles and technical feature sections.",
+    "kind": "component",
+    "categories": [
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "isometric",
+      "interactive",
+      "explainer",
+      "diagram",
+      "svg",
+      "docs",
+      "education",
+      "anatomy-figures",
+      "Turbofan",
+      "webgl"
+    ],
+    "moods": [
+      "experimental",
+      "editorial",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add anatomy-figures",
+    "docs": "https://skills.wheresryan.sh/anatomy/collection/turbofan",
+    "preview": "https://design-infra.vercel.app/thumbnails/anatomy/turbofan.webp",
+    "dependencies": [
+      "react",
+      "react-dom"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Import Turbofan from \"anatomy-figures/turbofan\" (default export). MIT; React 18+. Its --anatomy-* tokens need mapping to your project's theme. Isometric does not imply freely rotating 3D. Live interaction is on the source site; our thumbnail is a still screenshot.",
+    "themeAware": false,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "illustration",
+      "3d"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "svg",
+        "webgl",
+        "js"
+      ],
+      "cost": "high"
+    },
+    "live": "https://skills.wheresryan.sh/anatomy/collection/turbofan"
   },
   {
     "id": "beautifui/button",
