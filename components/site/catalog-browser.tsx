@@ -125,11 +125,9 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
 
   const active = filterKey !== ""
   const view = galleryView(f)
-  const groups = visualFirst(filtered)
-  const ordered = [...groups.visual, ...groups.sourceOnly]
-  const displayed = ordered.slice(0, limit)
-  const visual = displayed.filter((e) => e.visual)
-  const sourceOnly = displayed.filter((e) => !e.visual)
+  const groups = visualFirst(filtered, view)
+  const visual = groups.visual.slice(0, limit)
+  const sourceOnly = groups.sourceOnly.slice(0, Math.max(0, limit - groups.visual.length))
   const large = f.category ? SECTION_TYPES.has(f.category) : false
 
   return (
@@ -141,7 +139,9 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
           </h1>
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             {f.category
-              ? `Compare ${categoryLabel(f.category).toLowerCase()} visually. Play an example, try it, then shortlist your picks and send them to your agent.`
+              ? view === "live"
+                ? `Compare playable ${categoryLabel(f.category).toLowerCase()} examples. Try a demo, then shortlist your picks and send them to your agent.`
+                : `Compare ${categoryLabel(f.category).toLowerCase()} screenshots. Open a source demo to see its behavior, then shortlist your picks.`
               : "Find components by type and feeling. Explore live examples, shortlist your options, and copy your picks to your agent."}
           </p>
         </div>
@@ -313,8 +313,8 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
 
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p role="status" className="text-xs text-muted-foreground">
-            {filtered.length} total results · {groups.visual.length} with visual previews · {groups.sourceOnly.length}{" "}
-            on source sites
+            {filtered.length} total results · {groups.visual.length} with {view === "live" ? "live" : "visual"} previews
+            · {groups.sourceOnly.length} {view === "live" ? "without live previews" : "on source sites"}
           </p>
           <div className="flex items-center gap-2">
             <div aria-label="Gallery view" className="flex rounded-lg border p-1 text-xs">
@@ -353,6 +353,22 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
             >
               Browse a component type
             </Link>
+          </div>
+        ) : null}
+
+        {view === "live" && filtered.length > 0 && groups.visual.length === 0 ? (
+          <div className="rounded-xl border bg-card p-6">
+            <h2 className="font-medium">No live previews available in this selection</h2>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Browse still screenshots in Grid view, or open a source demo below.
+            </p>
+            <button
+              type="button"
+              onClick={() => update({ view: "grid" })}
+              className="mt-3 rounded-lg border px-3 py-2 text-sm"
+            >
+              Browse screenshots
+            </button>
           </div>
         ) : null}
 
@@ -446,11 +462,17 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
           })}
         </ul>
         {sourceOnly.length ? (
-          <section aria-label="More examples on source sites" className="mt-3 space-y-3 border-t pt-6">
-            <h2 className="text-lg font-medium">More examples on source sites</h2>
+          <section
+            aria-label={view === "live" ? "More examples without live previews" : "More examples on source sites"}
+            className="mt-3 space-y-3 border-t pt-6"
+          >
+            <h2 className="text-lg font-medium">
+              {view === "live" ? "More examples without live previews" : "More examples on source sites"}
+            </h2>
             <p className="text-sm text-muted-foreground">
-              These entries have no hosted visual preview. Open the vendor demo to explore them; access requirements
-              still apply.
+              {view === "live"
+                ? "These examples have screenshots or source links, but no playable preview here. Browse screenshots in Grid view or open the source demo."
+                : "These entries have no hosted visual preview. Open the vendor demo to explore them; access requirements still apply."}
             </p>
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {sourceOnly.map((e) => {
@@ -474,6 +496,7 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
                     </div>
                     <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                       <span>{e.source}</span>
+                      {e.visual?.kind === "static" ? <span>Screenshot only</span> : null}
                       {e.access !== "free" ? <span>{e.access}</span> : null}
                       {e.live || e.sourceHref ? (
                         <a

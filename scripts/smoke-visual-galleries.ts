@@ -61,10 +61,26 @@ async function main() {
     assert.equal((await fetch(`${base}/preview/design-infra/agent-status?surface=neutral`)).status, 200)
     assert.equal((await fetch(`${base}/preview/unknown/spinner`)).status, 404)
     console.log("✓ all eight real hosted demos, controls, legacy URLs and explicit adapter allowlist")
+    // The reported Hero shelf must not display still screenshots under Live view.
+    await page.goto(`${base}/components?category=hero&source=aceternity&free=1`, { waitUntil: "networkidle2" })
+    assert.equal((await page.$$('ul[aria-label="Visual examples"] li')).length, 0)
+    assert.ok(await page.locator("h2 ::-p-text(No live previews available)").waitHandle())
+    assert.ok(await page.$('[aria-label="More examples without live previews"]'))
+    await page.locator("button ::-p-text(Browse screenshots)").click()
+    await page.waitForSelector('ul[aria-label="Visual examples"] img')
+    assert.equal(new URL(page.url()).searchParams.get("view"), "grid")
+    assert.equal((await page.$$("main iframe, main video")).length, 0)
+    console.log("✓ Live view excludes still screenshots; Grid view keeps them browsable")
 
     await page.goto(`${base}/components?category=loader&free=1`, { waitUntil: "networkidle2" })
     await page.waitForSelector('[data-gallery-preview][data-playing="true"] iframe')
     assert.equal(await page.$eval("button ::-p-text(Live view)", (e) => e.getAttribute("aria-pressed")), "true")
+    await page.waitForFunction(() =>
+      Array.from(document.querySelectorAll<HTMLVideoElement>("main video")).some(
+        (v) => v.readyState >= 2 && !v.paused && v.currentTime > 0,
+      ),
+    )
+    assert.equal(await page.$('[data-preview-kind="static"]'), null)
     const initialCount = await page.$$eval('[data-gallery-preview][data-playing="true"]', (e) => e.length)
     assert.ok(initialCount > 0 && initialCount <= 3)
     await page.evaluate(
@@ -107,12 +123,15 @@ async function main() {
     await skeletonFrame!.waitForSelector("button")
     // Chrome's automation coordinates omit iframe transforms; use the actual scaled viewport.
     const outer = await skeletonElement.boundingBox()
-    const inner = await skeletonFrame!.$eval("button", button => {
+    const inner = await skeletonFrame!.$eval("button", (button) => {
       const rect = button.getBoundingClientRect()
       return { x: rect.x, y: rect.y, width: rect.width, height: rect.height }
     })
     const scale = outer!.width / 520
-    await page.mouse.click(outer!.x + (inner.x + inner.width / 2) * scale, outer!.y + (inner.y + inner.height / 2) * scale)
+    await page.mouse.click(
+      outer!.x + (inner.x + inner.width / 2) * scale,
+      outer!.y + (inner.y + inner.height / 2) * scale,
+    )
     await skeletonFrame!.waitForFunction(() => document.querySelector("button")?.textContent === "Load again")
     assert.equal(await skeletonFrame!.$("[aria-busy=true]"), null)
     assert.equal(page.url(), unchanged)

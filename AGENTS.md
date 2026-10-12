@@ -128,6 +128,7 @@ directions with gallery/live links and a compare link (`lib/catalog/links.ts`), 
 ## Visual galleries
 
 - Only explicit adapters in `catalog/preview-demos.json` and approved clips autoplay in galleries. Add provenance and preserve licences for imported demo code in `components/demos/vendor/`; keep original catalog IDs/install commands. Implementations load through `/preview/[source]/[name]`, never through the catalog browser bundle. Existing own preview URLs and namespace aliases remain valid.
+- Live view contains hosted demos and motion clips; static screenshots belong in Grid view and compact reference rows. Do not present a still capture as a playable example.
 - A shared budget plays at most three visible examples. Offscreen/hidden previews unmount; reduced motion starts on posters. Keep detail links and shortlist controls outside interactive frames. Source-only entries remain separate; respect `linkOnlyMedia` before any local or upstream preview.
 - Generate new adapter thumbnails with `pnpm thumbnails --id <source/name> --force --base <running gallery>` then `pnpm catalog`. Test changes with `pnpm smoke:visual --base <running gallery>` plus normal checks.
 

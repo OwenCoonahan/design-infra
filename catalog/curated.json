@@ -4598,5 +4598,92 @@
       ],
       "cost": "medium"
     }
+  },
+  {
+    "id": "anatomy/anatomy-skill",
+    "source": "anatomy",
+    "name": "anatomy-skill",
+    "title": "Anatomy \u00b7 Isometric explainer skill",
+    "description": "Optional agent skill for custom interactive SVG and WebGL explainers. Reuse the anatomy-figures components first; use the skill when the required mechanism is not already available.",
+    "kind": "tool",
+    "categories": [
+      "dev-tool",
+      "illustration",
+      "3d"
+    ],
+    "tags": [
+      "anatomy",
+      "skill",
+      "isometric",
+      "diagram",
+      "explainer",
+      "claude-code",
+      "codex"
+    ],
+    "access": "free",
+    "install": "DISABLE_TELEMETRY=1 npx -y skills@latest add wheresryan22/anatomy --skill anatomy -a claude-code codex -y",
+    "docs": "https://skills.wheresryan.sh/anatomy",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ],
+    "notes": "MIT. Optional tier 3 skill, compatible with Claude Code and Codex. Needs Node 20.10+ and Chrome/Chromium. Existing figures install separately with pnpm add anatomy-figures. Custom models require factual and visual review; large figures may take substantial time."
+  },
+  {
+    "id": "anatomy/hash-map",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "anatomy/lru-cache",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "anatomy/message-queue",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "anatomy/debounce",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "anatomy/rate-limiter",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "anatomy/box-model",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
+  },
+  {
+    "id": "anatomy/watch",
+    "moods": [
+      "technical",
+      "refined",
+      "playful"
+    ]
   }
 ]

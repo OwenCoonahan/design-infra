@@ -33,6 +33,7 @@ node /tmp/di.mjs --list        # ranked list   ·   --tier 3   ·   --only motio
 | 20 | [OriginKit (CLI + MCP)](https://www.originkit.dev) | 4 | paid | ~1,100 WebGL/shader backgrounds, heroes and cursors — the wow factor, metered and proprietary. | `ORIGINKIT_API_KEY` |
 | 21 | [Motion+ (premium components + MCP)](https://motion.dev/plus) | 4 | paid | Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 460+ example sources. | `MOTION_PLUS` |
 | 22 | [transitions.dev Pro](https://transitions.dev) | 4 | paid | React/TS variants of every recipe plus Pro transitions. | `TRANSITIONS_LICENSE` |
+| 23 | [Anatomy (isometric explainer skill)](https://skills.wheresryan.sh/anatomy) | 3 | agent | Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first. | — |
 
 ## Tier 1 — Foundation — always
 
@@ -180,6 +181,14 @@ Breadth: 12k+ community components and search when nothing curated fits. Quality
 - project MCP `kitbitz` (.mcp.json)
 - agent note
 - verify: `curl -sf -X POST https://mcp.kitbitz.art -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"verify","version":"0"}}}' >/dev/null`
+
+### 23. Anatomy (isometric explainer skill)
+
+Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first. **Use:** Docs, educational articles and technical feature sections that need an explanatory SVG or WebGL figure. Select explicitly; ordinary controls use component libraries.
+
+- run: `DISABLE_TELEMETRY=1 npx -y skills@latest add wheresryan22/anatomy --skill anatomy -a claude-code codex -y`
+- agent note
+- verify: `test -f .agents/skills/anatomy/SKILL.md`
 
 ## Tier 4 — Paid / metered / keyed
 

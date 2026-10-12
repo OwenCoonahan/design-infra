@@ -551,6 +551,28 @@
           "command": "claude mcp add -s user --transport http transitions-pro https://api.transitions.dev/v1/agent/mcp -H \"Authorization: Bearer ${TRANSITIONS_LICENSE}\""
         }
       ]
+    },
+    {
+      "id": "anatomy",
+      "name": "Anatomy (isometric explainer skill)",
+      "tier": 3,
+      "rank": 23,
+      "track": "agent",
+      "source": "anatomy",
+      "docs": "https://skills.wheresryan.sh/anatomy",
+      "why": "Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first.",
+      "use": "Docs, educational articles and technical feature sections that need an explanatory SVG or WebGL figure. Select explicitly; ordinary controls use component libraries.",
+      "setup": [
+        {
+          "kind": "run",
+          "command": "DISABLE_TELEMETRY=1 npx -y skills@latest add wheresryan22/anatomy --skill anatomy -a claude-code codex -y"
+        },
+        {
+          "kind": "agent-note",
+          "text": "Anatomy: search existing anatomy/* figures before creating a custom explainer. Selected components use pnpm add anatomy-figures and a per-figure ESM import; map --anatomy-* to project tokens. The optional /anatomy skill creates new mechanisms; preserve factual accuracy, keyboard input, reduced motion and offscreen cleanup, then inspect the result on target devices."
+        }
+      ],
+      "verify": "test -f .agents/skills/anatomy/SKILL.md"
     }
   ]
 }

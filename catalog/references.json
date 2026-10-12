@@ -1647,6 +1647,70 @@
       "notes": "Open in a browser as a reference; do not copy prompts or code without the author granting appropriate rights.",
       "related": [],
       "verified": "2026-10-11"
+    },
+    {
+      "slug": "anatomy",
+      "name": "Anatomy Collection",
+      "url": "https://skills.wheresryan.sh/anatomy/collection",
+      "summary": "33 interactive isometric explainers of algorithms, UI behavior and mechanical systems, with reusable MIT React components and an optional generation skill.",
+      "covers": [
+        "illustration",
+        "3d"
+      ],
+      "keywords": [
+        "anatomy",
+        "isometric",
+        "technical illustration",
+        "interactive explainer",
+        "explanatory diagram",
+        "mechanism",
+        "svg",
+        "algorithm",
+        "educational"
+      ],
+      "patterns": [
+        {
+          "key": "figure",
+          "label": "concept",
+          "url": "https://skills.wheresryan.sh/anatomy/collection/{value}",
+          "values": [
+            "hash-map",
+            "lru-cache",
+            "message-queue",
+            "debounce",
+            "rate-limiter",
+            "box-model",
+            "watch"
+          ],
+          "map": {
+            "queue": "message-queue",
+            "cache": "lru-cache",
+            "hash": "hash-map",
+            "throttle": "debounce",
+            "rate limit": "rate-limiter"
+          },
+          "match": []
+        }
+      ],
+      "moods": [
+        "technical",
+        "refined",
+        "playful"
+      ],
+      "access": "free",
+      "media": [
+        "live-links",
+        "code-examples"
+      ],
+      "machine": {},
+      "etiquette": {
+        "attribution": "Anatomy by Ryan (@wheresryan22); retain the MIT copyright/licence when reusing figures.",
+        "crawl": "Read the linked public collection pages and package metadata only. robots.txt and llms.txt returned 404 on 2026-10-12; avoid bulk site scraping.",
+        "hotlinking": "Use the npm component or a local attributed screenshot, not hotlinked site media."
+      },
+      "notes": "Prefer a matching existing anatomy-figures component to regenerating the same mechanism. The optional skill supports Claude Code and Codex; this is for explanatory illustrations, not ordinary UI controls.",
+      "related": [],
+      "verified": "2026-10-12"
     }
   ]
 }
