@@ -10,15 +10,15 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 |---|---|---|---|---|
 | **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
 | **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 808 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 895 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Vanta](../inspiration/vanta/README.md) | 269 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 896 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 271 |
 | **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 93 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 57 |
-| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | — | 825 |
+| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md) | 827 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
 | **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 363 |
 | **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | — | 887 |
-| **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 6 |
+| **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Motion](../inspiration/motion/README.md) | 7 |
 | **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 74 |
 | **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 140 |
 | **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 922 |
@@ -75,13 +75,13 @@ Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. Brief wo
 - ★ `oc/feature-bento` — Features · Bento (features, bento) · `npx shadcn@latest add @design-infra/feature-bento`
 - ★ `oc/hero-split` — Hero · Split (hero) · `npx shadcn@latest add @design-infra/hero-split`
 - ★ `oc/hero-spotlight` — Hero · Spotlight (hero) · `npx shadcn@latest add @design-infra/hero-spotlight`
+- ★ `oc/kinetic-field` — Kinetic field (background, 3d) · `npx shadcn@latest add @design-infra/kinetic-field`
 - ★ `oc/navbar` — Navbar (navigation) · `npx shadcn@latest add @design-infra/navbar`
 - ★ `oc/prompt-composer` — Prompt composer (ai-chat, input) · `npx shadcn@latest add @design-infra/prompt-composer`
 - ★ `oc/template-ai-chat` — Template · AI chat (ai-chat, agent-ui, sidebar) · `npx shadcn@latest add @design-infra/template-ai-chat`
 - ★ `oc/template-landing` — Template · SaaS landing page (hero, features, pricing, testimonials, faq, cta, footer) · `npx shadcn@latest add @design-infra/template-landing`
 - ★ `oc/template-saas-dashboard` — Template · SaaS dashboard (dashboard, sidebar, stats, chart, table) · `npx shadcn@latest add @design-infra/template-saas-dashboard`
 - ★ `oc/motion-presets` — Motion presets (transition) · `npx shadcn@latest add @design-infra/motion-presets`
-- ★ `cult-ui/intro-disclosure` — Intro Disclosure (misc) · `npx shadcn@latest add @cult-ui/intro-disclosure`
 
 ## Technical
 
@@ -89,6 +89,7 @@ Dev-tool energy: mono type, terminals, data density, grids. Brief words: technic
 
 - ★ `oc/app-shell` — App shell (sidebar, navigation, dashboard) · `npx shadcn@latest add @design-infra/app-shell`
 - ★ `oc/data-table-card` — Data table card (table, dashboard) · `npx shadcn@latest add @design-infra/data-table-card`
+- ★ `oc/kinetic-field` — Kinetic field (background, 3d) · `npx shadcn@latest add @design-infra/kinetic-field`
 - ★ `oc/stat-cards` — Stat cards (stats, dashboard, card) · `npx shadcn@latest add @design-infra/stat-cards`
 - ★ `oc/stats-row` — Stats row (stats) · `npx shadcn@latest add @design-infra/stats-row`
 - ★ `oc/template-saas-dashboard` — Template · SaaS dashboard (dashboard, sidebar, stats, chart, table) · `npx shadcn@latest add @design-infra/template-saas-dashboard`
@@ -101,7 +102,6 @@ Dev-tool energy: mono type, terminals, data density, grids. Brief words: technic
 - ★ `kibo-ui/editor` — Editor (input) · `npx shadcn@latest add @kibo-ui/editor`
 - ★ `kibo-ui/gantt` — Gantt (dashboard) · `npx shadcn@latest add @kibo-ui/gantt`
 - ★ `kibo-ui/kanban` — Kanban (dashboard) · `npx shadcn@latest add @kibo-ui/kanban`
-- ★ `kibo-ui/snippet` — Snippet (code) · `npx shadcn@latest add @kibo-ui/snippet`
 
 ## Editorial
 
@@ -148,6 +148,7 @@ Friendly, human, soft colours and rounded shapes. Brief words: warm, friendly, h
 Bouncy motion, colour, toy-like interactions, delight. Brief words: playful, fun, bouncy, whimsical, delightful, quirky, colorful, colourful.
 
 - ★ `oc/beam-card` — Beam card (card, agent-ui) · `npx shadcn@latest add @design-infra/beam-card`
+- ★ `oc/kinetic-field` — Kinetic field (background, 3d) · `npx shadcn@latest add @design-infra/kinetic-field`
 - ★ `cult-ui/intro-disclosure` — Intro Disclosure (misc) · `npx shadcn@latest add @cult-ui/intro-disclosure`
 - ★ `cult-ui/onboarding` — Onboarding (form) · `npx shadcn@latest add @cult-ui/onboarding`
 - ★ `cult-ui/rolling-number` — Rolling Number (stats) · `npx shadcn@latest add @cult-ui/rolling-number`
@@ -161,7 +162,6 @@ Bouncy motion, colour, toy-like interactions, delight. Brief words: playful, fun
 - ★ `react-bits/count-up` — Count Up (text-effect) · `npx shadcn@latest add @react-bits/CountUp-TS-TW`
 - ★ `react-bits/decrypted-text` — Decrypted Text (text-effect) · `npx shadcn@latest add @react-bits/DecryptedText-TS-TW`
 - ★ `react-bits/rotating-text` — Rotating Text (text-effect) · `npx shadcn@latest add @react-bits/RotatingText-TS-TW`
-- ★ `react-bits/scroll-reveal` — Scroll Reveal (scroll-effect, text-effect) · `npx shadcn@latest add @react-bits/ScrollReveal-TS-TW`
 
 ## Premium
 

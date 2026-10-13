@@ -1,0 +1,272 @@
+{
+  "url": "https://motion.dev/",
+  "slug": "motion",
+  "capturedAt": "2026-10-13T22:00:01.820Z",
+  "fullHeightCaptured": 11063,
+  "title": "Motion (prev Framer Motion): JavaScript & React animation library",
+  "description": "Motion (prev Framer Motion) is a fast, production-grade animation library for React, JavaScript and Vue. Build smooth UI animations at a tiny footprint.",
+  "themeColor": null,
+  "pageHeight": 11063,
+  "fonts": {
+    "heading": [
+      {
+        "value": "TASA Orbiter",
+        "weight": 570
+      },
+      {
+        "value": "Geist Mono",
+        "weight": 108
+      }
+    ],
+    "body": [
+      {
+        "value": "TASA Orbiter",
+        "weight": 3433
+      }
+    ],
+    "ui": [
+      {
+        "value": "TASA Orbiter",
+        "weight": 2070
+      }
+    ],
+    "mono": [
+      {
+        "value": "Geist Mono",
+        "weight": 2374
+      }
+    ]
+  },
+  "loadedFontFaces": [
+    "Geist Mono",
+    "TASA Orbiter"
+  ],
+  "typeScale": [
+    {
+      "value": "15px/400",
+      "weight": 4233
+    },
+    {
+      "value": "11px/400",
+      "weight": 1794
+    },
+    {
+      "value": "12px/400",
+      "weight": 1311
+    },
+    {
+      "value": "40px/700",
+      "weight": 270
+    },
+    {
+      "value": "16px/400",
+      "weight": 224
+    },
+    {
+      "value": "20px/400",
+      "weight": 205
+    },
+    {
+      "value": "20px/700",
+      "weight": 182
+    },
+    {
+      "value": "11px/700",
+      "weight": 63
+    },
+    {
+      "value": "30px/400",
+      "weight": 54
+    },
+    {
+      "value": "42px/700",
+      "weight": 52
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#0e1312",
+        "weight": 1642
+      },
+      {
+        "value": "#f8f8f6",
+        "weight": 120
+      },
+      {
+        "value": "#141a18",
+        "weight": 119
+      },
+      {
+        "value": "#ffdb2a",
+        "weight": 104
+      }
+    ],
+    "text": [
+      {
+        "value": "#ededec",
+        "weight": 2605
+      },
+      {
+        "value": "#958d82",
+        "weight": 604
+      },
+      {
+        "value": "#1a1a1c",
+        "weight": 382
+      },
+      {
+        "value": "#ffdb2a",
+        "weight": 117
+      },
+      {
+        "value": "#0e1312",
+        "weight": 71
+      },
+      {
+        "value": "#6e6a64",
+        "weight": 65
+      }
+    ],
+    "borders": [
+      {
+        "value": "#1e2623",
+        "weight": 70
+      },
+      {
+        "value": "#e0e0de",
+        "weight": 2
+      }
+    ]
+  },
+  "radii": [
+    {
+      "value": "50%",
+      "weight": 1
+    }
+  ],
+  "shadows": [],
+  "cssVariables": {
+    "--dossier-stripe-color": "color-mix(in srgb, #ededec 10%, transparent)",
+    "--border": "#1e2623",
+    "--foreground-feint": "#958d82",
+    "--tier-b-bg": "color-mix(in oklch, oklch(.68 .18 255) 10%, transparent)",
+    "--accent-light": "rgba(255, 219, 42, .12)",
+    "--layer": "#141a18",
+    "--dossier-stripe-stroke": "1.5px",
+    "--max-width": "980px",
+    "--on-accent": "#171309",
+    "--cl-ai-kit": "oklch(.64 .18 302)",
+    "--accent": "#ffdb2a",
+    "--surface-deepest": "#060402",
+    "--kicker-tracking-tight": ".1em",
+    "--font-sans": "\"TASA Orbiter\", sans-serif",
+    "--lab-rind": "oklch(.76 .15 155)",
+    "--accent-2": "oklch(.76 .15 155)",
+    "--tier-f-bg": "color-mix(in oklch, oklch(.67 .22 26.43) 10%, transparent)",
+    "--dossier-stripe-period": "8px",
+    "--cl-plus": "oklch(.76 .15 155)",
+    "--bg-grayscale": ".15",
+    "--tier-s-bg": "color-mix(in oklch, oklch(.88 .18 96) 10%, transparent)",
+    "--kicker-tracking-loose": ".18em",
+    "--cl-ui": "#ededec",
+    "--tier-s": "oklch(.88 .18 96)",
+    "--accent-3": "#a5b4fc",
+    "--code-bg": "#141a18",
+    "--tier-a": "oklch(.76 .15 155)",
+    "--background": "#0e1312",
+    "--lab-blackcurrant": "oklch(.64 .18 302)",
+    "--tier-d": "oklch(.72 .2 345)",
+    "--tier-f": "oklch(.67 .22 26.43)",
+    "--cl-motion": "oklch(.88 .18 96)",
+    "--lab-watermelon": "oklch(.67 .22 26.43)",
+    "--tier-d-bg": "color-mix(in oklch, oklch(.72 .2 345) 10%, transparent)",
+    "--code-border": "#1e2623",
+    "--dossier-stripe-angle": "119deg",
+    "--lab-yellow": "oklch(.88 .18 96)",
+    "--font-mono": "\"Geist Mono\", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+    "--error": "#ff5f57",
+    "--cl-motion-studio": "oklch(.67 .22 26.43)",
+    "--tier-a-bg": "color-mix(in oklch, oklch(.76 .15 155) 10%, transparent)",
+    "--lab-blueberry": "oklch(.68 .18 255)",
+    "--lab-dragonfruit": "oklch(.72 .2 345)",
+    "--accent-feint": "rgba(255, 219, 42, .06)",
+    "--foreground": "#ededec",
+    "--bg-hue": "0deg",
+    "--tier-b": "oklch(.68 .18 255)",
+    "--tier-c-bg": "color-mix(in oklch, oklch(.64 .18 302) 10%, transparent)",
+    "--motion-plus-accent": "oklch(.76 .15 155)",
+    "--surface-deep": "#0a0804",
+    "--tier-c": "oklch(.64 .18 302)"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "Motion. Production-grade animation library for the web."
+    },
+    {
+      "tag": "h2",
+      "text": "Animations that move."
+    },
+    {
+      "tag": "h2",
+      "text": "React & JavaScript animation examples."
+    },
+    {
+      "tag": "h2",
+      "text": "Documentation for React, JavaScript and Vue."
+    },
+    {
+      "tag": "h2",
+      "text": "Build faster with Motion+."
+    },
+    {
+      "tag": "h2",
+      "text": "Made with Motion."
+    },
+    {
+      "tag": "h2",
+      "text": "Latest from Motion."
+    },
+    {
+      "tag": "h2",
+      "text": "Introducing Motion Studio"
+    },
+    {
+      "tag": "h2",
+      "text": "Introducing Motion UI"
+    },
+    {
+      "tag": "h2",
+      "text": "Trusted by the world's leading teams."
+    },
+    {
+      "tag": "h2",
+      "text": "Find & fix animation performance issues."
+    },
+    {
+      "tag": "h2",
+      "text": "Animation guides and examples."
+    },
+    {
+      "tag": "h2",
+      "text": "Tools for the full animation workflow."
+    }
+  ],
+  "signals": {
+    "sections": 17,
+    "images": 23,
+    "videos": 20,
+    "canvases": 2,
+    "svgs": 124,
+    "animatedElements": 232,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": false,
+      "framer": false,
+      "webflow": false,
+      "tailwind": false,
+      "gsap": false
+    }
+  }
+}

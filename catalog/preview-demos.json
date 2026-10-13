@@ -1,6 +1,16 @@
 {
   "version": 1,
   "demos": {
+    "oc/kinetic-field": {
+      "adapter": "oc",
+      "width": 600,
+      "height": 380,
+      "provenance": {
+        "source": "registry/oc/blocks",
+        "license": "MIT",
+        "copyright": "design-infra contributors"
+      }
+    },
     "oc/feature-levels": {
       "adapter": "oc",
       "width": 1024,

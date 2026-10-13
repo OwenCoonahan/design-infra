@@ -138,6 +138,11 @@
     @apply font-sans;
   }
 }
+
+/* One accent belongs to the homepage's motion illustration, not the catalog themes. */
+.home-motion-hero {
+  --site-motion-accent: oklch(0.8 0.13 47);
+}
 /* used by @oc/agent-status */
 @keyframes oc-shimmer {
   from {

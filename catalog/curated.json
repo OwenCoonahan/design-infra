@@ -1,5 +1,17 @@
 [
   {
+    "id": "oc/kinetic-field",
+    "integration": "drop-in",
+    "appliesTo": ["background", "hero"],
+    "motion": {
+      "triggers": ["loop", "cursor", "state"],
+      "intensity": "medium",
+      "technique": ["canvas", "motion"],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
     "id": "aceternity/spotlight-new",
     "curated": true,
     "notes": "Best 'premium dark' hero backdrop. Hard-codes a blue hsla gradient \u2014 pass gradientFirst/Second/Third or use @oc/hero-spotlight, which tints it from --primary.",

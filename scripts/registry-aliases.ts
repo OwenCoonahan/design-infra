@@ -10,7 +10,7 @@
  */
 import { readFile, writeFile } from "node:fs/promises"
 
-type Item = { name: string; files?: { path: string; type: string }[] }
+type Item = { name: string; files?: { path: string; type: string; target?: string }[] }
 
 export async function blockAliases(): Promise<Record<string, string[]>> {
   const { items } = JSON.parse(await readFile("registry/oc/blocks/registry.json", "utf8")) as { items: Item[] }
@@ -28,7 +28,12 @@ export async function blockAliases(): Promise<Record<string, string[]>> {
 /** Returns true if tsconfig.json was already in sync. With `write`, fixes it. */
 export async function syncTsconfigPaths({ write }: { write: boolean }) {
   const tsconfig = JSON.parse(await readFile("tsconfig.json", "utf8"))
-  const paths = { "@/*": ["./*"], ...(await blockAliases()) }
+  // Blocks also import registry libraries by their consumer target, e.g. @/lib/motion-presets.
+  const { items } = JSON.parse(await readFile("registry/oc/lib/registry.json", "utf8")) as { items: Item[] }
+  const libraries = Object.fromEntries(items.flatMap((item) => (item.files ?? [])
+    .filter((file) => file.type === "registry:lib" && file.target)
+    .map((file) => [`@/${file.target!.replace(/\.tsx?$/, "")}`, [`./${file.path}`]])))
+  const paths = { "@/*": ["./*"], ...(await blockAliases()), ...libraries }
   const inSync = JSON.stringify(tsconfig.compilerOptions.paths) === JSON.stringify(paths)
   if (!inSync && write) {
     tsconfig.compilerOptions.paths = paths
