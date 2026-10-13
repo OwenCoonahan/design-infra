@@ -837,6 +837,36 @@
       }
     },
     {
+      "name": "kinetic-field",
+      "type": "registry:component",
+      "title": "Kinetic field",
+      "description": "Original cursor-reactive particle sculpture with Orbit, Wave and Sphere forms, free Motion springs, pause/play, an SVG fallback and offscreen cleanup. Theme-aware Canvas 2D; no GPU or Motion+ requirement.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://design-infra.vercel.app/r/motion-presets.json"
+      ],
+      "files": [
+        {
+          "path": "registry/oc/blocks/kinetic-field/kinetic-field.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "categories": [
+        "background",
+        "3d"
+      ],
+      "meta": {
+        "source": "oc",
+        "moods": [
+          "technical",
+          "playful",
+          "refined"
+        ]
+      }
+    },
+    {
       "name": "hero-spotlight",
       "type": "registry:block",
       "title": "Hero · Spotlight",

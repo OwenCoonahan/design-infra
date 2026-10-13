@@ -39,6 +39,7 @@ import { FeatureList } from "@/registry/oc/blocks/feature-list/feature-list"
 import { FooterColumns } from "@/registry/oc/blocks/footer-columns/footer-columns"
 import { HeroSplit } from "@/registry/oc/blocks/hero-split/hero-split"
 import { HeroSpotlight } from "@/registry/oc/blocks/hero-spotlight/hero-spotlight"
+import { KineticField } from "@/registry/oc/blocks/kinetic-field/kinetic-field"
 import { LogoCloud } from "@/registry/oc/blocks/logo-cloud/logo-cloud"
 import { Navbar } from "@/registry/oc/blocks/navbar/navbar"
 import { PricingSimple } from "@/registry/oc/blocks/pricing-simple/pricing-simple"
@@ -67,6 +68,7 @@ const PRICING_SQL = "select page, signups::float / sessions as cvr\nfrom page_st
 
 /** Live demos for @oc registry items, keyed by item name. */
 export const OC_DEMOS: Record<string, () => React.ReactNode> = {
+  "kinetic-field": () => <div className="mx-auto max-w-xl px-6 py-8"><KineticField /></div>,
   "feature-levels": () => <FeatureLevelsDemo />,
   "design-lab": () => <DesignLabPage />,
   "hero-spotlight": () => (

@@ -94,6 +94,44 @@
     "live": "https://www.breakthroughenergy.org/"
   },
   {
+    "id": "inspiration/motion",
+    "source": "inspiration",
+    "name": "motion",
+    "title": "Motion",
+    "description": "Animation-library website with a vivid hero surface, stable copy panel and a cursor-influenced graphic that demonstrates the product.",
+    "kind": "inspiration",
+    "categories": [
+      "hero",
+      "background",
+      "navigation"
+    ],
+    "tags": [
+      "inspiration",
+      "website",
+      "motion",
+      "interactive",
+      "cursor",
+      "canvas",
+      "product-demonstration",
+      "typography"
+    ],
+    "moods": [
+      "technical",
+      "playful",
+      "bold"
+    ],
+    "access": "free",
+    "install": "reference only — read inspiration/motion/README.md (patterns → oc/kinetic-field, motion/follow-pointer-with-spring, smoothui/magnetic-field, magicui/interactive-grid-pattern)",
+    "docs": "https://motion.dev/",
+    "dependencies": [],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user likes the motion at the top of motion.dev and how the cursor influences it. Apply the interactive-illustration pattern to a stable, useful header; preserve project branding and controls. — The user says: \"I like the motions up top and how my cursor influences it.\" They want that expressive interaction on the existing design-infra homepage.",
+    "demo": false,
+    "appliesTo": [],
+    "live": "https://motion.dev/"
+  },
+  {
     "id": "inspiration/vela-energy",
     "source": "inspiration",
     "name": "vela-energy",
@@ -700,6 +738,56 @@
       "hero"
     ],
     "live": "https://design-infra.vercel.app/components/design-infra/hero-spotlight"
+  },
+  {
+    "id": "oc/kinetic-field",
+    "source": "oc",
+    "name": "kinetic-field",
+    "title": "Kinetic field",
+    "description": "Original cursor-reactive particle sculpture with Orbit, Wave and Sphere forms, free Motion springs, pause/play, an SVG fallback and offscreen cleanup. Theme-aware Canvas 2D; no GPU or Motion+ requirement.",
+    "kind": "component",
+    "categories": [
+      "background",
+      "3d"
+    ],
+    "tags": [
+      "oc"
+    ],
+    "moods": [
+      "technical",
+      "playful",
+      "refined"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @design-infra/kinetic-field",
+    "preview": "https://design-infra.vercel.app/thumbnails/oc/kinetic-field.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "themeAware": true,
+    "demo": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "cursor",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "canvas",
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "live": "https://design-infra.vercel.app/components/design-infra/kinetic-field"
   },
   {
     "id": "oc/logo-cloud",

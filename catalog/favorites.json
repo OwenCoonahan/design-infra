@@ -1,5 +1,10 @@
 [
   {
+    "id": "inspiration/motion",
+    "note": "The user likes the motion at the top of motion.dev and how the cursor influences it. Apply the interactive-illustration pattern to a stable, useful header; preserve project branding and controls.",
+    "added": "2026-10-13"
+  },
+  {
     "id": "aceternity/multi-level-features-with-illustrations",
     "note": "Owen loves this: two-tone headline, sticky numbered scroll-spy nav, big landscape photo panels with floating product-UI cards. Aceternity Pro — use oc/feature-levels (free, theme-aware recreation) unless the project has All-Access.",
     "added": "2026-10-01"

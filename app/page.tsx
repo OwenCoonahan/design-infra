@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
 import { REPOSITORY_URL } from "@/lib/config"
 import { getCatalog, getSources } from "@/lib/data"
+import { KineticField } from "@/registry/oc/blocks/kinetic-field/kinetic-field"
 
 export const metadata = {
   title: "Find better components. Build better UI.",
@@ -23,10 +24,14 @@ export default async function Home() {
   const components = catalog.filter((entry) => entry.kind === "component" || entry.kind === "block").length
   return (
     <div className="mx-auto max-w-7xl px-6">
-      <section className="grid items-center gap-10 border-b py-12 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-20">
+      <section className="home-motion-hero grid items-center gap-10 border-b py-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-12">
         <div>
+          <div className="mb-8">
+            <KineticField accent="var(--site-motion-accent)" />
+            <Link href="/components/oc/kinetic-field" className="mt-2 inline-flex items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Use this effect <ArrowRight className="size-3" aria-hidden="true" /></Link>
+          </div>
           <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">An open source design toolkit for your coding agent</p>
-          <h1 className="mt-6 max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with better components.</h1>
+          <h1 className="mt-6 max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Find real components, explore live examples, and build from design references you like. Give your agent a better place to start.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg"><a href="#use-with-agent">Use with your agent <ArrowRight aria-hidden="true" /></a></Button>

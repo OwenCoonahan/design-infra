@@ -35,6 +35,7 @@
       "@/components/footer-columns": ["./registry/oc/blocks/footer-columns/footer-columns.tsx"],
       "@/components/hero-split": ["./registry/oc/blocks/hero-split/hero-split.tsx"],
       "@/components/hero-spotlight": ["./registry/oc/blocks/hero-spotlight/hero-spotlight.tsx"],
+      "@/components/kinetic-field": ["./registry/oc/blocks/kinetic-field/kinetic-field.tsx"],
       "@/components/logo-cloud": ["./registry/oc/blocks/logo-cloud/logo-cloud.tsx"],
       "@/components/navbar": ["./registry/oc/blocks/navbar/navbar.tsx"],
       "@/components/pricing-simple": ["./registry/oc/blocks/pricing-simple/pricing-simple.tsx"],
@@ -43,7 +44,8 @@
       "@/components/stat-cards": ["./registry/oc/blocks/stat-cards/stat-cards.tsx"],
       "@/components/stats-row": ["./registry/oc/blocks/stats-row/stats-row.tsx"],
       "@/components/testimonials-grid": ["./registry/oc/blocks/testimonials-grid/testimonials-grid.tsx"],
-      "@/components/theme-preview": ["./registry/oc/blocks/theme-preview/theme-preview.tsx"]
+      "@/components/theme-preview": ["./registry/oc/blocks/theme-preview/theme-preview.tsx"],
+      "@/lib/motion-presets": ["./registry/oc/lib/motion-presets/motion-presets.ts"]
     }
   },
   "include": [
