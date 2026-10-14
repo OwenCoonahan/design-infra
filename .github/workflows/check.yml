@@ -33,4 +33,5 @@ jobs:
           done
           pnpm smoke:visual --base http://localhost:3330
           pnpm smoke:landing --base http://localhost:3330
+          pnpm smoke:requests --base http://localhost:3330
           pnpm smoke:motion --base http://localhost:3330

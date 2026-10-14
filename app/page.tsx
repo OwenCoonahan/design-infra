@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 import { AgentStart } from "@/components/site/agent-start"
+import { RequestExamples } from "@/components/site/request-examples"
 import { Button } from "@/components/ui/button"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
 import { REPOSITORY_URL } from "@/lib/config"
@@ -12,12 +13,6 @@ export const metadata = {
   title: "Find better components. Build better UI.",
   description: "Find real components and design references for your project. Copy one prompt into Claude Code or Codex to get recommendations or choose and build.",
 }
-
-const EXAMPLES = [
-  { label: "Find a component.", request: "Find a clean pricing section that fits our site. Show three live options and recommend one.", href: "/components?q=clean%20pricing", link: "Explore pricing components" },
-  { label: "Replace a section.", request: "I don’t like our features section. Find a few different layouts, show examples and explain which fits best.", href: "/reference", link: "See the replacement workflow" },
-  { label: "Build from a reference.", request: "Use this link or screenshot as a design reference. Choose suitable catalog components and implement the page in our existing style.", href: "/inspiration", link: "Explore design references" },
-]
 
 const STEPS = [
   { title: "Copy the prompt.", body: "Open your project in Claude Code or Codex. Paste the prompt above to connect your agent to the component catalog.", href: "#use-with-agent", link: "Get the prompt" },
@@ -73,20 +68,11 @@ export default async function Home() {
         <div className="mb-8 flex flex-wrap items-baseline justify-between gap-3">
           <div>
             <h2 id="requests-title" className="text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-6xl">What you can do.</h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Start with one component, refresh an existing section, or build a page from a reference you like.</p>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Find a component, improve a section, or build from a reference. Try one of these requests in your project’s agent.</p>
           </div>
           <Link href="/guide" className="text-sm text-muted-foreground underline underline-offset-4">How to use it day to day</Link>
         </div>
-        <div className="grid gap-8 md:grid-cols-3">
-          {EXAMPLES.map((example, index) => (
-            <article key={example.label} className="flex flex-col items-start">
-              <span className="font-mono text-xs text-muted-foreground">0{index + 1}</span>
-              <h3 className="mt-3 text-2xl leading-tight font-semibold tracking-tight">{example.label}</h3>
-              <blockquote className="mt-3 mb-5 text-sm leading-relaxed text-muted-foreground">“{example.request}”</blockquote>
-              <Link href={example.href} className="mt-auto inline-flex items-center gap-2 text-sm underline underline-offset-4">{example.link} <ArrowRight className="size-3.5" aria-hidden="true" /></Link>
-            </article>
-          ))}
-        </div>
+        <RequestExamples />
       </section>
 
       <section aria-labelledby="moods-title" className="border-b py-14 lg:py-20">

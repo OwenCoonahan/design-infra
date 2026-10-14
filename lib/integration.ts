@@ -8,3 +8,8 @@ export const AGENT_PROMPTS = {
 }
 
 export const SETUP_PROMPT = AGENT_PROMPTS.recommend
+
+/** A standalone project request uses the same configurable connection instructions. */
+export function projectRequestPrompt(request: string) {
+  return `${start} ${request}`
+}
