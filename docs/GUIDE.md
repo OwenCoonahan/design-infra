@@ -107,7 +107,7 @@ There are two places, and you talk to an agent in each:
 
 ## Connect a project (recommended first setup)
 
-Open [Connect your project](https://design-infra.vercel.app/integrate), copy the setup prompt, and paste it into an agent **inside your project**. You can also give the agent this repository URL; the README points it to the same instructions. GitHub access is needed to read this private repo, but the hosted setup page works for friends without repository access.
+Open [Connect your project](https://design-infra.vercel.app/integrate), copy the setup prompt, and paste it into an agent **inside your project**. You can also give the agent this repository URL; the README points it to the same instructions. The hosted setup page works without cloning the repository or configuring GitHub access.
 
 The agent inspects your stack and existing look, connects the catalog through its supported MCP configuration (or HTTP), and adds a small project instruction to search before writing new UI. It preserves existing configuration and installs components after you pick them. If MCP needs a restart, it reports that and uses HTTP in the meantime. Ask for three live options to verify the connection.
 

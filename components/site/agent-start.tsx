@@ -11,8 +11,8 @@ export function AgentStart() {
   return (
     <div id="use-with-agent" className="scroll-mt-24 rounded-2xl border bg-card p-5 sm:p-7">
       <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Use it in your project</p>
-      <h2 className="mt-3 text-2xl font-semibold tracking-tight">One prompt. Better starting points.</h2>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Open your project in Claude Code or Codex, then paste this. Choose how much you want the agent to do.</p>
+      <h2 className="mt-3 text-3xl leading-tight font-semibold tracking-tight sm:text-4xl">Start with one prompt.</h2>
+      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Open your project in Claude Code or Codex. Choose a mode, copy the prompt, and paste it into your agent.</p>
       <div role="group" aria-label="Agent behavior" className="mt-5 flex gap-1 rounded-lg border bg-background p-1">
         {([
           ["recommend", "Recommend first"],
