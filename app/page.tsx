@@ -14,9 +14,16 @@ export const metadata = {
 }
 
 const EXAMPLES = [
-  { label: "Find the right component", request: "Find a clean pricing section that fits our site. Show three live options and recommend one.", href: "/components?q=clean%20pricing", link: "Explore pricing components" },
-  { label: "Replace something you dislike", request: "I don’t like our features section. Find a few different layouts, show examples and explain which fits best.", href: "/reference", link: "See the replacement workflow" },
-  { label: "Build from a reference", request: "Use this link or screenshot as a design reference. Choose suitable catalog components and implement the page in our existing style.", href: "/inspiration", link: "Explore design references" },
+  { label: "Find a component.", request: "Find a clean pricing section that fits our site. Show three live options and recommend one.", href: "/components?q=clean%20pricing", link: "Explore pricing components" },
+  { label: "Replace a section.", request: "I don’t like our features section. Find a few different layouts, show examples and explain which fits best.", href: "/reference", link: "See the replacement workflow" },
+  { label: "Build from a reference.", request: "Use this link or screenshot as a design reference. Choose suitable catalog components and implement the page in our existing style.", href: "/inspiration", link: "Explore design references" },
+]
+
+const STEPS = [
+  { title: "Copy the prompt.", body: "Open your project in Claude Code or Codex. Paste the prompt above to connect your agent to the component catalog.", href: "#use-with-agent", link: "Get the prompt" },
+  { title: "Tell it what to build.", body: "Name the page or component you want to improve. Share a website link, a screenshot, or a feeling like clean, sharp or calm.", href: "#what-you-can-do", link: "See example requests" },
+  { title: "Find the right parts.", body: "Your agent finds suitable components. Explore available live demos and compare options. Pick your favorite, or ask the agent to choose.", href: "/components", link: "Browse the catalog" },
+  { title: "Build, then refine.", body: "Your agent installs and adapts the chosen components to your stack and brand. Review the result, then tell it what to keep or change.", href: "/guide", link: "Read the usage guide" },
 ]
 
 export default async function Home() {
@@ -32,10 +39,11 @@ export default async function Home() {
           </div>
           <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">An open source design toolkit for your coding agent</p>
           <h1 className="mt-6 max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Find real components, explore live examples, and build from design references you like. Give your agent a better place to start.</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">A library of UI components and design references for your projects. Browse examples yourself, or use Claude Code or Codex to find, adapt and install the right pieces.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg"><a href="#use-with-agent">Use with your agent <ArrowRight aria-hidden="true" /></a></Button>
             <Button asChild variant="outline" size="lg"><Link href="/components">Explore components</Link></Button>
+            <a href="#how-it-works" className="inline-flex min-h-11 items-center px-1 text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">How it works</a>
           </div>
           <p className="mt-8 text-sm text-muted-foreground"><span className="font-medium text-foreground">{components.toLocaleString("en-US")} components & blocks</span> from {sources.length} sources. Free choices first.</p>
           <p className="mt-2 text-xs text-muted-foreground">Start without cloning the repo, installing a plugin or buying a subscription.</p>
@@ -43,16 +51,37 @@ export default async function Home() {
         <AgentStart />
       </section>
 
-      <section aria-labelledby="requests-title" className="border-b py-12 lg:py-16">
+      <section id="how-it-works" aria-labelledby="steps-title" className="scroll-mt-24 border-b py-14 lg:py-20">
+        <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">From an idea to working UI</p>
+        <h2 id="steps-title" className="mt-4 text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-6xl">How it works.</h2>
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Connect your agent once. Then use real components and references to build and improve your project.</p>
+        <ol role="list" className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          {STEPS.map((step, index) => (
+            <li key={step.title} className="grid grid-cols-[3.5rem_1fr] gap-x-4 border-t pt-6 sm:block">
+              <span aria-hidden="true" className="font-mono text-5xl leading-none tracking-tight text-muted-foreground sm:text-6xl">0{index + 1}</span>
+              <div className="flex flex-col items-start sm:mt-5">
+                <h3 className="text-2xl leading-tight font-semibold tracking-tight sm:text-3xl">{step.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
+                <a href={step.href} className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm underline underline-offset-4">{step.link} <ArrowRight className="size-3.5" aria-hidden="true" /></a>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section id="what-you-can-do" aria-labelledby="requests-title" className="scroll-mt-24 border-b py-14 lg:py-20">
         <div className="mb-8 flex flex-wrap items-baseline justify-between gap-3">
-          <h2 id="requests-title" className="text-2xl font-semibold tracking-tight">Start with what you need.</h2>
+          <div>
+            <h2 id="requests-title" className="text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-6xl">What you can do.</h2>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Start with one component, refresh an existing section, or build a page from a reference you like.</p>
+          </div>
           <Link href="/guide" className="text-sm text-muted-foreground underline underline-offset-4">How to use it day to day</Link>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           {EXAMPLES.map((example, index) => (
             <article key={example.label} className="flex flex-col items-start">
               <span className="font-mono text-xs text-muted-foreground">0{index + 1}</span>
-              <h3 className="mt-3 font-medium">{example.label}</h3>
+              <h3 className="mt-3 text-2xl leading-tight font-semibold tracking-tight">{example.label}</h3>
               <blockquote className="mt-3 mb-5 text-sm leading-relaxed text-muted-foreground">“{example.request}”</blockquote>
               <Link href={example.href} className="mt-auto inline-flex items-center gap-2 text-sm underline underline-offset-4">{example.link} <ArrowRight className="size-3.5" aria-hidden="true" /></Link>
             </article>
@@ -60,31 +89,9 @@ export default async function Home() {
         </div>
       </section>
 
-      <section aria-labelledby="agent-workflow-title" className="grid gap-8 border-b py-12 lg:grid-cols-[1fr_1.5fr] lg:gap-16 lg:py-16">
-        <div>
-          <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">For the agent in your project</p>
-          <h2 id="agent-workflow-title" className="mt-3 text-2xl font-semibold tracking-tight">Research. Recommend. Reuse.</h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Structure comes from the project’s tasks. Visual direction comes from real references. The implementation starts with compatible components.</p>
-          <a href="/integrate/raw" className="mt-5 inline-flex items-center gap-2 text-sm underline underline-offset-4">Read the agent instructions <ArrowRight className="size-3.5" aria-hidden="true" /></a>
-        </div>
-        <ol className="divide-y">
-          {[
-            ["Understand the project", "Inspect the stack, existing UI, content and brand. Preserve the parts that already work."],
-            ["Find relevant examples", "Inspect the reference link or image, research the right page type, then search reusable components."],
-            ["Recommend or choose", "Return a useful shortlist with live links, a comparison and a clear recommendation. If asked to choose and build, proceed."],
-            ["Implement and verify", "Install compatible selections, adapt them to the project and test the actual result. Report sources, changes and checks."],
-          ].map(([title, body], index) => (
-            <li key={title} className="flex gap-4 py-4 first:pt-0 last:pb-0">
-              <span className="pt-0.5 font-mono text-xs text-muted-foreground">0{index + 1}</span>
-              <div><h3 className="text-sm font-medium">{title}</h3><p className="mt-1 text-sm leading-relaxed text-muted-foreground">{body}</p></div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section aria-labelledby="moods-title" className="border-b py-12 lg:py-16">
-        <h2 id="moods-title" className="text-2xl font-semibold tracking-tight">Have a feeling in mind?</h2>
-        <p className="mt-2 text-sm text-muted-foreground">Use words like clean, sharp or calm to narrow the choices. Keep the structure right for your project.</p>
+      <section aria-labelledby="moods-title" className="border-b py-14 lg:py-20">
+        <h2 id="moods-title" className="text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-6xl">Choose how it feels.</h2>
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Use words like clean, sharp or calm to explore different visual directions. Your project’s purpose still determines its layout.</p>
         <ul className="mt-6 flex flex-wrap gap-2">
           {MOOD_NAMES.map((mood) => (
             <li key={mood}><Link href={`/components?mood=${mood}`} title={MOODS[mood].description} className="inline-flex min-h-11 items-center rounded-full border px-4 text-sm transition-colors hover:bg-muted">{MOODS[mood].label}</Link></li>
