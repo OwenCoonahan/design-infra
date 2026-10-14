@@ -26,6 +26,7 @@
     "smoke:integration": "tsx scripts/smoke-integration.ts",
     "starter:build": "tsx scripts/build-starter.ts",
     "smoke:landing": "tsx scripts/smoke-landing.ts",
+    "smoke:requests": "tsx scripts/smoke-requests.ts",
     "smoke:motion": "tsx scripts/smoke-motion-header.ts",
     "smoke:visual": "tsx scripts/smoke-visual-galleries.ts"
   },

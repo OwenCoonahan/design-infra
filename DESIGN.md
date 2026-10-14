@@ -12,6 +12,8 @@ The homepage's warm accent is scoped to `.home-motion-hero` as `--site-motion-ac
 
 Explain the purpose plainly: a library of UI components and design references that people can browse or use through Claude Code and Codex. Follow the introduction with four large numbered steps: copy the prompt, describe the work, find suitable parts, then build and refine. Use prominent section titles for the workflow, example requests and visual directions. Keep each step actionable with a link to its next destination; avoid duplicating the workflow in a separate agent-focused list.
 
+The usage section rotates through concrete requests every seven seconds while visible. Keep the question prominent and selectable, with previous/next, pause/play and direct example selection. Pause while hovered, focused, offscreen or hidden; manual selection and copying stop rotation. Reduced motion starts static and can explicitly enable rotation. Copying includes the catalog connection instructions and the current request; provide selectable text if clipboard access fails. Automatic rotation should not announce every change to screen readers.
+
 ## Motion
 
 Use the shared `lively` spring preset for pointer response and shape changes. `oc/kinetic-field` offers Orbit, Wave and Sphere forms, pointer tilt/displacement and pause/play. Reduced-motion and coarse-pointer visitors start with a static view and can explicitly play. Preference changes reset the override. Visibility and intersection controls stop the drawing loop while hidden or offscreen. The server-rendered SVG remains a fallback for disabled JavaScript or unavailable Canvas.
