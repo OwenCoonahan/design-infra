@@ -41,7 +41,7 @@ export default async function InspirationPage(props: PageProps<"/inspiration/[sl
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
       <Link href="/inspiration" className="text-xs text-muted-foreground hover:text-foreground">
-        ← Inspiration
+        ← Saved references
       </Link>
       <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
         <div className="min-w-0">

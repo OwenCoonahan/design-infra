@@ -125,14 +125,19 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
   }, [playing, activity.fine, tiltX, tiltY])
 
   useEffect(() => {
-    const element = canvas.current!
+    const element = canvas.current
+    const field = surface.current
+    const accentInk = ink.current
+    if (!element || !field || !accentInk) return
     const context = element.getContext("2d")
     if (!context) { setCanvasAvailable(false); return } // Keep the SVG and hide unavailable controls.
     let frame = 0
     let last: number | undefined
     let foreground = ""
     let highlight = ""
+    let active = true
     const draw = () => {
+      if (!active || !element.isConnected) return
       context.clearRect(0, 0, WIDTH, HEIGHT)
       for (const mark of marks(clock.current, form.get(), tiltX.get(), tiltY.get(), playing ? pointer.current : undefined)) {
         context.globalAlpha = mark.opacity
@@ -140,20 +145,22 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
         context.fillRect(mark.x, mark.y, mark.size, mark.size * 0.65)
       }
       context.globalAlpha = 1
-      surface.current!.dataset.painted = "true"
+      field.dataset.painted = "true"
       element.style.opacity = "1"
     }
     const resize = () => {
+      if (!active || !element.isConnected) return
       const bounds = element.getBoundingClientRect()
       const ratio = Math.min(devicePixelRatio || 1, 2)
       element.width = Math.max(1, Math.round(bounds.width * ratio))
       element.height = Math.max(1, Math.round(bounds.height * ratio))
       context.setTransform(element.width / WIDTH, 0, 0, element.height / HEIGHT, 0, 0)
       foreground = getComputedStyle(element).color
-      highlight = getComputedStyle(ink.current!).fill
+      highlight = getComputedStyle(accentInk).fill
       draw()
     }
     const tick = (now: number) => {
+      if (!active || !element.isConnected) return
       // Preserve phase across pauses and cap elapsed time after a suspended frame.
       if (last !== undefined) clock.current += Math.min((now - last) / 1000, 0.05)
       last = now
@@ -162,9 +169,9 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
     }
     resize()
     const observer = new ResizeObserver(resize)
-    observer.observe(surface.current!)
+    observer.observe(field)
     if (playing) frame = requestAnimationFrame(tick)
-    return () => { cancelAnimationFrame(frame); observer.disconnect() }
+    return () => { active = false; cancelAnimationFrame(frame); observer.disconnect() }
   }, [playing, shape, form, tiltX, tiltY])
 
   return (
