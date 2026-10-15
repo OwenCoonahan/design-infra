@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 
 import { cn } from "@/lib/utils"
+import { sitePath } from "@/lib/config"
 
 /** Minimal prose styling for repo markdown (sources, DESIGN.md bodies). */
 export function Markdown({ children, className }: { children: string; className?: string }) {
@@ -21,7 +22,11 @@ export function Markdown({ children, className }: { children: string; className?
         className
       )}
     >
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{children}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
+        a: ({ href, children, ...props }) => <a {...props} href={href ? sitePath(href) : href}>{children}</a>,
+        // eslint-disable-next-line @next/next/no-img-element
+        img: ({ src, alt, ...props }) => <img {...props} src={typeof src === "string" ? sitePath(src) : src} alt={alt ?? ""} />,
+      }}>{children}</ReactMarkdown>
     </div>
   )
 }

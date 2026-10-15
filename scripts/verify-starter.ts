@@ -1,3 +1,4 @@
+import { galleryBase } from "./lib/gallery-base"
 /** Real installs/builds plus gallery checks. Writes evidence only after every required check passes. */
 import assert from "node:assert/strict"
 import { execFileSync } from "node:child_process"
@@ -12,7 +13,7 @@ import { NAMESPACE } from "../lib/config"
 import { starterFingerprint } from "../lib/starter-fingerprint"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
-const base = new URL(values.base!).origin
+const base = galleryBase(values.base!)
 const root = process.cwd()
 const run = (command: string, args: string[], cwd: string) => execFileSync(command, args, { cwd, stdio: "inherit", timeout: 600_000, env: { ...process.env, CI: "1", NEXT_TELEMETRY_DISABLED: "1" } })
 

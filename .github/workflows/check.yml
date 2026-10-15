@@ -28,10 +28,11 @@ jobs:
         run: |
           pnpm start -p 3330 > /tmp/design-infra-gallery.log 2>&1 &
           for attempt in $(seq 1 30); do
-            if curl --fail --silent http://localhost:3330/ > /dev/null; then break; fi
+            if curl --fail --silent --location http://localhost:3330/ > /dev/null; then break; fi
             sleep 1
           done
           pnpm smoke:visual --base http://localhost:3330
           pnpm smoke:landing --base http://localhost:3330
           pnpm smoke:requests --base http://localhost:3330
           pnpm smoke:motion --base http://localhost:3330
+          pnpm smoke:hosting --base http://localhost:3330

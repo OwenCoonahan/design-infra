@@ -1,3 +1,4 @@
+import { galleryBase } from "./lib/gallery-base"
 /** Real Chrome checks: pnpm smoke:visual --base http://localhost:3330 */
 import assert from "node:assert/strict"
 import { existsSync, mkdirSync } from "node:fs"
@@ -5,7 +6,7 @@ import { parseArgs } from "node:util"
 import puppeteer, { type HTTPRequest } from "puppeteer-core"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
-const base = values.base!
+const base = galleryBase(values.base!)
 const loading = [
   "oc/agent-status",
   "librariesdev/thinking-orbs",
@@ -175,20 +176,21 @@ async function main() {
     await page.click('li[data-entry-id] [role="checkbox"]')
     await page.waitForSelector('[aria-label="Shortlist"]')
     assert.ok(
-      await page.$eval('[aria-label="Shortlist"] a[href^="/compare"]', (e) =>
+      await page.$eval('[aria-label="Shortlist"] a[href*="/compare?"]', (e) =>
         e.getAttribute("href")?.includes("smoothui/skeleton-loader"),
       ),
     )
     await browser
       .defaultBrowserContext()
-      .overridePermissions(base, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
+      .overridePermissions(new URL(base).origin, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
     await page.locator("button ::-p-text(Copy for agent)").click()
     await page.waitForFunction(() =>
       Array.from(document.querySelectorAll("button")).some((b) => b.textContent?.includes("Copied")),
     )
     const handoff = await page.evaluate(() => navigator.clipboard.readText())
     assert.ok(handoff.includes("smoothui/skeleton-loader") && handoff.includes("shadcn"))
-    await page.goto(`${base}/components?category=card&view=grid`, { waitUntil: "networkidle2" })
+    await page.goto(`${base}/components?category=card&view=grid`, { waitUntil: "domcontentloaded" })
+    await page.waitForSelector("li[data-entry-id]")
     const before = (await page.$$("li[data-entry-id]")).length
     assert.equal(before, 60)
     await page.locator("button ::-p-text(Show more)").click()

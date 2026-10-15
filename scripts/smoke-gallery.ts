@@ -1,3 +1,5 @@
+import { sitePath } from "../lib/config"
+import { galleryBase } from "./lib/gallery-base"
 /** Run against a gallery: pnpm smoke:gallery --base http://localhost:3300 */
 import assert from "node:assert/strict"
 import { existsSync, mkdirSync } from "node:fs"
@@ -9,7 +11,7 @@ import { hostedPreview } from "../lib/catalog/previews"
 import { SETUP_PROMPT } from "../lib/integration"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
-const base = values.base!
+const base = galleryBase(values.base!)
 const executablePath = process.env.CHROME_PATH ?? [
   "/usr/bin/google-chrome",
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -27,7 +29,7 @@ async function main() {
     await page.locator("#feedback-request").fill("Replace our pricing")
     await page.locator("#feedback-stack").fill("Next.js / Codex")
     await page.locator("#feedback-details").fill("Found three good options")
-    await browser.defaultBrowserContext().overridePermissions(base, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
+    await browser.defaultBrowserContext().overridePermissions(new URL(base).origin, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
     await page.locator('button ::-p-text(Copy feedback report)').click()
     await page.waitForFunction(() => document.querySelector('[role="status"]')?.textContent?.includes("Copied."))
     const report = await page.evaluate(() => navigator.clipboard.readText())
@@ -39,7 +41,7 @@ async function main() {
     const starterResponse = await fetch(`${base}/api/starter`)
     assert.ok(starterResponse.ok)
     assert.equal((await starterResponse.json()).entries.length, 20)
-    await browser.defaultBrowserContext().overridePermissions(base, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
+    await browser.defaultBrowserContext().overridePermissions(new URL(base).origin, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
     // This page has no vendor embeds; wait for its scripts before testing clipboard interaction.
     await page.goto(`${base}/integrate`, { waitUntil: "networkidle2", timeout: 60_000 })
     await page.waitForSelector("#setup-prompt")
@@ -74,7 +76,7 @@ async function main() {
       await page.waitForSelector('input[aria-label="Search the catalog"]')
       await page.waitForSelector("main ul.grid li a")
       const first = await page.$eval("main ul.grid li a", (a) => a.getAttribute("href"))
-      assert.equal(first, `/components/${expected}`)
+      assert.equal(first, sitePath(`/components/${expected}`))
       assert.ok(await page.$(`a[href*="${expected.split("/")[1]}"][target="_blank"]`) || await page.$('main a[target="_blank"]'))
       const response = await fetch(`${base}/api/search?q=${encodeURIComponent(query)}`)
       assert.ok(response.ok)
@@ -103,9 +105,9 @@ async function main() {
     await page.waitForSelector('[role="checkbox"]')
     await page.click('[role="checkbox"]')
     await page.waitForSelector('[aria-label="Shortlist"]')
-    const compareHref = await page.$eval('[aria-label="Shortlist"] a[href^="/compare"]', (a) => a.getAttribute("href"))
+    const compareHref = await page.$eval('[aria-label="Shortlist"] a[href*="/compare?"]', (a) => a.getAttribute("href"))
     assert.ok(compareHref?.includes("oc/pricing-simple"))
-    await browser.defaultBrowserContext().overridePermissions(base, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
+    await browser.defaultBrowserContext().overridePermissions(new URL(base).origin, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
     await page.locator('button ::-p-text(Copy for agent)').click()
     await page.waitForFunction(() => {
       const region = document.querySelector('[aria-label="Shortlist"]')
@@ -122,7 +124,7 @@ async function main() {
     }), "The live link must stay inside its grid row")
     await page.screenshot({ path: ".context/catalog-pilot.png" })
 
-    await page.goto(`${base}${compareHref}`, { waitUntil: "domcontentloaded", timeout: 120_000 })
+    await page.goto(new URL(compareHref!, base).href, { waitUntil: "domcontentloaded", timeout: 120_000 })
     await page.waitForSelector('a[href*="/preview/oc/pricing-simple"]')
     await page.locator('button ::-p-text(Pick)').click()
     await page.waitForFunction(() => Array.from(document.querySelectorAll("pre")).some((e) => e.textContent?.includes("I picked:")))

@@ -6,7 +6,7 @@ Inspiration **galleries** for one pattern at a time (navbars, footers, pricing, 
 components (`propose_options`, `search_components`). Free galleries first by default; an explicitly named gallery leads and paid access stays flagged.
 
 - MCP: `find_references` (pattern + optional category / moods) → ranked galleries with exact URLs + etiquette
-- HTTP: `https://design-infra.vercel.app/api/references?pattern=<words>&category=<cat>&moods=<a,b>`
+- HTTP: `https://www.owencoonahan.xyz/design-infra/api/references?pattern=<words>&category=<cat>&moods=<a,b>`
 - Also attached as `references` (top 2) to `propose_options` and to every `plan_ui` section.
 
 ## Where to look for X

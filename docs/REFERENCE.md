@@ -19,18 +19,18 @@ Locate the section from the screenshot, visible text, annotation, or file. Read 
 Call `propose_options` with the actual component type, `intent: "replace"` or `"restyle"`, the user's wording, project moods, and motion language. HTTP fallback:
 
 ```text
-GET https://design-infra.vercel.app/api/options?component=feature%20section&category=features&intent=replace&request=I%20don%27t%20like%20the%20look
+GET https://www.owencoonahan.xyz/design-infra/api/options?component=feature%20section&category=features&intent=replace&request=I%20don%27t%20like%20the%20look
 ```
 
 Show 3–5 alternatives that differ in approach: for a features section, a **bento grid**, a **simple feature list**, and **scroll-linked feature panels** are useful choices. Five minor variations of the same effect are less useful. Keep each example grounded in an actual catalog item and live demo. Explain the tradeoff and recommend one for this project's content and brand.
 
 | Direction | Why use it here | Look before choosing |
 | --- | --- | --- |
-| Bento grid · `oc/feature-bento` | Scannable overview of several capabilities | [Gallery](https://design-infra.vercel.app/components/oc/feature-bento) · [Live](https://design-infra.vercel.app/preview/oc/feature-bento) |
-| Feature list · `oc/feature-list` | Clear text hierarchy and compact layout | [Gallery](https://design-infra.vercel.app/components/oc/feature-list) · [Live](https://design-infra.vercel.app/preview/oc/feature-list) |
-| Feature panels · `oc/feature-levels` | More room for product imagery and a guided narrative | [Gallery](https://design-infra.vercel.app/components/oc/feature-levels) · [Live](https://design-infra.vercel.app/preview/oc/feature-levels) |
+| Bento grid · `oc/feature-bento` | Scannable overview of several capabilities | [Gallery](https://www.owencoonahan.xyz/design-infra/components/oc/feature-bento) · [Live](https://www.owencoonahan.xyz/design-infra/preview/oc/feature-bento) |
+| Feature list · `oc/feature-list` | Clear text hierarchy and compact layout | [Gallery](https://www.owencoonahan.xyz/design-infra/components/oc/feature-list) · [Live](https://www.owencoonahan.xyz/design-infra/preview/oc/feature-list) |
+| Feature panels · `oc/feature-levels` | More room for product imagery and a guided narrative | [Gallery](https://www.owencoonahan.xyz/design-infra/components/oc/feature-levels) · [Live](https://www.owencoonahan.xyz/design-infra/preview/oc/feature-levels) |
 
-[Compare these examples](https://design-infra.vercel.app/compare?ids=oc/feature-bento,oc/feature-list,oc/feature-levels). These are examples; choose candidates for the user's actual section rather than always offering this set.
+[Compare these examples](https://www.owencoonahan.xyz/design-infra/compare?ids=oc/feature-bento,oc/feature-list,oc/feature-levels). These are examples; choose candidates for the user's actual section rather than always offering this set.
 
 When the target is clear, show the options immediately. “I don't like this” need not trigger an extra questionnaire. Ask a focused question only if you cannot identify the section or an essential requirement. If the user wants to see finalists in their own UI, render a temporary comparison with their content, then apply the chosen option and remove unused variants. Otherwise apply their pick directly.
 
@@ -38,7 +38,7 @@ Record the choice and reason in the project's design notes for continuity. Share
 
 ## Agent tool request for an observed reference
 
-MCP: `match_reference`. HTTP: `POST https://design-infra.vercel.app/api/reference` with `Content-Type: application/json`:
+MCP: `match_reference`. HTTP: `POST https://www.owencoonahan.xyz/design-infra/api/reference` with `Content-Type: application/json`:
 
 ```json
 {

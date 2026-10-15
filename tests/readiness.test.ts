@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import test from "node:test"
-import { config, configureData, configureText, ownRegistryDependency, resolveSettings } from "../lib/config"
+import { config, configureData, configureText, ownRegistryDependency, resolveSettings, sitePath } from "../lib/config"
 import { linkOnlyMedia } from "../lib/catalog/media-policy"
 import { formatFeedback } from "../lib/feedback"
 import { planUi } from "../lib/plan"
@@ -14,7 +14,19 @@ test("fork settings rebase self links, namespaces and dependencies while preserv
   assert.equal(ownRegistryDependency("@oc/navbar", fork), "https://friends.example/r/navbar.json")
   assert.equal(ownRegistryDependency("@friends/navbar", fork), "https://friends.example/r/navbar.json")
   assert.equal(ownRegistryDependency("https://vendor.example/r/button.json", fork), "https://vendor.example/r/button.json")
-  assert.throws(() => resolveSettings({ ...config, siteUrl: "https://example.com/path" }))
+  for (const siteUrl of ["https://example.com/path?query=1", "https://example.com/path#hash", "https://example.com/two//slashes", "https://example.com/a%2Fb", "ftp://example.com"]) assert.throws(() => resolveSettings({ ...config, siteUrl }))
+})
+
+test("subpath deployments preserve the prefix in agent links and native requests", () => {
+  const fork = resolveSettings({ ...config, siteUrl: "https://friends.example/tools/design/" })
+  assert.equal(fork.siteUrl, "https://friends.example/tools/design")
+  assert.equal(fork.basePath, "/tools/design")
+  assert.equal(ownRegistryDependency("@oc/navbar", fork), "https://friends.example/tools/design/r/navbar.json")
+  assert.equal(configureText("https://design-infra.vercel.app/mcp", fork), "https://friends.example/tools/design/mcp")
+  assert.equal(configureText(`${config.siteUrl}/mcp`, fork), "https://friends.example/tools/design/mcp")
+  for (const path of ["/api/entries?ids=oc%2Fagent-status", "/preview/oc/agent-status", "/thumbnails/oc/agent-status.webp", "/guide/raw"]) assert.equal(sitePath(path, fork.basePath), `/tools/design${path}`)
+  for (const path of ["#copy", "https://vendor.example/demo", "//vendor.example/demo", "/tools/design", "/tools/design/components", "/tools/design?category=loader"]) assert.equal(sitePath(path, fork.basePath), path)
+  assert.equal(sitePath("/components", ""), "/components")
 })
 
 test("planning preserves an existing brand and bounds section counts", async () => {

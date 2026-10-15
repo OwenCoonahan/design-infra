@@ -7,6 +7,7 @@ import { ShortlistBar } from "@/components/site/shortlist-bar"
 import { SiteHeader } from "@/components/site/site-header"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
+import { SITE_URL } from "@/lib/config"
 
 import "./globals.css"
 
@@ -14,6 +15,7 @@ const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] })
 const geistMono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${SITE_URL}/`),
   title: { default: "design-infra", template: "%s · design-infra" },
   description: "Design systems, curated component catalog and the @design-infra shadcn registry.",
 }

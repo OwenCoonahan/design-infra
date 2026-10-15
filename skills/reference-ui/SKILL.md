@@ -8,10 +8,10 @@ Read the plugin root `design-infra.config.json` for the deployment URL, reposito
 # Reference → reusable UI
 
 Read `<this skill's base dir>/../../docs/REFERENCE.md`, also served at
-https://design-infra.vercel.app/reference/raw. Follow its reference workflow in the current project.
+https://www.owencoonahan.xyz/design-infra/reference/raw. Follow its reference workflow in the current project.
 
 Inspect the reference with your browser/image tools before matching it. Describe observed patterns, then use
-MCP `match_reference` or `POST https://design-infra.vercel.app/api/reference` to find reusable components.
+MCP `match_reference` or `POST https://www.owencoonahan.xyz/design-infra/api/reference` to find reusable components.
 The matching tool accepts observations; it does not fetch arbitrary websites or inspect images.
 
 Preserve the user's scope: one referenced component changes that component; a page reference retains the

@@ -12,14 +12,14 @@ last resort, only for genuine gaps. Design-infra repo root = `<this skill's base
 
 ## 0. Tools (use the first that works)
 
-1. **MCP** `design-infra` (bundled with the plugin; `https://design-infra.vercel.app/mcp`): `plan_ui`, `search_components`, `get_component`, `list_design_systems`, `get_design_system`, `get_setup_instructions`.
-2. **HTTP**: `curl -s "https://design-infra.vercel.app/api/plan?brief=<urlencoded>"`, `/api/search?q=…&category=…`, `/api/setup`.
+1. **MCP** `design-infra` (bundled with the plugin; `https://www.owencoonahan.xyz/design-infra/mcp`): `plan_ui`, `search_components`, `get_component`, `list_design_systems`, `get_design_system`, `get_setup_instructions`.
+2. **HTTP**: `curl -s "https://www.owencoonahan.xyz/design-infra/api/plan?brief=<urlencoded>"`, `/api/search?q=…&category=…`, `/api/setup`.
 3. **Files**: `$DI/catalog/CATALOG.md`, `$DI/catalog/index.json`, `$DI/design-systems/README.md`.
 
 ## Reference URL or screenshot
 
 When a user asks to recreate a linked page or attached image, follow **reference-ui** first
-(https://design-infra.vercel.app/reference/raw). Inspect it, preserve its observed section order, and match
+(https://www.owencoonahan.xyz/design-infra/reference/raw). Inspect it, preserve its observed section order, and match
 patterns with `match_reference`. Do not feed an uninspected URL into `plan_ui` and substitute a generic recipe.
 Use the matched parts as the plan; adapt details the catalog does not cover.
 
@@ -33,7 +33,7 @@ trustworthy). Infer structure from the existing project and brief when possible.
 ## 2. Plan and choose
 
 Call `plan_ui` with the brief (pass `moods` if you settled them). For each section include the top picks' `page`
-links and one compare link (`https://design-infra.vercel.app/compare?ids=…&theme=…`) so the user can look before you
+links and one compare link (`https://www.owencoonahan.xyz/design-infra/compare?ids=…&theme=…`) so the user can look before you
 build. For design choices, show 3–5 directions with gallery/live links and a comparison, recommend one with a reason,
 and wait for the user's pick. If they already selected components or explicitly asked you to choose and build, proceed
 within that authorization. It returns detected moods, matching

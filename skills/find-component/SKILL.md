@@ -14,7 +14,7 @@ Repo root of design-infra = `<this skill's base dir>/../..` (`$DI`).
 Fastest: the MCP tool `search_components` (query + optional category/source/moods) — already ranked; mood words
 in the query ("calm pricing", "playful loader") boost entries with that feeling. In the design-infra repo:
 `pnpm lookup "<words>" [--moods calm,premium]`. Without MCP:
-`curl -s "https://design-infra.vercel.app/api/search?q=<words>&category=<cat>&limit=10"`. Or grep the files:
+`curl -s "https://www.owencoonahan.xyz/design-infra/api/search?q=<words>&category=<cat>&limit=10"`. Or grep the files:
 
 ```bash
 grep -i '<keyword>' $DI/catalog/CATALOG.md | head -40          # one line per entry, ★ curated first
@@ -51,7 +51,7 @@ Nothing good? Search upstream: `pnpm dlx shadcn@latest search @magicui -q "<kw>"
 
 Unless the user named an exact component, present the top 3–5 as a short table — name · why · access ·
 **links** (`page` = gallery entry, `live` = interactive demo) — plus one compare link built from their ids:
-`https://design-infra.vercel.app/compare?ids=<id1>,<id2>,<id3>&theme=<project design system>&label=<what for>`.
+`https://www.owencoonahan.xyz/design-infra/compare?ids=<id1>,<id2>,<id3>&theme=<project design system>&label=<what for>`.
 Recommend one and wait for the pick. (Changing an EXISTING component? Use the **refine** skill instead.)
 User wants ideas, or nothing fits? MCP `find_references` (or `/api/references?pattern=<words>`) → "see how others do it:
 <1–2 gallery links>" (navbar.gallery, land-book sections, landing.love videos…; `$DI/catalog/REFERENCES.md`).
@@ -70,4 +70,4 @@ If a third-party pick needed heavy adaptation and is likely to be reused, sugges
 
 ## Visual browsing links
 
-Results include `galleries` by category. Include a focused shelf link when useful, such as `https://design-infra.vercel.app/components?category=loader` (substitute the configured deployment URL). Categories default to live previews; `view=grid` selects thumbnails. Visual coverage varies: Loading has eight local demo adapters, while other types reuse existing hosted demos, clips and screenshots. Continue using original IDs and install commands; a hosted demo does not change access or licence requirements.
+Results include `galleries` by category. Include a focused shelf link when useful, such as `https://www.owencoonahan.xyz/design-infra/components?category=loader` (substitute the configured deployment URL). Categories default to live previews; `view=grid` selects thumbnails. Visual coverage varies: Loading has eight local demo adapters, while other types reuse existing hosted demos, clips and screenshots. Continue using original IDs and install commands; a hosted demo does not change access or licence requirements.

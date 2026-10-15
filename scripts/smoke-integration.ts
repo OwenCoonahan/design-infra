@@ -1,3 +1,4 @@
+import { galleryBase } from "./lib/gallery-base"
 import assert from "node:assert/strict"
 import { execFile } from "node:child_process"
 import { mkdtemp, readFile, writeFile } from "node:fs/promises"
@@ -6,7 +7,7 @@ import path from "node:path"
 import { parseArgs, promisify } from "node:util"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
-const base = new URL(values.base!).origin
+const base = galleryBase(values.base!)
 const exec = promisify(execFile)
 let session: string | null = null
 let id = 0

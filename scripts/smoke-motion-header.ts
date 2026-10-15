@@ -1,3 +1,5 @@
+import { sitePath } from "../lib/config"
+import { galleryBase } from "./lib/gallery-base"
 import assert from "node:assert/strict"
 import { existsSync, mkdirSync } from "node:fs"
 import { parseArgs } from "node:util"
@@ -10,7 +12,7 @@ declare global {
 }
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
-const base = new URL(values.base!).origin
+const base = galleryBase(values.base!)
 const executablePath = process.env.CHROME_PATH ?? ["/usr/bin/google-chrome", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"].find(existsSync)
 if (!executablePath) throw new Error("Set CHROME_PATH to Chrome's executable")
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -110,8 +112,8 @@ async function main() {
     }
     await page.click('button[aria-label="Play motion"]')
     await state("playing")
-    await page.click('nav a[href="/guide"]')
-    await page.waitForFunction(() => location.pathname === "/guide" && !document.querySelector("[data-kinetic-field]"))
+    await page.click(`nav a[href="${sitePath("/guide")}"]`)
+    await page.waitForFunction((path) => location.pathname === path && !document.querySelector("[data-kinetic-field]"), {}, sitePath("/guide"))
     // A delivered observer notification can outlive DOM removal and effect cleanup.
     assert.ok((await page.evaluate("window.__fieldResizeCallbacks.length") as number) > 0)
     await page.evaluate("window.__fieldResizeCallbacks.forEach(callback => callback())")

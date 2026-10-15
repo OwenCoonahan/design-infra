@@ -7,21 +7,21 @@
       "tier": 1,
       "rank": 1,
       "track": "foundation",
-      "docs": "https://design-infra.vercel.app",
+      "docs": "https://www.owencoonahan.xyz/design-infra",
       "why": "The router: ranked catalog, design systems, playbooks, taste memory and the @oc registry. Every other tool is chosen through it.",
       "use": "Always. plan_ui for pages, propose_options for one component, search_components for pieces.",
       "setup": [
         {
           "kind": "registry",
           "namespace": "@oc",
-          "url": "https://design-infra.vercel.app/r/{name}.json"
+          "url": "https://www.owencoonahan.xyz/design-infra/r/{name}.json"
         },
         {
           "kind": "mcp",
           "name": "design-infra",
           "config": {
             "type": "http",
-            "url": "https://design-infra.vercel.app/mcp"
+            "url": "https://www.owencoonahan.xyz/design-infra/mcp"
           }
         },
         {
@@ -39,7 +39,7 @@
           "text": "Follow ./DESIGN.md (moods, motion language, tokens). Theme tokens only \u2014 no hard-coded colours."
         }
       ],
-      "verify": "curl -sf https://design-infra.vercel.app/api/setup >/dev/null"
+      "verify": "curl -sf https://www.owencoonahan.xyz/design-infra/api/setup >/dev/null"
     },
     {
       "id": "shadcn",

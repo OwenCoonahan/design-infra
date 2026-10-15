@@ -1,7 +1,7 @@
 {
   "$comment": "GENERATED from catalog/toolchain.json by scripts/build-toolchain.ts. The bootstrap (public/bootstrap.mjs) merges the registries of the tools it applies; this file is the full set for manual setup. Origin UI installs by URL (https://coss.com/origin/r/comp-N.json); shadcn blocks need no registry.",
   "registries": {
-    "@design-infra": "https://design-infra.vercel.app/r/{name}.json",
+    "@design-infra": "https://www.owencoonahan.xyz/design-infra/r/{name}.json",
     "@magicui": "https://magicui.design/r/{name}.json",
     "@smoothui": "https://smoothui.dev/r/{name}.json",
     "@motion-primitives": "https://motion-primitives.com/c/{name}.json",
@@ -16,6 +16,6 @@
         "api_key": "${API_KEY_21ST}"
       }
     },
-    "@oc": "https://design-infra.vercel.app/r/{name}.json"
+    "@oc": "https://www.owencoonahan.xyz/design-infra/r/{name}.json"
   }
 }

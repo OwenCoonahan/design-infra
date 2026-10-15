@@ -10,22 +10,34 @@ import test from "node:test"
 const exec = promisify(execFile)
 const bundle = path.resolve("public/bootstrap.mjs")
 
-async function fixture(callback: (root: string, run: (args: string[]) => Promise<{ stdout: string; stderr: string }>) => Promise<void>, broken = false, tools: unknown[] = []) {
+async function fixture(callback: (root: string, run: (args: string[]) => Promise<{ stdout: string; stderr: string }>) => Promise<void>, broken = false, tools: unknown[] = [], basePath = "") {
   const root = await mkdtemp(path.join(tmpdir(), "design-infra-bootstrap-test-"))
   const server = createServer((req, res) => {
+    if (!req.url?.startsWith(`${basePath}/`)) { res.statusCode = 404; res.end("{}"); return }
+    const route = req.url.slice(basePath.length)
     res.setHeader("content-type", "application/json")
     if (broken) { res.statusCode = 503; res.end("{}"); return }
-    if (req.url?.startsWith("/api/search")) res.end(JSON.stringify([{ id: "oc/pricing-simple" }]))
-    else if (req.url === "/mcp") res.end(JSON.stringify({ jsonrpc: "2.0", id: 1, result: { protocolVersion: "2025-03-26" } }))
-    else if (req.url === "/api/toolchain") res.end(JSON.stringify({ tools }))
+    if (route.startsWith("/api/search")) res.end(JSON.stringify([{ id: "oc/pricing-simple" }]))
+    else if (route === "/mcp") res.end(JSON.stringify({ jsonrpc: "2.0", id: 1, result: { protocolVersion: "2025-03-26" } }))
+    else if (route === "/api/toolchain") res.end(JSON.stringify({ tools }))
     else { res.statusCode = 404; res.end("{}") }
   })
   await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve))
   const address = server.address(); assert.ok(address && typeof address !== "string")
-  const run = (args: string[]) => exec(process.execPath, [bundle, ...args], { cwd: root, env: { ...process.env, NEXT_PUBLIC_SITE_URL: `http://127.0.0.1:${address.port}`, DESIGN_INFRA_SECRETS_FILE: path.join(root, "missing-secrets") }, timeout: 30_000 })
+  const run = (args: string[]) => exec(process.execPath, [bundle, ...args], { cwd: root, env: { ...process.env, NEXT_PUBLIC_SITE_URL: `http://127.0.0.1:${address.port}${basePath}`, DESIGN_INFRA_SECRETS_FILE: path.join(root, "missing-secrets") }, timeout: 30_000 })
   try { await callback(root, run) }
   finally { await new Promise<void>((resolve) => server.close(() => resolve())); await rm(root, { recursive: true, force: true }) }
 }
+
+test("Claude Code and Codex connections verify and save endpoints below a site path", async () => {
+  for (const client of ["claude-code", "codex"]) await fixture(async (root, run) => {
+    const result = await run(["--connect", "--client", client])
+    assert.match(result.stdout, /Catalog verified/)
+    const saved = await readFile(path.join(root, client === "codex" ? ".codex/config.toml" : ".mcp.json"), "utf8")
+    assert.match(saved, /\/tools\/design\/mcp/)
+    assert.match(await readFile(path.join(root, "AGENTS.md"), "utf8"), /\/tools\/design\/integrate\/raw/)
+  }, false, [], "/tools/design")
+})
 
 for (const client of ["claude-code", "codex", "cursor", "http"]) test(`minimal ${client} connection works without a package manifest or theme`, async () => {
   await fixture(async (root, run) => {

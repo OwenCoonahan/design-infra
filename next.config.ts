@@ -1,5 +1,6 @@
 import type { NextConfig } from "next"
 import { readdirSync } from "node:fs"
+import { BASE_PATH } from "./lib/config"
 
 function runtimeFiles(directory: string): string[] {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -10,6 +11,22 @@ function runtimeFiles(directory: string): string[] {
 const content = ["catalog", "design-systems", "inspiration", "presets"].flatMap(runtimeFiles)
 
 const nextConfig: NextConfig = {
+  basePath: BASE_PATH,
+  // Old Vercel URLs, including MCP POSTs and registry installs, still resolve.
+  // Prefix-aware requests bypass this rule, so the personal site's rewrite stays on its domain.
+  async redirects() {
+    return BASE_PATH ? [{
+      source: "/",
+      destination: BASE_PATH,
+      basePath: false,
+      permanent: false,
+    }, {
+      source: `/:path((?!${BASE_PATH.slice(1)}(?:/|$)).+)`,
+      destination: `${BASE_PATH}/:path`,
+      basePath: false,
+      permanent: false,
+    }] : []
+  },
   // Route handlers (MCP, /api/*) and on-demand pages read the catalog + DESIGN.md files at runtime.
   // Careful: a glob like "./docs/**/*.md" also matches docs/ folders inside node_modules (pnpm's symlinked
   // store) and breaks Vercel packaging ("invalid deployment package … symlinked directories"). Prefer

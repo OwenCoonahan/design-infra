@@ -1,4 +1,5 @@
 import manifest from "@/catalog/preview-demos.json"
+import { sitePath } from "../config"
 import { linkOnlyMedia } from "./media-policy"
 import type { CatalogEntry } from "./schema"
 
@@ -19,7 +20,7 @@ export const previewDemos = manifest.demos as Record<
 export function hostedPreview(id: string) {
   const demo = previewDemos[id]
   return demo
-    ? { kind: "interactive" as const, src: `/preview/${id}?surface=neutral`, width: demo.width, height: demo.height }
+    ? { kind: "interactive" as const, src: sitePath(`/preview/${id}?surface=neutral`), width: demo.width, height: demo.height }
     : undefined
 }
 /** Only explicit local adapters and media approved for redistribution can autoplay. */

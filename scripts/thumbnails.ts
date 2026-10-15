@@ -1,5 +1,6 @@
 import { hostedPreview } from "../lib/catalog/previews"
 import { SITE_URL } from "../lib/config"
+import { galleryBase } from "./lib/gallery-base"
 import { linkOnlyMedia } from "../lib/catalog/media-policy"
 /**
  * Give every catalog entry without a `preview` a thumbnail.
@@ -62,7 +63,7 @@ const { values: args } = parseArgs({
     force: { type: "boolean", default: false },
   },
 })
-const BASE = args.base!.replace(/\/$/, "")
+const BASE = galleryBase(args.base!)
 
 // ---------------------------------------------------------------------------
 // plans
@@ -133,7 +134,7 @@ function planFor(e: CatalogEntry): Shot | Probe | Skip {
   if (linkOnlyMedia(e)) return { id: e.id, reason: "Link-only media policy: redistribution not established" }
   const hosted = hostedPreview(e.id)
   if (hosted) return {
-    kind: "shot", id: e.id, url: `${BASE}${hosted.src}`,
+    kind: "shot", id: e.id, url: new URL(hosted.src, BASE).href,
     selector: "[data-preview-content]", viewport: { width: hosted.width, height: hosted.height },
     aspect: hosted.width / hosted.height, settle: 1800,
   }
@@ -547,7 +548,7 @@ async function main() {
     if (existsSync(fileFor(entry.id))) unlinkSync(fileFor(entry.id))
   }
   // Rebase local thumbnail URLs when a fork changes its deployment.
-  for (const [id, url] of Object.entries(manifest)) if (new URL(url).pathname.startsWith("/thumbnails/")) manifest[id] = publicUrlFor(id)
+  for (const [id, url] of Object.entries(manifest)) if (new URL(url).pathname.endsWith(`/thumbnails/${id}.webp`)) manifest[id] = publicUrlFor(id)
   await writeFile(MANIFEST, JSON.stringify(Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b))), null, 2) + "\n")
   if (args.prune) { console.log("✓ pruned restricted thumbnails; next: pnpm catalog"); return }
   const only = new Set(args.only ?? [])

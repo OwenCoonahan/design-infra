@@ -2,7 +2,7 @@
   "mcpServers": {
     "design-infra": {
       "type": "http",
-      "url": "https://design-infra.vercel.app/mcp"
+      "url": "https://www.owencoonahan.xyz/design-infra/mcp"
     },
     "shadcn": {
       "command": "npx",

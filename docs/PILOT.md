@@ -4,7 +4,7 @@ Use an existing project in Claude Code or Codex. Allow about 30 minutes. This is
 
 ## Invite someone
 
-Send them https://design-infra.vercel.app/integrate and ask them to paste its setup prompt into their project's agent. The setup should preserve the stack, brand, existing component configuration and other MCP servers. The agent should report endpoint checks and any restart/trust requirement, then call search_components in the active session or use HTTP successfully.
+Send them https://www.owencoonahan.xyz/design-infra/integrate and ask them to paste its setup prompt into their project's agent. The setup should preserve the stack, brand, existing component configuration and other MCP servers. The agent should report endpoint checks and any restart/trust requirement, then call search_components in the active session or use HTTP successfully.
 
 ## Three tasks
 
@@ -12,7 +12,7 @@ Send them https://design-infra.vercel.app/integrate and ask them to paste its se
 2. **Replace:** point to one existing section and say “I don't like this layout. Give me three genuinely different approaches while keeping these features.” Check that the agent offers actual replacements, explains tradeoffs and preserves behavior when applying the pick.
 3. **Reference:** paste a site link or screenshot and ask for a similar hero or page. The agent should inspect the reference, identify reusable parts, show matches and explain gaps. It must not claim an exact match if the catalog lacks one.
 
-After each task, copy a report from https://design-infra.vercel.app/feedback. Include the request, component IDs, comparison URL, stack/agent, elapsed time, what was installed or adapted and the outcome. Send it through your existing group chat. Include failed attempts; leave out credentials and private source.
+After each task, copy a report from https://www.owencoonahan.xyz/design-infra/feedback. Include the request, component IDs, comparison URL, stack/agent, elapsed time, what was installed or adapted and the outcome. Send it through your existing group chat. Include failed attempts; leave out credentials and private source.
 
 ## What counts as a successful pilot
 

@@ -5,7 +5,7 @@ import { AgentStart } from "@/components/site/agent-start"
 import { RequestExamples } from "@/components/site/request-examples"
 import { Button } from "@/components/ui/button"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
-import { REPOSITORY_URL } from "@/lib/config"
+import { REPOSITORY_URL, sitePath } from "@/lib/config"
 import { getCatalog, getSources } from "@/lib/data"
 import { KineticField } from "@/registry/oc/blocks/kinetic-field/kinetic-field"
 
@@ -57,7 +57,7 @@ export default async function Home() {
               <div className="flex flex-col items-start sm:mt-5">
                 <h3 className="text-2xl leading-tight font-semibold tracking-tight sm:text-3xl">{step.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
-                <a href={step.href} className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm underline underline-offset-4">{step.link} <ArrowRight className="size-3.5" aria-hidden="true" /></a>
+                <a href={sitePath(step.href)} className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm underline underline-offset-4">{step.link} <ArrowRight className="size-3.5" aria-hidden="true" /></a>
               </div>
             </li>
           ))}

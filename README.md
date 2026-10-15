@@ -2,7 +2,7 @@
 
 Find existing components, see them live, and give your coding agent the right parts to build with. The catalog combines a theme-aware shadcn registry, curated third-party sources, design systems and reference galleries. Search by component type and feeling: “clean pricing”, “sharp navbar”, “subtle button hover”.
 
-[Connect your project](https://design-infra.vercel.app/integrate) · [Starter collection](https://design-infra.vercel.app/starter) · [Browse the catalog](https://design-infra.vercel.app/components) · [Guide](https://design-infra.vercel.app/guide) · [Feedback](https://design-infra.vercel.app/feedback)
+[Connect your project](https://www.owencoonahan.xyz/design-infra/integrate) · [Starter collection](https://www.owencoonahan.xyz/design-infra/starter) · [Browse the catalog](https://www.owencoonahan.xyz/design-infra/components) · [Guide](https://www.owencoonahan.xyz/design-infra/guide) · [Feedback](https://www.owencoonahan.xyz/design-infra/feedback)
 
 ## Give this to your agent
 
@@ -15,7 +15,7 @@ Agents: follow the [setup guide](docs/INTEGRATE.md) to connect, verify access, a
 Prefer a command? Download and inspect the script, then run it in your project:
 
 ```bash
-curl -fsSL https://design-infra.vercel.app/bootstrap.mjs -o /tmp/di.mjs
+curl -fsSL https://www.owencoonahan.xyz/design-infra/bootstrap.mjs -o /tmp/di.mjs
 node /tmp/di.mjs --connect --client claude-code
 # or:
 node /tmp/di.mjs --connect --client codex
@@ -28,17 +28,17 @@ This saves the client's MCP configuration and persistent agent instructions, ver
 1. Describe the component and feeling, or paste a website link/screenshot into your agent.
 2. The agent inspects the reference, searches reusable parts and shows distinct options with live and comparison links.
 3. Pick an option, or ask the agent to choose and build; it installs compatible components and adapts them to your content, behavior and tokens.
-4. Check the result at desktop/mobile widths. Share a [feedback report](https://design-infra.vercel.app/feedback) so the next search improves.
+4. Check the result at desktop/mobile widths. Share a [feedback report](https://www.owencoonahan.xyz/design-infra/feedback) so the next search improves.
 
 Try “I don't like our features section; show different approaches” or “Make this hero feel like this screenshot”. [Reference workflow](docs/REFERENCE.md). The catalog matches observations supplied by the project agent; it does not inspect images or fetch arbitrary reference URLs itself. For other frameworks, use patterns and references, and let the agent explain the implementation gap.
 
-Browse visually by type: [Loading](https://design-infra.vercel.app/components?category=loader), [Buttons](https://design-infra.vercel.app/components?category=button), or [Pricing](https://design-infra.vercel.app/components?category=pricing). Category galleries start in Live view, with at most three visible demos or clips playing together. Loading has eight hosted demos; other types use existing demos, clips and thumbnails. Source-only entries are listed separately, and paid entries remain opt-in.
+Browse visually by type: [Loading](https://www.owencoonahan.xyz/design-infra/components?category=loader), [Buttons](https://www.owencoonahan.xyz/design-infra/components?category=button), or [Pricing](https://www.owencoonahan.xyz/design-infra/components?category=pricing). Category galleries start in Live view, with at most three visible demos or clips playing together. Loading has eight hosted demos; other types use existing demos, clips and thumbnails. Source-only entries are listed separately, and paid entries remain opt-in.
 
 Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes are shared catalog curation, not each person's private taste. Accounts, private group collections and vendor subscription management are separate future work. [Pilot tasks](docs/PILOT.md) help friends test the real workflow.
 
 ## Technical illustrations
 
-[Anatomy](https://skills.wheresryan.sh/anatomy) adds 33 reusable MIT isometric explainers for docs and technical sections, plus an optional Claude Code/Codex skill. [Browse the figures](https://design-infra.vercel.app/components?source=anatomy&category=illustration&view=grid). Reuse a figure with `pnpm add anatomy-figures` and a per-figure import; choose the skill only for a new mechanism. Setup, theme mapping and limits are in [the source guide](catalog/sources/anatomy.md).
+[Anatomy](https://skills.wheresryan.sh/anatomy) adds 33 reusable MIT isometric explainers for docs and technical sections, plus an optional Claude Code/Codex skill. [Browse the figures](https://www.owencoonahan.xyz/design-infra/components?source=anatomy&category=illustration&view=grid). Reuse a figure with `pnpm add anatomy-figures` and a per-figure import; choose the skill only for a new mechanism. Setup, theme mapping and limits are in [the source guide](catalog/sources/anatomy.md).
 
 ## Install selected components
 
@@ -47,8 +47,8 @@ Our `@design-infra` blocks use React, Tailwind 4 and shadcn tokens. Merge the re
 ```json
 {
   "registries": {
-    "@design-infra": "https://design-infra.vercel.app/r/{name}.json",
-    "@oc": "https://design-infra.vercel.app/r/{name}.json"
+    "@design-infra": "https://www.owencoonahan.xyz/design-infra/r/{name}.json",
+    "@oc": "https://www.owencoonahan.xyz/design-infra/r/{name}.json"
   }
 }
 ```
@@ -68,7 +68,9 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Edit **design-infra.config.json** to set the site URL, GitHub repository and registry namespace for your deployment. Run `pnpm generate` afterward. The file drives generated registry dependencies, installation commands, toolchain, bootstrap and hosted guides. NEXT_PUBLIC_SITE_URL is an optional deployment override; regenerate outputs under the same value before building. Existing aliases remain supported.
+Edit **design-infra.config.json** to set the site URL (including an optional path such as `/design-infra`), GitHub repository and registry namespace for your deployment. Run `pnpm generate` afterward. The file drives generated registry dependencies, installation commands, toolchain, bootstrap and hosted guides. NEXT_PUBLIC_SITE_URL is an optional deployment override; regenerate outputs under the same value before building. Existing aliases remain supported.
+
+The public catalog lives at **https://www.owencoonahan.xyz/design-infra**. The personal site forwards this entire path to the independently deployed catalog, preserving the visible URL. Next.js derives `basePath` from the configured site URL; native asset, preview and API paths use the same prefix. Old `design-infra.vercel.app` links continue through method-preserving redirects to the prefixed routes.
 
 Agents reading a local fork: read that settings file first and substitute its values in the examples here and in docs/. Share your own deployment's `/integrate` URL with friends.
 

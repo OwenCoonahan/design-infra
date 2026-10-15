@@ -9,9 +9,9 @@
       "title": "Brutalist Mono theme",
       "description": "Stark black-and-white brutalism with zero radius, thick borders, hard offset shadows, monospace-heavy type and one acid-yellow accent. Best for dev tools, indie launches, manifestos, portfolios and anything that should feel raw, honest and loud.",
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/font-space-mono-mono.json",
-        "https://design-infra.vercel.app/r/font-space-grotesk-heading.json",
-        "https://design-infra.vercel.app/r/font-space-mono-sans.json"
+        "https://www.owencoonahan.xyz/design-infra/r/font-space-mono-mono.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-space-grotesk-heading.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-space-mono-sans.json"
       ],
       "cssVars": {
         "theme": {
@@ -168,9 +168,9 @@
       "title": "Editorial theme",
       "description": "Content-first magazine system — warm paper, ink-black type, serif headlines and a single vermilion accent. Best for blogs, publications, docs-as-essays, portfolios and long-form product storytelling.",
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/font-ibm-plex-mono-mono.json",
-        "https://design-infra.vercel.app/r/font-instrument-serif-heading.json",
-        "https://design-infra.vercel.app/r/font-inter-sans.json"
+        "https://www.owencoonahan.xyz/design-infra/r/font-ibm-plex-mono-mono.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-instrument-serif-heading.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-inter-sans.json"
       ],
       "cssVars": {
         "theme": {
@@ -327,9 +327,9 @@
       "title": "Linear Dark theme",
       "description": "Dense, precise, dark-first SaaS chrome in the Linear/Raycast lineage. Best for issue trackers, dev tools, command palettes, dashboards and internal tools where speed and information density matter more than decoration.",
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/font-jetbrains-mono-mono.json",
-        "https://design-infra.vercel.app/r/font-inter-heading.json",
-        "https://design-infra.vercel.app/r/font-inter-sans.json"
+        "https://www.owencoonahan.xyz/design-infra/r/font-jetbrains-mono-mono.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-inter-heading.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-inter-sans.json"
       ],
       "cssVars": {
         "theme": {
@@ -492,9 +492,9 @@
       "title": "Soft Glass theme",
       "description": "Friendly, luminous AI/consumer product system — soft blue-violet gradients, translucent frosted cards and generous rounded shapes. Best for AI assistants, consumer apps, onboarding flows and approachable product marketing.",
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/font-geist-mono-mono.json",
-        "https://design-infra.vercel.app/r/font-plus-jakarta-sans-heading.json",
-        "https://design-infra.vercel.app/r/font-plus-jakarta-sans-sans.json"
+        "https://www.owencoonahan.xyz/design-infra/r/font-geist-mono-mono.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-plus-jakarta-sans-heading.json",
+        "https://www.owencoonahan.xyz/design-infra/r/font-plus-jakarta-sans-sans.json"
       ],
       "cssVars": {
         "theme": {
@@ -845,7 +845,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/motion-presets.json"
+        "https://www.owencoonahan.xyz/design-infra/r/motion-presets.json"
       ],
       "files": [
         {
@@ -1453,7 +1453,7 @@
       ],
       "registryDependencies": [
         "button",
-        "https://design-infra.vercel.app/r/agent-status.json"
+        "https://www.owencoonahan.xyz/design-infra/r/agent-status.json"
       ],
       "files": [
         {
@@ -1581,16 +1581,16 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/navbar.json",
-        "https://design-infra.vercel.app/r/hero-split.json",
-        "https://design-infra.vercel.app/r/logo-cloud.json",
-        "https://design-infra.vercel.app/r/feature-bento.json",
-        "https://design-infra.vercel.app/r/stats-row.json",
-        "https://design-infra.vercel.app/r/testimonials-grid.json",
-        "https://design-infra.vercel.app/r/pricing-simple.json",
-        "https://design-infra.vercel.app/r/faq.json",
-        "https://design-infra.vercel.app/r/cta-banner.json",
-        "https://design-infra.vercel.app/r/footer-columns.json"
+        "https://www.owencoonahan.xyz/design-infra/r/navbar.json",
+        "https://www.owencoonahan.xyz/design-infra/r/hero-split.json",
+        "https://www.owencoonahan.xyz/design-infra/r/logo-cloud.json",
+        "https://www.owencoonahan.xyz/design-infra/r/feature-bento.json",
+        "https://www.owencoonahan.xyz/design-infra/r/stats-row.json",
+        "https://www.owencoonahan.xyz/design-infra/r/testimonials-grid.json",
+        "https://www.owencoonahan.xyz/design-infra/r/pricing-simple.json",
+        "https://www.owencoonahan.xyz/design-infra/r/faq.json",
+        "https://www.owencoonahan.xyz/design-infra/r/cta-banner.json",
+        "https://www.owencoonahan.xyz/design-infra/r/footer-columns.json"
       ],
       "files": [
         {
@@ -1629,9 +1629,9 @@
         "recharts"
       ],
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/app-shell.json",
-        "https://design-infra.vercel.app/r/stat-cards.json",
-        "https://design-infra.vercel.app/r/data-table-card.json",
+        "https://www.owencoonahan.xyz/design-infra/r/app-shell.json",
+        "https://www.owencoonahan.xyz/design-infra/r/stat-cards.json",
+        "https://www.owencoonahan.xyz/design-infra/r/data-table-card.json",
         "avatar",
         "button",
         "card",
@@ -1672,10 +1672,10 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://design-infra.vercel.app/r/app-shell.json",
-        "https://design-infra.vercel.app/r/chat-thread.json",
-        "https://design-infra.vercel.app/r/prompt-composer.json",
-        "https://design-infra.vercel.app/r/agent-status.json",
+        "https://www.owencoonahan.xyz/design-infra/r/app-shell.json",
+        "https://www.owencoonahan.xyz/design-infra/r/chat-thread.json",
+        "https://www.owencoonahan.xyz/design-infra/r/prompt-composer.json",
+        "https://www.owencoonahan.xyz/design-infra/r/agent-status.json",
         "button"
       ],
       "files": [

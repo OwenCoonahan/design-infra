@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-15T04:04:17.995Z",
-  "fingerprint": "d7d0da5c430e681e70787995a6e429575398fbdef63176b3007b17c010346f0d",
+  "checkedAt": "2026-10-15T20:27:27.640Z",
+  "fingerprint": "7cb98641a83137f580ab437f210879852c628c96ce41a60688aed9f55e825186",
   "passed": true,
   "checks": [
     "all 20 registry installs in a fresh project",

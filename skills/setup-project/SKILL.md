@@ -12,7 +12,7 @@ is `$DI/catalog/TOOLCHAIN.md` (MCP: `get_toolchain`).
 
 ## Default: minimal project connection
 
-Read `$DI/docs/INTEGRATE.md` (hosted at https://design-infra.vercel.app/integrate/raw) and follow it.
+Read `$DI/docs/INTEGRATE.md` (hosted at https://www.owencoonahan.xyz/design-infra/integrate/raw) and follow it.
 Inspect the stack and styling, merge the catalog MCP into the actual client's supported configuration or verify the
 HTTP fallback, and add persistent project instructions. Preserve the brand and existing configuration. Show a first
 shortlist with live/compare links. Install only selected compatible components after a pick (or prior authorization
@@ -30,7 +30,7 @@ node $DI/public/bootstrap.mjs --dry-run            # show the plan first (fast, 
 node $DI/public/bootstrap.mjs --theme <slug>       # apply (tiers 1–2 by default)
 ```
 
-No local plugin copy? `curl -fsSL https://design-infra.vercel.app/bootstrap.mjs -o /tmp/di.mjs && node /tmp/di.mjs …`
+No local plugin copy? `curl -fsSL https://www.owencoonahan.xyz/design-infra/bootstrap.mjs -o /tmp/di.mjs && node /tmp/di.mjs …`
 
 - **Empty repo:** add `--init-next` to create the Next.js app first (create-next-app needs the folder free of
   conflicting files — move a pre-existing CLAUDE.md/README aside if it complains).

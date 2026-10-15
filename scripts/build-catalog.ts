@@ -301,7 +301,7 @@ async function main() {
     for (const [id, url] of Object.entries(thumbs)) {
       const e = byId.get(id)
       const thumbnailPath = `/thumbnails/${id}.webp`
-      const local = new URL(url).pathname === thumbnailPath && existsSync(path.join(ROOT, "public", thumbnailPath))
+      const local = new URL(url).pathname.endsWith(thumbnailPath) && existsSync(path.join(ROOT, "public", thumbnailPath))
       if (e && !e.preview) byId.set(id, CatalogEntry.parse({ ...e, preview: local ? `${SITE_URL}${thumbnailPath}` : url }))
     }
   }

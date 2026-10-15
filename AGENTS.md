@@ -68,7 +68,7 @@ when workflows change.
 `design-systems/README.md`, `app/themes.generated.css`, `app/fonts.generated.ts`,
 `lib/design-systems.generated.json`, `public/r/`, `catalog/TOOLCHAIN.md`, `presets/components.registries.json`, `public/bootstrap.mjs`, `catalog/thumbnails.json`, `public/thumbnails/`, `catalog/motion-signals.json`, `catalog/REFERENCES.md`.
 
-## Serving (deployed at https://design-infra.vercel.app — every push to main auto-deploys)
+## Serving (deployed at https://www.owencoonahan.xyz/design-infra — every push to main auto-deploys)
 
 | surface | where | code |
 |---|---|---|

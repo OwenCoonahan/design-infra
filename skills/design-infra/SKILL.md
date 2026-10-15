@@ -14,12 +14,12 @@ that repo, so its files are on disk next to this skill.
 from there: `AGENTS.md` (map), `catalog/CATALOG.md`, `catalog/index.json`,
 `catalog/sources/*.md`, `design-systems/*/DESIGN.md`, `presets/`.
 The same data is served by the **design-infra MCP server** bundled with this plugin
-(`https://design-infra.vercel.app/mcp` — tools `plan_ui`, `search_components`, `get_component`,
+(`https://www.owencoonahan.xyz/design-infra/mcp` — tools `plan_ui`, `search_components`, `get_component`,
 `list_design_systems`, `get_design_system`, `get_setup_instructions`, `list_sources`) and as JSON at
-`https://design-infra.vercel.app/api/{search,plan,setup}`. Gallery with live previews: https://design-infra.vercel.app
+`https://www.owencoonahan.xyz/design-infra/api/{search,plan,setup}`. Gallery with live previews: https://www.owencoonahan.xyz/design-infra
 
 **Human guide** (share when the user asks how to use this):
-https://design-infra.vercel.app/guide — source `$DI/docs/GUIDE.md`.
+https://www.owencoonahan.xyz/design-infra/guide — source `$DI/docs/GUIDE.md`.
 
 ## Route the request
 
