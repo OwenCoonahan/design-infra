@@ -22,7 +22,7 @@ async function main() {
       const response = await page.goto(`${base}${path}`, { waitUntil: "networkidle2", timeout: 60_000 })
       assert.equal(response?.status(), 200, path)
       assert.equal(new URL(page.url()).origin, origin, "browsing left the public domain")
-      assert.equal(new URL(page.url()).pathname, prefix + (path.split("?")[0] || ""))
+      assert.equal(new URL(page.url()).pathname, (prefix + path.split("?")[0]) || "/")
       const localPaths = await page.$$eval('a[href^="/"], script[src^="/"], link[href^="/"], img[src^="/"], iframe[src^="/"]', (elements) => elements.map((element) => element.getAttribute("href") ?? element.getAttribute("src")!))
       assert.ok(localPaths.every((path) => !prefix || path === prefix || path.startsWith(`${prefix}/`) || path.startsWith(`${prefix}?`) || path.startsWith(`${prefix}#`)), `unprefixed link or asset on ${path}: ${JSON.stringify(localPaths)}`)
     }
