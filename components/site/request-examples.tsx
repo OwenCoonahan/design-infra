@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react"
 
 import { motionPreset } from "@/lib/motion-presets"
 import { projectRequestPrompt } from "@/lib/integration"
+import { RequestScreenshot } from "@/components/site/request-screenshot"
 
 const EXAMPLES = [
   { id: "loading", label: "Loading indicators", question: "Find a loading component to put here.", guidance: "Show three compatible options with live links and recommend one. Match our existing style and wait for my pick before installing.", href: "/components?category=loader", link: "Explore loading components" },
@@ -19,7 +20,7 @@ const EXAMPLES = [
   { id: "data-screen", label: "Whole pages", question: "Build a clean data screen.", guidance: "Choose suitable catalog tables, filters and charts for the actual task. Implement in our existing stack and brand, preserve units and data states, and verify the result.", href: "/components?category=chart", link: "Explore charts" },
 ] as const
 
-const ROTATION_MS = 7000
+const ROTATION_MS = 2000
 const TRANSITION = motionPreset("quiet").transition.fast
 
 export function RequestExamples() {
@@ -28,14 +29,13 @@ export function RequestExamples() {
   const copyAttempt = useRef(0)
   const [index, setIndex] = useState(0)
   const [preference, setPreference] = useState<boolean | null>(null)
-  const [hovered, setHovered] = useState(false)
   const [focused, setFocused] = useState(false)
   const [activity, setActivity] = useState({ ready: false, visible: false, tab: true, reduced: false })
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle")
   const enabled = preference ?? !activity.reduced
-  const playing = activity.ready && activity.visible && activity.tab && enabled && !hovered && !focused
+  const playing = activity.ready && activity.visible && activity.tab && enabled && !focused
   const example = EXAMPLES[index]
-  const prompt = projectRequestPrompt(`${example.question} ${example.guidance}`)
+  const prompt = projectRequestPrompt(`${example.question} ${example.guidance} Use the screenshot or link I attach to identify the target and its visual context; if the target is unclear, ask me for it.`)
 
   useEffect(() => {
     const reduced = matchMedia("(prefers-reduced-motion: reduce)")
@@ -57,7 +57,7 @@ export function RequestExamples() {
       setIndex((current) => (current + 1) % EXAMPLES.length)
     }, ROTATION_MS)
     return () => clearInterval(timer)
-  }, [playing])
+  }, [playing, index])
 
   useEffect(() => {
     if (copyStatus === "failed") { manualCopy.current?.focus(); manualCopy.current?.select() }
@@ -65,7 +65,6 @@ export function RequestExamples() {
 
   function select(next: number) {
     copyAttempt.current++
-    setPreference(false)
     setCopyStatus("idle")
     setIndex((next + EXAMPLES.length) % EXAMPLES.length)
   }
@@ -82,18 +81,21 @@ export function RequestExamples() {
   }
 
   return (
-    <div ref={root} role="region" aria-label="Example requests" aria-roledescription="carousel" data-request-examples data-rotation={playing ? "playing" : "paused"} data-request-id={example.id} className="rounded-2xl border bg-card p-5 sm:p-8 lg:p-10" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onFocusCapture={() => setFocused(true)} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false) }}>
+    <div ref={root} role="region" aria-label="Example requests" aria-roledescription="carousel" data-request-examples data-rotation={playing ? "playing" : "paused"} data-request-id={example.id} className="rounded-2xl border bg-card p-5 sm:p-8 lg:p-10" onPointerDownCapture={() => setFocused(false)} onFocusCapture={(event) => setFocused(event.target.matches(":focus-visible"))} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false) }}>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">Try asking · {example.label}</p>
         <div className="flex items-center gap-1" style={{ visibility: activity.ready ? "visible" : "hidden" }}>
           <span className="mr-2 font-mono text-xs text-muted-foreground">{String(index + 1).padStart(2, "0")} / {String(EXAMPLES.length).padStart(2, "0")}</span>
           <button type="button" aria-label="Previous example" onClick={() => select(index - 1)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring"><ChevronLeft className="size-4" aria-hidden="true" /></button>
-          <button type="button" aria-label={enabled ? "Pause examples" : "Play examples"} aria-pressed={enabled} onClick={() => setPreference(!enabled)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring">{enabled ? <Pause className="size-4" aria-hidden="true" /> : <Play className="size-4" aria-hidden="true" />}</button>
+          <button type="button" aria-label={enabled ? "Pause examples" : "Play examples"} aria-pressed={enabled} onClick={() => { setPreference(!enabled); setFocused(false) }} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring">{enabled ? <Pause className="size-4" aria-hidden="true" /> : <Play className="size-4" aria-hidden="true" />}</button>
           <button type="button" aria-label="Next example" onClick={() => select(index + 1)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring"><ChevronRight className="size-4" aria-hidden="true" /></button>
         </div>
       </div>
-      <div aria-live={playing ? "off" : "polite"} aria-atomic="true" className="flex min-h-48 items-center py-8 sm:min-h-52 lg:min-h-56">
-        <motion.blockquote key={example.id} data-request-question initial={activity.ready && !activity.reduced ? { opacity: 0 } : false} animate={{ opacity: 1 }} transition={activity.reduced ? { duration: 0 } : TRANSITION} className="max-w-4xl text-3xl leading-tight font-medium tracking-tight sm:text-4xl lg:text-5xl">“{example.question}”</motion.blockquote>
+      <div className="grid items-center gap-6 py-8 lg:min-h-72 lg:grid-cols-[1fr_18rem] lg:gap-10">
+        <div aria-live={playing ? "off" : "polite"} aria-atomic="true" className="flex min-h-40 items-center sm:min-h-44">
+          <motion.blockquote key={example.id} data-request-question initial={activity.ready && !activity.reduced ? { opacity: 0 } : false} animate={{ opacity: 1 }} transition={activity.reduced ? { duration: 0 } : TRANSITION} className="max-w-3xl text-3xl leading-tight font-medium tracking-tight sm:text-4xl lg:text-5xl">“{example.question}”</motion.blockquote>
+        </div>
+        <RequestScreenshot />
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4 border-t pt-5">
         <div className="flex flex-wrap items-center gap-4">
@@ -104,7 +106,7 @@ export function RequestExamples() {
           {EXAMPLES.map((item, next) => <button key={item.id} type="button" aria-label={`Show example ${next + 1}: ${item.label}`} aria-pressed={next === index} onClick={() => select(next)} className="inline-flex h-11 w-6 items-center justify-center rounded-md focus-visible:outline-2 focus-visible:outline-ring"><span className={`size-1.5 rounded-full ${next === index ? "bg-foreground" : "bg-muted-foreground/40"}`} /></button>)}
         </div>
       </div>
-      <p role="status" className="mt-3 min-h-4 text-xs text-muted-foreground">{copyStatus === "copied" ? "Copied. Paste it into the agent working in your project." : copyStatus === "failed" ? "Clipboard unavailable. Select the request below and copy it manually." : "Copy an example into Claude Code or Codex, then add your project’s details."}</p>
+      <p role="status" className="mt-3 min-h-4 text-xs text-muted-foreground">{copyStatus === "copied" ? "Copied. Paste it into your project’s agent and attach your own screenshot or link." : copyStatus === "failed" ? "Clipboard unavailable. Select the request below and copy it manually." : "Copy a request, attach your screenshot in Claude Code or Codex, and point out what to change."}</p>
       {copyStatus === "failed" ? <label className="mt-4 block text-sm">Copy this request manually<textarea ref={manualCopy} readOnly value={prompt} rows={5} className="mt-2 w-full rounded-md border bg-background p-3 text-sm leading-relaxed focus-visible:outline-2 focus-visible:outline-ring" onFocus={(event) => event.currentTarget.select()} /></label> : null}
     </div>
   )

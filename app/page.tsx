@@ -68,7 +68,7 @@ export default async function Home() {
         <div className="mb-8 flex flex-wrap items-baseline justify-between gap-3">
           <div>
             <h2 id="requests-title" className="text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-6xl">What you can do.</h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Find a component, improve a section, or build from a reference. Try one of these requests in your project’s agent.</p>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">Attach a screenshot in your project’s agent, then say what to change. A website link or component path works too.</p>
           </div>
           <Link href="/guide" className="text-sm text-muted-foreground underline underline-offset-4">How to use it day to day</Link>
         </div>
