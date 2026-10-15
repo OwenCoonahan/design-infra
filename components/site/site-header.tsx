@@ -9,11 +9,11 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 
 const NAV = [
   { href: "/components", label: "Catalog" },
-  { href: "/inspiration", label: "Inspiration" },
   { href: "/guide", label: "Guide" },
   { href: "/integrate", label: "Connect" },
 ]
 const MORE = [
+  { href: "/inspiration", label: "Saved references" },
   { href: "/starter", label: "Tested starters" },
   { href: "/templates", label: "Templates" },
   { href: "/design-systems", label: "Legacy themes" },

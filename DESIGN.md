@@ -2,6 +2,8 @@
 
 The gallery uses its existing Geist typography, dark neutral surfaces and direct navigation. Preserve the component search, comparisons and copy-to-agent workflows when changing presentation. Theme previews retain each selected design system's tokens independently of the gallery chrome.
 
+Primary navigation is Catalog, Guide and Connect. Saved references live under More at the existing /inspiration routes; retain their analyses and planner integration. Only show a preview frame when an approved screenshot exists.
+
 ## Homepage header
 
 The user likes the existing setup and requests a more expressive header, using the cursor-influenced motion at https://motion.dev/ as a reference. Keep the two-column content and connection panel. Put one original interactive illustration above the left-hand headline; keep the headline and actions stable.

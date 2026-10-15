@@ -26,6 +26,15 @@ async function main() {
   })
   await page.evaluateOnNewDocument(`
     window.__fieldProbe = {frames: 0, marks: []};
+    window.__fieldResizeCallbacks = [];
+    const NativeResizeObserver = window.ResizeObserver;
+    window.ResizeObserver = class extends NativeResizeObserver {
+      constructor(callback) { super(callback); this.callback = callback; }
+      observe(target, ...options) {
+        if (target.closest('[data-kinetic-field]')) window.__fieldResizeCallbacks.push(() => this.callback([], this));
+        return super.observe(target, ...options);
+      }
+    };
     const clear = CanvasRenderingContext2D.prototype.clearRect;
     const fill = CanvasRenderingContext2D.prototype.fillRect;
     CanvasRenderingContext2D.prototype.clearRect = function(...args) {
@@ -99,6 +108,14 @@ async function main() {
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `overflow at ${width}px`)
       await page.screenshot({ path: `.context/motion-homepage-${width}.png` })
     }
+    await page.click('button[aria-label="Play motion"]')
+    await state("playing")
+    await page.click('nav a[href="/guide"]')
+    await page.waitForFunction(() => location.pathname === "/guide" && !document.querySelector("[data-kinetic-field]"))
+    // A delivered observer notification can outlive DOM removal and effect cleanup.
+    assert.ok((await page.evaluate("window.__fieldResizeCallbacks.length") as number) > 0)
+    await page.evaluate("window.__fieldResizeCallbacks.forEach(callback => callback())")
+    await still()
     for (const system of systems) {
       for (const mode of system.modes) {
         const response = await page.goto(`${base}/preview/oc/kinetic-field?theme=${system.slug}&mode=${mode}`, { waitUntil: "networkidle2" })
@@ -120,7 +137,7 @@ async function main() {
     assert.equal(await fallback.$eval("[data-kinetic-field] svg", (svg) => getComputedStyle(svg).visibility), "visible")
     await fallback.close()
     assert.deepEqual(errors, [])
-    console.log("✓ motion header: real drawing, pointer influence, shapes, keyboard, pause/play, offscreen/visibility cleanup, reduced motion, responsive layout, all themes and Canvas/JS fallback")
+    console.log("✓ motion header: real drawing, pointer influence, shapes, keyboard, pause/play, offscreen/visibility/unmount cleanup, queued resize callbacks, reduced motion, responsive layout, all themes and Canvas/JS fallback")
   } finally { await browser.close() }
   const touchBrowser = await puppeteer.launch({ executablePath, args: ["--no-sandbox", "--disable-dev-shm-usage"] })
   try {
