@@ -3,7 +3,7 @@
 import { ArrowRight, Check, ChevronLeft, ChevronRight, Copy, Pause, Play } from "lucide-react"
 import { motion } from "motion/react"
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 
 import { motionPreset } from "@/lib/motion-presets"
 import { projectRequestPrompt } from "@/lib/integration"
@@ -21,56 +21,69 @@ const EXAMPLES = [
 ] as const
 
 const ROTATION_MS = 2000
-const TRANSITION = motionPreset("quiet").transition.fast
+const MOTION = motionPreset("quiet")
+const QUESTION_CLASS = "col-start-1 row-start-1 max-w-3xl text-3xl leading-tight font-medium tracking-tight sm:text-4xl lg:text-5xl"
 
 export function RequestExamples() {
   const root = useRef<HTMLDivElement>(null)
   const manualCopy = useRef<HTMLTextAreaElement>(null)
   const copyAttempt = useRef(0)
+  const requestedIndex = useRef(0)
   const [index, setIndex] = useState(0)
+  const [target, setTarget] = useState(0)
   const [preference, setPreference] = useState<boolean | null>(null)
   const [focused, setFocused] = useState(false)
   const [activity, setActivity] = useState({ ready: false, visible: false, tab: true, reduced: false })
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle")
   const enabled = preference ?? !activity.reduced
   const playing = activity.ready && activity.visible && activity.tab && enabled && !focused
+  const animateChanges = activity.ready && activity.visible && activity.tab && !activity.reduced
+  const leaving = target !== index
   const example = EXAMPLES[index]
   const prompt = projectRequestPrompt(`${example.question} ${example.guidance} Use the screenshot or link I attach to identify the target and its visual context; if the target is unclear, ask me for it.`)
 
   useEffect(() => {
     const reduced = matchMedia("(prefers-reduced-motion: reduce)")
-    const sync = () => setActivity((current) => ({ ...current, ready: true, reduced: reduced.matches, tab: !document.hidden }))
+    const sync = () => {
+      if (reduced.matches || document.hidden) setIndex(requestedIndex.current)
+      setActivity((current) => ({ ...current, ready: true, reduced: reduced.matches, tab: !document.hidden }))
+    }
     const motionChanged = () => { setPreference(null); sync() }
     sync()
     reduced.addEventListener("change", motionChanged)
     document.addEventListener("visibilitychange", sync)
-    const observer = new IntersectionObserver(([entry]) => setActivity((current) => ({ ...current, visible: entry.intersectionRatio >= 0.35 })), { threshold: 0.35 })
+    const observer = new IntersectionObserver(([entry]) => {
+      const visible = entry.intersectionRatio >= 0.35
+      if (!visible) setIndex(requestedIndex.current)
+      setActivity((current) => ({ ...current, visible }))
+    }, { threshold: 0.35 })
     observer.observe(root.current!)
     return () => { observer.disconnect(); reduced.removeEventListener("change", motionChanged); document.removeEventListener("visibilitychange", sync) }
   }, [])
 
+  const select = useCallback((next: number) => {
+    const normalized = (next + EXAMPLES.length) % EXAMPLES.length
+    requestedIndex.current = normalized
+    copyAttempt.current++
+    setCopyStatus("idle")
+    setTarget(normalized)
+    if (!animateChanges) setIndex(normalized)
+  }, [animateChanges])
+
   useEffect(() => {
     if (!playing) return
-    const timer = setInterval(() => {
-      copyAttempt.current++
-      setCopyStatus("idle")
-      setIndex((current) => (current + 1) % EXAMPLES.length)
-    }, ROTATION_MS)
+    const timer = setInterval(() => select(target + 1), ROTATION_MS)
     return () => clearInterval(timer)
-  }, [playing, index])
+  }, [playing, target, select])
 
   useEffect(() => {
     if (copyStatus === "failed") { manualCopy.current?.focus(); manualCopy.current?.select() }
   }, [copyStatus])
 
-  function select(next: number) {
-    copyAttempt.current++
-    setCopyStatus("idle")
-    setIndex((next + EXAMPLES.length) % EXAMPLES.length)
-  }
-
   async function copy() {
     const attempt = ++copyAttempt.current
+    requestedIndex.current = index
+    setTarget(index)
     setPreference(false)
     try {
       await navigator.clipboard.writeText(prompt)
@@ -83,24 +96,42 @@ export function RequestExamples() {
   return (
     <div ref={root} role="region" aria-label="Example requests" aria-roledescription="carousel" data-request-examples data-rotation={playing ? "playing" : "paused"} data-request-id={example.id} className="rounded-2xl border bg-card p-5 sm:p-8 lg:p-10" onPointerDownCapture={() => setFocused(false)} onFocusCapture={(event) => setFocused(event.target.matches(":focus-visible"))} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false) }}>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">Try asking · {example.label}</p>
+        <div className="grid min-w-0 max-w-full font-mono text-xs uppercase tracking-wider text-muted-foreground">
+          {/* Invisible copies reserve the largest label at the current width. */}
+          {EXAMPLES.map((item) => <p key={item.id} aria-hidden="true" className="invisible col-start-1 row-start-1 select-none">Try asking · {item.label}</p>)}
+          <p className="col-start-1 row-start-1">Try asking · {example.label}</p>
+        </div>
         <div className="flex items-center gap-1" style={{ visibility: activity.ready ? "visible" : "hidden" }}>
           <span className="mr-2 font-mono text-xs text-muted-foreground">{String(index + 1).padStart(2, "0")} / {String(EXAMPLES.length).padStart(2, "0")}</span>
-          <button type="button" aria-label="Previous example" onClick={() => select(index - 1)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring"><ChevronLeft className="size-4" aria-hidden="true" /></button>
+          <button type="button" aria-label="Previous example" onClick={() => select(requestedIndex.current - 1)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring"><ChevronLeft className="size-4" aria-hidden="true" /></button>
           <button type="button" aria-label={enabled ? "Pause examples" : "Play examples"} aria-pressed={enabled} onClick={() => { setPreference(!enabled); setFocused(false) }} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring">{enabled ? <Pause className="size-4" aria-hidden="true" /> : <Play className="size-4" aria-hidden="true" />}</button>
-          <button type="button" aria-label="Next example" onClick={() => select(index + 1)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring"><ChevronRight className="size-4" aria-hidden="true" /></button>
+          <button type="button" aria-label="Next example" onClick={() => select(requestedIndex.current + 1)} className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring"><ChevronRight className="size-4" aria-hidden="true" /></button>
         </div>
       </div>
       <div className="grid items-center gap-6 py-8 lg:min-h-72 lg:grid-cols-[1fr_18rem] lg:gap-10">
-        <div aria-live={playing ? "off" : "polite"} aria-atomic="true" className="flex min-h-40 items-center sm:min-h-44">
-          <motion.blockquote key={example.id} data-request-question initial={activity.ready && !activity.reduced ? { opacity: 0 } : false} animate={{ opacity: 1 }} transition={activity.reduced ? { duration: 0 } : TRANSITION} className="max-w-3xl text-3xl leading-tight font-medium tracking-tight sm:text-4xl lg:text-5xl">“{example.question}”</motion.blockquote>
+        <div aria-live={playing ? "off" : "polite"} aria-atomic="true" className="grid min-h-40 items-center sm:min-h-44">
+          {/* All questions share a grid cell so wrapping never moves the preview or controls. */}
+          {EXAMPLES.map((item) => <blockquote key={item.id} aria-hidden="true" className={`${QUESTION_CLASS} invisible select-none`}>“{item.question}”</blockquote>)}
+          {/* A static node replaces any in-flight animation when motion is disabled. */}
+          <motion.blockquote
+            key={`${example.id}:${animateChanges ? "motion" : "static"}`}
+            data-request-question
+            initial={animateChanges ? { opacity: 0, y: MOTION.tokens.travel } : false}
+            animate={leaving ? { opacity: 0, y: -MOTION.tokens.travel } : { opacity: 1, y: 0 }}
+            transition={!animateChanges ? { duration: 0 } : leaving ? MOTION.transition.exit : MOTION.transition.slow}
+            onAnimationComplete={() => { if (leaving) setIndex(requestedIndex.current) }}
+            className={QUESTION_CLASS}
+          >“{example.question}”</motion.blockquote>
         </div>
         <RequestScreenshot />
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4 border-t pt-5">
         <div className="flex flex-wrap items-center gap-4">
           <button type="button" onClick={copy} disabled={!activity.ready} className="inline-flex min-h-11 items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">{copyStatus === "copied" ? <Check className="size-4" aria-hidden="true" /> : <Copy className="size-4" aria-hidden="true" />}{copyStatus === "copied" ? "Copied request" : "Copy request"}</button>
-          <Link href={example.href} data-request-link className="inline-flex min-h-11 items-center gap-2 text-sm underline underline-offset-4">{example.link} <ArrowRight className="size-3.5" aria-hidden="true" /></Link>
+          <div className="grid min-w-0 max-w-full">
+            {EXAMPLES.map((item) => <span key={item.id} aria-hidden="true" className="invisible col-start-1 row-start-1 flex min-h-11 items-center pr-6 text-sm select-none">{item.link}</span>)}
+            <Link href={example.href} data-request-link className="col-start-1 row-start-1 inline-flex min-h-11 w-fit max-w-full items-center gap-2 text-sm underline underline-offset-4">{example.link} <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" /></Link>
+          </div>
         </div>
         <div role="group" aria-label="Choose an example" className="flex gap-1" style={{ visibility: activity.ready ? "visible" : "hidden" }}>
           {EXAMPLES.map((item, next) => <button key={item.id} type="button" aria-label={`Show example ${next + 1}: ${item.label}`} aria-pressed={next === index} onClick={() => select(next)} className="inline-flex h-11 w-6 items-center justify-center rounded-md focus-visible:outline-2 focus-visible:outline-ring"><span className={`size-1.5 rounded-full ${next === index ? "bg-foreground" : "bg-muted-foreground/40"}`} /></button>)}

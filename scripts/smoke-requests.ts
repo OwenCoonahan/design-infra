@@ -55,6 +55,7 @@ async function main() {
     }
     const button = (label: string) => `${root} button[aria-label="${label}"]`
     const id = () => page.$eval(root, (element) => (element as HTMLElement).dataset.requestId)
+    const waitForId = (value: string) => page.waitForFunction((selector, expectedId) => (document.querySelector(selector) as HTMLElement)?.dataset.requestId === expectedId, {}, root, value)
     const select = async (index: number) => {
       await page.click(`${root} [aria-label="Choose an example"] button:nth-child(${index + 1})`)
       await page.waitForFunction((selector, value) => (document.querySelector(selector) as HTMLElement)?.dataset.requestId === value, {}, root, expected[index][0])
@@ -82,9 +83,11 @@ async function main() {
     await select(0)
     await state(true)
     await page.click(button("Previous example"))
+    await waitForId("data-screen")
     assert.equal(await id(), "data-screen")
     await state(true) // Arrow clicks keep cycling rather than silently pausing.
     await page.click(button("Next example"))
+    await waitForId("loading")
     assert.equal(await id(), "loading")
     await state(true)
     await page.click(button("Pause examples"))
@@ -108,6 +111,63 @@ async function main() {
     await state(false)
     assert.ok(await page.$(`${root} [data-request-screenshot] svg[role="img"]`))
     assert.match(await page.$eval(`${root} [data-request-screenshot]`, (element) => element.textContent!), /Example attachment[\s\S]*Screenshot added/)
+
+    await select(0)
+    await page.waitForFunction(() => {
+      const question = document.querySelector("[data-request-question]")!
+      const style = getComputedStyle(question)
+      return style.opacity === "1" && Math.abs(new DOMMatrixReadOnly(style.transform).m42) < 0.01
+    })
+    // Record real animation frames: one readable question and matching link throughout.
+    await page.evaluate(`(() => {
+      window.__requestFrames = [];
+      const record = () => {
+        const root = document.querySelector('[data-request-examples]');
+        const question = root.querySelector('[data-request-question]');
+        const style = getComputedStyle(question);
+        window.__requestFrames.push({
+          id: root.dataset.requestId, text: question.textContent,
+          opacity: Number(style.opacity), y: new DOMMatrixReadOnly(style.transform).m42,
+          height: root.getBoundingClientRect().height,
+          href: root.querySelector('[data-request-link]').getAttribute('href')
+        });
+        if (window.__requestFrames.length < 40) requestAnimationFrame(record);
+      };
+      requestAnimationFrame(record);
+      document.querySelector('[data-request-examples] button[aria-label="Next example"]').click();
+    })()`)
+    await page.waitForFunction("window.__requestFrames.length === 40")
+    const frames = await page.evaluate("window.__requestFrames") as { id: string; text: string; opacity: number; y: number; height: number; href: string }[]
+    assert.ok(frames.some((frame) => frame.id === "loading" && frame.opacity > 0 && frame.opacity < 1 && frame.y < 0), "outgoing question fades and slides up")
+    assert.ok(frames.some((frame) => frame.id === "navigation" && frame.opacity > 0 && frame.opacity < 1 && frame.y > 0), "incoming question fades and settles into place")
+    for (const frame of frames) {
+      assert.equal(frame.href, frame.id === "loading" ? expected[0][1] : expected[1][1])
+      assert.match(frame.text, frame.id === "loading" ? /Find a loading component/ : /Make this navbar/)
+      assert.ok(Math.abs(frame.height - frames[0].height) < 1, "card stays steady during transition")
+    }
+    // Rapid navigation coalesces to the latest choice; Copy pins the visible request.
+    await page.evaluate(`(() => {
+      const root = document.querySelector('[data-request-examples]');
+      root.querySelector('button[aria-label="Next example"]').click();
+      root.querySelector('button[aria-label="Next example"]').click();
+      root.querySelector('button[aria-label="Previous example"]').click();
+    })()`)
+    await waitForId("pricing")
+    await page.waitForFunction("getComputedStyle(document.querySelector('[data-request-question]')).opacity === '1'")
+    await page.evaluate(`(() => {
+      const root = document.querySelector('[data-request-examples]');
+      root.querySelector('button[aria-label="Next example"]').click();
+      setTimeout(() => {
+        window.__copiedQuestion = root.querySelector('[data-request-question]').textContent.slice(1, -1);
+        window.__copiedId = root.dataset.requestId;
+        [...root.querySelectorAll('button')].find(button => button.textContent === 'Copy request').click();
+      }, 40);
+    })()`)
+    await page.waitForFunction((selector) => document.querySelector(`${selector} [role="status"]`)?.textContent?.startsWith("Copied."), {}, root)
+    const copiedQuestion = await page.evaluate("window.__copiedQuestion") as string
+    assert.ok((await page.evaluate(() => navigator.clipboard.readText())).includes(copiedQuestion))
+    await page.waitForFunction("getComputedStyle(document.querySelector('[data-request-question]')).opacity === '1'")
+    assert.equal(await id(), await page.evaluate("window.__copiedId"))
 
     for (let index = 0; index < expected.length; index++) {
       await select(index)
@@ -136,7 +196,14 @@ async function main() {
       return document.activeElement === text && text.selectionStart === 0 && text.selectionEnd === text.value.length && text.value.includes("Find a loading component to put here.")
     }))
 
+    await page.evaluate("document.querySelector('[data-request-examples] button[aria-label=\"Next example\"]').click()")
+    await waitForId("navigation")
     await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }])
+    await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
+    assert.ok(await page.$eval("[data-request-question]", (element) => {
+      const style = getComputedStyle(element)
+      return style.opacity === "1" && Math.abs(new DOMMatrixReadOnly(style.transform).m42) < 0.01
+    }), "enabling reduced motion stops an incoming transition immediately")
     await page.reload({ waitUntil: "networkidle2" })
     await show()
     await state(false)
@@ -149,9 +216,20 @@ async function main() {
     await state(false)
     for (const width of [1440, 768, 390, 320]) {
       await page.setViewport({ width, height: 1000 })
+      await select(0)
+      const baseline = await page.$eval(root, (element) => {
+        const bounds = element.getBoundingClientRect()
+        return [bounds.height, element.querySelector("[data-request-screenshot]")!.getBoundingClientRect().top - bounds.top, element.querySelector("[data-request-link]")!.getBoundingClientRect().top - bounds.top]
+      })
       for (let index = 0; index < expected.length; index++) {
         await select(index)
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `horizontal overflow at ${width}px, ${expected[index][0]}`)
+        const positions = await page.$eval(root, (element) => {
+          const bounds = element.getBoundingClientRect()
+          return [bounds.height, element.querySelector("[data-request-screenshot]")!.getBoundingClientRect().top - bounds.top, element.querySelector("[data-request-link]")!.getBoundingClientRect().top - bounds.top]
+        })
+        positions.forEach((value, item) => assert.ok(Math.abs(value - baseline[item]) < 1, `layout shifts at ${width}px, ${expected[index][0]}`))
+        assert.equal(await page.$eval("[data-request-question]", (element) => getComputedStyle(element).opacity), "1", "reduced motion switches directly")
       }
       await select(0)
       await page.$eval("#what-you-can-do", (element) => element.scrollIntoView())
@@ -165,7 +243,7 @@ async function main() {
     assert.ok(await staticPage.$(`${root} button[disabled]`))
     assert.equal(await staticPage.$eval(`${root} [data-request-question]`, (element) => getComputedStyle(element).opacity), "1")
     assert.deepEqual(errors, [])
-    console.log("✓ requests: two-second rotation under hover, manual wrap/selection, keyboard focus and explicit play/pause, screenshot cue, offscreen/hidden timer cleanup, eight links, clipboard/fallback, reduced motion, responsive layouts and no-JS example")
+    console.log("✓ requests: smooth exit/entry frames, stable card/preview/controls, rapid navigation and in-flight copy, two-second rotation, keyboard/playback controls, offscreen/hidden cleanup, links/clipboard/fallback, reduced motion, responsive layouts and no-JS example")
   } finally { await browser.close() }
 }
 
