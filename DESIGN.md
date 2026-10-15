@@ -16,6 +16,8 @@ The usage section rotates through concrete requests every two seconds while visi
 
 Keep the copied starting prompt to two short sentences: integrate the repository, follow its setup guide, and show how to use it. Detailed setup rules live in the linked guide. Show example requests separately beneath the copy button; after connection the agent also provides a few examples in the same chat.
 
+Rotating questions use the shared quiet motion: fade and slide the current request out, then bring the next one in. Reserve space for the longest question, label and gallery link at each viewport so the card, screenshot and controls stay still. Switch the counter and gallery link with the displayed question; copying pins that question and cancels a pending change. Reduced motion and offscreen/hidden states switch directly without a transition.
+
 The guide leads with four spacious numbered sections: connect, show the target with a screenshot, find suitable parts, then build/check/refine. Keep supporting reference material below in labeled expandable sections. Render both the website and raw guide from docs/GUIDE.md.
 
 ## Motion
