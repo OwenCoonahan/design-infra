@@ -4,7 +4,7 @@ Connect once. Add a screenshot. Build with real components.
 
 ## 1. Connect your agent
 
-Open your project in **Claude Code or Codex**. Copy the starting prompt from the [homepage](https://design-infra.vercel.app/#use-with-agent) and paste it into that conversation. Your agent connects the catalog and checks your project’s stack and style.
+Open your project in **Claude Code or Codex**. Copy the starting prompt from the [homepage](https://design-infra.vercel.app/#use-with-agent) and paste it into that conversation. Your agent connects the catalog, checks your project’s stack and style, and shows a few things you can ask in the same chat.
 
 No clone, plugin or paid account is needed. If a restart is required, the agent will tell you.
 

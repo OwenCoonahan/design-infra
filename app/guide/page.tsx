@@ -33,7 +33,7 @@ export default async function GuidePage() {
                 <Markdown className="text-base [overflow-wrap:anywhere] [&_p]:first:mt-0">{section.body}</Markdown>
                 {index === 1 ? <RequestScreenshot /> : null}
               </div>
-              {index === 0 ? <div className="max-w-2xl"><CopyPrompt id="guide-agent-prompt" prompt={SETUP_PROMPT} buttonLabel="Copy starting prompt" rows={6} description="Paste into the agent working in your project. Then describe your first task." /></div> : null}
+              {index === 0 ? <div className="max-w-2xl"><CopyPrompt id="guide-agent-prompt" prompt={SETUP_PROMPT} buttonLabel="Copy starting prompt" rows={4} description="Paste into the agent working in your project. It connects the catalog and shows you what to ask." /></div> : null}
               {index === 2 ? <Link href="/components" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm underline underline-offset-4">Explore the catalog <ArrowRight className="size-3.5" aria-hidden="true" /></Link> : null}
             </section>
           </li>
