@@ -156,7 +156,7 @@ Report the connection method, project instructions changed, verification perform
 
 ### First reply after connection
 
-For the default **starting prompt**, report the connection method, what was verified, and any restart needed. Ask what the user wants to build or change, suggesting that they attach a screenshot or reference link. Setup alone does not authorize UI changes or an unsolicited redesign. If they already included a task, proceed with that task in its authorized scope.
+For the default **starting prompt**, briefly report the connection method, what was verified, and any restart needed. Then show three short requests they can use in this same chat: finding a component ("Find a loading component for this"), refining an existing section ("Make this navbar sharper"), and delegating implementation ("Choose a pricing layout and build it"). Invite them to attach a screenshot or reference link and ask what they want to work on first. Setup alone does not authorize UI changes or an unsolicited redesign. If they already included a task, proceed with that task in its authorized scope instead of making them repeat it.
 
 For **recommend first**, return three compatible options. Each should include its catalog ID, gallery/live links, access requirements and a short explanation of how it fits this project's stack, brand and task. Include a comparison link, recommend one with a reason, and wait for the user's pick before changing UI. State how the catalog was connected, what was verified, and whether client restart/tool verification is still needed.
 

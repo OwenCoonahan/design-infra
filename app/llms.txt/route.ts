@@ -6,7 +6,7 @@ export function GET() {
 > A shared component catalog, registry and design-reference toolkit. Use compatible existing components to improve the user's UI while preserving their stack and brand.
 
 ## Start here
-- Connection only: inspect the project, connect and verify the catalog, report any restart needed, then ask what the user wants to build or change. Invite a screenshot or link. If they already supplied a task, continue it; setup alone does not authorize UI changes.
+- Connection only: inspect the project, connect and verify the catalog, and report any restart needed. Show a few short example requests for finding components, refining sections and choosing/implementing a layout. Invite a screenshot or link, then ask what they want to work on first. If they already supplied a task, continue it; setup alone does not authorize UI changes.
 - [Agent setup and first-reply instructions](${SITE_URL}/integrate/raw): inspect the project, connect MCP or HTTP, then recommend live options or choose and implement within the user's authorization.
 - [Reference and replacement workflow](${SITE_URL}/reference/raw): inspect links/images using your own tools, then match observed patterns or propose section replacements.
 - [Usage guide](${SITE_URL}/guide): everyday examples and feedback.

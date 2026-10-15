@@ -8,9 +8,9 @@ Find existing components, see them live, and give your coding agent the right pa
 
 Open an existing project in Claude Code or Codex and paste:
 
-> Use https://github.com/OwenCoonahan/design-infra in this project. Follow https://design-infra.vercel.app/integrate/raw to connect the catalog; preserve our stack and brand. Recommend 3 compatible component options with live links; wait for my pick. Report verification and any restart needed.
+> Integrate https://github.com/OwenCoonahan/design-infra into this project. Follow its setup guide, then show me how to use it.
 
-No clone, plugin or design-infra API key is required. The source is public. The [homepage](https://design-infra.vercel.app) also has a **choose and build** prompt if you want the agent to select and implement one improvement directly.
+Agents: follow the [setup guide](docs/INTEGRATE.md) to connect, verify access, and show a few example requests. Setup alone does not authorize UI changes. No clone, plugin or design-infra API key is required. Then ask for options or say “choose and build” to delegate an actual task.
 
 Prefer a command? Download and inspect the script, then run it in your project:
 
