@@ -197,9 +197,13 @@ async function main() {
     }))
 
     await page.evaluate("document.querySelector('[data-request-examples] button[aria-label=\"Next example\"]').click()")
-    await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }])
     await waitForId("navigation")
-    await page.waitForFunction("getComputedStyle(document.querySelector('[data-request-question]')).opacity === '1'")
+    await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }])
+    await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
+    assert.ok(await page.$eval("[data-request-question]", (element) => {
+      const style = getComputedStyle(element)
+      return style.opacity === "1" && Math.abs(new DOMMatrixReadOnly(style.transform).m42) < 0.01
+    }), "enabling reduced motion stops an incoming transition immediately")
     await page.reload({ waitUntil: "networkidle2" })
     await show()
     await state(false)

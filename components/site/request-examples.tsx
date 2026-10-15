@@ -112,8 +112,9 @@ export function RequestExamples() {
         <div aria-live={playing ? "off" : "polite"} aria-atomic="true" className="grid min-h-40 items-center sm:min-h-44">
           {/* All questions share a grid cell so wrapping never moves the preview or controls. */}
           {EXAMPLES.map((item) => <blockquote key={item.id} aria-hidden="true" className={`${QUESTION_CLASS} invisible select-none`}>“{item.question}”</blockquote>)}
+          {/* A static node replaces any in-flight animation when motion is disabled. */}
           <motion.blockquote
-            key={example.id}
+            key={`${example.id}:${animateChanges ? "motion" : "static"}`}
             data-request-question
             initial={animateChanges ? { opacity: 0, y: MOTION.tokens.travel } : false}
             animate={leaving ? { opacity: 0, y: -MOTION.tokens.travel } : { opacity: 1, y: 0 }}
