@@ -1,24 +1,30 @@
 # How to use design-infra
 
-*Find real components, compare them live, and use them in your own projects.*
-Live at **https://design-infra.vercel.app/guide** · source `docs/GUIDE.md`
+Connect once. Add a screenshot. Build with real components.
 
----
+## 1. Connect your agent
 
-## Start here — try it on one component
+Open your project in **Claude Code or Codex**. Copy the starting prompt from the [homepage](https://design-infra.vercel.app/#use-with-agent) and paste it into that conversation. Your agent connects the catalog and checks your project’s stack and style.
 
-You can browse and choose without cloning this repository or installing a plugin.
+No clone, plugin or paid account is needed. If a restart is required, the agent will tell you.
 
-For the fastest agent setup, copy a prompt from the [homepage](https://design-infra.vercel.app/#use-with-agent) into the Claude Code or Codex session for your project. **Recommend first** connects the catalog and returns three compatible options with live links and a recommendation. **Choose and build** authorizes the agent to select and implement one improvement, then verify it and report the sources. Both preserve your existing stack and brand. [Agent instructions and first-reply guidance](https://design-infra.vercel.app/integrate/raw).
+## 2. Show what you want to change
 
-1. Open [the catalog](https://design-infra.vercel.app/components). Describe a need: **“clean pricing,” “sharp navbar,” “subtle button hover,”** or **“loading submit button.”** Search interprets the feeling and ranks components; explicit filters narrow the results. Paid entries are included only when you opt in.
-2. Open the live demos. Shortlist 2–3 options and choose **Compare** to see them side by side. Theme switching applies to our own blocks; upstream demos retain their own styling.
-3. Choose **Pick / Pass** and add a reason. Copy feedback to your project's agent, or use **Copy for agent** from the shortlist to include install commands, links, notes, and integration requirements. Tell the agent which part of your project the selection belongs to.
-4. Ask it to install and adapt the selected component, preserve your brand, and verify it at desktop and mobile widths. If your project needs registry setup, use the setup steps below. You can also copy an install command and use the component yourself.
+**Attach a screenshot** in your agent, point out the section, and add a short request: **“Find a loading component to put here”** or **“Make this navbar sharper.”** A website link or component file path works too.
 
-For ongoing agent use, connect your MCP-compatible editor to **https://design-infra.vercel.app/mcp**. Ask: **“Use design-infra to show me three options for a clean pricing section. Include live links and a comparison. Let me pick before installing.”** For a whole page, include the audience, sections, and desired feeling; the agent calls `plan_ui` to assemble a plan from existing components.
+Copying a request does not attach an image. Add your own screenshot alongside it. For a new page, describe its purpose, audience and the feeling you want.
 
-The shortlist stays in this browser. Compare links can be shared with friends, but picks and notes are only sent when you copy and share them. Individual accounts, shared saved collections, and separate taste profiles are not implemented yet. Current favorites are catalog recommendations, not your personal favorites.
+## 3. Find the right parts
+
+Ask **“Show me three options”** for live examples and a comparison. Or say **“Choose one and implement it”** to let the agent decide. It searches compatible catalog components and real design references, preserving your brand.
+
+You can also [browse the catalog](https://design-infra.vercel.app/components), shortlist examples, and use **Copy for agent** to bring them into your conversation. Free components come first; paid entries are opt-in.
+
+## 4. Build, check, refine
+
+Your agent installs and adapts the chosen parts. Ask it to verify the result on desktop and mobile, including keyboard behavior and reduced motion where relevant.
+
+Review the actual page. Send another screenshot with what to keep or change. If something fails, [copy a feedback report](https://design-infra.vercel.app/feedback) so the next person has an easier time.
 
 ## Paste a reference or replace a section
 
@@ -109,7 +115,7 @@ There are two places, and you talk to an agent in each:
 
 Open [Connect your project](https://design-infra.vercel.app/integrate), copy the setup prompt, and paste it into an agent **inside your project**. You can also give the agent this repository URL; the README points it to the same instructions. The hosted setup page works without cloning the repository or configuring GitHub access.
 
-The agent inspects your stack and existing look, connects the catalog through its supported MCP configuration (or HTTP), and adds a small project instruction to search before writing new UI. It preserves existing configuration and installs components after you pick them. If MCP needs a restart, it reports that and uses HTTP in the meantime. Ask for three live options to verify the connection.
+The agent inspects your stack and existing look, connects the catalog through its supported MCP configuration (or HTTP), and adds a small project instruction to search before writing new UI. It preserves existing configuration. Then give it a task: ask for options, or authorize it to choose and build. If MCP needs a restart, it reports that and uses HTTP in the meantime.
 
 For a Claude Code plugin installation, collaborators with repository access can optionally use:
 
@@ -139,7 +145,7 @@ Start at [Connect](https://design-infra.vercel.app/integrate), then use the [sta
 
 ## The daily loop
 
-Every request follows the same rhythm: **point → say what you want → look at options → pick → it's applied.**
+Every request follows the same rhythm: **point → say what you want → pick or delegate → build → review.** Ask for options when you want to choose, or say “choose and implement” when you want the agent to decide.
 
 ### 1. Point at the thing
 

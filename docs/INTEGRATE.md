@@ -89,7 +89,9 @@ source control. Feedback is shared only when the user asks; choices are project-
 
 If there is no DESIGN.md, record the project's existing typography, colors, spacing, and motion conventions in a short file. Derive it from the code; do not install a new theme as part of connection setup.
 
-## 4. Show a useful first shortlist
+## 4. Follow the user's task
+
+For a connection-only starting prompt, verify setup and ask what the user wants to build or change. Invite a screenshot, link or component path. Do not invent an improvement, install a component or change the UI just because the catalog was connected. Continue an actual task already supplied by the user without asking them to repeat it.
 
 Pasted website/component URLs, screenshots, and requests to replace an existing section are core workflows. Follow [Build from a reference, or replace a section](https://design-infra.vercel.app/reference/raw). Inspect the reference or current section first, then match real reusable parts and show examples. The catalog does not fetch arbitrary reference URLs or analyse images itself; the project agent uses its own browser/image tools.
 
@@ -154,7 +156,7 @@ Report the connection method, project instructions changed, verification perform
 
 ### First reply after connection
 
-Make the connection useful immediately. Inspect the current project and suggest one concrete improvement. Use the user's brief when they supplied one; otherwise choose a small opportunity visible in the existing UI. If there is no UI to inspect, use a stated, representative component need for this project's purpose, rather than inventing a problem.
+For the default **starting prompt**, report the connection method, what was verified, and any restart needed. Ask what the user wants to build or change, suggesting that they attach a screenshot or reference link. Setup alone does not authorize UI changes or an unsolicited redesign. If they already included a task, proceed with that task in its authorized scope.
 
 For **recommend first**, return three compatible options. Each should include its catalog ID, gallery/live links, access requirements and a short explanation of how it fits this project's stack, brand and task. Include a comparison link, recommend one with a reason, and wait for the user's pick before changing UI. State how the catalog was connected, what was verified, and whether client restart/tool verification is still needed.
 
