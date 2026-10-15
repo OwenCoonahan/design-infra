@@ -1,4 +1,4 @@
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown, { defaultUrlTransform } from "react-markdown"
 import remarkGfm from "remark-gfm"
 
 import { cn } from "@/lib/utils"
@@ -22,11 +22,7 @@ export function Markdown({ children, className }: { children: string; className?
         className
       )}
     >
-      <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
-        a: ({ href, children, ...props }) => <a {...props} href={href ? sitePath(href) : href}>{children}</a>,
-        // eslint-disable-next-line @next/next/no-img-element
-        img: ({ src, alt, ...props }) => <img {...props} src={typeof src === "string" ? sitePath(src) : src} alt={alt ?? ""} />,
-      }}>{children}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={(url) => sitePath(defaultUrlTransform(url))}>{children}</ReactMarkdown>
     </div>
   )
 }
