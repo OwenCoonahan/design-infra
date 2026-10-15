@@ -19,12 +19,12 @@ If the user already authorized you to choose and implement, proceed within that 
 - **Project context:** read `./DESIGN.md` → `moods:`, `motion:` (still | quiet | lively | cinematic), theme slug, and
   any `## Motion` choices already made (stay consistent with them).
 - **Intent:** animate · restyle · replace · add-state · polish. If the target is clear, a bare "I don't like this" is enough to show useful alternatives. Ask a focused question only if the section or an essential requirement is unclear. A request to switch out a section should offer different layouts/component approaches, not just animation effects.
-- A URL or screenshot of *another* product ("make ours like this") → **reference-ui**; inspect it and map the observed patterns to catalog matches. Shared instructions: https://design-infra.vercel.app/reference/raw.
+- A URL or screenshot of *another* product ("make ours like this") → **reference-ui**; inspect it and map the observed patterns to catalog matches. Shared instructions: https://www.owencoonahan.xyz/design-infra/reference/raw.
 
 ## 2. Get options
 
 MCP `propose_options` (component, category when identified, request verbatim, intent, moods, motion_language, theme) — or
-`https://design-infra.vercel.app/api/options?component=…&request=…&moods=…&motion=…&theme=…`.
+`https://www.owencoonahan.xyz/design-infra/api/options?component=…&request=…&moods=…&motion=…&theme=…`.
 It returns playbook **directions** (each: feel, when, avoid, intensity, picks with `page`/`live`/`docs` links),
 `more` (extra catalog matches), `compare` (side-by-side live page), and `skippedBecausethe userPassed`.
 

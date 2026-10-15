@@ -11,6 +11,7 @@ import { linkOnlyMedia } from "@/lib/catalog/media-policy"
 import { isFrameable, liveUrl } from "@/lib/catalog/facets"
 import type { CatalogEntry } from "@/lib/catalog/schema"
 import { previewSrc } from "@/lib/thumbnails"
+import { sitePath } from "@/lib/config"
 import type { DesignSystemMeta } from "@/scripts/build-tokens"
 
 export type Stage = {
@@ -38,7 +39,7 @@ export function entryStage(
   if (e.source !== "oc" && hosted) return { kind: "frame", openHref: hosted.src, node: <LiveFrame src={hosted.src} title={e.title} width={hosted.width} height={hosted.height} /> }
   const resolvedMode = system.modes.includes(mode) ? mode : system.modes[0]
   if (e.source === "oc") {
-    const preview = (name: string) => `/preview/oc/${name}?theme=${system.slug}&mode=${resolvedMode}`
+    const preview = (name: string) => sitePath(`/preview/oc/${name}?theme=${system.slug}&mode=${resolvedMode}`)
     const demo = OC_DEMOS[e.name]
     if (demo)
       return {
@@ -58,7 +59,7 @@ export function entryStage(
     if (TEMPLATE_DEMOS[e.name])
       return {
         kind: "live",
-        openHref: `/templates/${e.name}?system=${system.slug}&mode=${resolvedMode}`,
+        openHref: sitePath(`/templates/${e.name}?system=${system.slug}&mode=${resolvedMode}`),
         node: (
           <ScaleToFit minWidth={1280} maxHeight={800}>
             <TemplatePreview name={e.name} theme={system.slug} mode={resolvedMode} className="rounded-none border-0" />
@@ -71,7 +72,7 @@ export function entryStage(
       const own = systems.find((s) => s.slug === slug)
       return {
         kind: "live",
-        openHref: `/design-systems/${slug}`,
+        openHref: sitePath(`/design-systems/${slug}`),
         node: (
           <ScaleToFit minWidth={1024} maxHeight={900}>
             <ThemeStage theme={slug} modes={own?.modes} className="rounded-none border-0">

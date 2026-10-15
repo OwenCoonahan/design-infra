@@ -2,6 +2,7 @@ import Link from "next/link"
 
 import { CopyPrompt } from "@/components/site/copy-prompt"
 import { SETUP_PROMPT } from "@/lib/integration"
+import { sitePath } from "@/lib/config"
 
 export function AgentStart() {
   return (
@@ -21,7 +22,7 @@ export function AgentStart() {
       </div>
       <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted-foreground">
         <Link href="/integrate" className="underline underline-offset-4">Setup & connection details</Link>
-        <a href="/integrate/raw" className="underline underline-offset-4">Instructions for agents ↗</a>
+        <a href={sitePath("/integrate/raw")} className="underline underline-offset-4">Instructions for agents ↗</a>
       </div>
     </div>
   )

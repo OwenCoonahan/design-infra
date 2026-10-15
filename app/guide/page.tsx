@@ -3,7 +3,7 @@ import path from "node:path"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
-import { configureText } from "@/lib/config"
+import { configureText, sitePath } from "@/lib/config"
 import { Markdown } from "@/components/site/markdown"
 import { CopyPrompt } from "@/components/site/copy-prompt"
 import { RequestScreenshot } from "@/components/site/request-screenshot"
@@ -49,7 +49,7 @@ export default async function GuidePage() {
           </details>
         ))}
       </section>
-      <p className="mt-10 text-xs text-muted-foreground">Agents: <a className="underline" href="/guide/raw">read the complete guide as markdown</a>.</p>
+      <p className="mt-10 text-xs text-muted-foreground">Agents: <a className="underline" href={sitePath("/guide/raw")}>read the complete guide as markdown</a>.</p>
     </div>
   )
 }

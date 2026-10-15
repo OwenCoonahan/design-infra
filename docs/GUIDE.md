@@ -4,7 +4,7 @@ Connect once. Add a screenshot. Build with real components.
 
 ## 1. Connect your agent
 
-Open your project in **Claude Code or Codex**. Copy the starting prompt from the [homepage](https://design-infra.vercel.app/#use-with-agent) and paste it into that conversation. Your agent connects the catalog, checks your project’s stack and style, and shows a few things you can ask in the same chat.
+Open your project in **Claude Code or Codex**. Copy the starting prompt from the [homepage](https://www.owencoonahan.xyz/design-infra/#use-with-agent) and paste it into that conversation. Your agent connects the catalog, checks your project’s stack and style, and shows a few things you can ask in the same chat.
 
 No clone, plugin or paid account is needed. If a restart is required, the agent will tell you.
 
@@ -18,13 +18,13 @@ Copying a request does not attach an image. Add your own screenshot alongside it
 
 Ask **“Show me three options”** for live examples and a comparison. Or say **“Choose one and implement it”** to let the agent decide. It searches compatible catalog components and real design references, preserving your brand.
 
-You can also [browse the catalog](https://design-infra.vercel.app/components), shortlist examples, and use **Copy for agent** to bring them into your conversation. Free components come first; paid entries are opt-in.
+You can also [browse the catalog](https://www.owencoonahan.xyz/design-infra/components), shortlist examples, and use **Copy for agent** to bring them into your conversation. Free components come first; paid entries are opt-in.
 
 ## 4. Build, check, refine
 
 Your agent installs and adapts the chosen parts. Ask it to verify the result on desktop and mobile, including keyboard behavior and reduced motion where relevant.
 
-Review the actual page. Send another screenshot with what to keep or change. If something fails, [copy a feedback report](https://design-infra.vercel.app/feedback) so the next person has an easier time.
+Review the actual page. Send another screenshot with what to keep or change. If something fails, [copy a feedback report](https://www.owencoonahan.xyz/design-infra/feedback) so the next person has an easier time.
 
 ## Paste a reference or replace a section
 
@@ -33,7 +33,7 @@ In the agent you're already using for your project:
 - Paste a website/component link or a picture and say **“Build this using design-infra where it fits”** or **“Make our hero like this.”** The agent inspects the reference, maps its layout and visual details to existing components, explains any gaps, and adapts the selected parts. Its own browser/image tools supply the analysis.
 - Point to your section and say **“I don't like this. Show me different approaches.”** The agent reads the section's code and requirements, then offers 3–5 real alternatives with live links and a comparison. For features, that might mean a bento grid, a feature list, or scroll-linked panels. It recommends one and waits for your pick.
 
-[See the reference/replacement workflow and live examples](https://design-infra.vercel.app/reference). Once connected, these requests work in your project; you don't need to move the conversation into design-infra.
+[See the reference/replacement workflow and live examples](https://www.owencoonahan.xyz/design-infra/reference). Once connected, these requests work in your project; you don't need to move the conversation into design-infra.
 
 ## Choose structure separately from style
 
@@ -50,7 +50,7 @@ A project's purpose decides its structure. Its visual references decide how thos
 
 The planner supports `data`, `editorial`, `docs` and `commerce` alongside existing page types. An explicit type overrides automatic detection. Data plans include guidance for units, source/freshness, missing data and accessible visualizations. These outlines are starting points: omit irrelevant sections and add the product's real workflows.
 
-"Clean" can mean strong typography, purposeful imagery, restrained chrome and clear hierarchy; it does not require a sparse monochrome layout. [Vela Energy](https://design-infra.vercel.app/inspiration/vela-energy) and [Breakthrough Energy](https://design-infra.vercel.app/inspiration/breakthrough-energy) are saved examples. Adapt their visual principles to the project's structure instead of copying their marketing sequences.
+"Clean" can mean strong typography, purposeful imagery, restrained chrome and clear hierarchy; it does not require a sparse monochrome layout. [Vela Energy](https://www.owencoonahan.xyz/design-infra/inspiration/vela-energy) and [Breakthrough Energy](https://www.owencoonahan.xyz/design-infra/inspiration/breakthrough-energy) are saved examples. Adapt their visual principles to the project's structure instead of copying their marketing sequences.
 
 Existing theme presets remain available for explicit selection. The planner does not recommend one automatically. Preserve the project's brand; for a new direction, build from inspected references and reusable components, then document the working rules in DESIGN.md.
 
@@ -65,7 +65,7 @@ Use real screens and flows to establish a direction, then search the component c
 - **Navbar Gallery, Footer Design and Pricing Pages**: focused examples for individual sections.
 - **The Component Gallery**: component anatomy and links to documented design systems.
 
-Mobbin's official MCP can search screens, flows and sections using your supported Pro, Team or Enterprise account and OAuth sign-in. It is separate from the public design-infra MCP and is not connected automatically. To configure its URL alongside design-infra, add `--with-mobbin` to `--connect --client claude-code` or `--connect --client codex`. Authenticate separately in Claude Code through `/mcp`, or from the trusted Codex project with `codex mcp login mobbin`. See [the optional connection instructions](https://design-infra.vercel.app/integrate) and [Mobbin’s current setup instructions](https://mobbin.com/mcp.md). If it is unavailable, use accessible live references or screenshots you provide; do not imply that a gallery link grants account access.
+Mobbin's official MCP can search screens, flows and sections using your supported Pro, Team or Enterprise account and OAuth sign-in. It is separate from the public design-infra MCP and is not connected automatically. To configure its URL alongside design-infra, add `--with-mobbin` to `--connect --client claude-code` or `--connect --client codex`. Authenticate separately in Claude Code through `/mcp`, or from the trusted Codex project with `codex mcp login mobbin`. See [the optional connection instructions](https://www.owencoonahan.xyz/design-infra/integrate) and [Mobbin’s current setup instructions](https://mobbin.com/mcp.md). If it is unavailable, use accessible live references or screenshots you provide; do not imply that a gallery link grants account access.
 
 Compare relevant products, identify what fits the current project's tasks and brand, then map those observations to reusable components. Save source links and reasoning. Keep captured gallery images private; share analysis and original implementations rather than mirroring the galleries. Generic reference requests remain free-first; explicit source requests lead while retaining their access requirements.
 
@@ -113,7 +113,7 @@ There are two places, and you talk to an agent in each:
 
 ## Connect a project (recommended first setup)
 
-Open [Connect your project](https://design-infra.vercel.app/integrate), copy the setup prompt, and paste it into an agent **inside your project**. You can also give the agent this repository URL; the README points it to the same instructions. The hosted setup page works without cloning the repository or configuring GitHub access.
+Open [Connect your project](https://www.owencoonahan.xyz/design-infra/integrate), copy the setup prompt, and paste it into an agent **inside your project**. You can also give the agent this repository URL; the README points it to the same instructions. The hosted setup page works without cloning the repository or configuring GitHub access.
 
 The agent inspects your stack and existing look, connects the catalog through its supported MCP configuration (or HTTP), and adds a small project instruction to search before writing new UI. It preserves existing configuration. Then give it a task: ask for options, or authorize it to choose and build. If MCP needs a restart, it reports that and uses HTTP in the meantime.
 
@@ -128,10 +128,10 @@ The plugin provides skills, hooks, and MCP. Restart the client if required, then
 
 ## Optional: broader toolchain
 
-The [toolchain page](https://design-infra.vercel.app/toolchain) describes additional libraries, animation tools, and agent skills. The bootstrap installs a broader collection, including shadcn setup and motion presets. Inspect its plan before using it on an existing project:
+The [toolchain page](https://www.owencoonahan.xyz/design-infra/toolchain) describes additional libraries, animation tools, and agent skills. The bootstrap installs a broader collection, including shadcn setup and motion presets. Inspect its plan before using it on an existing project:
 
 ```bash
-curl -fsSL https://design-infra.vercel.app/bootstrap.mjs -o /tmp/di.mjs
+curl -fsSL https://www.owencoonahan.xyz/design-infra/bootstrap.mjs -o /tmp/di.mjs
 node /tmp/di.mjs --dry-run
 ```
 
@@ -141,7 +141,7 @@ Use `--only` / `--skip` to limit tools. Install a theme only when you want a new
 
 ## Try it with friends
 
-Start at [Connect](https://design-infra.vercel.app/integrate), then use the [starter collection](https://design-infra.vercel.app/starter). Claude Code and Codex have project-scoped MCP examples. Try finding a component, replacing a section, and building from a reference; [pilot tasks](https://design-infra.vercel.app/pilot) give you a repeatable walkthrough. Copy a [feedback report](https://design-infra.vercel.app/feedback) after each attempt—no GitHub account required. A config file alone does not prove tools are active.
+Start at [Connect](https://www.owencoonahan.xyz/design-infra/integrate), then use the [starter collection](https://www.owencoonahan.xyz/design-infra/starter). Claude Code and Codex have project-scoped MCP examples. Try finding a component, replacing a section, and building from a reference; [pilot tasks](https://www.owencoonahan.xyz/design-infra/pilot) give you a repeatable walkthrough. Copy a [feedback report](https://www.owencoonahan.xyz/design-infra/feedback) after each attempt—no GitHub account required. A config file alone does not prove tools are active.
 
 ## The daily loop
 
@@ -176,7 +176,7 @@ experimental, bold, retro, organic, trustworthy** — and intensity words (*subt
 
 You'll get something like:
 
-> **Request access button — animate** · compare: https://design-infra.vercel.app/compare?ids=…
+> **Request access button — animate** · compare: https://www.owencoonahan.xyz/design-infra/compare?ids=…
 > | | Direction | Feel | Cost | Look |
 > |---|---|---|---|---|
 > | A | Press-down + hover lift | refined | CSS only | page · live |
@@ -209,7 +209,7 @@ table: `catalog/REFERENCES.md`.
 
 ## Browsing the library yourself
 
-When you'd rather look than ask: **https://design-infra.vercel.app**
+When you'd rather look than ask: **https://www.owencoonahan.xyz/design-infra**
 
 | page | use it to |
 |---|---|
@@ -295,7 +295,7 @@ FEED (here)   paste link + "I love this" / "I hate this" / "add this library" / 
 
 ## Browse components visually
 
-Start with [Loading](https://design-infra.vercel.app/components?category=loader), [Buttons](https://design-infra.vercel.app/components?category=button) or [Pricing](https://design-infra.vercel.app/components?category=pricing). The type shortcuts work for sections as well as small components. Category pages start in Live view; the whole catalog starts in Grid view. Add `view=grid` or `view=live` to share that choice. Search, mood, motion, source and access filters stay in the URL.
+Start with [Loading](https://www.owencoonahan.xyz/design-infra/components?category=loader), [Buttons](https://www.owencoonahan.xyz/design-infra/components?category=button) or [Pricing](https://www.owencoonahan.xyz/design-infra/components?category=pricing). The type shortcuts work for sections as well as small components. Category pages start in Live view; the whole catalog starts in Grid view. Add `view=grid` or `view=live` to share that choice. Search, mood, motion, source and access filters stay in the URL.
 
 Live view plays at most three visible hosted demos or motion clips together. Examples stop when offscreen or when you leave the browser tab. Use Play/Pause on one example, Interact to try its controls, or Pause all. With reduced motion enabled, examples start as thumbnails; Play opts into opening an example, while each component still honors its own reduced-motion support. Component links and shortlist controls sit outside the interactive preview.
 

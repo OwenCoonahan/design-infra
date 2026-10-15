@@ -5,13 +5,13 @@ The advanced bootstrap applies tiers 1–2 by default. Prefer --connect for firs
 Keyed tools require explicit selection with --only or --tier 4 and authorized credentials:
 
 ```bash
-curl -fsSL https://design-infra.vercel.app/bootstrap.mjs -o /tmp/di.mjs && node /tmp/di.mjs --connect --client claude-code
+curl -fsSL https://www.owencoonahan.xyz/design-infra/bootstrap.mjs -o /tmp/di.mjs && node /tmp/di.mjs --connect --client claude-code
 node /tmp/di.mjs --list        # ranked list   ·   --tier 3   ·   --only motion,agentation   ·   --dry-run
 ```
 
 | # | tool | tier | track | why it's here | secrets |
 |---|---|---|---|---|---|
-| 1 | [design-infra (this repo)](https://design-infra.vercel.app) | 1 | foundation | The router: ranked catalog, design systems, playbooks, taste memory and the @oc registry. Every other tool is chosen through it. | — |
+| 1 | [design-infra (this repo)](https://www.owencoonahan.xyz/design-infra) | 1 | foundation | The router: ranked catalog, design systems, playbooks, taste memory and the @oc registry. Every other tool is chosen through it. | — |
 | 2 | [shadcn/ui CLI + MCP + skill](https://ui.shadcn.com/docs/mcp) | 1 | foundation | Every registry (ours, Aceternity, Magic UI, Kibo, Cult UI, React Bits…) installs through it; its MCP browses them all. | — |
 | 3 | [Motion + @design-infra/motion-presets](https://motion.dev/docs/react) | 1 | motion | The animation engine under ~500 catalog entries; presets keep hand-written motion on the project's motion language. | — |
 | 4 | [Motion AI Kit (skill + docs MCP)](https://motion.dev/docs/ai-kit) | 1 | agent | Motion's own free skill (best practices, perf, a11y) + docs search MCP. design-infra decides WHAT; this knows HOW. | — |
@@ -41,12 +41,12 @@ node /tmp/di.mjs --list        # ranked list   ·   --tier 3   ·   --only motio
 
 The router: ranked catalog, design systems, playbooks, taste memory and the @oc registry. Every other tool is chosen through it. **Use:** Always. plan_ui for pages, propose_options for one component, search_components for pieces.
 
-- registry `@design-infra` → `https://design-infra.vercel.app/r/{name}.json`
+- registry `@design-infra` → `https://www.owencoonahan.xyz/design-infra/r/{name}.json`
 - project MCP `design-infra` (.mcp.json)
 - manual: `claude plugin marketplace add OwenCoonahan/design-infra --scope project && claude plugin install design-infra@oc-design --scope project`
 - agent note
 - agent note
-- verify: `curl -sf https://design-infra.vercel.app/api/setup >/dev/null`
+- verify: `curl -sf https://www.owencoonahan.xyz/design-infra/api/setup >/dev/null`
 
 ### 2. shadcn/ui CLI + MCP + skill
 

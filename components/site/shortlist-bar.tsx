@@ -7,6 +7,7 @@ import * as React from "react"
 
 import { comparePath } from "@/lib/catalog/compare-path"
 import { agentMessage, type HandoffItem } from "@/lib/catalog/handoff"
+import { sitePath } from "@/lib/config"
 import { copyText, shortlist, useShortlist, type ShortlistItem } from "@/lib/shortlist"
 
 /** Fetch current install instructions and integration notes, including for saved shortlists. */
@@ -14,7 +15,7 @@ async function withInstalls(items: ShortlistItem[]): Promise<HandoffItem[]> {
   const batches = []
   for (let i = 0; i < items.length; i += 24) batches.push(items.slice(i, i + 24))
   const found = (await Promise.all(batches.map(async (batch) => {
-    const res = await fetch(`/api/entries?ids=${batch.map((i) => encodeURIComponent(i.id)).join(",")}`)
+    const res = await fetch(sitePath(`/api/entries?ids=${batch.map((i) => encodeURIComponent(i.id)).join(",")}`))
     if (!res.ok) throw new Error("Could not load component details. Try again.")
     return await res.json() as (HandoffItem & { found: boolean })[]
   }))).flat()

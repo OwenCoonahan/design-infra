@@ -1,4 +1,4 @@
-import { NAMESPACE } from "@/lib/config"
+import { NAMESPACE, sitePath } from "@/lib/config"
 import { readFile } from "node:fs/promises"
 import path from "node:path"
 
@@ -50,7 +50,7 @@ export default async function RegistryPage() {
                   </div>
                   {i.description ? <p className="mt-1 text-xs text-muted-foreground">{i.description}</p> : null}
                 </div>
-                <a href={`/r/${i.name}.json`} className="font-mono text-xs text-muted-foreground hover:text-foreground">
+                <a href={sitePath(`/r/${i.name}.json`)} className="font-mono text-xs text-muted-foreground hover:text-foreground">
                   /r/{i.name}.json
                 </a>
               </li>

@@ -647,21 +647,21 @@ var toolchain_default = {
       tier: 1,
       rank: 1,
       track: "foundation",
-      docs: "https://design-infra.vercel.app",
+      docs: "https://www.owencoonahan.xyz/design-infra",
       why: "The router: ranked catalog, design systems, playbooks, taste memory and the @oc registry. Every other tool is chosen through it.",
       use: "Always. plan_ui for pages, propose_options for one component, search_components for pieces.",
       setup: [
         {
           kind: "registry",
           namespace: "@oc",
-          url: "https://design-infra.vercel.app/r/{name}.json"
+          url: "https://www.owencoonahan.xyz/design-infra/r/{name}.json"
         },
         {
           kind: "mcp",
           name: "design-infra",
           config: {
             type: "http",
-            url: "https://design-infra.vercel.app/mcp"
+            url: "https://www.owencoonahan.xyz/design-infra/mcp"
           }
         },
         {
@@ -679,7 +679,7 @@ var toolchain_default = {
           text: "Follow ./DESIGN.md (moods, motion language, tokens). Theme tokens only \u2014 no hard-coded colours."
         }
       ],
-      verify: "curl -sf https://design-infra.vercel.app/api/setup >/dev/null"
+      verify: "curl -sf https://www.owencoonahan.xyz/design-infra/api/setup >/dev/null"
     },
     {
       id: "shadcn",
@@ -1219,7 +1219,7 @@ var toolchain_default = {
 
 // design-infra.config.json
 var design_infra_config_default = {
-  siteUrl: "https://design-infra.vercel.app",
+  siteUrl: "https://www.owencoonahan.xyz/design-infra",
   repository: "OwenCoonahan/design-infra",
   namespace: "@design-infra",
   legacyNamespaces: ["@oc"]
@@ -1228,17 +1228,19 @@ var design_infra_config_default = {
 // lib/config.ts
 function resolveSettings(input2) {
   const url2 = new URL(input2.siteUrl);
-  if (!/^https?:$/.test(url2.protocol) || url2.username || url2.password || url2.search || url2.hash || url2.pathname !== "/") throw new Error("siteUrl must be an HTTP(S) origin");
+  if (!/^https?:$/.test(url2.protocol) || url2.username || url2.password || url2.search || url2.hash || !/^\/(?:[a-z0-9_-]+\/)*[a-z0-9_-]*$/i.test(url2.pathname)) throw new Error("siteUrl must be an HTTP(S) URL with an optional plain path");
   if (!/^[\w.-]+\/[\w.-]+$/.test(input2.repository)) throw new Error("repository must be owner/name");
   if (![input2.namespace, ...input2.legacyNamespaces].every((n) => /^@[a-z0-9-]+$/.test(n))) throw new Error("invalid registry namespace");
-  return { ...input2, siteUrl: url2.origin, repositoryUrl: `https://github.com/${input2.repository}` };
+  const basePath = url2.pathname.replace(/\/$/, "");
+  return { ...input2, siteUrl: `${url2.origin}${basePath}`, basePath, repositoryUrl: `https://github.com/${input2.repository}` };
 }
 var config = resolveSettings({ ...design_infra_config_default, siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? design_infra_config_default.siteUrl });
 var SITE_URL = config.siteUrl;
 var REPOSITORY_URL = config.repositoryUrl;
 var NAMESPACE = config.namespace;
+var BASE_PATH = config.basePath;
 function configureText(text, target = config) {
-  return text.replaceAll("https://design-infra.vercel.app", target.siteUrl).replaceAll("https://github.com/OwenCoonahan/design-infra", target.repositoryUrl).replaceAll("OwenCoonahan/design-infra", target.repository).replaceAll("@oc/", `${target.namespace}/`);
+  return text.replaceAll(design_infra_config_default.siteUrl, "https://design-infra.vercel.app").replaceAll("https://design-infra.vercel.app", target.siteUrl).replaceAll("https://github.com/OwenCoonahan/design-infra", target.repositoryUrl).replaceAll("OwenCoonahan/design-infra", target.repository).replaceAll("@oc/", `${target.namespace}/`);
 }
 function configureData(value, target = config) {
   return JSON.parse(configureText(JSON.stringify(value), target).replaceAll('"@oc"', JSON.stringify(target.namespace)));

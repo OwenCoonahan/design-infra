@@ -5,8 +5,10 @@
  * public/thumbnails, so rewrite them to a root-relative path — that way they also display in
  * local dev and preview deployments before the files reach production.
  */
-const LOCAL_THUMBNAIL = /^https?:\/\/[^/]+(\/thumbnails\/[a-z0-9-]+\/[a-z0-9-]+\.webp)$/
+import { sitePath } from "./config"
+
+const LOCAL_THUMBNAIL = /^https?:\/\/[^/]+(?:\/[a-z0-9_-]+)*(\/thumbnails\/[a-z0-9-]+\/[a-z0-9-]+\.webp)$/i
 
 export function previewSrc(url: string) {
-  return LOCAL_THUMBNAIL.exec(url)?.[1] ?? url
+  return sitePath(LOCAL_THUMBNAIL.exec(url)?.[1] ?? url)
 }

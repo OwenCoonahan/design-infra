@@ -1,10 +1,12 @@
+import { sitePath } from "../lib/config"
+import { galleryBase } from "./lib/gallery-base"
 import assert from "node:assert/strict"
 import { existsSync, mkdirSync } from "node:fs"
 import { parseArgs } from "node:util"
 import puppeteer from "puppeteer-core"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
-const base = new URL(values.base!).origin
+const base = galleryBase(values.base!)
 const executablePath = process.env.CHROME_PATH ?? ["/usr/bin/google-chrome", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"].find(existsSync)
 if (!executablePath) throw new Error("Set CHROME_PATH to Chrome's executable")
 
@@ -28,7 +30,7 @@ async function main() {
   page.on("pageerror", (error) => errors.push(String(error)))
   page.on("console", (message) => { if (message.type() === "error" && /hydration|hydrated|React error/i.test(message.text())) errors.push(message.text()) })
   try {
-    await browser.defaultBrowserContext().overridePermissions(base, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
+    await browser.defaultBrowserContext().overridePermissions(new URL(base).origin, ["clipboard-read", "clipboard-write", "clipboard-sanitized-write"])
     // Observe real carousel intervals without accelerating their two-second delay.
     await page.evaluateOnNewDocument(`
       window.__requestTimers = new Set();
@@ -141,7 +143,7 @@ async function main() {
     assert.ok(frames.some((frame) => frame.id === "loading" && frame.opacity > 0 && frame.opacity < 1 && frame.y < 0), "outgoing question fades and slides up")
     assert.ok(frames.some((frame) => frame.id === "navigation" && frame.opacity > 0 && frame.opacity < 1 && frame.y > 0), "incoming question fades and settles into place")
     for (const frame of frames) {
-      assert.equal(frame.href, frame.id === "loading" ? expected[0][1] : expected[1][1])
+      assert.equal(frame.href, sitePath(frame.id === "loading" ? expected[0][1] : expected[1][1]))
       assert.match(frame.text, frame.id === "loading" ? /Find a loading component/ : /Make this navbar/)
       assert.ok(Math.abs(frame.height - frames[0].height) < 1, "card stays steady during transition")
     }
@@ -171,7 +173,7 @@ async function main() {
 
     for (let index = 0; index < expected.length; index++) {
       await select(index)
-      assert.equal(await page.$eval(`${root} [data-request-link]`, (element) => element.getAttribute("href")), expected[index][1])
+      assert.equal(await page.$eval(`${root} [data-request-link]`, (element) => element.getAttribute("href")), sitePath(expected[index][1]))
       assert.equal(await page.$$eval(`${root} [aria-label="Choose an example"] button[aria-pressed="true"]`, (elements) => elements.length), 1)
       const response = await page.evaluate(async (url) => ({ status: (await fetch(url)).status }), base + expected[index][1])
       assert.equal(response.status, 200, expected[index][1])

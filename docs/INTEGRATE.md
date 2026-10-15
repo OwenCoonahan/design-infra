@@ -4,10 +4,10 @@ Use design-infra to find existing components, show them live, and install the us
 
 When a local checkout is available, read `design-infra.config.json` first and use its deployment, repository and namespace in the examples below. Hosted copies of these instructions resolve those settings for you. Stable catalog IDs such as `oc/pricing-simple` do not change with the installation namespace.
 
-- Gallery: https://design-infra.vercel.app/components
-- Streamable HTTP MCP: https://design-infra.vercel.app/mcp
-- Registry item: `https://design-infra.vercel.app/r/{name}.json`
-- Human usage guide: https://design-infra.vercel.app/guide
+- Gallery: https://www.owencoonahan.xyz/design-infra/components
+- Streamable HTTP MCP: https://www.owencoonahan.xyz/design-infra/mcp
+- Registry item: `https://www.owencoonahan.xyz/design-infra/r/{name}.json`
+- Human usage guide: https://www.owencoonahan.xyz/design-infra/guide
 - Source: https://github.com/OwenCoonahan/design-infra
 
 ## 1. Inspect the project
@@ -16,14 +16,14 @@ Read its agent instructions, package manifest, lockfile, existing components, st
 
 ## 2. Connect the catalog
 
-Prefer the agent client's supported MCP configuration. Use its current documentation and merge a server named `design-infra` with URL `https://design-infra.vercel.app/mcp` and HTTP transport into the appropriate configuration. Client configuration formats differ: `.mcp.json` is not universal. Keep existing servers. No design-infra API key is required.
+Prefer the agent client's supported MCP configuration. Use its current documentation and merge a server named `design-infra` with URL `https://www.owencoonahan.xyz/design-infra/mcp` and HTTP transport into the appropriate configuration. Client configuration formats differ: `.mcp.json` is not universal. Keep existing servers. No design-infra API key is required.
 
 ### Claude Code and Codex
 
 Download and inspect the hosted bootstrap, then run a minimal connection from this project's root:
 
 ```bash
-curl -fsSL https://design-infra.vercel.app/bootstrap.mjs -o /tmp/di.mjs
+curl -fsSL https://www.owencoonahan.xyz/design-infra/bootstrap.mjs -o /tmp/di.mjs
 node /tmp/di.mjs --connect --client claude-code
 # For Codex instead:
 node /tmp/di.mjs --connect --client codex
@@ -34,30 +34,30 @@ node /tmp/di.mjs --connect --client codex
 For manual **Claude Code** configuration, merge this into the project's `.mcp.json`:
 
 ```json
-{ "mcpServers": { "design-infra": { "type": "http", "url": "https://design-infra.vercel.app/mcp" } } }
+{ "mcpServers": { "design-infra": { "type": "http", "url": "https://www.owencoonahan.xyz/design-infra/mcp" } } }
 ```
 
-Or use `claude mcp add --transport http --scope project design-infra https://design-infra.vercel.app/mcp`. Restart the session, approve the project MCP server if prompted, and use `/mcp` to inspect availability. [Claude Code MCP documentation](https://code.claude.com/docs/en/mcp).
+Or use `claude mcp add --transport http --scope project design-infra https://www.owencoonahan.xyz/design-infra/mcp`. Restart the session, approve the project MCP server if prompted, and use `/mcp` to inspect availability. [Claude Code MCP documentation](https://code.claude.com/docs/en/mcp).
 
 For manual **Codex** configuration, merge this into `.codex/config.toml`:
 
 ```toml
 [mcp_servers.design-infra]
-url = "https://design-infra.vercel.app/mcp"
+url = "https://www.owencoonahan.xyz/design-infra/mcp"
 ```
 
-Codex loads project configuration for trusted projects. Restart/trust this project as appropriate; use `codex mcp list` and call search_components in the active agent to verify. User-level configuration is also available through `codex mcp add design-infra --url https://design-infra.vercel.app/mcp`; it connects all your projects, so prefer project configuration for a pilot. [Official Codex MCP documentation](https://learn.chatgpt.com/docs/extend/mcp?surface=cli).
+Codex loads project configuration for trusted projects. Restart/trust this project as appropriate; use `codex mcp list` and call search_components in the active agent to verify. User-level configuration is also available through `codex mcp add design-infra --url https://www.owencoonahan.xyz/design-infra/mcp`; it connects all your projects, so prefer project configuration for a pilot. [Official Codex MCP documentation](https://learn.chatgpt.com/docs/extend/mcp?surface=cli).
 
-For **Cursor**, `--connect --client cursor` writes `.cursor/mcp.json`, preserving other servers. The server is `{ "url": "https://design-infra.vercel.app/mcp" }` under `mcpServers.design-infra`. Enable it in the client and verify a tool; this path is not an end-to-end Cursor certification. [Cursor MCP documentation](https://cursor.com/docs/context/mcp).
+For **Cursor**, `--connect --client cursor` writes `.cursor/mcp.json`, preserving other servers. The server is `{ "url": "https://www.owencoonahan.xyz/design-infra/mcp" }` under `mcpServers.design-infra`. Enable it in the client and verify a tool; this path is not an end-to-end Cursor certification. [Cursor MCP documentation](https://cursor.com/docs/context/mcp).
 
 If MCP configuration is unavailable or needs a restart, use the HTTP endpoints now. URL-encode query values:
 
 ```text
-GET https://design-infra.vercel.app/api/search?q=clean%20pricing&limit=5
-GET https://design-infra.vercel.app/api/options?component=button&request=subtle%20hover
-GET https://design-infra.vercel.app/api/plan?brief=a%20clean%20SaaS%20landing%20page
-GET https://design-infra.vercel.app/api/entries?ids=oc%2Fpricing-simple
-GET https://design-infra.vercel.app/api/setup
+GET https://www.owencoonahan.xyz/design-infra/api/search?q=clean%20pricing&limit=5
+GET https://www.owencoonahan.xyz/design-infra/api/options?component=button&request=subtle%20hover
+GET https://www.owencoonahan.xyz/design-infra/api/plan?brief=a%20clean%20SaaS%20landing%20page
+GET https://www.owencoonahan.xyz/design-infra/api/entries?ids=oc%2Fpricing-simple
+GET https://www.owencoonahan.xyz/design-infra/api/setup
 ```
 
 These APIs return catalog metadata, choices, and installation guidance. They do not install anything. Do not claim MCP is active merely because you saved a configuration file: call a tool in the active session or report that restart is required and verify HTTP access instead.
@@ -72,10 +72,10 @@ Merge the following into the project's existing AGENTS.md, CLAUDE.md, or the age
 Before writing new UI, search design-infra for existing components and patterns.
 Use MCP search_components / propose_options for a component, or plan_ui for a page.
 For pasted links or screenshots, inspect the reference and follow
-https://design-infra.vercel.app/reference/raw; use match_reference with observed patterns.
+https://www.owencoonahan.xyz/design-infra/reference/raw; use match_reference with observed patterns.
 For "replace this section", inspect its code and propose distinct replacement approaches.
-If MCP is unavailable, use https://design-infra.vercel.app/api/search?q=<encoded need>
-and the setup instructions at https://design-infra.vercel.app/integrate/raw.
+If MCP is unavailable, use https://www.owencoonahan.xyz/design-infra/api/search?q=<encoded need>
+and the setup instructions at https://www.owencoonahan.xyz/design-infra/integrate/raw.
 Show 3–5 relevant options with gallery/live links and a compare link; recommend one.
 Wait for a pick unless the user already authorized you to choose and build.
 For new pages inspect plan_ui research.sources; for replacements inspect section references.
@@ -93,9 +93,9 @@ If there is no DESIGN.md, record the project's existing typography, colors, spac
 
 For a connection-only starting prompt, verify setup and ask what the user wants to build or change. Invite a screenshot, link or component path. Do not invent an improvement, install a component or change the UI just because the catalog was connected. Continue an actual task already supplied by the user without asking them to repeat it.
 
-Pasted website/component URLs, screenshots, and requests to replace an existing section are core workflows. Follow [Build from a reference, or replace a section](https://design-infra.vercel.app/reference/raw). Inspect the reference or current section first, then match real reusable parts and show examples. The catalog does not fetch arbitrary reference URLs or analyse images itself; the project agent uses its own browser/image tools.
+Pasted website/component URLs, screenshots, and requests to replace an existing section are core workflows. Follow [Build from a reference, or replace a section](https://www.owencoonahan.xyz/design-infra/reference/raw). Inspect the reference or current section first, then match real reusable parts and show examples. The catalog does not fetch arbitrary reference URLs or analyse images itself; the project agent uses its own browser/image tools.
 
-Search the full catalog. The tested starter collection at https://design-infra.vercel.app/api/starter is an optional first shelf when it fits the need, not the limit of available components. Its check dates and scope are evidence, not a universal compatibility guarantee.
+Search the full catalog. The tested starter collection at https://www.owencoonahan.xyz/design-infra/api/starter is an optional first shelf when it fits the need, not the limit of available components. Its check dates and scope are evidence, not a universal compatibility guarantee.
 
 Choose structure from the project's purpose and tasks separately from visual feeling. `plan_ui` supports `landing`, `dashboard`, `data`, `editorial`, `docs`, `commerce`, `ai-app`, `auth-onboarding` and `portfolio`; pass explicit `page_types` when reference-site wording might confuse detection. A data product needs filters, date ranges, charts, records, source/freshness and data states rather than marketing sections. Existing theme presets are legacy options for explicit selection. Preserve the brand; derive a new system from inspected references and a working composition instead of mapping "clean" to a fixed theme.
 
@@ -120,7 +120,7 @@ This saves only the official `https://api.mobbin.com/mcp` URL alongside design-i
 Sources: [Mobbin MCP access and endpoint](https://mobbin.com/mcp.md), [Claude Code OAuth](https://code.claude.com/docs/en/mcp#authenticate-with-remote-mcp-servers), [Codex MCP](https://learn.chatgpt.com/docs/extend/mcp?surface=cli).
 
 Share a compare link using comma-separated catalog IDs, for example:
-https://design-infra.vercel.app/compare?ids=oc/pricing-simple,smoothui/pricing-1
+https://www.owencoonahan.xyz/design-infra/compare?ids=oc/pricing-simple,smoothui/pricing-1
 
 Some vendor sites prevent embedding: open their live link in a new tab. A demo link alone does not verify a component installation. Wait for the user's pick unless they already asked you to choose and implement.
 
@@ -133,7 +133,7 @@ For our own `@design-infra` blocks, inspect the existing `components.json`. If t
 ```json
 {
   "registries": {
-    "@design-infra": "https://design-infra.vercel.app/r/{name}.json"
+    "@design-infra": "https://www.owencoonahan.xyz/design-infra/r/{name}.json"
   }
 }
 ```
@@ -166,7 +166,7 @@ For future UI requests, use the connected tools and the same workflow. Pasted re
 
 People can browse, shortlist, compare, and copy choices to an agent without a plugin. Shortlists are stored in their browser; compare URLs are shareable. Shared saved collections, separate taste profiles, and automatic account syncing are not yet available. Current favorites are shared catalog recommendations.
 
-For feedback, include the user's query, component ID, search/compare URL, project stack, and actual outcome. Use https://design-infra.vercel.app/feedback to copy a report without GitHub access; collaborators can also use issue templates. Share feedback only when requested. Never include private source or vendor secrets.
+For feedback, include the user's query, component ID, search/compare URL, project stack, and actual outcome. Use https://www.owencoonahan.xyz/design-infra/feedback to copy a report without GitHub access; collaborators can also use issue templates. Share feedback only when requested. Never include private source or vendor secrets.
 
 ### Visual component galleries
 
