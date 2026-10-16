@@ -1,4 +1,3 @@
-import { sitePath } from "../lib/config"
 import { galleryBase } from "./lib/gallery-base"
 import assert from "node:assert/strict"
 import { existsSync, mkdirSync } from "node:fs"
@@ -13,6 +12,7 @@ declare global {
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
 const base = galleryBase(values.base!)
+const fieldPage = `${base}/preview/oc/kinetic-field?surface=neutral`
 const executablePath = process.env.CHROME_PATH ?? ["/usr/bin/google-chrome", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"].find(existsSync)
 if (!executablePath) throw new Error("Set CHROME_PATH to Chrome's executable")
 const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -58,7 +58,9 @@ async function main() {
   }
   try {
     await page.setViewport({ width: 1440, height: 1100 })
-    await page.goto(base, { waitUntil: "networkidle2" })
+    await page.goto(fieldPage, { waitUntil: "networkidle2" })
+    await page.evaluate(() => { const spacer = document.createElement("div"); spacer.style.height = "2000px"; document.body.append(spacer) })
+    await page.$eval("[data-kinetic-field]", (element) => element.scrollIntoView({ block: "center" }))
     await state("playing")
     await page.waitForFunction(() => window.__fieldProbe.frames > 4)
     const sample = await page.evaluate(() => window.__fieldProbe.marks)
@@ -112,9 +114,8 @@ async function main() {
     }
     await page.click('button[aria-label="Play motion"]')
     await state("playing")
-    await page.click(`nav a[href="${sitePath("/guide")}"]`)
-    await page.waitForFunction((path) => location.pathname === path && !document.querySelector("[data-kinetic-field]"), {}, sitePath("/guide"))
-    // A delivered observer notification can outlive DOM removal and effect cleanup.
+    await page.$eval("[data-kinetic-field]", (element) => element.remove())
+    // Delivered observer/animation callbacks must tolerate a detached canvas.
     assert.ok((await page.evaluate("window.__fieldResizeCallbacks.length") as number) > 0)
     await page.evaluate("window.__fieldResizeCallbacks.forEach(callback => callback())")
     await still()
@@ -129,7 +130,7 @@ async function main() {
     }
     const fallback = await browser.newPage()
     await fallback.evaluateOnNewDocument(`HTMLCanvasElement.prototype.getContext = function() { return null; }`)
-    await fallback.goto(base, { waitUntil: "networkidle2" })
+    await fallback.goto(fieldPage, { waitUntil: "networkidle2" })
     await fallback.waitForSelector('[data-motion-state="fallback"]')
     assert.equal(await fallback.$eval("[data-kinetic-field] svg", (svg) => getComputedStyle(svg).visibility), "visible")
     assert.equal(await fallback.$eval('button[aria-label="Pause motion"]', (button) => getComputedStyle(button).visibility), "hidden")
@@ -139,14 +140,13 @@ async function main() {
     assert.equal(await fallback.$eval("[data-kinetic-field] svg", (svg) => getComputedStyle(svg).visibility), "visible")
     await fallback.close()
     assert.deepEqual(errors, [])
-    console.log("✓ motion header: real drawing, pointer influence, shapes, keyboard, pause/play, offscreen/visibility/unmount cleanup, queued resize callbacks, reduced motion, responsive layout, all themes and Canvas/JS fallback")
+    console.log("✓ kinetic field: real drawing, pointer influence, shapes, keyboard, pause/play, offscreen/visibility cleanup, detached-canvas callbacks, reduced motion, responsive layout, all themes and Canvas/JS fallback")
   } finally { await browser.close() }
   const touchBrowser = await puppeteer.launch({ executablePath, args: ["--no-sandbox", "--disable-dev-shm-usage"] })
   try {
     const touch = await touchBrowser.newPage()
     await touch.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true })
-    await touch.goto(base, { waitUntil: "networkidle2" })
-    await touch.waitForSelector('[data-kinetic-field][data-motion-state="offscreen"]')
+    await touch.goto(fieldPage, { waitUntil: "networkidle2" })
     await touch.$eval("[data-kinetic-field]", (element) => element.scrollIntoView({ block: "center" }))
     await touch.waitForSelector('[data-kinetic-field][data-motion-state="paused"]')
     await touch.locator('button[aria-label="Play motion"]').click()

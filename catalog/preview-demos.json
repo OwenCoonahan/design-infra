@@ -316,6 +316,47 @@
         "license": "MIT",
         "copyright": "design-infra contributors"
       }
+    },
+    "smoothui/dither-chart": {
+      "adapter": "showcase",
+      "width": 640,
+      "height": 420,
+      "provenance": {
+        "source": "https://smoothui.dev/r/dither-chart.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/dither-chart.tsx",
+        "sha256": "71987c7e1c0504765b51f70bb9eb043af0b71be1f1e1ae1bdf1e00ffa5a6bfa6"
+      }
+    },
+    "smoothui/progressive-blur": {
+      "adapter": "showcase",
+      "width": 640,
+      "height": 460,
+      "provenance": {
+        "source": "https://smoothui.dev/r/progressive-blur.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/progressive-blur.tsx",
+        "sha256": "f3ea901aa2fc2dd666eac2916a2e0362019e651bd4badc5484efac92de4d5c12"
+      }
+    },
+    "smoothui/dot-morph-button": {
+      "adapter": "showcase",
+      "width": 520,
+      "height": 320,
+      "provenance": {
+        "source": "https://smoothui.dev/r/dot-morph-button.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/dot-morph-button.tsx",
+        "sha256": "4b3a37ac3d15099702daf77cbd72071bb2ceba39fa18a213781e10475ece4875",
+        "dependencies": [
+          {
+            "source": "https://smoothui.dev/r/smooth-button.json",
+            "local": "components/demos/vendor/smoothui/smooth-button.tsx",
+            "sha256": "83da495287ae60981701bd46e12c18431d683a4420dc0782c793f750d3c5e4a5",
+            "license": "MIT"
+          }
+        ]
+      }
     }
   }
 }

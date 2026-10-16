@@ -35,10 +35,10 @@ async function main() {
     const composition = await page.evaluate(() => {
       const introduction = document.querySelector("[data-hero-introduction]")!.getBoundingClientRect()
       const playground = document.querySelector("[data-hero-playground]")!.getBoundingClientRect()
-      const canvas = document.querySelector("[data-hero-playground] canvas")!.getBoundingClientRect()
-      return { left: introduction.x, right: playground.x, width: canvas.width, height: canvas.height }
+      const scene = document.querySelector("[data-scene-plane]")!.getBoundingClientRect()
+      return { left: introduction.x, right: playground.x, width: scene.width, height: scene.height }
     })
-    assert.ok(composition.left < composition.right && composition.width > 500 && Math.abs(composition.width - composition.height) < 1, "desktop pairs left-hand copy with a large square playground")
+    assert.ok(composition.left < composition.right && composition.width > 500 && Math.abs(composition.height / composition.width - 1.08) < 0.03, "desktop pairs left-hand copy with a large component scene")
     assert.match(await page.$eval("#use-with-agent", (element) => element.textContent!), /Use it in your project[\s\S]*Setup & connection details[\s\S]*What to ask/)
     await page.locator('button ::-p-text(More)').click()
     assert.ok(await page.$(`[role="menuitem"][href="${sitePath("/design-systems")}"]`))

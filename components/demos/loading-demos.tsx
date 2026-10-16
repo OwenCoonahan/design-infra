@@ -22,7 +22,7 @@ const orbStates: OrbState[] = [
   "breathing",
   "shaping",
 ]
-export function LoadingDemo({ id }: { id: string }) {
+export function LoadingDemo({ id, compact = false }: { id: string; compact?: boolean }) {
   const [orb, setOrb] = React.useState<OrbState>("searching")
   const [ai, setAi] = React.useState<AILoaderVariant>("dots")
   const [motion, setMotion] = React.useState<MotionLoaderVariant>("orbit")
@@ -116,8 +116,8 @@ export function LoadingDemo({ id }: { id: string }) {
     case "smoothui/grid-loader":
       example = (
         <div className="flex gap-10">
-          <GridLoader pattern="checkerboard" size="lg" />
-          <GridLoader pattern="border" mode="sequence" size="lg" />
+          <GridLoader pattern="checkerboard" size="lg" color={compact ? "#ffa674" : undefined} />
+          {!compact ? <GridLoader pattern="border" mode="sequence" size="lg" /> : null}
         </div>
       )
       break
@@ -156,8 +156,8 @@ export function LoadingDemo({ id }: { id: string }) {
       return null
   }
   return (
-    <div className="flex min-h-[360px] flex-col items-center justify-center gap-8 px-8 py-6">
-      <div className="flex min-h-44 items-center justify-center">{example}</div>
+    <div className={`flex flex-col items-center justify-center ${compact ? "min-h-screen gap-2 px-3 py-2" : "min-h-[360px] gap-8 px-8 py-6"}`}>
+      <div className={`flex items-center justify-center ${compact ? "" : "min-h-44"}`}>{example}</div>
       {controls}
     </div>
   )

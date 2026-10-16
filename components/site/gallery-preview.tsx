@@ -13,6 +13,9 @@ type Player = {
   toggle: () => void
 }
 const PlaybackContext = React.createContext<Player | null>(null)
+export function useGalleryMotion() {
+  return React.useContext(PlaybackContext)?.enabled ?? false
+}
 export function GalleryPlayback({ children }: { children: React.ReactNode }) {
   const [candidates, setCandidates] = React.useState<PlaybackCandidate[]>([])
   const [enabled, setEnabled] = React.useState(true)
@@ -57,7 +60,7 @@ export function GalleryPlayback({ children }: { children: React.ReactNode }) {
 export function PlaybackControls() {
   const player = React.useContext(PlaybackContext)!
   return (
-    <button type="button" className="rounded-lg border px-3 py-1.5 text-xs" onClick={player.toggle}>
+    <button type="button" className="min-h-11 rounded-lg border px-3 py-1.5 text-xs" onClick={player.toggle}>
       {player.enabled ? "Pause all" : "Resume all"}
     </button>
   )
@@ -70,19 +73,26 @@ export function GalleryPreview({
   descriptor,
   poster,
   order,
+  presentation = "gallery",
+  responsive = false,
+  minHeight = 0,
 }: {
   id: string
   title: string
   descriptor: PreviewDescriptor
   poster?: string
   order: number
+  /** Scene cards are immediately usable; catalog cards retain opt-in interaction. */
+  presentation?: "gallery" | "scene"
+  responsive?: boolean
+  minHeight?: number
 }) {
   const player = React.useContext(PlaybackContext)!
   const { visible, intent } = player
   const box = React.useRef<HTMLDivElement>(null)
   const frame = React.useRef<HTMLIFrameElement>(null)
   const [width, setWidth] = React.useState(0)
-  const [interact, setInteract] = React.useState(false)
+  const [interact, setInteract] = React.useState(presentation === "scene")
   const [failed, setFailed] = React.useState(false)
   const [ready, setReady] = React.useState(false)
   const moving = descriptor.kind !== "static"
@@ -136,7 +146,7 @@ export function GalleryPreview({
   }, [playing, descriptor.kind, id, intent])
   const playPause = () => {
     setReady(false)
-    setInteract(false)
+    setInteract(presentation === "scene")
     intent(id, playing ? "pause" : "play")
   }
   const label = PREVIEW_LABELS[descriptor.kind]
@@ -148,7 +158,7 @@ export function GalleryPreview({
         data-preview-kind={descriptor.kind}
         data-playing={playing}
         className="relative overflow-hidden border-b bg-[#141414]"
-        style={{ aspectRatio: descriptor.kind === "interactive" ? descriptor.width / descriptor.height : 16 / 10 }}
+        style={{ aspectRatio: descriptor.kind === "interactive" ? descriptor.width / descriptor.height : 16 / 10, minHeight: minHeight || undefined }}
       >
         {poster ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -170,9 +180,9 @@ export function GalleryPreview({
             sandbox="allow-scripts allow-same-origin"
             className="absolute top-0 left-0 border-0"
             style={{
-              width: descriptor.width,
-              height: descriptor.height,
-              transform: `scale(${width / descriptor.width})`,
+              width: responsive ? width : descriptor.width,
+              height: responsive ? Math.max(minHeight, width * descriptor.height / descriptor.width) : descriptor.height,
+              transform: responsive ? undefined : `scale(${width / descriptor.width})`,
               transformOrigin: "top left",
               pointerEvents: interact ? "auto" : "none",
               opacity: ready ? 1 : 0,
@@ -197,20 +207,20 @@ export function GalleryPreview({
           />
         ) : null}
       </div>
-      <div className="flex min-h-11 flex-wrap items-center gap-2 border-b px-3 py-2 text-[11px] text-muted-foreground">
-        <span className="mr-auto">{failed ? "Preview unavailable · source link below" : label}</span>
+      <div className={`flex min-h-11 flex-wrap items-center gap-2 px-3 py-1 text-[11px] text-muted-foreground ${presentation === "gallery" ? "border-b" : ""}`}>
+        <span className="mr-auto">{failed ? presentation === "scene" ? "Preview unavailable" : "Preview unavailable · source link below" : presentation === "scene" ? "Try it live" : label}</span>
         {moving && !failed ? (
           <>
-            <span aria-live="polite">{playing ? "Playing" : "Paused"}</span>
+            {presentation === "gallery" ? <span aria-live="polite">{playing ? "Playing" : "Paused"}</span> : null}
             <button
               type="button"
               onClick={playPause}
               aria-label={`${playing ? "Pause" : "Play"} ${title}`}
-              className="rounded border px-2 py-1 text-foreground"
+              className="min-h-11 min-w-11 rounded border px-2 py-1 text-foreground"
             >
               {playing ? "Pause" : "Play"}
             </button>
-            {playing ? (
+            {playing && presentation === "gallery" ? (
               <button
                 type="button"
                 onClick={() => setInteract(!interact)}

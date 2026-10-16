@@ -3,11 +3,16 @@ import Link from "next/link"
 
 import { AgentStart } from "@/components/site/agent-start"
 import { RequestExamples } from "@/components/site/request-examples"
+import { ComponentScene, type HomeExample } from "@/components/site/component-scene"
+import { HomeShowcase } from "@/components/site/home-showcase"
+import { GalleryPlayback, PlaybackControls } from "@/components/site/gallery-preview"
 import { Button } from "@/components/ui/button"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
-import { REPOSITORY_URL, sitePath } from "@/lib/config"
+import { BASE_PATH, REPOSITORY_URL, sitePath } from "@/lib/config"
 import { getCatalog, getSources } from "@/lib/data"
-import { KineticField } from "@/registry/oc/blocks/kinetic-field/kinetic-field"
+import { hostedPreview } from "@/lib/catalog/previews"
+import { previewSrc } from "@/lib/thumbnails"
+import { entryPage } from "@/lib/catalog/links"
 
 export const metadata = {
   title: "Find better components. Build better UI.",
@@ -24,8 +29,17 @@ const STEPS = [
 export default async function Home() {
   const [catalog, sources] = await Promise.all([getCatalog(), getSources()])
   const components = catalog.filter((entry) => entry.kind === "component" || entry.kind === "block").length
+  const example = (id: string, name: string, type: string, hero = false): HomeExample => {
+    const entry = catalog.find((entry) => entry.id === id)!
+    const descriptor = hostedPreview(id)!
+    return { id, name, type, href: new URL(entryPage(id)).pathname.slice(BASE_PATH.length), poster: entry.preview ? previewSrc(entry.preview) : undefined,
+      descriptor: hero ? { ...descriptor, src: `${descriptor.src}&presentation=hero`, width: id.endsWith("dither-chart") ? 600 : 400, height: id.endsWith("dither-chart") ? 390 : 200 } : id.endsWith("progressive-blur") ? { ...descriptor, height: 520 } : descriptor }
+  }
+  const scene = [example("smoothui/dither-chart", "Dither chart", "Data, with texture", true), example("smoothui/dot-morph-button", "Dot morph button", "A little feedback", true), example("smoothui/grid-loader", "Grid loader", "Worth the wait", true)]
+  const featured = [example("smoothui/progressive-blur", "Progressive blur", "Surface · SmoothUI"), example("smoothui/motion-loader", "Motion loader", "Motion · SmoothUI"), example("oc/beam-card", "Beam card", "A little emphasis · Design Infra"), example("oc/kinetic-field", "Kinetic field", "Interactive · Design Infra")]
   return (
     <div className="mx-auto max-w-7xl px-6">
+      <GalleryPlayback>
       <section className="home-motion-hero grid items-center gap-8 border-b py-10 lg:grid-cols-[1fr_1.15fr] lg:gap-12 lg:py-12">
         <div className="min-w-0 lg:py-8" data-hero-introduction>
           <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">An open source design toolkit for your coding agent</p>
@@ -39,10 +53,12 @@ export default async function Home() {
           </div>
         </div>
         <div className="min-w-0" data-hero-playground>
-          <KineticField accent="var(--site-motion-accent)" layout="square" />
-          <Link href="/components/oc/kinetic-field" className="mt-2 inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Use this effect <ArrowRight className="size-3" aria-hidden="true" /></Link>
+          <ComponentScene examples={scene} />
+          <div className="mt-4 flex items-center justify-between gap-3"><Link href="/components?view=live" className="inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Find these components <ArrowRight className="size-3" aria-hidden="true" /></Link><PlaybackControls /></div>
         </div>
       </section>
+
+      <HomeShowcase examples={featured} />
 
       <section id="how-it-works" aria-labelledby="steps-title" className="scroll-mt-24 border-b py-14 lg:py-20">
         <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">From an idea to working UI</p>
@@ -82,6 +98,7 @@ export default async function Home() {
           ))}
         </ul>
       </section>
+      </GalleryPlayback>
 
       <footer className="flex flex-wrap items-center justify-between gap-4 py-8 text-sm text-muted-foreground">
         <p>Browse. Try it in a project. Help make the next search better.</p>

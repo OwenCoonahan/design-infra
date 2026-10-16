@@ -178,6 +178,102 @@
     "live": "https://www.velaenergy.ai/"
   },
   {
+    "id": "smoothui/dither-chart",
+    "source": "smoothui",
+    "name": "dither-chart",
+    "title": "Dither Chart",
+    "description": "A DitherChart component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [
+      "retro",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dither-chart",
+    "docs": "https://smoothui.dev/docs/components/dither-chart",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/smoothui/dither-chart.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user singled out the dither chart as an interesting component to feature on the homepage. Use the real pixelated data visualization with selectable chart styles and clearly labeled sample data. — Pixelated Canvas charts with line, donut, bar and other data shapes. Good for distinctive dashboards and product illustrations; keep its data text alternative, label demo data and provide controls outside the canvas. Hosted local demo preserves the upstream component and install command.",
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "canvas",
+        "motion"
+      ],
+      "cost": "high",
+      "reducedMotion": true
+    },
+    "live": "https://smoothui.dev/docs/components/dither-chart"
+  },
+  {
+    "id": "smoothui/progressive-blur",
+    "source": "smoothui",
+    "name": "progressive-blur",
+    "title": "Progressive Blur",
+    "description": "A ProgressiveBlur component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "scroll-effect"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/progressive-blur",
+    "docs": "https://smoothui.dev/docs/components/progressive-blur",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/smoothui/progressive-blur.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user wants more interesting live homepage examples and shared this surface effect. Show it over a scrollable UI with readable controls outside the blur; it is a static surface effect, not a loading animation. — Layered CSS backdrop blur for fading scroll-container edges and decorative surfaces. It is not a loader or a continuous animation. Keep text, focus targets and controls outside the strongest blur; the decorative overlay must not intercept interaction. Hosted demo includes a real scroll container and blur controls.",
+    "demo": false,
+    "integration": "wrapper",
+    "appliesTo": [
+      "image",
+      "carousel",
+      "card"
+    ],
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "live": "https://smoothui.dev/docs/components/progressive-blur"
+  },
+  {
     "id": "aceternity/multi-level-features-with-illustrations",
     "source": "aceternity",
     "name": "multi-level-features-with-illustrations",
@@ -10982,6 +11078,58 @@
       "reducedMotion": true
     },
     "live": "https://smoothui.dev/docs/components/coverflow-carousel"
+  },
+  {
+    "id": "smoothui/dot-morph-button",
+    "source": "smoothui",
+    "name": "dot-morph-button",
+    "title": "Dot Morph Button",
+    "description": "A DotMorphButton component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "button"
+    ],
+    "tags": [
+      "button",
+      "dot",
+      "morph",
+      "hover",
+      "spring",
+      "complexity-low",
+      "reduced-motion"
+    ],
+    "moods": [
+      "refined",
+      "playful"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/dot-morph-button",
+    "docs": "https://smoothui.dev/docs/components/dot-morph-button",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/smoothui/dot-morph-button.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Small tactile hover feedback on a real button. Use a clear action label and actual click feedback; keep the dot decorative and preserve reduced-motion behavior. Hosted demo uses the upstream SmoothButton dependency locally.",
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "state",
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "live": "https://smoothui.dev/docs/components/dot-morph-button"
   },
   {
     "id": "smoothui/floating-navbar",
@@ -102559,52 +102707,6 @@
     "live": "https://smoothui.dev/docs/components/dialog"
   },
   {
-    "id": "smoothui/dither-chart",
-    "source": "smoothui",
-    "name": "dither-chart",
-    "title": "Dither Chart",
-    "description": "A DitherChart component for SmoothUI.",
-    "kind": "component",
-    "categories": [
-      "chart"
-    ],
-    "tags": [
-      "spring",
-      "complexity-medium"
-    ],
-    "moods": [
-      "retro",
-      "refined",
-      "playful"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @smoothui/dither-chart",
-    "docs": "https://smoothui.dev/docs/components/dither-chart",
-    "dependencies": [
-      "motion"
-    ],
-    "curated": false,
-    "favorite": false,
-    "demo": false,
-    "appliesTo": [
-      "chart"
-    ],
-    "integration": "drop-in",
-    "motion": {
-      "triggers": [
-        "enter"
-      ],
-      "intensity": "medium",
-      "technique": [
-        "canvas",
-        "motion"
-      ],
-      "cost": "high",
-      "reducedMotion": true
-    },
-    "live": "https://smoothui.dev/docs/components/dither-chart"
-  },
-  {
     "id": "smoothui/dither-image",
     "source": "smoothui",
     "name": "dither-image",
@@ -102692,56 +102794,6 @@
       "reducedMotion": true
     },
     "live": "https://smoothui.dev/docs/components/dock"
-  },
-  {
-    "id": "smoothui/dot-morph-button",
-    "source": "smoothui",
-    "name": "dot-morph-button",
-    "title": "Dot Morph Button",
-    "description": "A DotMorphButton component for SmoothUI.",
-    "kind": "component",
-    "categories": [
-      "button"
-    ],
-    "tags": [
-      "button",
-      "dot",
-      "morph",
-      "hover",
-      "spring",
-      "complexity-low",
-      "reduced-motion"
-    ],
-    "moods": [
-      "refined",
-      "playful"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @smoothui/dot-morph-button",
-    "docs": "https://smoothui.dev/docs/components/dot-morph-button",
-    "dependencies": [
-      "motion"
-    ],
-    "curated": false,
-    "favorite": false,
-    "demo": false,
-    "appliesTo": [
-      "button"
-    ],
-    "integration": "drop-in",
-    "motion": {
-      "triggers": [
-        "state",
-        "hover"
-      ],
-      "intensity": "medium",
-      "technique": [
-        "motion"
-      ],
-      "cost": "medium",
-      "reducedMotion": true
-    },
-    "live": "https://smoothui.dev/docs/components/dot-morph-button"
   },
   {
     "id": "smoothui/drawer",
@@ -107212,52 +107264,6 @@
       "reducedMotion": true
     },
     "live": "https://smoothui.dev/docs/components/product-card"
-  },
-  {
-    "id": "smoothui/progressive-blur",
-    "source": "smoothui",
-    "name": "progressive-blur",
-    "title": "Progressive Blur",
-    "description": "A ProgressiveBlur component for SmoothUI.",
-    "kind": "component",
-    "categories": [
-      "scroll-effect"
-    ],
-    "tags": [
-      "spring",
-      "complexity-medium"
-    ],
-    "moods": [
-      "refined",
-      "playful"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @smoothui/progressive-blur",
-    "docs": "https://smoothui.dev/docs/components/progressive-blur",
-    "dependencies": [
-      "motion"
-    ],
-    "curated": false,
-    "favorite": false,
-    "demo": false,
-    "appliesTo": [
-      "image",
-      "carousel",
-      "card"
-    ],
-    "integration": "wrapper",
-    "motion": {
-      "triggers": [
-        "enter"
-      ],
-      "intensity": "subtle",
-      "technique": [
-        "motion"
-      ],
-      "cost": "medium",
-      "reducedMotion": true
-    },
-    "live": "https://smoothui.dev/docs/components/progressive-blur"
   },
   {
     "id": "smoothui/radial-circles-transition",

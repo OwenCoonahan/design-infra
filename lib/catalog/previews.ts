@@ -14,7 +14,7 @@ export const previewDemos = manifest.demos as Record<
     adapter: string
     width: number
     height: number
-    provenance: { source: string; license: string; local?: string; sha256?: string }
+    provenance: { source: string; license: string; local?: string; sha256?: string; dependencies?: { source: string; license: string; local: string; sha256: string }[] }
   }
 >
 export function hostedPreview(id: string) {
