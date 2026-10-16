@@ -42,6 +42,15 @@ Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes 
 
 ## Install selected components
 
+beUI is indexed separately by access:
+
+| Source | Current use | Guide |
+| --- | --- | --- |
+| [beUI](https://beui.dev/) | Free MIT components, controls, charts and agent UI | [Install and integration notes](catalog/sources/beui.md) |
+| [beUI Pro](https://pro.beui.dev/) | Paid, link-only upgrade references; excluded from default results | [Future access](catalog/sources/beui-pro.md) |
+
+We use free libraries during the pilot. Paid libraries are future options; purchase intent does not enable paid installs or recommendations automatically.
+
 Our `@design-infra` blocks use React, Tailwind 4 and shadcn tokens. Merge the registry into an existing compatible components.json:
 
 ```json

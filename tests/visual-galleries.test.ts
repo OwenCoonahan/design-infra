@@ -73,6 +73,7 @@ test("link-only policy wins even if an entry has video, thumbnail or an allowed 
     ["originkit", "metered", "component"],
     ["aceternity", "paid", "block"],
     ["inspiration", "free", "inspiration"],
+    ["beui-pro", "paid", "block"],
   ] as const) {
     assert.equal(
       previewDescriptor({

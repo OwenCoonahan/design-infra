@@ -8,6 +8,7 @@
  * never upstream source code. Run `pnpm catalog` afterwards to rebuild catalog/index.json.
  */
 import { anatomyFigures } from "../lib/catalog/anatomy"
+import { beuiRegistryItems } from "../lib/catalog/beui"
 import { mkdir, writeFile } from "node:fs/promises"
 import path from "node:path"
 
@@ -779,7 +780,33 @@ const anatomy: Adapter = async () => {
   }))
 }
 
+const beui: Adapter = async () => {
+  const [registry, catalog] = await Promise.all([
+    getJson("https://beui.dev/r/registry.json"),
+    getJson("https://beui.dev/r"),
+  ])
+  const groups: Record<string, Category[]> = {
+    "image-viewer": ["image"], "number": ["stats"], "scroll-animation": ["scroll-effect"],
+    "range-slider": ["input"], "loading-states": ["loader", "agent-ui"], "voice-orb": ["illustration", "agent-ui"],
+    "pull-to-refresh": ["loader"], "shared-layout-bg": ["background"], "action-swap": ["transition"],
+    "text-animation": ["text-effect"], "knockout-bracket": ["dashboard"], "not-found": ["empty-state"],
+    "feedback-widget": ["form"], "table": ["table"],
+  }
+  return beuiRegistryItems(registry, catalog).map((item) => {
+    const inferred = inferCategories(item.group, [], EXTRA_NAME_RULES)
+    const categories: Category[] = item.section === "charts" ? ["chart"] : groups[item.group]
+      ?? (item.section === "agents" ? [...new Set<Category>(["agent-ui", ...inferred.filter((category) => category !== "misc")])] : inferred)
+    return {
+      id: `beui/${item.name}`, source: "beui", name: item.name, title: item.title, description: item.description,
+      kind: item.type === "registry:block" ? "block" : kindFor(categories), categories,
+      access: "free", install: `npx shadcn@latest add @beui/${item.name}`, docs: item.docs, live: item.docs,
+      dependencies: item.dependencies, tags: ["react", "tailwind-v4", "motion", item.section],
+    }
+  })
+}
+
 const ADAPTERS: Record<string, Adapter> = {
+  beui,
   anatomy,
   motion,
   aceternity,

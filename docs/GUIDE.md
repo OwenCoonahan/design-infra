@@ -71,6 +71,8 @@ Compare relevant products, identify what fits the current project's tasks and br
 
 ## Improve it as you use it
 
+The pilot currently uses free libraries. Paid collections, including beUI Pro, can be recorded for future purchases; they stay opt-in and require confirmed licensed access before installation. The independent free beUI library is available now.
+
 Try one real project at a time. Keep a short note when search misses, a live link fails, installation needs a fix, or a component works particularly well. Use the **Component feedback** issue template on GitHub if you have repository access, or send the note to the maintainer:
 
 ```text

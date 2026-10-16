@@ -34,6 +34,7 @@ node /tmp/di.mjs --list        # ranked list   ·   --tier 3   ·   --only motio
 | 21 | [Motion+ (premium components + MCP)](https://motion.dev/plus) | 4 | paid | Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 460+ example sources. | `MOTION_PLUS` |
 | 22 | [transitions.dev Pro](https://transitions.dev) | 4 | paid | React/TS variants of every recipe plus Pro transitions. | `TRANSITIONS_LICENSE` |
 | 23 | [Anatomy (isometric explainer skill)](https://skills.wheresryan.sh/anatomy) | 3 | agent | Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first. | — |
+| 24 | [beUI (free)](https://beui.dev/) | 3 | components | Free animated controls, charts and agent surfaces with a public MIT registry. Separate from Beautiful UI and the paid beUI Pro collection. | — |
 
 ## Tier 1 — Foundation — always
 
@@ -189,6 +190,12 @@ Specialist illustration tool for interactive explanations of mechanisms and tech
 - run: `DISABLE_TELEMETRY=1 npx -y skills@latest add wheresryan22/anatomy --skill anatomy -a claude-code codex -y`
 - agent note
 - verify: `test -f .agents/skills/anatomy/SKILL.md`
+
+### 24. beUI (free)
+
+Free animated controls, charts and agent surfaces with a public MIT registry. Separate from Beautiful UI and the paid beUI Pro collection. **Use:** Choose compatible React 19/Tailwind 4 components as needed. Preserve the project theme; map missing surface tokens. Pro stays opt-in until licensed access is confirmed.
+
+- registry `@beui` → `https://beui.dev/r/{name}.json`
 
 ## Tier 4 — Paid / metered / keyed
 
