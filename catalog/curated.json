@@ -3982,7 +3982,7 @@
   {
     "id": "smoothui/card-swipe-deck",
     "curated": true,
-    "notes": "Tinder-style swipe deck: drag past a threshold or press \u2190/\u2192 to commit; Like/Nope stamps and tinted washes fade in with the drag; imperative swipeLeft/swipeRight/reset handle; aria-live announcements; reduced-motion aware. Like uses text-green from SmoothUI's tokens.json, Nope uses text-destructive; the heavy inline card shadow is tuned for light backgrounds. Labels are props.",
+    "notes": "Tinder-style swipe deck: drag past a threshold or press \u2190/\u2192 to commit; Like/Nope stamps and tinted washes fade in with the drag; imperative swipeLeft/swipeRight/reset handle; aria-live announcements; reduced-motion aware. Like uses text-green from SmoothUI's tokens.json, Nope uses text-destructive; the heavy inline card shadow is tuned for light backgrounds. Labels are props. Hosted demo supplies original artwork, explicit pass/keep/reset controls and a visible result.",
     "themeAware": true,
     "moods": [
       "playful",
@@ -4722,5 +4722,47 @@
       "playful"
     ],
     "notes": "Small tactile hover feedback on a real button. Use a clear action label and actual click feedback; keep the dot decorative and preserve reduced-motion behavior. Hosted demo uses the upstream SmoothButton dependency locally."
+  },
+  {
+    "id": "smoothui/pixel-brush-canvas",
+    "notes": "Keyboard-operable pixel art editor with drawing, color selection and undo. Hosted demo uses original small artwork; useful for creative tools and playful interactions.",
+    "moods": [
+      "playful",
+      "retro",
+      "experimental"
+    ],
+    "categories": [
+      "image"
+    ],
+    "appliesTo": [
+      "image"
+    ],
+    "motion": {
+      "triggers": [
+        "cursor",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas",
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    }
+  },
+  {
+    "id": "smoothui/scrubber",
+    "notes": "Design-tool slider with drag and arrow-key input. Hosted demo maps its value to a tile\u2019s corner radius and rotation so the effect is immediately visible.",
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "categories": [
+      "input"
+    ],
+    "appliesTo": [
+      "input"
+    ]
   }
 ]

@@ -357,6 +357,39 @@
           }
         ]
       }
+    },
+    "smoothui/pixel-brush-canvas": {
+      "adapter": "showcase",
+      "width": 400,
+      "height": 320,
+      "provenance": {
+        "source": "https://smoothui.dev/r/pixel-brush-canvas.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/pixel-brush-canvas.tsx",
+        "sha256": "3e6ceafad7d4478e71235d68c02da003cf8fbdbb2d278c253faec1b363df5c30"
+      }
+    },
+    "smoothui/scrubber": {
+      "adapter": "showcase",
+      "width": 400,
+      "height": 300,
+      "provenance": {
+        "source": "https://smoothui.dev/r/scrubber.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/scrubber.tsx",
+        "sha256": "855d1a0bccc224c59808ff62a125fbd7e8af452b9c4a4f70a214217739fde0cc"
+      }
+    },
+    "smoothui/card-swipe-deck": {
+      "adapter": "showcase",
+      "width": 640,
+      "height": 520,
+      "provenance": {
+        "source": "https://smoothui.dev/r/card-swipe-deck.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/smoothui/card-swipe-deck.tsx",
+        "sha256": "9f0dbc0a609dfbf4d550357ef5110a323e7a61c3574c0913148a40d16826b907"
+      }
     }
   }
 }

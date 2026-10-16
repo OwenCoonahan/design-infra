@@ -1,5 +1,53 @@
 [
   {
+    "id": "oc/beam-card",
+    "source": "oc",
+    "name": "beam-card",
+    "title": "Beam card",
+    "description": "Theme-aware card wrapped in libraries.dev's animated border beam — for the one 'live' thing on screen.",
+    "kind": "component",
+    "categories": [
+      "card",
+      "agent-ui"
+    ],
+    "tags": [
+      "oc",
+      "librariesdev/border-beam"
+    ],
+    "moods": [
+      "futuristic",
+      "playful"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @design-infra/beam-card",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/oc/beam-card.webp",
+    "dependencies": [
+      "border-beam"
+    ],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user explicitly asked to keep Beam Card in the homepage examples while replacing the underwhelming loader. Retain its subtle beam emphasis.",
+    "themeAware": true,
+    "demo": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "card",
+      "agent-ui"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/beam-card"
+  },
+  {
     "id": "oc/feature-levels",
     "source": "oc",
     "name": "feature-levels",
@@ -46,6 +94,57 @@
       "reducedMotion": false
     },
     "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/feature-levels"
+  },
+  {
+    "id": "oc/kinetic-field",
+    "source": "oc",
+    "name": "kinetic-field",
+    "title": "Kinetic field",
+    "description": "Original cursor-reactive particle sculpture with Orbit, Wave and Sphere forms, free Motion springs, pause/play, an SVG fallback and offscreen cleanup. Theme-aware Canvas 2D; no GPU or Motion+ requirement.",
+    "kind": "component",
+    "categories": [
+      "background",
+      "3d"
+    ],
+    "tags": [
+      "oc"
+    ],
+    "moods": [
+      "technical",
+      "playful",
+      "refined"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @design-infra/kinetic-field",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/oc/kinetic-field.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": true,
+    "notes": "♥ The user explicitly asked to keep Kinetic Field in the homepage examples. Retain its pointer-responsive particle forms and controls.",
+    "themeAware": true,
+    "demo": true,
+    "integration": "drop-in",
+    "appliesTo": [
+      "background",
+      "hero"
+    ],
+    "motion": {
+      "triggers": [
+        "loop",
+        "cursor",
+        "state"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "canvas",
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/kinetic-field"
   },
   {
     "id": "inspiration/breakthrough-energy",
@@ -403,53 +502,6 @@
       "dashboard"
     ],
     "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/app-shell"
-  },
-  {
-    "id": "oc/beam-card",
-    "source": "oc",
-    "name": "beam-card",
-    "title": "Beam card",
-    "description": "Theme-aware card wrapped in libraries.dev's animated border beam — for the one 'live' thing on screen.",
-    "kind": "component",
-    "categories": [
-      "card",
-      "agent-ui"
-    ],
-    "tags": [
-      "oc",
-      "librariesdev/border-beam"
-    ],
-    "moods": [
-      "futuristic",
-      "playful"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @design-infra/beam-card",
-    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/oc/beam-card.webp",
-    "dependencies": [
-      "border-beam"
-    ],
-    "curated": true,
-    "favorite": false,
-    "themeAware": true,
-    "demo": true,
-    "integration": "drop-in",
-    "appliesTo": [
-      "card",
-      "agent-ui"
-    ],
-    "motion": {
-      "triggers": [
-        "loop"
-      ],
-      "intensity": "medium",
-      "technique": [
-        "css"
-      ],
-      "cost": "low",
-      "reducedMotion": true
-    },
-    "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/beam-card"
   },
   {
     "id": "oc/chat-thread",
@@ -834,56 +886,6 @@
       "hero"
     ],
     "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/hero-spotlight"
-  },
-  {
-    "id": "oc/kinetic-field",
-    "source": "oc",
-    "name": "kinetic-field",
-    "title": "Kinetic field",
-    "description": "Original cursor-reactive particle sculpture with Orbit, Wave and Sphere forms, free Motion springs, pause/play, an SVG fallback and offscreen cleanup. Theme-aware Canvas 2D; no GPU or Motion+ requirement.",
-    "kind": "component",
-    "categories": [
-      "background",
-      "3d"
-    ],
-    "tags": [
-      "oc"
-    ],
-    "moods": [
-      "technical",
-      "playful",
-      "refined"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @design-infra/kinetic-field",
-    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/oc/kinetic-field.webp",
-    "dependencies": [
-      "motion"
-    ],
-    "curated": true,
-    "favorite": false,
-    "themeAware": true,
-    "demo": true,
-    "integration": "drop-in",
-    "appliesTo": [
-      "background",
-      "hero"
-    ],
-    "motion": {
-      "triggers": [
-        "loop",
-        "cursor",
-        "state"
-      ],
-      "intensity": "medium",
-      "technique": [
-        "canvas",
-        "motion"
-      ],
-      "cost": "medium",
-      "reducedMotion": true
-    },
-    "live": "https://www.owencoonahan.xyz/design-infra/components/design-infra/kinetic-field"
   },
   {
     "id": "oc/logo-cloud",
@@ -11005,12 +11007,13 @@
     "access": "free",
     "install": "npx shadcn@latest add @smoothui/card-swipe-deck",
     "docs": "https://smoothui.dev/docs/components/card-swipe-deck",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/smoothui/card-swipe-deck.webp",
     "dependencies": [
       "motion"
     ],
     "curated": true,
     "favorite": false,
-    "notes": "Tinder-style swipe deck: drag past a threshold or press ←/→ to commit; Like/Nope stamps and tinted washes fade in with the drag; imperative swipeLeft/swipeRight/reset handle; aria-live announcements; reduced-motion aware. Like uses text-green from SmoothUI's tokens.json, Nope uses text-destructive; the heavy inline card shadow is tuned for light backgrounds. Labels are props.",
+    "notes": "Tinder-style swipe deck: drag past a threshold or press ←/→ to commit; Like/Nope stamps and tinted washes fade in with the drag; imperative swipeLeft/swipeRight/reset handle; aria-live announcements; reduced-motion aware. Like uses text-green from SmoothUI's tokens.json, Nope uses text-destructive; the heavy inline card shadow is tuned for light backgrounds. Labels are props. Hosted demo supplies original artwork, explicit pass/keep/reset controls and a visible result.",
     "themeAware": true,
     "demo": false,
     "integration": "drop-in",
@@ -11186,6 +11189,55 @@
     "live": "https://smoothui.dev/docs/components/floating-navbar"
   },
   {
+    "id": "smoothui/pixel-brush-canvas",
+    "source": "smoothui",
+    "name": "pixel-brush-canvas",
+    "title": "Pixel Brush Canvas",
+    "description": "A PixelBrushCanvas component for SmoothUI.",
+    "kind": "component",
+    "categories": [
+      "image"
+    ],
+    "tags": [
+      "spring",
+      "complexity-medium"
+    ],
+    "moods": [
+      "playful",
+      "retro",
+      "experimental"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/pixel-brush-canvas",
+    "docs": "https://smoothui.dev/docs/components/pixel-brush-canvas",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/smoothui/pixel-brush-canvas.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Keyboard-operable pixel art editor with drawing, color selection and undo. Hosted demo uses original small artwork; useful for creative tools and playful interactions.",
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "image"
+    ],
+    "motion": {
+      "triggers": [
+        "cursor",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "canvas",
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "live": "https://smoothui.dev/docs/components/pixel-brush-canvas"
+  },
+  {
     "id": "smoothui/scroll-progress",
     "source": "smoothui",
     "name": "scroll-progress",
@@ -11238,6 +11290,59 @@
       "reducedMotion": true
     },
     "live": "https://smoothui.dev/docs/components/scroll-progress"
+  },
+  {
+    "id": "smoothui/scrubber",
+    "source": "smoothui",
+    "name": "scrubber",
+    "title": "Scrubber",
+    "description": "Design-tool style scrubber slider with animated thumb and built-in label",
+    "kind": "component",
+    "categories": [
+      "input"
+    ],
+    "tags": [
+      "slider",
+      "scrubber",
+      "range",
+      "input",
+      "drag",
+      "design-tool",
+      "spring",
+      "complexity-medium",
+      "reduced-motion"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add @smoothui/scrubber",
+    "docs": "https://smoothui.dev/docs/components/scrubber",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/smoothui/scrubber.webp",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Design-tool slider with drag and arrow-key input. Hosted demo maps its value to a tile’s corner radius and rotation so the effect is immediately visible.",
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "input"
+    ],
+    "motion": {
+      "triggers": [
+        "drag"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium",
+      "reducedMotion": true
+    },
+    "live": "https://smoothui.dev/docs/components/scrubber"
   },
   {
     "id": "smoothui/skeleton-loader",
@@ -106824,51 +106929,6 @@
     "live": "https://smoothui.dev/docs/components/pinned-list"
   },
   {
-    "id": "smoothui/pixel-brush-canvas",
-    "source": "smoothui",
-    "name": "pixel-brush-canvas",
-    "title": "Pixel Brush Canvas",
-    "description": "A PixelBrushCanvas component for SmoothUI.",
-    "kind": "component",
-    "categories": [
-      "3d"
-    ],
-    "tags": [
-      "spring",
-      "complexity-medium"
-    ],
-    "moods": [
-      "retro",
-      "refined",
-      "playful"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @smoothui/pixel-brush-canvas",
-    "docs": "https://smoothui.dev/docs/components/pixel-brush-canvas",
-    "dependencies": [
-      "motion"
-    ],
-    "curated": false,
-    "favorite": false,
-    "demo": false,
-    "appliesTo": [
-      "3d"
-    ],
-    "integration": "drop-in",
-    "motion": {
-      "triggers": [
-        "cursor"
-      ],
-      "intensity": "expressive",
-      "technique": [
-        "motion"
-      ],
-      "cost": "medium",
-      "reducedMotion": true
-    },
-    "live": "https://smoothui.dev/docs/components/pixel-brush-canvas"
-  },
-  {
     "id": "smoothui/pixel-flow-field",
     "source": "smoothui",
     "name": "pixel-flow-field",
@@ -107867,57 +107927,6 @@
       "reducedMotion": true
     },
     "live": "https://smoothui.dev/docs/components/scrollable-card-stack"
-  },
-  {
-    "id": "smoothui/scrubber",
-    "source": "smoothui",
-    "name": "scrubber",
-    "title": "Scrubber",
-    "description": "Design-tool style scrubber slider with animated thumb and built-in label",
-    "kind": "component",
-    "categories": [
-      "misc"
-    ],
-    "tags": [
-      "slider",
-      "scrubber",
-      "range",
-      "input",
-      "drag",
-      "design-tool",
-      "spring",
-      "complexity-medium",
-      "reduced-motion"
-    ],
-    "moods": [
-      "refined",
-      "playful"
-    ],
-    "access": "free",
-    "install": "npx shadcn@latest add @smoothui/scrubber",
-    "docs": "https://smoothui.dev/docs/components/scrubber",
-    "dependencies": [
-      "motion"
-    ],
-    "curated": false,
-    "favorite": false,
-    "demo": false,
-    "appliesTo": [
-      "misc"
-    ],
-    "integration": "drop-in",
-    "motion": {
-      "triggers": [
-        "drag"
-      ],
-      "intensity": "medium",
-      "technique": [
-        "motion"
-      ],
-      "cost": "medium",
-      "reducedMotion": true
-    },
-    "live": "https://smoothui.dev/docs/components/scrubber"
   },
   {
     "id": "smoothui/sdf-blob-transition",
