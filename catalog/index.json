@@ -5122,6 +5122,45 @@
     "live": "https://www.cult-ui.com/docs/components/texture-button"
   },
   {
+    "id": "inspiration/geometric-identity",
+    "source": "inspiration",
+    "name": "geometric-identity",
+    "title": "Geometric identity studies",
+    "description": "A study of ten user-supplied geometric marks, comparing bold silhouettes with layered line art for favicons, social previews and motion illustrations.",
+    "kind": "inspiration",
+    "categories": [
+      "illustration",
+      "3d",
+      "background"
+    ],
+    "tags": [
+      "inspiration",
+      "other",
+      "brand-identity",
+      "favicon",
+      "social-preview",
+      "open-graph",
+      "geometry",
+      "line-art",
+      "screenshot-study"
+    ],
+    "moods": [
+      "technical",
+      "refined",
+      "experimental"
+    ],
+    "access": "free",
+    "install": "reference only — read inspiration/geometric-identity/README.md (patterns → oc/kinetic-field, smoothui/dither-chart)",
+    "docs": "https://github.com/OwenCoonahan/design-infra/blob/main/inspiration/geometric-identity/README.md",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "The user shared ten screenshots as favicon candidates and asked, \"thoughts on any of these?\" They also want an interesting image when sharing the site. They rejected the generated Loop/Echo/Spring proposals, saying \"nah i dont like these\" and asking for a cool, simple logo that can be sourced online. They selected option B, Phosphor Diamonds Four Fill, for now, asking for a sharp, design-focused museum/gallery feel and possible thin-line treatments.",
+    "demo": false,
+    "appliesTo": [],
+    "live": "https://github.com/OwenCoonahan/design-infra/blob/main/inspiration/geometric-identity/README.md"
+  },
+  {
     "id": "inspiration/linear",
     "source": "inspiration",
     "name": "linear",

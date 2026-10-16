@@ -1,5 +1,7 @@
 # Content and attribution
 
+The Design Infra site mark is Phosphor Icons' **Diamonds Four Fill**, used under MIT (Copyright (c) 2023 Phosphor Icons). The original SVG is in `public/brand/mark.svg`, and the complete notice is in `third-party/phosphor-LICENSE.txt`. Source: https://github.com/phosphor-icons/core/blob/main/assets/fill/diamonds-four-fill.svg. `pnpm brand:build` generates the favicon, touch icon and sharing artwork from that mark; the surrounding layout and contour illustration are original.
+
 The MIT licence in LICENSE covers original design-infra code, blocks and documentation. It does not relicense third-party components, photographs, fonts, trademarks, websites or prompts described by the catalog.
 
 `components/ui/` contains adapted shadcn/ui primitives. Preserve [shadcn/ui's MIT notice](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md) when redistributing them; the full notice is in `third-party/shadcn-LICENSE.txt`. Installed npm dependencies retain their own licences and notices. Fonts are loaded through Next's font support, rather than supplied as freely relicensable assets; check each font's licence before redistribution.

@@ -25,6 +25,34 @@ async function main() {
       assert.equal(new URL(page.url()).pathname, (prefix + path.split("?")[0]) || "/")
       const localPaths = await page.$$eval('a[href^="/"], script[src^="/"], link[href^="/"], img[src^="/"], iframe[src^="/"]', (elements) => elements.map((element) => element.getAttribute("href") ?? element.getAttribute("src")!))
       assert.ok(localPaths.every((path) => !prefix || path === prefix || path.startsWith(`${prefix}/`) || path.startsWith(`${prefix}?`) || path.startsWith(`${prefix}#`)), `unprefixed link or asset on ${path}: ${JSON.stringify(localPaths)}`)
+      if (!path) {
+        const metadata = await page.evaluate(() => ({
+          image: document.querySelector('meta[property="og:image"]')?.getAttribute("content"),
+          twitter: document.querySelector('meta[name="twitter:card"]')?.getAttribute("content"),
+          icons: Array.from(document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]')).map((link) => (link as HTMLLinkElement).href),
+        }))
+        assert.equal(metadata.image, `${config.siteUrl}/brand/share.png`, "sharing image uses the canonical subpath")
+        assert.equal(metadata.twitter, "summary_large_image")
+        for (const format of ["favicon.ico", "icon.svg", "apple-icon.png"]) {
+          assert.ok(metadata.icons.some((url) => new URL(url).pathname.endsWith(`/${format}`)), `${format} is discoverable`)
+        }
+        for (const url of [...metadata.icons, `${base}/brand/share.png`]) {
+          const asset = await fetch(url)
+          assert.equal(asset.status, 200, url)
+          assert.match(asset.headers.get("content-type") ?? "", /^image\//, url)
+          assert.ok((await asset.arrayBuffer()).byteLength > 100, url)
+        }
+        const dimensions = await page.evaluate(async (url) => {
+          const image = new Image()
+          image.src = url
+          await image.decode()
+          return [image.naturalWidth, image.naturalHeight]
+        }, `${base}/brand/share.png`)
+        assert.deepEqual(dimensions, [1200, 630])
+        const bot = await fetch(base, { headers: { "user-agent": "Twitterbot/1.0" } })
+        const html = await bot.text()
+        assert.ok(html.includes(`<meta property="og:image" content="${config.siteUrl}/brand/share.png"`), "link unfurling works without JavaScript")
+      }
     }
     const alias = await page.goto(`${base}/components/oc/agent-status`, { waitUntil: "networkidle2" })
     assert.equal(alias?.status(), 200)
@@ -46,7 +74,7 @@ async function main() {
     assert.equal(mcp.status, 200)
     assert.ok(mcp.text.includes('"name":"design-infra"'))
     assert.deepEqual(errors, [])
-    console.log("✓ hosting: same-domain navigation, prefixed assets/previews, legacy detail alias, APIs, registry, bootstrap, raw instructions and MCP POST")
+    console.log("✓ hosting: same-domain navigation, branded icons, bot-visible sharing image, prefixed assets/previews, legacy detail alias, APIs, registry, bootstrap, raw instructions and MCP POST")
   } finally { await browser.close() }
 }
 

@@ -18,6 +18,7 @@
     "generate": "pnpm tokens && pnpm catalog && pnpm references && pnpm toolchain && pnpm registry:build && pnpm starter:build",
     "check": "pnpm typecheck && tsx scripts/check.ts",
     "capture": "tsx scripts/capture-site.ts",
+    "brand:build": "tsx scripts/build-brand.ts",
     "lookup": "tsx scripts/search.ts",
     "scan-motion": "tsx scripts/scan-motion.ts",
     "toolchain": "tsx scripts/build-toolchain.ts",

@@ -7,7 +7,7 @@ import { ShortlistBar } from "@/components/site/shortlist-bar"
 import { SiteHeader } from "@/components/site/site-header"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
-import { SITE_URL } from "@/lib/config"
+import { SITE_URL, sitePath } from "@/lib/config"
 
 import "./globals.css"
 
@@ -18,6 +18,27 @@ export const metadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}/`),
   title: { default: "design-infra", template: "%s · design-infra" },
   description: "Design systems, curated component catalog and the @design-infra shadcn registry.",
+  // Declare both formats explicitly so subpath deployments retain the ICO fallback.
+  icons: {
+    icon: [
+      { url: sitePath("/favicon.ico?v=diamonds-1"), type: "image/x-icon", sizes: "16x16 32x32 48x48" },
+      { url: sitePath("/icon.svg?v=diamonds-1"), type: "image/svg+xml", sizes: "any" },
+    ],
+    apple: [{ url: sitePath("/apple-icon.png?v=diamonds-1"), type: "image/png", sizes: "180x180" }],
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Design Infra",
+    title: "Design Infra — Good UI starts with better components.",
+    description: "Find real components. Build with Claude Code or Codex.",
+    images: [{ url: `${SITE_URL}/brand/share.png`, width: 1200, height: 630, alt: "Design Infra: Good UI starts with better components. Four geometric diamonds on a dark gallery surface." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Design Infra — Good UI starts with better components.",
+    description: "Find real components. Build with Claude Code or Codex.",
+    images: [`${SITE_URL}/brand/share.png`],
+  },
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
