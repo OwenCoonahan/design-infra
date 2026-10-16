@@ -2,7 +2,6 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 import { AgentStart } from "@/components/site/agent-start"
-import { AmbientSound } from "@/components/site/ambient-sound"
 import { RequestExamples } from "@/components/site/request-examples"
 import { Button } from "@/components/ui/button"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
@@ -41,10 +40,7 @@ export default async function Home() {
         </div>
         <div className="min-w-0" data-hero-playground>
           <KineticField accent="var(--site-motion-accent)" layout="square" />
-          <div className="mt-2 flex flex-wrap items-center justify-between gap-x-5 gap-y-1">
-            <Link href="/components/oc/kinetic-field" className="inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Use this effect <ArrowRight className="size-3" aria-hidden="true" /></Link>
-            <AmbientSound />
-          </div>
+          <Link href="/components/oc/kinetic-field" className="mt-2 inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Use this effect <ArrowRight className="size-3" aria-hidden="true" /></Link>
         </div>
       </section>
 

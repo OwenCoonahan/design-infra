@@ -1,0 +1,212 @@
+{
+  "url": "https://ugccontracts.com/",
+  "slug": "ugc-contracts",
+  "capturedAt": "2026-10-16T15:39:33.359Z",
+  "fullHeightCaptured": 12000,
+  "title": "UGC Contract Template & Generator | UGC Contracts",
+  "description": "Create a UGC contract in minutes. Cover deliverables, payment, usage rights, whitelisting and exclusivity, then send it to the brand to e-sign.",
+  "themeColor": "#ebf2ea",
+  "pageHeight": 13411,
+  "fonts": {
+    "heading": [
+      {
+        "value": "Brand Sans",
+        "weight": 492
+      }
+    ],
+    "body": [
+      {
+        "value": "Iowan Old Style",
+        "weight": 1434
+      },
+      {
+        "value": "Brand Sans",
+        "weight": 312
+      },
+      {
+        "value": "Inter",
+        "weight": 49
+      }
+    ],
+    "ui": [
+      {
+        "value": "Brand Sans",
+        "weight": 232
+      }
+    ],
+    "mono": []
+  },
+  "loadedFontFaces": [
+    "Inter",
+    "Brand Sans"
+  ],
+  "typeScale": [
+    {
+      "value": "13px/500",
+      "weight": 880
+    },
+    {
+      "value": "13px/600",
+      "weight": 300
+    },
+    {
+      "value": "14px/500",
+      "weight": 268
+    },
+    {
+      "value": "9px/500",
+      "weight": 265
+    },
+    {
+      "value": "41px/600",
+      "weight": 180
+    },
+    {
+      "value": "12px/500",
+      "weight": 169
+    },
+    {
+      "value": "11px/600",
+      "weight": 112
+    },
+    {
+      "value": "10px/500",
+      "weight": 50
+    },
+    {
+      "value": "22px/500",
+      "weight": 47
+    },
+    {
+      "value": "11px/500",
+      "weight": 41
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#ebf2ea",
+        "weight": 1946
+      },
+      {
+        "value": "#1f5c3f",
+        "weight": 209
+      },
+      {
+        "value": "#fdfcf7",
+        "weight": 36
+      },
+      {
+        "value": "#ffffff",
+        "weight": 0
+      }
+    ],
+    "text": [
+      {
+        "value": "#14261c",
+        "weight": 1330
+      },
+      {
+        "value": "#1f5c3f",
+        "weight": 573
+      },
+      {
+        "value": "#ebf2ea",
+        "weight": 561
+      },
+      {
+        "value": "#0f2418",
+        "weight": 41
+      },
+      {
+        "value": "#000000",
+        "weight": 8
+      },
+      {
+        "value": "#9b2c2c",
+        "weight": 6
+      }
+    ],
+    "borders": []
+  },
+  "radii": [
+    {
+      "value": "1px",
+      "weight": 25
+    },
+    {
+      "value": "999px",
+      "weight": 5
+    },
+    {
+      "value": "3px",
+      "weight": 1
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(20, 38, 28, 0.12) 0px 0px 0px 0.5px, rgba(20, 38, 28, 0.06) 0px 2px 3px 0px, rgba(20, 38, 28, 0.38) 0px 30px 60px -",
+      "weight": 1
+    },
+    {
+      "value": "rgba(31, 92, 63, 0.12) 0px 0px 0px 1px",
+      "weight": 1
+    }
+  ],
+  "cssVariables": {
+    "--f-font": "\"Brand Sans\",Manrope,system-ui,-apple-system,\"Segoe UI\",sans-serif",
+    "--f-hairline": "rgba(31,92,63,0.14)",
+    "--f-warning": "#7f560c",
+    "--font-inter": "\"Inter\",\"Inter Fallback\"",
+    "--f-muted": "#4f6357",
+    "--f-negative": "#a02a1a",
+    "--f-green": "#1f5c3f",
+    "--f-fill": "rgba(31,92,63,0.08)",
+    "--f-textMuted": "color-mix(in srgb,#4f6357 80%,#0f2418)",
+    "--f-hairlineStrong": "color-mix(in srgb,#1f5c3f 24%,transparent)",
+    "--f-textWarning": "color-mix(in srgb,#7f560c 78%,#0f2418)",
+    "--f-positive": "#2f6b3a",
+    "--f-tintStrong": "color-mix(in srgb,#1f5c3f 13%,transparent)",
+    "--f-paper": "#fbfdfa",
+    "--f-ease": "cubic-bezier(.22,1,.36,1)",
+    "--f-cream": "#ebf2ea",
+    "--f-onGreen": "#ebf2ea",
+    "--f-ink": "#0f2418",
+    "--f-tint": "color-mix(in srgb,#1f5c3f 7%,transparent)",
+    "--f-greenPressed": "#174a32"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "UGC contracts, signed in minutes."
+    },
+    {
+      "tag": "h2",
+      "text": "Now hit record."
+    },
+    {
+      "tag": "h2",
+      "text": "Make something worth signing."
+    },
+    {
+      "tag": "h2",
+      "text": "Good questions."
+    }
+  ],
+  "signals": {
+    "sections": 10,
+    "images": 5,
+    "videos": 0,
+    "canvases": 3,
+    "svgs": 17,
+    "animatedElements": 87,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": true,
+      "framer": false,
+      "webflow": false,
+      "tailwind": false,
+      "gsap": false
+    }
+  }
+}
