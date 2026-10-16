@@ -84,6 +84,7 @@ async function main() {
     await page.screenshot({ path: ".context/home-scene-desktop.png" })
     await page.click('[data-hero-playground] button ::-p-text(Pause all)')
     await page.waitForFunction(() => document.querySelectorAll('[data-gallery-preview] iframe').length === 0)
+    assert.ok(await page.$$eval('[data-scene-card] img', (images) => images.every((image) => getComputedStyle(image).visibility === "visible")), "Pause all restores static examples")
     await page.waitForSelector('[data-scene-active="false"]')
     await page.mouse.move(720, 180)
     await wait(500)
@@ -131,7 +132,9 @@ async function main() {
     await deck.locator('[aria-label="Reset cards"]').click()
     // Explicit playback isolates visibility cleanup from the shared three-frame budget.
     await page.click('[aria-label="Pause Progressive blur"]')
+    assert.equal(await page.$eval('[data-home-example="smoothui/progressive-blur"] img', (image) => getComputedStyle(image).visibility), "visible", "individual pause restores the poster")
     await page.click('[aria-label="Play Progressive blur"]')
+    assert.equal(await page.$eval('[data-home-example="smoothui/progressive-blur"] img', (image) => getComputedStyle(image).visibility), "hidden", "explicit play reveals from the neutral surface too")
     await page.waitForSelector('[data-home-example="smoothui/progressive-blur"] iframe[data-ready="1"]')
     const partialFrame = frame("progressive-blur")
     await page.$eval('[data-home-example="smoothui/progressive-blur"] [data-gallery-preview]', (element) => {
@@ -158,7 +161,8 @@ async function main() {
     await page.$eval('[data-home-example="oc/beam-card"]', (element) => element.scrollIntoView({ block: "center" }))
     const heldBeam = await Promise.race([pendingBeam, wait(10000).then(() => { throw new Error("Returning Beam frame was not requested") })])
     await page.waitForSelector('[data-home-example="oc/beam-card"] iframe')
-    assert.equal(await page.$eval('[data-home-example="oc/beam-card"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a returning demo stays behind its poster until this frame is ready")
+    assert.equal(await page.$eval('[data-home-example="oc/beam-card"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a returning demo stays hidden until this frame is ready")
+    assert.equal(await page.$eval('[data-home-example="oc/beam-card"] img', (image) => getComputedStyle(image).visibility), "hidden", "a delayed returning frame never shows a mismatched screenshot")
     await page.evaluate("window.postMessage({type:'design-infra-preview', status:'ready'}, location.origin)")
     assert.equal(await page.$eval('[data-home-example="oc/beam-card"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "unrecognized message sources cannot expose an unready frame")
     const posterColor = await page.$eval('[data-home-example="oc/beam-card"] img', (image) => {
@@ -203,9 +207,10 @@ async function main() {
     await wait(300)
     assert.equal(await page.$$eval('[data-gallery-preview] iframe', (items) => items.length), 0, "reduced motion starts on posters")
     assert.equal(await page.$eval('[data-component-scene]', (element) => (element as HTMLElement).dataset.sceneActive), "false")
-    assert.ok(await page.$$eval('[data-scene-card] img', (images) => images.length === 3 && images.every((image) => image.complete && image.naturalWidth > 0)), "paused examples have useful generated posters")
+    assert.ok(await page.$$eval('[data-scene-card] img', (images) => images.length === 3 && images.every((image) => image.complete && image.naturalWidth > 0 && getComputedStyle(image).visibility === "visible")), "reduced motion has visible, useful generated posters")
     await page.click('[data-scene-card="smoothui/pixel-brush-canvas"] button ::-p-text(Play)')
     await page.waitForSelector('[data-scene-card="smoothui/pixel-brush-canvas"] iframe[data-ready="1"]')
+    assert.equal(await page.$eval('[data-scene-card="smoothui/pixel-brush-canvas"] img', (image) => getComputedStyle(image).visibility), "hidden", "explicit reduced-motion playback hides its poster")
     assert.equal(await page.$eval('[data-scene-card="smoothui/pixel-brush-canvas"] iframe', (frame) => getComputedStyle(frame).transitionProperty), "none", "reduced motion disables the handoff fade")
     await frame("pixel-brush-canvas").locator('[aria-label="Use lime ink"]').click()
     assert.equal(await frame("pixel-brush-canvas").$eval('[aria-label="Use lime ink"]', (button) => button.getAttribute("aria-pressed")), "true")
@@ -228,16 +233,30 @@ async function main() {
     await failure.waitForSelector('[data-scene-card="smoothui/dither-chart"] iframe')
     await failure.waitForSelector('[data-scene-card="smoothui/dither-chart"] ::-p-text(Preview unavailable)', { timeout: 25000 })
     assert.ok(await failure.$('[data-scene-card="smoothui/dither-chart"] header a'))
-    assert.ok(await failure.$eval('[data-scene-card="smoothui/dither-chart"] img', (image) => (image as HTMLImageElement).naturalWidth > 0))
+    assert.ok(await failure.$eval('[data-scene-card="smoothui/dither-chart"] img', (image) => (image as HTMLImageElement).naturalWidth > 0 && getComputedStyle(image).visibility === "visible"), "failed demos restore a visible poster")
     await failure.setJavaScriptEnabled(false)
     await failure.reload({ waitUntil: "networkidle2" })
     assert.equal(await failure.$$eval('[data-scene-card] header a', (links) => links.length), 3)
     assert.equal(await failure.$$eval('[data-scene-card] img', (images) => images.length), 3)
+    assert.ok(await failure.$$eval('[data-scene-card] img', (images) => images.every((image) => getComputedStyle(image).visibility === "visible")), "no-JavaScript visitors retain the static composition")
     console.log("✓ homepage scene: failed-frame poster/source fallback and useful no-JavaScript composition")
     await failure.close()
 
     const delayed = await browser.newPage()
     await observeHandoffs(delayed)
+    // Watch every parent animation frame, including before hydration. Rect checks
+    // alone miss a differently scaled raster being replaced by stable native UI.
+    await delayed.evaluateOnNewDocument(`(() => {
+      if (top !== self) return;
+      window.__posterFlashes = [];
+      const check = () => {
+        document.querySelectorAll('[data-poster-mode="paused"] > img').forEach((image) => {
+          if (getComputedStyle(image).visibility !== 'hidden') window.__posterFlashes.push(image.alt);
+        });
+        requestAnimationFrame(check);
+      };
+      requestAnimationFrame(check);
+    })()`)
     await delayed.setViewport({ width: 1440, height: 1000 })
     await delayed.setCacheEnabled(false)
     await delayed.setRequestInterception(true)
@@ -255,7 +274,8 @@ async function main() {
     await Promise.race([firstFont, wait(10000).then(() => { throw new Error("No preview font request intercepted") })])
     await delayed.evaluate(async () => { await document.fonts.ready })
     await wait(100)
-    assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a demo stays behind its poster while real font requests are pending")
+    assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a demo stays hidden while real font requests are pending")
+    assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] img', (image) => getComputedStyle(image).visibility), "hidden", "slow fonts do not expose a screenshot before the native layout")
     holdFonts = false
     await Promise.all(fonts.map((request) => request.continue()))
     delayed.off("request", holdFont)
@@ -264,8 +284,19 @@ async function main() {
     await assertStableHandoff(delayed, "smoothui/progressive-blur")
     await delayed.waitForFunction(() => getComputedStyle(document.querySelector('[data-home-example="smoothui/progressive-blur"] iframe')!).opacity === "1")
     assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] iframe', (frame) => getComputedStyle(frame).transitionDuration), "0.2s")
+    for (const width of [1440, 768, 390]) {
+      await delayed.setViewport({ width, height: 1000 })
+      for (const selector of ['[data-home-example="oc/beam-card"]', '[data-component-scene]', '[data-home-example="smoothui/card-swipe-deck"]', '[data-component-scene]']) {
+        await delayed.$eval(selector, (element) => element.scrollIntoView({ block: "center" }))
+        await wait(350)
+        assert.ok(await delayed.$$eval('[data-playing="true"]', (items) => items.length) <= 3)
+        assert.ok(await delayed.$$eval('[data-poster-mode="paused"] > img', (images) => images.length === 7 && images.every((image) => getComputedStyle(image).visibility === "hidden")), `automatic scroll entry/re-entry and budget changes never show posters at ${width}px`)
+      }
+    }
+    const flashes = await delayed.evaluate(() => (window as unknown as { __posterFlashes: string[] }).__posterFlashes)
+    assert.deepEqual(flashes, [], "no screenshot is painted during automatic playback, from first paint through scroll/re-entry and resizing")
     await delayed.close()
-    console.log("✓ homepage handoff: settled initial layout, stable card geometry, real delayed fonts, short reveal fade and reduced-motion override")
+    console.log("✓ homepage handoff: no automatic screenshot swaps from first paint through delayed loads, scrolling both ways, budget changes and responsive resizing; pause/reduced-motion/failure/no-JS posters retained")
   } finally { await browser.close() }
 }
 main().catch((error: unknown) => { console.error(error); process.exitCode = 1 })

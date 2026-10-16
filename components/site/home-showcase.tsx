@@ -13,7 +13,7 @@ export function HomeShowcase({ examples }: { examples: HomeExample[] }) {
     </div>
     <div className="mt-9 grid gap-5 md:grid-cols-2">
       {examples.map((example, i) => <article key={example.id} className="min-w-0 overflow-hidden rounded-xl border bg-[#141414]" data-home-example={example.id}>
-        <GalleryPreview id={`home-showcase:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i + 3} interaction="direct" responsive={example.id.startsWith("smoothui/")} minHeight={example.id === "smoothui/card-swipe-deck" ? 420 : example.id === "smoothui/progressive-blur" ? 360 : 0} />
+        <GalleryPreview id={`home-showcase:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i + 3} interaction="direct" posterMode="paused" responsive={example.id.startsWith("smoothui/")} minHeight={example.id === "smoothui/card-swipe-deck" ? 420 : example.id === "smoothui/progressive-blur" ? 360 : 0} />
         <div className="p-5"><Link href={example.href} className="flex min-h-11 items-center justify-between gap-3 text-lg font-medium underline-offset-4 hover:underline">{example.name}<ArrowUpRight aria-hidden="true" className="size-4 shrink-0" /></Link></div>
       </article>)}
     </div>

@@ -65,7 +65,7 @@ export function ComponentScene({ examples }: { examples: HomeExample[] }) {
       <motion.div data-scene-plane style={{ rotateX, rotateY }} className="grid grid-cols-1 gap-3 sm:relative sm:block sm:aspect-[1/1.08]">
         {examples.map((example, i) => <motion.article key={example.id} data-scene-card={example.id} initial={false} animate={active && entered ? { y: [18 + i * 8, 0], opacity: [0.4, 1] } : { y: 0, opacity: 1 }} transition={{ ...MOTION_TOKENS.lively.spring, delay: active ? i * 0.09 : 0 }} className={`${positions[i]} relative overflow-hidden rounded-xl border border-white/15 bg-[#141414] shadow-[0_18px_55px_-16px_#000c] transition-[box-shadow,border-color] hover:z-20 hover:border-white/30 hover:shadow-[0_24px_70px_-10px_#000] focus-within:z-20`}>
           <header className="flex min-h-10 items-center border-b border-white/10 px-3"><Link href={example.href} className="truncate text-xs font-medium underline-offset-4 hover:underline">{example.name}</Link></header>
-          <GalleryPreview id={`home-scene:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i} presentation="scene" responsive minHeight={i === 0 ? 220 : 232} />
+          <GalleryPreview id={`home-scene:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i} presentation="scene" posterMode="paused" responsive minHeight={i === 0 ? 220 : 232} />
         </motion.article>)}
       </motion.div>
     </div>

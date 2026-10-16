@@ -8,6 +8,8 @@ type Player = {
   active: Set<string>
   candidates: PlaybackCandidate[]
   enabled: boolean
+  preferencesReady: boolean
+  reduced: boolean
   visible: (id: string, order: number, visible: boolean) => void
   intent: (id: string, intent: PlaybackCandidate["intent"]) => void
   toggle: () => void
@@ -20,10 +22,10 @@ export function GalleryPlayback({ children }: { children: React.ReactNode }) {
   const [candidates, setCandidates] = React.useState<PlaybackCandidate[]>([])
   const [enabled, setEnabled] = React.useState(true)
   // Wait for the browser preferences before starting any motion.
-  const [preferences, setPreferences] = React.useState({ reduced: true, hidden: true })
+  const [preferences, setPreferences] = React.useState({ ready: false, reduced: true, hidden: true })
   React.useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
-    const update = () => setPreferences({ reduced: mq.matches, hidden: document.hidden })
+    const update = () => setPreferences({ ready: true, reduced: mq.matches, hidden: document.hidden })
     update()
     mq.addEventListener("change", update)
     document.addEventListener("visibilitychange", update)
@@ -52,7 +54,8 @@ export function GalleryPlayback({ children }: { children: React.ReactNode }) {
   }
   const active = new Set(activePreviews(candidates, enabled, preferences.reduced, preferences.hidden))
   return (
-    <PlaybackContext.Provider value={{ active, candidates, enabled, visible, intent, toggle }}>
+    <PlaybackContext.Provider value={{ active, candidates, enabled, preferencesReady: preferences.ready, reduced: preferences.reduced, visible, intent, toggle }}>
+      <noscript><style>{'[data-poster-mode="paused"] > img { visibility: visible !important; }'}</style></noscript>
       {children}
     </PlaybackContext.Provider>
   )
@@ -104,6 +107,7 @@ export function GalleryPreview({
   interaction = presentation === "scene" ? "direct" : "opt-in",
   responsive = false,
   minHeight = 0,
+  posterMode = "always",
 }: {
   id: string
   title: string
@@ -116,6 +120,8 @@ export function GalleryPreview({
   interaction?: "direct" | "opt-in"
   responsive?: boolean
   minHeight?: number
+  /** Responsive homepage demos reveal from their neutral surface, without a mismatched screenshot swap. */
+  posterMode?: "always" | "paused"
 }) {
   const player = React.useContext(PlaybackContext)!
   const { visible, intent } = player
@@ -125,6 +131,13 @@ export function GalleryPreview({
   const [failed, setFailed] = React.useState(false)
   const moving = descriptor.kind !== "static"
   const playing = moving && !failed && player.active.has(id)
+  const playbackIntent = player.candidates.find((candidate) => candidate.id === id)?.intent
+  // A scaled raster cannot match a responsive native layout. Keep it for deliberate
+  // pauses and fallbacks, never for automatic entry, re-entry or budget changes.
+  // Default hidden during SSR/hydration too; noscript restores the static composition.
+  const showPoster = posterMode === "always" || !moving || failed || (!playing && player.preferencesReady && (
+    playbackIntent === "pause" || (playbackIntent !== "play" && (!player.enabled || player.reduced))
+  ))
   React.useEffect(() => {
     const element = box.current
     if (!element || !moving) return
@@ -156,6 +169,7 @@ export function GalleryPreview({
         data-gallery-preview={id}
         data-preview-kind={descriptor.kind}
         data-playing={playing}
+        data-poster-mode={posterMode}
         className="relative w-full min-w-0 overflow-hidden border-b bg-[#141414]"
         style={{ aspectRatio: descriptor.kind === "interactive" ? descriptor.width / descriptor.height : 16 / 10, minHeight: minHeight || undefined }}
       >
@@ -166,6 +180,7 @@ export function GalleryPreview({
             alt={`${title} preview`}
             loading="lazy"
             className="absolute inset-0 size-full object-contain"
+            style={{ visibility: showPoster ? "visible" : "hidden" }}
           />
         ) : (
           <div className="flex size-full items-center justify-center text-xs text-muted-foreground">{label}</div>
