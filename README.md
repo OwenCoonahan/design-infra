@@ -70,6 +70,10 @@ pnpm dev
 
 Edit **design-infra.config.json** to set the site URL (including an optional path such as `/design-infra`), GitHub repository and registry namespace for your deployment. Run `pnpm generate` afterward. The file drives generated registry dependencies, installation commands, toolchain, bootstrap and hosted guides. NEXT_PUBLIC_SITE_URL is an optional deployment override; regenerate outputs under the same value before building. Existing aliases remain supported.
 
+The site identity uses the MIT Phosphor Diamonds Four mark. `pnpm brand:build` regenerates its favicon, touch icon and sharing image using system Chrome (`CHROME_PATH` can override the executable). Attribution is in [NOTICE.md](NOTICE.md).
+
+The [agent contribution and feedback plan](docs/AGENT-CONTRIBUTIONS.md) describes the proposed usage measurement, timely feedback prompts, scoped taste and reviewed contribution loop. These are planned capabilities; the current `/feedback` page prepares a local report without submitting it.
+
 The public catalog lives at **https://www.owencoonahan.xyz/design-infra**. The personal site forwards this entire path to the independently deployed catalog, preserving the visible URL. Next.js derives `basePath` from the configured site URL; native asset, preview and API paths use the same prefix. Old `design-infra.vercel.app` links continue through method-preserving redirects to the prefixed routes.
 
 Agents reading a local fork: read that settings file first and substitute its values in the examples here and in docs/. Share your own deployment's `/integrate` URL with friends.

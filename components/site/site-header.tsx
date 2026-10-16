@@ -1,6 +1,6 @@
 "use client"
 
-import { REPOSITORY_URL } from "@/lib/config"
+import { REPOSITORY_URL, sitePath } from "@/lib/config"
 
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
@@ -32,7 +32,10 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex min-h-14 max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-6 py-3">
-        <Link href="/" className="font-mono text-sm font-semibold tracking-tight">
+        <Link href="/" className="inline-flex items-center gap-2.5 font-mono text-sm font-semibold tracking-tight">
+          {/* The adjacent wordmark names the link; the geometric mark is decorative. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={sitePath("/brand/mark.svg")} alt="" width={22} height={22} className="size-[22px] invert" />
           design-infra
         </Link>
         <nav aria-label="Main navigation" className="order-3 flex w-full items-center gap-3 whitespace-nowrap text-xs text-muted-foreground sm:order-none sm:w-auto sm:flex-1 sm:gap-5 sm:text-sm">

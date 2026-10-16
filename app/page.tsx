@@ -42,7 +42,7 @@ export default async function Home() {
       <section className="home-motion-hero grid items-center gap-8 border-b py-10 lg:grid-cols-[1fr_1.15fr] lg:gap-12 lg:py-12">
         <div className="min-w-0 lg:py-8" data-hero-introduction>
           <h1 className="max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Find real components. Build with Claude Code or Codex.</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Thousands of components, indexed and ready to build with. Find the right one with your agent.</p>
           <div className="mt-8"><AgentStart /></div>
           <div className="mt-6 flex flex-wrap items-center gap-5">
             <Button asChild variant="outline"><Link href="/components">Explore components <ArrowRight aria-hidden="true" /></Link></Button>

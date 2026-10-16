@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#141414"/>
+  <g fill="#f4f2ec"><svg x="60" y="56" width="38" height="38" viewBox="0 0 256 256"><path d="M82.34,69.66a8,8,0,0,1,0-11.32l40-40a8,8,0,0,1,11.32,0l40,40a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32,0Zm51.32,76.68a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0,0-11.32Zm104-24-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,237.66,122.34Zm-128,0-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,109.66,122.34Z"/></svg></g>
+  <g fill="#f4f2ec" font-family="Arial, Helvetica, sans-serif">
+  <text x="112" y="85" font-size="28" letter-spacing="-1">design-infra</text>
+  <text x="60" y="239" font-size="72" font-weight="600" letter-spacing="-3"><tspan x="60">Good UI starts</tspan><tspan x="60" dy="82">with better</tspan><tspan x="60" dy="82">components.</tspan></text>
+  <text x="62" y="534" font-size="23" fill="#a6a49f">Find real components.</text>
+  <text x="62" y="568" font-size="23" fill="#a6a49f">Build with Claude Code or Codex.</text>
+  </g>
+  <g transform="translate(743 117)" fill="none" stroke="#65635f" stroke-width="1">
+  <path d="M200 0 400 200 200 400 0 200Z"/>
+  <path d="M200 24 376 200 200 376 24 200Z"/>
+  <path d="M200 48 352 200 200 352 48 200Z"/>
+  <path d="M200 72 328 200 200 328 72 200Z"/>
+  </g>
+  <svg x="795" y="169" width="296" height="296" viewBox="0 0 256 256" fill="#f4f2ec"><path d="M82.34,69.66a8,8,0,0,1,0-11.32l40-40a8,8,0,0,1,11.32,0l40,40a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32,0Zm51.32,76.68a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0,0-11.32Zm104-24-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,237.66,122.34Zm-128,0-40-40a8,8,0,0,0-11.32,0l-40,40a8,8,0,0,0,0,11.32l40,40a8,8,0,0,0,11.32,0l40-40A8,8,0,0,0,109.66,122.34Z"/></svg>
+  </svg>
