@@ -15,7 +15,11 @@ async function main() {
     const page = await browser.newPage()
     await observeHandoffs(page)
     const errors: string[] = []
+    let fontAsset: string | undefined
     page.on("pageerror", (error) => errors.push(String(error)))
+    page.on("requestfinished", (request) => {
+      if (!fontAsset && request.resourceType() === "font") fontAsset = request.url()
+    })
     await page.setViewport({ width: 1440, height: 1000 })
     await page.goto(base, { waitUntil: "networkidle2" })
     const readyScene = () => page.waitForFunction(() => document.querySelectorAll('[data-scene-card] iframe[data-ready="1"]').length === 3)
@@ -244,6 +248,18 @@ async function main() {
 
     const delayed = await browser.newPage()
     await observeHandoffs(delayed)
+    // Parent and iframe font requests can coalesce even with the HTTP cache off.
+    // A distinct real font request in the child's FontFaceSet makes this check
+    // independent of shared font caches and unrelated, unused preload requests.
+    assert.ok(fontAsset, "the page loaded a real hosted font asset")
+    const delayedFont = new URL(fontAsset)
+    delayedFont.searchParams.set("preview-readiness-check", "1")
+    await delayed.evaluateOnNewDocument((url) => {
+      if (!location.pathname.includes("/preview/smoothui/progressive-blur")) return
+      const face = new FontFace("Preview readiness check", `url(${JSON.stringify(url)})`)
+      document.fonts.add(face)
+      void face.load().catch(() => {})
+    }, delayedFont.href)
     // Watch every parent animation frame, including before hydration. Rect checks
     // alone miss a differently scaled raster being replaced by stable native UI.
     await delayed.evaluateOnNewDocument(`(() => {
@@ -265,7 +281,7 @@ async function main() {
     let receiveFont!: () => void
     const firstFont = new Promise<void>((resolve) => { receiveFont = resolve })
     const holdFont = (request: HTTPRequest) => {
-      if (holdFonts && request.resourceType() === "font" && request.frame()?.url().includes("/preview/smoothui/progressive-blur?")) { fonts.push(request); receiveFont() }
+      if (holdFonts && request.resourceType() === "font" && request.url() === delayedFont.href) { fonts.push(request); receiveFont() }
       else void request.continue()
     }
     delayed.on("request", holdFont)
@@ -274,6 +290,9 @@ async function main() {
     await Promise.race([firstFont, wait(10000).then(() => { throw new Error("No preview font request intercepted") })])
     await delayed.evaluate(async () => { await document.fonts.ready })
     await wait(100)
+    const loadingFrame = delayed.frames().find((frame) => frame.url().includes("/preview/smoothui/progressive-blur?"))
+    assert.ok(loadingFrame)
+    assert.equal(await loadingFrame.evaluate(() => document.fonts.status), "loading", "the delayed request actually blocks the child's font readiness")
     assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a demo stays hidden while real font requests are pending")
     assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] img', (image) => getComputedStyle(image).visibility), "hidden", "slow fonts do not expose a screenshot before the native layout")
     holdFonts = false
