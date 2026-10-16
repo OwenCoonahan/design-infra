@@ -10,7 +10,8 @@ type Player = {
   enabled: boolean
   preferencesReady: boolean
   reduced: boolean
-  visible: (id: string, order: number, visible: boolean) => void
+  hidden: boolean
+  visible: (id: string, order: number, visible: boolean, visibility?: number) => void
   intent: (id: string, intent: PlaybackCandidate["intent"]) => void
   toggle: () => void
 }
@@ -34,13 +35,13 @@ export function GalleryPlayback({ children }: { children: React.ReactNode }) {
       document.removeEventListener("visibilitychange", update)
     }
   }, [])
-  const visible = React.useCallback((id: string, order: number, visible: boolean) => {
+  const visible = React.useCallback((id: string, order: number, visible: boolean, visibility = 0) => {
     setCandidates((previous) => {
       const existing = previous.find((c) => c.id === id)
-      if (existing?.visible === visible && existing.order === order) return previous
+      if (existing?.visible === visible && existing.order === order && existing.visibility === visibility) return previous
       return existing
-        ? previous.map((c) => (c.id === id ? { ...c, visible, order } : c))
-        : [...previous, { id, order, visible, intent: "auto", requested: 0 }]
+        ? previous.map((c) => (c.id === id ? { ...c, visible, visibility, order } : c))
+        : [...previous, { id, order, visible, visibility, intent: "auto", requested: 0 }]
     })
   }, [])
   const intent = React.useCallback((id: string, intent: PlaybackCandidate["intent"]) => {
@@ -54,7 +55,7 @@ export function GalleryPlayback({ children }: { children: React.ReactNode }) {
   }
   const active = new Set(activePreviews(candidates, enabled, preferences.reduced, preferences.hidden))
   return (
-    <PlaybackContext.Provider value={{ active, candidates, enabled, preferencesReady: preferences.ready, reduced: preferences.reduced, visible, intent, toggle }}>
+    <PlaybackContext.Provider value={{ active, candidates, enabled, preferencesReady: preferences.ready, reduced: preferences.reduced, hidden: preferences.hidden, visible, intent, toggle }}>
       <noscript><style>{'[data-poster-mode="paused"] > img { visibility: visible !important; }'}</style></noscript>
       {children}
     </PlaybackContext.Provider>
@@ -70,17 +71,22 @@ export function PlaybackControls() {
 }
 
 /** Readiness belongs to a mounted frame, so returning previews cannot expose an empty document. */
-function InteractivePreview({ src, title, width, height, scale, interact, onFailure }: {
+function InteractivePreview({ src, title, width, height, scale, interact, playing, onFailure, onActivate }: {
   src: string
   title: string
   width: number
   height: number
   scale?: number
   interact: boolean
+  playing: boolean
   onFailure: () => void
+  onActivate: () => void
 }) {
   const frame = React.useRef<HTMLIFrameElement>(null)
   const [ready, setReady] = React.useState(false)
+  React.useEffect(() => {
+    if (ready) frame.current?.contentWindow?.postMessage({ type: "design-infra-playback", playing }, location.origin)
+  }, [ready, playing])
   React.useEffect(() => {
     let receivedReady = false
     const message = (event: MessageEvent) => {
@@ -93,10 +99,13 @@ function InteractivePreview({ src, title, width, height, scale, interact, onFail
     const timeout = window.setTimeout(() => { if (!receivedReady) onFailure() }, 20000)
     return () => { window.removeEventListener("message", message); clearTimeout(timeout) }
   }, [src, onFailure])
-  return <iframe ref={frame} src={src} title={`${title} interactive demo`} data-ready={ready ? "1" : undefined} tabIndex={interact && ready ? 0 : -1} sandbox="allow-scripts allow-same-origin" className="absolute top-0 left-0 border-0 bg-[#141414] transition-opacity duration-200 ease-out motion-reduce:transition-none" style={{ width, height, transform: scale === undefined ? undefined : `scale(${scale})`, transformOrigin: "top left", pointerEvents: interact && ready ? "auto" : "none", opacity: ready ? 1 : 0 }} />
+  return <>
+    {!ready ? <div data-preview-loading role="status" className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground">Loading preview…</div> : null}
+    <iframe ref={frame} src={src} title={`${title} interactive demo`} data-ready={ready ? "1" : undefined} tabIndex={interact && ready ? 0 : -1} onPointerEnter={onActivate} onFocus={onActivate} sandbox="allow-scripts allow-same-origin" className="absolute top-0 left-0 border-0 bg-[#141414] transition-opacity duration-200 ease-out motion-reduce:transition-none" style={{ width, height, transform: scale === undefined ? undefined : `scale(${scale})`, transformOrigin: "top left", pointerEvents: interact && ready ? "auto" : "none", opacity: ready ? 1 : 0 }} />
+  </>
 }
 
-/** Frames exist only while playing. Removing them also stops rAF, timers, WebGL and audio. */
+/** Catalog frames play on demand; visible homepage frames can retain their native paused surface. */
 export function GalleryPreview({
   id,
   title,
@@ -120,7 +129,7 @@ export function GalleryPreview({
   interaction?: "direct" | "opt-in"
   responsive?: boolean
   minHeight?: number
-  /** Responsive homepage demos reveal from their neutral surface, without a mismatched screenshot swap. */
+  /** Use "paused" for homepage adapters wired to PreviewPlayback; retains their native still surface. */
   posterMode?: "always" | "paused"
 }) {
   const player = React.useContext(PlaybackContext)!
@@ -131,7 +140,13 @@ export function GalleryPreview({
   const [failed, setFailed] = React.useState(false)
   const moving = descriptor.kind !== "static"
   const playing = moving && !failed && player.active.has(id)
-  const playbackIntent = player.candidates.find((candidate) => candidate.id === id)?.intent
+  const candidate = player.candidates.find((candidate) => candidate.id === id)
+  const playbackIntent = candidate?.intent
+  const keepSurface = posterMode === "paused" && descriptor.kind === "interactive"
+  const mounted = playing || (keepSurface && !failed && player.preferencesReady && !player.hidden && player.enabled && !player.reduced && candidate?.visible && playbackIntent !== "pause")
+  // Every native homepage frame starts still and waits for a trusted playback
+  // message. Waiting for a budget slot never leaves a visible component empty.
+  const frameSrc = descriptor.kind === "interactive" && keepSurface ? `${descriptor.src}&playback=paused` : descriptor.kind === "interactive" ? descriptor.src : ""
   // A scaled raster cannot match a responsive native layout. Keep it for deliberate
   // pauses and fallbacks, never for automatic entry, re-entry or budget changes.
   // Default hidden during SSR/hydration too; noscript restores the static composition.
@@ -144,8 +159,8 @@ export function GalleryPreview({
     const observer = new IntersectionObserver(
       // Start at the edge and keep the live surface until it leaves completely.
       // Swapping back to a poster at 20% visibility causes a pop during normal scrolling.
-      ([entry]) => visible(id, order, entry.isIntersecting),
-      { threshold: 0 },
+      ([entry]) => visible(id, order, entry.isIntersecting, Math.round(entry.intersectionRatio * 10) / 10),
+      { threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] },
     )
     observer.observe(element)
     const resize = new ResizeObserver(([entry]) => setWidth(entry.contentRect.width))
@@ -157,6 +172,7 @@ export function GalleryPreview({
     }
   }, [id, moving, order, visible])
   const previewFailed = React.useCallback(() => { setFailed(true); intent(id, "pause") }, [id, intent])
+  const activate = () => { if (!playing && interaction === "direct") intent(id, "play") }
   const playPause = () => {
     setInteract(interaction === "direct")
     intent(id, playing ? "pause" : "play")
@@ -185,8 +201,8 @@ export function GalleryPreview({
         ) : (
           <div className="flex size-full items-center justify-center text-xs text-muted-foreground">{label}</div>
         )}
-        {playing && descriptor.kind === "interactive" && width > 0 ? (
-          <InteractivePreview key={descriptor.src} src={descriptor.src} title={title} width={responsive ? width : descriptor.width} height={responsive ? Math.max(minHeight, width * descriptor.height / descriptor.width) : descriptor.height} scale={responsive ? undefined : width / descriptor.width} interact={interact} onFailure={previewFailed} />
+        {mounted && descriptor.kind === "interactive" && width > 0 ? (
+          <InteractivePreview key={frameSrc} src={frameSrc} title={title} width={responsive ? width : descriptor.width} height={responsive ? Math.max(minHeight, width * descriptor.height / descriptor.width) : descriptor.height} scale={responsive ? undefined : width / descriptor.width} interact={interact} playing={playing} onFailure={previewFailed} onActivate={activate} />
         ) : null}
         {playing && descriptor.kind === "clip" ? (
           <video

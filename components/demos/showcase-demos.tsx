@@ -5,6 +5,7 @@ import DitherChart, { type DitherChartVariant } from "./vendor/smoothui/dither-c
 import ProgressiveBlur, { type ProgressiveBlurDirection } from "./vendor/smoothui/progressive-blur"
 import DotMorphButton from "./vendor/smoothui/dot-morph-button"
 import { PixelCanvasDemo, ScrubberDemo, SwipeDeckDemo } from "./creative-demos"
+import { usePreviewPlayback } from "@/components/site/preview-playback"
 
 const palette = ["#ffa674", "#b5a4e3", "#d3e8ad"]
 const data = [
@@ -14,6 +15,7 @@ const data = [
 const control = "min-h-11 rounded-md border px-3 text-xs text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
 
 export function ShowcaseDemo({ id, compact = false }: { id: string; compact?: boolean }) {
+  const playing = usePreviewPlayback()
   const root = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(280)
   const [variant, setVariant] = useState<DitherChartVariant>("line")
@@ -32,7 +34,7 @@ export function ShowcaseDemo({ id, compact = false }: { id: string; compact?: bo
   return (
     <div ref={root} data-showcase-demo={id} className={`flex min-h-screen w-full flex-col items-center justify-center ${compact ? "gap-2 px-3 py-2" : "gap-4 px-4 py-4"}`} style={{ containerType: "inline-size", "--color-brand": "#ffa674", "--color-brand-secondary": "#e88c57", "--color-on-brand": "#16120f" } as CSSProperties}>
       {id === "smoothui/pixel-brush-canvas" ? <PixelCanvasDemo width={width} compact={compact} /> : id === "smoothui/scrubber" ? <ScrubberDemo compact={compact} /> : id === "smoothui/card-swipe-deck" ? <SwipeDeckDemo width={width} /> : id === "smoothui/dither-chart" ? <>
-        <DitherChart data={data} variant={variant} palette={palette} pixelSize={2} width={Math.floor(width)} height={Math.round(Math.min(compact ? 174 : 220, width * 0.31))} label="Interface activity" caption="Illustrative data · try a chart style" />
+        <DitherChart animate={playing} data={data} variant={variant} palette={palette} pixelSize={2} width={Math.floor(width)} height={Math.round(Math.min(compact ? 174 : 220, width * 0.31))} label="Interface activity" caption="Illustrative data · try a chart style" />
         <div role="group" aria-label="Chart style" className="flex flex-wrap justify-center gap-2">
           {(["line", "donut", "bar"] as const).map((style) => <button key={style} type="button" aria-pressed={variant === style} className={`${control} capitalize aria-pressed:bg-foreground aria-pressed:text-background`} onClick={() => setVariant(style)}>{style}</button>)}
         </div>

@@ -25,6 +25,7 @@ export function AgentStatus({
   detail,
   size = "sm",
   className,
+  paused = false,
 }: {
   activity: AgentActivity
   /** Override the default verb ("Searching"). */
@@ -34,6 +35,8 @@ export function AgentStatus({
   /** sm = inline (20px orb), lg = avatar (64px orb). */
   size?: "sm" | "lg"
   className?: string
+  /** Keep the orb visible without running its animation. */
+  paused?: boolean
 }) {
   const a = AGENT_ACTIVITY[activity]
   const busy = activity !== "idle"
@@ -47,7 +50,7 @@ export function AgentStatus({
         className
       )}
     >
-      <ThinkingOrb state={a.orb} size={size === "lg" ? 64 : 20} />
+      <ThinkingOrb state={a.orb} size={size === "lg" ? 64 : 20} paused={paused} />
       <span className="flex min-w-0 flex-col">
         <span
           className={cn(

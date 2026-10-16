@@ -159,6 +159,12 @@ test("one budget bounds frames and clips, prioritizes user choices, and cleans u
   )
 })
 
+test("mostly visible previews take priority over a sliver of the previous row", () => {
+  const overlap = candidates.slice(0, 4).map((candidate, i) => ({ ...candidate, visibility: i < 2 ? 0.1 : 1 }))
+  assert.deepEqual(activePreviews(overlap, true, false, false), ["2", "3", "0"])
+  assert.deepEqual(activePreviews(overlap.map((candidate) => candidate.id === "1" ? { ...candidate, intent: "play", requested: 1 } : candidate), true, false, false), ["1", "2", "3"])
+})
+
 test("all explicit adapters resolve catalog entries and migrated effects cannot target Loading", () => {
   for (const [id, demo] of Object.entries(previewDemos)) {
     assert.ok(

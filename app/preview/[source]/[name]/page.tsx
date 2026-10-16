@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import { LoadingDemo } from "@/components/demos/loading-demos"
 import { ShowcaseDemo } from "@/components/demos/showcase-demos"
 import { PreviewShell } from "@/components/site/preview-shell"
+import { PreviewPlayback } from "@/components/site/preview-playback"
 import { previewDemos } from "@/lib/catalog/previews"
 import { OC_DEMOS } from "@/components/demos/oc-demos"
 import { TEMPLATE_DEMOS } from "@/components/demos/template-demos"
@@ -44,7 +45,7 @@ export default async function PreviewPage(props: PageProps<"/preview/[source]/[n
         className="dark flex min-h-screen flex-col bg-background font-sans text-foreground"
       >
         <div data-preview-content className="my-auto w-full">
-          <PreviewShell>{demo}</PreviewShell>
+          <PreviewPlayback initialPlaying={search.playback !== "paused"}><PreviewShell>{demo}</PreviewShell></PreviewPlayback>
         </div>
       </div>
     )
