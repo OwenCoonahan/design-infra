@@ -90,7 +90,7 @@ function InteractivePreview({ src, title, width, height, scale, interact, onFail
     const timeout = window.setTimeout(() => { if (!receivedReady) onFailure() }, 20000)
     return () => { window.removeEventListener("message", message); clearTimeout(timeout) }
   }, [src, onFailure])
-  return <iframe ref={frame} src={src} title={`${title} interactive demo`} data-ready={ready ? "1" : undefined} tabIndex={interact ? 0 : -1} sandbox="allow-scripts allow-same-origin" className="absolute top-0 left-0 border-0 bg-[#141414]" style={{ width, height, transform: scale === undefined ? undefined : `scale(${scale})`, transformOrigin: "top left", pointerEvents: interact ? "auto" : "none", opacity: ready ? 1 : 0 }} />
+  return <iframe ref={frame} src={src} title={`${title} interactive demo`} data-ready={ready ? "1" : undefined} tabIndex={interact && ready ? 0 : -1} sandbox="allow-scripts allow-same-origin" className="absolute top-0 left-0 border-0 bg-[#141414] transition-opacity duration-200 ease-out motion-reduce:transition-none" style={{ width, height, transform: scale === undefined ? undefined : `scale(${scale})`, transformOrigin: "top left", pointerEvents: interact && ready ? "auto" : "none", opacity: ready ? 1 : 0 }} />
 }
 
 /** Frames exist only while playing. Removing them also stops rAF, timers, WebGL and audio. */
@@ -129,8 +129,10 @@ export function GalleryPreview({
     const element = box.current
     if (!element || !moving) return
     const observer = new IntersectionObserver(
-      ([entry]) => visible(id, order, entry.isIntersecting && entry.intersectionRatio >= 0.2),
-      { threshold: [0, 0.2] },
+      // Start at the edge and keep the live surface until it leaves completely.
+      // Swapping back to a poster at 20% visibility causes a pop during normal scrolling.
+      ([entry]) => visible(id, order, entry.isIntersecting),
+      { threshold: 0 },
     )
     observer.observe(element)
     const resize = new ResizeObserver(([entry]) => setWidth(entry.contentRect.width))

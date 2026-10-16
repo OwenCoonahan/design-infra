@@ -32,7 +32,7 @@ export default async function Home() {
     const entry = catalog.find((entry) => entry.id === id)!
     const descriptor = hostedPreview(id)!
     return { id, name, href: new URL(entryPage(id)).pathname.slice(BASE_PATH.length), poster: entry.preview ? previewSrc(entry.preview) : undefined,
-      descriptor: hero ? { ...descriptor, src: `${descriptor.src}&presentation=hero`, width: id.endsWith("dither-chart") ? 600 : 400, height: id.endsWith("dither-chart") ? 390 : 320 } : id.endsWith("progressive-blur") ? { ...descriptor, height: 520 } : descriptor }
+      descriptor: hero ? { ...descriptor, src: `${descriptor.src}&presentation=hero`, width: id.endsWith("dither-chart") ? 600 : 400, height: id.endsWith("dither-chart") ? 390 : 320 } : descriptor }
   }
   const scene = [example("smoothui/dither-chart", "Dither chart", true), example("smoothui/scrubber", "Scrub to reshape", true), example("smoothui/pixel-brush-canvas", "Draw something", true)]
   const featured = [example("smoothui/progressive-blur", "Progressive blur"), example("smoothui/card-swipe-deck", "Swipe a direction"), example("oc/beam-card", "Beam card"), example("oc/kinetic-field", "Kinetic field")]
