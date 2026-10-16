@@ -33,5 +33,15 @@
     "id": "smoothui/dither-chart",
     "note": "The user singled out the dither chart as an interesting component to feature on the homepage. Use the real pixelated data visualization with selectable chart styles and clearly labeled sample data.",
     "added": "2026-10-16"
+  },
+  {
+    "id": "oc/beam-card",
+    "note": "The user explicitly asked to keep Beam Card in the homepage examples while replacing the underwhelming loader. Retain its subtle beam emphasis.",
+    "added": "2026-10-16"
+  },
+  {
+    "id": "oc/kinetic-field",
+    "note": "The user explicitly asked to keep Kinetic Field in the homepage examples. Retain its pointer-responsive particle forms and controls.",
+    "added": "2026-10-16"
   }
 ]

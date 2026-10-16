@@ -53,7 +53,7 @@ test("all eight Loading adapters keep the upstream catalog identity and carry pr
   assert.equal(hostedPreview("unknown/spinner"), undefined)
 })
 test("homepage showcase adapters preserve upstream installs and licensed source provenance", () => {
-  for (const name of ["dither-chart", "progressive-blur", "dot-morph-button"]) {
+  for (const name of ["dither-chart", "progressive-blur", "dot-morph-button", "pixel-brush-canvas", "scrubber", "card-swipe-deck"]) {
     const id = `smoothui/${name}`
     const entry = catalog.find((entry: CatalogEntry) => entry.id === id)!
     assert.equal(entry.install, `npx shadcn@latest add @smoothui/${name}`)

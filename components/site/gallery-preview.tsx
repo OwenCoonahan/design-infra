@@ -74,6 +74,7 @@ export function GalleryPreview({
   poster,
   order,
   presentation = "gallery",
+  interaction = presentation === "scene" ? "direct" : "opt-in",
   responsive = false,
   minHeight = 0,
 }: {
@@ -84,6 +85,8 @@ export function GalleryPreview({
   order: number
   /** Scene cards are immediately usable; catalog cards retain opt-in interaction. */
   presentation?: "gallery" | "scene"
+  /** Homepage examples accept input immediately; browsing galleries keep their activation control. */
+  interaction?: "direct" | "opt-in"
   responsive?: boolean
   minHeight?: number
 }) {
@@ -92,7 +95,7 @@ export function GalleryPreview({
   const box = React.useRef<HTMLDivElement>(null)
   const frame = React.useRef<HTMLIFrameElement>(null)
   const [width, setWidth] = React.useState(0)
-  const [interact, setInteract] = React.useState(presentation === "scene")
+  const [interact, setInteract] = React.useState(interaction === "direct")
   const [failed, setFailed] = React.useState(false)
   const [ready, setReady] = React.useState(false)
   const moving = descriptor.kind !== "static"
@@ -146,7 +149,7 @@ export function GalleryPreview({
   }, [playing, descriptor.kind, id, intent])
   const playPause = () => {
     setReady(false)
-    setInteract(presentation === "scene")
+    setInteract(interaction === "direct")
     intent(id, playing ? "pause" : "play")
   }
   const label = PREVIEW_LABELS[descriptor.kind]
@@ -220,7 +223,7 @@ export function GalleryPreview({
             >
               {playing ? "Pause" : "Play"}
             </button>
-            {playing && presentation === "gallery" ? (
+            {playing && interaction === "opt-in" ? (
               <button
                 type="button"
                 onClick={() => setInteract(!interact)}

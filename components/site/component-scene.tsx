@@ -53,7 +53,7 @@ export function ComponentScene({ examples }: { examples: HomeExample[] }) {
     window.addEventListener("message", move)
     return () => window.removeEventListener("message", move)
   }, [active, x, y])
-  const positions = ["col-span-2 sm:absolute sm:top-[1%] sm:left-[4%] sm:w-[90%] sm:-rotate-3", "sm:absolute sm:right-0 sm:bottom-0 sm:w-[43%] sm:rotate-6", "sm:absolute sm:bottom-[2%] sm:left-0 sm:w-[43%] sm:-rotate-6"]
+  const positions = ["sm:absolute sm:top-[1%] sm:left-[4%] sm:w-[90%] sm:-rotate-3", "sm:absolute sm:right-0 sm:bottom-0 sm:w-[43%] sm:rotate-6", "sm:absolute sm:bottom-[2%] sm:left-0 sm:w-[43%] sm:-rotate-6"]
   return (
     <div ref={root} data-component-scene data-scene-active={active} className="relative isolate [perspective:1400px]" onPointerMove={(event) => {
       if (!active) return
@@ -63,10 +63,10 @@ export function ComponentScene({ examples }: { examples: HomeExample[] }) {
     }} onPointerLeave={() => { x.set(0); y.set(0) }}>
       <div aria-hidden="true" className="pointer-events-none absolute inset-[4%] rounded-full bg-[radial-gradient(ellipse_at_center,#ffa6740c,transparent_65%)]" />
       <div className="mb-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground"><span>Made of better pieces</span><span>01 — 03</span></div>
-      <motion.div data-scene-plane style={{ rotateX, rotateY }} className="grid grid-cols-2 gap-3 sm:relative sm:block sm:aspect-[1/1.08] [transform-style:preserve-3d]">
+      <motion.div data-scene-plane style={{ rotateX, rotateY }} className="grid grid-cols-1 gap-3 sm:relative sm:block sm:aspect-[1/1.08]">
         {examples.map((example, i) => <motion.article key={example.id} data-scene-card={example.id} initial={false} animate={active && entered ? { y: [18 + i * 8, 0], opacity: [0.4, 1] } : { y: 0, opacity: 1 }} transition={{ ...MOTION_TOKENS.lively.spring, delay: active ? i * 0.09 : 0 }} className={`${positions[i]} relative overflow-hidden rounded-xl border border-white/15 bg-[#141414] shadow-[0_18px_55px_-16px_#000c] transition-[box-shadow,border-color] hover:z-20 hover:border-white/30 hover:shadow-[0_24px_70px_-10px_#000] focus-within:z-20`}>
           <header className="flex min-h-10 items-center justify-between gap-2 border-b border-white/10 px-3"><Link href={example.href} className="truncate text-xs font-medium underline-offset-4 hover:underline">{example.name}</Link><span className="font-mono text-[9px] text-muted-foreground">0{i + 1}</span></header>
-          <GalleryPreview id={`home-scene:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i} presentation="scene" responsive minHeight={i === 0 ? 220 : 80} />
+          <GalleryPreview id={`home-scene:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i} presentation="scene" responsive minHeight={i === 0 ? 220 : 232} />
         </motion.article>)}
       </motion.div>
       <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-widest text-muted-foreground sm:mt-0">Move around. Try a piece. Make it yours.</p>

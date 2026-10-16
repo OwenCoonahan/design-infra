@@ -33,10 +33,10 @@ export default async function Home() {
     const entry = catalog.find((entry) => entry.id === id)!
     const descriptor = hostedPreview(id)!
     return { id, name, type, href: new URL(entryPage(id)).pathname.slice(BASE_PATH.length), poster: entry.preview ? previewSrc(entry.preview) : undefined,
-      descriptor: hero ? { ...descriptor, src: `${descriptor.src}&presentation=hero`, width: id.endsWith("dither-chart") ? 600 : 400, height: id.endsWith("dither-chart") ? 390 : 200 } : id.endsWith("progressive-blur") ? { ...descriptor, height: 520 } : descriptor }
+      descriptor: hero ? { ...descriptor, src: `${descriptor.src}&presentation=hero`, width: id.endsWith("dither-chart") ? 600 : 400, height: id.endsWith("dither-chart") ? 390 : 320 } : id.endsWith("progressive-blur") ? { ...descriptor, height: 520 } : descriptor }
   }
-  const scene = [example("smoothui/dither-chart", "Dither chart", "Data, with texture", true), example("smoothui/dot-morph-button", "Dot morph button", "A little feedback", true), example("smoothui/grid-loader", "Grid loader", "Worth the wait", true)]
-  const featured = [example("smoothui/progressive-blur", "Progressive blur", "Surface · SmoothUI"), example("smoothui/motion-loader", "Motion loader", "Motion · SmoothUI"), example("oc/beam-card", "Beam card", "A little emphasis · Design Infra"), example("oc/kinetic-field", "Kinetic field", "Interactive · Design Infra")]
+  const scene = [example("smoothui/dither-chart", "Dither chart", "Data, with texture", true), example("smoothui/scrubber", "Scrub to reshape", "Drag to reshape", true), example("smoothui/pixel-brush-canvas", "Draw something", "Make a little pixel art", true)]
+  const featured = [example("smoothui/progressive-blur", "Progressive blur", "Scroll it · change the blur · SmoothUI"), example("smoothui/card-swipe-deck", "Swipe a direction", "Drag a card · or use the buttons · SmoothUI"), example("oc/beam-card", "Beam card", "A little emphasis · Design Infra"), example("oc/kinetic-field", "Kinetic field", "Interactive · Design Infra")]
   return (
     <div className="mx-auto max-w-7xl px-6">
       <GalleryPlayback>
