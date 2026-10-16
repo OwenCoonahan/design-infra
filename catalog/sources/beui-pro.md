@@ -31,4 +31,4 @@ After the user confirms licensed access, follow the vendor's [installation guide
 - Curated entries identify public component groups, not every variant or the full paid inventory. Install commands are public documentation handoffs; authenticated execution has not been verified.
 - The commercial collection has its own terms. Do not carry the public library's MIT status over to Pro.
 
-Selected references: model selection, task boards, audit history, logs, questionnaires, artifacts, chat input and waiting states. Public access information checked 2026-10-16. The [free source guide](beui.md) is the starting point for current projects.
+Selected references: model selection, task boards, audit history, logs, questionnaires, artifacts, chat input and waiting states. Public access information checked 2026-10-16. The [free source guide](https://www.owencoonahan.xyz/design-infra/sources/beui) is the starting point for current projects.
