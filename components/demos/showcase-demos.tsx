@@ -27,7 +27,7 @@ export function ShowcaseDemo({ id, compact = false }: { id: string; compact?: bo
   }, [])
   return (
     <div ref={root} data-showcase-demo={id} className={`flex min-h-screen w-full flex-col items-center justify-center ${compact ? "gap-2 px-3 py-2" : "gap-4 px-4 py-4"}`} style={{ "--color-brand": "#ffa674", "--color-brand-secondary": "#e88c57", "--color-on-brand": "#16120f" } as CSSProperties}>
-      {id === "smoothui/pixel-brush-canvas" ? <PixelCanvasDemo width={width} /> : id === "smoothui/scrubber" ? <ScrubberDemo /> : id === "smoothui/card-swipe-deck" ? <SwipeDeckDemo width={width} /> : id === "smoothui/dither-chart" ? <>
+      {id === "smoothui/pixel-brush-canvas" ? <PixelCanvasDemo width={width} compact={compact} /> : id === "smoothui/scrubber" ? <ScrubberDemo compact={compact} /> : id === "smoothui/card-swipe-deck" ? <SwipeDeckDemo width={width} /> : id === "smoothui/dither-chart" ? <>
         <DitherChart data={data} variant={variant} palette={palette} pixelSize={2} width={Math.floor(width)} height={Math.round(Math.min(compact ? 174 : 220, width * 0.31))} label="Interface activity" caption="Illustrative data · try a chart style" />
         <div role="group" aria-label="Chart style" className="flex flex-wrap justify-center gap-2">
           {(["line", "donut", "bar"] as const).map((style) => <button key={style} type="button" aria-pressed={variant === style} className={`${control} capitalize aria-pressed:bg-foreground aria-pressed:text-background`} onClick={() => setVariant(style)}>{style}</button>)}

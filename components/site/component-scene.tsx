@@ -7,7 +7,7 @@ import { GalleryPreview, useGalleryMotion } from "./gallery-preview"
 import { MOTION_TOKENS } from "@/lib/catalog/motion"
 import type { PreviewDescriptor } from "@/lib/catalog/previews"
 
-export type HomeExample = { id: string; name: string; type: string; href: string; poster?: string; descriptor: PreviewDescriptor }
+export type HomeExample = { id: string; name: string; href: string; poster?: string; descriptor: PreviewDescriptor }
 
 /** Real, isolated component demos. Their frames share the homepage's three-preview budget. */
 export function ComponentScene({ examples }: { examples: HomeExample[] }) {
@@ -62,14 +62,12 @@ export function ComponentScene({ examples }: { examples: HomeExample[] }) {
       y.set(-((event.clientY - bounds.top) / bounds.height - 0.5) * 6)
     }} onPointerLeave={() => { x.set(0); y.set(0) }}>
       <div aria-hidden="true" className="pointer-events-none absolute inset-[4%] rounded-full bg-[radial-gradient(ellipse_at_center,#ffa6740c,transparent_65%)]" />
-      <div className="mb-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground"><span>Made of better pieces</span><span>01 — 03</span></div>
       <motion.div data-scene-plane style={{ rotateX, rotateY }} className="grid grid-cols-1 gap-3 sm:relative sm:block sm:aspect-[1/1.08]">
         {examples.map((example, i) => <motion.article key={example.id} data-scene-card={example.id} initial={false} animate={active && entered ? { y: [18 + i * 8, 0], opacity: [0.4, 1] } : { y: 0, opacity: 1 }} transition={{ ...MOTION_TOKENS.lively.spring, delay: active ? i * 0.09 : 0 }} className={`${positions[i]} relative overflow-hidden rounded-xl border border-white/15 bg-[#141414] shadow-[0_18px_55px_-16px_#000c] transition-[box-shadow,border-color] hover:z-20 hover:border-white/30 hover:shadow-[0_24px_70px_-10px_#000] focus-within:z-20`}>
-          <header className="flex min-h-10 items-center justify-between gap-2 border-b border-white/10 px-3"><Link href={example.href} className="truncate text-xs font-medium underline-offset-4 hover:underline">{example.name}</Link><span className="font-mono text-[9px] text-muted-foreground">0{i + 1}</span></header>
+          <header className="flex min-h-10 items-center border-b border-white/10 px-3"><Link href={example.href} className="truncate text-xs font-medium underline-offset-4 hover:underline">{example.name}</Link></header>
           <GalleryPreview id={`home-scene:${example.id}`} title={example.name} descriptor={example.descriptor} poster={example.poster} order={i} presentation="scene" responsive minHeight={i === 0 ? 220 : 232} />
         </motion.article>)}
       </motion.div>
-      <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-widest text-muted-foreground sm:mt-0">Move around. Try a piece. Make it yours.</p>
     </div>
   )
 }

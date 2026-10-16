@@ -11,7 +11,7 @@ const control = "inline-flex min-h-11 min-w-11 items-center justify-center round
 // Original, editable artwork. No stock images or vendor screenshot assets.
 const initial = ["..........", "..0....0..", ".000..000.", "..000000..", "...0000...", "....00...."].map((row) => [...row].map((pixel) => pixel === "." ? -1 : 0))
 
-export function PixelCanvasDemo({ width }: { width: number }) {
+export function PixelCanvasDemo({ width, compact = false }: { width: number; compact?: boolean }) {
   const editor = useRef<PixelBrushCanvasHandle>(null)
   const [color, setColor] = useState(0)
   return <>
@@ -20,11 +20,11 @@ export function PixelCanvasDemo({ width }: { width: number }) {
       {palette.map((ink, i) => <button key={ink} type="button" aria-label={`Use ${["peach", "lilac", "lime"][i]} ink`} aria-pressed={color === i} onClick={() => setColor(i)} className={`${control} !px-2 aria-pressed:border-white`}><span aria-hidden="true" className="size-4 rounded-full" style={{ background: ink }} /></button>)}
       <button type="button" aria-label="Undo drawing" title="Undo" className={`${control} !px-2`} onClick={() => editor.current?.undo()}><Undo2 aria-hidden="true" className="size-4" /></button>
     </div>
-    <p className="text-center text-[10px] text-muted-foreground">Draw here · arrows + space work too</p>
+    <p className={compact ? "sr-only" : "text-center text-xs text-muted-foreground"}>Draw here · arrows + space work too</p>
   </>
 }
 
-export function ScrubberDemo() {
+export function ScrubberDemo({ compact = false }: { compact?: boolean }) {
   const [roundness, setRoundness] = useState(36)
   return <>
     <div aria-hidden="true" className="flex h-20 items-center justify-center">
@@ -34,7 +34,7 @@ export function ScrubberDemo() {
       // The upstream drag handler prevents default; retain keyboard focus after a click.
       (event.currentTarget.querySelector('[role="slider"]') as HTMLElement | null)?.focus({ preventScroll: true })
     }}><Scrubber label="Shape" value={roundness} onValueChange={setRoundness} min={0} max={100} step={1} decimals={0} className="h-11 rounded-lg" /></div>
-    <p className="text-center text-[10px] text-muted-foreground">Drag the value · or use arrow keys</p>
+    <p className={compact ? "sr-only" : "text-center text-xs text-muted-foreground"}>Drag the value · or use arrow keys</p>
   </>
 }
 

@@ -1,7 +1,7 @@
 /** Real-browser checks for the homepage composition and its native component demos. */
 import assert from "node:assert/strict"
 import { parseArgs } from "node:util"
-import puppeteer, { type Frame } from "puppeteer-core"
+import puppeteer, { type Frame, type HTTPRequest } from "puppeteer-core"
 import { galleryBase } from "./lib/gallery-base"
 import { sitePath } from "../lib/config"
 
@@ -52,6 +52,7 @@ async function main() {
     await page.keyboard.press("End")
     assert.equal(await scrubber.$eval('[role="slider"]', (slider) => slider.getAttribute("aria-valuenow")), "100")
     assert.equal(await scrubber.$eval('[data-reshape-tile]', (tile) => (tile as HTMLElement).style.borderRadius), "50%", "scrubbing visibly reshapes the tile")
+    assert.ok(await page.$eval('[data-scene-card="smoothui/scrubber"]', (card) => card.querySelector('[data-gallery-preview]')!.clientWidth <= card.clientWidth), "the focused scrubber fits its desktop card")
     const slider = await scrubber.$('[role="slider"]')
     const track = (await slider!.boundingBox())!
     await page.mouse.move(track.x + track.width * 0.25, track.y + track.height / 2)
@@ -125,6 +126,38 @@ async function main() {
     await page.keyboard.press("ArrowLeft")
     await deck.waitForFunction(() => document.querySelector('[role="status"]')!.textContent!.includes("Passed: Keep it calm."))
     await deck.locator('[aria-label="Reset cards"]').click()
+    // Scroll away and back with the new frame request held: its previous ready state must not leak.
+    await page.$eval('[data-home-example="oc/beam-card"]', (element) => element.scrollIntoView({ block: "center" }))
+    await page.waitForSelector('[data-home-example="oc/beam-card"] iframe[data-ready="1"]')
+    await page.$eval('[data-component-scene]', (element) => element.scrollIntoView({ block: "center" }))
+    await page.waitForFunction(() => !document.querySelector('[data-home-example="oc/beam-card"] iframe'))
+    await page.setRequestInterception(true)
+    let receiveBeam!: (request: HTTPRequest) => void
+    const pendingBeam = new Promise<HTTPRequest>((resolve) => { receiveBeam = resolve })
+    let held = false
+    const holdBeam = (request: HTTPRequest) => {
+      if (!held && request.url().includes("/preview/oc/beam-card?")) { held = true; receiveBeam(request) }
+      else void request.continue()
+    }
+    page.on("request", holdBeam)
+    await page.$eval('[data-home-example="oc/beam-card"]', (element) => element.scrollIntoView({ block: "center" }))
+    const heldBeam = await Promise.race([pendingBeam, wait(10000).then(() => { throw new Error("Returning Beam frame was not requested") })])
+    await page.waitForSelector('[data-home-example="oc/beam-card"] iframe')
+    assert.equal(await page.$eval('[data-home-example="oc/beam-card"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a returning demo stays behind its poster until this frame is ready")
+    await page.evaluate("window.postMessage({type:'design-infra-preview', status:'ready'}, location.origin)")
+    assert.equal(await page.$eval('[data-home-example="oc/beam-card"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "unrecognized message sources cannot expose an unready frame")
+    const posterColor = await page.$eval('[data-home-example="oc/beam-card"] img', (image) => {
+      const canvas = document.createElement("canvas")
+      canvas.width = canvas.height = 1
+      const context = canvas.getContext("2d")!
+      context.drawImage(image as HTMLImageElement, 0, 0)
+      return [...context.getImageData(0, 0, 1, 1).data].slice(0, 3)
+    })
+    assert.ok(posterColor.every((channel) => channel < 50), "Beam's poster uses the same dark surface as its live demo")
+    await heldBeam.continue()
+    page.off("request", holdBeam)
+    await page.setRequestInterception(false)
+    await page.waitForSelector('[data-home-example="oc/beam-card"] iframe[data-ready="1"]')
     await page.screenshot({ path: ".context/home-showcase-desktop.png" })
     await page.setViewport({ width: 1440, height: 2400 })
     await wait(350)
@@ -134,6 +167,7 @@ async function main() {
       await page.$eval("[data-component-scene]", (element) => element.scrollIntoView({ block: "center" }))
       await readyScene()
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `parent overflow at ${width}px`)
+      assert.ok(await page.$$eval('[data-scene-card]', (cards) => cards.every((card) => card.querySelector('[data-gallery-preview]')!.clientWidth <= card.clientWidth)), `preview frames stay inside scene cards at ${width}px`)
       for (const demo of ["dither-chart", "pixel-brush-canvas", "scrubber"]) {
         const size = await frame(demo).evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth, height: innerHeight, tall: document.documentElement.scrollHeight }))
         assert.ok(size.scroll <= size.width + 1 && size.tall <= size.height + 1, `${demo} should fit its native frame at ${width}px: ${JSON.stringify(size)}`)
@@ -143,6 +177,7 @@ async function main() {
       for (const demo of ["progressive-blur", "card-swipe-deck"]) {
         await page.$eval(`[data-home-example="smoothui/${demo}"]`, (element) => element.scrollIntoView({ block: "center" }))
         await page.waitForSelector(`[data-home-example="smoothui/${demo}"] iframe[data-ready="1"]`)
+        assert.ok(await page.$eval(`[data-home-example="smoothui/${demo}"]`, (card) => card.querySelector('[data-gallery-preview]')!.clientWidth <= card.clientWidth), `${demo} preview stays inside its card at ${width}px`)
         const size = await frame(demo).evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth, height: innerHeight, tall: document.documentElement.scrollHeight }))
         assert.ok(size.scroll <= size.width + 1 && size.tall <= size.height + 1, `${demo} controls fit at ${width}px: ${JSON.stringify(size)}`)
       }
@@ -167,7 +202,7 @@ async function main() {
       assert.ok(await page.evaluate((command) => document.body.innerText.includes(command), `npx shadcn@latest add @smoothui/${name}`), "the upstream installation command remains available beside the demo")
     }
     assert.equal(errors.length, 0, errors.join("\n"))
-    console.log("✓ homepage scene: real chart pixels, pixel painting/undo, pointer/keyboard scrubbing, swipe dragging/buttons/keyboard, pointer depth/relay validation, global pause, shared budget, hidden/offscreen cleanup, responsive native frames, blur controls/scrolling, reduced motion, navigation disposal and hosted detail/install handoff")
+    console.log("✓ homepage scene: real chart pixels, pixel painting/undo, pointer/keyboard scrubbing, swipe dragging/buttons/keyboard, pointer depth/relay validation, dark Beam poster/returning-frame readiness, frame containment, global pause, shared budget, hidden/offscreen cleanup, responsive native frames, blur controls/scrolling, reduced motion, navigation disposal and hosted detail/install handoff")
 
     const failure = await browser.newPage()
     await failure.setViewport({ width: 1440, height: 1000 })

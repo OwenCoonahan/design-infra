@@ -135,7 +135,9 @@ function planFor(e: CatalogEntry): Shot | Probe | Skip {
   const hosted = hostedPreview(e.id)
   if (hosted) return {
     kind: "shot", id: e.id, url: new URL(hosted.src, BASE).href,
-    selector: "[data-preview-content]", viewport: { width: hosted.width, height: hosted.height },
+    // Capture the complete neutral stage: cropping a short centered demo to the frame's
+    // aspect ratio would cut off its sides (and produce a poster unlike the live frame).
+    selector: '[data-preview-surface="neutral"]', viewport: { width: hosted.width, height: hosted.height },
     aspect: hosted.width / hosted.height, settle: 1800,
   }
   const { id, name } = e
