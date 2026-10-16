@@ -146,6 +146,8 @@ async function main() {
     const touch = await touchBrowser.newPage()
     await touch.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true })
     await touch.goto(base, { waitUntil: "networkidle2" })
+    await touch.waitForSelector('[data-kinetic-field][data-motion-state="offscreen"]')
+    await touch.$eval("[data-kinetic-field]", (element) => element.scrollIntoView({ block: "center" }))
     await touch.waitForSelector('[data-kinetic-field][data-motion-state="paused"]')
     await touch.locator('button[aria-label="Play motion"]').click()
     await touch.waitForSelector('[data-kinetic-field][data-motion-state="playing"]')

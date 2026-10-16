@@ -10,6 +10,7 @@ type CopyPromptProps = {
   rows?: number
   framed?: boolean
   description?: string
+  compact?: boolean
 }
 
 export function CopyPrompt({
@@ -20,12 +21,13 @@ export function CopyPrompt({
   rows = 7,
   framed = true,
   description = "Open your project first. The agent will inspect it before configuring anything.",
+  compact = false,
 }: CopyPromptProps) {
   const [status, setStatus] = useState<"idle" | "copied" | "failed">("idle")
   return (
-    <div className={framed ? "my-6 rounded-xl border bg-card p-4" : "my-6"}>
+    <div className={framed ? "my-6 rounded-xl border bg-card p-4" : compact ? "" : "my-6"}>
       <label htmlFor={id} className="text-sm font-medium">{label}</label>
-      <textarea id={id} readOnly value={prompt} rows={rows} className="mt-3 w-full resize-y rounded-md border bg-muted/40 p-3 text-sm leading-relaxed focus-visible:outline-2 focus-visible:outline-ring" onFocus={(event) => event.currentTarget.select()} />
+      <textarea id={id} readOnly value={prompt} rows={rows} className={compact ? "mt-3 block h-32 w-full resize-none rounded-xl border bg-card p-3 text-sm leading-relaxed focus-visible:outline-2 focus-visible:outline-ring sm:h-auto" : "mt-3 w-full resize-y rounded-md border bg-muted/40 p-3 text-sm leading-relaxed focus-visible:outline-2 focus-visible:outline-ring"} onFocus={(event) => event.currentTarget.select()} />
       <button type="button" className="mt-3 min-h-11 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring" onClick={async () => {
         try {
           await navigator.clipboard.writeText(prompt)

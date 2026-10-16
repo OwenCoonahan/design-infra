@@ -10,12 +10,13 @@ import { cn } from "@/lib/utils"
 // Uses the free Motion library. No Motion website assets, shaders or Motion+ source.
 const WIDTH = 600
 const HEIGHT = 260
+type Layout = "wide" | "square"
 const SHAPES = ["Orbit", "Wave", "Sphere"] as const
 const SPRING = motionPreset("lively").tokens.spring
 
 type Mark = { x: number; y: number; size: number; opacity: number; accent: boolean }
 
-function marks(time: number, shape: number, tiltX = 0, tiltY = 0, pointer?: { x: number; y: number }): Mark[] {
+function marks(time: number, shape: number, tiltX = 0, tiltY = 0, pointer?: { x: number; y: number }, layout: Layout = "wide"): Mark[] {
   const output: Mark[] = []
   const angleY = 0.5 + tiltX * 0.65
   const angleX = 0.7 + tiltY * 0.5
@@ -39,8 +40,8 @@ function marks(time: number, shape: number, tiltX = 0, tiltY = 0, pointer?: { x:
       const ry = y * Math.cos(angleX) - rz * Math.sin(angleX)
       const depth = y * Math.sin(angleX) + rz * Math.cos(angleX)
       const perspective = 4.8 / (4.8 - depth)
-      let screenX = WIDTH / 2 + rx * 74 * perspective
-      let screenY = HEIGHT / 2 + ry * 55 * perspective
+      let screenX = WIDTH / 2 + rx * (layout === "square" ? 110 : 74) * perspective
+      let screenY = (layout === "square" ? WIDTH : HEIGHT) / 2 + ry * (layout === "square" ? 110 : 55) * perspective
       if (pointer) {
         const dx = screenX - pointer.x
         const dy = screenY - pointer.y
@@ -56,12 +57,14 @@ function marks(time: number, shape: number, tiltX = 0, tiltY = 0, pointer?: { x:
 }
 
 // Quantize SSR attributes: Node and browser trigonometry can differ by a few ulps.
-const POSTER = marks(0, 0).map((mark) => ({ ...mark, x: mark.x.toFixed(3), y: mark.y.toFixed(3), size: mark.size.toFixed(3), height: (mark.size * 0.65).toFixed(3), opacity: mark.opacity.toFixed(3) }))
+const poster = (layout: Layout) => marks(0, 0, 0, 0, undefined, layout).map((mark) => ({ ...mark, x: mark.x.toFixed(3), y: mark.y.toFixed(3), size: mark.size.toFixed(3), height: (mark.size * 0.65).toFixed(3), opacity: mark.opacity.toFixed(3) }))
+const POSTERS = { wide: poster("wide"), square: poster("square") }
 
-export type KineticFieldProps = { className?: string; accent?: string }
+export type KineticFieldProps = { className?: string; accent?: string; layout?: Layout }
 
 /** Bounded Canvas 2D illustration with an SSR SVG poster and free Motion springs. */
-export function KineticField({ className, accent = "var(--primary)" }: KineticFieldProps) {
+export function KineticField({ className, accent = "var(--primary)", layout = "wide" }: KineticFieldProps) {
+  const height = layout === "square" ? WIDTH : HEIGHT
   const root = useRef<HTMLDivElement>(null)
   const surface = useRef<HTMLDivElement>(null)
   const canvas = useRef<HTMLCanvasElement>(null)
@@ -108,9 +111,9 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
     const element = surface.current!
     const move = (event: PointerEvent) => {
       const bounds = element.getBoundingClientRect()
-      pointer.current = { x: (event.clientX - bounds.left) / bounds.width * WIDTH, y: (event.clientY - bounds.top) / bounds.height * HEIGHT }
+      pointer.current = { x: (event.clientX - bounds.left) / bounds.width * WIDTH, y: (event.clientY - bounds.top) / bounds.height * height }
       tiltX.set((pointer.current.x / WIDTH - 0.5) * 2)
-      tiltY.set((pointer.current.y / HEIGHT - 0.5) * 2)
+      tiltY.set((pointer.current.y / height - 0.5) * 2)
     }
     const leave = () => { pointer.current = undefined; tiltX.set(0); tiltY.set(0) }
     element.addEventListener("pointermove", move, { passive: true })
@@ -122,7 +125,7 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
       tiltX.jump(0)
       tiltY.jump(0)
     }
-  }, [playing, activity.fine, tiltX, tiltY])
+  }, [playing, activity.fine, tiltX, tiltY, height])
 
   useEffect(() => {
     const element = canvas.current
@@ -138,8 +141,8 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
     let active = true
     const draw = () => {
       if (!active || !element.isConnected) return
-      context.clearRect(0, 0, WIDTH, HEIGHT)
-      for (const mark of marks(clock.current, form.get(), tiltX.get(), tiltY.get(), playing ? pointer.current : undefined)) {
+      context.clearRect(0, 0, WIDTH, height)
+      for (const mark of marks(clock.current, form.get(), tiltX.get(), tiltY.get(), playing ? pointer.current : undefined, layout)) {
         context.globalAlpha = mark.opacity
         context.fillStyle = mark.accent ? highlight : foreground
         context.fillRect(mark.x, mark.y, mark.size, mark.size * 0.65)
@@ -154,7 +157,7 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
       const ratio = Math.min(devicePixelRatio || 1, 2)
       element.width = Math.max(1, Math.round(bounds.width * ratio))
       element.height = Math.max(1, Math.round(bounds.height * ratio))
-      context.setTransform(element.width / WIDTH, 0, 0, element.height / HEIGHT, 0, 0)
+      context.setTransform(element.width / WIDTH, 0, 0, element.height / height, 0, 0)
       foreground = getComputedStyle(element).color
       highlight = getComputedStyle(accentInk).fill
       draw()
@@ -172,14 +175,14 @@ export function KineticField({ className, accent = "var(--primary)" }: KineticFi
     observer.observe(field)
     if (playing) frame = requestAnimationFrame(tick)
     return () => { active = false; cancelAnimationFrame(frame); observer.disconnect() }
-  }, [playing, shape, form, tiltX, tiltY])
+  }, [playing, shape, form, tiltX, tiltY, height, layout])
 
   return (
-    <div ref={root} className={cn("w-full text-foreground", className)} data-kinetic-field data-motion-state={state}>
-      <div ref={surface} className="relative aspect-[30/13] w-full overflow-hidden [&[data-painted=true]>svg]:invisible" aria-hidden="true">
-        <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="absolute inset-0 size-full" fill="currentColor">
+    <div ref={root} className={cn("w-full text-foreground", className)} data-kinetic-field data-motion-state={state} data-layout={layout}>
+      <div ref={surface} className={cn("relative w-full overflow-hidden [&[data-painted=true]>svg]:invisible", layout === "square" ? "aspect-square" : "aspect-[30/13]")} aria-hidden="true">
+        <svg viewBox={`0 0 ${WIDTH} ${height}`} className="absolute inset-0 size-full" fill="currentColor">
           <rect ref={ink} fill={accent} width="0" height="0" />
-          {POSTER.map((mark, index) => <rect key={index} x={mark.x} y={mark.y} width={mark.size} height={mark.height} opacity={mark.opacity} fill={mark.accent ? accent : "currentColor"} />)}
+          {POSTERS[layout].map((mark, index) => <rect key={index} x={mark.x} y={mark.y} width={mark.size} height={mark.height} opacity={mark.opacity} fill={mark.accent ? accent : "currentColor"} />)}
         </svg>
         <canvas ref={canvas} className="absolute inset-0 size-full opacity-0" />
       </div>
