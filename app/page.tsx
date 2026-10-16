@@ -9,7 +9,7 @@ import { GalleryPlayback, PlaybackControls } from "@/components/site/gallery-pre
 import { Button } from "@/components/ui/button"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
 import { BASE_PATH, REPOSITORY_URL, sitePath } from "@/lib/config"
-import { getCatalog, getSources } from "@/lib/data"
+import { getCatalog } from "@/lib/data"
 import { hostedPreview } from "@/lib/catalog/previews"
 import { previewSrc } from "@/lib/thumbnails"
 import { entryPage } from "@/lib/catalog/links"
@@ -27,25 +27,22 @@ const STEPS = [
 ]
 
 export default async function Home() {
-  const [catalog, sources] = await Promise.all([getCatalog(), getSources()])
-  const components = catalog.filter((entry) => entry.kind === "component" || entry.kind === "block").length
-  const example = (id: string, name: string, type: string, hero = false): HomeExample => {
+  const catalog = await getCatalog()
+  const example = (id: string, name: string, hero = false): HomeExample => {
     const entry = catalog.find((entry) => entry.id === id)!
     const descriptor = hostedPreview(id)!
-    return { id, name, type, href: new URL(entryPage(id)).pathname.slice(BASE_PATH.length), poster: entry.preview ? previewSrc(entry.preview) : undefined,
+    return { id, name, href: new URL(entryPage(id)).pathname.slice(BASE_PATH.length), poster: entry.preview ? previewSrc(entry.preview) : undefined,
       descriptor: hero ? { ...descriptor, src: `${descriptor.src}&presentation=hero`, width: id.endsWith("dither-chart") ? 600 : 400, height: id.endsWith("dither-chart") ? 390 : 320 } : id.endsWith("progressive-blur") ? { ...descriptor, height: 520 } : descriptor }
   }
-  const scene = [example("smoothui/dither-chart", "Dither chart", "Data, with texture", true), example("smoothui/scrubber", "Scrub to reshape", "Drag to reshape", true), example("smoothui/pixel-brush-canvas", "Draw something", "Make a little pixel art", true)]
-  const featured = [example("smoothui/progressive-blur", "Progressive blur", "Scroll it · change the blur · SmoothUI"), example("smoothui/card-swipe-deck", "Swipe a direction", "Drag a card · or use the buttons · SmoothUI"), example("oc/beam-card", "Beam card", "A little emphasis · Design Infra"), example("oc/kinetic-field", "Kinetic field", "Interactive · Design Infra")]
+  const scene = [example("smoothui/dither-chart", "Dither chart", true), example("smoothui/scrubber", "Scrub to reshape", true), example("smoothui/pixel-brush-canvas", "Draw something", true)]
+  const featured = [example("smoothui/progressive-blur", "Progressive blur"), example("smoothui/card-swipe-deck", "Swipe a direction"), example("oc/beam-card", "Beam card"), example("oc/kinetic-field", "Kinetic field")]
   return (
     <div className="mx-auto max-w-7xl px-6">
       <GalleryPlayback>
       <section className="home-motion-hero grid items-center gap-8 border-b py-10 lg:grid-cols-[1fr_1.15fr] lg:gap-12 lg:py-12">
         <div className="min-w-0 lg:py-8" data-hero-introduction>
-          <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">An open source design toolkit for your coding agent</p>
-          <h1 className="mt-5 max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Find real components and design references. Use Claude Code or Codex to adapt the right pieces to your project.</p>
-          <p className="mt-5 text-sm text-muted-foreground"><span className="font-medium text-foreground">{components.toLocaleString("en-US")} components & blocks</span> from {sources.length} sources. Free choices first.</p>
+          <h1 className="max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Find real components. Build with Claude Code or Codex.</p>
           <div className="mt-8"><AgentStart /></div>
           <div className="mt-6 flex flex-wrap items-center gap-5">
             <Button asChild variant="outline"><Link href="/components">Explore components <ArrowRight aria-hidden="true" /></Link></Button>
@@ -54,7 +51,7 @@ export default async function Home() {
         </div>
         <div className="min-w-0" data-hero-playground>
           <ComponentScene examples={scene} />
-          <div className="mt-4 flex items-center justify-between gap-3"><Link href="/components?view=live" className="inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Find these components <ArrowRight className="size-3" aria-hidden="true" /></Link><PlaybackControls /></div>
+          <div className="mt-4 flex justify-end"><PlaybackControls /></div>
         </div>
       </section>
 

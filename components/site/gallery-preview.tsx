@@ -66,6 +66,33 @@ export function PlaybackControls() {
   )
 }
 
+/** Readiness belongs to a mounted frame, so returning previews cannot expose an empty document. */
+function InteractivePreview({ src, title, width, height, scale, interact, onFailure }: {
+  src: string
+  title: string
+  width: number
+  height: number
+  scale?: number
+  interact: boolean
+  onFailure: () => void
+}) {
+  const frame = React.useRef<HTMLIFrameElement>(null)
+  const [ready, setReady] = React.useState(false)
+  React.useEffect(() => {
+    let receivedReady = false
+    const message = (event: MessageEvent) => {
+      if (event.origin !== location.origin || event.source !== frame.current?.contentWindow || event.data?.type !== "design-infra-preview") return
+      if (event.data.status === "ready") { receivedReady = true; setReady(true) }
+      if (event.data.status === "error") onFailure()
+    }
+    window.addEventListener("message", message)
+    // onLoad alone cannot distinguish a valid demo from an HTTP error page.
+    const timeout = window.setTimeout(() => { if (!receivedReady) onFailure() }, 20000)
+    return () => { window.removeEventListener("message", message); clearTimeout(timeout) }
+  }, [src, onFailure])
+  return <iframe ref={frame} src={src} title={`${title} interactive demo`} data-ready={ready ? "1" : undefined} tabIndex={interact ? 0 : -1} sandbox="allow-scripts allow-same-origin" className="absolute top-0 left-0 border-0 bg-[#141414]" style={{ width, height, transform: scale === undefined ? undefined : `scale(${scale})`, transformOrigin: "top left", pointerEvents: interact ? "auto" : "none", opacity: ready ? 1 : 0 }} />
+}
+
 /** Frames exist only while playing. Removing them also stops rAF, timers, WebGL and audio. */
 export function GalleryPreview({
   id,
@@ -93,11 +120,9 @@ export function GalleryPreview({
   const player = React.useContext(PlaybackContext)!
   const { visible, intent } = player
   const box = React.useRef<HTMLDivElement>(null)
-  const frame = React.useRef<HTMLIFrameElement>(null)
   const [width, setWidth] = React.useState(0)
   const [interact, setInteract] = React.useState(interaction === "direct")
   const [failed, setFailed] = React.useState(false)
-  const [ready, setReady] = React.useState(false)
   const moving = descriptor.kind !== "static"
   const playing = moving && !failed && player.active.has(id)
   React.useEffect(() => {
@@ -116,39 +141,8 @@ export function GalleryPreview({
       visible(id, order, false)
     }
   }, [id, moving, order, visible])
-  React.useEffect(() => {
-    if (!playing || descriptor.kind !== "interactive") return
-    const message = (event: MessageEvent) => {
-      if (
-        event.origin !== window.location.origin ||
-        event.source !== frame.current?.contentWindow ||
-        event.data?.type !== "design-infra-preview"
-      )
-        return
-      if (event.data.status === "ready" && frame.current) {
-        frame.current.dataset.ready = "1"
-        setReady(true)
-      }
-      if (event.data.status === "error") {
-        setFailed(true)
-        intent(id, "pause")
-      }
-    }
-    window.addEventListener("message", message)
-    const timeout = window.setTimeout(() => {
-      // onLoad alone cannot distinguish a valid demo from an HTTP error page.
-      if (!frame.current?.dataset.ready) {
-        setFailed(true)
-        intent(id, "pause")
-      }
-    }, 20000)
-    return () => {
-      window.removeEventListener("message", message)
-      clearTimeout(timeout)
-    }
-  }, [playing, descriptor.kind, id, intent])
+  const previewFailed = React.useCallback(() => { setFailed(true); intent(id, "pause") }, [id, intent])
   const playPause = () => {
-    setReady(false)
     setInteract(interaction === "direct")
     intent(id, playing ? "pause" : "play")
   }
@@ -160,7 +154,7 @@ export function GalleryPreview({
         data-gallery-preview={id}
         data-preview-kind={descriptor.kind}
         data-playing={playing}
-        className="relative overflow-hidden border-b bg-[#141414]"
+        className="relative w-full min-w-0 overflow-hidden border-b bg-[#141414]"
         style={{ aspectRatio: descriptor.kind === "interactive" ? descriptor.width / descriptor.height : 16 / 10, minHeight: minHeight || undefined }}
       >
         {poster ? (
@@ -175,22 +169,7 @@ export function GalleryPreview({
           <div className="flex size-full items-center justify-center text-xs text-muted-foreground">{label}</div>
         )}
         {playing && descriptor.kind === "interactive" && width > 0 ? (
-          <iframe
-            ref={frame}
-            src={descriptor.src}
-            title={`${title} interactive demo`}
-            tabIndex={interact ? 0 : -1}
-            sandbox="allow-scripts allow-same-origin"
-            className="absolute top-0 left-0 border-0"
-            style={{
-              width: responsive ? width : descriptor.width,
-              height: responsive ? Math.max(minHeight, width * descriptor.height / descriptor.width) : descriptor.height,
-              transform: responsive ? undefined : `scale(${width / descriptor.width})`,
-              transformOrigin: "top left",
-              pointerEvents: interact ? "auto" : "none",
-              opacity: ready ? 1 : 0,
-            }}
-          />
+          <InteractivePreview key={descriptor.src} src={descriptor.src} title={title} width={responsive ? width : descriptor.width} height={responsive ? Math.max(minHeight, width * descriptor.height / descriptor.width) : descriptor.height} scale={responsive ? undefined : width / descriptor.width} interact={interact} onFailure={previewFailed} />
         ) : null}
         {playing && descriptor.kind === "clip" ? (
           <video
@@ -210,8 +189,8 @@ export function GalleryPreview({
           />
         ) : null}
       </div>
-      <div className={`flex min-h-11 flex-wrap items-center gap-2 px-3 py-1 text-[11px] text-muted-foreground ${presentation === "gallery" ? "border-b" : ""}`}>
-        <span className="mr-auto">{failed ? presentation === "scene" ? "Preview unavailable" : "Preview unavailable · source link below" : presentation === "scene" ? "Try it live" : label}</span>
+      <div className={`flex min-h-11 flex-wrap items-center justify-end gap-2 px-3 py-1 text-[11px] text-muted-foreground ${presentation === "gallery" ? "border-b" : ""}`}>
+        <span className={presentation === "scene" && !failed ? "sr-only" : "mr-auto"}>{failed ? presentation === "scene" ? "Preview unavailable" : "Preview unavailable · source link below" : presentation === "scene" ? "Try it live" : label}</span>
         {moving && !failed ? (
           <>
             {presentation === "gallery" ? <span aria-live="polite">{playing ? "Playing" : "Paused"}</span> : null}

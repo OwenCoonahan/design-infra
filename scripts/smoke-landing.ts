@@ -39,7 +39,9 @@ async function main() {
       return { left: introduction.x, right: playground.x, width: scene.width, height: scene.height }
     })
     assert.ok(composition.left < composition.right && composition.width > 500 && Math.abs(composition.height / composition.width - 1.08) < 0.03, "desktop pairs left-hand copy with a large component scene")
-    assert.match(await page.$eval("#use-with-agent", (element) => element.textContent!), /Use it in your project[\s\S]*Setup & connection details[\s\S]*What to ask/)
+    assert.equal(await page.$$eval("#use-with-agent a", (links) => links.length), 0, "the hero copy panel has no redundant setup links")
+    assert.ok(await page.$eval('#use-with-agent [role="status"]', (status) => status.classList.contains("sr-only")), "copy feedback stays accessible without repeating visible instructions")
+    assert.equal(await page.$('::-p-text(Made of better pieces)'), null, "decorative scene labels are removed")
     await page.locator('button ::-p-text(More)').click()
     assert.ok(await page.$(`[role="menuitem"][href="${sitePath("/design-systems")}"]`))
     await page.keyboard.press("Escape")
