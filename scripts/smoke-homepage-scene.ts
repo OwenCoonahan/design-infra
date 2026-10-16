@@ -281,7 +281,7 @@ async function main() {
     let receiveFont!: () => void
     const firstFont = new Promise<void>((resolve) => { receiveFont = resolve })
     const holdFont = (request: HTTPRequest) => {
-      if (holdFonts && request.resourceType() === "font" && request.url() === delayedFont.href && request.frame()?.url().includes("/preview/smoothui/progressive-blur?")) { fonts.push(request); receiveFont() }
+      if (holdFonts && request.resourceType() === "font" && request.url() === delayedFont.href) { fonts.push(request); receiveFont() }
       else void request.continue()
     }
     delayed.on("request", holdFont)
