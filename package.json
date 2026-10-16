@@ -25,6 +25,7 @@
     "verify:starter": "tsx scripts/verify-starter.ts",
     "smoke:integration": "tsx scripts/smoke-integration.ts",
     "smoke:hosting": "tsx scripts/smoke-hosting.ts",
+    "smoke:audio": "tsx scripts/smoke-ambient-audio.ts",
     "starter:build": "tsx scripts/build-starter.ts",
     "smoke:landing": "tsx scripts/smoke-landing.ts",
     "smoke:requests": "tsx scripts/smoke-requests.ts",
