@@ -331,7 +331,7 @@
     "smoothui/progressive-blur": {
       "adapter": "showcase",
       "width": 640,
-      "height": 460,
+      "height": 520,
       "provenance": {
         "source": "https://smoothui.dev/r/progressive-blur.json",
         "license": "MIT",

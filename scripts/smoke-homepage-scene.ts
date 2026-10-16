@@ -4,6 +4,7 @@ import { parseArgs } from "node:util"
 import puppeteer, { type Frame, type HTTPRequest } from "puppeteer-core"
 import { galleryBase } from "./lib/gallery-base"
 import { sitePath } from "../lib/config"
+import { observeHandoffs, assertStableHandoff } from "./lib/handoff-probe"
 
 const { values } = parseArgs({ options: { base: { type: "string", default: "http://localhost:3000" } } })
 const base = galleryBase(values.base!)
@@ -12,6 +13,7 @@ async function main() {
   const browser = await puppeteer.launch({ executablePath: process.env.CHROME_PATH ?? "/usr/bin/google-chrome", args: ["--no-sandbox", "--disable-dev-shm-usage", "--blink-settings=primaryPointerType=4,availablePointerTypes=4,primaryHoverType=2,availableHoverTypes=2"] })
   try {
     const page = await browser.newPage()
+    await observeHandoffs(page)
     const errors: string[] = []
     page.on("pageerror", (error) => errors.push(String(error)))
     await page.setViewport({ width: 1440, height: 1000 })
@@ -100,6 +102,7 @@ async function main() {
     await page.waitForFunction(() => document.querySelectorAll('[data-scene-card] iframe').length === 0)
     await budget()
     await page.waitForSelector('[data-home-example="smoothui/progressive-blur"] iframe[data-ready="1"]')
+    for (const id of ["smoothui/progressive-blur", "smoothui/card-swipe-deck"]) await assertStableHandoff(page, id)
     assert.equal(await page.$('#live-components button ::-p-text(Interact)'), null, "homepage demos require no interaction gate")
     const blur = frame("progressive-blur")
     await blur.select('[aria-label="Blur direction"]', "top")
@@ -126,6 +129,18 @@ async function main() {
     await page.keyboard.press("ArrowLeft")
     await deck.waitForFunction(() => document.querySelector('[role="status"]')!.textContent!.includes("Passed: Keep it calm."))
     await deck.locator('[aria-label="Reset cards"]').click()
+    // Explicit playback isolates visibility cleanup from the shared three-frame budget.
+    await page.click('[aria-label="Pause Progressive blur"]')
+    await page.click('[aria-label="Play Progressive blur"]')
+    await page.waitForSelector('[data-home-example="smoothui/progressive-blur"] iframe[data-ready="1"]')
+    const partialFrame = frame("progressive-blur")
+    await page.$eval('[data-home-example="smoothui/progressive-blur"] [data-gallery-preview]', (element) => {
+      const bounds = element.getBoundingClientRect()
+      scrollTo(0, scrollY + bounds.top - innerHeight + bounds.height * 0.1)
+    })
+    await wait(250)
+    assert.ok(page.frames().includes(partialFrame), "a demo stays mounted while its last 10% is visible")
+    await page.$eval("#live-components", (element) => element.scrollIntoView({ block: "start" }))
     // Scroll away and back with the new frame request held: its previous ready state must not leak.
     await page.$eval('[data-home-example="oc/beam-card"]', (element) => element.scrollIntoView({ block: "center" }))
     await page.waitForSelector('[data-home-example="oc/beam-card"] iframe[data-ready="1"]')
@@ -191,6 +206,7 @@ async function main() {
     assert.ok(await page.$$eval('[data-scene-card] img', (images) => images.length === 3 && images.every((image) => image.complete && image.naturalWidth > 0)), "paused examples have useful generated posters")
     await page.click('[data-scene-card="smoothui/pixel-brush-canvas"] button ::-p-text(Play)')
     await page.waitForSelector('[data-scene-card="smoothui/pixel-brush-canvas"] iframe[data-ready="1"]')
+    assert.equal(await page.$eval('[data-scene-card="smoothui/pixel-brush-canvas"] iframe', (frame) => getComputedStyle(frame).transitionProperty), "none", "reduced motion disables the handoff fade")
     await frame("pixel-brush-canvas").locator('[aria-label="Use lime ink"]').click()
     assert.equal(await frame("pixel-brush-canvas").$eval('[aria-label="Use lime ink"]', (button) => button.getAttribute("aria-pressed")), "true")
     await page.click(`nav a[href="${sitePath("/guide")}"]`)
@@ -219,6 +235,37 @@ async function main() {
     assert.equal(await failure.$$eval('[data-scene-card] img', (images) => images.length), 3)
     console.log("✓ homepage scene: failed-frame poster/source fallback and useful no-JavaScript composition")
     await failure.close()
+
+    const delayed = await browser.newPage()
+    await observeHandoffs(delayed)
+    await delayed.setViewport({ width: 1440, height: 1000 })
+    await delayed.setCacheEnabled(false)
+    await delayed.setRequestInterception(true)
+    const fonts: HTTPRequest[] = []
+    let holdFonts = true
+    let receiveFont!: () => void
+    const firstFont = new Promise<void>((resolve) => { receiveFont = resolve })
+    const holdFont = (request: HTTPRequest) => {
+      if (holdFonts && request.resourceType() === "font" && request.frame()?.url().includes("/preview/smoothui/progressive-blur?")) { fonts.push(request); receiveFont() }
+      else void request.continue()
+    }
+    delayed.on("request", holdFont)
+    await delayed.goto(base, { waitUntil: "domcontentloaded" })
+    await delayed.$eval("#live-components", (element) => element.scrollIntoView({ block: "start" }))
+    await Promise.race([firstFont, wait(10000).then(() => { throw new Error("No preview font request intercepted") })])
+    await delayed.evaluate(async () => { await document.fonts.ready })
+    await wait(100)
+    assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] iframe', (frame) => getComputedStyle(frame).opacity), "0", "a demo stays behind its poster while real font requests are pending")
+    holdFonts = false
+    await Promise.all(fonts.map((request) => request.continue()))
+    delayed.off("request", holdFont)
+    await delayed.setRequestInterception(false)
+    await delayed.waitForSelector('[data-home-example="smoothui/progressive-blur"] iframe[data-ready="1"]')
+    await assertStableHandoff(delayed, "smoothui/progressive-blur")
+    await delayed.waitForFunction(() => getComputedStyle(document.querySelector('[data-home-example="smoothui/progressive-blur"] iframe')!).opacity === "1")
+    assert.equal(await delayed.$eval('[data-home-example="smoothui/progressive-blur"] iframe', (frame) => getComputedStyle(frame).transitionDuration), "0.2s")
+    await delayed.close()
+    console.log("✓ homepage handoff: settled initial layout, stable card geometry, real delayed fonts, short reveal fade and reduced-motion override")
   } finally { await browser.close() }
 }
 main().catch((error: unknown) => { console.error(error); process.exitCode = 1 })

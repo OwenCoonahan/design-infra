@@ -25,12 +25,27 @@ class DemoBoundary extends React.Component<{ children: React.ReactNode }, { fail
 }
 function Ready({ children }: { children: React.ReactNode }) {
   React.useEffect(() => {
-    signal("ready")
+    let cancelled = false
+    let firstFrame = 0
+    let secondFrame = 0
+    // ResizeObserver-driven demos need a layout pass after hydration. Revealing them
+    // from this effect exposes their default dimensions before that measurement lands.
+    void document.fonts.ready.then(() => {
+      if (cancelled) return
+      firstFrame = requestAnimationFrame(() => {
+        secondFrame = requestAnimationFrame(() => { if (!cancelled) signal("ready") })
+      })
+    })
     // Native hero demos relay pointer position without an overlay intercepting their controls.
-    if (new URLSearchParams(location.search).get("presentation") !== "hero" || parent === window) return
+    const relay = new URLSearchParams(location.search).get("presentation") === "hero" && parent !== window
     const move = (event: PointerEvent) => parent.postMessage({ type: "design-infra-pointer", x: event.clientX / innerWidth, y: event.clientY / innerHeight }, location.origin)
-    window.addEventListener("pointermove", move, { passive: true })
-    return () => window.removeEventListener("pointermove", move)
+    if (relay) window.addEventListener("pointermove", move, { passive: true })
+    return () => {
+      cancelled = true
+      cancelAnimationFrame(firstFrame)
+      cancelAnimationFrame(secondFrame)
+      window.removeEventListener("pointermove", move)
+    }
   }, [])
   return children
 }
