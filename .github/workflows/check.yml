@@ -36,4 +36,3 @@ jobs:
           pnpm smoke:requests --base http://localhost:3330
           pnpm smoke:motion --base http://localhost:3330
           pnpm smoke:hosting --base http://localhost:3330
-          pnpm smoke:audio --base http://localhost:3330

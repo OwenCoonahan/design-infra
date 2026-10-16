@@ -10,18 +10,18 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 |---|---|---|---|---|
 | **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
 | **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 808 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 896 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 897 |
 | **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 271 |
 | **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 93 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 57 |
-| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md) | 827 |
+| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 828 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
 | **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 363 |
 | **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | — | 887 |
 | **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Motion](../inspiration/motion/README.md) | 7 |
 | **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 74 |
 | **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 140 |
-| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 922 |
+| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 923 |
 
 ## Calm
 

@@ -5195,6 +5195,46 @@
     "live": "https://stripe.com"
   },
   {
+    "id": "inspiration/ugc-contracts",
+    "source": "inspiration",
+    "name": "ugc-contracts",
+    "title": "UGC Contracts",
+    "description": "A contract generator explained through a persistent paper document, scroll-linked clause highlights, layered sheets, particle connections and a drawn-signature finale.",
+    "kind": "inspiration",
+    "categories": [
+      "hero",
+      "features",
+      "scroll-effect",
+      "card",
+      "cta"
+    ],
+    "tags": [
+      "inspiration",
+      "website",
+      "product-story",
+      "document",
+      "layered",
+      "scroll",
+      "motion",
+      "marketing"
+    ],
+    "moods": [
+      "refined",
+      "trustworthy",
+      "playful"
+    ],
+    "access": "free",
+    "install": "reference only — read inspiration/ugc-contracts/README.md (patterns → smoothui/magnetic-field, oc/feature-levels, oc/kinetic-field, motion-primitives/tilt, motion-primitives/animated-group, motion-primitives/text-effect, magicui/animated-beam, magicui/blur-fade)",
+    "docs": "https://ugccontracts.com/",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "My friend made this site which has so many animations and other things — shared as a reference for a stronger first impression and richer motion on Design Infra. The useful direction is coordinated, product-specific interaction; the user separately requested removing music from our homepage.",
+    "demo": false,
+    "appliesTo": [],
+    "live": "https://ugccontracts.com/"
+  },
+  {
     "id": "inspiration/vanta",
     "source": "inspiration",
     "name": "vanta",

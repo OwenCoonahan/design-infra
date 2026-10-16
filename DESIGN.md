@@ -32,6 +32,4 @@ Motion demonstrates the catalog's usefulness without moving the heading, navigat
 
 ## Sound
 
-The playground has optional quiet ambient tones with a subtle shimmer. Generate the original composition in the browser, with a slowly breathing chord, gentle stereo spread and a soft reverberant tail. Cursor movement can slightly change its brightness; avoid sharp notes or sudden volume changes.
-
-Start muted on every visit. Create the audio context only after the user enables sound. Provide a labeled mute toggle and volume slider, fade changes, suspend audio while the playground is offscreen or the tab is hidden, and close the context when navigating away. Sound is independent of motion playback and can accompany the static reduced-motion view. Retain useful controls and clear feedback if audio is unsupported or cannot start. No audio files, subscription services, microphone access or external sound requests are needed.
+Keep the homepage silent. The user tried optional ambient audio and requested its removal on 2026-10-16. Use visual motion and interaction to create the first impression; do not add music or sound controls.
