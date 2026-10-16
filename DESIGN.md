@@ -29,3 +29,9 @@ The guide leads with four spacious numbered sections: connect, show the target w
 Use the shared `lively` spring preset for pointer response and shape changes. `oc/kinetic-field` offers Orbit, Wave and Sphere forms, pointer tilt/displacement and pause/play. Reduced-motion and coarse-pointer visitors start with a static view and can explicitly play. Preference changes reset the override. Visibility and intersection controls stop the drawing loop while hidden or offscreen. The server-rendered SVG remains a fallback for disabled JavaScript or unavailable Canvas.
 
 Motion demonstrates the catalog's usefulness without moving the heading, navigation or copy button. The implementation uses free Motion APIs and original geometry; no Motion+ source or reference-site artwork is included.
+
+## Sound
+
+The playground has optional quiet ambient tones with a subtle shimmer. Generate the original composition in the browser, with a slowly breathing chord, gentle stereo spread and a soft reverberant tail. Cursor movement can slightly change its brightness; avoid sharp notes or sudden volume changes.
+
+Start muted on every visit. Create the audio context only after the user enables sound. Provide a labeled mute toggle and volume slider, fade changes, suspend audio while the playground is offscreen or the tab is hidden, and close the context when navigating away. Sound is independent of motion playback and can accompany the static reduced-motion view. Retain useful controls and clear feedback if audio is unsupported or cannot start. No audio files, subscription services, microphone access or external sound requests are needed.
