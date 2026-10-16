@@ -29,9 +29,17 @@ async function main() {
     assert.equal(await page.evaluate(() => navigator.clipboard.readText()), SETUP_PROMPT)
     assert.equal(await page.$('[aria-label="Agent behavior"]'), null)
     assert.match(await prompt(), /Integrate https:\/\/github\.com\//)
-    assert.match(await prompt(), /Follow its setup guide, then show me how to use it/)
+    assert.match(await prompt(), /into this project and show me how to use it/)
     assert.ok((await prompt()).split(/\s+/).length <= 25, "starting prompt should stay brief")
-    assert.match(await page.$eval("#use-with-agent", (element) => element.textContent!), /Ask in the same chat[\s\S]*Find a loading component[\s\S]*Choose a pricing layout and build it/)
+    assert.ok(await page.$('[data-hero-introduction] #home-agent-prompt'), "copy prompt belongs with the introduction")
+    const composition = await page.evaluate(() => {
+      const introduction = document.querySelector("[data-hero-introduction]")!.getBoundingClientRect()
+      const playground = document.querySelector("[data-hero-playground]")!.getBoundingClientRect()
+      const canvas = document.querySelector("[data-hero-playground] canvas")!.getBoundingClientRect()
+      return { left: introduction.x, right: playground.x, width: canvas.width, height: canvas.height }
+    })
+    assert.ok(composition.left < composition.right && composition.width > 500 && Math.abs(composition.width - composition.height) < 1, "desktop pairs left-hand copy with a large square playground")
+    assert.match(await page.$eval("#use-with-agent", (element) => element.textContent!), /Use it in your project[\s\S]*Setup & connection details[\s\S]*What to ask/)
     await page.locator('button ::-p-text(More)').click()
     assert.ok(await page.$(`[role="menuitem"][href="${sitePath("/design-systems")}"]`))
     await page.keyboard.press("Escape")
@@ -43,6 +51,8 @@ async function main() {
       await page.setViewport({ width, height: 844 })
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `horizontal overflow at ${width}px`)
       assert.equal(await prompt(), SETUP_PROMPT)
+      assert.ok(await page.$eval("#home-agent-prompt", (element) => element.scrollHeight <= element.clientHeight), "the complete starting prompt remains readable")
+      assert.ok(await page.evaluate(() => document.querySelector("[data-hero-introduction]")!.getBoundingClientRect().bottom <= document.querySelector("[data-hero-playground]")!.getBoundingClientRect().top), "introduction and prompt precede motion on small screens")
     }
     await page.setViewport({ width: 390, height: 844 })
     await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }])

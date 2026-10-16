@@ -26,24 +26,22 @@ export default async function Home() {
   const components = catalog.filter((entry) => entry.kind === "component" || entry.kind === "block").length
   return (
     <div className="mx-auto max-w-7xl px-6">
-      <section className="home-motion-hero grid items-center gap-10 border-b py-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-12">
-        <div>
-          <div className="mb-8">
-            <KineticField accent="var(--site-motion-accent)" />
-            <Link href="/components/oc/kinetic-field" className="mt-2 inline-flex items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Use this effect <ArrowRight className="size-3" aria-hidden="true" /></Link>
-          </div>
+      <section className="home-motion-hero grid items-center gap-8 border-b py-10 lg:grid-cols-[1fr_1.15fr] lg:gap-12 lg:py-12">
+        <div className="min-w-0 lg:py-8" data-hero-introduction>
           <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">An open source design toolkit for your coding agent</p>
-          <h1 className="mt-6 max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">A library of UI components and design references for your projects. Browse examples yourself, or use Claude Code or Codex to find, adapt and install the right pieces.</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg"><a href="#use-with-agent">Use with your agent <ArrowRight aria-hidden="true" /></a></Button>
-            <Button asChild variant="outline" size="lg"><Link href="/components">Explore components</Link></Button>
-            <a href="#how-it-works" className="inline-flex min-h-11 items-center px-1 text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">How it works</a>
+          <h1 className="mt-5 max-w-2xl text-5xl leading-[1.06] font-semibold tracking-tight sm:text-6xl">Good UI starts with <span className="text-[var(--site-motion-accent)]">better components.</span></h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">Find real components and design references. Use Claude Code or Codex to adapt the right pieces to your project.</p>
+          <p className="mt-5 text-sm text-muted-foreground"><span className="font-medium text-foreground">{components.toLocaleString("en-US")} components & blocks</span> from {sources.length} sources. Free choices first.</p>
+          <div className="mt-8"><AgentStart /></div>
+          <div className="mt-6 flex flex-wrap items-center gap-5">
+            <Button asChild variant="outline"><Link href="/components">Explore components <ArrowRight aria-hidden="true" /></Link></Button>
+            <a href="#how-it-works" className="inline-flex min-h-11 items-center text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">How it works</a>
           </div>
-          <p className="mt-8 text-sm text-muted-foreground"><span className="font-medium text-foreground">{components.toLocaleString("en-US")} components & blocks</span> from {sources.length} sources. Free choices first.</p>
-          <p className="mt-2 text-xs text-muted-foreground">Start without cloning the repo, installing a plugin or buying a subscription.</p>
         </div>
-        <AgentStart />
+        <div className="min-w-0" data-hero-playground>
+          <KineticField accent="var(--site-motion-accent)" layout="square" />
+          <Link href="/components/oc/kinetic-field" className="mt-2 inline-flex min-h-11 items-center gap-1 text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground">Use this effect <ArrowRight className="size-3" aria-hidden="true" /></Link>
+        </div>
       </section>
 
       <section id="how-it-works" aria-labelledby="steps-title" className="scroll-mt-24 border-b py-14 lg:py-20">

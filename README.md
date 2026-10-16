@@ -8,7 +8,7 @@ Find existing components, see them live, and give your coding agent the right pa
 
 Open an existing project in Claude Code or Codex and paste:
 
-> Integrate https://github.com/OwenCoonahan/design-infra into this project. Follow its setup guide, then show me how to use it.
+> Integrate https://github.com/OwenCoonahan/design-infra into this project and show me how to use it.
 
 Agents: follow the [setup guide](docs/INTEGRATE.md) to connect, verify access, and show a few example requests. Setup alone does not authorize UI changes. No clone, plugin or design-infra API key is required. Then ask for options or say “choose and build” to delegate an actual task.
 
