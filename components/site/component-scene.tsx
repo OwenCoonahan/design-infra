@@ -41,9 +41,11 @@ export function ComponentScene({ examples }: { examples: HomeExample[] }) {
     if (!active) return
     const move = (event: MessageEvent) => {
       if (event.origin !== location.origin || event.data?.type !== "design-infra-pointer" || !Number.isFinite(event.data.x) || !Number.isFinite(event.data.y)) return
-      const frame = [...root.current!.querySelectorAll("iframe")].find((frame) => frame.contentWindow === event.source)
+      const element = root.current
+      if (!element?.isConnected) return
+      const frame = [...element.querySelectorAll("iframe")].find((frame) => frame.contentWindow === event.source)
       if (!frame) return
-      const scene = root.current!.getBoundingClientRect()
+      const scene = element.getBoundingClientRect()
       const bounds = frame.getBoundingClientRect()
       x.set(((bounds.left + bounds.width * event.data.x - scene.left) / scene.width - 0.5) * 8)
       y.set(-((bounds.top + bounds.height * event.data.y - scene.top) / scene.height - 0.5) * 6)
