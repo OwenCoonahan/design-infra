@@ -24,10 +24,10 @@ import {
 
 import { FeatureLevelsDemo } from "@/components/demos/feature-levels-demo"
 import { AppFrame } from "@/components/site/app-frame"
+import { KineticDemo, BeamDemo } from "@/components/demos/motion-showcase-demos"
 import { Button } from "@/components/ui/button"
 import { AgentStatus } from "@/registry/oc/blocks/agent-status/agent-status"
 import { AppShell } from "@/registry/oc/blocks/app-shell/app-shell"
-import { BeamCard } from "@/registry/oc/blocks/beam-card/beam-card"
 import { ChatThread } from "@/registry/oc/blocks/chat-thread/chat-thread"
 import { CtaBanner } from "@/registry/oc/blocks/cta-banner/cta-banner"
 import { DataTableCard } from "@/registry/oc/blocks/data-table-card/data-table-card"
@@ -39,7 +39,6 @@ import { FeatureList } from "@/registry/oc/blocks/feature-list/feature-list"
 import { FooterColumns } from "@/registry/oc/blocks/footer-columns/footer-columns"
 import { HeroSplit } from "@/registry/oc/blocks/hero-split/hero-split"
 import { HeroSpotlight } from "@/registry/oc/blocks/hero-spotlight/hero-spotlight"
-import { KineticField } from "@/registry/oc/blocks/kinetic-field/kinetic-field"
 import { LogoCloud } from "@/registry/oc/blocks/logo-cloud/logo-cloud"
 import { Navbar } from "@/registry/oc/blocks/navbar/navbar"
 import { PricingSimple } from "@/registry/oc/blocks/pricing-simple/pricing-simple"
@@ -68,7 +67,7 @@ const PRICING_SQL = "select page, signups::float / sessions as cvr\nfrom page_st
 
 /** Live demos for @oc registry items, keyed by item name. */
 export const OC_DEMOS: Record<string, () => React.ReactNode> = {
-  "kinetic-field": () => <div className="mx-auto max-w-xl px-6 py-8"><KineticField /></div>,
+  "kinetic-field": () => <KineticDemo />,
   "feature-levels": () => <FeatureLevelsDemo />,
   "design-lab": () => <DesignLabPage />,
   "hero-spotlight": () => (
@@ -140,15 +139,7 @@ export const OC_DEMOS: Record<string, () => React.ReactNode> = {
       </div>
     </div>
   ),
-  "beam-card": () => (
-    <div className="grid gap-6 p-8 md:grid-cols-2">
-      <BeamCard>
-        <AgentStatus activity="writing" detail="Generating pricing section" />
-        <p className="mt-3 text-sm text-muted-foreground">The one live thing on screen gets the beam.</p>
-      </BeamCard>
-      <div className="rounded-xl border bg-card p-6 text-sm text-muted-foreground">Everything else stays calm.</div>
-    </div>
-  ),
+  "beam-card": () => <BeamDemo />,
   "theme-preview": () => <ThemePreview />,
 
   /* ---------------------------------------------------------------- marketing */

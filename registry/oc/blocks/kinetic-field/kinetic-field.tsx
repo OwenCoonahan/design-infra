@@ -60,10 +60,10 @@ function marks(time: number, shape: number, tiltX = 0, tiltY = 0, pointer?: { x:
 const poster = (layout: Layout) => marks(0, 0, 0, 0, undefined, layout).map((mark) => ({ ...mark, x: mark.x.toFixed(3), y: mark.y.toFixed(3), size: mark.size.toFixed(3), height: (mark.size * 0.65).toFixed(3), opacity: mark.opacity.toFixed(3) }))
 const POSTERS = { wide: poster("wide"), square: poster("square") }
 
-export type KineticFieldProps = { className?: string; accent?: string; layout?: Layout }
+export type KineticFieldProps = { className?: string; accent?: string; layout?: Layout; active?: boolean }
 
 /** Bounded Canvas 2D illustration with an SSR SVG poster and free Motion springs. */
-export function KineticField({ className, accent = "var(--primary)", layout = "wide" }: KineticFieldProps) {
+export function KineticField({ className, accent = "var(--primary)", layout = "wide", active = true }: KineticFieldProps) {
   const height = layout === "square" ? WIDTH : HEIGHT
   const root = useRef<HTMLDivElement>(null)
   const surface = useRef<HTMLDivElement>(null)
@@ -78,7 +78,7 @@ export function KineticField({ className, accent = "var(--primary)", layout = "w
   const tiltX = useSpring(0, SPRING)
   const tiltY = useSpring(0, SPRING)
   const form = useSpring(0, SPRING)
-  const enabled = preference ?? (!activity.reduced && activity.fine)
+  const enabled = active && (preference ?? (!activity.reduced && activity.fine))
   const playing = canvasAvailable && activity.ready && activity.visible && activity.tab && enabled
   const state = !activity.ready ? "static" : !canvasAvailable ? "fallback" : !activity.tab ? "hidden" : !activity.visible ? "offscreen" : playing ? "playing" : "paused"
 
