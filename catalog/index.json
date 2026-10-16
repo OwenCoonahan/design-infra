@@ -5155,7 +5155,7 @@
     "dependencies": [],
     "curated": true,
     "favorite": false,
-    "notes": "The user shared ten screenshots as favicon candidates and asked, \"thoughts on any of these?\" They also want an interesting image when sharing the site. No individual reference or proposed identity has been selected.",
+    "notes": "The user shared ten screenshots as favicon candidates and asked, \"thoughts on any of these?\" They also want an interesting image when sharing the site. They rejected the generated Loop/Echo/Spring proposals, saying \"nah i dont like these\" and asking for a cool, simple logo that can be sourced online. No final mark has been selected.",
     "demo": false,
     "appliesTo": [],
     "live": "https://github.com/OwenCoonahan/design-infra/blob/main/inspiration/geometric-identity/README.md"

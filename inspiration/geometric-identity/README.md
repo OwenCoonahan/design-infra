@@ -4,7 +4,7 @@ name: Geometric identity studies
 url: https://github.com/OwenCoonahan/design-infra/blob/main/inspiration/geometric-identity/README.md
 type: other
 summary: A study of ten user-supplied geometric marks, comparing bold silhouettes with layered line art for favicons, social previews and motion illustrations.
-likes: 'The user shared ten screenshots as favicon candidates and asked, "thoughts on any of these?" They also want an interesting image when sharing the site. No individual reference or proposed identity has been selected.'
+likes: 'The user shared ten screenshots as favicon candidates and asked, "thoughts on any of these?" They also want an interesting image when sharing the site. They rejected the generated Loop/Echo/Spring proposals, saying "nah i dont like these" and asking for a cool, simple logo that can be sourced online. No final mark has been selected.'
 moods: [technical, refined, experimental]
 categories: [illustration, 3d, background]
 tags: [brand-identity, favicon, social-preview, open-graph, geometry, line-art, screenshot-study]
@@ -34,6 +34,8 @@ This is an analysis of user-supplied screenshots, rather than a captured website
 | 3:20:10 | Tilted hollow loop made from contours | Motion, dimensionality and a readable central opening | Strong basis for a detailed share illustration and a simplified favicon |
 
 ## Reusable rules
+
+The user rejected our generated Loop, Echo and Spring identity treatments after reviewing them. Those are not approved directions for the Design Infra logo or sharing card. Their current request is a simpler, cool mark, including a suitable licensed icon sourced online. The original screenshots remain references rather than selected brand assets; do not infer a global dislike of geometry or motion components from this site-specific rejection.
 
 Use one geometric idea at multiple levels of detail. A favicon needs a clear silhouette, broad strokes and generous gaps. A 1200×630 sharing card has room for fine contours, dimensional projection and a prominent product headline. The larger illustration can imply motion while remaining a useful static image.
 
