@@ -9,12 +9,12 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 | mood | feels like | design systems | inspiration | entries |
 |---|---|---|---|---|
 | **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
-| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 808 |
+| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 809 |
 | **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 897 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 271 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 272 |
 | **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 93 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 57 |
-| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 828 |
+| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 826 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
 | **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 363 |
 | **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | — | 887 |
@@ -47,6 +47,7 @@ Quiet, spacious, low motion; lets content breathe. Brief words: calm, quiet, ser
 
 Sparse, monochrome, restrained; nothing decorative. Brief words: minimal, minimalist, clean, simple, sparse, understated, restrained, monochrome.
 
+- ♥ ★ `smoothui/progressive-blur` — Progressive Blur (scroll-effect) · `npx shadcn@latest add @smoothui/progressive-blur`
 - ★ `oc/feature-bento` — Features · Bento (features, bento) · `npx shadcn@latest add @design-infra/feature-bento`
 - ★ `oc/feature-list` — Features · List (features) · `npx shadcn@latest add @design-infra/feature-list`
 - ★ `oc/footer-columns` — Footer · Columns (footer, navigation) · `npx shadcn@latest add @design-infra/footer-columns`
@@ -61,13 +62,14 @@ Sparse, monochrome, restrained; nothing decorative. Brief words: minimal, minima
 - ★ `motion-primitives/in-view` — In View (transition) · `npx shadcn@latest add @motion-primitives/in-view`
 - ★ `motion-primitives/infinite-slider` — Infinite Slider (carousel) · `npx shadcn@latest add @motion-primitives/infinite-slider`
 - ★ `motion-primitives/morphing-dialog` — Morphing Dialog (modal) · `npx shadcn@latest add @motion-primitives/morphing-dialog`
-- ★ `motion-primitives/progressive-blur` — Progressive Blur (scroll-effect) · `npx shadcn@latest add @motion-primitives/progressive-blur`
 
 ## Refined
 
 Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. Brief words: refined, clean, polished, crafted, precise, sleek, sharp, crisp.
 
 - ♥ ★ `oc/feature-levels` — Features · Levels (scroll-spy) (features, scroll-effect) · `npx shadcn@latest add @design-infra/feature-levels`
+- ♥ ★ `smoothui/dither-chart` — Dither Chart (chart) · `npx shadcn@latest add @smoothui/dither-chart`
+- ♥ ★ `smoothui/progressive-blur` — Progressive Blur (scroll-effect) · `npx shadcn@latest add @smoothui/progressive-blur`
 - ★ `oc/agent-status` — Agent status (agent-ui, loader) · `npx shadcn@latest add @design-infra/agent-status`
 - ★ `oc/app-shell` — App shell (sidebar, navigation, dashboard) · `npx shadcn@latest add @design-infra/app-shell`
 - ★ `oc/chat-thread` — Chat thread (ai-chat, agent-ui) · `npx shadcn@latest add @design-infra/chat-thread`
@@ -80,13 +82,12 @@ Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. Brief wo
 - ★ `oc/prompt-composer` — Prompt composer (ai-chat, input) · `npx shadcn@latest add @design-infra/prompt-composer`
 - ★ `oc/template-ai-chat` — Template · AI chat (ai-chat, agent-ui, sidebar) · `npx shadcn@latest add @design-infra/template-ai-chat`
 - ★ `oc/template-landing` — Template · SaaS landing page (hero, features, pricing, testimonials, faq, cta, footer) · `npx shadcn@latest add @design-infra/template-landing`
-- ★ `oc/template-saas-dashboard` — Template · SaaS dashboard (dashboard, sidebar, stats, chart, table) · `npx shadcn@latest add @design-infra/template-saas-dashboard`
-- ★ `oc/motion-presets` — Motion presets (transition) · `npx shadcn@latest add @design-infra/motion-presets`
 
 ## Technical
 
 Dev-tool energy: mono type, terminals, data density, grids. Brief words: technical, developer, dev tool, devtool, engineering, api, cli, terminal.
 
+- ♥ ★ `smoothui/dither-chart` — Dither Chart (chart) · `npx shadcn@latest add @smoothui/dither-chart`
 - ★ `oc/app-shell` — App shell (sidebar, navigation, dashboard) · `npx shadcn@latest add @design-infra/app-shell`
 - ★ `oc/data-table-card` — Data table card (table, dashboard) · `npx shadcn@latest add @design-infra/data-table-card`
 - ★ `oc/kinetic-field` — Kinetic field (background, 3d) · `npx shadcn@latest add @design-infra/kinetic-field`
@@ -101,7 +102,6 @@ Dev-tool energy: mono type, terminals, data density, grids. Brief words: technic
 - ★ `kibo-ui/dropzone` — Dropzone (input) · `npx shadcn@latest add @kibo-ui/dropzone`
 - ★ `kibo-ui/editor` — Editor (input) · `npx shadcn@latest add @kibo-ui/editor`
 - ★ `kibo-ui/gantt` — Gantt (dashboard) · `npx shadcn@latest add @kibo-ui/gantt`
-- ★ `kibo-ui/kanban` — Kanban (dashboard) · `npx shadcn@latest add @kibo-ui/kanban`
 
 ## Editorial
 
@@ -234,6 +234,7 @@ Loud, high-contrast, big type, brutalist confidence. Brief words: bold, loud, br
 
 Pixel, dither, ASCII, CRT, nostalgic computing. Brief words: retro, vintage, nostalgic, pixel, 8-bit, ascii, dither, crt.
 
+- ♥ ★ `smoothui/dither-chart` — Dither Chart (chart) · `npx shadcn@latest add @smoothui/dither-chart`
 - ★ `cult-ui/hero-dithering` — Hero Dithering (hero) · `npx shadcn@latest add @cult-ui/hero-dithering`
 - `aceternity/ascii-art` — ASCII Art (card, image, 3d, background) · `npx shadcn@latest add @aceternity/ascii-art`
 - `aceternity/dither-shader` — Dither Shader (background, card, cta) · `npx shadcn@latest add @aceternity/dither-shader`
@@ -248,7 +249,6 @@ Pixel, dither, ASCII, CRT, nostalgic computing. Brief words: retro, vintage, nos
 - `cult-ui/pixel-paragraph-words` — Pixel Paragraph Words (chart, text-effect) · `npx shadcn@latest add @cult-ui/pixel-paragraph-words`
 - `cult-ui/pixel-paragraph-words-inverse` — Pixel Paragraph Words Inverse (chart, text-effect) · `npx shadcn@latest add @cult-ui/pixel-paragraph-words-inverse`
 - `cult-ui/shadow-card` — Shadow Card (card) · `npx shadcn@latest add @cult-ui/shadow-card`
-- `magicui/pixel-image` — Pixel Image (image) · `npx shadcn@latest add @magicui/pixel-image`
 
 ## Organic
 

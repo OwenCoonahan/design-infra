@@ -4697,5 +4697,30 @@
       "refined",
       "playful"
     ]
+  },
+  {
+    "id": "smoothui/dither-chart",
+    "moods": [
+      "retro",
+      "technical",
+      "refined"
+    ],
+    "notes": "Pixelated Canvas charts with line, donut, bar and other data shapes. Good for distinctive dashboards and product illustrations; keep its data text alternative, label demo data and provide controls outside the canvas. Hosted local demo preserves the upstream component and install command."
+  },
+  {
+    "id": "smoothui/progressive-blur",
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "notes": "Layered CSS backdrop blur for fading scroll-container edges and decorative surfaces. It is not a loader or a continuous animation. Keep text, focus targets and controls outside the strongest blur; the decorative overlay must not intercept interaction. Hosted demo includes a real scroll container and blur controls."
+  },
+  {
+    "id": "smoothui/dot-morph-button",
+    "moods": [
+      "refined",
+      "playful"
+    ],
+    "notes": "Small tactile hover feedback on a real button. Use a clear action label and actual click feedback; keep the dot decorative and preserve reduced-motion behavior. Hosted demo uses the upstream SmoothButton dependency locally."
   }
 ]

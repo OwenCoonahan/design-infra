@@ -6,11 +6,15 @@ Primary navigation is Catalog, Guide and Connect. Saved references live under Mo
 
 ## Homepage header
 
-The user likes the existing setup and requests a more expressive header, using the cursor-influenced motion at https://motion.dev/ as a reference. Use two clear columns: title, purpose and a compact copyable starting prompt on the left; one large cursor-influenced motion playground on the right. The headline leads the content, and the motion does not displace it. Keep the headline and copy control stable. Stack the introduction and prompt before the playground on smaller screens.
+The user chose an interactive composition of real components on 2026-10-16, building on the cursor-influenced motion reference at https://motion.dev/. Keep the existing two-column structure: title, purpose and a compact copyable starting prompt on the left; a layered scene of actual Dither Chart, Dot Morph Button and Grid Loader demos on the right. Each card links to its catalog entry outside the interactive frame. Chart-style changes and button clicks work immediately without navigating away.
 
-The homepage's warm accent is scoped to `.home-motion-hero` as `--site-motion-accent`. It does not alter registry theme tokens. The reusable `oc/kinetic-field` defaults to the consumer's primary and foreground tokens.
+Use a short staggered spring entrance, shallow pointer-influenced depth and card overlap on desktop. Hover or keyboard focus brings a card forward. Pointer messages from our own sandboxed demo frames maintain depth response while their controls remain usable; validate both origin and frame identity. The headline and copy button stay still. On small screens the chart spans the width, with the button and loader below in a flat grid; use native responsive frame widths so controls remain readable.
 
-Use its square layout for the large homepage playground. The default wide layout stays suited to compact gallery frames. Each layout projects the particles into its own viewport so the larger presentation does not stretch a smaller drawing.
+The warm accent is scoped to `.home-motion-hero` as `--site-motion-accent`. It does not alter registry theme tokens. The showcase supplies explicit example palette props to upstream components; catalog IDs and installation commands remain unchanged.
+
+Immediately below the header, feature Progressive Blur, Motion Loader, Beam Card and Kinetic Field in a generous two-column gallery. Progressive Blur demonstrates a CSS surface over scrollable content, with direction and intensity controls outside the decorative blur. It should not be presented as a loader or an endlessly animating effect. The two SmoothUI examples the user singled out are recorded in favorites with their use cases.
+
+All homepage frames share one GalleryPlayback provider and its three-visible-preview budget. Load only explicit local adapters. Frames unmount offscreen, when paused and while the tab is hidden; reduced motion starts with generated posters and offers explicit play. Pause all also disables the scene's entrance and cursor response. The scene has a useful static composition before JavaScript, and parent bundles contain descriptors rather than vendor demo implementations. Keep the original Kinetic Field available in its detail page and the featured gallery.
 
 ## Homepage explanation
 
@@ -26,9 +30,9 @@ The guide leads with four spacious numbered sections: connect, show the target w
 
 ## Motion
 
-Use the shared `lively` spring preset for pointer response and shape changes. `oc/kinetic-field` offers Orbit, Wave and Sphere forms, pointer tilt/displacement and pause/play. Reduced-motion and coarse-pointer visitors start with a static view and can explicitly play. Preference changes reset the override. Visibility and intersection controls stop the drawing loop while hidden or offscreen. The server-rendered SVG remains a fallback for disabled JavaScript or unavailable Canvas.
+Use the shared `lively` spring preset for the component scene's entrance. Cursor response settles smoothly, resets when inactive and stops while offscreen/hidden. Respect reduced motion and coarse pointers for depth effects. Real upstream component motion lives inside isolated preview routes, governed by the shared playback budget. Keep all source links, names, play controls and navigation outside interactive frames.
 
-Motion demonstrates the catalog's usefulness without moving the heading, navigation or copy button. The implementation uses free Motion APIs and original geometry; no Motion+ source or reference-site artwork is included.
+The reusable `oc/kinetic-field` still offers Orbit, Wave and Sphere forms, pointer tilt/displacement and pause/play. Reduced-motion and coarse-pointer visitors start with a static view and can explicitly play. Visibility/intersection controls stop its drawing loop. Its server-rendered SVG remains a fallback for disabled JavaScript or unavailable Canvas.
 
 ## Sound
 

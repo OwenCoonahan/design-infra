@@ -23,5 +23,15 @@
     "id": "inspiration/breakthrough-energy",
     "note": "The user calls this clean: clear typographic hierarchy and intentional editorial compositions, even with vivid accents and motion.",
     "added": "2026-10-11"
+  },
+  {
+    "id": "smoothui/progressive-blur",
+    "note": "The user wants more interesting live homepage examples and shared this surface effect. Show it over a scrollable UI with readable controls outside the blur; it is a static surface effect, not a loading animation.",
+    "added": "2026-10-16"
+  },
+  {
+    "id": "smoothui/dither-chart",
+    "note": "The user singled out the dither chart as an interesting component to feature on the homepage. Use the real pixelated data visualization with selectable chart styles and clearly labeled sample data.",
+    "added": "2026-10-16"
   }
 ]

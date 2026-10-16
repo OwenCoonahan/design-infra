@@ -52,6 +52,21 @@ test("all eight Loading adapters keep the upstream catalog identity and carry pr
   }
   assert.equal(hostedPreview("unknown/spinner"), undefined)
 })
+test("homepage showcase adapters preserve upstream installs and licensed source provenance", () => {
+  for (const name of ["dither-chart", "progressive-blur", "dot-morph-button"]) {
+    const id = `smoothui/${name}`
+    const entry = catalog.find((entry: CatalogEntry) => entry.id === id)!
+    assert.equal(entry.install, `npx shadcn@latest add @smoothui/${name}`)
+    const demo = previewDemos[id]
+    assert.equal(demo.adapter, "showcase")
+    for (const source of [demo.provenance, ...(demo.provenance.dependencies ?? [])]) {
+      assert.equal(source.license, "MIT")
+      assert.equal(createHash("sha256").update(readFileSync(source.local!)).digest("hex"), source.sha256)
+      assert.match(source.source, /^https:\/\/smoothui\.dev\/r\//)
+    }
+  }
+})
+
 test("link-only policy wins even if an entry has video, thumbnail or an allowed adapter id", () => {
   for (const [source, access, kind] of [
     ["transitions", "free", "transition"],
@@ -150,7 +165,7 @@ test("all explicit adapters resolve catalog entries and migrated effects cannot 
       catalog.some((e: CatalogEntry) => e.id === id),
       id,
     )
-    assert.ok(["oc", "loading"].includes(demo.adapter))
+    assert.ok(["oc", "loading", "showcase"].includes(demo.adapter))
     assert.ok(demo.width > 0 && demo.height > 0)
   }
   for (const id of [

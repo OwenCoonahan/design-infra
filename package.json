@@ -29,7 +29,8 @@
     "smoke:landing": "tsx scripts/smoke-landing.ts",
     "smoke:requests": "tsx scripts/smoke-requests.ts",
     "smoke:motion": "tsx scripts/smoke-motion-header.ts",
-    "smoke:visual": "tsx scripts/smoke-visual-galleries.ts"
+    "smoke:visual": "tsx scripts/smoke-visual-galleries.ts",
+    "smoke:home": "tsx scripts/smoke-homepage-scene.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.2.0",

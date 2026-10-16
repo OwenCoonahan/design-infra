@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { LoadingDemo } from "@/components/demos/loading-demos"
+import { ShowcaseDemo } from "@/components/demos/showcase-demos"
 import { PreviewShell } from "@/components/site/preview-shell"
 import { previewDemos } from "@/lib/catalog/previews"
 import { OC_DEMOS } from "@/components/demos/oc-demos"
@@ -33,8 +34,9 @@ export default async function PreviewPage(props: PageProps<"/preview/[source]/[n
   const supported = previewDemos[id]
   if (!own && !supported) notFound()
   if (supported && (!own || search.surface === "neutral")) {
-    const demo =
-      supported.adapter === "loading" || id === "oc/agent-status" ? <LoadingDemo id={id} /> : OC_DEMOS[name]?.()
+    const compact = search.presentation === "hero"
+    const demo = supported.adapter === "showcase" ? <ShowcaseDemo id={id} compact={compact} /> :
+      supported.adapter === "loading" || id === "oc/agent-status" ? <LoadingDemo id={id} compact={compact} /> : OC_DEMOS[name]?.()
     if (!demo) notFound()
     return (
       <div
