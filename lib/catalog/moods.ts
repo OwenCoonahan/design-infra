@@ -112,6 +112,8 @@ export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
   originui: ["minimal", "trustworthy"],
   shadcn: ["minimal", "trustworthy"],
   beautifui: ["calm", "refined"],
+  beui: ["refined", "playful"],
+  "beui-pro": ["refined", "technical"],
   transitions: ["refined"],
   motion: ["refined", "playful"],
   originkit: ["experimental", "premium"],

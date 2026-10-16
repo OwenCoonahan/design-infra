@@ -4764,5 +4764,270 @@
     "appliesTo": [
       "input"
     ]
+  },
+  {
+    "id": "beui/loader",
+    "curated": true,
+    "notes": "A compact waiting indicator with multiple visual treatments. Start here for free loading UI; inspect the demo and choose a variant that fits the surrounding content."
+  },
+  {
+    "id": "beui/button-stateful",
+    "curated": true,
+    "notes": "Useful for save/submit flows with loading, success and error states. Wire real async outcomes; keep labels and error handling explicit."
+  },
+  {
+    "id": "beui/button-magnetic",
+    "curated": true,
+    "notes": "Cursor attraction for a prominent action. Use sparingly and check touch, keyboard and reduced-motion behavior in the target app."
+  },
+  {
+    "id": "beui/thinking-shimmer",
+    "curated": true,
+    "notes": "A quiet agent waiting label. Tie it to actual work and replace it with a useful result or error rather than an endless decorative loop."
+  },
+  {
+    "id": "beui/sortable-stack",
+    "curated": true,
+    "notes": "Reorderable items with drag and keyboard controls. Connect the order to application state and persistence; a demo reorder is not backend storage."
+  },
+  {
+    "id": "beui/morphing-lightbox",
+    "curated": true,
+    "notes": "An image viewer for inspecting gallery items and attachments. Supply licensed images and meaningful alt text; verify focus return and mobile gestures."
+  },
+  {
+    "id": "beui/notification-stack",
+    "curated": true,
+    "notes": "Compact notifications that expand for inspection. Supply real notification state and respect reduced motion; do not rely on hover alone."
+  },
+  {
+    "id": "beui/table-async",
+    "curated": true,
+    "notes": "A data-table starting point for asynchronous records. Connect the real query, loading/error/empty states and server pagination; preserve accessible headers."
+  },
+  {
+    "id": "beui/morphing-search",
+    "curated": true,
+    "notes": "Search controls that expand without losing context. Connect actual results and keyboard behavior; avoid importing a demo search dataset."
+  },
+  {
+    "id": "beui/feedback-widget",
+    "curated": true,
+    "notes": "An in-product feedback entry point. Connect a deliberate submission destination and show what is shared; the component alone supplies no collection backend."
+  },
+  {
+    "id": "beui-pro/model-picker",
+    "source": "beui-pro",
+    "name": "model-picker",
+    "title": "Model Picker",
+    "description": "Model selection controls for AI products.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "input"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/model-picker",
+    "docs": "https://pro.beui.dev/components/model-picker",
+    "live": "https://pro.beui.dev/components/model-picker",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/kanban-board",
+    "source": "beui-pro",
+    "name": "kanban-board",
+    "title": "Kanban Board",
+    "description": "A task board for workflow interfaces.",
+    "kind": "block",
+    "categories": [
+      "dashboard"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/kanban-board",
+    "docs": "https://pro.beui.dev/components/kanban-board",
+    "live": "https://pro.beui.dev/components/kanban-board",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/audit-trail",
+    "source": "beui-pro",
+    "name": "audit-trail",
+    "title": "Audit Trail",
+    "description": "An event-history interface for application activity.",
+    "kind": "block",
+    "categories": [
+      "table",
+      "dashboard"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/audit-trail",
+    "docs": "https://pro.beui.dev/components/audit-trail",
+    "live": "https://pro.beui.dev/components/audit-trail",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/log-explorer",
+    "source": "beui-pro",
+    "name": "log-explorer",
+    "title": "Log Explorer",
+    "description": "A log-inspection surface for developer tools.",
+    "kind": "block",
+    "categories": [
+      "code",
+      "dashboard"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/log-explorer",
+    "docs": "https://pro.beui.dev/components/log-explorer",
+    "live": "https://pro.beui.dev/components/log-explorer",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/questionnaire",
+    "source": "beui-pro",
+    "name": "questionnaire",
+    "title": "Questionnaire",
+    "description": "Structured questions within an agent workflow.",
+    "kind": "component",
+    "categories": [
+      "form",
+      "agent-ui"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/questionnaire",
+    "docs": "https://pro.beui.dev/components/questionnaire",
+    "live": "https://pro.beui.dev/components/questionnaire",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/ai-artifacts",
+    "source": "beui-pro",
+    "name": "ai-artifacts",
+    "title": "AI Artifacts",
+    "description": "Containers for generated documents and other outputs.",
+    "kind": "component",
+    "categories": [
+      "agent-ui",
+      "card"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/ai-artifacts",
+    "docs": "https://pro.beui.dev/components/ai-artifacts",
+    "live": "https://pro.beui.dev/components/ai-artifacts",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/agent-chat-input",
+    "source": "beui-pro",
+    "name": "agent-chat-input",
+    "title": "Agent Chat Input",
+    "description": "Composed input surfaces for agent conversations.",
+    "kind": "component",
+    "categories": [
+      "ai-chat",
+      "input"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/agent-chat-input",
+    "docs": "https://pro.beui.dev/components/agent-chat-input",
+    "live": "https://pro.beui.dev/components/agent-chat-input",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "beui-pro/ai-thinking-loader",
+    "source": "beui-pro",
+    "name": "ai-thinking-loader",
+    "title": "AI Thinking Loaders",
+    "description": "Waiting-state treatments for AI interfaces.",
+    "kind": "component",
+    "categories": [
+      "loader",
+      "agent-ui"
+    ],
+    "access": "paid",
+    "install": "npx shadcn@latest add @beui-pro/ai-thinking-loader",
+    "docs": "https://pro.beui.dev/components/ai-thinking-loader",
+    "live": "https://pro.beui.dev/components/ai-thinking-loader",
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "tags": [
+      "react",
+      "tailwind-v4",
+      "future-upgrade"
+    ],
+    "curated": true,
+    "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
   }
 ]

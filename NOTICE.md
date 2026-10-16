@@ -4,6 +4,8 @@ The Design Infra site mark is Phosphor Icons' **Diamonds Four Fill**, used under
 
 The MIT licence in LICENSE covers original design-infra code, blocks and documentation. It does not relicense third-party components, photographs, fonts, trademarks, websites or prompts described by the catalog.
 
+beUI's free registry metadata and the captured Loader demo are from the public MIT library by Saurabh Chauhan (Copyright (c) 2026). The original notice is retained in `third-party/beui-LICENSE.txt`; source: https://github.com/starc007/ui-components. beUI Pro is a separate commercial collection and remains paid, link-only catalog references without mirrored source or media.
+
 `components/ui/` contains adapted shadcn/ui primitives. Preserve [shadcn/ui's MIT notice](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md) when redistributing them; the full notice is in `third-party/shadcn-LICENSE.txt`. Installed npm dependencies retain their own licences and notices. Fonts are loaded through Next's font support, rather than supplied as freely relicensable assets; check each font's licence before redistribution.
 
 The catalog records metadata and links to independently owned libraries. An install command or a registry dependency pointing to a vendor does not grant access or redistribution rights. Check the source's current licence and your own entitlement before installing. Aceternity, OriginKit, transitions.dev and React Bits are catalog references; their source is not vendored into this registry. The original hero spotlight uses CSS authored here, without the former vendor implementation.

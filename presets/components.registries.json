@@ -16,6 +16,7 @@
         "api_key": "${API_KEY_21ST}"
       }
     },
+    "@beui": "https://beui.dev/r/{name}.json",
     "@oc": "https://www.owencoonahan.xyz/design-infra/r/{name}.json"
   }
 }

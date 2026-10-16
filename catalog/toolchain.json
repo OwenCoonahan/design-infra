@@ -573,6 +573,24 @@
         }
       ],
       "verify": "test -f .agents/skills/anatomy/SKILL.md"
+    },
+    {
+      "id": "beui",
+      "name": "beUI (free)",
+      "tier": 3,
+      "rank": 24,
+      "track": "components",
+      "source": "beui",
+      "docs": "https://beui.dev/",
+      "why": "Free animated controls, charts and agent surfaces with a public MIT registry. Separate from Beautiful UI and the paid beUI Pro collection.",
+      "use": "Choose compatible React 19/Tailwind 4 components as needed. Preserve the project theme; map missing surface tokens. Pro stays opt-in until licensed access is confirmed.",
+      "setup": [
+        {
+          "kind": "registry",
+          "namespace": "@beui",
+          "url": "https://beui.dev/r/{name}.json"
+        }
+      ]
     }
   ]
 }

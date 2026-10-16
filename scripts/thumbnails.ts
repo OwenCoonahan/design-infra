@@ -143,6 +143,11 @@ function planFor(e: CatalogEntry): Shot | Probe | Skip {
   const { id, name } = e
   if (BROKEN_HEADLESS[id]) return { id, reason: BROKEN_HEADLESS[id] }
   switch (e.source) {
+    case "beui":
+      // Multi-variant pages need an exact stage mapping before capturing a
+      // particular registry variant. The loader entry is the entire collection.
+      return name === "loader" && e.docs ? docsDemo(id, e.docs, "#preview")
+        : { id, reason: "Select this registry variant's exact demo stage before capturing" }
     case "anatomy":
       return e.kind === "tool" || !e.live ? { id, reason: "Skill instructions, not a visual component" } : {
         kind: "shot", id, url: e.live, selector: ".live-stage", aspect: 16 / 10,

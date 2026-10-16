@@ -10,18 +10,18 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 |---|---|---|---|---|
 | **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
 | **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 809 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 897 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 274 |
-| **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 93 |
-| **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 57 |
-| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 825 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1042 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 301 |
+| **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 94 |
+| **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 66 |
+| **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 947 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
-| **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 363 |
-| **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | [Geometric identity studies](../inspiration/geometric-identity/README.md) | 889 |
+| **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 369 |
+| **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | [Geometric identity studies](../inspiration/geometric-identity/README.md) | 898 |
 | **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Motion](../inspiration/motion/README.md) | 7 |
-| **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 74 |
-| **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 140 |
-| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 923 |
+| **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 77 |
+| **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 155 |
+| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 955 |
 
 ## Calm
 
@@ -134,6 +134,7 @@ Friendly, human, soft colours and rounded shapes. Brief words: warm, friendly, h
 - ★ `aceternity/animated-testimonials` — Animated Testimonials (testimonials) · `npx shadcn@latest add @aceternity/animated-testimonials`
 - ★ `cult-ui/halo-input` — Halo Input (input) · `npx shadcn@latest add @cult-ui/halo-input`
 - ★ `librariesdev/bot-avatars` — Bot Avatars (agent-ui, illustration) · `pnpm add bot-avatars`
+- ★ `beui/morphing-search` — Morphing Search Morphing Search (input) · `npx shadcn@latest add @beui/morphing-search`
 - `aceternity/cloud-shader` — Cloud Shader (background) · `npx shadcn@latest add @aceternity/cloud-shader`
 - `cult-ui/distorted-glass` — Distorted Glass (misc) · `npx shadcn@latest add @cult-ui/distorted-glass`
 - `cult-ui/edge-blur` — Edge Blur (misc) · `npx shadcn@latest add @cult-ui/edge-blur`
@@ -141,7 +142,6 @@ Friendly, human, soft colours and rounded shapes. Brief words: warm, friendly, h
 - `cult-ui/halo-button` — Halo Button (button) · `npx shadcn@latest add @cult-ui/halo-button`
 - `cult-ui/halo-card` — Halo Card (card) · `npx shadcn@latest add @cult-ui/halo-card`
 - `cult-ui/halo-dropzone` — Halo Dropzone (input) · `npx shadcn@latest add @cult-ui/halo-dropzone`
-- `cult-ui/halo-segmented` — Halo Segmented (input) · `npx shadcn@latest add @cult-ui/halo-segmented`
 
 ## Playful
 
@@ -212,6 +212,7 @@ Art-directed, shaders/WebGL, unusual interactions. Brief words: experimental, ar
 - ★ `react-bits/rotating-text` — Rotating Text (text-effect) · `npx shadcn@latest add @react-bits/RotatingText-TS-TW`
 - ★ `react-bits/scroll-reveal` — Scroll Reveal (scroll-effect, text-effect) · `npx shadcn@latest add @react-bits/ScrollReveal-TS-TW`
 - ★ `react-bits/split-text` — Split Text (text-effect) · `npx shadcn@latest add @react-bits/SplitText-TS-TW`
+- ★ `beui/loader` — Loader (loader) · `npx shadcn@latest add @beui/loader`
 - ★ `cult-ui/hero-dithering` — Hero Dithering (hero) · `npx shadcn@latest add @cult-ui/hero-dithering`
 - ★ `cult-ui/prompt-composer` — Prompt Composer (input) · `npx shadcn@latest add @cult-ui/prompt-composer`
 - ★ `librariesdev/img-fx` — Image FX (loader, image) · `pnpm add img-fx`
@@ -221,7 +222,6 @@ Art-directed, shaders/WebGL, unusual interactions. Brief words: experimental, ar
 - ★ `motion/loading-three-dots-pulse` — Loading: Pulse dots (transition, background, loader) · `pnpm add motion # then adapt the free source from https://motion.dev/examples/react-loading-three-dots-pulse`
 - ★ `react-bits/aurora` — Aurora (background) · `npx shadcn@latest add @react-bits/Aurora-TS-TW`
 - ★ `react-bits/beams` — Beams (background) · `npx shadcn@latest add @react-bits/Beams-TS-TW`
-- ★ `react-bits/dot-grid` — Dot Grid (background) · `npx shadcn@latest add @react-bits/DotGrid-TS-TW`
 
 ## Bold
 
@@ -235,6 +235,7 @@ Loud, high-contrast, big type, brutalist confidence. Brief words: bold, loud, br
 Pixel, dither, ASCII, CRT, nostalgic computing. Brief words: retro, vintage, nostalgic, pixel, 8-bit, ascii, dither, crt.
 
 - ♥ ★ `smoothui/dither-chart` — Dither Chart (chart) · `npx shadcn@latest add @smoothui/dither-chart`
+- ★ `beui/loader` — Loader (loader) · `npx shadcn@latest add @beui/loader`
 - ★ `cult-ui/hero-dithering` — Hero Dithering (hero) · `npx shadcn@latest add @cult-ui/hero-dithering`
 - ★ `smoothui/pixel-brush-canvas` — Pixel Brush Canvas (image) · `npx shadcn@latest add @smoothui/pixel-brush-canvas`
 - `aceternity/ascii-art` — ASCII Art (card, image, 3d, background) · `npx shadcn@latest add @aceternity/ascii-art`
@@ -248,7 +249,6 @@ Pixel, dither, ASCII, CRT, nostalgic computing. Brief words: retro, vintage, nos
 - `cult-ui/pixel-heading-character` — Pixel Heading Character (text-effect) · `npx shadcn@latest add @cult-ui/pixel-heading-character`
 - `cult-ui/pixel-heading-word` — Pixel Heading Word (text-effect) · `npx shadcn@latest add @cult-ui/pixel-heading-word`
 - `cult-ui/pixel-paragraph-words` — Pixel Paragraph Words (chart, text-effect) · `npx shadcn@latest add @cult-ui/pixel-paragraph-words`
-- `cult-ui/pixel-paragraph-words-inverse` — Pixel Paragraph Words Inverse (chart, text-effect) · `npx shadcn@latest add @cult-ui/pixel-paragraph-words-inverse`
 
 ## Organic
 
@@ -261,6 +261,7 @@ Nature, photography, fluid/gooey shapes, earthy tones. Brief words: organic, nat
 - ★ `librariesdev/thinking-orbs` — Thinking Orbs (loader, agent-ui) · `pnpm add thinking-orbs`
 - ★ `motion/scroll-linked` — Scroll-linked animations (transition, scroll-effect) · `pnpm add motion # then adapt the free source from https://motion.dev/examples/react-scroll-linked`
 - ★ `react-bits/aurora` — Aurora (background) · `npx shadcn@latest add @react-bits/Aurora-TS-TW`
+- ★ `beui/thinking-shimmer` — Agent Loading States Thinking Shimmer (loader, agent-ui) · `npx shadcn@latest add @beui/thinking-shimmer`
 - ★ `originkit/mcp` — OriginKit MCP (dev-tool) · `npx originkit login # then: npx originkit add <name>`
 - ★ `transitions/thinking-states` — Thinking states (transition, loader) · `npx skills add Jakubantalik/transitions.dev # then ask: "apply the thinking-states transition"`
 - `aceternity/3d-pin` — 3D Animated Pin (3d, card) · `npx shadcn@latest add @aceternity/3d-pin`
@@ -268,7 +269,6 @@ Nature, photography, fluid/gooey shapes, earthy tones. Brief words: organic, nat
 - `aceternity/link-preview` — Link Preview (tooltip, text-effect) · `npx shadcn@latest add @aceternity/link-preview`
 - `aceternity/notch` — Notch (navigation) · `npx shadcn@latest add @aceternity/notch`
 - `aceternity/wavy-background` — Wavy Background (background) · `npx shadcn@latest add @aceternity/wavy-background`
-- `cult-ui/ai-blob-warp` — Ai Blob Warp (misc) · `npx shadcn@latest add @cult-ui/ai-blob-warp`
 
 ## Trustworthy
 
