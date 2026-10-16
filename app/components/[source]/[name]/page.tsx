@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge"
 import { comparePath } from "@/lib/catalog/compare-path"
 import { encodeMotion, INTEGRATION_HINT, isFrameable, liveUrl } from "@/lib/catalog/facets"
 import { similarEntries } from "@/lib/catalog/similar"
+import { previewDescriptor } from "@/lib/catalog/previews"
 import { config } from "@/lib/config"
 import { getCatalog, getDesignSystems, getEntry, getSource } from "@/lib/data"
 import { previewSrc } from "@/lib/thumbnails"
@@ -38,7 +39,9 @@ export default async function EntryPage(props: PageProps<"/components/[source]/[
   const systems = await getDesignSystems()
   const demo = e.source === "oc" ? OC_DEMOS[e.name] : undefined
   const themeDemo = e.kind === "theme" ? e.name.replace(/^theme-/, "") : undefined
-  const live = liveUrl(e)
+  const visual = e.source === "oc" ? undefined : previewDescriptor(e)
+  const hosted = visual?.kind === "interactive" ? visual : undefined
+  const live = hosted?.src ?? liveUrl(e)
   const similar = similarEntries(e, await getCatalog())
   const m = e.motion
 
@@ -138,6 +141,10 @@ export default async function EntryPage(props: PageProps<"/components/[source]/[
             Open the {themeDemo} design system preview →
           </Link>
         </div>
+      ) : hosted ? (
+        <div className="mt-10 overflow-hidden rounded-xl border">
+          <LiveFrame src={hosted.src} title={`${e.title} live demo`} width={hosted.width} height={hosted.height} />
+        </div>
       ) : isFrameable(live) ? (
         <div className="mt-10 overflow-hidden rounded-xl border">
           <LiveFrame src={live} title={`${e.title} live demo`} height={720} />
@@ -211,7 +218,7 @@ export default async function EntryPage(props: PageProps<"/components/[source]/[
             <dt className="text-muted-foreground">Live demo</dt>
             <dd>
               <a href={live} className="inline-flex items-center gap-1 underline underline-offset-4">
-                {new URL(live).host} <ExternalLink className="size-3" />
+                {hosted ? "Interactive preview" : new URL(live).host} <ExternalLink className="size-3" />
               </a>
             </dd>
           </>

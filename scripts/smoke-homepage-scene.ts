@@ -118,8 +118,14 @@ async function main() {
     await frame("dot-morph-button").waitForSelector('button ::-p-text(Nice!)')
     await page.click(`nav a[href="${sitePath("/guide")}"]`)
     await page.waitForFunction(() => document.querySelectorAll('[data-gallery-preview] iframe').length === 0 && !document.querySelector('[data-component-scene]'))
+    for (const name of ["dither-chart", "progressive-blur", "dot-morph-button"]) {
+      await page.goto(`${base}/components/smoothui/${name}`, { waitUntil: "networkidle2" })
+      const source = await page.$eval(`iframe[src*="/preview/smoothui/${name}?"]`, (frame) => (frame as HTMLIFrameElement).src)
+      assert.equal(new URL(source).origin, new URL(base).origin, "detail pages keep the hosted demo on the same site")
+      assert.ok(await page.evaluate((command) => document.body.innerText.includes(command), `npx shadcn@latest add @smoothui/${name}`), "the upstream installation command remains available beside the demo")
+    }
     assert.equal(errors.length, 0, errors.join("\n"))
-    console.log("✓ homepage scene: real chart pixels, button clicks, loader animation, pointer depth/relay validation, global pause, shared budget, hidden/offscreen cleanup, responsive native frames, blur controls/scrolling, reduced motion and navigation disposal")
+    console.log("✓ homepage scene: real chart pixels, button clicks, loader animation, pointer depth/relay validation, global pause, shared budget, hidden/offscreen cleanup, responsive native frames, blur controls/scrolling, reduced motion, navigation disposal and hosted detail/install handoff")
 
     const failure = await browser.newPage()
     await failure.setViewport({ width: 1440, height: 1000 })

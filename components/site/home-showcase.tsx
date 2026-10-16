@@ -8,7 +8,7 @@ import type { HomeExample } from "./component-scene"
 export function HomeShowcase({ examples }: { examples: HomeExample[] }) {
   return <section id="live-components" aria-labelledby="live-components-title" className="scroll-mt-24 border-b py-14 lg:py-20">
     <div className="flex flex-wrap items-end justify-between gap-5">
-      <div><p className="text-xs uppercase tracking-widest text-muted-foreground">A few good starting points</p><h2 id="live-components-title" className="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">Small details.<br />Big difference.</h2><p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">Real components, ready to try. Open one to get the source, installation command, and a prompt for your agent.</p></div>
+      <div><p className="text-xs uppercase tracking-widest text-muted-foreground">A few good starting points</p><h2 id="live-components-title" className="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">Small details.<br />Big difference.</h2><p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">Real components, ready to try. Open one for its source and installation command, or save a few to compare with your agent.</p></div>
       <PlaybackControls />
     </div>
     <div className="mt-9 grid gap-5 md:grid-cols-2">
