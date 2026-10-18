@@ -21141,6 +21141,7 @@ var CATEGORIES = [
   "table",
   "dashboard",
   "chart",
+  "graph",
   "code",
   "map",
   "badge",

@@ -8,6 +8,7 @@ export const FEATURED_TYPES = [
   ["pricing", "Pricing"],
   ["table", "Tables"],
   ["chart", "Charts"],
+  ["graph", "Graphs"],
 ] as const
 export const SECTION_TYPES = new Set<string>([
   "hero",
@@ -27,6 +28,7 @@ export const SECTION_TYPES = new Set<string>([
   "stats",
   "empty-state",
   "dashboard",
+  "graph",
 ])
 export function categoryLabel(category: string) {
   return (

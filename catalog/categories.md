@@ -7,7 +7,7 @@ maps upstream categories/names onto these automatically (`scripts/sync-sources.t
 | group | categories | reach for… |
 |---|---|---|
 | Page sections | `hero` `navigation` `features` `bento` `pricing` `cta` `testimonials` `logo-cloud` `faq` `footer` `blog` `contact` `auth` `team` `stats` `empty-state` | assembling a marketing page or app screen section by section |
-| Components | `card` `button` `input` `form` `tabs` `modal` `tooltip` `sidebar` `carousel` `image` `table` `dashboard` `chart` `code` `map` `badge` `accordion` `toast` | a specific UI piece (for plain app UI, prefer stock shadcn/ui first) |
+| Components | `card` `button` `input` `form` `tabs` `modal` `tooltip` `sidebar` `carousel` `image` `table` `dashboard` `chart` `graph` `code` `map` `badge` `accordion` `toast` | a specific UI piece (for plain app UI, prefer stock shadcn/ui first) |
 | Effects & motion | `background` `text-effect` `scroll-effect` `cursor` `loader` `transition` `3d` `illustration` | visual polish and delight |
 | AI / agent UI | `ai-chat` `agent-ui` | chat, reasoning traces, tool calls, approvals, agent status |
 | Foundations | `theme` `dev-tool` `misc` | design systems, Agentation/MCPs, uncategorised |
@@ -22,3 +22,7 @@ maps upstream categories/names onto these automatically (`scripts/sync-sources.t
 4. Everything else in `catalog/index.json` with `access: free`.
 5. `key`/`metered` sources (21st.dev, OriginKit) — fine, but say so.
 6. `paid` — only as an "upgrade" suggestion, never installed by default.
+
+## Charts versus graphs
+
+`chart` covers quantitative plots: trends, comparisons, distributions and measured flows. `graph` covers node-link relationships, workflow editors and explanatory diagrams. Contribution calendars and numeric heatmaps remain charts. Both have dedicated playbooks and shareable category galleries; inspect the data/task before treating the word “graph” as either one.

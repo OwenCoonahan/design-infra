@@ -9,6 +9,7 @@ import { z } from "zod"
 import { MOOD_NAMES, MOODS } from "@/lib/catalog/moods"
 import { PAGE_TYPES, searchCatalog, summarize } from "@/lib/catalog/search"
 import { CATEGORIES, Mood, MotionIntensity, MotionTrigger } from "@/lib/catalog/schema"
+import { CHART_TYPES, CHART_STYLES } from "@/lib/catalog/chart-styles"
 import { getCatalog, getDesignSystem, getDesignSystems, getSources } from "@/lib/data"
 import { MOTION_LANGUAGE_NAMES } from "@/lib/catalog/motion"
 import { getRegistriesPreset, planUi, SITE_URL } from "@/lib/plan"
@@ -117,6 +118,8 @@ const handler = createMcpHandler(
         inputSchema: z.object({
           query: z.string().describe("e.g. 'pricing with yearly toggle', 'hero background', 'agent thinking indicator'"),
           category: z.enum(CATEGORIES).optional(),
+          chart_type: z.enum(CHART_TYPES.map(([key]) => key)).optional().describe("Chart form, independent of engine: line, area, bar, donut, sparkline, heatmap and more"),
+          chart_style: z.enum(CHART_STYLES.map(([key]) => key)).optional().describe("Named visual treatment such as gradient, pattern, stacked, dither or streaming; combine with chart_type"),
           source: z.string().optional().describe("e.g. oc, aceternity, magicui, shadcn, originui, beautifui, librariesdev, transitions, inspiration"),
           include_paid: z.boolean().optional().describe("Include paid-tier items (default false)"),
           curated_only: z.boolean().optional(),
@@ -124,11 +127,13 @@ const handler = createMcpHandler(
           limit: z.number().int().min(1).max(50).optional(),
         }),
       },
-      async ({ query, category, source, include_paid, curated_only, moods, limit }) => {
+      async ({ query, category, chart_type, chart_style, source, include_paid, curated_only, moods, limit }) => {
         const results = searchCatalog(await getCatalog(), {
           query,
           moods,
           category,
+          chartType: chart_type,
+          chartStyle: chart_style,
           source,
           excludeInspiration: source !== "inspiration",
           curatedOnly: curated_only,

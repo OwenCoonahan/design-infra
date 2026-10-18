@@ -9,10 +9,10 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 | mood | feels like | design systems | inspiration | entries |
 |---|---|---|---|---|
 | **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
-| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 809 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1042 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 301 |
-| **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 94 |
+| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 826 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1167 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 432 |
+| **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 100 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 66 |
 | **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 947 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
@@ -41,7 +41,7 @@ Quiet, spacious, low motion; lets content breathe. Brief words: calm, quiet, ser
 - ★ `beautifui/approval-card` — Approval Card (agent-ui, card) · `npx shadcn@latest add @beautifui/approval-card`
 - ★ `beautifui/chat-composer` — Chat (agent-ui, input, ai-chat) · `npx shadcn@latest add @beautifui/chat-composer`
 - ★ `beautifui/diff-table` — Diff Table (agent-ui, table) · `npx shadcn@latest add @beautifui/diff-table`
-- ★ `beautifui/flowchart` — Flowchart (agent-ui, chart) · `npx shadcn@latest add @beautifui/flowchart`
+- ★ `beautifui/flowchart` — Flowchart (agent-ui, graph) · `npx shadcn@latest add @beautifui/flowchart`
 
 ## Minimal
 
@@ -108,6 +108,9 @@ Dev-tool energy: mono type, terminals, data density, grids. Brief words: technic
 Typographic, serif-led, content-first; magazines and essays. Brief words: editorial, magazine, publication, blog, newsletter, essay, journal, serif.
 
 - ★ `smoothui/scroll-progress` — Scroll Progress (scroll-effect) · `npx shadcn@latest add @smoothui/scroll-progress`
+- ★ `observable-plot/dot` — Observable Plot · Dot plot (chart) · `pnpm add @observablehq/plot`
+- ★ `observable-plot/library` — Observable Plot (chart) · `pnpm add @observablehq/plot`
+- ★ `observable-plot/line` — Observable Plot · Line plot (chart) · `pnpm add @observablehq/plot`
 - `aceternity/typewriter-effect` — Typewriter Effect (text-effect, hero) · `npx shadcn@latest add @aceternity/typewriter-effect`
 - `anatomy/afterburner` — Afterburner · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
 - `anatomy/b-tree` — B-tree index · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
@@ -119,9 +122,6 @@ Typographic, serif-led, content-first; magazines and essays. Brief words: editor
 - `anatomy/flex-grow` — flex-grow · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
 - `anatomy/forge` — Forge and hammer · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
 - `anatomy/foundry` — Foundry pour · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
-- `anatomy/git-merge` — Branch and merge · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
-- `anatomy/glass-furnace` — Glory hole · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
-- `anatomy/gradient-descent` — Gradient descent · Anatomy (illustration, 3d) · `pnpm add anatomy-figures`
 
 ## Warm
 
@@ -255,7 +255,7 @@ Pixel, dither, ASCII, CRT, nostalgic computing. Brief words: retro, vintage, nos
 Nature, photography, fluid/gooey shapes, earthy tones. Brief words: organic, natural, nature, earthy, fluid, flowing, photographic, outdoors.
 
 - ♥ ★ `oc/feature-levels` — Features · Levels (scroll-spy) (features, scroll-effect) · `npx shadcn@latest add @design-infra/feature-levels`
-- ★ `beautifui/flowchart` — Flowchart (agent-ui, chart) · `npx shadcn@latest add @beautifui/flowchart`
+- ★ `beautifui/flowchart` — Flowchart (agent-ui, graph) · `npx shadcn@latest add @beautifui/flowchart`
 - ★ `beautifui/thinking-state` — Thinking (agent-ui, loader) · `npx shadcn@latest add @beautifui/thinking-state`
 - ★ `librariesdev/liquid-gooey` — Liquid Gooey (transition, misc) · `pnpm add liquid-gooey`
 - ★ `librariesdev/thinking-orbs` — Thinking Orbs (loader, agent-ui) · `pnpm add thinking-orbs`

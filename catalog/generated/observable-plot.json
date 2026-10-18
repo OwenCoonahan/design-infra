@@ -1,0 +1,222 @@
+[
+  {
+    "id": "observable-plot/bar",
+    "source": "observable-plot",
+    "name": "bar",
+    "title": "Observable Plot · Bar plot",
+    "description": "Compare categorical values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/bar",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "observable-plot/cell",
+    "source": "observable-plot",
+    "name": "cell",
+    "title": "Observable Plot · Matrix heatmap",
+    "description": "Compare a categorical matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "cell"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/cell",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "observable-plot/dot",
+    "source": "observable-plot",
+    "name": "dot",
+    "title": "Observable Plot · Dot plot",
+    "description": "Compare numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "dot"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/dot",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "observable-plot/histogram",
+    "source": "observable-plot",
+    "name": "histogram",
+    "title": "Observable Plot · Binned distribution",
+    "description": "Inspect a distribution using an explicit binning transform.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "histogram"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/rect",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "observable-plot/library",
+    "source": "observable-plot",
+    "name": "library",
+    "title": "Observable Plot",
+    "description": "Concise statistical graphics for analysis and editorial explanations.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "observable-plot/line",
+    "source": "observable-plot",
+    "name": "line",
+    "title": "Observable Plot · Line plot",
+    "description": "Show an ordered series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/line",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

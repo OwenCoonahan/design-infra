@@ -511,7 +511,9 @@ export function aliasOf(e: Pick<CatalogEntry, "source" | "description">): string
  */
 export function inferTags(e: TagInput, signals?: MotionSignals): InferredTags {
   const hay = haystack(e)
-  const animated = isAnimated(e, hay, signals)
+  // Renderer capability (e.g. WebGL) is not evidence that a chart/graph recipe
+  // animates. Verified adapters can add explicit curated motion later.
+  const animated = !e.tags.includes("visualization-reference") && isAnimated(e, hay, signals)
   const { integration, appliesTo } = inferIntegration(e, hay, animated)
   let motion: Motion | undefined
   if (animated) {

@@ -40,6 +40,14 @@ Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes 
 
 [Anatomy](https://skills.wheresryan.sh/anatomy) adds 33 reusable MIT isometric explainers for docs and technical sections, plus an optional Claude Code/Codex skill. [Browse the figures](https://www.owencoonahan.xyz/design-infra/components?source=anatomy&category=illustration&view=grid). Reuse a figure with `pnpm add anatomy-figures` and a per-figure import; choose the skill only for a new mechanism. Setup, theme mapping and limits are in [the source guide](catalog/sources/anatomy.md).
 
+## Charts and graphs
+
+[Browse charts](https://www.owencoonahan.xyz/design-infra/components?category=chart) or [node graphs and diagrams](https://www.owencoonahan.xyz/design-infra/components?category=graph). The catalog includes 16 additional open-source visualization libraries and 80 integration recipes, with package commands, repositories, task guidance and license/peer metadata. Use one suitable engine; these are optional choices rather than a bundle to install together.
+
+Recharts, Chart.js, ECharts, Nivo and visx cover product charts; Observable Plot, Vega-Lite and Plotly add analytical options; uPlot covers time-series work; React Flow, Cytoscape, Sigma, G6, D3 and Mermaid cover different relationship/diagram tasks. G2 supplies a grammar-based chart engine. Source guides explain the tradeoffs. External references are distinct from hosted demos. See the [preview and chart expansion roadmap](docs/CHARTS-AND-PREVIEWS.md).
+
+For **chart UI and visual styles**, browse chart forms (line, area, bar, sparkline, donut…) and treatments (gradient, pattern, stacked, dots, labels, streaming, dither) across sources. [Compare gradient areas](https://www.owencoonahan.xyz/design-infra/components?category=chart&chartType=area&chartStyle=gradient&view=grid). Bklit adds 16 free registry chart components and eight named area treatments; Tremor Raw adds 11 public chart/dashboard components. These sit alongside existing shadcn, beUI and SmoothUI styles. Bklit Studio and paid Tremor Blocks are excluded.
+
 ## Install selected components
 
 beUI is indexed separately by access:

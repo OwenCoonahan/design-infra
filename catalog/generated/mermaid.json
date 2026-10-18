@@ -1,0 +1,216 @@
+[
+  {
+    "id": "mermaid/class",
+    "source": "mermaid",
+    "name": "class",
+    "title": "Mermaid · Class diagram",
+    "description": "Explain model structure and relationships.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "class"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/classDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "mermaid/entity",
+    "source": "mermaid",
+    "name": "entity",
+    "title": "Mermaid · Entity relationship diagram",
+    "description": "Explain data entities and cardinalities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "entity"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/entityRelationshipDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "mermaid/flowchart",
+    "source": "mermaid",
+    "name": "flowchart",
+    "title": "Mermaid · Flowchart",
+    "description": "Explain a process or decision flow.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "flowchart"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/flowchart.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "mermaid/library",
+    "source": "mermaid",
+    "name": "library",
+    "title": "Mermaid",
+    "description": "Text-defined diagrams for architecture, relationships and documentation.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "mermaid/sequence",
+    "source": "mermaid",
+    "name": "sequence",
+    "title": "Mermaid · Sequence diagram",
+    "description": "Explain messages between participants.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sequence"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/sequenceDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "mermaid/state",
+    "source": "mermaid",
+    "name": "state",
+    "title": "Mermaid · State diagram",
+    "description": "Explain state transitions.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "state"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/stateDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  }
+]

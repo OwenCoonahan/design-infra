@@ -101,6 +101,8 @@ export const RULES: [RegExp, Mood][] = [
 
 /** Each source's overall feel when nothing more specific matches. */
 export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
+  bklit: ["refined", "technical"],
+  tremor: ["minimal", "refined", "technical"],
   oc: ["refined"],
   aceternity: ["premium", "futuristic"],
   magicui: ["refined", "playful"],
@@ -120,6 +122,22 @@ export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
   librariesdev: ["playful", "futuristic"],
   agentation: ["technical"],
   anatomy: ["technical", "refined", "playful"],
+  "recharts": ["technical", "refined"],
+  "chartjs": ["technical", "refined"],
+  "echarts": ["technical", "refined"],
+  "nivo": ["technical", "refined"],
+  "visx": ["technical", "refined"],
+  "observable-plot": ["editorial", "technical", "refined"],
+  "vega-lite": ["technical", "refined"],
+  "plotly": ["technical", "refined"],
+  "uplot": ["technical", "refined"],
+  "antv-g2": ["technical", "refined"],
+  "react-flow": ["technical", "refined"],
+  "cytoscape": ["technical", "refined"],
+  "sigma": ["technical", "refined"],
+  "antv-g6": ["technical", "refined"],
+  "d3": ["technical", "refined"],
+  "mermaid": ["technical", "minimal"],
   "21st": [],
   inspiration: [],
 }

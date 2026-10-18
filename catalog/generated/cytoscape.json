@@ -1,0 +1,216 @@
+[
+  {
+    "id": "cytoscape/events",
+    "source": "cytoscape",
+    "name": "events",
+    "title": "Cytoscape.js · Graph interaction",
+    "description": "Connect node and edge events to application behavior.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "events"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#events",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "cytoscape/layouts",
+    "source": "cytoscape",
+    "name": "layouts",
+    "title": "Cytoscape.js · Graph layouts",
+    "description": "Organize nodes using the layout that fits the relationship.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "layouts"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#layouts",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "cytoscape/library",
+    "source": "cytoscape",
+    "name": "library",
+    "title": "Cytoscape.js",
+    "description": "Relationship graph visualization and graph analysis with a JavaScript API.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "cytoscape/selection",
+    "source": "cytoscape",
+    "name": "selection",
+    "title": "Cytoscape.js · Graph selection",
+    "description": "Inspect selected connected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "selection"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#collection/selection",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "cytoscape/styles",
+    "source": "cytoscape",
+    "name": "styles",
+    "title": "Cytoscape.js · Graph styling",
+    "description": "Encode relationship attributes with explicit visual rules.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "styles"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#style",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "cytoscape/traversal",
+    "source": "cytoscape",
+    "name": "traversal",
+    "title": "Cytoscape.js · Neighborhood traversal",
+    "description": "Inspect neighbors and paths through a network.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "traversal"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#collection/traversing",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  }
+]

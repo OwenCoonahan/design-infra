@@ -1,0 +1,227 @@
+[
+  {
+    "id": "react-flow/custom-edges",
+    "source": "react-flow",
+    "name": "custom-edges",
+    "title": "React Flow · Custom workflow edges",
+    "description": "Express a relationship with its own edge rendering.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "custom-edges"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/edges/custom-edges",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/edges/custom-edges"
+  },
+  {
+    "id": "react-flow/custom-nodes",
+    "source": "react-flow",
+    "name": "custom-nodes",
+    "title": "React Flow · Custom workflow nodes",
+    "description": "Represent domain-specific workflow steps.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "custom-nodes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/nodes/custom-node",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/nodes/custom-node"
+  },
+  {
+    "id": "react-flow/dark-mode",
+    "source": "react-flow",
+    "name": "dark-mode",
+    "title": "React Flow · Themed workflow",
+    "description": "Adapt node and edge styling to the project.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "dark-mode"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/styling/dark-mode",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/styling/dark-mode"
+  },
+  {
+    "id": "react-flow/drag-handle",
+    "source": "react-flow",
+    "name": "drag-handle",
+    "title": "React Flow · Node drag handle",
+    "description": "Separate dragging from controls inside a node.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "drag-handle"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/nodes/drag-handle",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/nodes/drag-handle"
+  },
+  {
+    "id": "react-flow/library",
+    "source": "react-flow",
+    "name": "library",
+    "title": "React Flow",
+    "description": "Editable node-and-edge interfaces for workflows and application builders.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "react-flow/save-restore",
+    "source": "react-flow",
+    "name": "save-restore",
+    "title": "React Flow · Save and restore",
+    "description": "Persist and restore the workflow in application storage.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "save-restore"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/interaction/save-and-restore",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/interaction/save-and-restore"
+  }
+]

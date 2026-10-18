@@ -1,0 +1,221 @@
+[
+  {
+    "id": "uplot/aligned",
+    "source": "uplot",
+    "name": "aligned",
+    "title": "uPlot · Aligned multi-series",
+    "description": "Compare several series against shared timestamps.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "aligned"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/area-fill.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/area-fill.html"
+  },
+  {
+    "id": "uplot/cursor",
+    "source": "uplot",
+    "name": "cursor",
+    "title": "uPlot · Linked cursor",
+    "description": "Inspect related series using a synchronized cursor.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "cursor"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/sync-cursor.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/sync-cursor.html"
+  },
+  {
+    "id": "uplot/library",
+    "source": "uplot",
+    "name": "library",
+    "title": "uPlot",
+    "description": "Focused time-series plotting for monitoring and analytical interfaces.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://github.com/leeoniya/uPlot",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "uplot/selection",
+    "source": "uplot",
+    "name": "selection",
+    "title": "uPlot · Range selection",
+    "description": "Select a time interval for analysis.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "selection"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/zoom-wheel.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/zoom-wheel.html"
+  },
+  {
+    "id": "uplot/streaming",
+    "source": "uplot",
+    "name": "streaming",
+    "title": "uPlot · Updating measurements",
+    "description": "Explore incoming measurements with a controlled update loop.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "streaming"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/stream-data.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/stream-data.html"
+  },
+  {
+    "id": "uplot/timeseries",
+    "source": "uplot",
+    "name": "timeseries",
+    "title": "uPlot · Monitoring time series",
+    "description": "Inspect timestamped measurements.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "timeseries"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/time-periods.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/time-periods.html"
+  }
+]

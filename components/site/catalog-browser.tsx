@@ -6,6 +6,7 @@ import * as React from "react"
 
 import { GalleryPlayback, GalleryPreview, PlaybackControls } from "@/components/site/gallery-preview"
 import { FEATURED_TYPES, SECTION_TYPES, categoryLabel } from "@/lib/catalog/galleries"
+import { CHART_TYPES, CHART_STYLES, chartFacets } from "@/lib/catalog/chart-styles"
 import { visualFirst, type PreviewDescriptor } from "@/lib/catalog/previews"
 import { MoodChips, MotionBadge } from "@/components/site/entry-badges"
 import { Input } from "@/components/ui/input"
@@ -34,6 +35,8 @@ export type SlimEntry = SearchEntry & {
 }
 
 const PAGE = 60
+const FEATURED_CHART_FORMS = new Set(["line", "area", "bar", "donut", "sparkline", "heatmap"])
+const DETAIL_FILTER_KEYS = FILTER_KEYS.filter((key) => !["category", "chartType", "chartStyle"].includes(key))
 
 function Chip({
   active,
@@ -88,7 +91,7 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
   const pickedIds = React.useMemo(() => new Set(picked.map((p) => p.id)), [picked])
 
   const update = (patch: Partial<Filters>) => {
-    const next = { ...f, ...patch }
+    const next = { ...f, ...patch, ...("category" in patch && patch.category !== "chart" ? { chartType: null, chartStyle: null } : {}) }
     setF(next)
     // Shallow URL update (no server round trip); Next's router stays in sync with native history.
     const qs = filtersToQuery(next)
@@ -129,6 +132,10 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
   const visual = groups.visual.slice(0, limit)
   const sourceOnly = groups.sourceOnly.slice(0, Math.max(0, limit - groups.visual.length))
   const large = f.category ? SECTION_TYPES.has(f.category) : false
+  const { chartTypes, chartStyles } = React.useMemo(() => {
+    const charts = entries.filter((entry) => entry.categories.includes("chart"))
+    return { chartTypes: countBy(charts, (entry) => chartFacets(entry).types), chartStyles: countBy(charts, (entry) => chartFacets(entry).styles) }
+  }, [entries])
 
   return (
     <GalleryPlayback>
@@ -140,7 +147,9 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             {f.category
               ? view === "live"
-                ? `Compare playable ${categoryLabel(f.category).toLowerCase()} examples. Try a demo, then shortlist your picks and send them to your agent.`
+                ? groups.visual.length
+                  ? `Compare playable ${categoryLabel(f.category).toLowerCase()} examples. Try a demo, then shortlist your picks and send them to your agent.`
+                  : `Browse ${categoryLabel(f.category).toLowerCase()} libraries and examples on their source sites. Shortlist your picks and send them to your agent.`
                 : `Compare ${categoryLabel(f.category).toLowerCase()} screenshots. Open a source demo to see its behavior, then shortlist your picks.`
               : "Find components by type and feeling. Explore live examples, shortlist your options, and copy your picks to your agent."}
           </p>
@@ -188,12 +197,32 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
               ))}
           </select>
         </nav>
+        {f.category === "chart" ? (
+          <div className="flex flex-col gap-2.5" aria-label="Chart styles">
+            <Row label="Chart form">
+              <Chip active={!f.chartType} onClick={() => update({ chartType: null })}>All forms</Chip>
+              {CHART_TYPES.filter(([key]) => chartTypes.has(key) && FEATURED_CHART_FORMS.has(key)).map(([key, label]) => (
+                <Chip key={key} active={f.chartType === key} onClick={() => update({ chartType: f.chartType === key ? null : key, view: f.view ?? "grid" })}>{label}</Chip>
+              ))}
+              <select aria-label="More chart forms" className="max-w-full rounded-full border bg-background px-2.5 py-0.5 text-xs" value={f.chartType && !FEATURED_CHART_FORMS.has(f.chartType) ? f.chartType : ""} onChange={(event) => update({ chartType: event.target.value || null, view: f.view ?? "grid" })}>
+                <option value="">More forms</option>
+                {CHART_TYPES.filter(([key]) => chartTypes.has(key) && !FEATURED_CHART_FORMS.has(key)).map(([key, label]) => <option key={key} value={key}>{label}</option>)}
+              </select>
+            </Row>
+            <Row label="Treatment">
+              <Chip active={!f.chartStyle} onClick={() => update({ chartStyle: null })}>All treatments</Chip>
+              {CHART_STYLES.filter(([key]) => chartStyles.has(key)).map(([key, label]) => (
+                <Chip key={key} active={f.chartStyle === key} onClick={() => update({ chartStyle: f.chartStyle === key ? null : key, view: f.view ?? "grid" })}>{label}</Chip>
+              ))}
+            </Row>
+          </div>
+        ) : null}
         <div className="flex flex-col gap-2.5">
           <div className="flex flex-wrap items-center gap-3">
             <Input
               value={f.q}
               onChange={(e) => update({ q: e.target.value })}
-              placeholder="Describe it — e.g. 'clean pricing' or 'subtle button hover'"
+              placeholder={f.category === "chart" ? "Describe a chart style — e.g. 'gradient area' or 'compact sparkline'" : "Describe it — e.g. 'clean pricing' or 'subtle button hover'"}
               className="h-10 max-w-xl"
               aria-label="Search the catalog"
               autoFocus={!f.category}
@@ -211,7 +240,7 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
           {!f.q ? (
             <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
               <span>Try:</span>
-              {["clean pricing", "sharp navbar", "subtle button hover", "loading submit button"].map((q) => (
+              {(f.category === "chart" ? ["gradient area", "compact sparkline", "stacked bars", "dither chart"] : ["clean pricing", "sharp navbar", "subtle button hover", "loading submit button"]).map((q) => (
                 <button
                   key={q}
                   type="button"
@@ -241,8 +270,8 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
           <details className="rounded-xl border p-3">
             <summary className="cursor-pointer text-sm text-muted-foreground">
               Filter by feeling, motion, usage or library
-              {FILTER_KEYS.some((k) => k !== "category" && f[k])
-                ? ` · ${FILTER_KEYS.filter((k) => k !== "category" && f[k]).length} active`
+              {DETAIL_FILTER_KEYS.some((k) => f[k])
+                ? ` · ${DETAIL_FILTER_KEYS.filter((k) => f[k]).length} active`
                 : ""}
             </summary>
             <div className="mt-3 flex flex-col gap-2.5">

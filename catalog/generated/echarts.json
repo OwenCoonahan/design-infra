@@ -1,0 +1,227 @@
+[
+  {
+    "id": "echarts/bar",
+    "source": "echarts",
+    "name": "bar",
+    "title": "Apache ECharts · Bar chart",
+    "description": "Compare category values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple"
+  },
+  {
+    "id": "echarts/heatmap",
+    "source": "echarts",
+    "name": "heatmap",
+    "title": "Apache ECharts · Heatmap",
+    "description": "Compare values over two discrete axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian"
+  },
+  {
+    "id": "echarts/library",
+    "source": "echarts",
+    "name": "library",
+    "title": "Apache ECharts",
+    "description": "Configurable dashboards with chart composition, zooming and relationship views.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "echarts/line",
+    "source": "echarts",
+    "name": "line",
+    "title": "Apache ECharts · Line chart",
+    "description": "Track time or ordered measurements.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=line-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=line-simple"
+  },
+  {
+    "id": "echarts/network",
+    "source": "echarts",
+    "name": "network",
+    "title": "Apache ECharts · Relationship graph",
+    "description": "Explore nodes and their connections.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=graph-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=graph-simple"
+  },
+  {
+    "id": "echarts/sankey",
+    "source": "echarts",
+    "name": "sankey",
+    "title": "Apache ECharts · Sankey diagram",
+    "description": "Explain quantities moving between stages.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "sankey"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=sankey-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=sankey-simple"
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "visx/barstack",
+    "source": "visx",
+    "name": "barstack",
+    "title": "visx · Stacked bars",
+    "description": "Compare parts across categories.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "barstack"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/shape @visx/scale @visx/group",
+    "docs": "https://visx.airbnb.tech/barstack",
+    "dependencies": [
+      "@visx/shape",
+      "@visx/scale",
+      "@visx/group"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/barstack"
+  },
+  {
+    "id": "visx/brush",
+    "source": "visx",
+    "name": "brush",
+    "title": "visx · Brush selection",
+    "description": "Select a region to filter a related chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "brush"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/brush @visx/scale @visx/group",
+    "docs": "https://visx.airbnb.tech/brush",
+    "dependencies": [
+      "@visx/brush",
+      "@visx/scale",
+      "@visx/group"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/brush"
+  },
+  {
+    "id": "visx/heatmaps",
+    "source": "visx",
+    "name": "heatmaps",
+    "title": "visx · Heatmap primitives",
+    "description": "Render a custom matrix visualization.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "heatmaps"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/heatmap @visx/scale @visx/group",
+    "docs": "https://visx.airbnb.tech/heatmaps",
+    "dependencies": [
+      "@visx/heatmap",
+      "@visx/scale",
+      "@visx/group"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/heatmaps"
+  },
+  {
+    "id": "visx/library",
+    "source": "visx",
+    "name": "library",
+    "title": "visx",
+    "description": "React visualization building blocks for a custom chart language.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/xychart @react-spring/web",
+    "docs": "https://visx.airbnb.tech/",
+    "dependencies": [
+      "@visx/xychart",
+      "@react-spring/web"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "visx/network",
+    "source": "visx",
+    "name": "network",
+    "title": "visx · Network primitives",
+    "description": "Draw a small custom node-link view.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/network @visx/group",
+    "docs": "https://visx.airbnb.tech/network",
+    "dependencies": [
+      "@visx/network",
+      "@visx/group"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visx.airbnb.tech/network"
+  },
+  {
+    "id": "visx/xychart",
+    "source": "visx",
+    "name": "xychart",
+    "title": "visx · Composable XY charts",
+    "description": "Build related charts with shared scales and tooltips.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "xychart"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/xychart @react-spring/web",
+    "docs": "https://visx.airbnb.tech/xychart",
+    "dependencies": [
+      "@visx/xychart",
+      "@react-spring/web"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/xychart"
+  }
+]

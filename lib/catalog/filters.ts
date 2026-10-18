@@ -9,6 +9,8 @@ export type Filters = {
   q: string
   source: string | null
   category: string | null
+  chartType: string | null
+  chartStyle: string | null
   mood: string | null
   trigger: string | null
   intensity: string | null
@@ -19,7 +21,7 @@ export type Filters = {
   paid: boolean
 }
 
-export const FILTER_KEYS = ["source", "category", "mood", "trigger", "intensity", "integration", "kind"] as const
+export const FILTER_KEYS = ["source", "category", "chartType", "chartStyle", "mood", "trigger", "intensity", "integration", "kind"] as const
 
 export function parseFilters(sp: Record<string, string | string[] | undefined>): Filters {
   const one = (k: string) => {
@@ -31,6 +33,8 @@ export function parseFilters(sp: Record<string, string | string[] | undefined>):
     q: one("q") ?? "",
     source: one("source"),
     category: one("category"),
+    chartType: one("chartType"),
+    chartStyle: one("chartStyle"),
     mood: one("mood"),
     trigger: one("trigger"),
     intensity: one("intensity"),
@@ -59,6 +63,8 @@ export function searchOptionsFromFilters(f: Filters): SearchOptions {
     query: f.q,
     source: f.source ?? undefined,
     category: (f.category ?? undefined) as Category | undefined,
+    chartType: f.chartType ?? undefined,
+    chartStyle: f.chartStyle ?? undefined,
     kind: (f.kind ?? undefined) as Kind | undefined,
     requiredMood: (f.mood ?? undefined) as Mood | undefined,
     moods: f.mood ? [f.mood as Mood] : undefined,

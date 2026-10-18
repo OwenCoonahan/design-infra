@@ -1,0 +1,222 @@
+[
+  {
+    "id": "antv-g2/area",
+    "source": "antv-g2",
+    "name": "area",
+    "title": "AntV G2 · Area marks",
+    "description": "Show a cumulative or filled series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/area",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "antv-g2/interval",
+    "source": "antv-g2",
+    "name": "interval",
+    "title": "AntV G2 · Interval marks",
+    "description": "Compare categorical values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "interval"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/interval",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "antv-g2/library",
+    "source": "antv-g2",
+    "name": "library",
+    "title": "AntV G2",
+    "description": "A grammar-based engine for composed analytical visualizations.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "antv-g2/line",
+    "source": "antv-g2",
+    "name": "line",
+    "title": "AntV G2 · Line marks",
+    "description": "Track an ordered series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/line",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "antv-g2/point",
+    "source": "antv-g2",
+    "name": "point",
+    "title": "AntV G2 · Point marks",
+    "description": "Inspect numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "point"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/point",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "antv-g2/rect",
+    "source": "antv-g2",
+    "name": "rect",
+    "title": "AntV G2 · Rectangle marks",
+    "description": "Encode values in a matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "rect"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/rect",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]
