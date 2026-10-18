@@ -1,0 +1,227 @@
+[
+  {
+    "id": "nivo/bar",
+    "source": "nivo",
+    "name": "bar",
+    "title": "Nivo · Bar chart",
+    "description": "Compare grouped or stacked category totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/bar",
+    "docs": "https://nivo.rocks/bar/",
+    "dependencies": [
+      "@nivo/bar"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/bar/"
+  },
+  {
+    "id": "nivo/heatmap",
+    "source": "nivo",
+    "name": "heatmap",
+    "title": "Nivo · Heatmap",
+    "description": "Inspect a row-by-column matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/heatmap",
+    "docs": "https://nivo.rocks/heatmap/",
+    "dependencies": [
+      "@nivo/heatmap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/heatmap/"
+  },
+  {
+    "id": "nivo/library",
+    "source": "nivo",
+    "name": "library",
+    "title": "Nivo",
+    "description": "Ready-made React visualizations with configurable themes and interaction.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/core",
+    "docs": "https://nivo.rocks/",
+    "dependencies": [
+      "@nivo/core"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "nivo/line",
+    "source": "nivo",
+    "name": "line",
+    "title": "Nivo · Line chart",
+    "description": "Track several series over time.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/line",
+    "docs": "https://nivo.rocks/line/",
+    "dependencies": [
+      "@nivo/line"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/line/"
+  },
+  {
+    "id": "nivo/sankey",
+    "source": "nivo",
+    "name": "sankey",
+    "title": "Nivo · Sankey diagram",
+    "description": "Explain quantities flowing between categories.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "sankey"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/sankey",
+    "docs": "https://nivo.rocks/sankey/",
+    "dependencies": [
+      "@nivo/sankey"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/sankey/"
+  },
+  {
+    "id": "nivo/treemap",
+    "source": "nivo",
+    "name": "treemap",
+    "title": "Nivo · Treemap",
+    "description": "Explore hierarchical part-to-whole data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "treemap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/treemap",
+    "docs": "https://nivo.rocks/treemap/",
+    "dependencies": [
+      "@nivo/treemap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/treemap/"
+  }
+]

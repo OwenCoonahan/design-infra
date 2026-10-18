@@ -1,0 +1,221 @@
+[
+  {
+    "id": "chartjs/bar",
+    "source": "chartjs",
+    "name": "bar",
+    "title": "Chart.js · Bar chart",
+    "description": "Compare category totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/bar.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/bar.html"
+  },
+  {
+    "id": "chartjs/bubble",
+    "source": "chartjs",
+    "name": "bubble",
+    "title": "Chart.js · Bubble chart",
+    "description": "Add a size encoding to a scatter plot.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bubble"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/bubble.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/bubble.html"
+  },
+  {
+    "id": "chartjs/doughnut",
+    "source": "chartjs",
+    "name": "doughnut",
+    "title": "Chart.js · Doughnut chart",
+    "description": "Show a small number of part-to-whole values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "doughnut"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/doughnut.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/doughnut.html"
+  },
+  {
+    "id": "chartjs/library",
+    "source": "chartjs",
+    "name": "library",
+    "title": "Chart.js",
+    "description": "Canvas charts for dashboards, reports and embedded analytics.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "chartjs/line",
+    "source": "chartjs",
+    "name": "line",
+    "title": "Chart.js · Line chart",
+    "description": "Track measurements over a continuous or ordered axis.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/line.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/line.html"
+  },
+  {
+    "id": "chartjs/scatter",
+    "source": "chartjs",
+    "name": "scatter",
+    "title": "Chart.js · Scatter plot",
+    "description": "Inspect two numeric variables.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/scatter.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/scatter.html"
+  }
+]

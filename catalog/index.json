@@ -4088,6 +4088,233 @@
     "live": "https://animejs.com/documentation/"
   },
   {
+    "id": "antv-g2/interval",
+    "source": "antv-g2",
+    "name": "interval",
+    "title": "AntV G2 · Interval marks",
+    "description": "Compare categorical values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "interval"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/interval",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://g2.antv.antgroup.com/en/manual/core/mark/interval"
+  },
+  {
+    "id": "antv-g2/library",
+    "source": "antv-g2",
+    "name": "library",
+    "title": "AntV G2",
+    "description": "A grammar-based engine for composed analytical visualizations.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://g2.antv.antgroup.com/"
+  },
+  {
+    "id": "antv-g2/line",
+    "source": "antv-g2",
+    "name": "line",
+    "title": "AntV G2 · Line marks",
+    "description": "Track an ordered series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/line",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://g2.antv.antgroup.com/en/manual/core/mark/line"
+  },
+  {
+    "id": "antv-g6/layouts",
+    "source": "antv-g6",
+    "name": "layouts",
+    "title": "AntV G6 · Graph layouts",
+    "description": "Choose how to arrange connected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "layouts"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/layout/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://g6.antv.antgroup.com/en/manual/layout/overview"
+  },
+  {
+    "id": "antv-g6/library",
+    "source": "antv-g6",
+    "name": "library",
+    "title": "AntV G6",
+    "description": "Graph visualization with layouts, behaviors and configurable node styles.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://g6.antv.antgroup.com/"
+  },
+  {
+    "id": "antv-g6/network",
+    "source": "antv-g6",
+    "name": "network",
+    "title": "AntV G6 · Graph construction",
+    "description": "Build a node-and-edge visualization.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/getting-started/quick-start",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://g6.antv.antgroup.com/en/manual/getting-started/quick-start"
+  },
+  {
     "id": "beautifui/approval-card",
     "source": "beautifui",
     "name": "approval-card",
@@ -4242,7 +4469,7 @@
     "kind": "component",
     "categories": [
       "agent-ui",
-      "chart"
+      "graph"
     ],
     "tags": [
       "ai",
@@ -4266,7 +4493,7 @@
     "integration": "drop-in",
     "appliesTo": [
       "agent-ui",
-      "chart"
+      "graph"
     ],
     "motion": {
       "triggers": [
@@ -5347,6 +5574,115 @@
     }
   },
   {
+    "id": "chartjs/bar",
+    "source": "chartjs",
+    "name": "bar",
+    "title": "Chart.js · Bar chart",
+    "description": "Compare category totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/bar.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/bar.html"
+  },
+  {
+    "id": "chartjs/library",
+    "source": "chartjs",
+    "name": "library",
+    "title": "Chart.js",
+    "description": "Canvas charts for dashboards, reports and embedded analytics.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/"
+  },
+  {
+    "id": "chartjs/line",
+    "source": "chartjs",
+    "name": "line",
+    "title": "Chart.js · Line chart",
+    "description": "Track measurements over a continuous or ordered axis.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/line.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/line.html"
+  },
+  {
     "id": "cult-ui/direction-aware-tabs",
     "source": "cult-ui",
     "name": "direction-aware-tabs",
@@ -5939,6 +6275,339 @@
       "reducedMotion": false
     },
     "live": "https://www.cult-ui.com/docs/components/texture-button"
+  },
+  {
+    "id": "cytoscape/layouts",
+    "source": "cytoscape",
+    "name": "layouts",
+    "title": "Cytoscape.js · Graph layouts",
+    "description": "Organize nodes using the layout that fits the relationship.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "layouts"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#layouts",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://js.cytoscape.org/#layouts"
+  },
+  {
+    "id": "cytoscape/library",
+    "source": "cytoscape",
+    "name": "library",
+    "title": "Cytoscape.js",
+    "description": "Relationship graph visualization and graph analysis with a JavaScript API.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://js.cytoscape.org/"
+  },
+  {
+    "id": "cytoscape/selection",
+    "source": "cytoscape",
+    "name": "selection",
+    "title": "Cytoscape.js · Graph selection",
+    "description": "Inspect selected connected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "selection"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#collection/selection",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://js.cytoscape.org/#collection/selection"
+  },
+  {
+    "id": "d3/library",
+    "source": "d3",
+    "name": "library",
+    "title": "D3",
+    "description": "Low-level visualization tools for bespoke scales, shapes and layouts.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://d3js.org/"
+  },
+  {
+    "id": "d3/scales",
+    "source": "d3",
+    "name": "scales",
+    "title": "D3 · Custom chart scales",
+    "description": "Map measured values into positions and sizes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "scales"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-scale",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://d3js.org/d3-scale"
+  },
+  {
+    "id": "d3/shapes",
+    "source": "d3",
+    "name": "shapes",
+    "title": "D3 · Custom chart shapes",
+    "description": "Compose lines, areas and arcs.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "shapes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-shape",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://d3js.org/d3-shape"
+  },
+  {
+    "id": "echarts/bar",
+    "source": "echarts",
+    "name": "bar",
+    "title": "Apache ECharts · Bar chart",
+    "description": "Compare category values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple"
+  },
+  {
+    "id": "echarts/library",
+    "source": "echarts",
+    "name": "library",
+    "title": "Apache ECharts",
+    "description": "Configurable dashboards with chart composition, zooming and relationship views.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/"
+  },
+  {
+    "id": "echarts/line",
+    "source": "echarts",
+    "name": "line",
+    "title": "Apache ECharts · Line chart",
+    "description": "Track time or ordered measurements.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=line-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=line-simple"
   },
   {
     "id": "inspiration/geometric-identity",
@@ -7754,6 +8423,115 @@
       "reducedMotion": false
     },
     "live": "https://magicui.design/docs/components/text-animate"
+  },
+  {
+    "id": "mermaid/flowchart",
+    "source": "mermaid",
+    "name": "flowchart",
+    "title": "Mermaid · Flowchart",
+    "description": "Explain a process or decision flow.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "flowchart"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/flowchart.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://mermaid.js.org/syntax/flowchart.html"
+  },
+  {
+    "id": "mermaid/library",
+    "source": "mermaid",
+    "name": "library",
+    "title": "Mermaid",
+    "description": "Text-defined diagrams for architecture, relationships and documentation.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://mermaid.js.org/"
+  },
+  {
+    "id": "mermaid/sequence",
+    "source": "mermaid",
+    "name": "sequence",
+    "title": "Mermaid · Sequence diagram",
+    "description": "Explain messages between participants.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sequence"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/sequenceDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://mermaid.js.org/syntax/sequenceDiagram.html"
   },
   {
     "id": "microkit/blur-glide-menu",
@@ -9576,6 +10354,230 @@
     "live": "https://motion.dev/examples/react-text-scroll-word-reveal"
   },
   {
+    "id": "nivo/bar",
+    "source": "nivo",
+    "name": "bar",
+    "title": "Nivo · Bar chart",
+    "description": "Compare grouped or stacked category totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/bar",
+    "docs": "https://nivo.rocks/bar/",
+    "dependencies": [
+      "@nivo/bar"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/bar/"
+  },
+  {
+    "id": "nivo/library",
+    "source": "nivo",
+    "name": "library",
+    "title": "Nivo",
+    "description": "Ready-made React visualizations with configurable themes and interaction.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/core",
+    "docs": "https://nivo.rocks/",
+    "dependencies": [
+      "@nivo/core"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/"
+  },
+  {
+    "id": "nivo/line",
+    "source": "nivo",
+    "name": "line",
+    "title": "Nivo · Line chart",
+    "description": "Track several series over time.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/line",
+    "docs": "https://nivo.rocks/line/",
+    "dependencies": [
+      "@nivo/line"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/line/"
+  },
+  {
+    "id": "observable-plot/dot",
+    "source": "observable-plot",
+    "name": "dot",
+    "title": "Observable Plot · Dot plot",
+    "description": "Compare numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "dot"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/dot",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://observablehq.github.io/plot/marks/dot"
+  },
+  {
+    "id": "observable-plot/library",
+    "source": "observable-plot",
+    "name": "library",
+    "title": "Observable Plot",
+    "description": "Concise statistical graphics for analysis and editorial explanations.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://observablehq.github.io/plot/"
+  },
+  {
+    "id": "observable-plot/line",
+    "source": "observable-plot",
+    "name": "line",
+    "title": "Observable Plot · Line plot",
+    "description": "Show an ordered series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/line",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://observablehq.github.io/plot/marks/line"
+  },
+  {
     "id": "originkit/mcp",
     "source": "originkit",
     "name": "mcp",
@@ -10140,6 +11142,118 @@
       "navigation"
     ],
     "live": "https://coss.com/origin/navbar"
+  },
+  {
+    "id": "plotly/box",
+    "source": "plotly",
+    "name": "box",
+    "title": "Plotly.js · Box plot",
+    "description": "Compare distributions across groups.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "box"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/box-plots/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/box-plots/"
+  },
+  {
+    "id": "plotly/library",
+    "source": "plotly",
+    "name": "library",
+    "title": "Plotly.js",
+    "description": "Statistical, scientific and financial charts with built-in interaction.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/"
+  },
+  {
+    "id": "plotly/scatter",
+    "source": "plotly",
+    "name": "scatter",
+    "title": "Plotly.js · Scatter plot",
+    "description": "Inspect numeric relationships.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/line-and-scatter/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/line-and-scatter/"
   },
   {
     "id": "react-bits/aurora",
@@ -10878,6 +11992,227 @@
     "live": "https://www.reactbits.dev/text-animations/text-type"
   },
   {
+    "id": "react-flow/custom-nodes",
+    "source": "react-flow",
+    "name": "custom-nodes",
+    "title": "React Flow · Custom workflow nodes",
+    "description": "Represent domain-specific workflow steps.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "custom-nodes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/nodes/custom-node",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/nodes/custom-node"
+  },
+  {
+    "id": "react-flow/drag-handle",
+    "source": "react-flow",
+    "name": "drag-handle",
+    "title": "React Flow · Node drag handle",
+    "description": "Separate dragging from controls inside a node.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "drag-handle"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/nodes/drag-handle",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/nodes/drag-handle"
+  },
+  {
+    "id": "react-flow/library",
+    "source": "react-flow",
+    "name": "library",
+    "title": "React Flow",
+    "description": "Editable node-and-edge interfaces for workflows and application builders.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/"
+  },
+  {
+    "id": "recharts/bar",
+    "source": "recharts",
+    "name": "bar",
+    "title": "Recharts · Bar chart",
+    "description": "Compare values across discrete categories.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/SimpleBarChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/SimpleBarChart/"
+  },
+  {
+    "id": "recharts/library",
+    "source": "recharts",
+    "name": "library",
+    "title": "Recharts",
+    "description": "Composable React charts for product dashboards and reports.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/"
+  },
+  {
+    "id": "recharts/line",
+    "source": "recharts",
+    "name": "line",
+    "title": "Recharts · Line chart",
+    "description": "Compare measured trends over time.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/SimpleLineChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/SimpleLineChart/"
+  },
+  {
     "id": "shadcn/chart-area-interactive",
     "source": "shadcn",
     "name": "chart-area-interactive",
@@ -11336,6 +12671,118 @@
       "auth"
     ],
     "live": "https://ui.shadcn.com/view/new-york-v4/signup-05"
+  },
+  {
+    "id": "sigma/events",
+    "source": "sigma",
+    "name": "events",
+    "title": "Sigma.js · Network events",
+    "description": "Connect graph interaction to application state.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "events"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/events/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://www.sigmajs.org/docs/advanced/events/"
+  },
+  {
+    "id": "sigma/library",
+    "source": "sigma",
+    "name": "library",
+    "title": "Sigma.js",
+    "description": "Interactive network rendering with Graphology data structures.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://www.sigmajs.org/"
+  },
+  {
+    "id": "sigma/network",
+    "source": "sigma",
+    "name": "network",
+    "title": "Sigma.js · Graph rendering",
+    "description": "Render a graphology network.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/quickstart/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://www.sigmajs.org/docs/quickstart/"
   },
   {
     "id": "smoothui/ai-approval",
@@ -12732,6 +14179,346 @@
       "reducedMotion": true
     },
     "live": "https://transitions.dev/detail.html?t=toast"
+  },
+  {
+    "id": "uplot/aligned",
+    "source": "uplot",
+    "name": "aligned",
+    "title": "uPlot · Aligned multi-series",
+    "description": "Compare several series against shared timestamps.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "aligned"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/area-fill.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/area-fill.html"
+  },
+  {
+    "id": "uplot/library",
+    "source": "uplot",
+    "name": "library",
+    "title": "uPlot",
+    "description": "Focused time-series plotting for monitoring and analytical interfaces.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://github.com/leeoniya/uPlot",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://github.com/leeoniya/uPlot"
+  },
+  {
+    "id": "uplot/timeseries",
+    "source": "uplot",
+    "name": "timeseries",
+    "title": "uPlot · Monitoring time series",
+    "description": "Inspect timestamped measurements.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "timeseries"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/time-periods.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/time-periods.html"
+  },
+  {
+    "id": "vega-lite/bar",
+    "source": "vega-lite",
+    "name": "bar",
+    "title": "Vega-Lite · Bar specification",
+    "description": "Compare category values from a concise spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/bar.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://vega.github.io/vega-lite/examples/bar.html"
+  },
+  {
+    "id": "vega-lite/library",
+    "source": "vega-lite",
+    "name": "library",
+    "title": "Vega-Lite",
+    "description": "Declarative JSON specifications for charts, transformations and linked views.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://vega.github.io/vega-lite/"
+  },
+  {
+    "id": "vega-lite/line",
+    "source": "vega-lite",
+    "name": "line",
+    "title": "Vega-Lite · Line specification",
+    "description": "Show an ordered numeric series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/line.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://vega.github.io/vega-lite/examples/line.html"
+  },
+  {
+    "id": "visx/barstack",
+    "source": "visx",
+    "name": "barstack",
+    "title": "visx · Stacked bars",
+    "description": "Compare parts across categories.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "barstack"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/shape @visx/scale @visx/group",
+    "docs": "https://visx.airbnb.tech/barstack",
+    "dependencies": [
+      "@visx/shape",
+      "@visx/scale",
+      "@visx/group"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/barstack"
+  },
+  {
+    "id": "visx/library",
+    "source": "visx",
+    "name": "library",
+    "title": "visx",
+    "description": "React visualization building blocks for a custom chart language.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/xychart @react-spring/web",
+    "docs": "https://visx.airbnb.tech/",
+    "dependencies": [
+      "@visx/xychart",
+      "@react-spring/web"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/"
+  },
+  {
+    "id": "visx/xychart",
+    "source": "visx",
+    "name": "xychart",
+    "title": "visx · Composable XY charts",
+    "description": "Build related charts with shared scales and tooltips.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "xychart"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/xychart @react-spring/web",
+    "docs": "https://visx.airbnb.tech/xychart",
+    "dependencies": [
+      "@visx/xychart",
+      "@react-spring/web"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/xychart"
   },
   {
     "id": "aceternity/3d-card",
@@ -25073,6 +26860,237 @@
     "live": "https://skills.wheresryan.sh/anatomy/collection/turbofan"
   },
   {
+    "id": "antv-g2/area",
+    "source": "antv-g2",
+    "name": "area",
+    "title": "AntV G2 · Area marks",
+    "description": "Show a cumulative or filled series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/area",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://g2.antv.antgroup.com/en/manual/core/mark/area"
+  },
+  {
+    "id": "antv-g2/point",
+    "source": "antv-g2",
+    "name": "point",
+    "title": "AntV G2 · Point marks",
+    "description": "Inspect numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "point"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/point",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://g2.antv.antgroup.com/en/manual/core/mark/point"
+  },
+  {
+    "id": "antv-g2/rect",
+    "source": "antv-g2",
+    "name": "rect",
+    "title": "AntV G2 · Rectangle marks",
+    "description": "Encode values in a matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "rect"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g2",
+    "docs": "https://g2.antv.antgroup.com/en/manual/core/mark/rect",
+    "dependencies": [
+      "@antv/g2"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable. Upstream: https://github.com/antvis/g2. License: MIT. Package metadata: @antv/g2@5.4.8. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://g2.antv.antgroup.com/en/manual/core/mark/rect"
+  },
+  {
+    "id": "antv-g6/behaviors",
+    "source": "antv-g6",
+    "name": "behaviors",
+    "title": "AntV G6 · Graph interaction",
+    "description": "Define how users explore the graph.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "behaviors"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/behavior/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://g6.antv.antgroup.com/en/manual/behavior/overview"
+  },
+  {
+    "id": "antv-g6/edges",
+    "source": "antv-g6",
+    "name": "edges",
+    "title": "AntV G6 · Edge presentation",
+    "description": "Encode relationship types through edges.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "edges"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/element/edge/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://g6.antv.antgroup.com/en/manual/element/edge/overview"
+  },
+  {
+    "id": "antv-g6/nodes",
+    "source": "antv-g6",
+    "name": "nodes",
+    "title": "AntV G6 · Node presentation",
+    "description": "Encode domain entities through node appearance.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "nodes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/element/node/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://g6.antv.antgroup.com/en/manual/element/node/overview"
+  },
+  {
     "id": "beautifui/button",
     "source": "beautifui",
     "name": "button",
@@ -32265,6 +34283,117 @@
     }
   },
   {
+    "id": "chartjs/bubble",
+    "source": "chartjs",
+    "name": "bubble",
+    "title": "Chart.js · Bubble chart",
+    "description": "Add a size encoding to a scatter plot.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bubble"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/bubble.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/bubble.html"
+  },
+  {
+    "id": "chartjs/doughnut",
+    "source": "chartjs",
+    "name": "doughnut",
+    "title": "Chart.js · Doughnut chart",
+    "description": "Show a small number of part-to-whole values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "doughnut"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/doughnut.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/doughnut.html"
+  },
+  {
+    "id": "chartjs/scatter",
+    "source": "chartjs",
+    "name": "scatter",
+    "title": "Chart.js · Scatter plot",
+    "description": "Inspect two numeric variables.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add chart.js",
+    "docs": "https://www.chartjs.org/docs/latest/charts/scatter.html",
+    "dependencies": [
+      "chart.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional. Upstream: https://github.com/chartjs/Chart.js. License: MIT. Package metadata: chart.js@4.5.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.chartjs.org/docs/latest/charts/scatter.html"
+  },
+  {
     "id": "cult-ui/agent-suggest-card-stack",
     "source": "cult-ui",
     "name": "agent-suggest-card-stack",
@@ -37950,6 +40079,345 @@
     "live": "https://www.cult-ui.com/docs/components/youtube-video-player"
   },
   {
+    "id": "cytoscape/events",
+    "source": "cytoscape",
+    "name": "events",
+    "title": "Cytoscape.js · Graph interaction",
+    "description": "Connect node and edge events to application behavior.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "events"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#events",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://js.cytoscape.org/#events"
+  },
+  {
+    "id": "cytoscape/styles",
+    "source": "cytoscape",
+    "name": "styles",
+    "title": "Cytoscape.js · Graph styling",
+    "description": "Encode relationship attributes with explicit visual rules.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "styles"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#style",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://js.cytoscape.org/#style"
+  },
+  {
+    "id": "cytoscape/traversal",
+    "source": "cytoscape",
+    "name": "traversal",
+    "title": "Cytoscape.js · Neighborhood traversal",
+    "description": "Inspect neighbors and paths through a network.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "traversal"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add cytoscape",
+    "docs": "https://js.cytoscape.org/#collection/traversing",
+    "dependencies": [
+      "cytoscape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships. Upstream: https://github.com/cytoscape/cytoscape.js. License: MIT. Package metadata: cytoscape@3.34.4. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://js.cytoscape.org/#collection/traversing"
+  },
+  {
+    "id": "d3/brush",
+    "source": "d3",
+    "name": "brush",
+    "title": "D3 · Region selection",
+    "description": "Select a region within a chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "brush"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-brush",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://d3js.org/d3-brush"
+  },
+  {
+    "id": "d3/force",
+    "source": "d3",
+    "name": "force",
+    "title": "D3 · Force-directed layouts",
+    "description": "Arrange connected entities through a simulation.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "force"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-force",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://d3js.org/d3-force"
+  },
+  {
+    "id": "d3/hierarchy",
+    "source": "d3",
+    "name": "hierarchy",
+    "title": "D3 · Hierarchy layouts",
+    "description": "Explore trees and nested structure.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "hierarchy"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-hierarchy",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://d3js.org/d3-hierarchy"
+  },
+  {
+    "id": "echarts/heatmap",
+    "source": "echarts",
+    "name": "heatmap",
+    "title": "Apache ECharts · Heatmap",
+    "description": "Compare values over two discrete axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian"
+  },
+  {
+    "id": "echarts/network",
+    "source": "echarts",
+    "name": "network",
+    "title": "Apache ECharts · Relationship graph",
+    "description": "Explore nodes and their connections.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=graph-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=graph-simple"
+  },
+  {
+    "id": "echarts/sankey",
+    "source": "echarts",
+    "name": "sankey",
+    "title": "Apache ECharts · Sankey diagram",
+    "description": "Explain quantities moving between stages.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "integration-recipe",
+      "sankey"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add echarts",
+    "docs": "https://echarts.apache.org/examples/en/editor.html?c=sankey-simple",
+    "dependencies": [
+      "echarts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums. Upstream: https://github.com/apache/echarts. License: Apache-2.0. Package metadata: echarts@6.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://echarts.apache.org/examples/en/editor.html?c=sankey-simple"
+  },
+  {
     "id": "kibo-ui/avatar-stack",
     "source": "kibo-ui",
     "name": "avatar-stack",
@@ -41461,6 +43929,117 @@
       "cost": "medium"
     },
     "live": "https://magicui.design/docs/components/word-rotate"
+  },
+  {
+    "id": "mermaid/class",
+    "source": "mermaid",
+    "name": "class",
+    "title": "Mermaid · Class diagram",
+    "description": "Explain model structure and relationships.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "class"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/classDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://mermaid.js.org/syntax/classDiagram.html"
+  },
+  {
+    "id": "mermaid/entity",
+    "source": "mermaid",
+    "name": "entity",
+    "title": "Mermaid · Entity relationship diagram",
+    "description": "Explain data entities and cardinalities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "entity"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/entityRelationshipDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://mermaid.js.org/syntax/entityRelationshipDiagram.html"
+  },
+  {
+    "id": "mermaid/state",
+    "source": "mermaid",
+    "name": "state",
+    "title": "Mermaid · State diagram",
+    "description": "Explain state transitions.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "state"
+    ],
+    "moods": [
+      "technical",
+      "minimal"
+    ],
+    "access": "free",
+    "install": "pnpm add mermaid",
+    "docs": "https://mermaid.js.org/syntax/stateDiagram.html",
+    "dependencies": [
+      "mermaid"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description. Upstream: https://github.com/mermaid-js/mermaid. License: MIT. Package metadata: mermaid@12.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://mermaid.js.org/syntax/stateDiagram.html"
   },
   {
     "id": "motion-primitives/accordion",
@@ -51757,6 +54336,234 @@
       "cost": "medium"
     },
     "live": "https://motion.dev/examples/react-warp-overlay"
+  },
+  {
+    "id": "nivo/heatmap",
+    "source": "nivo",
+    "name": "heatmap",
+    "title": "Nivo · Heatmap",
+    "description": "Inspect a row-by-column matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/heatmap",
+    "docs": "https://nivo.rocks/heatmap/",
+    "dependencies": [
+      "@nivo/heatmap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/heatmap/"
+  },
+  {
+    "id": "nivo/sankey",
+    "source": "nivo",
+    "name": "sankey",
+    "title": "Nivo · Sankey diagram",
+    "description": "Explain quantities flowing between categories.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "sankey"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/sankey",
+    "docs": "https://nivo.rocks/sankey/",
+    "dependencies": [
+      "@nivo/sankey"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/sankey/"
+  },
+  {
+    "id": "nivo/treemap",
+    "source": "nivo",
+    "name": "treemap",
+    "title": "Nivo · Treemap",
+    "description": "Explore hierarchical part-to-whole data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "treemap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @nivo/treemap",
+    "docs": "https://nivo.rocks/treemap/",
+    "dependencies": [
+      "@nivo/treemap"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API. Upstream: https://github.com/plouc/nivo. License: MIT. Package metadata: @nivo/core@0.99.0; peers: react ^16.14 || ^17.0 || ^18.0 || ^19.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nivo.rocks/treemap/"
+  },
+  {
+    "id": "observable-plot/bar",
+    "source": "observable-plot",
+    "name": "bar",
+    "title": "Observable Plot · Bar plot",
+    "description": "Compare categorical values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/bar",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://observablehq.github.io/plot/marks/bar"
+  },
+  {
+    "id": "observable-plot/cell",
+    "source": "observable-plot",
+    "name": "cell",
+    "title": "Observable Plot · Matrix heatmap",
+    "description": "Compare a categorical matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "cell"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/cell",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://observablehq.github.io/plot/marks/cell"
+  },
+  {
+    "id": "observable-plot/histogram",
+    "source": "observable-plot",
+    "name": "histogram",
+    "title": "Observable Plot · Binned distribution",
+    "description": "Inspect a distribution using an explicit binning transform.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "histogram"
+    ],
+    "moods": [
+      "editorial",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @observablehq/plot",
+    "docs": "https://observablehq.github.io/plot/marks/rect",
+    "dependencies": [
+      "@observablehq/plot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit. Upstream: https://github.com/observablehq/plot. License: ISC. Package metadata: @observablehq/plot@0.6.17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://observablehq.github.io/plot/marks/rect"
   },
   {
     "id": "originkit/3d-stagger-flip",
@@ -95668,6 +98475,122 @@
     "live": "https://coss.com/origin/button"
   },
   {
+    "id": "plotly/candlestick",
+    "source": "plotly",
+    "name": "candlestick",
+    "title": "Plotly.js · Candlestick chart",
+    "description": "Explore OHLC financial time series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/candlestick-charts/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/candlestick-charts/"
+  },
+  {
+    "id": "plotly/heatmap",
+    "source": "plotly",
+    "name": "heatmap",
+    "title": "Plotly.js · Heatmap",
+    "description": "Read a numeric matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/heatmaps/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/heatmaps/"
+  },
+  {
+    "id": "plotly/surface",
+    "source": "plotly",
+    "name": "surface",
+    "title": "Plotly.js · 3D surface",
+    "description": "Inspect a sampled surface.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "3d",
+      "scientific",
+      "integration-recipe",
+      "surface"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/3d-surface-plots/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/3d-surface-plots/"
+  },
+  {
     "id": "react-bits/accordion-gallery",
     "source": "react-bits",
     "name": "accordion-gallery",
@@ -104711,6 +107634,231 @@
     "live": "https://www.reactbits.dev/backgrounds/web-threads"
   },
   {
+    "id": "react-flow/custom-edges",
+    "source": "react-flow",
+    "name": "custom-edges",
+    "title": "React Flow · Custom workflow edges",
+    "description": "Express a relationship with its own edge rendering.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "custom-edges"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/edges/custom-edges",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/edges/custom-edges"
+  },
+  {
+    "id": "react-flow/dark-mode",
+    "source": "react-flow",
+    "name": "dark-mode",
+    "title": "React Flow · Themed workflow",
+    "description": "Adapt node and edge styling to the project.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "dark-mode"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/styling/dark-mode",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/styling/dark-mode"
+  },
+  {
+    "id": "react-flow/save-restore",
+    "source": "react-flow",
+    "name": "save-restore",
+    "title": "React Flow · Save and restore",
+    "description": "Persist and restore the workflow in application storage.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "dom",
+      "svg",
+      "integration-recipe",
+      "save-restore"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @xyflow/react",
+    "docs": "https://reactflow.dev/examples/interaction/save-and-restore",
+    "dependencies": [
+      "@xyflow/react"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app. Upstream: https://github.com/xyflow/xyflow. License: MIT. Package metadata: @xyflow/react@12.12.0; peers: react >=17; react-dom >=17; @types/react >=17; @types/react-dom >=17. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://reactflow.dev/examples/interaction/save-and-restore"
+  },
+  {
+    "id": "recharts/area",
+    "source": "recharts",
+    "name": "area",
+    "title": "Recharts · Stacked area chart",
+    "description": "Show how several contributions change over time.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/StackedAreaChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/StackedAreaChart/"
+  },
+  {
+    "id": "recharts/composed",
+    "source": "recharts",
+    "name": "composed",
+    "title": "Recharts · Combined line and bar chart",
+    "description": "Compare related measures while explaining different units.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "composed"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/LineBarAreaComposedChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/LineBarAreaComposedChart/"
+  },
+  {
+    "id": "recharts/scatter",
+    "source": "recharts",
+    "name": "scatter",
+    "title": "Recharts · Scatter plot",
+    "description": "Inspect relationships between two numeric measures.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/SimpleScatterChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/SimpleScatterChart/"
+  },
+  {
     "id": "shadcn/chart-area-axes",
     "source": "shadcn",
     "name": "chart-area-axes",
@@ -107416,6 +110564,120 @@
       "auth"
     ],
     "live": "https://ui.shadcn.com/view/new-york-v4/signup-04"
+  },
+  {
+    "id": "sigma/customization",
+    "source": "sigma",
+    "name": "customization",
+    "title": "Sigma.js · Custom graph rendering",
+    "description": "Extend node and edge presentation.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "customization"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/customization/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://www.sigmajs.org/docs/advanced/customization/"
+  },
+  {
+    "id": "sigma/lifecycle",
+    "source": "sigma",
+    "name": "lifecycle",
+    "title": "Sigma.js · Renderer lifecycle",
+    "description": "Manage changes and resource cleanup.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "lifecycle"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/lifecycle/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://www.sigmajs.org/docs/advanced/lifecycle/"
+  },
+  {
+    "id": "sigma/settings",
+    "source": "sigma",
+    "name": "settings",
+    "title": "Sigma.js · Rendering settings",
+    "description": "Control labels, nodes and edges.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "settings"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/customization/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://www.sigmajs.org/docs/advanced/customization/"
   },
   {
     "id": "smoothui/agent-avatar",
@@ -118796,5 +122058,352 @@
       "reducedMotion": true
     },
     "live": "https://transitions.dev/detail.html?t=tooltip"
+  },
+  {
+    "id": "uplot/cursor",
+    "source": "uplot",
+    "name": "cursor",
+    "title": "uPlot · Linked cursor",
+    "description": "Inspect related series using a synchronized cursor.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "cursor"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/sync-cursor.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/sync-cursor.html"
+  },
+  {
+    "id": "uplot/selection",
+    "source": "uplot",
+    "name": "selection",
+    "title": "uPlot · Range selection",
+    "description": "Select a time interval for analysis.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "selection"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/zoom-wheel.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/zoom-wheel.html"
+  },
+  {
+    "id": "uplot/streaming",
+    "source": "uplot",
+    "name": "streaming",
+    "title": "uPlot · Updating measurements",
+    "description": "Explore incoming measurements with a controlled update loop.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "streaming"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add uplot",
+    "docs": "https://leeoniya.github.io/uPlot/demos/stream-data.html",
+    "dependencies": [
+      "uplot"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset. Upstream: https://github.com/leeoniya/uPlot. License: MIT. Package metadata: uplot@1.6.32. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://leeoniya.github.io/uPlot/demos/stream-data.html"
+  },
+  {
+    "id": "vega-lite/heatmap",
+    "source": "vega-lite",
+    "name": "heatmap",
+    "title": "Vega-Lite · Heatmap specification",
+    "description": "Explore two-dimensional density.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/rect_binned_heatmap.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://vega.github.io/vega-lite/examples/rect_binned_heatmap.html"
+  },
+  {
+    "id": "vega-lite/histogram",
+    "source": "vega-lite",
+    "name": "histogram",
+    "title": "Vega-Lite · Histogram specification",
+    "description": "Aggregate observations into bins.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "histogram"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/histogram.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://vega.github.io/vega-lite/examples/histogram.html"
+  },
+  {
+    "id": "vega-lite/scatter",
+    "source": "vega-lite",
+    "name": "scatter",
+    "title": "Vega-Lite · Scatter specification",
+    "description": "Inspect relationships between measures.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/point_2d.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://vega.github.io/vega-lite/examples/point_2d.html"
+  },
+  {
+    "id": "visx/brush",
+    "source": "visx",
+    "name": "brush",
+    "title": "visx · Brush selection",
+    "description": "Select a region to filter a related chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "brush"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/brush @visx/scale @visx/group",
+    "docs": "https://visx.airbnb.tech/brush",
+    "dependencies": [
+      "@visx/brush",
+      "@visx/scale",
+      "@visx/group"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/brush"
+  },
+  {
+    "id": "visx/heatmaps",
+    "source": "visx",
+    "name": "heatmaps",
+    "title": "visx · Heatmap primitives",
+    "description": "Render a custom matrix visualization.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "heatmaps"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/heatmap @visx/scale @visx/group",
+    "docs": "https://visx.airbnb.tech/heatmaps",
+    "dependencies": [
+      "@visx/heatmap",
+      "@visx/scale",
+      "@visx/group"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://visx.airbnb.tech/heatmaps"
+  },
+  {
+    "id": "visx/network",
+    "source": "visx",
+    "name": "network",
+    "title": "visx · Network primitives",
+    "description": "Draw a small custom node-link view.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visx/network @visx/group",
+    "docs": "https://visx.airbnb.tech/network",
+    "dependencies": [
+      "@visx/network",
+      "@visx/group"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately. Upstream: https://github.com/airbnb/visx. License: MIT. Package metadata: @visx/xychart@4.0.0; peers: react ^18.0.0 || ^19.0.0; react-dom ^18.0.0 || ^19.0.0; @types/react ^18.0.0 || ^19.0.0; @types/react-dom ^18.0.0 || ^19.0.0; @react-spring/web ^9.7.5 || ^10.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visx.airbnb.tech/network"
   }
 ]

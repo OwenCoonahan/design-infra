@@ -1,0 +1,61 @@
+import assert from "node:assert/strict"
+import { readFileSync } from "node:fs"
+import test from "node:test"
+import { chartLibraries, chartLibraryEntries } from "../lib/catalog/chart-libraries"
+import { CatalogEntry } from "../lib/catalog/schema"
+import { parseFilters, filtersToQuery, searchOptionsFromFilters } from "../lib/catalog/filters"
+import { previewDescriptor } from "../lib/catalog/previews"
+import { searchCatalog } from "../lib/catalog/search"
+import { proposeOptions } from "../lib/propose"
+
+const catalog: CatalogEntry[] = JSON.parse(readFileSync("catalog/index.json", "utf8")).map((entry: unknown) => CatalogEntry.parse(entry))
+
+test("chart sync rejects missing, mismatched and changed-license metadata instead of silently promoting access", () => {
+  const source = chartLibraries.find((library) => library.slug === "chartjs")!
+  const metadata = { "chart.js": { name: "chart.js", version: "4.test", license: "MIT" } }
+  const entries = chartLibraryEntries(source, metadata)
+  assert.equal(entries.length, 6)
+  assert.ok(entries.every((entry) => entry.access === "free"))
+  assert.ok(entries.slice(1).every((entry) => entry.integration === "recipe" && entry.notes?.includes("not a standalone")))
+  assert.throws(() => chartLibraryEntries(source, {}))
+  assert.throws(() => chartLibraryEntries(source, { "chart.js": { ...metadata["chart.js"], name: "other" } }), /Review changed/)
+  assert.throws(() => chartLibraryEntries(source, { "chart.js": { ...metadata["chart.js"], license: "Proprietary" } }), /Review changed/)
+  assert.throws(() => chartLibraryEntries(source, { "chart.js": { ...metadata["chart.js"], license: "ISC" } }), /changed license/)
+})
+
+test("visualization references preserve exact modules and do not claim hosted coverage or install every engine", () => {
+  const sources = new Set(chartLibraries.map((library) => library.slug))
+  const entries = catalog.filter((entry) => sources.has(entry.source))
+  assert.equal(entries.length, 96)
+  assert.equal(entries.filter((entry) => entry.kind === "package").length, 16)
+  assert.ok(entries.every((entry) => entry.access === "free" && previewDescriptor(entry) === undefined))
+  assert.equal(catalog.find((entry) => entry.id === "sigma/library")?.motion, undefined, "WebGL capability must not become an unverified animation claim")
+  assert.equal(catalog.find((entry) => entry.id === "plotly/box")?.motion, undefined)
+  assert.equal(catalog.find((entry) => entry.id === "nivo/bar")?.install, "pnpm add @nivo/bar")
+  assert.equal(catalog.find((entry) => entry.id === "react-flow/custom-nodes")?.install, "pnpm add @xyflow/react")
+  const tools = JSON.parse(readFileSync("catalog/toolchain.json", "utf8")).tools as { source?: string }[]
+  assert.ok(!tools.some((tool) => tool.source && sources.has(tool.source)), "these engines remain choices rather than bootstrap dependencies")
+})
+
+test("network and numeric searches stay on their requested shelves, including shareable graph URLs", () => {
+  const graph = parseFilters({ category: "graph", q: "network", source: "sigma", free: "1" })
+  assert.deepEqual(parseFilters(Object.fromEntries(new URLSearchParams(filtersToQuery(graph)))), graph)
+  const networks = searchCatalog(catalog, searchOptionsFromFilters(graph))
+  assert.ok(networks.some((entry) => entry.id === "sigma/network"))
+  assert.ok(networks.every((entry) => entry.categories.includes("graph") && entry.access === "free"))
+  const charts = searchCatalog(catalog, { category: "chart", query: "bar", limit: 100 })
+  assert.ok(charts.some((entry) => entry.id === "chartjs/bar"))
+  assert.ok(charts.every((entry) => entry.categories.includes("chart")))
+  assert.ok(!catalog.find((entry) => entry.id === "beautifui/flowchart")?.categories.includes("chart"))
+})
+
+test("agents get distinct data-task approaches for charts and editable/exploratory graphs", async () => {
+  const charts = await proposeOptions({ component: "chart", intent: "replace" })
+  assert.equal(charts.playbook?.component, "chart")
+  assert.ok(charts.directions.length >= 3 && charts.compare)
+  assert.ok(charts.playbook?.guidance.includes("units"))
+  const graphs = await proposeOptions({ component: "network diagram", category: "graph", intent: "replace" })
+  assert.equal(graphs.playbook?.component, "graph")
+  assert.ok(graphs.directions.length >= 3 && graphs.compare)
+  assert.ok(graphs.directions.flatMap((direction) => direction.picks).every((entry) => entry.categories.includes("graph") && entry.access === "free"))
+})

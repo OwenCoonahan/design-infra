@@ -1,0 +1,222 @@
+[
+  {
+    "id": "d3/brush",
+    "source": "d3",
+    "name": "brush",
+    "title": "D3 · Region selection",
+    "description": "Select a region within a chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "brush"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-brush",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "d3/force",
+    "source": "d3",
+    "name": "force",
+    "title": "D3 · Force-directed layouts",
+    "description": "Arrange connected entities through a simulation.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "force"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-force",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "d3/hierarchy",
+    "source": "d3",
+    "name": "hierarchy",
+    "title": "D3 · Hierarchy layouts",
+    "description": "Explore trees and nested structure.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "hierarchy"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-hierarchy",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "d3/library",
+    "source": "d3",
+    "name": "library",
+    "title": "D3",
+    "description": "Low-level visualization tools for bespoke scales, shapes and layouts.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "d3/scales",
+    "source": "d3",
+    "name": "scales",
+    "title": "D3 · Custom chart scales",
+    "description": "Map measured values into positions and sizes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "scales"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-scale",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "d3/shapes",
+    "source": "d3",
+    "name": "shapes",
+    "title": "D3 · Custom chart shapes",
+    "description": "Compose lines, areas and arcs.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "shapes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add d3",
+    "docs": "https://d3js.org/d3-shape",
+    "dependencies": [
+      "d3"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility. Upstream: https://github.com/d3/d3. License: ISC. Package metadata: d3@7.9.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

@@ -140,7 +140,9 @@ export function CatalogBrowser({ entries, initial }: { entries: SlimEntry[]; ini
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             {f.category
               ? view === "live"
-                ? `Compare playable ${categoryLabel(f.category).toLowerCase()} examples. Try a demo, then shortlist your picks and send them to your agent.`
+                ? groups.visual.length
+                  ? `Compare playable ${categoryLabel(f.category).toLowerCase()} examples. Try a demo, then shortlist your picks and send them to your agent.`
+                  : `Browse ${categoryLabel(f.category).toLowerCase()} libraries and examples on their source sites. Shortlist your picks and send them to your agent.`
                 : `Compare ${categoryLabel(f.category).toLowerCase()} screenshots. Open a source demo to see its behavior, then shortlist your picks.`
               : "Find components by type and feeling. Explore live examples, shortlist your options, and copy your picks to your agent."}
           </p>

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "antv-g6/behaviors",
+    "source": "antv-g6",
+    "name": "behaviors",
+    "title": "AntV G6 · Graph interaction",
+    "description": "Define how users explore the graph.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "behaviors"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/behavior/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "antv-g6/edges",
+    "source": "antv-g6",
+    "name": "edges",
+    "title": "AntV G6 · Edge presentation",
+    "description": "Encode relationship types through edges.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "edges"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/element/edge/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "antv-g6/layouts",
+    "source": "antv-g6",
+    "name": "layouts",
+    "title": "AntV G6 · Graph layouts",
+    "description": "Choose how to arrange connected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "layouts"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/layout/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "antv-g6/library",
+    "source": "antv-g6",
+    "name": "library",
+    "title": "AntV G6",
+    "description": "Graph visualization with layouts, behaviors and configurable node styles.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "antv-g6/network",
+    "source": "antv-g6",
+    "name": "network",
+    "title": "AntV G6 · Graph construction",
+    "description": "Build a node-and-edge visualization.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/getting-started/quick-start",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "antv-g6/nodes",
+    "source": "antv-g6",
+    "name": "nodes",
+    "title": "AntV G6 · Node presentation",
+    "description": "Encode domain entities through node appearance.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "nodes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @antv/g6",
+    "docs": "https://g6.antv.antgroup.com/en/manual/element/node/overview",
+    "dependencies": [
+      "@antv/g6"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements. Upstream: https://github.com/antvis/G6. License: MIT. Package metadata: @antv/g6@5.1.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  }
+]

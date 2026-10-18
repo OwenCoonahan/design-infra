@@ -1,0 +1,222 @@
+[
+  {
+    "id": "sigma/customization",
+    "source": "sigma",
+    "name": "customization",
+    "title": "Sigma.js · Custom graph rendering",
+    "description": "Extend node and edge presentation.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "customization"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/customization/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "sigma/events",
+    "source": "sigma",
+    "name": "events",
+    "title": "Sigma.js · Network events",
+    "description": "Connect graph interaction to application state.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "events"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/events/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "sigma/library",
+    "source": "sigma",
+    "name": "library",
+    "title": "Sigma.js",
+    "description": "Interactive network rendering with Graphology data structures.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "sigma/lifecycle",
+    "source": "sigma",
+    "name": "lifecycle",
+    "title": "Sigma.js · Renderer lifecycle",
+    "description": "Manage changes and resource cleanup.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "lifecycle"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/lifecycle/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "sigma/network",
+    "source": "sigma",
+    "name": "network",
+    "title": "Sigma.js · Graph rendering",
+    "description": "Render a graphology network.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/quickstart/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "sigma/settings",
+    "source": "sigma",
+    "name": "settings",
+    "title": "Sigma.js · Rendering settings",
+    "description": "Control labels, nodes and edges.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "webgl",
+      "integration-recipe",
+      "settings"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add sigma graphology",
+    "docs": "https://www.sigmajs.org/docs/advanced/customization/",
+    "dependencies": [
+      "sigma",
+      "graphology"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount. Upstream: https://github.com/jacomyal/sigma.js. License: MIT. Package metadata: sigma@4.0.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  }
+]

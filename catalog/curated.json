@@ -1041,13 +1041,14 @@
   },
   {
     "id": "beautifui/flowchart",
+    "categories": ["agent-ui", "graph"],
     "curated": true,
     "notes": "Lightweight flow diagram for agent plans/pipelines. Requires the Beautiful UI foundation.css, which redefines --accent (collides with shadcn).",
     "themeAware": false,
     "integration": "drop-in",
     "appliesTo": [
       "agent-ui",
-      "chart"
+      "graph"
     ],
     "motion": {
       "triggers": [

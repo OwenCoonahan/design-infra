@@ -1,4 +1,5 @@
 import { hostedPreview } from "../lib/catalog/previews"
+import { chartLibraries } from "../lib/catalog/chart-libraries"
 import { SITE_URL } from "../lib/config"
 import { galleryBase } from "./lib/gallery-base"
 import { linkOnlyMedia } from "../lib/catalog/media-policy"
@@ -129,6 +130,7 @@ const BROKEN_HEADLESS: Record<string, string> = {
   "magicui/globe": "cobe WebGL globe renders as a black disc under SwiftShader",
   "magicui/icon-cloud": "icon canvas stays empty in headless Chrome (only the pause button renders)",
 }
+const CHART_SOURCES = new Set(chartLibraries.map((library) => library.slug))
 
 function planFor(e: CatalogEntry): Shot | Probe | Skip {
   if (linkOnlyMedia(e)) return { id: e.id, reason: "Link-only media policy: redistribution not established" }
@@ -141,6 +143,7 @@ function planFor(e: CatalogEntry): Shot | Probe | Skip {
     aspect: hosted.width / hosted.height, settle: 1800,
   }
   const { id, name } = e
+  if (CHART_SOURCES.has(e.source)) return { id, reason: "External package/recipe reference; add an exact hosted demo adapter before generating a poster" }
   if (BROKEN_HEADLESS[id]) return { id, reason: BROKEN_HEADLESS[id] }
   switch (e.source) {
     case "beui":

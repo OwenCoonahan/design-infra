@@ -1,0 +1,929 @@
+{
+  "version": 1,
+  "libraries": [
+    {
+      "slug": "recharts",
+      "name": "Recharts",
+      "url": "https://recharts.github.io/",
+      "repository": "https://github.com/recharts/recharts",
+      "package": "recharts",
+      "packages": [
+        "recharts"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Composable React charts for product dashboards and reports.",
+      "notes": "Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://recharts.github.io/en-US/examples/SimpleLineChart/",
+          "purpose": "Compare measured trends over time."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://recharts.github.io/en-US/examples/SimpleBarChart/",
+          "purpose": "Compare values across discrete categories."
+        },
+        {
+          "name": "area",
+          "title": "Stacked area chart",
+          "url": "https://recharts.github.io/en-US/examples/StackedAreaChart/",
+          "purpose": "Show how several contributions change over time."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://recharts.github.io/en-US/examples/SimpleScatterChart/",
+          "purpose": "Inspect relationships between two numeric measures."
+        },
+        {
+          "name": "composed",
+          "title": "Combined line and bar chart",
+          "url": "https://recharts.github.io/en-US/examples/LineBarAreaComposedChart/",
+          "purpose": "Compare related measures while explaining different units."
+        }
+      ]
+    },
+    {
+      "slug": "chartjs",
+      "name": "Chart.js",
+      "url": "https://www.chartjs.org/",
+      "repository": "https://github.com/chartjs/Chart.js",
+      "package": "chart.js",
+      "packages": [
+        "chart.js"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Canvas charts for dashboards, reports and embedded analytics.",
+      "notes": "Register the controllers/scales you use or follow the auto entry guide. Give the canvas an accessible description or table; destroy instances on unmount. React wrappers are optional.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://www.chartjs.org/docs/latest/charts/line.html",
+          "purpose": "Track measurements over a continuous or ordered axis."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://www.chartjs.org/docs/latest/charts/bar.html",
+          "purpose": "Compare category totals."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://www.chartjs.org/docs/latest/charts/scatter.html",
+          "purpose": "Inspect two numeric variables."
+        },
+        {
+          "name": "bubble",
+          "title": "Bubble chart",
+          "url": "https://www.chartjs.org/docs/latest/charts/bubble.html",
+          "purpose": "Add a size encoding to a scatter plot."
+        },
+        {
+          "name": "doughnut",
+          "title": "Doughnut chart",
+          "url": "https://www.chartjs.org/docs/latest/charts/doughnut.html",
+          "purpose": "Show a small number of part-to-whole values."
+        }
+      ]
+    },
+    {
+      "slug": "echarts",
+      "name": "Apache ECharts",
+      "url": "https://echarts.apache.org/",
+      "repository": "https://github.com/apache/echarts",
+      "package": "echarts",
+      "packages": [
+        "echarts"
+      ],
+      "license": "Apache-2.0",
+      "renderers": [
+        "canvas",
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Configurable dashboards with chart composition, zooming and relationship views.",
+      "notes": "Import the renderer and features you need. Dispose chart instances and resize them with their container. Benchmark the actual data volume rather than relying on vendor maximums.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://echarts.apache.org/examples/en/editor.html?c=line-simple",
+          "purpose": "Track time or ordered measurements."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://echarts.apache.org/examples/en/editor.html?c=bar-simple",
+          "purpose": "Compare category values."
+        },
+        {
+          "name": "heatmap",
+          "title": "Heatmap",
+          "url": "https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian",
+          "purpose": "Compare values over two discrete axes."
+        },
+        {
+          "name": "sankey",
+          "title": "Sankey diagram",
+          "url": "https://echarts.apache.org/examples/en/editor.html?c=sankey-simple",
+          "purpose": "Explain quantities moving between stages."
+        },
+        {
+          "name": "network",
+          "title": "Relationship graph",
+          "url": "https://echarts.apache.org/examples/en/editor.html?c=graph-simple",
+          "purpose": "Explore nodes and their connections.",
+          "category": "graph"
+        }
+      ]
+    },
+    {
+      "slug": "nivo",
+      "name": "Nivo",
+      "url": "https://nivo.rocks/",
+      "repository": "https://github.com/plouc/nivo",
+      "package": "@nivo/core",
+      "packages": [
+        "@nivo/core"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg",
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Ready-made React visualizations with configurable themes and interaction.",
+      "notes": "Install the package for the chosen chart rather than only @nivo/core. Responsive variants need a sized parent. Some types offer Canvas alternatives; check each component API.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://nivo.rocks/line/",
+          "purpose": "Track several series over time.",
+          "packages": [
+            "@nivo/line"
+          ]
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://nivo.rocks/bar/",
+          "purpose": "Compare grouped or stacked category totals.",
+          "packages": [
+            "@nivo/bar"
+          ]
+        },
+        {
+          "name": "heatmap",
+          "title": "Heatmap",
+          "url": "https://nivo.rocks/heatmap/",
+          "purpose": "Inspect a row-by-column matrix.",
+          "packages": [
+            "@nivo/heatmap"
+          ]
+        },
+        {
+          "name": "sankey",
+          "title": "Sankey diagram",
+          "url": "https://nivo.rocks/sankey/",
+          "purpose": "Explain quantities flowing between categories.",
+          "packages": [
+            "@nivo/sankey"
+          ]
+        },
+        {
+          "name": "treemap",
+          "title": "Treemap",
+          "url": "https://nivo.rocks/treemap/",
+          "purpose": "Explore hierarchical part-to-whole data.",
+          "packages": [
+            "@nivo/treemap"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "visx",
+      "name": "visx",
+      "url": "https://visx.airbnb.tech/",
+      "repository": "https://github.com/airbnb/visx",
+      "package": "@visx/xychart",
+      "packages": [
+        "@visx/xychart",
+        "@react-spring/web"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "React visualization building blocks for a custom chart language.",
+      "notes": "More assembly work than a ready-made dashboard component. Select only the required modules and map scales, axes, tooltips and accessibility deliberately.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "xychart",
+          "title": "Composable XY charts",
+          "url": "https://visx.airbnb.tech/xychart",
+          "purpose": "Build related charts with shared scales and tooltips.",
+          "packages": [
+            "@visx/xychart",
+            "@react-spring/web"
+          ]
+        },
+        {
+          "name": "barstack",
+          "title": "Stacked bars",
+          "url": "https://visx.airbnb.tech/barstack",
+          "purpose": "Compare parts across categories.",
+          "packages": [
+            "@visx/shape",
+            "@visx/scale",
+            "@visx/group"
+          ]
+        },
+        {
+          "name": "heatmaps",
+          "title": "Heatmap primitives",
+          "url": "https://visx.airbnb.tech/heatmaps",
+          "purpose": "Render a custom matrix visualization.",
+          "packages": [
+            "@visx/heatmap",
+            "@visx/scale",
+            "@visx/group"
+          ]
+        },
+        {
+          "name": "network",
+          "title": "Network primitives",
+          "url": "https://visx.airbnb.tech/network",
+          "purpose": "Draw a small custom node-link view.",
+          "category": "graph",
+          "packages": [
+            "@visx/network",
+            "@visx/group"
+          ]
+        },
+        {
+          "name": "brush",
+          "title": "Brush selection",
+          "url": "https://visx.airbnb.tech/brush",
+          "purpose": "Select a region to filter a related chart.",
+          "packages": [
+            "@visx/brush",
+            "@visx/scale",
+            "@visx/group"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "observable-plot",
+      "name": "Observable Plot",
+      "url": "https://observablehq.github.io/plot/",
+      "repository": "https://github.com/observablehq/plot",
+      "package": "@observablehq/plot",
+      "packages": [
+        "@observablehq/plot"
+      ],
+      "license": "ISC",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "editorial",
+        "technical",
+        "refined"
+      ],
+      "description": "Concise statistical graphics for analysis and editorial explanations.",
+      "notes": "The open-source library is separate from hosted Observable products. In React mount the returned plot into a container and remove it on cleanup; keep data and units explicit.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "dot",
+          "title": "Dot plot",
+          "url": "https://observablehq.github.io/plot/marks/dot",
+          "purpose": "Compare numeric observations."
+        },
+        {
+          "name": "line",
+          "title": "Line plot",
+          "url": "https://observablehq.github.io/plot/marks/line",
+          "purpose": "Show an ordered series."
+        },
+        {
+          "name": "bar",
+          "title": "Bar plot",
+          "url": "https://observablehq.github.io/plot/marks/bar",
+          "purpose": "Compare categorical values."
+        },
+        {
+          "name": "histogram",
+          "title": "Binned distribution",
+          "url": "https://observablehq.github.io/plot/marks/rect",
+          "purpose": "Inspect a distribution using an explicit binning transform."
+        },
+        {
+          "name": "cell",
+          "title": "Matrix heatmap",
+          "url": "https://observablehq.github.io/plot/marks/cell",
+          "purpose": "Compare a categorical matrix."
+        }
+      ]
+    },
+    {
+      "slug": "vega-lite",
+      "name": "Vega-Lite",
+      "url": "https://vega.github.io/vega-lite/",
+      "repository": "https://github.com/vega/vega-lite",
+      "package": "vega-lite",
+      "packages": [
+        "vega",
+        "vega-lite",
+        "vega-embed"
+      ],
+      "license": "BSD-3-Clause",
+      "renderers": [
+        "svg",
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Declarative JSON specifications for charts, transformations and linked views.",
+      "notes": "Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "bar",
+          "title": "Bar specification",
+          "url": "https://vega.github.io/vega-lite/examples/bar.html",
+          "purpose": "Compare category values from a concise spec."
+        },
+        {
+          "name": "line",
+          "title": "Line specification",
+          "url": "https://vega.github.io/vega-lite/examples/line.html",
+          "purpose": "Show an ordered numeric series."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter specification",
+          "url": "https://vega.github.io/vega-lite/examples/point_2d.html",
+          "purpose": "Inspect relationships between measures."
+        },
+        {
+          "name": "histogram",
+          "title": "Histogram specification",
+          "url": "https://vega.github.io/vega-lite/examples/histogram.html",
+          "purpose": "Aggregate observations into bins."
+        },
+        {
+          "name": "heatmap",
+          "title": "Heatmap specification",
+          "url": "https://vega.github.io/vega-lite/examples/rect_binned_heatmap.html",
+          "purpose": "Explore two-dimensional density."
+        }
+      ]
+    },
+    {
+      "slug": "plotly",
+      "name": "Plotly.js",
+      "url": "https://plotly.com/javascript/",
+      "repository": "https://github.com/plotly/plotly.js",
+      "package": "plotly.js-dist-min",
+      "packages": [
+        "plotly.js-dist-min"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg",
+        "webgl"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Statistical, scientific and financial charts with built-in interaction.",
+      "notes": "Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://plotly.com/javascript/line-and-scatter/",
+          "purpose": "Inspect numeric relationships."
+        },
+        {
+          "name": "box",
+          "title": "Box plot",
+          "url": "https://plotly.com/javascript/box-plots/",
+          "purpose": "Compare distributions across groups."
+        },
+        {
+          "name": "heatmap",
+          "title": "Heatmap",
+          "url": "https://plotly.com/javascript/heatmaps/",
+          "purpose": "Read a numeric matrix."
+        },
+        {
+          "name": "candlestick",
+          "title": "Candlestick chart",
+          "url": "https://plotly.com/javascript/candlestick-charts/",
+          "purpose": "Explore OHLC financial time series."
+        },
+        {
+          "name": "surface",
+          "title": "3D surface",
+          "url": "https://plotly.com/javascript/3d-surface-plots/",
+          "purpose": "Inspect a sampled surface.",
+          "tags": [
+            "3d",
+            "scientific"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "uplot",
+      "name": "uPlot",
+      "url": "https://github.com/leeoniya/uPlot",
+      "repository": "https://github.com/leeoniya/uPlot",
+      "package": "uplot",
+      "packages": [
+        "uplot"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Focused time-series plotting for monitoring and analytical interfaces.",
+      "notes": "Use a sized browser container, import uplot/dist/uPlot.min.css and clean up the instance. Handle nulls, time units and decimation explicitly; benchmark your own dataset.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "timeseries",
+          "title": "Monitoring time series",
+          "url": "https://leeoniya.github.io/uPlot/demos/time-periods.html",
+          "purpose": "Inspect timestamped measurements."
+        },
+        {
+          "name": "aligned",
+          "title": "Aligned multi-series",
+          "url": "https://leeoniya.github.io/uPlot/demos/area-fill.html",
+          "purpose": "Compare several series against shared timestamps."
+        },
+        {
+          "name": "streaming",
+          "title": "Updating measurements",
+          "url": "https://leeoniya.github.io/uPlot/demos/stream-data.html",
+          "purpose": "Explore incoming measurements with a controlled update loop."
+        },
+        {
+          "name": "cursor",
+          "title": "Linked cursor",
+          "url": "https://leeoniya.github.io/uPlot/demos/sync-cursor.html",
+          "purpose": "Inspect related series using a synchronized cursor."
+        },
+        {
+          "name": "selection",
+          "title": "Range selection",
+          "url": "https://leeoniya.github.io/uPlot/demos/zoom-wheel.html",
+          "purpose": "Select a time interval for analysis."
+        }
+      ]
+    },
+    {
+      "slug": "antv-g2",
+      "name": "AntV G2",
+      "url": "https://g2.antv.antgroup.com/",
+      "repository": "https://github.com/antvis/g2",
+      "package": "@antv/g2",
+      "packages": [
+        "@antv/g2"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas",
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "A grammar-based engine for composed analytical visualizations.",
+      "notes": "Keep the visualization grammar explicit and dispose the chart on unmount. Pin a compatible major when adapting older examples; do not treat G2 and the G6 graph engine as interchangeable.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "interval",
+          "title": "Interval marks",
+          "url": "https://g2.antv.antgroup.com/en/manual/core/mark/interval",
+          "purpose": "Compare categorical values."
+        },
+        {
+          "name": "line",
+          "title": "Line marks",
+          "url": "https://g2.antv.antgroup.com/en/manual/core/mark/line",
+          "purpose": "Track an ordered series."
+        },
+        {
+          "name": "point",
+          "title": "Point marks",
+          "url": "https://g2.antv.antgroup.com/en/manual/core/mark/point",
+          "purpose": "Inspect numeric observations."
+        },
+        {
+          "name": "area",
+          "title": "Area marks",
+          "url": "https://g2.antv.antgroup.com/en/manual/core/mark/area",
+          "purpose": "Show a cumulative or filled series."
+        },
+        {
+          "name": "rect",
+          "title": "Rectangle marks",
+          "url": "https://g2.antv.antgroup.com/en/manual/core/mark/rect",
+          "purpose": "Encode values in a matrix."
+        }
+      ]
+    },
+    {
+      "slug": "react-flow",
+      "name": "React Flow",
+      "url": "https://reactflow.dev/",
+      "repository": "https://github.com/xyflow/xyflow",
+      "package": "@xyflow/react",
+      "packages": [
+        "@xyflow/react"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "dom",
+        "svg"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Editable node-and-edge interfaces for workflows and application builders.",
+      "notes": "Import @xyflow/react/dist/style.css and size the parent. The MIT core is free; Pro examples/templates are a separate offering. Layout engines are optional dependencies, and persistence belongs to your app.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "custom-nodes",
+          "title": "Custom workflow nodes",
+          "url": "https://reactflow.dev/examples/nodes/custom-node",
+          "purpose": "Represent domain-specific workflow steps."
+        },
+        {
+          "name": "drag-handle",
+          "title": "Node drag handle",
+          "url": "https://reactflow.dev/examples/nodes/drag-handle",
+          "purpose": "Separate dragging from controls inside a node."
+        },
+        {
+          "name": "custom-edges",
+          "title": "Custom workflow edges",
+          "url": "https://reactflow.dev/examples/edges/custom-edges",
+          "purpose": "Express a relationship with its own edge rendering."
+        },
+        {
+          "name": "save-restore",
+          "title": "Save and restore",
+          "url": "https://reactflow.dev/examples/interaction/save-and-restore",
+          "purpose": "Persist and restore the workflow in application storage."
+        },
+        {
+          "name": "dark-mode",
+          "title": "Themed workflow",
+          "url": "https://reactflow.dev/examples/styling/dark-mode",
+          "purpose": "Adapt node and edge styling to the project."
+        }
+      ]
+    },
+    {
+      "slug": "cytoscape",
+      "name": "Cytoscape.js",
+      "url": "https://js.cytoscape.org/",
+      "repository": "https://github.com/cytoscape/cytoscape.js",
+      "package": "cytoscape",
+      "packages": [
+        "cytoscape"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Relationship graph visualization and graph analysis with a JavaScript API.",
+      "notes": "Good for connected entities rather than numeric dashboard axes. Destroy the instance on cleanup, review extensions individually and preserve a useful nonvisual representation of relationships.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "layouts",
+          "title": "Graph layouts",
+          "url": "https://js.cytoscape.org/#layouts",
+          "purpose": "Organize nodes using the layout that fits the relationship."
+        },
+        {
+          "name": "selection",
+          "title": "Graph selection",
+          "url": "https://js.cytoscape.org/#collection/selection",
+          "purpose": "Inspect selected connected entities."
+        },
+        {
+          "name": "events",
+          "title": "Graph interaction",
+          "url": "https://js.cytoscape.org/#events",
+          "purpose": "Connect node and edge events to application behavior."
+        },
+        {
+          "name": "traversal",
+          "title": "Neighborhood traversal",
+          "url": "https://js.cytoscape.org/#collection/traversing",
+          "purpose": "Inspect neighbors and paths through a network."
+        },
+        {
+          "name": "styles",
+          "title": "Graph styling",
+          "url": "https://js.cytoscape.org/#style",
+          "purpose": "Encode relationship attributes with explicit visual rules."
+        }
+      ]
+    },
+    {
+      "slug": "sigma",
+      "name": "Sigma.js",
+      "url": "https://www.sigmajs.org/",
+      "repository": "https://github.com/jacomyal/sigma.js",
+      "package": "sigma",
+      "packages": [
+        "sigma",
+        "graphology"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "webgl"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Interactive network rendering with Graphology data structures.",
+      "notes": "Requires a working WebGL context and a sized browser container. Graphology stores the network; layouts, labels and application interactions need deliberate setup. Clean up rendering resources on unmount.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "network",
+          "title": "Graph rendering",
+          "url": "https://www.sigmajs.org/docs/quickstart/",
+          "purpose": "Render a graphology network."
+        },
+        {
+          "name": "events",
+          "title": "Network events",
+          "url": "https://www.sigmajs.org/docs/advanced/events/",
+          "purpose": "Connect graph interaction to application state."
+        },
+        {
+          "name": "settings",
+          "title": "Rendering settings",
+          "url": "https://www.sigmajs.org/docs/advanced/customization/",
+          "purpose": "Control labels, nodes and edges."
+        },
+        {
+          "name": "lifecycle",
+          "title": "Renderer lifecycle",
+          "url": "https://www.sigmajs.org/docs/advanced/lifecycle/",
+          "purpose": "Manage changes and resource cleanup."
+        },
+        {
+          "name": "customization",
+          "title": "Custom graph rendering",
+          "url": "https://www.sigmajs.org/docs/advanced/customization/",
+          "purpose": "Extend node and edge presentation."
+        }
+      ]
+    },
+    {
+      "slug": "antv-g6",
+      "name": "AntV G6",
+      "url": "https://g6.antv.antgroup.com/",
+      "repository": "https://github.com/antvis/G6",
+      "package": "@antv/g6",
+      "packages": [
+        "@antv/g6"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas",
+        "svg",
+        "webgl"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Graph visualization with layouts, behaviors and configurable node styles.",
+      "notes": "Choose layouts and rendering features for the actual graph. Preserve cleanup and resize behavior in React; extensions and G6 major versions have their own compatibility requirements.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "network",
+          "title": "Graph construction",
+          "url": "https://g6.antv.antgroup.com/en/manual/getting-started/quick-start",
+          "purpose": "Build a node-and-edge visualization."
+        },
+        {
+          "name": "layouts",
+          "title": "Graph layouts",
+          "url": "https://g6.antv.antgroup.com/en/manual/layout/overview",
+          "purpose": "Choose how to arrange connected entities."
+        },
+        {
+          "name": "behaviors",
+          "title": "Graph interaction",
+          "url": "https://g6.antv.antgroup.com/en/manual/behavior/overview",
+          "purpose": "Define how users explore the graph."
+        },
+        {
+          "name": "nodes",
+          "title": "Node presentation",
+          "url": "https://g6.antv.antgroup.com/en/manual/element/node/overview",
+          "purpose": "Encode domain entities through node appearance."
+        },
+        {
+          "name": "edges",
+          "title": "Edge presentation",
+          "url": "https://g6.antv.antgroup.com/en/manual/element/edge/overview",
+          "purpose": "Encode relationship types through edges."
+        }
+      ]
+    },
+    {
+      "slug": "d3",
+      "name": "D3",
+      "url": "https://d3js.org/",
+      "repository": "https://github.com/d3/d3",
+      "package": "d3",
+      "packages": [
+        "d3"
+      ],
+      "license": "ISC",
+      "renderers": [
+        "svg",
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Low-level visualization tools for bespoke scales, shapes and layouts.",
+      "notes": "Use existing chart components first when they fit. D3 is a composition toolkit, not a ready-made UI. Assign DOM ownership carefully in React and budget for axes, interaction and accessibility.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "scales",
+          "title": "Custom chart scales",
+          "url": "https://d3js.org/d3-scale",
+          "purpose": "Map measured values into positions and sizes."
+        },
+        {
+          "name": "shapes",
+          "title": "Custom chart shapes",
+          "url": "https://d3js.org/d3-shape",
+          "purpose": "Compose lines, areas and arcs."
+        },
+        {
+          "name": "hierarchy",
+          "title": "Hierarchy layouts",
+          "url": "https://d3js.org/d3-hierarchy",
+          "purpose": "Explore trees and nested structure.",
+          "category": "graph"
+        },
+        {
+          "name": "force",
+          "title": "Force-directed layouts",
+          "url": "https://d3js.org/d3-force",
+          "purpose": "Arrange connected entities through a simulation.",
+          "category": "graph"
+        },
+        {
+          "name": "brush",
+          "title": "Region selection",
+          "url": "https://d3js.org/d3-brush",
+          "purpose": "Select a region within a chart."
+        }
+      ]
+    },
+    {
+      "slug": "mermaid",
+      "name": "Mermaid",
+      "url": "https://mermaid.js.org/",
+      "repository": "https://github.com/mermaid-js/mermaid",
+      "package": "mermaid",
+      "packages": [
+        "mermaid"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "minimal"
+      ],
+      "description": "Text-defined diagrams for architecture, relationships and documentation.",
+      "notes": "Use text diagrams for explanations, not as a substitute for a data exploration engine. Keep strict rendering security, verify labels and provide the underlying readable description.",
+      "verified": "2026-10-18",
+      "examples": [
+        {
+          "name": "flowchart",
+          "title": "Flowchart",
+          "url": "https://mermaid.js.org/syntax/flowchart.html",
+          "purpose": "Explain a process or decision flow."
+        },
+        {
+          "name": "sequence",
+          "title": "Sequence diagram",
+          "url": "https://mermaid.js.org/syntax/sequenceDiagram.html",
+          "purpose": "Explain messages between participants."
+        },
+        {
+          "name": "class",
+          "title": "Class diagram",
+          "url": "https://mermaid.js.org/syntax/classDiagram.html",
+          "purpose": "Explain model structure and relationships."
+        },
+        {
+          "name": "entity",
+          "title": "Entity relationship diagram",
+          "url": "https://mermaid.js.org/syntax/entityRelationshipDiagram.html",
+          "purpose": "Explain data entities and cardinalities."
+        },
+        {
+          "name": "state",
+          "title": "State diagram",
+          "url": "https://mermaid.js.org/syntax/stateDiagram.html",
+          "purpose": "Explain state transitions."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "vega-lite/bar",
+    "source": "vega-lite",
+    "name": "bar",
+    "title": "Vega-Lite · Bar specification",
+    "description": "Compare category values from a concise spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/bar.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vega-lite/heatmap",
+    "source": "vega-lite",
+    "name": "heatmap",
+    "title": "Vega-Lite · Heatmap specification",
+    "description": "Explore two-dimensional density.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/rect_binned_heatmap.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vega-lite/histogram",
+    "source": "vega-lite",
+    "name": "histogram",
+    "title": "Vega-Lite · Histogram specification",
+    "description": "Aggregate observations into bins.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "histogram"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/histogram.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vega-lite/library",
+    "source": "vega-lite",
+    "name": "library",
+    "title": "Vega-Lite",
+    "description": "Declarative JSON specifications for charts, transformations and linked views.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vega-lite/line",
+    "source": "vega-lite",
+    "name": "line",
+    "title": "Vega-Lite · Line specification",
+    "description": "Show an ordered numeric series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/line.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vega-lite/scatter",
+    "source": "vega-lite",
+    "name": "scatter",
+    "title": "Vega-Lite · Scatter specification",
+    "description": "Inspect relationships between measures.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vega vega-lite vega-embed",
+    "docs": "https://vega.github.io/vega-lite/examples/point_2d.html",
+    "dependencies": [
+      "vega",
+      "vega-lite",
+      "vega-embed"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Install compatible Vega, Vega-Lite and embedding packages. Treat a specification as application input: review external data URLs and keep dataset access deliberate. Upstream: https://github.com/vega/vega-lite. License: BSD-3-Clause. Package metadata: vega-lite@6.5.0; peers: vega ^6.4.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "id": "recharts/area",
+    "source": "recharts",
+    "name": "area",
+    "title": "Recharts · Stacked area chart",
+    "description": "Show how several contributions change over time.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/StackedAreaChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/StackedAreaChart/"
+  },
+  {
+    "id": "recharts/bar",
+    "source": "recharts",
+    "name": "bar",
+    "title": "Recharts · Bar chart",
+    "description": "Compare values across discrete categories.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/SimpleBarChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/SimpleBarChart/"
+  },
+  {
+    "id": "recharts/composed",
+    "source": "recharts",
+    "name": "composed",
+    "title": "Recharts · Combined line and bar chart",
+    "description": "Compare related measures while explaining different units.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "composed"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/LineBarAreaComposedChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/LineBarAreaComposedChart/"
+  },
+  {
+    "id": "recharts/library",
+    "source": "recharts",
+    "name": "library",
+    "title": "Recharts",
+    "description": "Composable React charts for product dashboards and reports.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "recharts/line",
+    "source": "recharts",
+    "name": "line",
+    "title": "Recharts · Line chart",
+    "description": "Compare measured trends over time.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/SimpleLineChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/SimpleLineChart/"
+  },
+  {
+    "id": "recharts/scatter",
+    "source": "recharts",
+    "name": "scatter",
+    "title": "Recharts · Scatter plot",
+    "description": "Inspect relationships between two numeric measures.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add recharts",
+    "docs": "https://recharts.github.io/en-US/examples/SimpleScatterChart/",
+    "dependencies": [
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Prefer existing shadcn chart blocks when they fit. Use the package for custom compositions; preserve units, readable axes and an accessible data alternative. Upstream: https://github.com/recharts/recharts. License: MIT. Package metadata: recharts@3.10.1; peers: react ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-is ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://recharts.github.io/en-US/examples/SimpleScatterChart/"
+  }
+]

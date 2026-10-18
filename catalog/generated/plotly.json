@@ -1,0 +1,229 @@
+[
+  {
+    "id": "plotly/box",
+    "source": "plotly",
+    "name": "box",
+    "title": "Plotly.js · Box plot",
+    "description": "Compare distributions across groups.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "box"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/box-plots/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/box-plots/"
+  },
+  {
+    "id": "plotly/candlestick",
+    "source": "plotly",
+    "name": "candlestick",
+    "title": "Plotly.js · Candlestick chart",
+    "description": "Explore OHLC financial time series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/candlestick-charts/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/candlestick-charts/"
+  },
+  {
+    "id": "plotly/heatmap",
+    "source": "plotly",
+    "name": "heatmap",
+    "title": "Plotly.js · Heatmap",
+    "description": "Read a numeric matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/heatmaps/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/heatmaps/"
+  },
+  {
+    "id": "plotly/library",
+    "source": "plotly",
+    "name": "library",
+    "title": "Plotly.js",
+    "description": "Statistical, scientific and financial charts with built-in interaction.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "plotly/scatter",
+    "source": "plotly",
+    "name": "scatter",
+    "title": "Plotly.js · Scatter plot",
+    "description": "Inspect numeric relationships.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/line-and-scatter/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/line-and-scatter/"
+  },
+  {
+    "id": "plotly/surface",
+    "source": "plotly",
+    "name": "surface",
+    "title": "Plotly.js · 3D surface",
+    "description": "Inspect a sampled surface.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "webgl",
+      "3d",
+      "scientific",
+      "integration-recipe",
+      "surface"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add plotly.js-dist-min",
+    "docs": "https://plotly.com/javascript/3d-surface-plots/",
+    "dependencies": [
+      "plotly.js-dist-min"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the open-source JavaScript library rather than assuming a paid hosted product. Load browser-only code outside SSR and inspect bundle size; clean up plots when leaving the page. Upstream: https://github.com/plotly/plotly.js. License: MIT. Package metadata: plotly.js-dist-min@4.1.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://plotly.com/javascript/3d-surface-plots/"
+  }
+]

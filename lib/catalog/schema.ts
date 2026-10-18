@@ -38,6 +38,7 @@ export const CATEGORIES = [
   "table",
   "dashboard",
   "chart",
+  "graph",
   "code",
   "map",
   "badge",
