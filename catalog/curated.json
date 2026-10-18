@@ -5030,5 +5030,253 @@
     ],
     "curated": true,
     "notes": "Future paid option. Current projects use the independent free beUI library; licensed installation has not been verified."
+  },
+  {
+    "id": "bklit/area-gradient",
+    "source": "bklit",
+    "name": "area-gradient",
+    "title": "Gradient area \u00b7 Bklit",
+    "description": "Filled gradient area treatment. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "gradient"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-step",
+    "source": "bklit",
+    "name": "area-step",
+    "title": "Stepped area \u00b7 Bklit",
+    "description": "Discrete steps between observations. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "step"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-stacked",
+    "source": "bklit",
+    "name": "area-stacked",
+    "title": "Stacked area \u00b7 Bklit",
+    "description": "Layered area series. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "stacked"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-pattern",
+    "source": "bklit",
+    "name": "area-pattern",
+    "title": "Patterned area \u00b7 Bklit",
+    "description": "Pattern-filled area rather than a gradient. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "pattern"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-fade-edges",
+    "source": "bklit",
+    "name": "area-fade-edges",
+    "title": "Area with faded edges \u00b7 Bklit",
+    "description": "Faded side edges on the area surface. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "fade-edges"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-no-stroke",
+    "source": "bklit",
+    "name": "area-no-stroke",
+    "title": "Area without an outline \u00b7 Bklit",
+    "description": "Filled area with its outline hidden. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "no-stroke"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-selection",
+    "source": "bklit",
+    "name": "area-selection",
+    "title": "Area range selection \u00b7 Bklit",
+    "description": "Drag to select a range. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "interactive"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "bklit/area-dashed-tail",
+    "source": "bklit",
+    "name": "area-dashed-tail",
+    "title": "Area with a dashed projection \u00b7 Bklit",
+    "description": "A dashed tail distinguishes an in-progress observation. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "live": "https://bklit.com/charts/area-chart",
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "dashed-tail"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "curated": true,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
   }
 ]

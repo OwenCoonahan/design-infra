@@ -101,6 +101,8 @@ export const RULES: [RegExp, Mood][] = [
 
 /** Each source's overall feel when nothing more specific matches. */
 export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
+  bklit: ["refined", "technical"],
+  tremor: ["minimal", "refined", "technical"],
   oc: ["refined"],
   aceternity: ["premium", "futuristic"],
   magicui: ["refined", "playful"],

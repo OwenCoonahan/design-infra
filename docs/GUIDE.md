@@ -75,6 +75,8 @@ Use the [Charts gallery](https://www.owencoonahan.xyz/design-infra/components?ca
 
 For example: **“Compare monthly revenue by region using our existing stack. Choose a suitable free chart, preserve missing-data behavior, and include a readable table.”** Or **“Show dependencies between services. I need to inspect neighbors, not edit a workflow.”** Agents receive chart/graph playbooks with distinct approaches and source links. Packages and recipes require integration; they are not generated application components. Inspect live availability per entry; external examples remain on their source sites.
 
+For a visual choice, use **Chart form** and **Treatment** in the Charts gallery: compare gradient areas, dotted lines, labeled bars, patterned fills or compact sparklines across libraries. Those filters survive URL reloads and work with existing source, mood, access and view filters. Example: **“Show me three different styles of area chart that would fit this dashboard, with source demos and install instructions.”** MCP search accepts `chart_type` and `chart_style`; HTTP uses `chartType` and `chartStyle`. Sources include component collections as well as lower-level engines. A registry component, a manual-copy component and an engine recipe have different integration requirements.
+
 ## Improve it as you use it
 
 The pilot currently uses free libraries. Paid collections, including beUI Pro, can be recorded for future purchases; they stay opt-in and require confirmed licensed access before installation. The independent free beUI library is available now.

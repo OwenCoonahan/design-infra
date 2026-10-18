@@ -7,6 +7,8 @@ import { parseFilters, filtersToQuery, searchOptionsFromFilters } from "../lib/c
 import { previewDescriptor } from "../lib/catalog/previews"
 import { searchCatalog } from "../lib/catalog/search"
 import { proposeOptions } from "../lib/propose"
+import { chartFacets } from "../lib/catalog/chart-styles"
+import { bklitCharts, tremorCharts } from "../lib/catalog/chart-ui"
 
 const catalog: CatalogEntry[] = JSON.parse(readFileSync("catalog/index.json", "utf8")).map((entry: unknown) => CatalogEntry.parse(entry))
 
@@ -58,4 +60,30 @@ test("agents get distinct data-task approaches for charts and editable/explorato
   assert.equal(graphs.playbook?.component, "graph")
   assert.ok(graphs.directions.length >= 3 && graphs.compare)
   assert.ok(graphs.directions.flatMap((direction) => direction.picks).every((entry) => entry.categories.includes("graph") && entry.access === "free"))
+})
+
+test("chart forms and visual treatments work across engines without matching unrelated notes", () => {
+  const filters = parseFilters({ category: "chart", chartType: "area", chartStyle: "gradient", free: "1", view: "grid" })
+  assert.deepEqual(parseFilters(Object.fromEntries(new URLSearchParams(filtersToQuery(filters)))), filters)
+  const results = searchCatalog(catalog, { ...searchOptionsFromFilters(filters), limit: catalog.length })
+  assert.ok(results.some((entry) => entry.id === "bklit/area-gradient"))
+  assert.ok(results.some((entry) => entry.id === "shadcn/chart-area-gradient"))
+  assert.ok(results.every((entry) => chartFacets(entry).types.includes("area") && chartFacets(entry).styles.includes("gradient")))
+  assert.ok(!results.some((entry) => entry.kind === "package"))
+  assert.deepEqual(searchCatalog(catalog, { chartType: "candlestick", chartStyle: "dither" }), [])
+  const entry = catalog.find((entry) => entry.id === "chartjs/bar")!
+  assert.deepEqual(chartFacets({ ...entry, notes: "Could replace a gradient line" } as typeof entry).styles, [])
+  assert.ok(chartFacets(catalog.find((entry) => entry.id === "tremor/spark-chart")!).types.includes("sparkline"))
+})
+
+test("chart UI adapters exclude registry plumbing and distinguish public source from the editor", () => {
+  const entries = catalog.filter((entry) => entry.source === "bklit")
+  assert.equal(entries.filter((entry) => entry.integration === "drop-in").length, 16)
+  assert.equal(entries.filter((entry) => entry.integration === "recipe").length, 8)
+  assert.ok(entries.every((entry) => entry.access === "free" && !entry.install.includes("studio")))
+  assert.ok(!entries.some((entry) => /chart-context|chart-animation|-example/.test(entry.id)))
+  assert.equal(catalog.filter((entry) => entry.source === "tremor").length, 11)
+  assert.ok(catalog.filter((entry) => entry.source === "tremor").every((entry) => entry.integration === "recipe" && !entry.install.includes("@tremor/react")))
+  assert.throws(() => bklitCharts({ items: [{ name: "line-chart", type: "registry:component" }] }), /Review changed/)
+  assert.throws(() => tremorCharts([{ name: "AreaChart", type: "dir" }]), /Review removed/)
 })

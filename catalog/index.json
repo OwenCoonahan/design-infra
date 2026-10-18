@@ -5574,6 +5574,554 @@
     }
   },
   {
+    "id": "bklit/area-chart",
+    "source": "bklit",
+    "name": "area-chart",
+    "title": "Area Chart · Bklit",
+    "description": "A composable area chart with gradient fills and animations",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "area-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/docs/components/area-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/gradient@4.0.0",
+      "@visx/shape@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/area-dashed-tail",
+    "source": "bklit",
+    "name": "area-dashed-tail",
+    "title": "Area with a dashed projection · Bklit",
+    "description": "A dashed tail distinguishes an in-progress observation. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "dashed-tail"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/area-fade-edges",
+    "source": "bklit",
+    "name": "area-fade-edges",
+    "title": "Area with faded edges · Bklit",
+    "description": "Faded side edges on the area surface. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "fade-edges"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low"
+    }
+  },
+  {
+    "id": "bklit/area-gradient",
+    "source": "bklit",
+    "name": "area-gradient",
+    "title": "Gradient area · Bklit",
+    "description": "Filled gradient area treatment. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "gradient"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/area-no-stroke",
+    "source": "bklit",
+    "name": "area-no-stroke",
+    "title": "Area without an outline · Bklit",
+    "description": "Filled area with its outline hidden. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "no-stroke"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/area-pattern",
+    "source": "bklit",
+    "name": "area-pattern",
+    "title": "Patterned area · Bklit",
+    "description": "Pattern-filled area rather than a gradient. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "pattern"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/area-selection",
+    "source": "bklit",
+    "name": "area-selection",
+    "title": "Area range selection · Bklit",
+    "description": "Drag to select a range. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "interactive"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart",
+    "motion": {
+      "triggers": [
+        "drag",
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low"
+    }
+  },
+  {
+    "id": "bklit/area-stacked",
+    "source": "bklit",
+    "name": "area-stacked",
+    "title": "Stacked area · Bklit",
+    "description": "Layered area series. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "stacked"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/area-step",
+    "source": "bklit",
+    "name": "area-step",
+    "title": "Stepped area · Bklit",
+    "description": "Discrete steps between observations. A visual variant of the public Bklit area chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "visual-variant",
+      "area",
+      "step"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/charts/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/bar-chart",
+    "source": "bklit",
+    "name": "bar-chart",
+    "title": "Bar Chart · Bklit",
+    "description": "A composable bar chart with horizontal/vertical orientations and animations",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "bar-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/bar-chart.json",
+    "docs": "https://bklit.com/docs/components/bar-chart",
+    "dependencies": [
+      "@visx/gradient@4.0.0",
+      "@visx/shape@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/bar-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/heatmap-chart",
+    "source": "bklit",
+    "name": "heatmap-chart",
+    "title": "Heatmap Chart · Bklit",
+    "description": "A contribution heatmap with animated cells and configurable level colors",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "heatmap-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/heatmap-chart.json",
+    "docs": "https://bklit.com/docs/components/heatmap-chart",
+    "dependencies": [
+      "@visx/group@4.0.0",
+      "@visx/heatmap@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/scale@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/heatmap-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/line-chart",
+    "source": "bklit",
+    "name": "line-chart",
+    "title": "Line Chart · Bklit",
+    "description": "A composable line chart with multiple series support",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "line-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/line-chart.json",
+    "docs": "https://bklit.com/docs/components/line-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/shape@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/line-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/ring-chart",
+    "source": "bklit",
+    "name": "ring-chart",
+    "title": "Ring Chart · Bklit",
+    "description": "A composable donut/ring chart with progress indicators",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "ring-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/ring-chart.json",
+    "docs": "https://bklit.com/docs/components/ring-chart",
+    "dependencies": [
+      "@visx/group@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/shape@4.0.0",
+      "@number-flow/react",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/ring-chart",
+    "motion": {
+      "triggers": [
+        "state"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
     "id": "chartjs/bar",
     "source": "chartjs",
     "name": "bar",
@@ -14179,6 +14727,150 @@
       "reducedMotion": true
     },
     "live": "https://transitions.dev/detail.html?t=toast"
+  },
+  {
+    "id": "tremor/area-chart",
+    "source": "tremor",
+    "name": "area-chart",
+    "title": "Area chart · Tremor Raw",
+    "description": "Copy-and-paste area chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "area-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw AreaChart component and helpers from https://www.tremor.so/docs/visualizations/area-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/AreaChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/area-chart"
+  },
+  {
+    "id": "tremor/bar-chart",
+    "source": "tremor",
+    "name": "bar-chart",
+    "title": "Bar chart · Tremor Raw",
+    "description": "Copy-and-paste bar chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "bar-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw BarChart component and helpers from https://www.tremor.so/docs/visualizations/bar-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/bar-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/BarChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/bar-chart"
+  },
+  {
+    "id": "tremor/donut-chart",
+    "source": "tremor",
+    "name": "donut-chart",
+    "title": "Donut chart · Tremor Raw",
+    "description": "Copy-and-paste donut chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "donut-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw DonutChart component and helpers from https://www.tremor.so/docs/visualizations/donut-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/donut-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/DonutChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/donut-chart"
+  },
+  {
+    "id": "tremor/spark-chart",
+    "source": "tremor",
+    "name": "spark-chart",
+    "title": "Spark chart · Tremor Raw",
+    "description": "Copy-and-paste spark chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "spark-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw SparkChart component and helpers from https://www.tremor.so/docs/visualizations/spark-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/spark-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/SparkChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/spark-chart"
   },
   {
     "id": "uplot/aligned",
@@ -34274,6 +34966,578 @@
     "motion": {
       "triggers": [
         "drag"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/candlestick-chart",
+    "source": "bklit",
+    "name": "candlestick-chart",
+    "title": "Candlestick Chart · Bklit",
+    "description": "A composable OHLC candlestick chart with gradients, patterns, tooltips, and hover interactions",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "candlestick-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/candlestick-chart.json",
+    "docs": "https://bklit.com/docs/components/candlestick-chart",
+    "dependencies": [
+      "@visx/scale@4.0.0",
+      "@visx/responsive@4.0.0",
+      "d3-array",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/candlestick-chart",
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/choropleth-chart",
+    "source": "bklit",
+    "name": "choropleth-chart",
+    "title": "Choropleth Map · Bklit",
+    "description": "A geographic map chart with zoom, pan, and data visualization",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "choropleth-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/choropleth-chart.json",
+    "docs": "https://bklit.com/docs/components/choropleth-chart",
+    "dependencies": [
+      "@types/geojson",
+      "@visx/geo@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/zoom@4.0.0",
+      "d3-geo",
+      "topojson-client",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/choropleth-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/composed-chart",
+    "source": "bklit",
+    "name": "composed-chart",
+    "title": "Composed Chart · Bklit",
+    "description": "Time-series chart composing Line, Area, and SeriesBar on one shared scale (Recharts ComposedChart-style)",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "composed-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/composed-chart.json",
+    "docs": "https://bklit.com/docs/components/composed-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/scale@4.0.0",
+      "@visx/shape@4.0.0",
+      "@visx/responsive@4.0.0",
+      "d3-array",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/composed-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/funnel-chart",
+    "source": "bklit",
+    "name": "funnel-chart",
+    "title": "Funnel Chart · Bklit",
+    "description": "An animated funnel chart with multi-layer halo rings, hover interactions, and staggered entrance animations",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "funnel-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/funnel-chart.json",
+    "docs": "https://bklit.com/docs/components/funnel-chart",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/funnel-chart",
+    "motion": {
+      "triggers": [
+        "hover",
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/gauge-chart",
+    "source": "bklit",
+    "name": "gauge-chart",
+    "title": "Gauge · Bklit",
+    "description": "Notch-based radial or linear gauge with optional center label, patterns, and optional gradients",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "gauge-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/gauge-chart.json",
+    "docs": "https://bklit.com/docs/components/gauge-chart",
+    "dependencies": [
+      "@visx/responsive@4.0.0",
+      "@number-flow/react",
+      "motion",
+      "d3-shape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/gauge-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/live-line-chart",
+    "source": "bklit",
+    "name": "live-line-chart",
+    "title": "Live Line Chart · Bklit",
+    "description": "Real-time streaming line chart with smooth scrolling, crosshair, and animated axes",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "live-line-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/live-line-chart.json",
+    "docs": "https://bklit.com/docs/components/live-line-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/scale@4.0.0",
+      "@visx/shape@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/event@4.0.0",
+      "d3-array",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/live-line-chart",
+    "motion": {
+      "triggers": [
+        "loop",
+        "state",
+        "cursor"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/pie-chart",
+    "source": "bklit",
+    "name": "pie-chart",
+    "title": "Pie Chart · Bklit",
+    "description": "A composable pie chart with animations and customizable slices",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "pie-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/pie-chart.json",
+    "docs": "https://bklit.com/docs/components/pie-chart",
+    "dependencies": [
+      "@number-flow/react",
+      "@visx/group@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/shape@4.0.0",
+      "d3-shape",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/pie-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/radar-chart",
+    "source": "bklit",
+    "name": "radar-chart",
+    "title": "Radar Chart · Bklit",
+    "description": "A composable radar/spider chart with multiple data series",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "radar-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/radar-chart.json",
+    "docs": "https://bklit.com/docs/components/radar-chart",
+    "dependencies": [
+      "@visx/group@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/scale@4.0.0",
+      "@visx/shape@4.0.0",
+      "d3-shape",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/radar-chart",
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/sankey-chart",
+    "source": "bklit",
+    "name": "sankey-chart",
+    "title": "Sankey Diagram · Bklit",
+    "description": "A flow diagram for visualizing data transfers between nodes",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "sankey-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/sankey-chart.json",
+    "docs": "https://bklit.com/docs/components/sankey-chart",
+    "dependencies": [
+      "@visx/event@4.0.0",
+      "@visx/gradient@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/sankey@4.0.0",
+      "d3-sankey",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/sankey-chart",
+    "motion": {
+      "triggers": [
+        "enter"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/scatter-chart",
+    "source": "bklit",
+    "name": "scatter-chart",
+    "title": "Scatter Chart · Bklit",
+    "description": "A composable time-series scatter chart with offset rings, hover dimming, and animated enter",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "scatter-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/scatter-chart.json",
+    "docs": "https://bklit.com/docs/components/scatter-chart",
+    "dependencies": [
+      "d3-array",
+      "d3-scale",
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/scatter-chart",
+    "motion": {
+      "triggers": [
+        "hover"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "motion"
+      ],
+      "cost": "medium"
+    }
+  },
+  {
+    "id": "bklit/sunburst-chart",
+    "source": "bklit",
+    "name": "sunburst-chart",
+    "title": "Sunburst Chart · Bklit",
+    "description": "A composable hierarchical sunburst chart with drill-down zoom and animated segments",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "sunburst-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/sunburst-chart.json",
+    "docs": "https://bklit.com/docs/components/sunburst-chart",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/sunburst-chart",
+    "motion": {
+      "triggers": [
+        "enter"
       ],
       "intensity": "medium",
       "technique": [
@@ -122058,6 +123322,258 @@
       "reducedMotion": true
     },
     "live": "https://transitions.dev/detail.html?t=tooltip"
+  },
+  {
+    "id": "tremor/bar-list",
+    "source": "tremor",
+    "name": "bar-list",
+    "title": "Bar list · Tremor Raw",
+    "description": "Copy-and-paste bar list UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "bar-list"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw BarList component and helpers from https://www.tremor.so/docs/visualizations/barlist; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/barlist",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/BarList. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/barlist"
+  },
+  {
+    "id": "tremor/category-bar",
+    "source": "tremor",
+    "name": "category-bar",
+    "title": "Category bar · Tremor Raw",
+    "description": "Copy-and-paste category bar UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "category-bar"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw CategoryBar component and helpers from https://www.tremor.so/docs/visualizations/category-bar; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/category-bar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/CategoryBar. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/category-bar"
+  },
+  {
+    "id": "tremor/combo-chart",
+    "source": "tremor",
+    "name": "combo-chart",
+    "title": "Combo chart · Tremor Raw",
+    "description": "Copy-and-paste combo chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "combo-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw ComboChart component and helpers from https://www.tremor.so/docs/visualizations/combo-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/combo-chart",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/ComboChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/combo-chart"
+  },
+  {
+    "id": "tremor/line-chart",
+    "source": "tremor",
+    "name": "line-chart",
+    "title": "Line chart · Tremor Raw",
+    "description": "Copy-and-paste line chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "line-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw LineChart component and helpers from https://www.tremor.so/docs/visualizations/line-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/line-chart",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/LineChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/line-chart"
+  },
+  {
+    "id": "tremor/progress-bar",
+    "source": "tremor",
+    "name": "progress-bar",
+    "title": "Progress bar · Tremor Raw",
+    "description": "Copy-and-paste progress bar UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "progress-bar"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw ProgressBar component and helpers from https://www.tremor.so/docs/visualizations/progress-bar; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/progress-bar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/ProgressBar. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/progress-bar"
+  },
+  {
+    "id": "tremor/progress-circle",
+    "source": "tremor",
+    "name": "progress-circle",
+    "title": "Progress circle · Tremor Raw",
+    "description": "Copy-and-paste progress circle UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "progress-circle"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw ProgressCircle component and helpers from https://www.tremor.so/docs/visualizations/progress-circle; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/progress-circle",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/ProgressCircle. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/progress-circle"
+  },
+  {
+    "id": "tremor/tracker",
+    "source": "tremor",
+    "name": "tracker",
+    "title": "Tracker · Tremor Raw",
+    "description": "Copy-and-paste tracker UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "tracker"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw Tracker component and helpers from https://www.tremor.so/docs/visualizations/tracker; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/tracker",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/Tracker. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/tracker"
   },
   {
     "id": "uplot/cursor",

@@ -1,0 +1,398 @@
+[
+  {
+    "id": "tremor/area-chart",
+    "source": "tremor",
+    "name": "area-chart",
+    "title": "Area chart · Tremor Raw",
+    "description": "Copy-and-paste area chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "area-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw AreaChart component and helpers from https://www.tremor.so/docs/visualizations/area-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/area-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/AreaChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/area-chart"
+  },
+  {
+    "id": "tremor/bar-chart",
+    "source": "tremor",
+    "name": "bar-chart",
+    "title": "Bar chart · Tremor Raw",
+    "description": "Copy-and-paste bar chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "bar-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw BarChart component and helpers from https://www.tremor.so/docs/visualizations/bar-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/bar-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/BarChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/bar-chart"
+  },
+  {
+    "id": "tremor/bar-list",
+    "source": "tremor",
+    "name": "bar-list",
+    "title": "Bar list · Tremor Raw",
+    "description": "Copy-and-paste bar list UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "bar-list"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw BarList component and helpers from https://www.tremor.so/docs/visualizations/barlist; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/barlist",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/BarList. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/barlist"
+  },
+  {
+    "id": "tremor/category-bar",
+    "source": "tremor",
+    "name": "category-bar",
+    "title": "Category bar · Tremor Raw",
+    "description": "Copy-and-paste category bar UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "category-bar"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw CategoryBar component and helpers from https://www.tremor.so/docs/visualizations/category-bar; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/category-bar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/CategoryBar. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/category-bar"
+  },
+  {
+    "id": "tremor/combo-chart",
+    "source": "tremor",
+    "name": "combo-chart",
+    "title": "Combo chart · Tremor Raw",
+    "description": "Copy-and-paste combo chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "combo-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw ComboChart component and helpers from https://www.tremor.so/docs/visualizations/combo-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/combo-chart",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/ComboChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/combo-chart"
+  },
+  {
+    "id": "tremor/donut-chart",
+    "source": "tremor",
+    "name": "donut-chart",
+    "title": "Donut chart · Tremor Raw",
+    "description": "Copy-and-paste donut chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "donut-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw DonutChart component and helpers from https://www.tremor.so/docs/visualizations/donut-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/donut-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/DonutChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/donut-chart"
+  },
+  {
+    "id": "tremor/line-chart",
+    "source": "tremor",
+    "name": "line-chart",
+    "title": "Line chart · Tremor Raw",
+    "description": "Copy-and-paste line chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "line-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw LineChart component and helpers from https://www.tremor.so/docs/visualizations/line-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/line-chart",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/LineChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/line-chart"
+  },
+  {
+    "id": "tremor/progress-bar",
+    "source": "tremor",
+    "name": "progress-bar",
+    "title": "Progress bar · Tremor Raw",
+    "description": "Copy-and-paste progress bar UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "progress-bar"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw ProgressBar component and helpers from https://www.tremor.so/docs/visualizations/progress-bar; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/progress-bar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/ProgressBar. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/progress-bar"
+  },
+  {
+    "id": "tremor/progress-circle",
+    "source": "tremor",
+    "name": "progress-circle",
+    "title": "Progress circle · Tremor Raw",
+    "description": "Copy-and-paste progress circle UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "progress-circle"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw ProgressCircle component and helpers from https://www.tremor.so/docs/visualizations/progress-circle; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/progress-circle",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/ProgressCircle. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/progress-circle"
+  },
+  {
+    "id": "tremor/spark-chart",
+    "source": "tremor",
+    "name": "spark-chart",
+    "title": "Spark chart · Tremor Raw",
+    "description": "Copy-and-paste spark chart UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "spark-chart"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw SparkChart component and helpers from https://www.tremor.so/docs/visualizations/spark-chart; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/spark-chart",
+    "dependencies": [],
+    "curated": true,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/SparkChart. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/spark-chart"
+  },
+  {
+    "id": "tremor/tracker",
+    "source": "tremor",
+    "name": "tracker",
+    "title": "Tracker · Tremor Raw",
+    "description": "Copy-and-paste tracker UI for dashboard cards and reports. Adapt its palette, labels and component props to the project's brand and real data.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "chart-ui",
+      "react",
+      "tailwind-v4",
+      "copy-paste",
+      "tracker"
+    ],
+    "moods": [
+      "minimal",
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "Copy the public Tremor Raw Tracker component and helpers from https://www.tremor.so/docs/visualizations/tracker; follow its per-component dependency instructions.",
+    "docs": "https://www.tremor.so/docs/visualizations/tracker",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "Tremor Raw, Apache-2.0 with MIT notices for listed subcomponents. Public component: https://github.com/tremorlabs/tremor/tree/main/src/components/Tracker. Requires React 18.2+ and Tailwind 4 according to the current guide; chart utilities, color helpers and dependencies vary by component. This is manual source integration, not a package/registry install. Do not substitute the legacy @tremor/react package or paid Tremor Blocks. Source/docs checked; runtime integration remains unverified.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.tremor.so/docs/visualizations/tracker"
+  }
+]

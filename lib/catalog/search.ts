@@ -1,4 +1,5 @@
 import { categoryGallery, entryPage } from "@/lib/catalog/links"
+import { chartFacets } from "./chart-styles"
 import { type Mood, moodsFromText } from "@/lib/catalog/moods"
 import type {
   Access,
@@ -81,6 +82,8 @@ export const SYNONYMS: Record<string, Category[]> = {
 }
 
 export type SearchOptions = {
+  chartType?: string
+  chartStyle?: string
   query?: string
   category?: Category
   source?: string
@@ -153,6 +156,11 @@ export function searchCatalog<T extends SearchEntry>(entries: T[], opts: SearchO
 
   const scored: ScoredEntry<T>[] = []
   for (const e of entries) {
+    if (opts.chartType || opts.chartStyle) {
+      const facets = chartFacets(e)
+      if (opts.chartType && !facets.types.some((type) => type === opts.chartType)) continue
+      if (opts.chartStyle && !facets.styles.some((style) => style === opts.chartStyle)) continue
+    }
     if (ACCESS_ORDER.indexOf(e.access) > maxAccess) continue
     if (opts.category && !e.categories.includes(opts.category)) continue
     if (opts.source && e.source !== opts.source) continue
@@ -227,6 +235,7 @@ export function summarize(e: CatalogEntry) {
     title: e.title,
     kind: e.kind,
     categories: e.categories,
+    ...(e.categories.includes("chart") && { chartTypes: chartFacets(e).types, chartStyles: chartFacets(e).styles }),
     access: e.access,
     themeAware: e.themeAware ?? false,
     curated: e.curated,

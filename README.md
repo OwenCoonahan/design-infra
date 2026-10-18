@@ -46,6 +46,8 @@ Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes 
 
 Recharts, Chart.js, ECharts, Nivo and visx cover product charts; Observable Plot, Vega-Lite and Plotly add analytical options; uPlot covers time-series work; React Flow, Cytoscape, Sigma, G6, D3 and Mermaid cover different relationship/diagram tasks. G2 supplies a grammar-based chart engine. Source guides explain the tradeoffs. External references are distinct from hosted demos. See the [preview and chart expansion roadmap](docs/CHARTS-AND-PREVIEWS.md).
 
+For **chart UI and visual styles**, browse chart forms (line, area, bar, sparkline, donut…) and treatments (gradient, pattern, stacked, dots, labels, streaming, dither) across sources. [Compare gradient areas](https://www.owencoonahan.xyz/design-infra/components?category=chart&chartType=area&chartStyle=gradient&view=grid). Bklit adds 16 free registry chart components and eight named area treatments; Tremor Raw adds 11 public chart/dashboard components. These sit alongside existing shadcn, beUI and SmoothUI styles. Bklit Studio and paid Tremor Blocks are excluded.
+
 ## Install selected components
 
 beUI is indexed separately by access:

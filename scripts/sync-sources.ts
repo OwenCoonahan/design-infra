@@ -10,6 +10,7 @@
 import { anatomyFigures } from "../lib/catalog/anatomy"
 import { beuiRegistryItems } from "../lib/catalog/beui"
 import { chartLibraries, chartLibraryEntries, type ChartLibrary } from "../lib/catalog/chart-libraries"
+import { bklitCharts, tremorCharts } from "../lib/catalog/chart-ui"
 import { mkdir, writeFile } from "node:fs/promises"
 import path from "node:path"
 
@@ -814,6 +815,16 @@ const syncChartLibrary = (library: ChartLibrary): Adapter => async () => {
 }
 
 const ADAPTERS: Record<string, Adapter> = {
+  bklit: async () => {
+    const license = await getText("https://raw.githubusercontent.com/bklit/bklit-ui/main/LICENSE")
+    if (!license.startsWith("MIT License")) throw new Error("Review changed Bklit license")
+    return bklitCharts(await getJson("https://bklit.com/r/registry.json"))
+  },
+  tremor: async () => {
+    const license = await getText("https://raw.githubusercontent.com/tremorlabs/tremor/main/LICENSE")
+    if (!license.includes("Apache License") || !license.includes("Version 2.0")) throw new Error("Review changed Tremor license")
+    return tremorCharts(await getJson("https://api.github.com/repos/tremorlabs/tremor/contents/src/components"))
+  },
   ...Object.fromEntries(chartLibraries.map((library) => [library.slug, syncChartLibrary(library)])),
   beui,
   anatomy,
@@ -835,7 +846,7 @@ const ADAPTERS: Record<string, Adapter> = {
 // ---------------------------------------------------------------------------
 
 async function main() {
-  const only = process.argv.slice(2).flatMap((name) => name === "charts" ? chartLibraries.map((library) => library.slug) : [name])
+  const only = process.argv.slice(2).flatMap((name) => name === "charts" ? [...chartLibraries.map((library) => library.slug), "bklit", "tremor"] : [name])
   const names = only.length ? only : Object.keys(ADAPTERS)
   await mkdir(OUT_DIR, { recursive: true })
 

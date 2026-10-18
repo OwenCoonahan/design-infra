@@ -1,0 +1,666 @@
+[
+  {
+    "id": "bklit/area-chart",
+    "source": "bklit",
+    "name": "area-chart",
+    "title": "Area Chart · Bklit",
+    "description": "A composable area chart with gradient fills and animations",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "area-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/area-chart.json",
+    "docs": "https://bklit.com/docs/components/area-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/gradient@4.0.0",
+      "@visx/shape@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/area-chart"
+  },
+  {
+    "id": "bklit/bar-chart",
+    "source": "bklit",
+    "name": "bar-chart",
+    "title": "Bar Chart · Bklit",
+    "description": "A composable bar chart with horizontal/vertical orientations and animations",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "bar-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/bar-chart.json",
+    "docs": "https://bklit.com/docs/components/bar-chart",
+    "dependencies": [
+      "@visx/gradient@4.0.0",
+      "@visx/shape@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/bar-chart"
+  },
+  {
+    "id": "bklit/candlestick-chart",
+    "source": "bklit",
+    "name": "candlestick-chart",
+    "title": "Candlestick Chart · Bklit",
+    "description": "A composable OHLC candlestick chart with gradients, patterns, tooltips, and hover interactions",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "candlestick-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/candlestick-chart.json",
+    "docs": "https://bklit.com/docs/components/candlestick-chart",
+    "dependencies": [
+      "@visx/scale@4.0.0",
+      "@visx/responsive@4.0.0",
+      "d3-array",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/candlestick-chart"
+  },
+  {
+    "id": "bklit/choropleth-chart",
+    "source": "bklit",
+    "name": "choropleth-chart",
+    "title": "Choropleth Map · Bklit",
+    "description": "A geographic map chart with zoom, pan, and data visualization",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "choropleth-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/choropleth-chart.json",
+    "docs": "https://bklit.com/docs/components/choropleth-chart",
+    "dependencies": [
+      "@types/geojson",
+      "@visx/geo@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/zoom@4.0.0",
+      "d3-geo",
+      "topojson-client",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/choropleth-chart"
+  },
+  {
+    "id": "bklit/composed-chart",
+    "source": "bklit",
+    "name": "composed-chart",
+    "title": "Composed Chart · Bklit",
+    "description": "Time-series chart composing Line, Area, and SeriesBar on one shared scale (Recharts ComposedChart-style)",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "composed-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/composed-chart.json",
+    "docs": "https://bklit.com/docs/components/composed-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/scale@4.0.0",
+      "@visx/shape@4.0.0",
+      "@visx/responsive@4.0.0",
+      "d3-array",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/composed-chart"
+  },
+  {
+    "id": "bklit/funnel-chart",
+    "source": "bklit",
+    "name": "funnel-chart",
+    "title": "Funnel Chart · Bklit",
+    "description": "An animated funnel chart with multi-layer halo rings, hover interactions, and staggered entrance animations",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "funnel-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/funnel-chart.json",
+    "docs": "https://bklit.com/docs/components/funnel-chart",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/funnel-chart"
+  },
+  {
+    "id": "bklit/gauge-chart",
+    "source": "bklit",
+    "name": "gauge-chart",
+    "title": "Gauge · Bklit",
+    "description": "Notch-based radial or linear gauge with optional center label, patterns, and optional gradients",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "gauge-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/gauge-chart.json",
+    "docs": "https://bklit.com/docs/components/gauge-chart",
+    "dependencies": [
+      "@visx/responsive@4.0.0",
+      "@number-flow/react",
+      "motion",
+      "d3-shape"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/gauge-chart"
+  },
+  {
+    "id": "bklit/heatmap-chart",
+    "source": "bklit",
+    "name": "heatmap-chart",
+    "title": "Heatmap Chart · Bklit",
+    "description": "A contribution heatmap with animated cells and configurable level colors",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "heatmap-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/heatmap-chart.json",
+    "docs": "https://bklit.com/docs/components/heatmap-chart",
+    "dependencies": [
+      "@visx/group@4.0.0",
+      "@visx/heatmap@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/scale@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/heatmap-chart"
+  },
+  {
+    "id": "bklit/line-chart",
+    "source": "bklit",
+    "name": "line-chart",
+    "title": "Line Chart · Bklit",
+    "description": "A composable line chart with multiple series support",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "line-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/line-chart.json",
+    "docs": "https://bklit.com/docs/components/line-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/shape@4.0.0",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/line-chart"
+  },
+  {
+    "id": "bklit/live-line-chart",
+    "source": "bklit",
+    "name": "live-line-chart",
+    "title": "Live Line Chart · Bklit",
+    "description": "Real-time streaming line chart with smooth scrolling, crosshair, and animated axes",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "live-line-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/live-line-chart.json",
+    "docs": "https://bklit.com/docs/components/live-line-chart",
+    "dependencies": [
+      "@visx/curve@4.0.0",
+      "@visx/scale@4.0.0",
+      "@visx/shape@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/event@4.0.0",
+      "d3-array",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/live-line-chart"
+  },
+  {
+    "id": "bklit/pie-chart",
+    "source": "bklit",
+    "name": "pie-chart",
+    "title": "Pie Chart · Bklit",
+    "description": "A composable pie chart with animations and customizable slices",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "pie-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/pie-chart.json",
+    "docs": "https://bklit.com/docs/components/pie-chart",
+    "dependencies": [
+      "@number-flow/react",
+      "@visx/group@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/shape@4.0.0",
+      "d3-shape",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/pie-chart"
+  },
+  {
+    "id": "bklit/radar-chart",
+    "source": "bklit",
+    "name": "radar-chart",
+    "title": "Radar Chart · Bklit",
+    "description": "A composable radar/spider chart with multiple data series",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "radar-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/radar-chart.json",
+    "docs": "https://bklit.com/docs/components/radar-chart",
+    "dependencies": [
+      "@visx/group@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/scale@4.0.0",
+      "@visx/shape@4.0.0",
+      "d3-shape",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/radar-chart"
+  },
+  {
+    "id": "bklit/ring-chart",
+    "source": "bklit",
+    "name": "ring-chart",
+    "title": "Ring Chart · Bklit",
+    "description": "A composable donut/ring chart with progress indicators",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "ring-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/ring-chart.json",
+    "docs": "https://bklit.com/docs/components/ring-chart",
+    "dependencies": [
+      "@visx/group@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/shape@4.0.0",
+      "@number-flow/react",
+      "motion"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/ring-chart"
+  },
+  {
+    "id": "bklit/sankey-chart",
+    "source": "bklit",
+    "name": "sankey-chart",
+    "title": "Sankey Diagram · Bklit",
+    "description": "A flow diagram for visualizing data transfers between nodes",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "sankey-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/sankey-chart.json",
+    "docs": "https://bklit.com/docs/components/sankey-chart",
+    "dependencies": [
+      "@visx/event@4.0.0",
+      "@visx/gradient@4.0.0",
+      "@visx/responsive@4.0.0",
+      "@visx/sankey@4.0.0",
+      "d3-sankey",
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/sankey-chart"
+  },
+  {
+    "id": "bklit/scatter-chart",
+    "source": "bklit",
+    "name": "scatter-chart",
+    "title": "Scatter Chart · Bklit",
+    "description": "A composable time-series scatter chart with offset rings, hover dimming, and animated enter",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "scatter-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/scatter-chart.json",
+    "docs": "https://bklit.com/docs/components/scatter-chart",
+    "dependencies": [
+      "d3-array",
+      "d3-scale",
+      "motion",
+      "react-use-measure"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/scatter-chart"
+  },
+  {
+    "id": "bklit/sunburst-chart",
+    "source": "bklit",
+    "name": "sunburst-chart",
+    "title": "Sunburst Chart · Bklit",
+    "description": "A composable hierarchical sunburst chart with drill-down zoom and animated segments",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "react",
+      "visx",
+      "motion",
+      "chart-ui",
+      "sunburst-chart"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "npx shadcn@latest add https://ui.bklit.com/r/sunburst-chart.json",
+    "docs": "https://bklit.com/docs/components/sunburst-chart",
+    "dependencies": [
+      "motion"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Public MIT chart component, not the proprietary Bklit Studio editor. Browse the linked gallery for visual variants and composition props. Uses visx and Motion; inspect dependencies, React peers and chart token mappings before integrating. Registry endpoints checked; fresh-project runtime integration is not yet verified. Preserve the upstream license.",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://bklit.com/charts/sunburst-chart"
+  }
+]

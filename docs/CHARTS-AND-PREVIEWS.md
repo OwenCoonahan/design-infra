@@ -2,6 +2,8 @@
 
 Updated 2026-10-18. Library discovery and graph routing are implemented in this batch. The preview expansion and dedicated chart workbench below are a roadmap, not shipped capabilities.
 
+The primary goal is **indexing chart UI and visual design options**: different treatments of the same chart form, reusable components, UI collections and underlying packages. Numeric chart styling leads this work; network/workflow graphs have a separate shelf. Chart-form and treatment filters now work across sources, including the existing visual collections, Bklit's public charts/variants and Tremor Raw. This is a growing index, not a claim to contain every chart on the web.
+
 ## Recommendation
 
 Keep one repository and catalog. Give charts and graphs focused browsing within Design Infra, sharing search, sources, comparison, agent handoff and contribution review. Split into another project only when there is a distinct product to maintain, such as saved datasets, collaborative analysis or an embeddable chart authoring SDK. A separate set of bookmarks would duplicate infrastructure and fragment recommendations.
@@ -13,6 +15,8 @@ A dedicated `/charts` workbench can follow the current category galleries withou
 Before this batch, commit `2501def` had 2,857 catalog entries: 37 hosted interactive demos, 206 clips, 1,392 static-only previews and 1,222 entries without an approved local visual. The 98 chart-tagged entries included one hosted interactive demo, one clip, 78 still previews and 18 source-only entries. These are catalog classifications, not unique libraries or counts of fully verified standalone components.
 
 This batch adds 16 free library references and 80 integration recipes, source guides and task-based playbooks. Packages and required peers are checked against public npm metadata, and public documentation/example URLs are audited. This does not establish fresh-project install, browser, accessibility or performance verification. No visualization package is installed into the app or into consumers automatically. Live coverage has not increased merely by adding these references.
+
+For chart UI variety, it also adds Bklit's 16 public MIT chart components plus eight explicit visual variants and Tremor Raw's 11 public Apache-licensed visualization components. Bklit variants install their base chart and require the documented props/composition; Tremor Raw requires manual copying of the public component/helpers. Public registry/source endpoints and example links were checked; runtime integration and local adapters remain unverified. The 35 UI/component/variant records bring the total addition to 131 records across 18 new sources. They are not 131 distinct finished components or hosted demos.
 
 | Need | Libraries to inspect |
 | --- | --- |
@@ -30,7 +34,7 @@ The npm libraries are separate from their vendors' hosted products, support plan
 
 More live previews will help substantially. Start with supported free examples people can actually use, and cover meaningful differences within each component type. Avoid a target of thousands of autoplaying frames or a promise that every upstream entry has a maintained local clone.
 
-1. **First: 12 representative chart/graph demos.** Cover trends, bars, distributions, a matrix, quantities moving between stages, an editable workflow and a network explorer. Begin with existing Recharts/shadcn dependencies; choose one or two additional engines after checking the exact examples and compatibility. Give each demo actual hover/selection/data-update behavior, not just an animated entrance.
+1. **First: 12 representative chart demos and treatments.** Compare several visual styles of line/area/bar charts, compact sparklines, a matrix and distributions. Include different component collections rather than making all examples look like the same default chart. Begin with existing Recharts/shadcn dependencies; choose additional component libraries after checking the exact examples and compatibility. Give each demo actual hover/selection/data-update behavior, not just an animated entrance. Add workflow/network previews on their separate Graphs shelf afterward.
 2. **Then: fill gaps in common component galleries.** Buttons, forms, navigation, cards, pricing and table states deserve usable representatives. Expand Loading's styles where existing genuine waiting states lack useful coverage. Prefer a few reliable examples per pattern over many duplicate variants.
 3. **Then: specialized views.** Scientific/3D charts, larger network layouts and financial charts need stronger test fixtures, labeling and performance checks. Keep external links available while adapters are unverified.
 
