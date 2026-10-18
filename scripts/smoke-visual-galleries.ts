@@ -235,7 +235,7 @@ async function main() {
     await page.evaluate(() => window.localStorage.clear())
     for (const width of [1440, 768, 390]) {
       await page.setViewport({ width, height: 1100 })
-      for (const category of ["loader", "button", "pricing"]) {
+      for (const category of ["loader", "button", "pricing", "chart", "graph"]) {
         await page.goto(`${base}/components?category=${category}&free=1`, { waitUntil: "networkidle2" })
         assert.ok(
           await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
@@ -244,8 +244,23 @@ async function main() {
         await page.screenshot({ path: `.context/gallery-${category}-${width}.png`, fullPage: false })
       }
     }
+    await page.goto(`${base}/components?category=chart&chartType=area&chartStyle=gradient&view=grid&free=1`, { waitUntil: "networkidle2" })
+    await page.waitForSelector('[data-entry-id="bklit/area-gradient"]')
+    assert.ok(await page.$('[data-entry-id="shadcn/chart-area-gradient"]'))
+    assert.equal(await page.$('[data-entry-id="chartjs/bar"]'), null)
+    await page.reload({ waitUntil: "networkidle2" })
+    await page.waitForSelector('[data-entry-id="bklit/area-gradient"]')
+    await page.locator('[aria-label="Chart styles"] button ::-p-text(Pattern / texture)').click()
+    await page.waitForSelector('[data-entry-id="bklit/area-pattern"]')
+    assert.equal(await page.$('[data-entry-id="bklit/area-gradient"]'), null)
+    assert.equal(new URL(page.url()).searchParams.get("chartStyle"), "pattern")
+    await page.locator('nav[aria-label="Component types"] button ::-p-text(Graphs)').click()
+    await page.waitForSelector('[data-entry-id="react-flow/custom-nodes"]')
+    assert.equal(new URL(page.url()).searchParams.get("chartType"), null)
+    assert.equal(new URL(page.url()).searchParams.get("chartStyle"), null)
+    console.log("✓ chart form/treatment filters match across collections, reload, and clear on category switching")
     assert.deepEqual(errors, [])
-    console.log("✓ Loading, Buttons and Pricing at desktop/tablet/phone widths; no browser errors")
+    console.log("✓ Loading, Buttons, Pricing, Charts and Graphs at desktop/tablet/phone widths; no browser errors")
   } finally {
     await browser.close()
   }

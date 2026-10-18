@@ -170,12 +170,19 @@ async function main() {
     assert.ok((await page.evaluate(() => navigator.clipboard.readText())).includes(copiedQuestion))
     await page.waitForFunction("getComputedStyle(document.querySelector('[data-request-question]')).opacity === '1'")
     assert.equal(await id(), await page.evaluate("window.__copiedId"))
+    console.log("✓ requests: playback, transition frames, rapid navigation and in-flight clipboard")
 
     for (let index = 0; index < expected.length; index++) {
       await select(index)
       assert.equal(await page.$eval(`${root} [data-request-link]`, (element) => element.getAttribute("href")), sitePath(expected[index][1]))
       assert.equal(await page.$$eval(`${root} [aria-label="Choose an example"] button[aria-pressed="true"]`, (elements) => elements.length), 1)
-      const response = await page.evaluate(async (url) => ({ status: (await fetch(url)).status }), base + expected[index][1])
+      const response = await page.evaluate(async (url) => {
+        const response = await fetch(url, { signal: AbortSignal.timeout(15_000) })
+        // Drain streamed catalog pages before opening another; unread bodies can
+        // occupy the browser's per-origin connections as the catalog grows.
+        await response.arrayBuffer()
+        return { status: response.status }
+      }, base + expected[index][1])
       assert.equal(response.status, 200, expected[index][1])
     }
     for (const index of [0, 7]) {
