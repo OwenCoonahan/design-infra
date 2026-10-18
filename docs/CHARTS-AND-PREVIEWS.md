@@ -2,6 +2,8 @@
 
 Updated 2026-10-18. Library discovery and graph routing are implemented in this batch. The preview expansion and dedicated chart workbench below are a roadmap, not shipped capabilities.
 
+The shared [roadmap](ROADMAP.md) also tracks the planned public changelog.
+
 The primary goal is **indexing chart UI and visual design options**: different treatments of the same chart form, reusable components, UI collections and underlying packages. Numeric chart styling leads this work; network/workflow graphs have a separate shelf. Chart-form and treatment filters now work across sources, including the existing visual collections, Bklit's public charts/variants and Tremor Raw. This is a growing index, not a claim to contain every chart on the web.
 
 ## Recommendation
