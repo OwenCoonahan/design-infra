@@ -49,10 +49,10 @@ function Ready({ children }: { children: React.ReactNode }) {
   }, [])
   return children
 }
-export function PreviewShell({ children }: { children: React.ReactNode }) {
+export function PreviewShell({ children, ready = true }: { children: React.ReactNode; ready?: boolean }) {
   return (
     <DemoBoundary>
-      <Ready>{children}</Ready>
+      {ready ? <Ready>{children}</Ready> : children}
     </DemoBoundary>
   )
 }

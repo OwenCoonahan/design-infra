@@ -6472,6 +6472,7 @@
     "access": "free",
     "install": "pnpm add chart.js",
     "docs": "https://www.chartjs.org/docs/latest/charts/bar.html",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/chartjs/bar.webp",
     "dependencies": [
       "chart.js"
     ],
@@ -6544,6 +6545,7 @@
     "access": "free",
     "install": "pnpm add chart.js",
     "docs": "https://www.chartjs.org/docs/latest/charts/line.html",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/chartjs/line.webp",
     "dependencies": [
       "chart.js"
     ],
@@ -13463,6 +13465,7 @@
     "access": "free",
     "install": "pnpm add @xyflow/react",
     "docs": "https://reactflow.dev/examples/nodes/custom-node",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/react-flow/custom-nodes.webp",
     "dependencies": [
       "@xyflow/react"
     ],
@@ -13574,6 +13577,7 @@
     "access": "free",
     "install": "pnpm add react-force-graph-2d",
     "docs": "https://vasturiano.github.io/react-force-graph/example/custom-node-shape/index-canvas.html",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/react-force-graph/custom-nodes.webp",
     "dependencies": [
       "react-force-graph-2d"
     ],
@@ -37433,6 +37437,7 @@
     "access": "free",
     "install": "pnpm add chart.js",
     "docs": "https://www.chartjs.org/docs/latest/charts/bubble.html",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/chartjs/bubble.webp",
     "dependencies": [
       "chart.js"
     ],
@@ -37470,6 +37475,7 @@
     "access": "free",
     "install": "pnpm add chart.js",
     "docs": "https://www.chartjs.org/docs/latest/charts/doughnut.html",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/chartjs/doughnut.webp",
     "dependencies": [
       "chart.js"
     ],
@@ -37507,6 +37513,7 @@
     "access": "free",
     "install": "pnpm add chart.js",
     "docs": "https://www.chartjs.org/docs/latest/charts/scatter.html",
+    "preview": "https://www.owencoonahan.xyz/design-infra/thumbnails/chartjs/scatter.webp",
     "dependencies": [
       "chart.js"
     ],

@@ -390,6 +390,337 @@
         "local": "components/demos/vendor/smoothui/card-swipe-deck.tsx",
         "sha256": "9f0dbc0a609dfbf4d550357ef5110a323e7a61c3574c0913148a40d16826b907"
       }
+    },
+    "shadcn/chart-area-gradient": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-gradient.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-area-gradient.tsx",
+        "sha256": "83bdde5a42cc76437823ede1e19368ce94af352b338b2c504d3dab6b447995c9",
+        "upstreamSha256": "45a85be38bfd7eaded3df1b4c3e592f9afdd42cb3451f6f3c0a4ea7927412d0e"
+      }
+    },
+    "shadcn/chart-area-stacked": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-stacked.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-area-stacked.tsx",
+        "sha256": "9f9f7c1614f3ae840ae1f0273a3a65f4a74173d3dac961867790003c0b688c93",
+        "upstreamSha256": "db215c13b806e7328f124a364f6d1bfcff98ef5393f4e2f6c5a43c02a1a88c5c"
+      }
+    },
+    "shadcn/chart-area-step": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-step.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-area-step.tsx",
+        "sha256": "11fe2b3c3ddda2581f4e25c44542342bf53d2012c0e76435254db247562b661e",
+        "upstreamSha256": "967c57218247435bb287d729c526bf0db5596ce0ae82ddf16747d186f432948a"
+      }
+    },
+    "shadcn/chart-bar-horizontal": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-horizontal.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-bar-horizontal.tsx",
+        "sha256": "67165be365af82816e58334b00ef65136c40b8738c9f571343beb16ce9a06d60",
+        "upstreamSha256": "0dccb76e8d82c6b113a074ef17a22bd06c5908da3bc42df2a24703d8d3b81f5b"
+      }
+    },
+    "shadcn/chart-bar-multiple": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-multiple.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-bar-multiple.tsx",
+        "sha256": "1590055c8fe10e4e82e16cd8b2f887e82f8c9fae0d3d83866435e02d39fc78bc",
+        "upstreamSha256": "537e06323e0db1642c48e73b1245de8e72a5e69b498d3f7ab45b0856c8f8e4a9"
+      }
+    },
+    "shadcn/chart-bar-stacked": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-stacked.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-bar-stacked.tsx",
+        "sha256": "822e4b0684d11e6eb6eb90384589ec323fcf6ed4906c53b8087c9d9e9973e6dc",
+        "upstreamSha256": "5e1b682a5f8f90cc01d60c8f073190f3ecb66e0bc9854d91df002edc37fdf70c"
+      }
+    },
+    "shadcn/chart-bar-negative": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-negative.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-bar-negative.tsx",
+        "sha256": "32a7ef3b67207c92f3dce041a193cff6e193d80b3fec6330432d68bdabeb8701",
+        "upstreamSha256": "22733cdd896a6f877170ea7e887b3331640c0727cee41aba87d5178526ed83f6"
+      }
+    },
+    "shadcn/chart-line-dots": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-dots.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-line-dots.tsx",
+        "sha256": "f280e9472ffed64147169f76d46c99c254587e48a366a1f03e3dd3f273d562b2",
+        "upstreamSha256": "e41121b704b22277c5133ee53bedd252ead81c8c14b1c8a113c1290e1c7dffdf"
+      }
+    },
+    "shadcn/chart-line-step": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-step.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-line-step.tsx",
+        "sha256": "ddef134ff47d6acea151352edccd6746087055a326c739fe4b5c463c1aef1fad",
+        "upstreamSha256": "7de698cb7d6f1b1772b9cfa402a0b159185bb8fca0ba110f2e86a751602ee39d"
+      }
+    },
+    "shadcn/chart-line-multiple": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-multiple.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-line-multiple.tsx",
+        "sha256": "0916989d4bf85c6e019c970dbd2873f2595cc8d51acf4514331eb9aad54055e3",
+        "upstreamSha256": "8d55a8b24aaefccd5770af5b82ca979f6f8d291ebb719faf90e6c54178cdb705"
+      }
+    },
+    "shadcn/chart-line-linear": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-linear.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-line-linear.tsx",
+        "sha256": "bbf498ae1937b111a7900e4e31019eba5d1c23980711cc41e6fdfae499787210",
+        "upstreamSha256": "c120b438d13b32cc90973c947ba79e82e884753ef1e1ab4f59a2a7524e8e5577"
+      }
+    },
+    "shadcn/chart-pie-donut-text": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-donut-text.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-pie-donut-text.tsx",
+        "sha256": "874899d47a5f44435b162262f587d56c5e34a9d9aaff307c55fbfd385a46beba",
+        "upstreamSha256": "b4a6f121057f5363995682ad47df137a6ab6c858ac48088364deae231788d7fb"
+      }
+    },
+    "shadcn/chart-pie-label": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-label.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-pie-label.tsx",
+        "sha256": "61246fdd172ccf088b3002de5ed808dae2e0fabb84653ff6ea562cf08c1935ee",
+        "upstreamSha256": "9473abe1c22d47fbc9676f38fcaf7b718ed5499bf9164d4f442fb2da51666039"
+      }
+    },
+    "shadcn/chart-pie-separator-none": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-separator-none.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-pie-separator-none.tsx",
+        "sha256": "986876ed5da84b23aad46d9667fded8f12252e60aa8b43f2eec8f38e91731cfd",
+        "upstreamSha256": "4811ddc719959d4b0a4d9013b0756131d4fc4f5322bacec3ed85f3fb9e5385a6"
+      }
+    },
+    "shadcn/chart-pie-legend": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-legend.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-pie-legend.tsx",
+        "sha256": "78aa019017c3f097d826c2c1db8f55786b7fd655167eaff6137728e457d242b5",
+        "upstreamSha256": "2902062d5a46d853d9ed96d3ca837de48e8dc3c780847c4622fa89b4fee3842a"
+      }
+    },
+    "shadcn/chart-radar-grid-fill": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-fill.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-radar-grid-fill.tsx",
+        "sha256": "446f314ce2feade9950650b39a264dfb1d62334a49a222194ad34db99fa92aee",
+        "upstreamSha256": "f5a7395f16784687624b7cf36e0a074fd6792c314c3aab0be05ff60153fec88a"
+      }
+    },
+    "shadcn/chart-radar-multiple": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-multiple.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-radar-multiple.tsx",
+        "sha256": "6d66ee83757dbfe95647df3f36c4da8b823226eb95f787c678cf597780d311fa",
+        "upstreamSha256": "f6a2b2323e758e88e5dad518e0cd0de90026da45fee4f0498db5a658e7697338"
+      }
+    },
+    "shadcn/chart-radar-grid-circle": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-circle.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-radar-grid-circle.tsx",
+        "sha256": "b42b99811a316829b1ee1889df83c937a1d06f0c0b1c6653cfcf6ed3da2ffd0e",
+        "upstreamSha256": "41bde9ca02b741e473638c16df15f1f4dccb48ea76dfd3d0d6bf4cd08c498865"
+      }
+    },
+    "shadcn/chart-radial-text": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-text.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-radial-text.tsx",
+        "sha256": "b2c049dacfd6872a147fb25a7c51f59a23162f085c139ffea9602a8cdbaf9310",
+        "upstreamSha256": "d02a7c05bb28a4a76e7cb2d16df8ae33bd4e50e06a095f8d13a02cd78d33818e"
+      }
+    },
+    "shadcn/chart-radial-stacked": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-stacked.json",
+        "license": "MIT",
+        "local": "components/demos/vendor/shadcn/chart-radial-stacked.tsx",
+        "sha256": "00720c2f27720498cc5b6c1027669ad4f9cb1364e07dd028d8c16e68a3cb40b9",
+        "upstreamSha256": "d94e8253ad22dadfb74b18f6497d4a771b16cb968399c659c43d28ff7813fd17"
+      }
+    },
+    "chartjs/line": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/chartjs/Chart.js",
+        "license": "MIT",
+        "local": "components/demos/chartjs-demos.tsx",
+        "sha256": "ecb697cfbe723f88d9f41bc2edebca157fa2e98598f27759aaafe005a2a33030",
+        "package": "chart.js@4.5.1",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "chartjs/bar": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/chartjs/Chart.js",
+        "license": "MIT",
+        "local": "components/demos/chartjs-demos.tsx",
+        "sha256": "ecb697cfbe723f88d9f41bc2edebca157fa2e98598f27759aaafe005a2a33030",
+        "package": "chart.js@4.5.1",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "chartjs/doughnut": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/chartjs/Chart.js",
+        "license": "MIT",
+        "local": "components/demos/chartjs-demos.tsx",
+        "sha256": "ecb697cfbe723f88d9f41bc2edebca157fa2e98598f27759aaafe005a2a33030",
+        "package": "chart.js@4.5.1",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "chartjs/bubble": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/chartjs/Chart.js",
+        "license": "MIT",
+        "local": "components/demos/chartjs-demos.tsx",
+        "sha256": "ecb697cfbe723f88d9f41bc2edebca157fa2e98598f27759aaafe005a2a33030",
+        "package": "chart.js@4.5.1",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "chartjs/scatter": {
+      "adapter": "charts",
+      "width": 560,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/chartjs/Chart.js",
+        "license": "MIT",
+        "local": "components/demos/chartjs-demos.tsx",
+        "sha256": "ecb697cfbe723f88d9f41bc2edebca157fa2e98598f27759aaafe005a2a33030",
+        "package": "chart.js@4.5.1",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "react-flow/custom-nodes": {
+      "adapter": "graphs",
+      "width": 640,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/xyflow/xyflow",
+        "license": "MIT",
+        "local": "components/demos/react-flow-demo.tsx",
+        "sha256": "19d7f88ca38d9343914353dddab85c1415fcda245f1294afa6b4b8656e498b06",
+        "package": "@xyflow/react@12.12.0",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "react-force-graph/custom-nodes": {
+      "adapter": "graphs",
+      "width": 640,
+      "height": 500,
+      "provenance": {
+        "source": "https://github.com/vasturiano/react-force-graph",
+        "license": "MIT",
+        "local": "components/demos/force-graph-demo.tsx",
+        "sha256": "bc97872fa6e9f9287bd957664437391594ced075f2ea0d9d5f3a2bc54c7a87b3",
+        "package": "react-force-graph-2d@1.29.2",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
     }
   }
 }

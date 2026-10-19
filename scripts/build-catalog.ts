@@ -1,5 +1,6 @@
 import { correctCategories } from "../lib/catalog/galleries"
 import { linkOnlyMedia } from "../lib/catalog/media-policy"
+import { hostedPreview } from "../lib/catalog/previews"
 import { NAMESPACE, SITE_URL } from "../lib/config"
 /**
  * Merge every catalog layer into the files agents and the gallery read:
@@ -12,7 +13,7 @@ import { NAMESPACE, SITE_URL } from "../lib/config"
  *   catalog/motion-signals.json  code-level motion signals (pnpm scan-motion) — with names/deps they feed
  *                              lib/catalog/tags.ts, which fills integration/appliesTo/motion/live where unset
  *   catalog/thumbnails.json    screenshot / upstream-image URLs (pnpm thumbnails) — fills `preview`
- *                              only where no layer above set one
+ *                              only where no layer above set one, except exact hosted-demo posters
  *
  * → catalog/index.json   full machine-readable catalog (curated first)
  * → catalog/CATALOG.md   one line per entry — grep-friendly for agents
@@ -295,14 +296,14 @@ async function main() {
     byId.set(f.id, { ...e, favorite: true, notes: `♥ ${f.note}${e.notes ? ` — ${e.notes}` : ""}` })
   }
 
-  // 5. thumbnails — lowest precedence: never override a preview from generated/curated data
+  // Hosted demos need their exact neutral-stage poster; other thumbnails fill gaps only.
   if (existsSync(path.join(ROOT, "catalog/thumbnails.json"))) {
     const thumbs = await readJson<Record<string, string>>("catalog/thumbnails.json")
     for (const [id, url] of Object.entries(thumbs)) {
       const e = byId.get(id)
       const thumbnailPath = `/thumbnails/${id}.webp`
       const local = new URL(url).pathname.endsWith(thumbnailPath) && existsSync(path.join(ROOT, "public", thumbnailPath))
-      if (e && !e.preview) byId.set(id, CatalogEntry.parse({ ...e, preview: local ? `${SITE_URL}${thumbnailPath}` : url }))
+      if (e && (!e.preview || (local && hostedPreview(id)))) byId.set(id, CatalogEntry.parse({ ...e, preview: local ? `${SITE_URL}${thumbnailPath}` : url }))
     }
   }
 

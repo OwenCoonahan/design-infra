@@ -1,5 +1,7 @@
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
+import { createHash } from "node:crypto"
+import { previewDemos } from "../lib/catalog/previews"
 import test from "node:test"
 import { chartLibraries, chartLibraryEntries } from "../lib/catalog/chart-libraries"
 import { CatalogEntry } from "../lib/catalog/schema"
@@ -11,6 +13,23 @@ import { chartFacets } from "../lib/catalog/chart-styles"
 import { bklitCharts, tremorCharts } from "../lib/catalog/chart-ui"
 
 const catalog: CatalogEntry[] = JSON.parse(readFileSync("catalog/index.json", "utf8")).map((entry: unknown) => CatalogEntry.parse(entry))
+
+test("hosted chart and graph demos keep real entries, source provenance and original install contracts", () => {
+  const demos = Object.entries(previewDemos).filter(([, demo]) => ["charts", "graphs"].includes(demo.adapter))
+  assert.equal(demos.length, 27)
+  for (const [id, demo] of demos) {
+    const entry = catalog.find((entry) => entry.id === id)!
+    assert.ok(entry && entry.access === "free", id)
+    assert.equal(previewDescriptor(entry)?.kind, "interactive", id)
+    assert.ok(entry.preview?.endsWith(`/thumbnails/${id}.webp`), `${id}: poster comes from the hosted stage`)
+    assert.equal(demo.provenance.license, "MIT")
+    assert.match(demo.provenance.source, /^https:\/\//)
+    assert.equal(createHash("sha256").update(readFileSync(demo.provenance.local!)).digest("hex"), demo.provenance.sha256, id)
+    assert.ok(!entry.install.includes("design-infra") && !entry.install.includes("/preview/"), id)
+  }
+  assert.equal(demos.filter(([id]) => id.startsWith("shadcn/")).length, 20)
+  assert.equal(catalog.find((entry) => entry.id === "chartjs/line")?.install, "pnpm add chart.js")
+})
 
 test("chart sync rejects missing, mismatched and changed-license metadata instead of silently promoting access", () => {
   const source = chartLibraries.find((library) => library.slug === "chartjs")!
@@ -25,12 +44,14 @@ test("chart sync rejects missing, mismatched and changed-license metadata instea
   assert.throws(() => chartLibraryEntries(source, { "chart.js": { ...metadata["chart.js"], license: "ISC" } }), /changed license/)
 })
 
-test("visualization references preserve exact modules and do not claim hosted coverage or install every engine", () => {
+test("visualization references preserve exact modules and only claim explicitly hosted coverage and do not install every engine", () => {
   const sources = new Set(chartLibraries.map((library) => library.slug))
   const entries = catalog.filter((entry) => sources.has(entry.source))
   assert.equal(entries.length, 189)
   assert.equal(entries.filter((entry) => entry.kind === "package").length, 29)
-  assert.ok(entries.every((entry) => entry.access === "free" && previewDescriptor(entry) === undefined))
+  assert.ok(entries.every((entry) => entry.access === "free"))
+  assert.equal(entries.filter((entry) => previewDescriptor(entry)?.kind === "interactive").length, 7)
+  assert.ok(entries.filter((entry) => entry.kind === "package").every((entry) => previewDescriptor(entry) === undefined))
   assert.equal(catalog.find((entry) => entry.id === "sigma/library")?.motion, undefined, "WebGL capability must not become an unverified animation claim")
   assert.equal(catalog.find((entry) => entry.id === "plotly/box")?.motion, undefined)
   assert.equal(catalog.find((entry) => entry.id === "nivo/bar")?.install, "pnpm add @nivo/bar")

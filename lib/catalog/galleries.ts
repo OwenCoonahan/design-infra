@@ -28,6 +28,7 @@ export const SECTION_TYPES = new Set<string>([
   "stats",
   "empty-state",
   "dashboard",
+  "chart",
   "graph",
 ])
 export function categoryLabel(category: string) {
