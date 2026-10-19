@@ -7,7 +7,7 @@ const category = z.enum(["chart", "graph"])
 const slug = z.string().regex(/^[a-z0-9-]+$/)
 const librarySchema = z.object({
   slug, name: z.string(), url: z.string().url(), repository: z.string().url(), package: npmName,
-  packages: z.array(npmName).min(1), license: z.enum(["MIT", "Apache-2.0", "ISC", "BSD-3-Clause"]),
+  packages: z.array(npmName).min(1), license: z.enum(["MIT", "Apache-2.0", "ISC", "BSD-3-Clause", "MIT OR WTFPL", "(Apache-2.0 OR MIT)"]),
   renderers: z.array(z.enum(["svg", "canvas", "webgl", "dom"])).min(1), category,
   moods: z.array(Mood).min(1).max(3), description: z.string(), notes: z.string(), verified: z.string(),
   examples: z.array(z.object({
@@ -18,8 +18,10 @@ const librarySchema = z.object({
 export const chartLibraries = z.object({ version: z.literal(1), libraries: z.array(librarySchema).min(1) }).parse(input).libraries
 export type ChartLibrary = (typeof chartLibraries)[number]
 const npmSchema = z.object({ name: npmName, version: z.string(), license: z.string(), peerDependencies: z.record(z.string(), z.string()).default({}) })
-const freeLicenses = new Set(["MIT", "Apache-2.0", "ISC", "BSD-3-Clause"])
-const externalDemos = new Set(["recharts", "chartjs", "echarts", "nivo", "visx", "plotly", "uplot", "react-flow"])
+// Exact, audited expressions only. Do not accept an arbitrary license merely
+// because its string mentions MIT; unknown/changed terms still fail sync.
+const freeLicenses = new Set(["MIT", "Apache-2.0", "ISC", "BSD-3-Clause", "MIT OR WTFPL", "(Apache-2.0 OR MIT)"])
+const externalDemos = new Set(["recharts", "chartjs", "echarts", "nivo", "visx", "plotly", "uplot", "react-flow", "chartist", "billboard", "vis-network", "react-force-graph"])
 
 /** Catalog references only. Package metadata checks never install dependencies or copy example source. */
 export function chartLibraryEntries(library: ChartLibrary, metadata: Record<string, unknown>) {

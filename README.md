@@ -42,11 +42,25 @@ Shortlists stay in your browser. Compare URLs can be shared. Favorites/dislikes 
 
 ## Charts and graphs
 
-[Browse charts](https://www.owencoonahan.xyz/design-infra/components?category=chart) or [node graphs and diagrams](https://www.owencoonahan.xyz/design-infra/components?category=graph). The catalog includes 16 additional open-source visualization libraries and 80 integration recipes, with package commands, repositories, task guidance and license/peer metadata. Use one suitable engine; these are optional choices rather than a bundle to install together.
+[Browse charts](https://www.owencoonahan.xyz/design-infra/components?category=chart) or [node graphs and diagrams](https://www.owencoonahan.xyz/design-infra/components?category=graph). The visualization package index includes 29 libraries and 160 integration recipes, with package commands, repositories, task guidance and license/peer metadata. Use one suitable library; these are optional choices rather than a bundle to install together.
 
 Recharts, Chart.js, ECharts, Nivo and visx cover product charts; Observable Plot, Vega-Lite and Plotly add analytical options; uPlot covers time-series work; React Flow, Cytoscape, Sigma, G6, D3 and Mermaid cover different relationship/diagram tasks. G2 supplies a grammar-based chart engine. Source guides explain the tradeoffs. External references are distinct from hosted demos. See the [preview and chart expansion roadmap](docs/CHARTS-AND-PREVIEWS.md).
 
 For **chart UI and visual styles**, browse chart forms (line, area, bar, sparkline, donut…) and treatments (gradient, pattern, stacked, dots, labels, streaming, dither) across sources. [Compare gradient areas](https://www.owencoonahan.xyz/design-infra/components?category=chart&chartType=area&chartStyle=gradient&view=grid). Bklit adds 16 free registry chart components and eight named area treatments; Tremor Raw adds 11 public chart/dashboard components. These sit alongside existing shadcn, beUI and SmoothUI styles. Bklit Studio and paid Tremor Blocks are excluded.
+
+More options by project fit:
+
+| Project / visual need | Additional sources |
+| --- | --- |
+| Existing Mantine or Material UI app | [Mantine Charts](catalog/sources/mantine-charts.md), [MUI X Charts Community](catalog/sources/mui-charts.md) |
+| Composable React chart UI | [Unovis](catalog/sources/unovis.md), [Victory](catalog/sources/victory.md) |
+| Existing Svelte project | [LayerChart](catalog/sources/layerchart.md) |
+| Framework-neutral SVG styles | [Frappe Charts](catalog/sources/frappe-charts.md), [Chartist](catalog/sources/chartist.md), [Billboard.js](catalog/sources/billboard.md) |
+| Additional chart specifications / themes | [AG Charts Community](catalog/sources/ag-charts.md), [VChart](catalog/sources/vchart.md) |
+| Time series / financial chart styling | [Lightweight Charts](catalog/sources/lightweight-charts.md), with its documented attribution |
+| Network visual styles / interaction | [vis-network](catalog/sources/vis-network.md), [React Force Graph 2D](catalog/sources/react-force-graph.md), Unovis Graph |
+
+Preserve the project's framework and existing component system. Community-only packages stay free; commercial editions and upstream editor products remain separate. New source links and recipes do not imply locally hosted previews or verified runtime integration.
 
 ## Install selected components
 

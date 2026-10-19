@@ -1,0 +1,261 @@
+[
+  {
+    "id": "billboard/area",
+    "source": "billboard",
+    "name": "area",
+    "title": "Billboard.js · Area chart",
+    "description": "Filled trend regions.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.AreaChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.AreaChart"
+  },
+  {
+    "id": "billboard/bar",
+    "source": "billboard",
+    "name": "bar",
+    "title": "Billboard.js · Bar chart",
+    "description": "Compare discrete category values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.BarChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.BarChart"
+  },
+  {
+    "id": "billboard/donut",
+    "source": "billboard",
+    "name": "donut",
+    "title": "Billboard.js · Donut chart",
+    "description": "A compact ring summary.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.DonutChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.DonutChart"
+  },
+  {
+    "id": "billboard/library",
+    "source": "billboard",
+    "name": "library",
+    "title": "Billboard.js",
+    "description": "Framework-neutral D3-based chart UI with named chart types and reusable configuration.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "billboard/line",
+    "source": "billboard",
+    "name": "line",
+    "title": "Billboard.js · Line chart",
+    "description": "Compare trends with configurable SVG styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.LineChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.LineChart"
+  },
+  {
+    "id": "billboard/stacked-bar",
+    "source": "billboard",
+    "name": "stacked-bar",
+    "title": "Billboard.js · Stacked bar chart",
+    "description": "Layer contributions within category totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "stacked",
+      "integration-recipe",
+      "stacked-bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart"
+  },
+  {
+    "id": "billboard/step",
+    "source": "billboard",
+    "name": "step",
+    "title": "Billboard.js · Stepped line chart",
+    "description": "Represent changes using discrete step segments.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "line",
+      "step",
+      "integration-recipe",
+      "step"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.StepChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.StepChart"
+  }
+]

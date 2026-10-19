@@ -1,0 +1,520 @@
+[
+  {
+    "id": "mantine-charts/area",
+    "source": "mantine-charts",
+    "name": "area",
+    "title": "Mantine Charts · Area chart",
+    "description": "Filled trend charts within a Mantine dashboard.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/area-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/bar",
+    "source": "mantine-charts",
+    "name": "bar",
+    "title": "Mantine Charts · Bar chart",
+    "description": "Category comparisons with shared app styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/bar-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/candlestick",
+    "source": "mantine-charts",
+    "name": "candlestick",
+    "title": "Mantine Charts · Candlestick chart",
+    "description": "Render OHLC observations with the current Mantine API.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/candlestick-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/donut",
+    "source": "mantine-charts",
+    "name": "donut",
+    "title": "Mantine Charts · Donut chart",
+    "description": "A small part-to-whole summary.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/donut-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/funnel",
+    "source": "mantine-charts",
+    "name": "funnel",
+    "title": "Mantine Charts · Funnel chart",
+    "description": "Compare counts across ordered conversion stages.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "funnel"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/funnel-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/heatmap",
+    "source": "mantine-charts",
+    "name": "heatmap",
+    "title": "Mantine Charts · Heatmap",
+    "description": "Activity levels across a time/calendar matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/heatmap/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/library",
+    "source": "mantine-charts",
+    "name": "library",
+    "title": "Mantine Charts",
+    "description": "Dashboard chart components that share Mantine styling, tooltips and application themes.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/getting-started/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/line",
+    "source": "mantine-charts",
+    "name": "line",
+    "title": "Mantine Charts · Line chart",
+    "description": "Trend series with Mantine tooltips and legends.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/line-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/radar",
+    "source": "mantine-charts",
+    "name": "radar",
+    "title": "Mantine Charts · Radar chart",
+    "description": "Compare values on several labeled axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "radar"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/radar-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/sankey",
+    "source": "mantine-charts",
+    "name": "sankey",
+    "title": "Mantine Charts · Sankey diagram",
+    "description": "Measured quantities flowing between stages.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sankey"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/sankey-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/scatter",
+    "source": "mantine-charts",
+    "name": "scatter",
+    "title": "Mantine Charts · Scatter plot",
+    "description": "Compare paired numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/scatter-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/sparkline",
+    "source": "mantine-charts",
+    "name": "sparkline",
+    "title": "Mantine Charts · Sparkline",
+    "description": "A compact trend beside a KPI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sparkline"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/sparkline/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mantine-charts/treemap",
+    "source": "mantine-charts",
+    "name": "treemap",
+    "title": "Mantine Charts · Treemap",
+    "description": "Nested parts of an overall measured total.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "treemap"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/treemap/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

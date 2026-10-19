@@ -1,0 +1,221 @@
+[
+  {
+    "id": "react-force-graph/collision",
+    "source": "react-force-graph",
+    "name": "collision",
+    "title": "React Force Graph 2D · Collision-aware network layout",
+    "description": "Avoid node overlap in a force-directed Canvas graph.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "collision"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/collision-detection/",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/collision-detection/"
+  },
+  {
+    "id": "react-force-graph/custom-nodes",
+    "source": "react-force-graph",
+    "name": "custom-nodes",
+    "title": "React Force Graph 2D · Custom 2D graph nodes",
+    "description": "Draw domain-specific node shapes on Canvas.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "custom-nodes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/custom-node-shape/index-canvas.html",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/custom-node-shape/index-canvas.html"
+  },
+  {
+    "id": "react-force-graph/fit-to-canvas",
+    "source": "react-force-graph",
+    "name": "fit-to-canvas",
+    "title": "React Force Graph 2D · Responsive 2D network",
+    "description": "Fit the network to a changing parent container.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "fit-to-canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/fit-to-canvas/",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/fit-to-canvas/"
+  },
+  {
+    "id": "react-force-graph/highlight",
+    "source": "react-force-graph",
+    "name": "highlight",
+    "title": "React Force Graph 2D · Highlighted graph neighborhoods",
+    "description": "Focus selected nodes and their connected links on a 2D Canvas.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "highlight"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/highlight/",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/highlight/"
+  },
+  {
+    "id": "react-force-graph/library",
+    "source": "react-force-graph",
+    "name": "library",
+    "title": "React Force Graph 2D",
+    "description": "React Canvas force-directed graphs with custom node drawing, labels and selection.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://github.com/vasturiano/react-force-graph",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "react-force-graph/node-labels",
+    "source": "react-force-graph",
+    "name": "node-labels",
+    "title": "React Force Graph 2D · Labeled 2D graph nodes",
+    "description": "Readable Canvas labels for connected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "node-labels"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/text-nodes/index-2d.html",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/text-nodes/index-2d.html"
+  }
+]

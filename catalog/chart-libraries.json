@@ -924,6 +924,841 @@
           "purpose": "Explain state transitions."
         }
       ]
+    },
+    {
+      "slug": "mantine-charts",
+      "name": "Mantine Charts",
+      "url": "https://mantine.dev/charts/getting-started/",
+      "repository": "https://github.com/mantinedev/mantine",
+      "package": "@mantine/charts",
+      "packages": [
+        "@mantine/charts",
+        "@mantine/core",
+        "@mantine/hooks",
+        "recharts"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "calm",
+        "technical",
+        "refined"
+      ],
+      "description": "Dashboard chart components that share Mantine styling, tooltips and application themes.",
+      "notes": "Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://mantine.dev/charts/area-chart/",
+          "purpose": "Filled trend charts within a Mantine dashboard."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://mantine.dev/charts/bar-chart/",
+          "purpose": "Category comparisons with shared app styling."
+        },
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://mantine.dev/charts/line-chart/",
+          "purpose": "Trend series with Mantine tooltips and legends."
+        },
+        {
+          "name": "sparkline",
+          "title": "Sparkline",
+          "url": "https://mantine.dev/charts/sparkline/",
+          "purpose": "A compact trend beside a KPI."
+        },
+        {
+          "name": "donut",
+          "title": "Donut chart",
+          "url": "https://mantine.dev/charts/donut-chart/",
+          "purpose": "A small part-to-whole summary."
+        },
+        {
+          "name": "heatmap",
+          "title": "Heatmap",
+          "url": "https://mantine.dev/charts/heatmap/",
+          "purpose": "Activity levels across a time/calendar matrix."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://mantine.dev/charts/scatter-chart/",
+          "purpose": "Compare paired numeric observations."
+        },
+        {
+          "name": "radar",
+          "title": "Radar chart",
+          "url": "https://mantine.dev/charts/radar-chart/",
+          "purpose": "Compare values on several labeled axes."
+        },
+        {
+          "name": "funnel",
+          "title": "Funnel chart",
+          "url": "https://mantine.dev/charts/funnel-chart/",
+          "purpose": "Compare counts across ordered conversion stages."
+        },
+        {
+          "name": "candlestick",
+          "title": "Candlestick chart",
+          "url": "https://mantine.dev/charts/candlestick-chart/",
+          "purpose": "Render OHLC observations with the current Mantine API."
+        },
+        {
+          "name": "treemap",
+          "title": "Treemap",
+          "url": "https://mantine.dev/charts/treemap/",
+          "purpose": "Nested parts of an overall measured total."
+        },
+        {
+          "name": "sankey",
+          "title": "Sankey diagram",
+          "url": "https://mantine.dev/charts/sankey-chart/",
+          "purpose": "Measured quantities flowing between stages."
+        }
+      ]
+    },
+    {
+      "slug": "mui-charts",
+      "name": "MUI X Charts Community",
+      "url": "https://mui.com/x/react-charts/",
+      "repository": "https://github.com/mui/mui-x",
+      "package": "@mui/x-charts",
+      "packages": [
+        "@mui/x-charts",
+        "@mui/material",
+        "@emotion/react",
+        "@emotion/styled"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Material-themed React chart UI from the free Community package.",
+      "notes": "Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://mui.com/x/react-charts/bars/",
+          "purpose": "Material-styled category comparisons."
+        },
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://mui.com/x/react-charts/lines/",
+          "purpose": "Material-styled trends and line series."
+        },
+        {
+          "name": "pie",
+          "title": "Pie and donut chart",
+          "url": "https://mui.com/x/react-charts/pie/",
+          "purpose": "A few labeled parts of a whole."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://mui.com/x/react-charts/scatter/",
+          "purpose": "Compare pairs of observations."
+        },
+        {
+          "name": "sparkline",
+          "title": "Sparkline",
+          "url": "https://mui.com/x/react-charts/sparkline/",
+          "purpose": "Compact chart UI in metric cards."
+        },
+        {
+          "name": "gauge",
+          "title": "Gauge",
+          "url": "https://mui.com/x/react-charts/gauge/",
+          "purpose": "Show one bounded metric with its scale."
+        }
+      ]
+    },
+    {
+      "slug": "unovis",
+      "name": "Unovis",
+      "url": "https://unovis.dev/",
+      "repository": "https://github.com/f5/unovis",
+      "package": "@unovis/react",
+      "packages": [
+        "@unovis/react",
+        "@unovis/ts"
+      ],
+      "license": "Apache-2.0",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Composable chart UI and relationship views with framework wrappers and shared visual primitives.",
+      "notes": "These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://unovis.dev/docs/components/Line",
+          "purpose": "Compose readable trend lines and axes."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://unovis.dev/docs/components/Area",
+          "purpose": "Layer measured trend areas."
+        },
+        {
+          "name": "bar",
+          "title": "Grouped bar chart",
+          "url": "https://unovis.dev/docs/components/GroupedBar",
+          "purpose": "Compare categories with grouped series."
+        },
+        {
+          "name": "stacked-bar",
+          "title": "Stacked bar chart",
+          "url": "https://unovis.dev/docs/components/StackedBar",
+          "purpose": "Show category contributions with stacked bars.",
+          "tags": [
+            "stacked"
+          ]
+        },
+        {
+          "name": "donut",
+          "title": "Donut chart",
+          "url": "https://unovis.dev/docs/components/Donut",
+          "purpose": "A compact composable ring summary."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://unovis.dev/docs/components/Scatter",
+          "purpose": "Explore paired numeric observations."
+        },
+        {
+          "name": "network",
+          "title": "Relationship graph",
+          "url": "https://unovis.dev/docs/components/Graph",
+          "purpose": "Explore connected entities rather than numerical axes.",
+          "category": "graph"
+        }
+      ]
+    },
+    {
+      "slug": "victory",
+      "name": "Victory",
+      "url": "https://nearform.com/open-source/victory/",
+      "repository": "https://github.com/FormidableLabs/victory",
+      "package": "victory",
+      "packages": [
+        "victory"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Composable React chart components with theme and interaction containers.",
+      "notes": "This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://nearform.com/open-source/victory/docs/charts/line",
+          "purpose": "Compose trends with a custom chart theme."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://nearform.com/open-source/victory/docs/charts/bar",
+          "purpose": "Compare categories with configurable bar shapes."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://nearform.com/open-source/victory/docs/charts/area",
+          "purpose": "Filled trend regions with shared axes."
+        },
+        {
+          "name": "pie",
+          "title": "Pie chart",
+          "url": "https://nearform.com/open-source/victory/docs/charts/pie",
+          "purpose": "Labeled part-to-whole sectors."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://nearform.com/open-source/victory/docs/charts/scatter",
+          "purpose": "Render observations with configurable point symbols."
+        },
+        {
+          "name": "candlestick",
+          "title": "Candlestick chart",
+          "url": "https://nearform.com/open-source/victory/docs/charts/candlestick",
+          "purpose": "Show open/high/low/close observations."
+        }
+      ]
+    },
+    {
+      "slug": "frappe-charts",
+      "name": "Frappe Charts",
+      "url": "https://frappe.io/charts/",
+      "repository": "https://github.com/frappe/charts",
+      "package": "frappe-charts",
+      "packages": [
+        "frappe-charts"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "minimal",
+        "trustworthy"
+      ],
+      "description": "Framework-neutral SVG charts with concise dashboard defaults and activity heatmaps.",
+      "notes": "Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://frappe.io/charts/docs/basic/basic_chart",
+          "purpose": "Simple trends using the axis-chart API."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://frappe.io/charts/docs/basic/basic_chart",
+          "purpose": "Category bars using the axis-chart API."
+        },
+        {
+          "name": "pie",
+          "title": "Pie chart",
+          "url": "https://frappe.io/charts/docs/basic/aggr_sliced_diags",
+          "purpose": "A few parts of a whole."
+        },
+        {
+          "name": "percentage",
+          "title": "Percentage chart",
+          "url": "https://frappe.io/charts/docs/basic/aggr_sliced_diags",
+          "purpose": "Segmented part-to-whole totals."
+        },
+        {
+          "name": "heatmap",
+          "title": "Activity heatmap",
+          "url": "https://frappe.io/charts/docs/basic/heatmap",
+          "purpose": "Time-based activity levels in a compact matrix."
+        }
+      ]
+    },
+    {
+      "slug": "layerchart",
+      "name": "LayerChart",
+      "url": "https://www.layerchart.com/",
+      "repository": "https://github.com/techniq/layerchart",
+      "package": "layerchart",
+      "packages": [
+        "layerchart"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg",
+        "canvas",
+        "dom"
+      ],
+      "category": "chart",
+      "moods": [
+        "refined",
+        "technical"
+      ],
+      "description": "Svelte chart components and primitives for custom chart UI, gradients, patterns and interaction.",
+      "notes": "Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://www.layerchart.com/docs/components/LineChart",
+          "purpose": "Svelte trend chart UI."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://www.layerchart.com/docs/components/AreaChart",
+          "purpose": "Svelte filled trend chart UI."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://www.layerchart.com/docs/components/BarChart",
+          "purpose": "Category chart UI in a Svelte project."
+        },
+        {
+          "name": "pie",
+          "title": "Pie chart",
+          "url": "https://www.layerchart.com/docs/components/PieChart",
+          "purpose": "Svelte part-to-whole chart UI."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter chart",
+          "url": "https://www.layerchart.com/docs/components/ScatterChart",
+          "purpose": "Paired observations in a layered chart."
+        },
+        {
+          "name": "area-gradient",
+          "title": "Gradient area composition",
+          "url": "https://www.layerchart.com/docs/components/LinearGradient",
+          "purpose": "Apply an area fill using the gradient primitive and chart composition.",
+          "tags": [
+            "area",
+            "gradient"
+          ]
+        },
+        {
+          "name": "area-pattern",
+          "title": "Patterned area composition",
+          "url": "https://www.layerchart.com/docs/components/Pattern",
+          "purpose": "Apply a patterned area fill using chart primitives.",
+          "tags": [
+            "area",
+            "pattern"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "chartist",
+      "name": "Chartist",
+      "url": "https://chartist.dev/",
+      "repository": "https://github.com/chartist-js/chartist",
+      "package": "chartist",
+      "packages": [
+        "chartist"
+      ],
+      "license": "MIT OR WTFPL",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "minimal",
+        "technical"
+      ],
+      "description": "CSS-styled SVG charts with responsive layouts and explicit visual-variant examples.",
+      "notes": "Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://chartist.dev/examples/line/simple/",
+          "purpose": "A responsive CSS-styled line chart."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://chartist.dev/examples/line/area/",
+          "purpose": "A filled SVG trend area."
+        },
+        {
+          "name": "stacked-bar",
+          "title": "Stacked bar chart",
+          "url": "https://chartist.dev/examples/bar/stacked/",
+          "purpose": "Stacked category comparisons.",
+          "tags": [
+            "stacked"
+          ]
+        },
+        {
+          "name": "donut",
+          "title": "Donut chart",
+          "url": "https://chartist.dev/examples/pie/donut-chart/",
+          "purpose": "A ring chart with CSS styling."
+        },
+        {
+          "name": "pie-labels",
+          "title": "Pie chart with labels",
+          "url": "https://chartist.dev/examples/pie/custom-labels/",
+          "purpose": "Direct labels on a part-to-whole chart.",
+          "tags": [
+            "labels"
+          ]
+        },
+        {
+          "name": "line-dots",
+          "title": "Line chart with custom points",
+          "url": "https://chartist.dev/examples/line/modify-drawing/",
+          "purpose": "Customize plotted point rendering using draw events.",
+          "tags": [
+            "dots"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "billboard",
+      "name": "Billboard.js",
+      "url": "https://naver.github.io/billboard.js/",
+      "repository": "https://github.com/naver/billboard.js",
+      "package": "billboard.js",
+      "packages": [
+        "billboard.js"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "svg"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Framework-neutral D3-based chart UI with named chart types and reusable configuration.",
+      "notes": "Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://naver.github.io/billboard.js/demo/#Chart.LineChart",
+          "purpose": "Compare trends with configurable SVG styling."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://naver.github.io/billboard.js/demo/#Chart.BarChart",
+          "purpose": "Compare discrete category values."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://naver.github.io/billboard.js/demo/#Chart.AreaChart",
+          "purpose": "Filled trend regions."
+        },
+        {
+          "name": "donut",
+          "title": "Donut chart",
+          "url": "https://naver.github.io/billboard.js/demo/#Chart.DonutChart",
+          "purpose": "A compact ring summary."
+        },
+        {
+          "name": "step",
+          "title": "Stepped line chart",
+          "url": "https://naver.github.io/billboard.js/demo/#Chart.StepChart",
+          "purpose": "Represent changes using discrete step segments.",
+          "tags": [
+            "line",
+            "step"
+          ]
+        },
+        {
+          "name": "stacked-bar",
+          "title": "Stacked bar chart",
+          "url": "https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart",
+          "purpose": "Layer contributions within category totals.",
+          "tags": [
+            "stacked"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ag-charts",
+      "name": "AG Charts Community",
+      "url": "https://www.ag-grid.com/charts/javascript/",
+      "repository": "https://github.com/ag-grid/ag-charts",
+      "package": "ag-charts-community",
+      "packages": [
+        "ag-charts-community"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Free Community chart types for framework-neutral dashboard and reporting interfaces.",
+      "notes": "Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://www.ag-grid.com/charts/javascript/line-series/",
+          "purpose": "Community trend lines with chart themes."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://www.ag-grid.com/charts/javascript/bar-series/",
+          "purpose": "Community category bar comparisons."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://www.ag-grid.com/charts/javascript/area-series/",
+          "purpose": "Community filled trend series."
+        },
+        {
+          "name": "pie",
+          "title": "Pie chart",
+          "url": "https://www.ag-grid.com/charts/javascript/pie-series/",
+          "purpose": "Community part-to-whole sectors."
+        },
+        {
+          "name": "scatter",
+          "title": "Scatter plot",
+          "url": "https://www.ag-grid.com/charts/javascript/scatter-series/",
+          "purpose": "Community paired numeric observations."
+        }
+      ]
+    },
+    {
+      "slug": "vchart",
+      "name": "VisActor VChart",
+      "url": "https://www.visactor.io/vchart",
+      "repository": "https://github.com/VisActor/VChart",
+      "package": "@visactor/vchart",
+      "packages": [
+        "@visactor/vchart"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Specification-driven charts with theme, layout and presentation-oriented chart options.",
+      "notes": "Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Line chart",
+          "url": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Line",
+          "purpose": "Style trend lines through a chart spec."
+        },
+        {
+          "name": "bar",
+          "title": "Bar chart",
+          "url": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Bar",
+          "purpose": "Style category comparisons through a chart spec."
+        },
+        {
+          "name": "area",
+          "title": "Area chart",
+          "url": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Area",
+          "purpose": "Filled trend regions through a chart spec."
+        },
+        {
+          "name": "radar",
+          "title": "Radar chart",
+          "url": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Radar",
+          "purpose": "Compare multiple labeled axes."
+        },
+        {
+          "name": "heatmap",
+          "title": "Heatmap",
+          "url": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Heatmap",
+          "purpose": "A color-coded matrix of numeric values."
+        }
+      ]
+    },
+    {
+      "slug": "vis-network",
+      "name": "vis-network",
+      "url": "https://visjs.github.io/vis-network/",
+      "repository": "https://github.com/visjs/vis-network",
+      "package": "vis-network",
+      "packages": [
+        "vis-network",
+        "vis-data"
+      ],
+      "license": "(Apache-2.0 OR MIT)",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Interactive Canvas network diagrams with hierarchical layout, node styles and manipulation controls.",
+      "notes": "Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "network",
+          "title": "Network diagram",
+          "url": "https://visjs.github.io/vis-network/examples/network/basic_usage/standalone.html",
+          "purpose": "A basic interactive node-and-edge graph."
+        },
+        {
+          "name": "hierarchy",
+          "title": "Hierarchical network",
+          "url": "https://visjs.github.io/vis-network/examples/network/layout/hierarchicalLayout.html",
+          "purpose": "Arrange directed relationships in levels."
+        },
+        {
+          "name": "node-styles",
+          "title": "Styled network nodes",
+          "url": "https://visjs.github.io/vis-network/examples/network/nodeStyles/groups.html",
+          "purpose": "Use distinct node styles for domain groups."
+        },
+        {
+          "name": "highlight",
+          "title": "Neighborhood highlighting",
+          "url": "https://visjs.github.io/vis-network/examples/network/exampleApplications/neighbourhoodHighlight.html",
+          "purpose": "Focus the connections around selected entities."
+        },
+        {
+          "name": "editable",
+          "title": "Editable network",
+          "url": "https://visjs.github.io/vis-network/examples/network/other/manipulation.html",
+          "purpose": "Manipulate graph nodes and edges with application callbacks."
+        }
+      ]
+    },
+    {
+      "slug": "react-force-graph",
+      "name": "React Force Graph 2D",
+      "url": "https://github.com/vasturiano/react-force-graph",
+      "repository": "https://github.com/vasturiano/react-force-graph",
+      "package": "react-force-graph-2d",
+      "packages": [
+        "react-force-graph-2d"
+      ],
+      "license": "MIT",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "graph",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "React Canvas force-directed graphs with custom node drawing, labels and selection.",
+      "notes": "These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "custom-nodes",
+          "title": "Custom 2D graph nodes",
+          "url": "https://vasturiano.github.io/react-force-graph/example/custom-node-shape/index-canvas.html",
+          "purpose": "Draw domain-specific node shapes on Canvas."
+        },
+        {
+          "name": "node-labels",
+          "title": "Labeled 2D graph nodes",
+          "url": "https://vasturiano.github.io/react-force-graph/example/text-nodes/index-2d.html",
+          "purpose": "Readable Canvas labels for connected entities."
+        },
+        {
+          "name": "highlight",
+          "title": "Highlighted graph neighborhoods",
+          "url": "https://vasturiano.github.io/react-force-graph/example/highlight/",
+          "purpose": "Focus selected nodes and their connected links on a 2D Canvas."
+        },
+        {
+          "name": "collision",
+          "title": "Collision-aware network layout",
+          "url": "https://vasturiano.github.io/react-force-graph/example/collision-detection/",
+          "purpose": "Avoid node overlap in a force-directed Canvas graph."
+        },
+        {
+          "name": "fit-to-canvas",
+          "title": "Responsive 2D network",
+          "url": "https://vasturiano.github.io/react-force-graph/example/fit-to-canvas/",
+          "purpose": "Fit the network to a changing parent container."
+        }
+      ]
+    },
+    {
+      "slug": "lightweight-charts",
+      "name": "TradingView Lightweight Charts",
+      "url": "https://tradingview.github.io/lightweight-charts/docs",
+      "repository": "https://github.com/tradingview/lightweight-charts",
+      "package": "lightweight-charts",
+      "packages": [
+        "lightweight-charts"
+      ],
+      "license": "Apache-2.0",
+      "renderers": [
+        "canvas"
+      ],
+      "category": "chart",
+      "moods": [
+        "technical",
+        "refined"
+      ],
+      "description": "Canvas time-series and financial charts with line, area, baseline and OHLC styling.",
+      "notes": "Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions.",
+      "verified": "2026-10-19",
+      "examples": [
+        {
+          "name": "line",
+          "title": "Financial line chart",
+          "url": "https://tradingview.github.io/lightweight-charts/docs/series-types#line",
+          "purpose": "A Canvas time series with configurable line styling."
+        },
+        {
+          "name": "area",
+          "title": "Financial area chart",
+          "url": "https://tradingview.github.io/lightweight-charts/docs/series-types#area",
+          "purpose": "A filled Canvas time-series surface."
+        },
+        {
+          "name": "candlestick",
+          "title": "Candlestick chart",
+          "url": "https://tradingview.github.io/lightweight-charts/docs/series-types#candlestick",
+          "purpose": "Open/high/low/close observations with body and wick styles."
+        },
+        {
+          "name": "baseline",
+          "title": "Baseline chart",
+          "url": "https://tradingview.github.io/lightweight-charts/docs/series-types#baseline",
+          "purpose": "Different fills above and below a meaningful baseline."
+        },
+        {
+          "name": "volume-bars",
+          "title": "Time-series volume bars",
+          "url": "https://tradingview.github.io/lightweight-charts/docs/series-types#histogram",
+          "purpose": "The upstream HistogramSeries draws time-indexed bars, not a statistical distribution histogram.",
+          "tags": [
+            "bar",
+            "time-series"
+          ]
+        }
+      ]
     }
   ]
 }

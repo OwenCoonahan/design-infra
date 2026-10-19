@@ -1,0 +1,252 @@
+[
+  {
+    "id": "victory/area",
+    "source": "victory",
+    "name": "area",
+    "title": "Victory · Area chart",
+    "description": "Filled trend regions with shared axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/area",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "victory/bar",
+    "source": "victory",
+    "name": "bar",
+    "title": "Victory · Bar chart",
+    "description": "Compare categories with configurable bar shapes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/bar",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "victory/candlestick",
+    "source": "victory",
+    "name": "candlestick",
+    "title": "Victory · Candlestick chart",
+    "description": "Show open/high/low/close observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/candlestick",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "victory/library",
+    "source": "victory",
+    "name": "library",
+    "title": "Victory",
+    "description": "Composable React chart components with theme and interaction containers.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "victory/line",
+    "source": "victory",
+    "name": "line",
+    "title": "Victory · Line chart",
+    "description": "Compose trends with a custom chart theme.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/line",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "victory/pie",
+    "source": "victory",
+    "name": "pie",
+    "title": "Victory · Pie chart",
+    "description": "Labeled part-to-whole sectors.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/pie",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "victory/scatter",
+    "source": "victory",
+    "name": "scatter",
+    "title": "Victory · Scatter plot",
+    "description": "Render observations with configurable point symbols.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/scatter",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

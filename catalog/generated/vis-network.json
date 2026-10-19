@@ -1,0 +1,227 @@
+[
+  {
+    "id": "vis-network/editable",
+    "source": "vis-network",
+    "name": "editable",
+    "title": "vis-network · Editable network",
+    "description": "Manipulate graph nodes and edges with application callbacks.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "editable"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/other/manipulation.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/other/manipulation.html"
+  },
+  {
+    "id": "vis-network/hierarchy",
+    "source": "vis-network",
+    "name": "hierarchy",
+    "title": "vis-network · Hierarchical network",
+    "description": "Arrange directed relationships in levels.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "hierarchy"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/layout/hierarchicalLayout.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/layout/hierarchicalLayout.html"
+  },
+  {
+    "id": "vis-network/highlight",
+    "source": "vis-network",
+    "name": "highlight",
+    "title": "vis-network · Neighborhood highlighting",
+    "description": "Focus the connections around selected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "highlight"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/exampleApplications/neighbourhoodHighlight.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/exampleApplications/neighbourhoodHighlight.html"
+  },
+  {
+    "id": "vis-network/library",
+    "source": "vis-network",
+    "name": "library",
+    "title": "vis-network",
+    "description": "Interactive Canvas network diagrams with hierarchical layout, node styles and manipulation controls.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "vis-network/network",
+    "source": "vis-network",
+    "name": "network",
+    "title": "vis-network · Network diagram",
+    "description": "A basic interactive node-and-edge graph.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/basic_usage/standalone.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/basic_usage/standalone.html"
+  },
+  {
+    "id": "vis-network/node-styles",
+    "source": "vis-network",
+    "name": "node-styles",
+    "title": "vis-network · Styled network nodes",
+    "description": "Use distinct node styles for domain groups.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "node-styles"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/nodeStyles/groups.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/nodeStyles/groups.html"
+  }
+]

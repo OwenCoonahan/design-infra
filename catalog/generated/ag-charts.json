@@ -1,0 +1,216 @@
+[
+  {
+    "id": "ag-charts/area",
+    "source": "ag-charts",
+    "name": "area",
+    "title": "AG Charts Community · Area chart",
+    "description": "Community filled trend series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/area-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "ag-charts/bar",
+    "source": "ag-charts",
+    "name": "bar",
+    "title": "AG Charts Community · Bar chart",
+    "description": "Community category bar comparisons.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/bar-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "ag-charts/library",
+    "source": "ag-charts",
+    "name": "library",
+    "title": "AG Charts Community",
+    "description": "Free Community chart types for framework-neutral dashboard and reporting interfaces.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "ag-charts/line",
+    "source": "ag-charts",
+    "name": "line",
+    "title": "AG Charts Community · Line chart",
+    "description": "Community trend lines with chart themes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/line-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "ag-charts/pie",
+    "source": "ag-charts",
+    "name": "pie",
+    "title": "AG Charts Community · Pie chart",
+    "description": "Community part-to-whole sectors.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/pie-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "ag-charts/scatter",
+    "source": "ag-charts",
+    "name": "scatter",
+    "title": "AG Charts Community · Scatter plot",
+    "description": "Community paired numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/scatter-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

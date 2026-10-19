@@ -1,0 +1,308 @@
+[
+  {
+    "id": "layerchart/area",
+    "source": "layerchart",
+    "name": "area",
+    "title": "LayerChart · Area chart",
+    "description": "Svelte filled trend chart UI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/AreaChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/area-gradient",
+    "source": "layerchart",
+    "name": "area-gradient",
+    "title": "LayerChart · Gradient area composition",
+    "description": "Apply an area fill using the gradient primitive and chart composition.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "area",
+      "gradient",
+      "integration-recipe",
+      "area-gradient"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/LinearGradient",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/area-pattern",
+    "source": "layerchart",
+    "name": "area-pattern",
+    "title": "LayerChart · Patterned area composition",
+    "description": "Apply a patterned area fill using chart primitives.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "area",
+      "pattern",
+      "integration-recipe",
+      "area-pattern"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/Pattern",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/bar",
+    "source": "layerchart",
+    "name": "bar",
+    "title": "LayerChart · Bar chart",
+    "description": "Category chart UI in a Svelte project.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/BarChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/library",
+    "source": "layerchart",
+    "name": "library",
+    "title": "LayerChart",
+    "description": "Svelte chart components and primitives for custom chart UI, gradients, patterns and interaction.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/line",
+    "source": "layerchart",
+    "name": "line",
+    "title": "LayerChart · Line chart",
+    "description": "Svelte trend chart UI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/LineChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/pie",
+    "source": "layerchart",
+    "name": "pie",
+    "title": "LayerChart · Pie chart",
+    "description": "Svelte part-to-whole chart UI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/PieChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "layerchart/scatter",
+    "source": "layerchart",
+    "name": "scatter",
+    "title": "LayerChart · Scatter chart",
+    "description": "Paired observations in a layered chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/ScatterChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

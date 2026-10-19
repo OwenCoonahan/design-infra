@@ -1,0 +1,297 @@
+[
+  {
+    "id": "unovis/area",
+    "source": "unovis",
+    "name": "area",
+    "title": "Unovis · Area chart",
+    "description": "Layer measured trend areas.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Area",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "unovis/bar",
+    "source": "unovis",
+    "name": "bar",
+    "title": "Unovis · Grouped bar chart",
+    "description": "Compare categories with grouped series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/GroupedBar",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "unovis/donut",
+    "source": "unovis",
+    "name": "donut",
+    "title": "Unovis · Donut chart",
+    "description": "A compact composable ring summary.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Donut",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "unovis/library",
+    "source": "unovis",
+    "name": "library",
+    "title": "Unovis",
+    "description": "Composable chart UI and relationship views with framework wrappers and shared visual primitives.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "unovis/line",
+    "source": "unovis",
+    "name": "line",
+    "title": "Unovis · Line chart",
+    "description": "Compose readable trend lines and axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Line",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "unovis/network",
+    "source": "unovis",
+    "name": "network",
+    "title": "Unovis · Relationship graph",
+    "description": "Explore connected entities rather than numerical axes.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Graph",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ]
+  },
+  {
+    "id": "unovis/scatter",
+    "source": "unovis",
+    "name": "scatter",
+    "title": "Unovis · Scatter plot",
+    "description": "Explore paired numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Scatter",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "unovis/stacked-bar",
+    "source": "unovis",
+    "name": "stacked-bar",
+    "title": "Unovis · Stacked bar chart",
+    "description": "Show category contributions with stacked bars.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "stacked",
+      "integration-recipe",
+      "stacked-bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/StackedBar",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]
