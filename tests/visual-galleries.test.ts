@@ -172,7 +172,7 @@ test("all explicit adapters resolve catalog entries and migrated effects cannot 
       catalog.some((e: CatalogEntry) => e.id === id),
       id,
     )
-    assert.ok(["oc", "loading", "showcase"].includes(demo.adapter))
+    assert.ok(["oc", "loading", "showcase", "charts", "graphs"].includes(demo.adapter))
     assert.ok(demo.width > 0 && demo.height > 0)
   }
   for (const id of [

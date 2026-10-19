@@ -3,6 +3,8 @@ import { notFound } from "next/navigation"
 
 import { LoadingDemo } from "@/components/demos/loading-demos"
 import { ShowcaseDemo } from "@/components/demos/showcase-demos"
+import { ChartDemo } from "@/components/demos/chart-demos"
+import { GraphDemo } from "@/components/demos/graph-demos"
 import { PreviewShell } from "@/components/site/preview-shell"
 import { PreviewPlayback } from "@/components/site/preview-playback"
 import { previewDemos } from "@/lib/catalog/previews"
@@ -37,6 +39,8 @@ export default async function PreviewPage(props: PageProps<"/preview/[source]/[n
   if (supported && (!own || search.surface === "neutral")) {
     const compact = search.presentation === "hero"
     const demo = supported.adapter === "showcase" ? <ShowcaseDemo id={id} compact={compact} /> :
+      supported.adapter === "charts" ? <ChartDemo id={id} /> :
+      supported.adapter === "graphs" ? <GraphDemo id={id} /> :
       supported.adapter === "loading" || id === "oc/agent-status" ? <LoadingDemo id={id} compact={compact} /> : OC_DEMOS[name]?.()
     if (!demo) notFound()
     return (
@@ -45,7 +49,7 @@ export default async function PreviewPage(props: PageProps<"/preview/[source]/[n
         className="dark flex min-h-screen flex-col bg-background font-sans text-foreground"
       >
         <div data-preview-content className="my-auto w-full">
-          <PreviewPlayback initialPlaying={search.playback !== "paused"}><PreviewShell>{demo}</PreviewShell></PreviewPlayback>
+          <PreviewPlayback initialPlaying={search.playback !== "paused"}><PreviewShell ready={supported.adapter !== "graphs"}>{demo}</PreviewShell></PreviewPlayback>
         </div>
       </div>
     )

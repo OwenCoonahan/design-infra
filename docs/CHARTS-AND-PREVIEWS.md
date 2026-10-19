@@ -1,6 +1,6 @@
 # Charts, graphs and broader live previews
 
-Updated 2026-10-19. Library discovery, graph routing and chart-form/treatment filtering are implemented. The preview expansion and dedicated chart workbench below are a roadmap, not shipped capabilities.
+Updated 2026-10-19. Library discovery, graph routing and chart-form/treatment filtering are implemented. The first hosted preview expansion is implemented below; the dedicated chart workbench remains a roadmap.
 
 The shared [roadmap](ROADMAP.md) also tracks the planned public changelog.
 
@@ -42,7 +42,7 @@ The new sources extend chart UI styles and existing-stack options, rather than f
 
 More live previews will help substantially. Start with supported free examples people can actually use, and cover meaningful differences within each component type. Avoid a target of thousands of autoplaying frames or a promise that every upstream entry has a maintained local clone.
 
-1. **First: 12 representative chart demos and treatments.** Compare several visual styles of line/area/bar charts, compact sparklines, a matrix and distributions. Include different component collections rather than making all examples look like the same default chart. Begin with existing Recharts/shadcn dependencies; choose additional component libraries after checking the exact examples and compatibility. Give each demo actual hover/selection/data-update behavior, not just an animated entrance. Add workflow/network previews on their separate Graphs shelf afterward.
+1. **First batch implemented: 27 additional interacting previews.** Twenty upstream shadcn chart examples, five Chart.js compositions and two graph demos use real engines with sample-data/palette controls or node selection/dragging. Together with Dither Chart, this gives 26 chart and two graph demos, and 64 hosted demos overall. Package versions are Chart.js 4.5.1, React Flow 12.12.0, React Force Graph 2D 1.29.2 and existing Recharts 3.8.0. Licences and source hashes accompany explicit adapters. This verifies adapted demos in this repository, not independent friend trials or every indexed library. **Next coverage:** Compare several visual styles of line/area/bar charts, compact sparklines, a matrix and distributions. Include different component collections rather than making all examples look like the same default chart. Begin with existing Recharts/shadcn dependencies; choose additional component libraries after checking the exact examples and compatibility. Give each demo actual hover/selection/data-update behavior, not just an animated entrance. Add workflow/network previews on their separate Graphs shelf afterward.
 2. **Then: fill gaps in common component galleries.** Buttons, forms, navigation, cards, pricing and table states deserve usable representatives. Expand Loading's styles where existing genuine waiting states lack useful coverage. Prefer a few reliable examples per pattern over many duplicate variants.
 3. **Then: specialized views.** Scientific/3D charts, larger network layouts and financial charts need stronger test fixtures, labeling and performance checks. Keep external links available while adapters are unverified.
 
@@ -78,4 +78,4 @@ For each selected adapter:
 - Measure representative workloads on the actual adapter. Publish sample size/device context beside any performance claim; do not reuse a vendor headline as a benchmark.
 - Generate posters from hosted stages, run visual smoke checks and normal generation/tests/checks/lint/build, merge after CI and verify the deployed examples.
 
-The initial measurable target is twelve reliable, interacting chart/graph demos and useful coverage across common component types. Source-only reference counts are reported separately from visual and hosted-demo coverage. Friend trials should record whether people found, previewed and successfully adapted a suitable example; automated checks are not independent friend trials.
+The first batch exceeds the initial twelve-demo target. Further batches should expand library/style variety and useful coverage across common component types. Source-only reference counts are reported separately from visual and hosted-demo coverage. Friend trials should record whether people found, previewed and successfully adapted a suitable example; automated checks are not independent friend trials.

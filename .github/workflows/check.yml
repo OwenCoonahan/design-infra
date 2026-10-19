@@ -31,6 +31,7 @@ jobs:
             if curl --fail --silent --location http://localhost:3330/ > /dev/null; then break; fi
             sleep 1
           done
+          pnpm smoke:charts --base http://localhost:3330
           pnpm smoke:visual --base http://localhost:3330
           pnpm smoke:landing --base http://localhost:3330
           pnpm smoke:requests --base http://localhost:3330
