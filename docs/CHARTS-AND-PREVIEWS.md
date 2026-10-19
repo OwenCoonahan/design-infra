@@ -1,6 +1,6 @@
 # Charts, graphs and broader live previews
 
-Updated 2026-10-18. Library discovery and graph routing are implemented in this batch. The preview expansion and dedicated chart workbench below are a roadmap, not shipped capabilities.
+Updated 2026-10-19. Library discovery, graph routing and chart-form/treatment filtering are implemented. The preview expansion and dedicated chart workbench below are a roadmap, not shipped capabilities.
 
 The shared [roadmap](ROADMAP.md) also tracks the planned public changelog.
 
@@ -31,6 +31,12 @@ For chart UI variety, it also adds Bklit's 16 public MIT chart components plus e
 | Explanatory diagrams | Mermaid or existing flowchart components |
 
 The npm libraries are separate from their vendors' hosted products, support plans and paid example collections. Free-first discovery remains unchanged. React Flow Pro examples are not imported into this collection. Retain license notices when integrating; this repo's source-vendoring policy remains MIT/Apache only.
+
+### Second library expansion — 2026-10-19
+
+Add 13 sources and 93 records: Mantine Charts, MUI X Charts Community, Unovis, Victory, Frappe Charts, LayerChart, Chartist, Billboard.js, AG Charts Community, VChart, vis-network, React Force Graph 2D and TradingView Lightweight Charts. The package index now covers 29 libraries and 160 recipes, alongside Bklit/Tremor and existing chart collections. The overall catalog has 274 chart-tagged and 48 graph-tagged entries; those counts include package cards and recipes, not unique finished components or hosted demos.
+
+The new sources extend chart UI styles and existing-stack options, rather than forcing a new framework into consumers. Chartist's MIT option and vis-network's Apache/MIT expression are explicitly audited; unknown license strings still fail sync. MUI/AG commercial imports stay excluded, financial chart attribution is documented, and 2D force-graph links are checked against the actual renderer used by the upstream examples. Public metadata and URLs are verified; runtime integration, accessibility/performance and native preview adapters still require separate work. No new visualization package is installed into the catalog app or default bootstrap.
 
 ## Expand previews by useful coverage
 

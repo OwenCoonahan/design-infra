@@ -8,10 +8,10 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 
 | mood | feels like | design systems | inspiration | entries |
 |---|---|---|---|---|
-| **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 40 |
-| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 826 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1167 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 432 |
+| **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 53 |
+| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 839 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1247 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 519 |
 | **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 100 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 66 |
 | **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 947 |
@@ -21,7 +21,7 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 | **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Motion](../inspiration/motion/README.md) | 7 |
 | **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 77 |
 | **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 155 |
-| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 955 |
+| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 961 |
 
 ## Calm
 

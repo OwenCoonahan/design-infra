@@ -3542,6 +3542,115 @@
     "live": "https://ui.aceternity.com/components/world-map"
   },
   {
+    "id": "ag-charts/bar",
+    "source": "ag-charts",
+    "name": "bar",
+    "title": "AG Charts Community · Bar chart",
+    "description": "Community category bar comparisons.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/bar-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.ag-grid.com/charts/javascript/bar-series/"
+  },
+  {
+    "id": "ag-charts/library",
+    "source": "ag-charts",
+    "name": "library",
+    "title": "AG Charts Community",
+    "description": "Free Community chart types for framework-neutral dashboard and reporting interfaces.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.ag-grid.com/charts/javascript/"
+  },
+  {
+    "id": "ag-charts/line",
+    "source": "ag-charts",
+    "name": "line",
+    "title": "AG Charts Community · Line chart",
+    "description": "Community trend lines with chart themes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/line-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.ag-grid.com/charts/javascript/line-series/"
+  },
+  {
     "id": "agentation/agentation",
     "source": "agentation",
     "name": "agentation",
@@ -5574,6 +5683,115 @@
     }
   },
   {
+    "id": "billboard/bar",
+    "source": "billboard",
+    "name": "bar",
+    "title": "Billboard.js · Bar chart",
+    "description": "Compare discrete category values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.BarChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.BarChart"
+  },
+  {
+    "id": "billboard/library",
+    "source": "billboard",
+    "name": "library",
+    "title": "Billboard.js",
+    "description": "Framework-neutral D3-based chart UI with named chart types and reusable configuration.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/"
+  },
+  {
+    "id": "billboard/line",
+    "source": "billboard",
+    "name": "line",
+    "title": "Billboard.js · Line chart",
+    "description": "Compare trends with configurable SVG styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.LineChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.LineChart"
+  },
+  {
     "id": "bklit/area-chart",
     "source": "bklit",
     "name": "area-chart",
@@ -6120,6 +6338,115 @@
       ],
       "cost": "medium"
     }
+  },
+  {
+    "id": "chartist/area",
+    "source": "chartist",
+    "name": "area",
+    "title": "Chartist · Area chart",
+    "description": "A filled SVG trend area.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/line/area/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/line/area/"
+  },
+  {
+    "id": "chartist/library",
+    "source": "chartist",
+    "name": "library",
+    "title": "Chartist",
+    "description": "CSS-styled SVG charts with responsive layouts and explicit visual-variant examples.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/"
+  },
+  {
+    "id": "chartist/line",
+    "source": "chartist",
+    "name": "line",
+    "title": "Chartist · Line chart",
+    "description": "A responsive CSS-styled line chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/line/simple/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/line/simple/"
   },
   {
     "id": "chartjs/bar",
@@ -7158,6 +7485,115 @@
     "live": "https://echarts.apache.org/examples/en/editor.html?c=line-simple"
   },
   {
+    "id": "frappe-charts/bar",
+    "source": "frappe-charts",
+    "name": "bar",
+    "title": "Frappe Charts · Bar chart",
+    "description": "Category bars using the axis-chart API.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/basic_chart",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://frappe.io/charts/docs/basic/basic_chart"
+  },
+  {
+    "id": "frappe-charts/library",
+    "source": "frappe-charts",
+    "name": "library",
+    "title": "Frappe Charts",
+    "description": "Framework-neutral SVG charts with concise dashboard defaults and activity heatmaps.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://frappe.io/charts/"
+  },
+  {
+    "id": "frappe-charts/line",
+    "source": "frappe-charts",
+    "name": "line",
+    "title": "Frappe Charts · Line chart",
+    "description": "Simple trends using the axis-chart API.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/basic_chart",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://frappe.io/charts/docs/basic/basic_chart"
+  },
+  {
     "id": "inspiration/geometric-identity",
     "source": "inspiration",
     "name": "geometric-identity",
@@ -7904,6 +8340,121 @@
     "live": "https://www.kibo-ui.com/components/video-player"
   },
   {
+    "id": "layerchart/area",
+    "source": "layerchart",
+    "name": "area",
+    "title": "LayerChart · Area chart",
+    "description": "Svelte filled trend chart UI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/AreaChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/AreaChart"
+  },
+  {
+    "id": "layerchart/library",
+    "source": "layerchart",
+    "name": "library",
+    "title": "LayerChart",
+    "description": "Svelte chart components and primitives for custom chart UI, gradients, patterns and interaction.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/"
+  },
+  {
+    "id": "layerchart/line",
+    "source": "layerchart",
+    "name": "line",
+    "title": "LayerChart · Line chart",
+    "description": "Svelte trend chart UI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/LineChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/LineChart"
+  },
+  {
     "id": "librariesdev/border-beam",
     "source": "librariesdev",
     "name": "border-beam",
@@ -8263,6 +8814,115 @@
       "reducedMotion": true
     },
     "live": "https://libraries.dev/voice.html"
+  },
+  {
+    "id": "lightweight-charts/area",
+    "source": "lightweight-charts",
+    "name": "area",
+    "title": "TradingView Lightweight Charts · Financial area chart",
+    "description": "A filled Canvas time-series surface.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#area",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://tradingview.github.io/lightweight-charts/docs/series-types#area"
+  },
+  {
+    "id": "lightweight-charts/library",
+    "source": "lightweight-charts",
+    "name": "library",
+    "title": "TradingView Lightweight Charts",
+    "description": "Canvas time-series and financial charts with line, area, baseline and OHLC styling.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://tradingview.github.io/lightweight-charts/docs"
+  },
+  {
+    "id": "lightweight-charts/line",
+    "source": "lightweight-charts",
+    "name": "line",
+    "title": "TradingView Lightweight Charts · Financial line chart",
+    "description": "A Canvas time series with configurable line styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#line",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://tradingview.github.io/lightweight-charts/docs/series-types#line"
   },
   {
     "id": "liquidglass/liquid-glass",
@@ -8971,6 +9631,127 @@
       "reducedMotion": false
     },
     "live": "https://magicui.design/docs/components/text-animate"
+  },
+  {
+    "id": "mantine-charts/area",
+    "source": "mantine-charts",
+    "name": "area",
+    "title": "Mantine Charts · Area chart",
+    "description": "Filled trend charts within a Mantine dashboard.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/area-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/area-chart/"
+  },
+  {
+    "id": "mantine-charts/bar",
+    "source": "mantine-charts",
+    "name": "bar",
+    "title": "Mantine Charts · Bar chart",
+    "description": "Category comparisons with shared app styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/bar-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/bar-chart/"
+  },
+  {
+    "id": "mantine-charts/library",
+    "source": "mantine-charts",
+    "name": "library",
+    "title": "Mantine Charts",
+    "description": "Dashboard chart components that share Mantine styling, tooltips and application themes.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/getting-started/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/getting-started/"
   },
   {
     "id": "mermaid/flowchart",
@@ -10902,6 +11683,124 @@
     "live": "https://motion.dev/examples/react-text-scroll-word-reveal"
   },
   {
+    "id": "mui-charts/bar",
+    "source": "mui-charts",
+    "name": "bar",
+    "title": "MUI X Charts Community · Bar chart",
+    "description": "Material-styled category comparisons.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/bars/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/bars/"
+  },
+  {
+    "id": "mui-charts/library",
+    "source": "mui-charts",
+    "name": "library",
+    "title": "MUI X Charts Community",
+    "description": "Material-themed React chart UI from the free Community package.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/"
+  },
+  {
+    "id": "mui-charts/line",
+    "source": "mui-charts",
+    "name": "line",
+    "title": "MUI X Charts Community · Line chart",
+    "description": "Material-styled trends and line series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/lines/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/lines/"
+  },
+  {
     "id": "nivo/bar",
     "source": "nivo",
     "name": "bar",
@@ -12650,6 +13549,115 @@
       "graph"
     ],
     "live": "https://reactflow.dev/"
+  },
+  {
+    "id": "react-force-graph/custom-nodes",
+    "source": "react-force-graph",
+    "name": "custom-nodes",
+    "title": "React Force Graph 2D · Custom 2D graph nodes",
+    "description": "Draw domain-specific node shapes on Canvas.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "custom-nodes"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/custom-node-shape/index-canvas.html",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/custom-node-shape/index-canvas.html"
+  },
+  {
+    "id": "react-force-graph/library",
+    "source": "react-force-graph",
+    "name": "library",
+    "title": "React Force Graph 2D",
+    "description": "React Canvas force-directed graphs with custom node drawing, labels and selection.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://github.com/vasturiano/react-force-graph",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://github.com/vasturiano/react-force-graph"
+  },
+  {
+    "id": "react-force-graph/node-labels",
+    "source": "react-force-graph",
+    "name": "node-labels",
+    "title": "React Force Graph 2D · Labeled 2D graph nodes",
+    "description": "Readable Canvas labels for connected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "node-labels"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/text-nodes/index-2d.html",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/text-nodes/index-2d.html"
   },
   {
     "id": "recharts/bar",
@@ -14873,6 +15881,118 @@
     "live": "https://www.tremor.so/docs/visualizations/spark-chart"
   },
   {
+    "id": "unovis/area",
+    "source": "unovis",
+    "name": "area",
+    "title": "Unovis · Area chart",
+    "description": "Layer measured trend areas.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Area",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/docs/components/Area"
+  },
+  {
+    "id": "unovis/library",
+    "source": "unovis",
+    "name": "library",
+    "title": "Unovis",
+    "description": "Composable chart UI and relationship views with framework wrappers and shared visual primitives.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/"
+  },
+  {
+    "id": "unovis/line",
+    "source": "unovis",
+    "name": "line",
+    "title": "Unovis · Line chart",
+    "description": "Compose readable trend lines and axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Line",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/docs/components/Line"
+  },
+  {
     "id": "uplot/aligned",
     "source": "uplot",
     "name": "aligned",
@@ -14980,6 +16100,115 @@
       "chart"
     ],
     "live": "https://leeoniya.github.io/uPlot/demos/time-periods.html"
+  },
+  {
+    "id": "vchart/bar",
+    "source": "vchart",
+    "name": "bar",
+    "title": "VisActor VChart · Bar chart",
+    "description": "Style category comparisons through a chart spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Bar",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Bar"
+  },
+  {
+    "id": "vchart/library",
+    "source": "vchart",
+    "name": "library",
+    "title": "VisActor VChart",
+    "description": "Specification-driven charts with theme, layout and presentation-oriented chart options.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.visactor.io/vchart"
+  },
+  {
+    "id": "vchart/line",
+    "source": "vchart",
+    "name": "line",
+    "title": "VisActor VChart · Line chart",
+    "description": "Style trend lines through a chart spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Line",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Line"
   },
   {
     "id": "vega-lite/bar",
@@ -15098,6 +16327,227 @@
       "chart"
     ],
     "live": "https://vega.github.io/vega-lite/examples/line.html"
+  },
+  {
+    "id": "victory/bar",
+    "source": "victory",
+    "name": "bar",
+    "title": "Victory · Bar chart",
+    "description": "Compare categories with configurable bar shapes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/bar",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/docs/charts/bar"
+  },
+  {
+    "id": "victory/library",
+    "source": "victory",
+    "name": "library",
+    "title": "Victory",
+    "description": "Composable React chart components with theme and interaction containers.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/"
+  },
+  {
+    "id": "victory/line",
+    "source": "victory",
+    "name": "line",
+    "title": "Victory · Line chart",
+    "description": "Compose trends with a custom chart theme.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/line",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/docs/charts/line"
+  },
+  {
+    "id": "vis-network/hierarchy",
+    "source": "vis-network",
+    "name": "hierarchy",
+    "title": "vis-network · Hierarchical network",
+    "description": "Arrange directed relationships in levels.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "hierarchy"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/layout/hierarchicalLayout.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/layout/hierarchicalLayout.html"
+  },
+  {
+    "id": "vis-network/library",
+    "source": "vis-network",
+    "name": "library",
+    "title": "vis-network",
+    "description": "Interactive Canvas network diagrams with hierarchical layout, node styles and manipulation controls.",
+    "kind": "package",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/"
+  },
+  {
+    "id": "vis-network/network",
+    "source": "vis-network",
+    "name": "network",
+    "title": "vis-network · Network diagram",
+    "description": "A basic interactive node-and-edge graph.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/basic_usage/standalone.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/basic_usage/standalone.html"
   },
   {
     "id": "visx/barstack",
@@ -25982,6 +27432,117 @@
     "live": "https://ui.aceternity.com/live-preview/world-map-illustration"
   },
   {
+    "id": "ag-charts/area",
+    "source": "ag-charts",
+    "name": "area",
+    "title": "AG Charts Community · Area chart",
+    "description": "Community filled trend series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/area-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.ag-grid.com/charts/javascript/area-series/"
+  },
+  {
+    "id": "ag-charts/pie",
+    "source": "ag-charts",
+    "name": "pie",
+    "title": "AG Charts Community · Pie chart",
+    "description": "Community part-to-whole sectors.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/pie-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.ag-grid.com/charts/javascript/pie-series/"
+  },
+  {
+    "id": "ag-charts/scatter",
+    "source": "ag-charts",
+    "name": "scatter",
+    "title": "AG Charts Community · Scatter plot",
+    "description": "Community paired numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add ag-charts-community",
+    "docs": "https://www.ag-grid.com/charts/javascript/scatter-series/",
+    "dependencies": [
+      "ag-charts-community"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Only ag-charts-community is indexed. Register the current Community modules as documented; Enterprise modules, gated chart types and paid interactions are excluded. React/Angular/Vue wrappers are optional separate integrations. Confirm version-matched modules and size the chart container; destroy chart instances on unmount. Upstream: https://github.com/ag-grid/ag-charts. License: MIT. Package metadata: ag-charts-community@14.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.ag-grid.com/charts/javascript/scatter-series/"
+  },
+  {
     "id": "anatomy/afterburner",
     "source": "anatomy",
     "name": "afterburner",
@@ -34975,6 +36536,157 @@
     }
   },
   {
+    "id": "billboard/area",
+    "source": "billboard",
+    "name": "area",
+    "title": "Billboard.js · Area chart",
+    "description": "Filled trend regions.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.AreaChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.AreaChart"
+  },
+  {
+    "id": "billboard/donut",
+    "source": "billboard",
+    "name": "donut",
+    "title": "Billboard.js · Donut chart",
+    "description": "A compact ring summary.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.DonutChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.DonutChart"
+  },
+  {
+    "id": "billboard/stacked-bar",
+    "source": "billboard",
+    "name": "stacked-bar",
+    "title": "Billboard.js · Stacked bar chart",
+    "description": "Layer contributions within category totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "stacked",
+      "integration-recipe",
+      "stacked-bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.StackedBarChart"
+  },
+  {
+    "id": "billboard/step",
+    "source": "billboard",
+    "name": "step",
+    "title": "Billboard.js · Stepped line chart",
+    "description": "Represent changes using discrete step segments.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "line",
+      "step",
+      "integration-recipe",
+      "step"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add billboard.js",
+    "docs": "https://naver.github.io/billboard.js/demo/#Chart.StepChart",
+    "dependencies": [
+      "billboard.js"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Import the matching Billboard CSS and use current named shape imports/tree shaking where appropriate. The API renders into a sized browser container; wrap mount/update/destroy for the consuming framework. Match its actual package peers; do not assume an older documentation example matches the latest API. The React peer is optional for its React wrapper; the browser DOM API remains framework-neutral. Upstream: https://github.com/naver/billboard.js. License: MIT. Package metadata: billboard.js@4.1.3; peers: react >=16.8.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://naver.github.io/billboard.js/demo/#Chart.StepChart"
+  },
+  {
     "id": "bklit/candlestick-chart",
     "source": "bklit",
     "name": "candlestick-chart",
@@ -35545,6 +37257,157 @@
       ],
       "cost": "medium"
     }
+  },
+  {
+    "id": "chartist/donut",
+    "source": "chartist",
+    "name": "donut",
+    "title": "Chartist · Donut chart",
+    "description": "A ring chart with CSS styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/pie/donut-chart/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/pie/donut-chart/"
+  },
+  {
+    "id": "chartist/line-dots",
+    "source": "chartist",
+    "name": "line-dots",
+    "title": "Chartist · Line chart with custom points",
+    "description": "Customize plotted point rendering using draw events.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "dots",
+      "integration-recipe",
+      "line-dots"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/line/modify-drawing/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/line/modify-drawing/"
+  },
+  {
+    "id": "chartist/pie-labels",
+    "source": "chartist",
+    "name": "pie-labels",
+    "title": "Chartist · Pie chart with labels",
+    "description": "Direct labels on a part-to-whole chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "labels",
+      "integration-recipe",
+      "pie-labels"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/pie/custom-labels/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/pie/custom-labels/"
+  },
+  {
+    "id": "chartist/stacked-bar",
+    "source": "chartist",
+    "name": "stacked-bar",
+    "title": "Chartist · Stacked bar chart",
+    "description": "Stacked category comparisons.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "stacked",
+      "integration-recipe",
+      "stacked-bar"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/bar/stacked/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/bar/stacked/"
   },
   {
     "id": "chartjs/bubble",
@@ -41682,6 +43545,117 @@
     "live": "https://echarts.apache.org/examples/en/editor.html?c=sankey-simple"
   },
   {
+    "id": "frappe-charts/heatmap",
+    "source": "frappe-charts",
+    "name": "heatmap",
+    "title": "Frappe Charts · Activity heatmap",
+    "description": "Time-based activity levels in a compact matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/heatmap",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://frappe.io/charts/docs/basic/heatmap"
+  },
+  {
+    "id": "frappe-charts/percentage",
+    "source": "frappe-charts",
+    "name": "percentage",
+    "title": "Frappe Charts · Percentage chart",
+    "description": "Segmented part-to-whole totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "percentage"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/aggr_sliced_diags",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://frappe.io/charts/docs/basic/aggr_sliced_diags"
+  },
+  {
+    "id": "frappe-charts/pie",
+    "source": "frappe-charts",
+    "name": "pie",
+    "title": "Frappe Charts · Pie chart",
+    "description": "A few parts of a whole.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/aggr_sliced_diags",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://frappe.io/charts/docs/basic/aggr_sliced_diags"
+  },
+  {
     "id": "kibo-ui/avatar-stack",
     "source": "kibo-ui",
     "name": "avatar-stack",
@@ -42668,6 +44642,318 @@
       "cost": "medium"
     },
     "live": "https://www.kibo-ui.com/components/tree"
+  },
+  {
+    "id": "layerchart/area-gradient",
+    "source": "layerchart",
+    "name": "area-gradient",
+    "title": "LayerChart · Gradient area composition",
+    "description": "Apply an area fill using the gradient primitive and chart composition.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "area",
+      "gradient",
+      "integration-recipe",
+      "area-gradient"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/LinearGradient",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/LinearGradient"
+  },
+  {
+    "id": "layerchart/area-pattern",
+    "source": "layerchart",
+    "name": "area-pattern",
+    "title": "LayerChart · Patterned area composition",
+    "description": "Apply a patterned area fill using chart primitives.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "area",
+      "pattern",
+      "integration-recipe",
+      "area-pattern"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/Pattern",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/Pattern"
+  },
+  {
+    "id": "layerchart/bar",
+    "source": "layerchart",
+    "name": "bar",
+    "title": "LayerChart · Bar chart",
+    "description": "Category chart UI in a Svelte project.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/BarChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/BarChart"
+  },
+  {
+    "id": "layerchart/pie",
+    "source": "layerchart",
+    "name": "pie",
+    "title": "LayerChart · Pie chart",
+    "description": "Svelte part-to-whole chart UI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/PieChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/PieChart"
+  },
+  {
+    "id": "layerchart/scatter",
+    "source": "layerchart",
+    "name": "scatter",
+    "title": "LayerChart · Scatter chart",
+    "description": "Paired observations in a layered chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "canvas",
+      "dom",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add layerchart",
+    "docs": "https://www.layerchart.com/docs/components/ScatterChart",
+    "dependencies": [
+      "layerchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Svelte 5 package: do not install it into a React project or change frameworks just to copy a look. Use the selected chart/primitives in an existing Svelte stack, map CSS/theme values and size its layers. Some low-level examples require additional imports/dependencies from their own instructions. Choose the appropriate SVG/Canvas layer and dispose interactions. Upstream: https://github.com/techniq/layerchart. License: MIT. Package metadata: layerchart@2.8.1; peers: svelte ^5.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.layerchart.com/docs/components/ScatterChart"
+  },
+  {
+    "id": "lightweight-charts/baseline",
+    "source": "lightweight-charts",
+    "name": "baseline",
+    "title": "TradingView Lightweight Charts · Baseline chart",
+    "description": "Different fills above and below a meaningful baseline.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "baseline"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#baseline",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://tradingview.github.io/lightweight-charts/docs/series-types#baseline"
+  },
+  {
+    "id": "lightweight-charts/candlestick",
+    "source": "lightweight-charts",
+    "name": "candlestick",
+    "title": "TradingView Lightweight Charts · Candlestick chart",
+    "description": "Open/high/low/close observations with body and wick styles.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#candlestick",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://tradingview.github.io/lightweight-charts/docs/series-types#candlestick"
+  },
+  {
+    "id": "lightweight-charts/volume-bars",
+    "source": "lightweight-charts",
+    "name": "volume-bars",
+    "title": "TradingView Lightweight Charts · Time-series volume bars",
+    "description": "The upstream HistogramSeries draws time-indexed bars, not a statistical distribution histogram.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "bar",
+      "time-series",
+      "integration-recipe",
+      "volume-bars"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#histogram",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://tradingview.github.io/lightweight-charts/docs/series-types#histogram"
   },
   {
     "id": "magicui/android",
@@ -45193,6 +47479,416 @@
       "cost": "medium"
     },
     "live": "https://magicui.design/docs/components/word-rotate"
+  },
+  {
+    "id": "mantine-charts/candlestick",
+    "source": "mantine-charts",
+    "name": "candlestick",
+    "title": "Mantine Charts · Candlestick chart",
+    "description": "Render OHLC observations with the current Mantine API.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/candlestick-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/candlestick-chart/"
+  },
+  {
+    "id": "mantine-charts/donut",
+    "source": "mantine-charts",
+    "name": "donut",
+    "title": "Mantine Charts · Donut chart",
+    "description": "A small part-to-whole summary.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/donut-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/donut-chart/"
+  },
+  {
+    "id": "mantine-charts/funnel",
+    "source": "mantine-charts",
+    "name": "funnel",
+    "title": "Mantine Charts · Funnel chart",
+    "description": "Compare counts across ordered conversion stages.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "funnel"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/funnel-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/funnel-chart/"
+  },
+  {
+    "id": "mantine-charts/heatmap",
+    "source": "mantine-charts",
+    "name": "heatmap",
+    "title": "Mantine Charts · Heatmap",
+    "description": "Activity levels across a time/calendar matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/heatmap/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/heatmap/"
+  },
+  {
+    "id": "mantine-charts/line",
+    "source": "mantine-charts",
+    "name": "line",
+    "title": "Mantine Charts · Line chart",
+    "description": "Trend series with Mantine tooltips and legends.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/line-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/line-chart/"
+  },
+  {
+    "id": "mantine-charts/radar",
+    "source": "mantine-charts",
+    "name": "radar",
+    "title": "Mantine Charts · Radar chart",
+    "description": "Compare values on several labeled axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "radar"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/radar-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/radar-chart/"
+  },
+  {
+    "id": "mantine-charts/sankey",
+    "source": "mantine-charts",
+    "name": "sankey",
+    "title": "Mantine Charts · Sankey diagram",
+    "description": "Measured quantities flowing between stages.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sankey"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/sankey-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/sankey-chart/"
+  },
+  {
+    "id": "mantine-charts/scatter",
+    "source": "mantine-charts",
+    "name": "scatter",
+    "title": "Mantine Charts · Scatter plot",
+    "description": "Compare paired numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/scatter-chart/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/scatter-chart/"
+  },
+  {
+    "id": "mantine-charts/sparkline",
+    "source": "mantine-charts",
+    "name": "sparkline",
+    "title": "Mantine Charts · Sparkline",
+    "description": "A compact trend beside a KPI.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sparkline"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/sparkline/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/sparkline/"
+  },
+  {
+    "id": "mantine-charts/treemap",
+    "source": "mantine-charts",
+    "name": "treemap",
+    "title": "Mantine Charts · Treemap",
+    "description": "Nested parts of an overall measured total.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "treemap"
+    ],
+    "moods": [
+      "calm",
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mantine/charts @mantine/core @mantine/hooks recharts",
+    "docs": "https://mantine.dev/charts/treemap/",
+    "dependencies": [
+      "@mantine/charts",
+      "@mantine/core",
+      "@mantine/hooks",
+      "recharts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Best for projects already using Mantine. Latest chart, core and hooks versions must match; inspect published React/Recharts peers before choosing a version. Import core styles before charts/styles.css and provide MantineProvider. Adding Mantine to a different UI stack is a separate framework decision, not an automatic chart install. Upstream: https://github.com/mantinedev/mantine. License: MIT. Package metadata: @mantine/charts@9.7.3; peers: react ^19.2.0; recharts >=3.2.1; react-dom ^19.2.0; @mantine/core 9.7.3; @mantine/hooks 9.7.3. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mantine.dev/charts/treemap/"
   },
   {
     "id": "mermaid/class",
@@ -55600,6 +58296,166 @@
       "cost": "medium"
     },
     "live": "https://motion.dev/examples/react-warp-overlay"
+  },
+  {
+    "id": "mui-charts/gauge",
+    "source": "mui-charts",
+    "name": "gauge",
+    "title": "MUI X Charts Community · Gauge",
+    "description": "Show one bounded metric with its scale.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "gauge"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/gauge/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/gauge/"
+  },
+  {
+    "id": "mui-charts/pie",
+    "source": "mui-charts",
+    "name": "pie",
+    "title": "MUI X Charts Community · Pie and donut chart",
+    "description": "A few labeled parts of a whole.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/pie/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/pie/"
+  },
+  {
+    "id": "mui-charts/scatter",
+    "source": "mui-charts",
+    "name": "scatter",
+    "title": "MUI X Charts Community · Scatter plot",
+    "description": "Compare pairs of observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/scatter/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/scatter/"
+  },
+  {
+    "id": "mui-charts/sparkline",
+    "source": "mui-charts",
+    "name": "sparkline",
+    "title": "MUI X Charts Community · Sparkline",
+    "description": "Compact chart UI in metric cards.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sparkline"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/sparkline/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://mui.com/x/react-charts/sparkline/"
   },
   {
     "id": "nivo/heatmap",
@@ -109012,6 +111868,117 @@
     "live": "https://reactflow.dev/examples/interaction/save-and-restore"
   },
   {
+    "id": "react-force-graph/collision",
+    "source": "react-force-graph",
+    "name": "collision",
+    "title": "React Force Graph 2D · Collision-aware network layout",
+    "description": "Avoid node overlap in a force-directed Canvas graph.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "collision"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/collision-detection/",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/collision-detection/"
+  },
+  {
+    "id": "react-force-graph/fit-to-canvas",
+    "source": "react-force-graph",
+    "name": "fit-to-canvas",
+    "title": "React Force Graph 2D · Responsive 2D network",
+    "description": "Fit the network to a changing parent container.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "fit-to-canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/fit-to-canvas/",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/fit-to-canvas/"
+  },
+  {
+    "id": "react-force-graph/highlight",
+    "source": "react-force-graph",
+    "name": "highlight",
+    "title": "React Force Graph 2D · Highlighted graph neighborhoods",
+    "description": "Focus selected nodes and their connected links on a 2D Canvas.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "highlight"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add react-force-graph-2d",
+    "docs": "https://vasturiano.github.io/react-force-graph/example/highlight/",
+    "dependencies": [
+      "react-force-graph-2d"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These entries use the 2D Canvas package and verified 2D source examples. The upstream project also has separate 3D/WebGL/VR/AR packages; do not substitute those APIs. Bound/warm up the simulation, map node/edge colors, provide readable selection details and stop animations/dispose on unmount. Upstream: https://github.com/vasturiano/react-force-graph. License: MIT. Package metadata: react-force-graph-2d@1.29.2; peers: react *. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://vasturiano.github.io/react-force-graph/example/highlight/"
+  },
+  {
     "id": "recharts/area",
     "source": "recharts",
     "name": "area",
@@ -123576,6 +126543,197 @@
     "live": "https://www.tremor.so/docs/visualizations/tracker"
   },
   {
+    "id": "unovis/bar",
+    "source": "unovis",
+    "name": "bar",
+    "title": "Unovis · Grouped bar chart",
+    "description": "Compare categories with grouped series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/GroupedBar",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/docs/components/GroupedBar"
+  },
+  {
+    "id": "unovis/donut",
+    "source": "unovis",
+    "name": "donut",
+    "title": "Unovis · Donut chart",
+    "description": "A compact composable ring summary.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Donut",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/docs/components/Donut"
+  },
+  {
+    "id": "unovis/network",
+    "source": "unovis",
+    "name": "network",
+    "title": "Unovis · Relationship graph",
+    "description": "Explore connected entities rather than numerical axes.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "network"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Graph",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://unovis.dev/docs/components/Graph"
+  },
+  {
+    "id": "unovis/scatter",
+    "source": "unovis",
+    "name": "scatter",
+    "title": "Unovis · Scatter plot",
+    "description": "Explore paired numeric observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/Scatter",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/docs/components/Scatter"
+  },
+  {
+    "id": "unovis/stacked-bar",
+    "source": "unovis",
+    "name": "stacked-bar",
+    "title": "Unovis · Stacked bar chart",
+    "description": "Show category contributions with stacked bars.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "stacked",
+      "integration-recipe",
+      "stacked-bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @unovis/react @unovis/ts",
+    "docs": "https://unovis.dev/docs/components/StackedBar",
+    "dependencies": [
+      "@unovis/react",
+      "@unovis/ts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. These commands choose the React wrapper plus the matching @unovis/ts core. Other wrappers exist; preserve the consuming framework. Size containers, map Unovis CSS variables to the brand and inspect per-component interaction/data contracts. Map/graph components have different costs and dependencies; no upstream MCP or agent skill is installed automatically. Upstream: https://github.com/f5/unovis. License: Apache-2.0. Package metadata: @unovis/react@1.7.1; peers: react >=16.8.0 || ^17 || ^18 || ^19; react-dom >=16.8.0 || ^17 || ^18 || ^19; @unovis/ts 1.7.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://unovis.dev/docs/components/StackedBar"
+  },
+  {
     "id": "uplot/cursor",
     "source": "uplot",
     "name": "cursor",
@@ -123685,6 +126843,117 @@
       "chart"
     ],
     "live": "https://leeoniya.github.io/uPlot/demos/stream-data.html"
+  },
+  {
+    "id": "vchart/area",
+    "source": "vchart",
+    "name": "area",
+    "title": "VisActor VChart · Area chart",
+    "description": "Filled trend regions through a chart spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Area",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Area"
+  },
+  {
+    "id": "vchart/heatmap",
+    "source": "vchart",
+    "name": "heatmap",
+    "title": "VisActor VChart · Heatmap",
+    "description": "A color-coded matrix of numeric values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Heatmap",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Heatmap"
+  },
+  {
+    "id": "vchart/radar",
+    "source": "vchart",
+    "name": "radar",
+    "title": "VisActor VChart · Radar chart",
+    "description": "Compare multiple labeled axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "radar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Radar",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Radar"
   },
   {
     "id": "vega-lite/heatmap",
@@ -123805,6 +127074,268 @@
       "chart"
     ],
     "live": "https://vega.github.io/vega-lite/examples/point_2d.html"
+  },
+  {
+    "id": "victory/area",
+    "source": "victory",
+    "name": "area",
+    "title": "Victory · Area chart",
+    "description": "Filled trend regions with shared axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/area",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/docs/charts/area"
+  },
+  {
+    "id": "victory/candlestick",
+    "source": "victory",
+    "name": "candlestick",
+    "title": "Victory · Candlestick chart",
+    "description": "Show open/high/low/close observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/candlestick",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/docs/charts/candlestick"
+  },
+  {
+    "id": "victory/pie",
+    "source": "victory",
+    "name": "pie",
+    "title": "Victory · Pie chart",
+    "description": "Labeled part-to-whole sectors.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/pie",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/docs/charts/pie"
+  },
+  {
+    "id": "victory/scatter",
+    "source": "victory",
+    "name": "scatter",
+    "title": "Victory · Scatter plot",
+    "description": "Render observations with configurable point symbols.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add victory",
+    "docs": "https://nearform.com/open-source/victory/docs/charts/scatter",
+    "dependencies": [
+      "victory"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. This indexes Victory for web; Victory Native is a different integration. Compose axes, labels and containers and map themes to existing brand tokens. Confirm React peers and client/server behavior in the consumer. A package install is not a prebuilt dashboard. Upstream: https://github.com/FormidableLabs/victory. License: MIT. Package metadata: victory@37.3.6; peers: react >=16.6.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://nearform.com/open-source/victory/docs/charts/scatter"
+  },
+  {
+    "id": "vis-network/editable",
+    "source": "vis-network",
+    "name": "editable",
+    "title": "vis-network · Editable network",
+    "description": "Manipulate graph nodes and edges with application callbacks.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "editable"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/other/manipulation.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/other/manipulation.html"
+  },
+  {
+    "id": "vis-network/highlight",
+    "source": "vis-network",
+    "name": "highlight",
+    "title": "vis-network · Neighborhood highlighting",
+    "description": "Focus the connections around selected entities.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "highlight"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/exampleApplications/neighbourhoodHighlight.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/exampleApplications/neighbourhoodHighlight.html"
+  },
+  {
+    "id": "vis-network/node-styles",
+    "source": "vis-network",
+    "name": "node-styles",
+    "title": "vis-network · Styled network nodes",
+    "description": "Use distinct node styles for domain groups.",
+    "kind": "component",
+    "categories": [
+      "graph"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "node-styles"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add vis-network vis-data",
+    "docs": "https://visjs.github.io/vis-network/examples/network/nodeStyles/groups.html",
+    "dependencies": [
+      "vis-network",
+      "vis-data"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual Apache-2.0/MIT licensing; preserve notices for the option you use. Prefer the documented standalone import or satisfy the peer build dependencies, including vis-data. Bound the physics simulation, provide a sized parent and destroy Network/listeners on unmount. A graph editor still needs application-level validation, storage and permissions. Upstream: https://github.com/visjs/vis-network. License: (Apache-2.0 OR MIT). Package metadata: vis-network@10.1.2; peers: uuid ^3.4.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^13.0.0 || ^14.0.0; keycharm ^0.2.0 || ^0.3.0 || ^0.4.0; vis-data >=8.0.0; vis-util >=6.0.0; @egjs/hammerjs ^2.0.0; component-emitter ^1.3.0 || ^2.0.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "graph"
+    ],
+    "live": "https://visjs.github.io/vis-network/examples/network/nodeStyles/groups.html"
   },
   {
     "id": "visx/brush",

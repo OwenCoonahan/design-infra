@@ -101,6 +101,19 @@ export const RULES: [RegExp, Mood][] = [
 
 /** Each source's overall feel when nothing more specific matches. */
 export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
+  "mantine-charts": ["calm", "technical", "refined"],
+  "mui-charts": ["technical", "refined"],
+  unovis: ["technical", "refined"],
+  victory: ["technical", "refined"],
+  "frappe-charts": ["minimal", "trustworthy"],
+  layerchart: ["refined", "technical"],
+  chartist: ["minimal", "technical"],
+  billboard: ["technical", "refined"],
+  "ag-charts": ["technical", "refined"],
+  vchart: ["technical", "refined"],
+  "vis-network": ["technical", "refined"],
+  "react-force-graph": ["technical", "refined"],
+  "lightweight-charts": ["technical", "refined"],
   bklit: ["refined", "technical"],
   tremor: ["minimal", "refined", "technical"],
   oc: ["refined"],

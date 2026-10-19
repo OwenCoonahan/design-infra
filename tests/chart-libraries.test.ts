@@ -28,8 +28,8 @@ test("chart sync rejects missing, mismatched and changed-license metadata instea
 test("visualization references preserve exact modules and do not claim hosted coverage or install every engine", () => {
   const sources = new Set(chartLibraries.map((library) => library.slug))
   const entries = catalog.filter((entry) => sources.has(entry.source))
-  assert.equal(entries.length, 96)
-  assert.equal(entries.filter((entry) => entry.kind === "package").length, 16)
+  assert.equal(entries.length, 189)
+  assert.equal(entries.filter((entry) => entry.kind === "package").length, 29)
   assert.ok(entries.every((entry) => entry.access === "free" && previewDescriptor(entry) === undefined))
   assert.equal(catalog.find((entry) => entry.id === "sigma/library")?.motion, undefined, "WebGL capability must not become an unverified animation claim")
   assert.equal(catalog.find((entry) => entry.id === "plotly/box")?.motion, undefined)
@@ -86,4 +86,31 @@ test("chart UI adapters exclude registry plumbing and distinguish public source 
   assert.ok(catalog.filter((entry) => entry.source === "tremor").every((entry) => entry.integration === "recipe" && !entry.install.includes("@tremor/react")))
   assert.throws(() => bklitCharts({ items: [{ name: "line-chart", type: "registry:component" }] }), /Review changed/)
   assert.throws(() => tremorCharts([{ name: "AreaChart", type: "dir" }]), /Review removed/)
+})
+
+test("additional libraries keep free editions, framework requirements and financial attribution explicit", () => {
+  const entry = (id: string) => catalog.find((entry) => entry.id === id)!
+  assert.match(entry("mantine-charts/library").install, /@mantine\/charts @mantine\/core @mantine\/hooks recharts/)
+  assert.match(entry("layerchart/library").notes!, /Svelte 5.*do not install it into a React project/)
+  for (const source of ["mui-charts", "ag-charts"]) {
+    const entries = catalog.filter((entry) => entry.source === source)
+    assert.ok(entries.length >= 6)
+    assert.ok(entries.every((entry) => entry.access === "free" && !/x-charts-pro|x-charts-premium|ag-charts-enterprise/.test(entry.install)))
+    assert.ok(entries.every((entry) => /Community/.test(entry.notes!)))
+  }
+  assert.ok(catalog.filter((entry) => entry.source === "react-force-graph").every((entry) => entry.install === "pnpm add react-force-graph-2d" && !/3d|vr/.test(entry.docs ?? "")))
+  assert.match(entry("lightweight-charts/library").notes!, /NOTICE.*visible TradingView attribution/)
+  const volume = chartFacets(entry("lightweight-charts/volume-bars"))
+  assert.ok(volume.types.includes("bar") && !volume.types.includes("histogram"), "time-indexed volume bars are not statistical distribution histograms")
+  const stacked = searchCatalog(catalog, { category: "chart", chartType: "bar", chartStyle: "stacked", limit: catalog.length })
+  for (const id of ["chartist/stacked-bar", "billboard/stacked-bar", "unovis/stacked-bar"]) assert.ok(stacked.some((entry) => entry.id === id), id)
+})
+
+test("known dual-license expressions are audited exactly; arbitrary MIT-containing expressions still fail", () => {
+  for (const slug of ["chartist", "vis-network"]) {
+    const library = chartLibraries.find((library) => library.slug === slug)!
+    const metadata = Object.fromEntries(library.packages.map((name) => [name, { name, version: "1.test", license: library.license }]))
+    assert.ok(chartLibraryEntries(library, metadata).every((entry) => entry.access === "free"))
+    assert.throws(() => chartLibraryEntries(library, { ...metadata, [library.package]: { name: library.package, version: "1.test", license: "MIT OR Proprietary" } }), /Review changed/)
+  }
 })

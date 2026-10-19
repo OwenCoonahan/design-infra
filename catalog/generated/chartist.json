@@ -1,0 +1,261 @@
+[
+  {
+    "id": "chartist/area",
+    "source": "chartist",
+    "name": "area",
+    "title": "Chartist · Area chart",
+    "description": "A filled SVG trend area.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/line/area/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/line/area/"
+  },
+  {
+    "id": "chartist/donut",
+    "source": "chartist",
+    "name": "donut",
+    "title": "Chartist · Donut chart",
+    "description": "A ring chart with CSS styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "donut"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/pie/donut-chart/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/pie/donut-chart/"
+  },
+  {
+    "id": "chartist/library",
+    "source": "chartist",
+    "name": "library",
+    "title": "Chartist",
+    "description": "CSS-styled SVG charts with responsive layouts and explicit visual-variant examples.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "chartist/line",
+    "source": "chartist",
+    "name": "line",
+    "title": "Chartist · Line chart",
+    "description": "A responsive CSS-styled line chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/line/simple/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/line/simple/"
+  },
+  {
+    "id": "chartist/line-dots",
+    "source": "chartist",
+    "name": "line-dots",
+    "title": "Chartist · Line chart with custom points",
+    "description": "Customize plotted point rendering using draw events.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "dots",
+      "integration-recipe",
+      "line-dots"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/line/modify-drawing/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/line/modify-drawing/"
+  },
+  {
+    "id": "chartist/pie-labels",
+    "source": "chartist",
+    "name": "pie-labels",
+    "title": "Chartist · Pie chart with labels",
+    "description": "Direct labels on a part-to-whole chart.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "labels",
+      "integration-recipe",
+      "pie-labels"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/pie/custom-labels/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/pie/custom-labels/"
+  },
+  {
+    "id": "chartist/stacked-bar",
+    "source": "chartist",
+    "name": "stacked-bar",
+    "title": "Chartist · Stacked bar chart",
+    "description": "Stacked category comparisons.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "stacked",
+      "integration-recipe",
+      "stacked-bar"
+    ],
+    "moods": [
+      "minimal",
+      "technical"
+    ],
+    "access": "free",
+    "install": "pnpm add chartist",
+    "docs": "https://chartist.dev/examples/bar/stacked/",
+    "dependencies": [
+      "chartist"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Dual licensed; use the MIT option and preserve its notice. Import Chartist CSS and theme its generated SVG classes. Modern Chartist APIs differ from older global Chartist examples. Detach instances/listeners on unmount. This does not install a framework-specific wrapper. Upstream: https://github.com/chartist-js/chartist. License: MIT OR WTFPL. Package metadata: chartist@2.1.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ],
+    "live": "https://chartist.dev/examples/bar/stacked/"
+  }
+]

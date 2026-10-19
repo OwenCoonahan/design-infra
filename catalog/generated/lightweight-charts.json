@@ -1,0 +1,218 @@
+[
+  {
+    "id": "lightweight-charts/area",
+    "source": "lightweight-charts",
+    "name": "area",
+    "title": "TradingView Lightweight Charts · Financial area chart",
+    "description": "A filled Canvas time-series surface.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#area",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "lightweight-charts/baseline",
+    "source": "lightweight-charts",
+    "name": "baseline",
+    "title": "TradingView Lightweight Charts · Baseline chart",
+    "description": "Different fills above and below a meaningful baseline.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "baseline"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#baseline",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "lightweight-charts/candlestick",
+    "source": "lightweight-charts",
+    "name": "candlestick",
+    "title": "TradingView Lightweight Charts · Candlestick chart",
+    "description": "Open/high/low/close observations with body and wick styles.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "candlestick"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#candlestick",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "lightweight-charts/library",
+    "source": "lightweight-charts",
+    "name": "library",
+    "title": "TradingView Lightweight Charts",
+    "description": "Canvas time-series and financial charts with line, area, baseline and OHLC styling.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "lightweight-charts/line",
+    "source": "lightweight-charts",
+    "name": "line",
+    "title": "TradingView Lightweight Charts · Financial line chart",
+    "description": "A Canvas time series with configurable line styling.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#line",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "lightweight-charts/volume-bars",
+    "source": "lightweight-charts",
+    "name": "volume-bars",
+    "title": "TradingView Lightweight Charts · Time-series volume bars",
+    "description": "The upstream HistogramSeries draws time-indexed bars, not a statistical distribution histogram.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "bar",
+      "time-series",
+      "integration-recipe",
+      "volume-bars"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add lightweight-charts",
+    "docs": "https://tradingview.github.io/lightweight-charts/docs/series-types#histogram",
+    "dependencies": [
+      "lightweight-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the free Lightweight Charts package, not TradingView Advanced Charts or a market-data service. Client-side only. Preserve the Apache license/NOTICE and required visible TradingView attribution/link described in the official guide. API v5 uses addSeries with series definitions; older addLineSeries tutorials differ. Provide your own licensed data and clean up charts/subscriptions. Upstream: https://github.com/tradingview/lightweight-charts. License: Apache-2.0. Package metadata: lightweight-charts@5.2.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

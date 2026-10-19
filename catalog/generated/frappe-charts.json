@@ -1,0 +1,216 @@
+[
+  {
+    "id": "frappe-charts/bar",
+    "source": "frappe-charts",
+    "name": "bar",
+    "title": "Frappe Charts · Bar chart",
+    "description": "Category bars using the axis-chart API.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/basic_chart",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "frappe-charts/heatmap",
+    "source": "frappe-charts",
+    "name": "heatmap",
+    "title": "Frappe Charts · Activity heatmap",
+    "description": "Time-based activity levels in a compact matrix.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/heatmap",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "frappe-charts/library",
+    "source": "frappe-charts",
+    "name": "library",
+    "title": "Frappe Charts",
+    "description": "Framework-neutral SVG charts with concise dashboard defaults and activity heatmaps.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "frappe-charts/line",
+    "source": "frappe-charts",
+    "name": "line",
+    "title": "Frappe Charts · Line chart",
+    "description": "Simple trends using the axis-chart API.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/basic_chart",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "frappe-charts/percentage",
+    "source": "frappe-charts",
+    "name": "percentage",
+    "title": "Frappe Charts · Percentage chart",
+    "description": "Segmented part-to-whole totals.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "percentage"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/aggr_sliced_diags",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "frappe-charts/pie",
+    "source": "frappe-charts",
+    "name": "pie",
+    "title": "Frappe Charts · Pie chart",
+    "description": "A few parts of a whole.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "minimal",
+      "trustworthy"
+    ],
+    "access": "free",
+    "install": "pnpm add frappe-charts",
+    "docs": "https://frappe.io/charts/docs/basic/aggr_sliced_diags",
+    "dependencies": [
+      "frappe-charts"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use a real browser container and follow the current ESM/CSS instructions. The chart package does not require the Frappe application framework. Heatmaps have a different data contract from axis charts. Check maintenance and browser behavior in the target project; dispose DOM/listeners on unmount. Upstream: https://github.com/frappe/charts. License: MIT. Package metadata: frappe-charts@1.6.2. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

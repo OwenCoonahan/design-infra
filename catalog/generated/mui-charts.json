@@ -1,0 +1,273 @@
+[
+  {
+    "id": "mui-charts/bar",
+    "source": "mui-charts",
+    "name": "bar",
+    "title": "MUI X Charts Community · Bar chart",
+    "description": "Material-styled category comparisons.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/bars/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mui-charts/gauge",
+    "source": "mui-charts",
+    "name": "gauge",
+    "title": "MUI X Charts Community · Gauge",
+    "description": "Show one bounded metric with its scale.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "gauge"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/gauge/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mui-charts/library",
+    "source": "mui-charts",
+    "name": "library",
+    "title": "MUI X Charts Community",
+    "description": "Material-themed React chart UI from the free Community package.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mui-charts/line",
+    "source": "mui-charts",
+    "name": "line",
+    "title": "MUI X Charts Community · Line chart",
+    "description": "Material-styled trends and line series.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/lines/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mui-charts/pie",
+    "source": "mui-charts",
+    "name": "pie",
+    "title": "MUI X Charts Community · Pie and donut chart",
+    "description": "A few labeled parts of a whole.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "pie"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/pie/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mui-charts/scatter",
+    "source": "mui-charts",
+    "name": "scatter",
+    "title": "MUI X Charts Community · Scatter plot",
+    "description": "Compare pairs of observations.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "scatter"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/scatter/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "mui-charts/sparkline",
+    "source": "mui-charts",
+    "name": "sparkline",
+    "title": "MUI X Charts Community · Sparkline",
+    "description": "Compact chart UI in metric cards.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "svg",
+      "integration-recipe",
+      "sparkline"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @mui/x-charts @mui/material @emotion/react @emotion/styled",
+    "docs": "https://mui.com/x/react-charts/sparkline/",
+    "dependencies": [
+      "@mui/x-charts",
+      "@mui/material",
+      "@emotion/react",
+      "@emotion/styled"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Community imports only: @mui/x-charts. Pro/Premium charts and paid-only interactions are excluded. Prefer an existing MUI project; material and Emotion are peers, and adding them to a different stack needs a separate decision. Match the chosen MUI/React versions. For SSR provide explicit dimensions and disable animations as documented. Upstream: https://github.com/mui/mui-x. License: MIT. Package metadata: @mui/x-charts@9.15.0; peers: react ^17.0.0 || ^18.0.0 || ^19.0.0; react-dom ^17.0.0 || ^18.0.0 || ^19.0.0; @mui/system ^7.3.0 || ^9.0.0; @mui/material ^7.3.0 || ^9.0.0; @emotion/react ^11.9.0; @emotion/styled ^11.8.1. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]

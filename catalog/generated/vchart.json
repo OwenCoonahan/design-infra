@@ -1,0 +1,216 @@
+[
+  {
+    "id": "vchart/area",
+    "source": "vchart",
+    "name": "area",
+    "title": "VisActor VChart · Area chart",
+    "description": "Filled trend regions through a chart spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "area"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Area",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vchart/bar",
+    "source": "vchart",
+    "name": "bar",
+    "title": "VisActor VChart · Bar chart",
+    "description": "Style category comparisons through a chart spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "bar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Bar",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vchart/heatmap",
+    "source": "vchart",
+    "name": "heatmap",
+    "title": "VisActor VChart · Heatmap",
+    "description": "A color-coded matrix of numeric values.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "heatmap"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Heatmap",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vchart/library",
+    "source": "vchart",
+    "name": "library",
+    "title": "VisActor VChart",
+    "description": "Specification-driven charts with theme, layout and presentation-oriented chart options.",
+    "kind": "package",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vchart/line",
+    "source": "vchart",
+    "name": "line",
+    "title": "VisActor VChart · Line chart",
+    "description": "Style trend lines through a chart spec.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "line"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Line",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": true,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  },
+  {
+    "id": "vchart/radar",
+    "source": "vchart",
+    "name": "radar",
+    "title": "VisActor VChart · Radar chart",
+    "description": "Compare multiple labeled axes.",
+    "kind": "component",
+    "categories": [
+      "chart"
+    ],
+    "tags": [
+      "data-visualization",
+      "visualization-reference",
+      "canvas",
+      "integration-recipe",
+      "radar"
+    ],
+    "moods": [
+      "technical",
+      "refined"
+    ],
+    "access": "free",
+    "install": "pnpm add @visactor/vchart",
+    "docs": "https://www.visactor.io/vchart/guide/tutorial_docs/Chart_Types/Radar",
+    "dependencies": [
+      "@visactor/vchart"
+    ],
+    "curated": false,
+    "favorite": false,
+    "notes": "Integration recipe: the command installs the library, not a standalone finished component. Adapt the linked upstream API/example to your data and brand. Use the framework-neutral VChart package and its supported spec for the selected series. Map its theme to the project, keep motion purposeful and provide actual data/units. Alternative renderer/plugins may need extra packages. Use free public examples; do not install the whole VisActor product family. SVG export uses a separate plugin; it is not part of this install command. Upstream: https://github.com/VisActor/VChart. License: MIT. Package metadata: @visactor/vchart@2.2.0. Runtime integration is not verified by this metadata sync.",
+    "demo": false,
+    "integration": "recipe",
+    "appliesTo": [
+      "chart"
+    ]
+  }
+]
