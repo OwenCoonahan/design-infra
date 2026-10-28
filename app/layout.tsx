@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/next"
 import { Geist, Geist_Mono } from "next/font/google"
 
 import { designSystemFontVariables } from "@/app/fonts.generated"
@@ -7,9 +8,18 @@ import { ShortlistBar } from "@/components/site/shortlist-bar"
 import { SiteHeader } from "@/components/site/site-header"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
-import { SITE_URL, sitePath } from "@/lib/config"
+import { BASE_PATH, SITE_URL, sitePath } from "@/lib/config"
 
 import "./globals.css"
+
+// Behind the personal site's /design-infra rewrite, relative /_vercel/insights URLs would reach that site's
+// project, so production points page views at this project's own domain.
+const analyticsOrigin = process.env.VERCEL_ENV === "production" && BASE_PATH && process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}/_vercel/insights`
+  : null
+const analyticsProps = analyticsOrigin
+  ? { scriptSrc: `${analyticsOrigin}/script.js`, viewEndpoint: `${analyticsOrigin}/view`, eventEndpoint: `${analyticsOrigin}/event` }
+  : {}
 
 const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] })
 const geistMono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] })
@@ -54,6 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <ShortlistBar />
         </TooltipProvider>
         <DevTools />
+        <Analytics {...analyticsProps} />
       </body>
     </html>
   )
