@@ -11,6 +11,7 @@ These copies support local, component-only previews. They do not create new regi
 | chartjs | `chart.js@4.5.1` | MIT, adjacent LICENSE | Installed package; original line, grouped-bar, doughnut, bubble and scatter demo compositions |
 | react-flow | `@xyflow/react@12.12.0` | MIT, adjacent LICENSE | Installed free core; original custom-node workflow, vendor attribution retained |
 | react-force-graph | `react-force-graph-2d@1.29.2` | MIT, adjacent LICENSE | Installed 2D Canvas package; original fixed-layout network with node selection/dragging |
+| loading-dev | `loading-dev@0.3.6` | MIT, adjacent LICENSE | Installed package; original button/row compositions for Arc, Classic, Linear dots and Trace in `../loading-dev-demos.tsx` |
 
 Loading components fetched 2026-10-11. Dither Chart, Progressive Blur, Dot Morph Button, Pixel Brush Canvas, Scrubber, Card Swipe Deck and the SmoothButton dependency fetched 2026-10-16; the upstream MIT licence was rechecked unchanged. The imported components include a source URL comment. Source-file SHA-256 hashes and supported adapters are recorded in `catalog/preview-demos.json`; update the record when intentionally refreshing an import. Original licence texts must stay with each folder. `thinking-orbs` is used through its installed MIT npm package rather than copied here.
 

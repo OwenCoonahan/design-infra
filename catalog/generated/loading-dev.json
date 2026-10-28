@@ -1,0 +1,1291 @@
+[
+  {
+    "id": "loading-dev/arc",
+    "source": "loading-dev",
+    "name": "arc",
+    "title": "Arc",
+    "description": "A single open stroke rotating in a circle.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/arc",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Arc } from \"loading-dev\"` → `<Arc size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/arc/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/arc"
+  },
+  {
+    "id": "loading-dev/atom",
+    "source": "loading-dev",
+    "name": "atom",
+    "title": "Atom",
+    "description": "Three rings tumbling inside a circle.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/atom",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Atom } from \"loading-dev\"` → `<Atom size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/atom/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/atom"
+  },
+  {
+    "id": "loading-dev/blocks",
+    "source": "loading-dev",
+    "name": "blocks",
+    "title": "Blocks",
+    "description": "Nine blocks shrinking and growing in a sweep across a grid.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/blocks",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Blocks } from \"loading-dev\"` → `<Blocks size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/blocks/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/blocks"
+  },
+  {
+    "id": "loading-dev/bouncing-dots",
+    "source": "loading-dev",
+    "name": "bouncing-dots",
+    "title": "Bouncing dots",
+    "description": "Three staggered dots bouncing up and down.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/bouncing-dots",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { BouncingDots } from \"loading-dev\"` → `<BouncingDots size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/bouncing-dots/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/bouncing-dots"
+  },
+  {
+    "id": "loading-dev/cascade",
+    "source": "loading-dev",
+    "name": "cascade",
+    "title": "Cascade",
+    "description": "Three nested arcs fanning into a spiral and snapping back in line.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/cascade",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Cascade } from \"loading-dev\"` → `<Cascade size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/cascade/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/cascade"
+  },
+  {
+    "id": "loading-dev/circular-dots",
+    "source": "loading-dev",
+    "name": "circular-dots",
+    "title": "Circular dots",
+    "description": "Eight dots in a ring, the brightest hopping around.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/circular-dots",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { CircularDots } from \"loading-dev\"` → `<CircularDots size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/circular-dots/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/circular-dots"
+  },
+  {
+    "id": "loading-dev/classic",
+    "source": "loading-dev",
+    "name": "classic",
+    "title": "Classic",
+    "description": "Twelve fading bars arranged in a radial pattern.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/classic",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Classic } from \"loading-dev\"` → `<Classic size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/classic/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/classic"
+  },
+  {
+    "id": "loading-dev/classic-v2",
+    "source": "loading-dev",
+    "name": "classic-v2",
+    "title": "Classic v2",
+    "description": "Two lit ticks stepping around a ring of eight.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/classic-v2",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { ClassicV2 } from \"loading-dev\"` → `<ClassicV2 size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/classic-v2/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/classic-v2"
+  },
+  {
+    "id": "loading-dev/clock",
+    "source": "loading-dev",
+    "name": "clock",
+    "title": "Clock",
+    "description": "A clock hand sweeping around a faint face.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/clock",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Clock } from \"loading-dev\"` → `<Clock size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/clock/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/clock"
+  },
+  {
+    "id": "loading-dev/comet",
+    "source": "loading-dev",
+    "name": "comet",
+    "title": "Comet",
+    "description": "A full ring fading into its tail.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/comet",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Comet } from \"loading-dev\"` → `<Comet size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/comet/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/comet"
+  },
+  {
+    "id": "loading-dev/compass",
+    "source": "loading-dev",
+    "name": "compass",
+    "title": "Compass",
+    "description": "Four ticks turning a quarter turn at a time.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/compass",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Compass } from \"loading-dev\"` → `<Compass size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/compass/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/compass"
+  },
+  {
+    "id": "loading-dev/dual",
+    "source": "loading-dev",
+    "name": "dual",
+    "title": "Dual",
+    "description": "Two arcs turning in opposite directions.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/dual",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Dual } from \"loading-dev\"` → `<Dual size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/dual/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/dual"
+  },
+  {
+    "id": "loading-dev/eclipse",
+    "source": "loading-dev",
+    "name": "eclipse",
+    "title": "Eclipse",
+    "description": "Two dots trading places, one passing behind the other.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/eclipse",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Eclipse } from \"loading-dev\"` → `<Eclipse size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/eclipse/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/eclipse"
+  },
+  {
+    "id": "loading-dev/flip",
+    "source": "loading-dev",
+    "name": "flip",
+    "title": "Flip",
+    "description": "A square flipping over on one axis, then the other.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/flip",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Flip } from \"loading-dev\"` → `<Flip size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/flip/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/flip"
+  },
+  {
+    "id": "loading-dev/gather",
+    "source": "loading-dev",
+    "name": "gather",
+    "title": "Gather",
+    "description": "Four blocks pulling together, turning, and pushing apart.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/gather",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Gather } from \"loading-dev\"` → `<Gather size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/gather/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/gather"
+  },
+  {
+    "id": "loading-dev/leap",
+    "source": "loading-dev",
+    "name": "leap",
+    "title": "Leap",
+    "description": "Three dots in a row, the last one leaping to the front.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/leap",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Leap } from \"loading-dev\"` → `<Leap size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/leap/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/leap"
+  },
+  {
+    "id": "loading-dev/linear-dots",
+    "source": "loading-dev",
+    "name": "linear-dots",
+    "title": "Linear dots",
+    "description": "Three dots lighting up in turn from left to right.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/linear-dots",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { LinearDots } from \"loading-dev\"` → `<LinearDots size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/linear-dots/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/linear-dots"
+  },
+  {
+    "id": "loading-dev/loading",
+    "source": "loading-dev",
+    "name": "loading",
+    "title": "Loading",
+    "description": "The loading.dev mark, its brightest block circling the ring.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/loading",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Loading } from \"loading-dev\"` → `<Loading size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/loading/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/loading"
+  },
+  {
+    "id": "loading-dev/morph",
+    "source": "loading-dev",
+    "name": "morph",
+    "title": "Morph",
+    "description": "A square rounding into a circle and back as it turns.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/morph",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Morph } from \"loading-dev\"` → `<Morph size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/morph/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/morph"
+  },
+  {
+    "id": "loading-dev/orbit",
+    "source": "loading-dev",
+    "name": "orbit",
+    "title": "Orbit",
+    "description": "A fading half-arc rotating around a dot.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/orbit",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Orbit } from \"loading-dev\"` → `<Orbit size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/orbit/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/orbit"
+  },
+  {
+    "id": "loading-dev/pulse",
+    "source": "loading-dev",
+    "name": "pulse",
+    "title": "Pulse",
+    "description": "A ring rippling outward from a dot.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/pulse",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Pulse } from \"loading-dev\"` → `<Pulse size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/pulse/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/pulse"
+  },
+  {
+    "id": "loading-dev/radar",
+    "source": "loading-dev",
+    "name": "radar",
+    "title": "Radar",
+    "description": "A fading beam sweeping around a faint dish.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/radar",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Radar } from \"loading-dev\"` → `<Radar size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/radar/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/radar"
+  },
+  {
+    "id": "loading-dev/ring",
+    "source": "loading-dev",
+    "name": "ring",
+    "title": "Ring",
+    "description": "An arc rotating in a faint circle.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/ring",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Ring } from \"loading-dev\"` → `<Ring size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/ring/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/ring"
+  },
+  {
+    "id": "loading-dev/ripple",
+    "source": "loading-dev",
+    "name": "ripple",
+    "title": "Ripple",
+    "description": "Three rings spreading out from the center.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/ripple",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Ripple } from \"loading-dev\"` → `<Ripple size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/ripple/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/ripple"
+  },
+  {
+    "id": "loading-dev/slide",
+    "source": "loading-dev",
+    "name": "slide",
+    "title": "Slide",
+    "description": "Three dots sliding into the empty corner of a square.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/slide",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Slide } from \"loading-dev\"` → `<Slide size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/slide/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/slide"
+  },
+  {
+    "id": "loading-dev/snake",
+    "source": "loading-dev",
+    "name": "snake",
+    "title": "Snake",
+    "description": "An arc stretching and shrinking as it circles.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/snake",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Snake } from \"loading-dev\"` → `<Snake size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/snake/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/snake"
+  },
+  {
+    "id": "loading-dev/swirl",
+    "source": "loading-dev",
+    "name": "swirl",
+    "title": "Swirl",
+    "description": "A bright cell chasing its trail around a square.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/swirl",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Swirl } from \"loading-dev\"` → `<Swirl size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/swirl/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/swirl"
+  },
+  {
+    "id": "loading-dev/trace",
+    "source": "loading-dev",
+    "name": "trace",
+    "title": "Trace",
+    "description": "A dash tracing the outline of a rounded square.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/trace",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Trace } from \"loading-dev\"` → `<Trace size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/trace/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "subtle",
+      "technique": [
+        "css",
+        "svg"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/trace"
+  },
+  {
+    "id": "loading-dev/wave",
+    "source": "loading-dev",
+    "name": "wave",
+    "title": "Wave",
+    "description": "Five bars rising and falling in a wave.",
+    "kind": "component",
+    "categories": [
+      "loader"
+    ],
+    "tags": [
+      "react",
+      "react-19",
+      "spinner",
+      "css-keyframes"
+    ],
+    "moods": [],
+    "access": "free",
+    "install": "pnpm add loading-dev",
+    "docs": "https://loading.dev/spinners/wave",
+    "dependencies": [],
+    "curated": false,
+    "favorite": false,
+    "notes": "`import { Wave } from \"loading-dev\"` → `<Wave size={16} />`. Props: size (px, default 20), color (default currentColor), duration (ms), playState, className. Renders aria-hidden; wrap it in role=\"status\" with a text label. React 19+ only (uses hoisted <style>). Agent-readable docs: https://loading.dev/spinners/wave/markdown",
+    "themeAware": true,
+    "demo": false,
+    "integration": "drop-in",
+    "appliesTo": [
+      "loader",
+      "button"
+    ],
+    "motion": {
+      "triggers": [
+        "loop"
+      ],
+      "intensity": "medium",
+      "technique": [
+        "css"
+      ],
+      "cost": "low",
+      "reducedMotion": true
+    },
+    "live": "https://loading.dev/spinners/wave"
+  }
+]

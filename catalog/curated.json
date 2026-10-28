@@ -5278,5 +5278,41 @@
     ],
     "curated": true,
     "notes": "Visual variant: install the underlying area-chart component, then adapt the matching public gallery example using its props/composition. This is not a separate registry item or a verified hosted demo. MIT chart source; proprietary Bklit Studio is excluded. Preserve units, readable data, theme tokens and accessible alternatives."
+  },
+  {
+    "id": "loading-dev/arc",
+    "curated": true,
+    "moods": [
+      "refined",
+      "minimal"
+    ],
+    "notes": "Best default inline spinner: one open stroke that inherits currentColor, so it sits inside a primary button or a muted row without colour work. `pnpm add loading-dev` → `import { Arc } from \"loading-dev\"`, `<Arc size={16} />`. `easing=\"stacked\"` adds a subtle speed change without stopping; `cap=\"flat\"` for sharper systems. Pure CSS keyframes, stops under prefers-reduced-motion (verified in the package source and in Chrome). It renders aria-hidden: wrap it in role=\"status\" with a label, or put it in a button with visible text and aria-busy. React 19+ only (hoisted <style>)."
+  },
+  {
+    "id": "loading-dev/classic",
+    "curated": true,
+    "moods": [
+      "refined",
+      "trustworthy"
+    ],
+    "notes": "The familiar twelve-bar system spinner (macOS/iOS feel): instantly read as 'busy' and calm for page or panel waits. `import { Classic } from \"loading-dev\"`, `<Classic size={20} />`. Bars fade via CSS keyframes, colour from currentColor; motion stops under prefers-reduced-motion, so pair it with a text label and the static state still communicates. Below ~14px the bars blur together; use Arc there. React 19+."
+  },
+  {
+    "id": "loading-dev/linear-dots",
+    "curated": true,
+    "moods": [
+      "minimal",
+      "calm"
+    ],
+    "notes": "Three dots lighting left to right: the quietest option, made to sit after text ('Sending', 'Syncing 3 files') or in a chat bubble. `import { LinearDots } from \"loading-dev\"`, `<LinearDots size={16} />`. CSS keyframes, low cost; stops under prefers-reduced-motion. React 19+."
+  },
+  {
+    "id": "loading-dev/trace",
+    "curated": true,
+    "moods": [
+      "refined",
+      "technical"
+    ],
+    "notes": "A dash tracing a rounded square: distinctive without being loud; suits square icon buttons, upload tiles and grid/dev-tool UIs. `import { Trace } from \"loading-dev\"`, `<Trace size={20} />`, supports `easing` and `cap` like Arc. SVG stroke animated with CSS keyframes; stops under prefers-reduced-motion. Its corner radius is fixed, so it reads best where the surrounding radius is similar. React 19+."
   }
 ]

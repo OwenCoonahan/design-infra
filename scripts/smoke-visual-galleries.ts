@@ -16,6 +16,10 @@ const loading = [
   "smoothui/grid-loader",
   "smoothui/motion-loader",
   "magicui/animated-circular-progress-bar",
+  "loading-dev/arc",
+  "loading-dev/classic",
+  "loading-dev/linear-dots",
+  "loading-dev/trace",
 ]
 const executablePath =
   process.env.CHROME_PATH ??
@@ -61,7 +65,7 @@ async function main() {
     assert.ok((await legacy.text()).includes('data-theme="editorial"'))
     assert.equal((await fetch(`${base}/preview/design-infra/agent-status?surface=neutral`)).status, 200)
     assert.equal((await fetch(`${base}/preview/unknown/spinner`)).status, 404)
-    console.log("✓ all eight real hosted demos, controls, legacy URLs and explicit adapter allowlist")
+    console.log("✓ all twelve real hosted demos, controls, legacy URLs and explicit adapter allowlist")
     // The reported Hero shelf must not display still screenshots under Live view.
     await page.goto(`${base}/components?category=hero&source=aceternity&free=1`, { waitUntil: "networkidle2" })
     assert.equal((await page.$$('ul[aria-label="Visual examples"] li')).length, 0)

@@ -89,3 +89,8 @@ opacity changes.
 
 **Performance.** Animate `transform`/`opacity` only. Border beams and shimmers are infinite animations — pause them
 off-screen. Shader buttons (`metal-fx`, `metal-button`) pull WebGL; lazy-load and cap at one per viewport.
+
+**Further reading** (Jakub Krehel, link-only):
+
+- [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better) — icon cross-fades, optical alignment, interruptible transitions
+- [Using gestures in Motion](https://jakub.kr/work/motion-gestures) — hover/press/drag feedback with Motion

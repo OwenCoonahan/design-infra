@@ -21,7 +21,7 @@ directions:
     intent: [add-state]
     intensity: subtle
     moods: [minimal, technical, trustworthy]
-    picks: [kibo-ui/spinner, transitions/matrix-loader, originui/comp-90, motion/loading-three-dots-pulse]
+    picks: [loading-dev/arc, kibo-ui/spinner, transitions/matrix-loader, motion/loading-three-dots-pulse]
   - key: determinate-progress
     label: Determinate progress bar or ring
     feel: The user sees how far along it is — spring-driven fill, honest percentage.
@@ -69,7 +69,7 @@ directions:
     picks: [react-bits/refine-frame, librariesdev/img-fx, aceternity/image-generation-loader]
 ---
 
-**Recommend.** `skeleton-reveal` for known layouts, `inline-spinner` for local waits, `agent-thinking` for anything AI. Add `multi-step` once waits pass ~10s.
+**Recommend.** `skeleton-reveal` for known layouts, `inline-spinner` for local waits, `agent-thinking` for anything AI. Add `multi-step` once waits pass ~10s. For the inline spinner itself, `loading-dev/arc` is the default: one npm import, `currentColor`, reduced motion built in (other loading.dev styles: `loading-dev/classic`, `linear-dots`, `trace`).
 
 **What makes loading feel good.** Matching the indicator to the wait: nothing under ~300ms, an inline spinner
 or skeleton up to a few seconds, a labelled/determinate state beyond that, and a step list for anything over
