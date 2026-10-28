@@ -14,8 +14,8 @@ import "./globals.css"
 
 // Behind the personal site's /design-infra rewrite, root /_vercel/insights URLs reach that site's project, and
 // cross-origin posts to this project's domain fail CORS. Stay same-origin under the base path; next.config.ts
-// rewrites it to this deployment's /_vercel/insights.
-const analyticsPath = process.env.VERCEL && BASE_PATH ? `${BASE_PATH}/_vercel/insights` : null
+// proxies it to this project's /_vercel/insights.
+const analyticsPath = process.env.VERCEL_PROJECT_PRODUCTION_URL && BASE_PATH ? `${BASE_PATH}/insights` : null
 const analyticsProps = analyticsPath
   ? { scriptSrc: `${analyticsPath}/script.js`, viewEndpoint: `${analyticsPath}/view`, eventEndpoint: `${analyticsPath}/event` }
   : {}

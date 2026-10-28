@@ -28,11 +28,13 @@ const nextConfig: NextConfig = {
       permanent: false,
     }] : []
   },
-  // Web Analytics posts to <basePath>/_vercel/insights (see app/layout.tsx); Vercel serves it at the root.
+  // Web Analytics loads and posts through <basePath>/insights (see app/layout.tsx). Vercel only serves
+  // /_vercel/insights at the root and refuses internal rewrites to it, so proxy to this project's domain.
   async rewrites() {
-    return BASE_PATH ? { beforeFiles: [{
-      source: `${BASE_PATH}/_vercel/insights/:path*`,
-      destination: "/_vercel/insights/:path*",
+    const origin = process.env.VERCEL_PROJECT_PRODUCTION_URL
+    return BASE_PATH && origin ? { beforeFiles: [{
+      source: `${BASE_PATH}/insights/:path*`,
+      destination: `https://${origin}/_vercel/insights/:path*`,
       basePath: false,
     }] } : []
   },
