@@ -12,13 +12,12 @@ import { BASE_PATH, SITE_URL, sitePath } from "@/lib/config"
 
 import "./globals.css"
 
-// Behind the personal site's /design-infra rewrite, relative /_vercel/insights URLs would reach that site's
-// project, so production points page views at this project's own domain.
-const analyticsOrigin = process.env.VERCEL_ENV === "production" && BASE_PATH && process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}/_vercel/insights`
-  : null
-const analyticsProps = analyticsOrigin
-  ? { scriptSrc: `${analyticsOrigin}/script.js`, viewEndpoint: `${analyticsOrigin}/view`, eventEndpoint: `${analyticsOrigin}/event` }
+// Behind the personal site's /design-infra rewrite, root /_vercel/insights URLs reach that site's project, and
+// cross-origin posts to this project's domain fail CORS. Stay same-origin under the base path; next.config.ts
+// proxies it to this project's /_vercel/insights.
+const analyticsPath = process.env.VERCEL_PROJECT_PRODUCTION_URL && BASE_PATH ? `${BASE_PATH}/insights` : null
+const analyticsProps = analyticsPath
+  ? { scriptSrc: `${analyticsPath}/script.js`, viewEndpoint: `${analyticsPath}/view`, eventEndpoint: `${analyticsPath}/event` }
   : {}
 
 const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] })

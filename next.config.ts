@@ -28,6 +28,16 @@ const nextConfig: NextConfig = {
       permanent: false,
     }] : []
   },
+  // Web Analytics loads and posts through <basePath>/insights (see app/layout.tsx). Vercel only serves
+  // /_vercel/insights at the root and refuses internal rewrites to it, so proxy to this project's domain.
+  async rewrites() {
+    const origin = process.env.VERCEL_PROJECT_PRODUCTION_URL
+    return BASE_PATH && origin ? { beforeFiles: [{
+      source: `${BASE_PATH}/insights/:path*`,
+      destination: `https://${origin}/_vercel/insights/:path*`,
+      basePath: false,
+    }] } : []
+  },
   // Route handlers (MCP, /api/*) and on-demand pages read the catalog + DESIGN.md files at runtime.
   // Careful: a glob like "./docs/**/*.md" also matches docs/ folders inside node_modules (pnpm's symlinked
   // store) and breaks Vercel packaging ("invalid deployment package … symlinked directories"). Prefer
