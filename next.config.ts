@@ -21,7 +21,8 @@ const nextConfig: NextConfig = {
       basePath: false,
       permanent: false,
     }, {
-      source: `/:path((?!${BASE_PATH.slice(1)}(?:/|$)).+)`,
+      // Vercel's own /_vercel/* routes (Web Analytics) must stay at the root.
+      source: `/:path((?!(?:${BASE_PATH.slice(1)}|_vercel)(?:/|$)).+)`,
       destination: `${BASE_PATH}/:path`,
       basePath: false,
       permanent: false,
