@@ -28,6 +28,14 @@ const nextConfig: NextConfig = {
       permanent: false,
     }] : []
   },
+  // Web Analytics posts to <basePath>/_vercel/insights (see app/layout.tsx); Vercel serves it at the root.
+  async rewrites() {
+    return BASE_PATH ? { beforeFiles: [{
+      source: `${BASE_PATH}/_vercel/insights/:path*`,
+      destination: "/_vercel/insights/:path*",
+      basePath: false,
+    }] } : []
+  },
   // Route handlers (MCP, /api/*) and on-demand pages read the catalog + DESIGN.md files at runtime.
   // Careful: a glob like "./docs/**/*.md" also matches docs/ folders inside node_modules (pnpm's symlinked
   // store) and breaks Vercel packaging ("invalid deployment package … symlinked directories"). Prefer
