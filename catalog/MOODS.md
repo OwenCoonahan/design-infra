@@ -8,20 +8,20 @@ MCP: `plan_ui` reads moods from the brief automatically; `search_components` tak
 
 | mood | feels like | design systems | inspiration | entries |
 |---|---|---|---|---|
-| **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 53 |
-| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 839 |
-| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1247 |
-| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 519 |
+| **calm** | Quiet, spacious, low motion; lets content breathe. | `editorial`, `soft-glass` | — | 54 |
+| **minimal** | Sparse, monochrome, restrained; nothing decorative. | `brutalist-mono` | [Jakub Krehel](../inspiration/jakub-kr/README.md), [Ramp](../inspiration/ramp/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 866 |
+| **refined** | Polished micro-detail and subtle motion — Linear/Vercel/Stripe craft. | `linear-dark` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Geometric identity studies](../inspiration/geometric-identity/README.md), [Jakub Krehel](../inspiration/jakub-kr/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 1276 |
+| **technical** | Dev-tool energy: mono type, terminals, data density, grids. | `brutalist-mono`, `linear-dark` | [Geometric identity studies](../inspiration/geometric-identity/README.md), [Jakub Krehel](../inspiration/jakub-kr/README.md), [Linear](../inspiration/linear/README.md), [Mistral AI](../inspiration/mistral/README.md), [Motion](../inspiration/motion/README.md), [Vanta](../inspiration/vanta/README.md) | 524 |
 | **editorial** | Typographic, serif-led, content-first; magazines and essays. | `editorial` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md) | 100 |
 | **warm** | Friendly, human, soft colours and rounded shapes. | `editorial`, `soft-glass` | [Vanta](../inspiration/vanta/README.md) | 66 |
 | **playful** | Bouncy motion, colour, toy-like interactions, delight. | `soft-glass` | [Motion](../inspiration/motion/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md) | 947 |
 | **premium** | Dark, cinematic, glow and depth; feels expensive. | `linear-dark` | [Linear](../inspiration/linear/README.md), [Stripe](../inspiration/stripe/README.md) | 879 |
-| **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 369 |
-| **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | [Geometric identity studies](../inspiration/geometric-identity/README.md) | 898 |
+| **futuristic** | Sci-fi glow, beams, 3D, space — the AI-launch look. | — | — | 371 |
+| **experimental** | Art-directed, shaders/WebGL, unusual interactions. | — | [Geometric identity studies](../inspiration/geometric-identity/README.md) | 904 |
 | **bold** | Loud, high-contrast, big type, brutalist confidence. | `brutalist-mono` | [Breakthrough Energy](../inspiration/breakthrough-energy/README.md), [Motion](../inspiration/motion/README.md) | 7 |
 | **retro** | Pixel, dither, ASCII, CRT, nostalgic computing. | — | [Mistral AI](../inspiration/mistral/README.md) | 77 |
-| **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 155 |
-| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 961 |
+| **organic** | Nature, photography, fluid/gooey shapes, earthy tones. | — | — | 158 |
+| **trustworthy** | Conventional, enterprise-safe, clear hierarchy; finance/health/B2B. | — | [Ramp](../inspiration/ramp/README.md), [Stripe](../inspiration/stripe/README.md), [UGC Contracts](../inspiration/ugc-contracts/README.md), [Vanta](../inspiration/vanta/README.md), [Vela Energy](../inspiration/vela-energy/README.md) | 962 |
 
 ## Calm
 
@@ -34,6 +34,7 @@ Quiet, spacious, low motion; lets content breathe. Brief words: calm, quiet, ser
 - ★ `oc/feature-list` — Features · List (features) · `npx shadcn@latest add @design-infra/feature-list`
 - ★ `oc/prompt-composer` — Prompt composer (ai-chat, input) · `npx shadcn@latest add @design-infra/prompt-composer`
 - ★ `oc/template-ai-chat` — Template · AI chat (ai-chat, agent-ui, sidebar) · `npx shadcn@latest add @design-infra/template-ai-chat`
+- ★ `loading-dev/linear-dots` — Linear dots (loader) · `pnpm add loading-dev`
 - ★ `react-bits/blur-text` — Blur Text (text-effect) · `npx shadcn@latest add @react-bits/BlurText-TS-TW`
 - ★ `smoothui/ai-loader` — Ai Loader (agent-ui, loader) · `npx shadcn@latest add @smoothui/ai-loader`
 - ★ `smoothui/skeleton-loader` — Skeleton Loader (loader) · `npx shadcn@latest add @smoothui/skeleton-loader`
@@ -41,7 +42,6 @@ Quiet, spacious, low motion; lets content breathe. Brief words: calm, quiet, ser
 - ★ `beautifui/approval-card` — Approval Card (agent-ui, card) · `npx shadcn@latest add @beautifui/approval-card`
 - ★ `beautifui/chat-composer` — Chat (agent-ui, input, ai-chat) · `npx shadcn@latest add @beautifui/chat-composer`
 - ★ `beautifui/diff-table` — Diff Table (agent-ui, table) · `npx shadcn@latest add @beautifui/diff-table`
-- ★ `beautifui/flowchart` — Flowchart (agent-ui, graph) · `npx shadcn@latest add @beautifui/flowchart`
 
 ## Minimal
 
@@ -57,11 +57,11 @@ Sparse, monochrome, restrained; nothing decorative. Brief words: minimal, minima
 - ★ `oc/settings-form` — Settings form (form, input) · `npx shadcn@latest add @design-infra/settings-form`
 - ★ `oc/theme-preview` — Theme preview (theme) · `npx shadcn@latest add @design-infra/theme-preview`
 - ★ `oc/design-lab` — Design lab (temporary option board) (dev-tool) · `npx shadcn@latest add @design-infra/design-lab`
+- ★ `loading-dev/arc` — Arc (loader) · `pnpm add loading-dev`
+- ★ `loading-dev/linear-dots` — Linear dots (loader) · `pnpm add loading-dev`
 - ★ `motion-primitives/animated-background` — Animated Background (background) · `npx shadcn@latest add @motion-primitives/animated-background`
 - ★ `motion-primitives/animated-group` — Animated Group (transition) · `npx shadcn@latest add @motion-primitives/animated-group`
 - ★ `motion-primitives/in-view` — In View (transition) · `npx shadcn@latest add @motion-primitives/in-view`
-- ★ `motion-primitives/infinite-slider` — Infinite Slider (carousel) · `npx shadcn@latest add @motion-primitives/infinite-slider`
-- ★ `motion-primitives/morphing-dialog` — Morphing Dialog (modal) · `npx shadcn@latest add @motion-primitives/morphing-dialog`
 
 ## Refined
 
@@ -264,11 +264,11 @@ Nature, photography, fluid/gooey shapes, earthy tones. Brief words: organic, nat
 - ★ `beui/thinking-shimmer` — Agent Loading States Thinking Shimmer (loader, agent-ui) · `npx shadcn@latest add @beui/thinking-shimmer`
 - ★ `originkit/mcp` — OriginKit MCP (dev-tool) · `npx originkit login # then: npx originkit add <name>`
 - ★ `transitions/thinking-states` — Thinking states (transition, loader) · `npx skills add Jakubantalik/transitions.dev # then ask: "apply the thinking-states transition"`
+- `loading-dev/blocks` — Blocks (loader) · `pnpm add loading-dev`
+- `loading-dev/snake` — Snake (loader) · `pnpm add loading-dev`
+- `loading-dev/wave` — Wave (loader) · `pnpm add loading-dev`
 - `aceternity/3d-pin` — 3D Animated Pin (3d, card) · `npx shadcn@latest add @aceternity/3d-pin`
 - `aceternity/gooey-input` — Gooey Input (input, form, navigation) · `npx shadcn@latest add @aceternity/gooey-input`
-- `aceternity/link-preview` — Link Preview (tooltip, text-effect) · `npx shadcn@latest add @aceternity/link-preview`
-- `aceternity/notch` — Notch (navigation) · `npx shadcn@latest add @aceternity/notch`
-- `aceternity/wavy-background` — Wavy Background (background) · `npx shadcn@latest add @aceternity/wavy-background`
 
 ## Trustworthy
 

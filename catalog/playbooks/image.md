@@ -95,3 +95,8 @@ Videos: captions, no autoplay with sound, a pause control for anything that loop
 **Performance.** `next/image` with `priority` only for the hero; lazy everything else. Hover videos: `preload="none"`,
 load on hover intent. WebGL galleries load textures for every image — cap counts, use small textures, lazy-mount
 the canvas, and provide a plain grid fallback.
+
+**Further reading** (Jakub Krehel, link-only):
+
+- [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better) — outlines on images, staggered enters
+- [Understanding gradients](https://jakub.kr/work/gradients) — colour hints and layered gradients for overlays; [oklch.fyi](https://oklch.fyi) (free OKLCH palette guide and picker)

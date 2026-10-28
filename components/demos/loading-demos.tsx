@@ -9,6 +9,7 @@ import GridLoader from "./vendor/smoothui/grid-loader"
 import MotionLoader, { MOTION_LOADER_VARIANTS, type MotionLoaderVariant } from "./vendor/smoothui/motion-loader"
 import { Spinner } from "./vendor/kibo-ui/spinner"
 import { AnimatedCircularProgressBar } from "./vendor/magicui/animated-circular-progress-bar"
+import { LoadingDevDemo } from "./loading-dev-demos"
 
 const control = "rounded-md border bg-background px-3 py-1.5 text-xs text-foreground"
 const orbStates: OrbState[] = [
@@ -29,6 +30,7 @@ export function LoadingDemo({ id, compact = false }: { id: string; compact?: boo
   const [loaded, setLoaded] = React.useState(false)
   const [progress, setProgress] = React.useState(64)
   const [spinner, setSpinner] = React.useState<React.ComponentProps<typeof Spinner>["variant"]>("default")
+  if (id.startsWith("loading-dev/")) return <LoadingDevDemo id={id} compact={compact} />
   let example: React.ReactNode
   let controls: React.ReactNode
   switch (id) {

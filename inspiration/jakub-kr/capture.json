@@ -1,0 +1,236 @@
+{
+  "url": "https://jakub.kr",
+  "slug": "jakub-kr",
+  "capturedAt": "2026-10-28T14:44:12.702Z",
+  "fullHeightCaptured": 2448,
+  "title": "Jakub Krehel",
+  "description": "Founding Design Engineer at Interfere",
+  "themeColor": "#fcfcfc",
+  "pageHeight": 2448,
+  "fonts": {
+    "heading": [
+      {
+        "value": "ui-sans-serif",
+        "weight": 47
+      }
+    ],
+    "body": [
+      {
+        "value": "ui-sans-serif",
+        "weight": 1114
+      }
+    ],
+    "ui": [
+      {
+        "value": "ui-sans-serif",
+        "weight": 61
+      }
+    ],
+    "mono": []
+  },
+  "loadedFontFaces": [],
+  "typeScale": [
+    {
+      "value": "17px/400",
+      "weight": 652
+    },
+    {
+      "value": "17px/450",
+      "weight": 500
+    },
+    {
+      "value": "17px/500",
+      "weight": 70
+    }
+  ],
+  "palette": {
+    "backgrounds": [
+      {
+        "value": "#fcfcfc",
+        "weight": 1
+      }
+    ],
+    "text": [],
+    "borders": []
+  },
+  "radii": [
+    {
+      "value": "16px",
+      "weight": 15
+    },
+    {
+      "value": "8px",
+      "weight": 4
+    },
+    {
+      "value": "5px",
+      "weight": 4
+    },
+    {
+      "value": "3.35544e+07px",
+      "weight": 2
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0",
+      "weight": 9
+    }
+  ],
+  "cssVariables": {
+    "--container-md": "28rem",
+    "--default-font-feature-settings": "normal",
+    "--tw-inset-shadow-alpha": "100%",
+    "--color-cyan-300": "lab(85.3886% -36.7636 -21.5716)",
+    "--tw-ring-shadow": "0 0 #0000",
+    "--text-2xl": "1.5rem",
+    "--color-orange-200": "lab(88.4871% 9.94918 28.8378)",
+    "--blur-lg": "16px",
+    "--color-sky-500": "lab(63.3038% -18.433 -51.0407)",
+    "--tw-drop-shadow-alpha": "100%",
+    "--color-red-900": "lab(28.5139% 44.5539 29.0463)",
+    "--tw-animation-delay": "0s",
+    "--text-lg": "1.125rem",
+    "--shadow-border": "0px 0px 0px 1px #0000000f",
+    "--color-danger-solid-hover": "lab(48.4493% 77.4328 61.5452)",
+    "--color-orange-900": "lab(30.2951% 36.0434 37.671)",
+    "--tw-outline-style": "solid",
+    "--text-5xl--line-height": "1",
+    "--viewfinder-inset": "0px",
+    "--color-green-100": "lab(96.1861% -13.8464 6.52365)",
+    "--leading-normal": "1.5",
+    "--tw-inset-ring-shadow": "0 0 #0000",
+    "--text-base--line-height": "calc(1.5 / 1)",
+    "--color-orange-50": "lab(97.7008% 1.53735 5.90649)",
+    "--radius-4xl": "2rem",
+    "--color-red-200": "lab(86.017% 19.8815 7.75869)",
+    "--tw-animation-direction": "normal",
+    "--tw-enter-scale": "1",
+    "--color-gray-300": "lab(94.78% 0 0)",
+    "--font-text-sans": "ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "--color-gray-1000": "lab(54.76% 0 0)",
+    "--color-gray-500": "lab(89.212% -.0000298023 .0000119209)",
+    "--color-green-500": "lab(70.5521% -66.5147 45.8073)",
+    "--tw-inset-shadow": "0 0 #0000",
+    "--tw-ring-offset-color": "#fff",
+    "--text-lg--line-height": "calc(1.75 / 1.125)",
+    "--tw-gradient-from": "rgba(0, 0, 0, 0)",
+    "--color-white": "#fff",
+    "--color-gray-400": "lab(91.996% -.0000298023 .0000119209)",
+    "--color-preview-border": "lab(91.996% -.0000298023 .0000119209)",
+    "--color-blue-400": "lab(65.0361% -1.42065 -56.9802)",
+    "--tw-shadow-alpha": "100%",
+    "--tw-gradient-to": "rgba(0, 0, 0, 0)",
+    "--radius-sm": ".25rem",
+    "--tw-exit-rotate": "0",
+    "--tw-scale-z": "1",
+    "--font-weight-bold": "700",
+    "--color-gray-100": "lab(98.956% .0000298023 -.0000119209)",
+    "--color-red-500": "lab(55.4814% 75.0732 48.8528)",
+    "--container-sm": "24rem",
+    "--tw-ring-offset-width": "0px",
+    "--tw-exit-translate-y": "0",
+    "--tw-gradient-via-position": "50%",
+    "--text-6xl": "3.75rem",
+    "--default-font-family": "ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "--text-xs--line-height": "calc(1 / .75)",
+    "--container-lg": "32rem",
+    "--color-violet-500": "lab(49.9355% 55.1776 -81.8963)",
+    "--tw-gradient-to-position": "100%",
+    "--default-transition-duration": ".15s",
+    "--animate-pulse": "pulse 2s cubic-bezier(.4, 0, .6, 1) infinite",
+    "--radius-2xl": "1rem",
+    "--radius-md": ".375rem",
+    "--color-gray-background": "#fcfcfc",
+    "--radius-lg": ".5rem",
+    "--text-xl": "1.25rem",
+    "--tw-gradient-from-position": "0%",
+    "--ease-in-out": "cubic-bezier(.4, 0, .2, 1)",
+    "--tw-ring-offset-shadow": "0 0 #0000",
+    "--color-blue-100": "lab(92.0301% -2.24757 -11.6453)",
+    "--color-gray-800": "lab(75.872% 0 0)",
+    "--color-green-950": "lab(15.6845% -20.4225 11.7249)",
+    "--leading-relaxed": "1.625",
+    "--leading-snug": "1.375",
+    "--default-transition-timing-function": "cubic-bezier(.4, 0, .2, 1)",
+    "--color-green-50": "lab(98.1563% -5.60117 2.75915)",
+    "--tw-animation-iteration-count": "1",
+    "--color-orange-500": "lab(64.272% 57.1788 90.3583)",
+    "--tw-exit-opacity": "1",
+    "--radius-3xl": "1.5rem",
+    "--color-orange-950": "lab(14.1747% 23.4515 19.4461)",
+    "--color-sky-400": "lab(70.687% -23.6078 -45.9483)",
+    "--tw-animation-fill-mode": "none",
+    "--text-2xl--line-height": "calc(2 / 1.5)",
+    "--color-preview-bg": "lab(100% 0 0)",
+    "--tw-exit-blur": "0",
+    "--color-amber-500": "lab(72.7183% 31.8672 97.9407)",
+    "--spacing": ".25rem",
+    "--color-orange-400": "lab(70.0429% 42.5156 75.8207)",
+    "--tw-translate-z": "0",
+    "--tw-gradient-via": "rgba(0, 0, 0, 0)",
+    "--tw-scale-y": "1",
+    "--tracking-wide": ".025em",
+    "--text-xl--line-height": "calc(1.75 / 1.25)",
+    "--font-weight-semibold": "600",
+    "--tw-exit-translate-x": "0",
+    "--blur-xs": "4px",
+    "--tw-translate-y": "0",
+    "--color-green-400": "lab(78.503% -64.9265 39.7492)",
+    "--ease-out": "cubic-bezier(0, 0, .2, 1)",
+    "--color-blue-500": "lab(54.1736% 13.3369 -74.6839)",
+    "--color-gray-900": "lab(58.588% 0 0)",
+    "--tw-enter-translate-x": "0",
+    "--tw-content": "\"\"",
+    "--color-gray-700": "lab(82.716% 0 0)",
+    "--color-gray-600": "lab(86.66% 0 0)",
+    "--color-orange-100": "lab(94.7127% 3.58394 14.3151)",
+    "--color-red-100": "lab(92.243% 10.2865 3.83865)",
+    "--color-text-paragraph": "lab(28.08% 0 -.00000596046)",
+    "--text-4xl": "2.25rem",
+    "--tw-divide-y-reverse": "0",
+    "--tw-border-style": "solid",
+    "--tracking-normal": "0em",
+    "--color-gray-1200": "lab(12.304% -.00000745058 0)",
+    "--color-red-600": "lab(48.4493% 77.4328 61.5452)",
+    "--color-red-50": "lab(96.5005% 4.18508 1.52328)",
+    "--tw-exit-scale": "1",
+    "--tw-shadow": "0 0 #0000",
+    "--text-sm--line-height": "calc(1.25 / .875)",
+    "--tw-translate-x": "0"
+  },
+  "outline": [
+    {
+      "tag": "h1",
+      "text": "Jakub Krehel"
+    },
+    {
+      "tag": "h2",
+      "text": "Projects"
+    },
+    {
+      "tag": "h2",
+      "text": "Writing"
+    },
+    {
+      "tag": "h2",
+      "text": "Interface Newsletter"
+    }
+  ],
+  "signals": {
+    "sections": 4,
+    "images": 0,
+    "videos": 0,
+    "canvases": 0,
+    "svgs": 25,
+    "animatedElements": 11,
+    "prefersReducedMotionCss": true,
+    "stack": {
+      "nextjs": true,
+      "framer": false,
+      "webflow": false,
+      "tailwind": true,
+      "gsap": false
+    }
+  }
+}

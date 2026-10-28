@@ -22,19 +22,20 @@ node /tmp/di.mjs --list        # ranked list   ·   --tier 3   ·   --only motio
 | 9 | [Origin UI (coss origin)](https://coss.com/origin) | 2 | components | ~600 theme-aware app components (inputs, tables, calendars, navbars) — the best free source for product UI that just follows the theme. | — |
 | 10 | [Aceternity UI (free)](https://ui.aceternity.com) | 2 | components | The most-used flashy marketing components (spotlights, beams, scroll effects) — but hard-coded colours and 174 Pro-only blocks. | — |
 | 11 | [Agentation (visual feedback)](https://www.agentation.com) | 2 | dev-tool | Click any element in the running app, annotate it, and the agent gets selector + source file — the fastest 'fix THIS' loop. | — |
-| 12 | [Kage (design reference MCP)](https://kage.design) | 2 | agent | Free, keyless MCP over 372 analysed real product designs and 1,978 extracted components with prompts — how real products solved a section, beyond our catalog. | — |
-| 13 | [Kibo UI](https://www.kibo-ui.com) | 3 | components | Complex theme-aware product components (kanban, gantt, editor, dropzone, color picker) you'd never hand-build. | — |
-| 14 | [Cult UI](https://www.cult-ui.com) | 3 | components | Playful, tactile components and onboarding flows; theming varies by generation. | — |
-| 15 | [React Bits](https://reactbits.dev) | 3 | components | The deepest well of creative text effects, WebGL backgrounds and micro-interactions — heavy deps, purple defaults, Commons Clause (install-only). | — |
-| 16 | [Beautiful UI](https://www.beautifului.dev) | 3 | components | The best free AI/agent surfaces (thinking traces, approvals, tool chips) — its foundation.css redefines --accent. | — |
-| 17 | [libraries.dev packages](https://libraries.dev) | 3 | components | Small MIT npm packages for AI interfaces: thinking-orbs, border-beam, voice-glow, bot-avatars, metal-fx. | — |
-| 18 | [21st.dev (CLI + MCP)](https://21st.dev/mcp) | 3 | components | Breadth: 12k+ community components and search when nothing curated fits. Quality varies. | `API_KEY_21ST` |
-| 19 | [Kitbitz (CC0 illustrations MCP)](https://kitbitz.art) | 3 | agent | 2,043 hand-drawn CC0 illustrations in 13 consistent kits, searchable through a free read-only MCP — warmth for empty states and onboarding without an illustrator. | — |
-| 20 | [OriginKit (CLI + MCP)](https://www.originkit.dev) | 4 | paid | ~1,100 WebGL/shader backgrounds, heroes and cursors — the wow factor, metered and proprietary. | `ORIGINKIT_API_KEY` |
-| 21 | [Motion+ (premium components + MCP)](https://motion.dev/plus) | 4 | paid | Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 460+ example sources. | `MOTION_PLUS` |
-| 22 | [transitions.dev Pro](https://transitions.dev) | 4 | paid | React/TS variants of every recipe plus Pro transitions. | `TRANSITIONS_LICENSE` |
-| 23 | [Anatomy (isometric explainer skill)](https://skills.wheresryan.sh/anatomy) | 3 | agent | Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first. | — |
-| 24 | [beUI (free)](https://beui.dev/) | 3 | components | Free animated controls, charts and agent surfaces with a public MIT registry. Separate from Beautiful UI and the paid beUI Pro collection. | — |
+| 12 | [Jakub Krehel's interface skills](https://github.com/jakubkrehel/skills) | 2 | agent | Precise polish rules with exact values (press scale 0.96, enter/exit timings, concentric radii, shadow rings instead of decorative borders, text wrapping, tabular numbers, OKLCH colour, focus and reduced motion). They complement design-infra: we choose WHAT to build, these tighten HOW it renders. MIT, ~8.9k stars. | — |
+| 13 | [Kage (design reference MCP)](https://kage.design) | 2 | agent | Free, keyless MCP over 372 analysed real product designs and 1,978 extracted components with prompts — how real products solved a section, beyond our catalog. | — |
+| 14 | [Kibo UI](https://www.kibo-ui.com) | 3 | components | Complex theme-aware product components (kanban, gantt, editor, dropzone, color picker) you'd never hand-build. | — |
+| 15 | [Cult UI](https://www.cult-ui.com) | 3 | components | Playful, tactile components and onboarding flows; theming varies by generation. | — |
+| 16 | [React Bits](https://reactbits.dev) | 3 | components | The deepest well of creative text effects, WebGL backgrounds and micro-interactions — heavy deps, purple defaults, Commons Clause (install-only). | — |
+| 17 | [Beautiful UI](https://www.beautifului.dev) | 3 | components | The best free AI/agent surfaces (thinking traces, approvals, tool chips) — its foundation.css redefines --accent. | — |
+| 18 | [libraries.dev packages](https://libraries.dev) | 3 | components | Small MIT npm packages for AI interfaces: thinking-orbs, border-beam, voice-glow, bot-avatars, metal-fx. | — |
+| 19 | [21st.dev (CLI + MCP)](https://21st.dev/mcp) | 3 | components | Breadth: 12k+ community components and search when nothing curated fits. Quality varies. | `API_KEY_21ST` |
+| 20 | [Kitbitz (CC0 illustrations MCP)](https://kitbitz.art) | 3 | agent | 2,043 hand-drawn CC0 illustrations in 13 consistent kits, searchable through a free read-only MCP — warmth for empty states and onboarding without an illustrator. | — |
+| 21 | [OriginKit (CLI + MCP)](https://www.originkit.dev) | 4 | paid | ~1,100 WebGL/shader backgrounds, heroes and cursors — the wow factor, metered and proprietary. | `ORIGINKIT_API_KEY` |
+| 22 | [Motion+ (premium components + MCP)](https://motion.dev/plus) | 4 | paid | Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 460+ example sources. | `MOTION_PLUS` |
+| 23 | [transitions.dev Pro](https://transitions.dev) | 4 | paid | React/TS variants of every recipe plus Pro transitions. | `TRANSITIONS_LICENSE` |
+| 24 | [Anatomy (isometric explainer skill)](https://skills.wheresryan.sh/anatomy) | 3 | agent | Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first. | — |
+| 25 | [beUI (free)](https://beui.dev/) | 3 | components | Free animated controls, charts and agent surfaces with a public MIT registry. Separate from Beautiful UI and the paid beUI Pro collection. | — |
 
 ## Tier 1 — Foundation — always
 
@@ -127,7 +128,15 @@ Click any element in the running app, annotate it, and the agent gets selector +
 - agent note
 - verify: `node -e "require.resolve('agentation')"`
 
-### 12. Kage (design reference MCP)
+### 12. Jakub Krehel's interface skills
+
+Precise polish rules with exact values (press scale 0.96, enter/exit timings, concentric radii, shadow rings instead of decorative borders, text wrapping, tabular numbers, OKLCH colour, focus and reduced motion). They complement design-infra: we choose WHAT to build, these tighten HOW it renders. MIT, ~8.9k stars. **Use:** After a component or page is chosen and built, for the polish pass: better-ui (surfaces, icons, motion), better-typography, better-colors, better-accessibility, better-layout. Optional skills from the same repo, added on request with --skill <name>: interface-review, explain-interface, variant, teardown, state-machine, build-design, break, better-writing, better-interface. For OKLCH palettes add jakubkrehel/oklch-skill (separate repo). A project's DESIGN.md wins where a rule conflicts with its design system.
+
+- run: `DISABLE_TELEMETRY=1 npx -y skills@latest add jakubkrehel/skills --skill better-ui better-typography better-colors better-accessibility better-layout -a claude-code codex -y`
+- agent note
+- verify: `test -e .agents/skills/better-ui || test -e .claude/skills/better-ui`
+
+### 13. Kage (design reference MCP)
 
 Free, keyless MCP over 372 analysed real product designs and 1,978 extracted components with prompts — how real products solved a section, beyond our catalog. **Use:** Researching a page or section ('fintech pricing pages', 'a site like Linear for X') before planning; never for bulk export.
 
@@ -137,36 +146,36 @@ Free, keyless MCP over 372 analysed real product designs and 1,978 extracted com
 
 ## Tier 3 — Situational
 
-### 13. Kibo UI
+### 14. Kibo UI
 
 Complex theme-aware product components (kanban, gantt, editor, dropzone, color picker) you'd never hand-build. **Use:** Rich app features; its hosted MCP is currently broken (HTTP 500) — use the shadcn MCP instead.
 
 - registry `@kibo-ui` → `https://www.kibo-ui.com/r/{name}.json`
 
-### 14. Cult UI
+### 15. Cult UI
 
 Playful, tactile components and onboarding flows; theming varies by generation. **Use:** Consumer/playful projects (lively motion); check colours after install.
 
 - registry `@cult-ui` → `https://www.cult-ui.com/r/{name}.json`
 
-### 15. React Bits
+### 16. React Bits
 
 The deepest well of creative text effects, WebGL backgrounds and micro-interactions — heavy deps, purple defaults, Commons Clause (install-only). **Use:** Cinematic/experimental pages. Names are case-sensitive: @react-bits/SplitText-TS-TW.
 
 - registry `@react-bits` → `https://reactbits.dev/r/{name}.json`
 
-### 16. Beautiful UI
+### 17. Beautiful UI
 
 The best free AI/agent surfaces (thinking traces, approvals, tool chips) — its foundation.css redefines --accent. **Use:** AI products; import foundation.css BEFORE your theme or rename its accent vars.
 
 - registry `@beautifui` → `https://www.beautifului.dev/r/{name}.json`
 
-### 17. libraries.dev packages
+### 18. libraries.dev packages
 
 Small MIT npm packages for AI interfaces: thinking-orbs, border-beam, voice-glow, bot-avatars, metal-fx. **Use:** Install per need (e.g. pnpm add thinking-orbs) — @design-infra/agent-status and @design-infra/beam-card wrap two of them.
 
 
-### 18. 21st.dev (CLI + MCP)
+### 19. 21st.dev (CLI + MCP)
 
 Breadth: 12k+ community components and search when nothing curated fits. Quality varies. **Use:** Searching for something specific the catalog lacks; read the code before shipping.
 
@@ -175,7 +184,7 @@ Breadth: 12k+ community components and search when nothing curated fits. Quality
 - secret `API_KEY_21ST` — get it at https://21st.dev/settings/api-keys (free account; component code is metered)
 - verify: `npx -y @21st-dev/cli@latest whoami`
 
-### 19. Kitbitz (CC0 illustrations MCP)
+### 20. Kitbitz (CC0 illustrations MCP)
 
 2,043 hand-drawn CC0 illustrations in 13 consistent kits, searchable through a free read-only MCP — warmth for empty states and onboarding without an illustrator. **Use:** Empty states, onboarding, 404s and marketing spots on warm/playful products; download the chosen SVGs into the project.
 
@@ -183,7 +192,7 @@ Breadth: 12k+ community components and search when nothing curated fits. Quality
 - agent note
 - verify: `curl -sf -X POST https://mcp.kitbitz.art -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"verify","version":"0"}}}' >/dev/null`
 
-### 23. Anatomy (isometric explainer skill)
+### 24. Anatomy (isometric explainer skill)
 
 Specialist illustration tool for interactive explanations of mechanisms and technical concepts; the catalog supplies reusable anatomy-figures components first. **Use:** Docs, educational articles and technical feature sections that need an explanatory SVG or WebGL figure. Select explicitly; ordinary controls use component libraries.
 
@@ -191,7 +200,7 @@ Specialist illustration tool for interactive explanations of mechanisms and tech
 - agent note
 - verify: `test -f .agents/skills/anatomy/SKILL.md`
 
-### 24. beUI (free)
+### 25. beUI (free)
 
 Free animated controls, charts and agent surfaces with a public MIT registry. Separate from Beautiful UI and the paid beUI Pro collection. **Use:** Choose compatible React 19/Tailwind 4 components as needed. Preserve the project theme; map missing surface tokens. Pro stays opt-in until licensed access is confirmed.
 
@@ -199,7 +208,7 @@ Free animated controls, charts and agent surfaces with a public MIT registry. Se
 
 ## Tier 4 — Paid / metered / keyed
 
-### 20. OriginKit (CLI + MCP)
+### 21. OriginKit (CLI + MCP)
 
 ~1,100 WebGL/shader backgrounds, heroes and cursors — the wow factor, metered and proprietary. **Use:** A signature background/hero when the free catalog looks too familiar.
 
@@ -208,7 +217,7 @@ Free animated controls, charts and agent surfaces with a public MIT registry. Se
 - secret `ORIGINKIT_API_KEY` — get it at https://www.originkit.dev (Profile → API Keys; free = 10 copies/day, Pro $79/yr)
 - verify: `npx -y originkit@latest whoami`
 
-### 21. Motion+ (premium components + MCP)
+### 22. Motion+ (premium components + MCP)
 
 Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 460+ example sources. **Use:** Only with a licence; then prefer it over hand-rolled versions of those components.
 
@@ -216,7 +225,7 @@ Carousel, Ticker, AnimateNumber, Typewriter, Cursor, page transitions and all 46
 - agent note
 - secret `MOTION_PLUS` — get it at https://motion.dev/plus (set MOTION_PLUS=1 once you have a membership; the MCP signs in via OAuth in /mcp)
 
-### 22. transitions.dev Pro
+### 23. transitions.dev Pro
 
 React/TS variants of every recipe plus Pro transitions. **Use:** When CSS recipes need to become typed React components.
 

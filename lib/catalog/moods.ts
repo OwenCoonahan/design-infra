@@ -128,6 +128,7 @@ export const SOURCE_DEFAULTS: Record<string, Mood[]> = {
   shadcn: ["minimal", "trustworthy"],
   beautifui: ["calm", "refined"],
   beui: ["refined", "playful"],
+  "loading-dev": ["refined", "minimal"],
   "beui-pro": ["refined", "technical"],
   transitions: ["refined"],
   motion: ["refined", "playful"],

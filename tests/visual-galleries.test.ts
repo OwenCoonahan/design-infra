@@ -18,6 +18,10 @@ const loading = [
   "smoothui/grid-loader",
   "smoothui/motion-loader",
   "magicui/animated-circular-progress-bar",
+  "loading-dev/arc",
+  "loading-dev/classic",
+  "loading-dev/linear-dots",
+  "loading-dev/trace",
 ]
 
 test("category defaults and explicit view survive a URL reload without affecting search", () => {
@@ -37,7 +41,7 @@ test("category defaults and explicit view survive a URL reload without affecting
   assert.deepEqual(searchOptionsFromFilters(f), searchOptionsFromFilters({ ...f, view: "live" }))
   assert.ok(categoryGallery("loader").endsWith("/components?category=loader"))
 })
-test("all eight Loading adapters keep the upstream catalog identity and carry provenance", () => {
+test("all twelve Loading adapters keep the upstream catalog identity and carry provenance", () => {
   for (const id of loading) {
     const entry = catalog.find((e: CatalogEntry) => e.id === id)!
     assert.ok(entry, id)

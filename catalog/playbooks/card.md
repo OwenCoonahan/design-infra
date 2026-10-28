@@ -96,3 +96,9 @@ keyboard users a visible ring). Morphing dialogs must trap focus and return it t
 **Performance.** Pointer-tracking effects should write CSS variables in `requestAnimationFrame`, not React state.
 Canvas/WebGL reveal cards (`canvas-reveal-effect`) mount one context per card — cap at a handful and unmount
 off-screen. `backdrop-filter` glass is expensive in long scrolling lists.
+
+**Further reading** (Jakub Krehel, link-only):
+
+- [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better) — concentric radius for nested surfaces
+- [Using shadows instead of borders](https://jakub.kr/work/shadows) — layered shadow rings that work on any background
+- [Understanding gradients](https://jakub.kr/work/gradients) — colour spaces for gradient fills; [oklch.fyi](https://oklch.fyi) (free OKLCH palette guide and picker)

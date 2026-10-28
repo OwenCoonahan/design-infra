@@ -14,6 +14,8 @@ instead of re-auditing. Re-open one only if the reason below has changed (e.g. a
 | kinetics.colorion.co | 2026-10-06 | 153 motion effects gallery | No licence (all rights reserved); toy-level code; no installable output | it adds a licence + registry |
 | threejs.org, shadertoy, threejs-journey | 2026-10-06 | 3D/shader library, editor, course | Not design sources (thebookofshaders.com is linked from the Motion source as learning) | — |
 | claude code, cursor, v0, lovable | 2026-10-06 | AI coding tools / builders | Tools, not design sources | — |
+| github.com/jakubkrehel/make-interfaces-feel-better | 2026-10-28 | Jakub Krehel's earlier single polish skill | Superseded by `jakubkrehel/skills` (toolchain `jakub-skills`, `catalog/sources/jakub-krehel.md`), which splits the same rules into focused skills | the skills repo is archived |
+| interfaces.dev (archive + premium skills) | 2026-10-28 | Jakub Krehel's design-engineering magazine | Archive and skills are subscription-gated; robots.txt disallows `/magazine` and `/issues-md/` except three free issues. Those free issues may be linked; nothing is mirrored or summarised at length | free access or an agent licence is offered |
 
 Already in the catalog from the same batch: component.gallery, 21st.dev, shadcn/ui, Aceternity, Magic UI, Motion
 Primitives, SmoothUI, MicroKit, Liquid Glass, anime.js, Kage, Kitbitz, and 14 inspiration galleries (`catalog/REFERENCES.md`).

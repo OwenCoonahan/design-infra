@@ -50,7 +50,7 @@ when workflows change.
 
 | command | does |
 |---|---|
-| `pnpm sync [source]` | pull upstream metadata → `catalog/generated/<source>.json` (Aceternity, Beautiful UI, OriginKit, transitions.dev, Magic UI, SmoothUI, Origin UI, React Bits, Motion Primitives, Cult UI, Kibo UI, shadcn blocks, Motion examples) |
+| `pnpm sync [source]` | pull upstream metadata → `catalog/generated/<source>.json` (Aceternity, Beautiful UI, OriginKit, transitions.dev, Magic UI, SmoothUI, Origin UI, React Bits, Motion Primitives, Cult UI, Kibo UI, loading.dev, shadcn blocks, Motion examples) |
 | `pnpm tokens` | DESIGN.md → `theme.css`, registry theme + font items, gallery CSS/fonts, `design-systems/README.md` |
 | `pnpm catalog` | generated + curated + `@oc` + inspiration + favorites + thumbnails → `catalog/index.json`, `CATALOG.md`, `MOODS.md` (moods inferred where not set) |
 | `pnpm registry:build` | compose `registry.json` → `shadcn build` → `public/r/` |

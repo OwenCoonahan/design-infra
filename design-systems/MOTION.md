@@ -181,3 +181,13 @@ or `soft-glass`). Moods: premium, futuristic, experimental (and organic for phot
 
 When a direction in a playbook is above the project's language (e.g. an `expressive` pick in a quiet project),
 offer it only if the user asks for something louder, and say it breaks the motion language.
+
+## Further reading
+
+Short, link-only references by Jakub Krehel (his polish rules ship as the `jakub-skills` toolchain entry):
+
+- [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better) — interruptible transitions, split/staggered enters, icon cross-fades
+- [How I use shared layout animations](https://jakub.kr/work/shared-layout-animations) — `layoutId` for indicators and morphing surfaces
+- [Using gestures in Motion](https://jakub.kr/work/motion-gestures) — hover, press and drag feedback
+- [Using shadows instead of borders](https://jakub.kr/work/shadows) — elevation without borders
+- [Understanding gradients](https://jakub.kr/work/gradients) — how colour spaces change gradients; [oklch.fyi](https://oklch.fyi) (free OKLCH palette guide and picker)

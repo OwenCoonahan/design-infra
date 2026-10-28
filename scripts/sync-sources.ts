@@ -9,6 +9,7 @@
  */
 import { anatomyFigures } from "../lib/catalog/anatomy"
 import { beuiRegistryItems } from "../lib/catalog/beui"
+import { loadingDevEntry, loadingDevSpinners } from "../lib/catalog/loading-dev"
 import { chartLibraries, chartLibraryEntries, type ChartLibrary } from "../lib/catalog/chart-libraries"
 import { bklitCharts, tremorCharts } from "../lib/catalog/chart-ui"
 import { mkdir, writeFile } from "node:fs/promises"
@@ -814,6 +815,15 @@ const syncChartLibrary = (library: ChartLibrary): Adapter => async () => {
   return chartLibraryEntries(library, metadata)
 }
 
+/** loading.dev — llms.txt lists every spinner; the MIT GitHub source decides technique and reduced motion. */
+const loadingDev: Adapter = async () => {
+  const src = "https://raw.githubusercontent.com/jakubkrehel/loading/main"
+  const [llms, license, frame] = await Promise.all([getText("https://loading.dev/llms.txt"), getText(`${src}/LICENSE.md`), getText(`${src}/src/frame.tsx`)])
+  if (!license.startsWith("MIT License")) throw new Error("Review changed loading.dev license")
+  const spinners = loadingDevSpinners(llms)
+  return Promise.all(spinners.map(async (spinner) => loadingDevEntry(spinner, await getText(`${src}/src/${spinner.slug}.tsx`), frame)))
+}
+
 const ADAPTERS: Record<string, Adapter> = {
   bklit: async () => {
     const license = await getText("https://raw.githubusercontent.com/bklit/bklit-ui/main/LICENSE")
@@ -827,6 +837,7 @@ const ADAPTERS: Record<string, Adapter> = {
   },
   ...Object.fromEntries(chartLibraries.map((library) => [library.slug, syncChartLibrary(library)])),
   beui,
+  "loading-dev": loadingDev,
   anatomy,
   motion,
   aceternity,

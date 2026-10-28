@@ -76,3 +76,8 @@ sliding pill. Under `prefers-reduced-motion` the indicator jumps and panels swap
 **Performance.** Animate the indicator with `transform` (motion `layoutId` or measured translate), never by
 transitioning `left/width` on every frame. Keep inactive panels unmounted or `hidden` if they're heavy; don't
 animate both height and content of large panels simultaneously.
+
+**Further reading** (Jakub Krehel, link-only):
+
+- [How I use shared layout animations](https://jakub.kr/work/shared-layout-animations) — `layoutId` highlights and indicators
+- [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better) — why tab motion must be interruptible

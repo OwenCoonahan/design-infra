@@ -297,6 +297,58 @@
         "local": "thinking-orbs@0.3.2"
       }
     },
+    "loading-dev/arc": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://github.com/jakubkrehel/loading",
+        "license": "MIT",
+        "local": "components/demos/loading-dev-demos.tsx",
+        "sha256": "c3cb9e20b3375e67070e8c15a69bf9322fd286373b65b049143709c438dcb946",
+        "package": "loading-dev@0.3.6",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "loading-dev/classic": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://github.com/jakubkrehel/loading",
+        "license": "MIT",
+        "local": "components/demos/loading-dev-demos.tsx",
+        "sha256": "c3cb9e20b3375e67070e8c15a69bf9322fd286373b65b049143709c438dcb946",
+        "package": "loading-dev@0.3.6",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "loading-dev/linear-dots": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://github.com/jakubkrehel/loading",
+        "license": "MIT",
+        "local": "components/demos/loading-dev-demos.tsx",
+        "sha256": "c3cb9e20b3375e67070e8c15a69bf9322fd286373b65b049143709c438dcb946",
+        "package": "loading-dev@0.3.6",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
+    "loading-dev/trace": {
+      "adapter": "loading",
+      "width": 520,
+      "height": 360,
+      "provenance": {
+        "source": "https://github.com/jakubkrehel/loading",
+        "license": "MIT",
+        "local": "components/demos/loading-dev-demos.tsx",
+        "sha256": "c3cb9e20b3375e67070e8c15a69bf9322fd286373b65b049143709c438dcb946",
+        "package": "loading-dev@0.3.6",
+        "adaptation": "Original sample composition using the upstream npm package; not copied vendor example code."
+      }
+    },
     "oc/navbar": {
       "adapter": "oc",
       "width": 1024,
